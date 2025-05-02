@@ -776,7 +776,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Only show submit button on last question
             if (submitButton) {
-                submitButton.style.display = isLastQuestion ? 'block' : 'none';
+                submitButton.style.display = 'block';
             }
         }
     }
