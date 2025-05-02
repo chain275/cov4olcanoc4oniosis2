@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCAS Prep - Your Path to English Exam Success</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="../ad-banner.css">
+    <style>
+        /* Remove slideshow styles as they are now in slideshow.css */
+        
+        /* Keep the rest of the styles */
+        .features-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-box {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .feature-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .feature-box p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .how-it-works {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .steps-container {
+            max-width: 1000px;
+            margin: 50px auto 0;
+            padding: 0 20px;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .step-number {
+            flex: 0 0 80px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-right: 30px;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .step-content p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .step::after {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 80px;
+            width: 2px;
+            height: calc(100% - 20px);
+            background: #e0e0e0;
+            z-index: -1;
+        }
+        
+        .step:last-child::after {
+            display: none;
+        }
+        
+        .testimonials-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .testimonial-content {
+            position: relative;
+        }
+        
+        .testimonial-content i {
+            font-size: 2rem;
+            color: #e0e0e0;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            z-index: 0;
+        }
+        
+        .testimonial-content p {
+            position: relative;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+        }
+        
+        .author-info p {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .cta-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .cta-container p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 992px) {
+            .hero-container {
+                text-align: center;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .step::after {
+                left: 40px;
+                top: 80px;
+                height: calc(100% - 60px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-slideshow {
+                height: 450px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .feature-box, .testimonial-card {
+                padding: 20px;
+            }
+            
+            .cta-container h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        .slideshow-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        .nav-btn {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.1);
+        }
+        
+        .nav-btn:focus {
+            outline: none;
+        }
+        
+        .slide-dots {
+            display: flex;
+            justify-content: center;
+            margin: 0 10px;
+        }
+        
+        .dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu overlay for mobile -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Header will be included here -->
+    <div data-include="header"></div>
+    
+<!-- Left Ad Banner Container -->
+<div class="ad-container left">
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="English Tutors">
+        <div class="ad-content">
+            <h4>Expert English Tutors</h4>
+            <p>One-on-one sessions with TCAS exam specialists</p>
+            <a href="tutors.html" class="ad-action">Find a Tutor</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Study Materials">
+        <div class="ad-content">
+            <h4>Premium Study Materials</h4>
+            <p>Access exclusive TCAS English practice resources</p>
+            <a href="materials.html" class="ad-action">Browse Now</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+    
+<!-- Right Ad Banner Container -->
+<div class="ad-container right">
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Online Workshops">
+        <div class="ad-content">
+            <h4>TCAS English Workshops</h4>
+            <p>Join our weekly online preparation classes</p>
+            <a href="workshops.html" class="ad-action">Register</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Premium Subscription">
+        <div class="ad-content">
+            <h4>Go Premium</h4>
+            <p>Unlock all practice exams and performance analytics</p>
+            <a href="premium.html" class="ad-action">Upgrade</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+    
+    <main>
+        <!-- Hero Slideshow Section -->
+        <section class="hero-slideshow">
+            <div class="slideshow-container" id="slideshow-container">
+                <!-- Slides will be dynamically added here -->
+                <div class="slide active" style="background-image: url('images/slideshow/hero-slide1.jpg');"></div>
+            </div>
+            
+            <!-- Slideshow Navigation -->
+            <div class="slideshow-nav">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slide-dots" id="slide-dots">
+                    <!-- Dots will be dynamically added here -->
+                </div>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-count="5000">0</div>
+                    <p>Students Helped</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="stat-number" data-count="50000">0</div>
+                    <p>Exams Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-number" data-count="1000">0</div>
+                    <p>Practice Questions</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-number" data-count="95">0</div>
+                    <p>Success Rate (%)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2>Comprehensive Test Preparation</h2>
+                    <p class="section-description">Everything you need to succeed on your TCAS English exam</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>Speaking Practice</h3>
+                        <p>Master short and long conversations with our interactive speaking exercises designed to improve your listening comprehension and response skills.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Reading Mastery</h3>
+                        <p>Enhance your reading skills with diverse materials including articles, advertisements, product reviews, and news reports.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3>Writing Skills</h3>
+                        <p>Develop essential writing abilities through text completion exercises and paragraph organization practice that mirrors the actual exam format.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your improvement with detailed performance analytics that highlight your strengths and identify areas needing additional focus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p class="section-description">Our simple process to help you improve your English skills</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Register for Free</h3>
+                            <p>Create your account to access all our exam practice materials and track your progress over time as you improve your skills.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Practice with Real Exam Questions</h3>
+                            <p>Work through our extensive library of authentic exam questions that mirror the format and difficulty of the actual TCAS English test.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Receive Detailed Feedback</h3>
+                            <p>Get immediate scoring and comprehensive feedback on your performance, with explanations for each question to enhance your understanding.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Track Your Progress</h3>
+                            <p>Use our analytics dashboard to monitor your improvement over time and focus your studies on areas where you need the most help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="testimonials-container">
+                <div class="section-header">
+                    <h2>Success Stories</h2>
+                    <p class="section-description">Hear from students who achieved their goals using our platform</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>TCAS Prep helped me improve my English significantly. The practice exams are very similar to the real test, which helped me feel confident on exam day.</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Somchai T.</h4>
+                                    <p>TCAS Score: 85/100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>I struggled with the conversation sections before using this platform. The detailed feedback helped me understand where I was making mistakes.</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Pranee K.</h4>
+                                    <p>TCAS Score: 92/100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>The progress tracking feature helped me focus on my weakest areas. I saw improvement each week and eventually achieved my target score.</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Ananda R.</h4>
+                                    <p>TCAS Score: 88/100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Types Section -->
+        <section class="featured-exams" id="exam-list">
+            <div class="section-header">
+                <h2>Practice Exam Types</h2>
+                <p class="section-description">Choose from our wide range of exam types to improve your skills</p>
+            </div>
+            
+            <div class="exam-categories">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">All Exams</button>
+                    <button class="category-tab" data-category="speaking">Speaking</button>
+                    <button class="category-tab" data-category="reading">Reading</button>
+                    <button class="category-tab" data-category="writing">Writing</button>
+                </div>
+            </div>
+            
+            <div class="features-list">
+                <div class="exam-card featured" data-category="all" onclick="window.location.href='Combined_Exam.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Combined Exam</h3>
+                    <p>Practice with a comprehensive test covering all question types in a single session.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="exam-card" data-category="speaking" onclick="window.location.href='Short_conversation.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Short Conversation</h3>
+                    <p>Practice understanding and responding to brief spoken exchanges between speakers.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="exam-card" data-category="speaking" onclick="window.location.href='Long_Conversation.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3>Long Conversation</h3>
+                    <p>Improve your ability to follow extended dialogues and comprehend detailed discussions.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="exam-card" data-category="reading" onclick="window.location.href='Advertisement.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>Advertisement</h3>
+                    <p>Analyze promotional content and understand persuasive language techniques.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="exam-card" data-category="reading" onclick="window.location.href='Product.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Product Review</h3>
+                    <p>Evaluate product descriptions and identify key features and opinions.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="exam-card" data-category="writing" onclick="window.location.href='Text_completion.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Text Completion</h3>
+                    <p>Enhance your writing skills by filling in missing words or phrases in a passage.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="exam-card" data-category="writing" onclick="window.location.href='Paragraph.html'">
+                    <div class="exam-card-icon">
+                        <i class="fas fa-paragraph"></i>
+                    </div>
+                    <h3>Paragraph Organization</h3>
+                    <p>Practice organizing sentences and paragraphs in logical sequence.</p>
+                    <div class="start-exam">Get Started <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to Improve Your English Skills?</h2>
+                <p>Join thousands of students who have successfully prepared for their TCAS English exam with our platform.</p>
+                <div class="cta-buttons">
+                    <a href="Combined_Exam.html" class="btn-white">Start Free Practice</a>
+                    <a href="tutors.html" class="btn-outline">Find a Tutor</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer will be included here -->
+    <div data-include="footer"></div>
+    
+    <script src="scripts.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="../ad-banner.js"></script>
+    <script src="include.js"></script>
+</body>
+</html> 

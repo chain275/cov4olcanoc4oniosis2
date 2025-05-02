@@ -1,0 +1,1270 @@
+[
+  {
+    "id": "A-Level English No.3",
+    "title": "Short conversation (3)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 3",
+    "subtitle": "\nConversation 3: Phone Call Between Friends\nSarah: Hey Jake, I’m really sorry, but I can’t make it to the movies tonight.\nJake: What? But we’ve had this planned for weeks! ___(1)___ ?\nSarah: My mom’s flight got delayed, so I have to pick her up.\nJake: Oh. Well, I guess that’s important. ___(2)___  another time?\nSarah: Definitely! How about Friday? I’ll even ___(3)___  popcorn this time.\nJake: Sure, Friday works. ___(4)___  if your mom’s flight changes again.\n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " What’s come up",
+          " What’s your problem",
+          " What’s your point",
+          " What’s the catch"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " Take a rain check",
+          " Call it a day",
+          " Hit the road",
+          " Turn the tables"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " run out of",
+          " stock up on",
+          " cut back on",
+          " do away with"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " Keep me in the loop",
+          " Keep your fingers crossed",
+          " Keep it to yourself",
+          " Keep your cool"
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.29",
+    "title": "Speaking (29)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 29",
+    "subtitle": "\n\nConversation 1: Discussing a Museum Visit  \nEmma and Liam are talking about their favorite museums.  \nEmma: I finally visited the Modern Art Museum last weekend. It absolutely ____(5)____ . The installations were mind-blowing!  \nLiam: Oh, really? I’ve been meaning to go. How did you find the crowd?  \nEmma: Surprisingly light! I thought it’d be packed, but ____(6)____  going on a Sunday morning.  \nLiam: Smart move. Did you check out the virtual reality exhibit?  \nEmma: No, I completely forgot! ____(7)____ ?  \nLiam: Yeah, my coworker said it’s the highlight. You missed out!  \nEmma: Ugh, now I have to go back. Speaking of which, ____(8)____  if you want to join me next time.  \nLiam: Definitely! Let’s plan it.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " left a lasting impression  ",
+          " made a big difference  ",
+          " turned a new leaf  ",
+          " broke the ice  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " I ended up  ",
+          " I came up  ",
+          " I turned out  ",
+          " I set off  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " You’re kidding! That’s such a hidden gem!  ",
+          " So what? I don’t like technology.  ",
+          " Maybe I’ll try it someday.  ",
+          " Isn’t that too expensive?  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " I’m not really into art  ",
+          " you should bring your sister  ",
+          " the tickets are half-price on Fridays  ",
+          " I heard they’re closing soon  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.61",
+    "title": "Speaking (61)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 61",
+    "subtitle": "\n\nMia: Hey Liam, any concrete plans for New Year’s Eve yet?  \nLiam: ____(9)____ . How about you?  \nMia: Still deciding. Maybe hit the downtown countdown. Hosting sounds fun but stressful!  \nLiam: Totally get that. I just love the chance to cook for friends. Fingers crossed the soufflé doesn’t collapse again!  \nMia: [laughs] You’ve practiced enough this time! ____(10)____  yet?  \nLiam: Sort of. I’ve booked a caterer for appetizers, but I still need to ____(11)____ .  \nMia: ____(12)____ . I’m off work after noon if you need an extra pair of hands.  \nLiam: Actually, could you help test the outdoor heaters? The instructions are confusing.  \nMia: Absolutely! What time?  \nLiam: Let’s say 2 PM? Gives us wiggle room.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " I’m arranging a dinner gathering at my apartment  ",
+          " I’m throwing a dinner party at my place  ",
+          " I’m constructing a dinner event here  ",
+          " I’m inviting people for food at mine  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " Did you get over planning everything  ",
+          " Have you come up with the menu  ",
+          " Had you set off organizing  ",
+          " Have you sorted out the guest list  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " finalize the playlist and buy fireworks  ",
+          " figure out seating and pick up drinks  ",
+          " repair the oven and polish cutlery  ",
+          " cancel the reservations and start over  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " Ugh, that sounds tedious  ",
+          " Let me check my schedule first  ",
+          " No worries, I can tackle that  ",
+          " Why don’t you ask someone else?  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.50",
+    "title": "Speaking (50)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 50",
+    "subtitle": "\n\nEmma: Hi Liam! Have you noticed all the construction near Maple Street lately?  \nLiam: Absolutely! ____(13)____ . It’s been nonstop noise this past month.  \nEmma: I know! They’re building that new shopping plaza. ____(14)____ , the traffic’s gotten worse too.  \nLiam: Ugh, tell me about it. ____(15)____ , I’m starting to dread driving to work.  \nEmma: Same here. ____(16)____ ? Maybe we could suggest a bike lane to the council.  \nLiam: Not a bad idea. But I’m ____(17)____  about how much they’ll actually listen.  \nEmma: True. Still, if enough people ____(18)____ , they might take action.  \nLiam: Maybe. Hey, did you hear about Mrs. Jenkins? She’s ____(19)____  the developers for cutting down her favorite tree.  \nEmma: Oh no! ____(20)____ . She loved that old oak.  \nLiam: Yeah, but guess what? Her daughter just got engaged!  \nEmma: Really? That’s a nice silver lining!  \n\n",
+    "duration": 30,
+    "totalQuestions": 8,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) The weather’s been crazy, right?  ",
+          "B) I’ve been binge-watching shows all week.  ",
+          "C) They’re tearing down the old park.  ",
+          "D) My cat learned a new trick!  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) For example  ",
+          "B) Speaking of which  ",
+          "C) Anyway  ",
+          "D) In contrast  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) To be honest  ",
+          "B) On the other hand  ",
+          "C) Similarly  ",
+          "D) Consequently  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) What’s your favorite color?  ",
+          "B) Should we order pizza?  ",
+          "C) What if we start a petition?  ",
+          "D) Did you finish the report?  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 5,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) thrilled  ",
+          "B) skeptical  ",
+          "C) furious  ",
+          "D) nostalgic  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 6,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come across  ",
+          "B) speak up  ",
+          "C) run out  ",
+          "D) look after  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 7,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) thanking  ",
+          "B) blaming  ",
+          "C) assisting  ",
+          "D) surprising  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 8,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) She’s always so cheerful  ",
+          "B) Congratulations! That’s wonderful news!  ",
+          "C) Poor thing, that’s heartbreaking  ",
+          "D) Let’s throw her a party  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "long_conversation"
+  },
+  {
+    "id": "A-Level English No.30",
+    "title": "Advertisement (30)",
+    "description": "A-Level อังกฤษพาร์ท News report 30",
+    "subtitle": "\nBrand Name: SwiftChef™  \nProduct: ProWave 360X Smart Microwave    \n\nHEADLINE:  \n\"Cook Smarter, Not Harder – Meet the SwiftChef ProWave 360X!\"    \n\nKEY FEATURES:  \n✅ 1000W TurboPower – Reheat, cook, or defrost in seconds.  \n✅ Sensor Smart Technology – Automatically adjusts time and power for perfect results.  \n✅ 12 Pre-Programmed Menus – Popcorn, pizza, beverages, and more at the touch of a button.  \n✅ Eco-Mode Energy Saver – Reduces standby power consumption by 30%.  \n✅ Sleek Stainless Steel Design – Complements any modern kitchen.  \n✅ Child Safety Lock – Peace of mind for families.    \n\nWHY CHOOSE SWIFTCHEF?  \n\"The ProWave 360X isn’t just a microwave – it’s your kitchen’s new MVP. Designed for busy lives, it combines speed, intelligence, and style to make every meal effortless.\"    \n\nSPECIAL OFFER:  \n🔹 Limited-Time Bundle: Free SwiftChef Silicone Microwave Cover ($19.99 value) with purchase!  \n🔹 Price: Just $199.99 (MSRP $249.99).    \n\nCALL TO ACTION:  \n\"Upgrade Your Kitchen Today!  \nVisit [www.swiftchef.com/prowave360x](http://www.swiftchef.com/prowave360x)  \nOr find us at Amazon, Best Buy, and Walmart!    \n\nWARRANTY:  \n2-Year Full Coverage Warranty – Because we stand by our tech.    \n\nFOLLOW US:  \n📱 @SwiftChefKitchen on Instagram & Facebook  \n📞 Customer Support: 1-800-SWIFTCHEF    \n\nTAGLINE:  \n\"SwiftChef – Where Innovation Meets the Microwave.\"    \nPromotion valid until 12/31/2023. Terms and conditions apply.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1: What is the duration of the warranty provided with the SwiftChef ProWave 360X?  ",
+        "prompt": "",
+        "options": [
+          "A) 1 year  ",
+          "B) 2 years  ",
+          "C) 3 years  ",
+          "D) 5 years  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2: The article mentions the Eco-Mode Energy Saver feature. What can be inferred about this feature’s primary purpose?  ",
+        "prompt": "",
+        "options": [
+          "A) It increases cooking speed by 30%.  ",
+          "B) It prioritizes child safety during operation.  ",
+          "C) It reduces environmental impact by lowering standby energy use.  ",
+          "D) It enhances the microwave’s stainless steel durability.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3: Which of the following is NOT a feature of the ProWave 360X as stated in the article?  ",
+        "prompt": "",
+        "options": [
+          "A) 12 pre-programmed menus  ",
+          "B) 1000W TurboPower  ",
+          "C) 15 preset cooking modes  ",
+          "D) Child Safety Lock  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.59",
+    "title": "Advertisement (59)",
+    "description": "A-Level อังกฤษพาร์ท News report 59",
+    "subtitle": "\nBrand Name: SwiftBlend  \nTagline: \"Whisk Wonders into Reality – Effortlessly!\"  \n\nProduct Spotlight: The SwiftBlend Pro Whisk  \n\nFeatures:  \n- Durable Construction: Stainless steel wires reinforced for unbeatable strength.  \n- Ergonomic Grip: Soft silicone handle with non-slip design for comfort and control.  \n- Versatile Design: Perfect for eggs, batters, sauces, and more.  \n- Easy Clean: Dishwasher-safe and rust-resistant.  \n\nWhy SwiftBlend Pro?  \nSay goodbye to sore wrists and flimsy whisks! The SwiftBlend Pro combines precision engineering with culinary elegance, making mixing faster, smoother, and effortless. Whether you’re whipping cream, folding meringue, or blending pancake batter, this whisk delivers professional results in your home kitchen.  \n\nBenefits:  \n✅ Save Time: Ultra-efficient design cuts mixing time by half.  \n✅ Lasting Quality: Built to withstand years of daily use.  \n✅ Chef-Approved: Trusted by professionals for its balance and durability.  \n\nCall to Action:  \nUpgrade your kitchen toolkit today!  \nShop Now: [www.swiftblend.com/pro-whisk](https://www.swiftblend.com)  \nFollow Us: @SwiftBlendKitchen (Instagram, TikTok)  \n\nLimited-Time Offer: Use code WHISK20 for 20% off your first order!    \nSwiftBlend – Where Innovation Meets Tradition.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1: What material is used for the SwiftBlend Pro Whisk’s ergonomic grip?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel  ",
+          "B) Silicone  ",
+          "C) Plastic  ",
+          "D) Rubber  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2: The article implies that the ergonomic grip design primarily addresses which common problem?  ",
+        "prompt": "",
+        "options": [
+          "A) Rust accumulation  ",
+          "B) Difficulty cleaning the whisk  ",
+          "C) Limited mixing speed  ",
+          "D) Wrist strain during prolonged use  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3: Which of the following is NOT listed as a feature of the SwiftBlend Pro Whisk?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel construction  ",
+          "B) Non-slip silicone handle  ",
+          "C) Dishwasher-safe design  ",
+          "D) Chef-approved balance  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.45",
+    "title": "Product or service review (45)",
+    "description": "A-Level อังกฤษพาร์ท Product/service review 45",
+    "subtitle": "\n\n\n**A Day at the Zoo: An Enchanting Blend of Education and Adventure**  \n\nZoos have long been gateways to the natural world, offering a chance to connect with wildlife in urban settings. The modern zoo experience, however, has evolved beyond mere animal displays—it’s now a fusion of education, conservation, and family-friendly entertainment. Here’s why a visit to Guardian Grove stands out as an exceptional experience.  \n\n**Immersive Habitats and Diverse Exhibits**  \nFrom the sprawling African savanna exhibit to the misty rainforest enclosures, Guardian Grove prioritizes authenticity. Animals like giraffes, tigers, and orangutans thrive in environments mirroring their natural habitats. The attention to detail—lush vegetation, climate-controlled spaces, and interactive viewing areas—creates a sense of immersion that captivates visitors of all ages.  \n\n**Education Meets Engagement**  \nThe zoo excels in blending fun with learning. Informative signage, live keeper talks, and hands-on exhibits teach visitors about biodiversity and conservation. Children adore the “Junior Zookeeper” program, where they assist in feeding sessions, while adults appreciate documentaries screened at the on-site conservation center.  \n\n**Commitment to Animal Welfare**  \nEthical concerns about zoos are addressed head-on here. Transparent enclosures allow animals privacy, and enrichment programs—like puzzle feeders for primates or climbing structures for big cats—promote mental and physical health. Staff members are visibly passionate, sharing stories of rescued animals and breeding programs aiding endangered species.  \n\n**Family-Friendly Amenities**  \nClean restrooms, shaded picnic areas, and strategically placed snack kiosks make the visit comfortable. The zoo’s layout is stroller- and wheelchair-friendly, while a mini-train ride offers tired legs a break without missing the sights.  \n\n**Conservation in Action**  \nBeyond exhibits, the zoo funds global wildlife initiatives. Visitors can “adopt” an animal, with proceeds supporting habitat restoration. Interactive displays detail how small actions—like reducing plastic use—can protect ecosystems, empowering guests to contribute beyond their visit.  \n\n**A Few Considerations**  \nWhile mostly stellar, some enclosures feel cramped during peak hours, and ticket prices lean toward the premium side. However, discounts for members and schools balance accessibility.  \n\n**Final Verdict**  \nGuardian Grove masterfully balances entertainment, education, and ethical responsibility. Whether you’re a wildlife enthusiast, a curious parent, or simply seeking a day outdoors, it delivers a memorable, impactful experience. A visit here isn’t just a day out—it’s an investment in understanding and preserving our planet’s wonders.  \n\n**Rating: 4.8/5**  \n*A must-visit for families, educators, and anyone eager to witness conservation in action.*\n\n\n",
+    "duration": 30,
+    "totalQuestions": 6,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1:** What is the primary purpose of the article, and how would you describe its overall tone?  ",
+        "prompt": "",
+        "options": [
+          "A) To criticize modern zoos for ethical concerns; pessimistic and accusatory  ",
+          "B) To promote Guardian Grove as a blend of education, conservation, and entertainment; enthusiastic and balanced  ",
+          "C) To compare Guardian Grove with other zoos; neutral and analytical  ",
+          "D) To highlight the drawbacks of zoo ticket pricing; critical and dismissive  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2:** The article mentions some criticisms of Guardian Grove. Which of the following is **NOT** addressed as a concern in the text?  ",
+        "prompt": "",
+        "options": [
+          "A) High ticket prices  ",
+          "B) Limited accessibility for disabled visitors  ",
+          "C) Crowded enclosures during peak times  ",
+          "D) Ethical treatment of animals  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3:** According to the article, which statement about Guardian Grove is factually **inaccurate**?  ",
+        "prompt": "",
+        "options": [
+          "A) The zoo uses puzzle feeders and climbing structures for animal enrichment.  ",
+          "B) Transparent enclosures prevent animals from having privacy.  ",
+          "C) The “Junior Zookeeper” program lets children participate in feeding sessions.  ",
+          "D) Staff share stories about rescued animals and breeding programs.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "reading",
+        "text": "Question 4:** In the sentence, “Ethical concerns about zoos are addressed head-on here,” which phrase could **best** replace “addressed head-on” without changing the meaning?  ",
+        "prompt": "",
+        "options": [
+          "A) Confronted directly  ",
+          "B) Casually mentioned  ",
+          "C) Publicly ignored  ",
+          "D) Politely debated  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 5,
+        "type": "reading",
+        "text": "Question 5:** Based on the article, what conclusion can be drawn about the zoo’s approach to visitor engagement?  ",
+        "prompt": "",
+        "options": [
+          "A) It prioritizes entertainment over education to maximize ticket sales.  ",
+          "B) It empowers visitors to take actionable steps toward conservation.  ",
+          "C) It focuses solely on children’s activities to attract families.  ",
+          "D) It avoids discussing global wildlife issues to simplify messaging.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 6,
+        "type": "reading",
+        "text": "Question 6:** The article describes zoos as “gateways to the natural world.” What is the function of the word “gateways” in this context?  ",
+        "prompt": "",
+        "options": [
+          "A) To emphasize zoos as physical barriers protecting wildlife  ",
+          "B) To suggest zoos are outdated and restrictive  ",
+          "C) To introduce zoos as access points for understanding nature  ",
+          "D) To criticize zoos for commercializing animal habitats  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": "A-Level English No.21",
+    "title": "Product or service review (21)",
+    "description": "A-Level อังกฤษพาร์ท Product/service review 21",
+    "subtitle": "\n\n\n**A Day at The Oasis Mall: Where Modern Convenience Meets Unmatched Variety**  \n\nNestled in the heart of the city, *The Oasis Mall* stands as a premier destination for shopping, dining, and entertainment. From its sleek glass exterior to its thoughtfully curated interiors, this mall redefines urban leisure, offering an experience that caters to all ages and preferences.  \n\n**Architecture & Ambiance**  \nThe mall’s modern design is a visual treat, with open spaces, natural lighting, and lush indoor greenery creating a refreshing atmosphere. Its intuitive layout—divided into themed zones (luxury, family, tech)—ensures effortless navigation, while cozy seating nooks invite visitors to relax between explorations.  \n\n**Retail Therapy Redefined**  \nShopaholics will revel in the diverse retail mix. High-end boutiques like *Louis Vuitton* and *Gucci* cater to luxury seekers, while popular chains like *Zara* and *H&M* offer trendy, affordable options. Niche stores, including a tech hub with the latest gadgets, ensure every shopping itch is scratched.  \n\n**Culinary Delights**  \nThe dining scene is a global journey. The food court serves everything from sushi to wood-fired pizza, while upscale restaurants like *The Spice Route* offer gourmet experiences. Don’t miss the artisanal coffee shops and dessert bars—perfect for a mid-shop break.  \n\n**Entertainment for All**  \nBeyond shopping, the mall buzzes with activity. A state-of-the-art cinema, an immersive VR arcade, and a whimsical indoor playground for kids guarantee endless fun. Weekly events, from live music to pop-up markets, add to the vibrant energy.  \n\n**Exceptional Service**  \nStaff members are attentive and courteous, enhancing the experience with their warmth. Clean facilities, ample restrooms, and free high-speed Wi-Fi reflect the mall’s commitment to comfort.  \n\n**Accessibility & Convenience**  \nWith a 2,000-car parking lot, EV charging stations, and direct metro access, reaching *The Oasis* is hassle-free. Wheelchair-friendly pathways and stroller rentals underscore its inclusive design.  \n\n**Final Verdict**  \n*The Oasis Mall* masterfully blends style, convenience, and variety, making it more than just a shopping center—it’s a lifestyle hub. Whether you’re splurging on designer wear, savoring global flavors, or enjoying family time, this mall delivers an unforgettable experience. A must-visit! 🌟  \n\n\n\n\n",
+    "duration": 30,
+    "totalQuestions": 6,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1: What is the primary purpose of the article, and how would you describe its tone?  ",
+        "prompt": "",
+        "options": [
+          "A) To criticize urban mall culture; sarcastic and dismissive  ",
+          "B) To objectively compare The Oasis Mall with competitors; neutral and analytical  ",
+          "C) To promote The Oasis Mall as a versatile lifestyle destination; enthusiastic and persuasive  ",
+          "D) To analyze the economic impact of the mall; formal and data-driven  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2: Which of the following amenities is **NOT** explicitly mentioned in the article?  ",
+        "prompt": "",
+        "options": [
+          "A) EV charging stations  ",
+          "B) Stroller rentals  ",
+          "C) Bike racks  ",
+          "D) Direct metro access  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3: The article states that The Oasis Mall has a 2,000-car parking lot. Which detail, if contradicted, would introduce a factual inaccuracy?  ",
+        "prompt": "",
+        "options": [
+          "A) The mall’s themed zones include luxury, family, and tech.  ",
+          "B) The VR arcade is described as \"immersive.\"  ",
+          "C) A competing review claims the parking lot accommodates 3,000 cars.  ",
+          "D) Weekly events include pop-up markets.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "reading",
+        "text": "Question 4: Which phrase could replace \"masterfully blends\" in \"The Oasis Mall masterfully blends style, convenience, and variety\" **without** altering the meaning?  ",
+        "prompt": "",
+        "options": [
+          "A) clumsily mixes  ",
+          "B) skillfully combines  ",
+          "C) randomly scatters  ",
+          "D) partially integrates  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "type": "reading",
+        "text": "Question 5: What conclusion can be drawn about The Oasis Mall’s target audience?  ",
+        "prompt": "",
+        "options": [
+          "A) It caters exclusively to luxury shoppers.  ",
+          "B) It prioritizes tech enthusiasts over families.  ",
+          "C) It appeals to a broad demographic, including families, luxury seekers, and food lovers.  ",
+          "D) It focuses mainly on hosting corporate events.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 6,
+        "type": "reading",
+        "text": "Question 6: In the sentence, \"thoughtfully curated interiors,\" what does \"curated\" most closely mean?  ",
+        "prompt": "",
+        "options": [
+          "A) Carelessly arranged  ",
+          "B) Randomly selected  ",
+          "C) Intentionally designed and organized  ",
+          "D) Temporarily displayed  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "product"
+  },
+  {
+    "id": "A-Level English No.33",
+    "title": "News Report (33)",
+    "description": "A-Level อังกฤษพาร์ท News report 33",
+    "subtitle": "\n**Streaming Algorithms Shaping Independent Artists’ Careers, Raising Equity Concerns**  \nThe rise of streaming platforms has revolutionized music consumption, but their recommendation algorithms are increasingly criticized for sidelining independent artists. By prioritizing tracks with existing traction, these systems often amplify mainstream acts, leaving emerging musicians struggling for visibility.  \n\n**Homogenization of Music**  \nCritics argue algorithms favor predictable, data-driven trends, pushing artists to mimic viral sounds rather than innovate. This homogenization risks stifling creativity, as indie musicians feel pressured to conform to algorithmic preferences to gain streams.  \n\n**The Data Trap**  \nIndependent artists, lacking major-label marketing budgets, rely heavily on playlists and algorithmic boosts. However, landing a coveted spot often requires meeting opaque metrics—such as high engagement or completion rates—creating a catch-22 for lesser-known acts.  \n\n**Artist Voices**  \n“Algorithms dictate success now,” says indie singer-songwriter Sofia Ramirez. “Even if your music is great, competing with major-label promotion feels impossible.” Many report stagnant growth despite consistent output.  \n\n**Niche Success Stories**  \nSome indie artists have cracked the code by tailoring releases to algorithmic patterns—short tracks, frequent uploads, or TikTok-friendly hooks. While this can spark viral moments, critics warn it prioritizes marketability over artistry.  \n\n**Platform Accountability**  \nAdvocates urge transparency in how algorithms curate content. “These systems aren’t neutral—they’re designed to maximize profit, not diversity,” argues music analyst Liam Chen. “Indie artists face systemic barriers.”  \n\n**Calls for Reform**  \nSome platforms, like Bandcamp and SoundCloud, now emphasize artist-centric features. Yet industry leaders stress that major services must rebalance algorithms to spotlight underrepresented voices.  \n\n**Future Outlook**  \nAs streaming dominates, the debate over algorithmic equity intensifies. While indie artists adapt, systemic changes may be essential to ensure a diverse, vibrant music ecosystem.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 6,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1: What is the central theme of the article?",
+        "prompt": "",
+        "options": [
+          "A) Streaming platforms have improved music accessibility for all artists equally.  ",
+          "B) Algorithms on streaming platforms favor mainstream artists, disadvantaging independent musicians.  ",
+          "C) Independent artists are thriving due to TikTok-friendly strategies.  ",
+          "D) Major record labels are losing influence in the music industry.  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2: According to the article, why do algorithms make it harder for independent artists to gain visibility?",
+        "prompt": "",
+        "options": [
+          "A) They prioritize tracks with existing engagement, amplifying mainstream acts.  ",
+          "B) Independent artists refuse to use streaming platforms.  ",
+          "C) Algorithms are designed to promote only classical music.  ",
+          "D) Streaming platforms ban independent artists from playlists.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3: What does the term \"homogenization\" imply in the context of the article?",
+        "prompt": "",
+        "options": [
+          "A) Increased diversity in musical styles  ",
+          "B) Standardization of music into predictable, trend-driven sounds  ",
+          "C) A focus on live concert performances  ",
+          "D) Elimination of mainstream artists  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "reading",
+        "text": "Question 4: Which contradiction is highlighted in the article regarding niche success stories?",
+        "prompt": "",
+        "options": [
+          "A) Artists who go viral lose all their fans.  ",
+          "B) Adapting to algorithmic patterns can boost visibility but risks sacrificing artistic integrity.  ",
+          "C) Major labels are copying indie artists’ strategies.  ",
+          "D) Streaming platforms refuse to promote viral songs.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "type": "reading",
+        "text": "Question 5: In the quote, “These systems aren’t neutral—they’re designed to maximize profit, not diversity,” what does “they” refer to?",
+        "prompt": "",
+        "options": [
+          "A) Independent artists  ",
+          "B) Major record labels  ",
+          "C) Streaming platforms’ recommendation algorithms  ",
+          "D) Social media apps  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 6,
+        "type": "reading",
+        "text": "Question 6: What conclusion can be drawn about the future of music diversity if algorithms remain unchanged?",
+        "prompt": "",
+        "options": [
+          "A) Mainstream and indie artists will collaborate more.  ",
+          "B) Homogenization will decrease as algorithms improve.  ",
+          "C) Independent artists will dominate streaming platforms.  ",
+          "D) Creativity may decline as systemic barriers persist for underrepresented voices.  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "news_report"
+  },
+  {
+    "id": "A-Level English No.3",
+    "title": "Article (3)",
+    "description": "A-Level อังกฤษพาร์ท Article 3",
+    "subtitle": "\n\n**Lost Cities of the Amazon: Unearthing the Secrets of a Forgotten Civilization**  \n\nFor centuries, the Amazon rainforest has been portrayed as a pristine wilderness, untouched by human hands. Yet, beneath its dense canopy lies a hidden history of sprawling urban centers, intricate road networks, and advanced agricultural systems. Recent discoveries are rewriting our understanding of the Amazon, revealing it as the heartland of sophisticated pre-Columbian societies. These \"lost cities\" challenge the myth of an untamed jungle and illuminate the resilience and ingenuity of ancient Indigenous cultures.  \n\n **The Myth of El Dorado and Early Explorers**  \nThe legend of El Dorado, a city of gold hidden deep in the Amazon, lured European explorers into the rainforest as early as the 16th century. While their quests proved futile, Indigenous oral histories and fragmented accounts hinted at grand settlements. Percy Fawcett’s infamous 1925 expedition to find the “City of Z” ended in mystery, but modern archaeology suggests he wasn’t entirely misguided. Researchers now believe that Fawcett’s vision of a complex civilization was closer to reality than fiction, though the treasures he sought were not gold but knowledge.  \n\n **Lidar Technology: Revealing the Invisible**  \nBreakthroughs in remote sensing, particularly Lidar (Light Detection and Ranging), have revolutionized Amazonian archaeology. By penetrating the forest canopy with laser pulses, scientists have mapped vast urban layouts invisible from the ground. In 2022, a study in *Nature* revealed a network of interconnected cities in Ecuador’s Upano Valley, dating back 2,500 years. These settlements featured raised platforms, ceremonial plazas, and straight roads extending over 25 kilometers—evidence of centralized planning rivaling contemporaneous Mesoamerican societies.  \n\n **Engineering Marvels of the Ancient Amazon**  \nThe Amazon’s ancient inhabitants transformed their environment with remarkable engineering. They constructed massive earthworks—ditches, mounds, and causeways—to manage seasonal floods and enhance soil fertility. In Bolivia’s Llanos de Mojos, researchers uncovered hexagonal and rectangular earthworks spanning 4,500 square miles, suggesting a grid-like urban system. These structures, built by the Casarabe culture (500–1400 CE), supported dense populations through sophisticated agroforestry and fish farming, debunking the notion that the Amazon’s poor soils could not sustain large communities.  \n\n **A Thriving Social Fabric**  \nThe scale of these cities implies complex social organization. Settlements like Kuhikugu in Brazil’s Xingu region housed thousands in fortified villages linked by bridges and roads. Artifacts such as pottery, carvings, and ceremonial objects point to stratified societies with religious and political hierarchies. Trade networks extended across the continent, exchanging goods like cacao, obsidian, and feathers. Far from isolated tribes, these communities were part of a dynamic, interconnected Amazonian world.  \n\n **The Mystery of Decline**  \nWhat caused the collapse of these civilizations? Theories abound: European colonization introduced disease and violence, devastating Indigenous populations. Others suggest internal ecological strain, as urban centers outgrew resource limits. Sediment cores show a sharp decline in charcoal and pollen around 1500 CE, signaling the abandonment of managed landscapes. Yet, many communities adapted, transitioning to smaller, mobile groups—a survival strategy that preserved their cultures through centuries of upheaval.  \n\n **Indigenous Knowledge and the Modern World**  \nToday’s Indigenous peoples hold ancestral ties to these lost cities. The Ashaninka, Kayapo, and other groups maintain traditions of forest management that echo ancient practices. Terra preta, nutrient-rich “dark earth” created by pre-Columbian farmers, remains a testament to sustainable agriculture. Recognizing these legacies is critical: as deforestation and climate change threaten the Amazon, Indigenous stewardship offers a blueprint for balancing human needs with ecological preservation.  \n\n ****Rewriting History and Reimagining the Future****  \nThe discovery of Amazonian urban centers forces a reckoning with colonial narratives that dismissed Indigenous achievements. These cities were not primitive but innovative, adapting to one of Earth’s most challenging environments. Their existence underscores the Amazon’s role as a cradle of civilization, not just a “green desert.” Protecting this heritage requires collaboration with Indigenous communities, whose ancestors mastered the art of living in harmony with the forest.  \n\nThe lost cities of the Amazon are more than archaeological curiosities—they are a bridge to understanding humanity’s capacity for resilience. As we unearth their secrets, we are reminded that the Amazon is not a wildland to be conquered but a legacy to be cherished, a testament to the enduring ingenuity of those who came before us.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 8,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1: What is the central theme of the article?  ",
+        "prompt": "",
+        "options": [
+          "A) The Amazon is a pristine wilderness with no human history.  ",
+          "B) European explorers successfully found El Dorado in the Amazon.  ",
+          "C) The Amazon was home to advanced ancient civilizations, changing previous perceptions.  ",
+          "D) Lidar technology is the only way to study the Amazon.  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2: In the article, the phrase \"myth of an untamed jungle\" suggests that the Amazon:  ",
+        "prompt": "",
+        "options": [
+          "A) Was completely wild and uninhabited  ",
+          "B) Was actually shaped and managed by ancient humans  ",
+          "C) Is too dangerous for exploration  ",
+          "D) Has always been a place of mystery without any human contact  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3: In the sentence, \"They constructed massive earthworks...\", who does \"they\" refer to?  ",
+        "prompt": "",
+        "options": [
+          "A) European explorers  ",
+          "B) Modern scientists  ",
+          "C) Ancient Amazonian inhabitants  ",
+          "D) Indigenous groups today  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "reading",
+        "text": "Question 4: According to the article, which factor is suggested as a reason for the decline of Amazonian civilizations?  ",
+        "prompt": "",
+        "options": [
+          "A) Invasion by Mesoamerican societies  ",
+          "B) Introduction of diseases and violence by European colonizers  ",
+          "C) Overuse of gold resources  ",
+          "D) Development of advanced technology  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "type": "reading",
+        "text": "Question 5: How would you describe the author's tone when discussing the ancient Amazonian societies?  ",
+        "prompt": "",
+        "options": [
+          "A) Skeptical and dismissive  ",
+          "B) Admiring and respectful  ",
+          "C) Neutral and indifferent  ",
+          "D) Humorous and sarcastic  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 6,
+        "type": "reading",
+        "text": "Question 6: Which technology was crucial in revealing the hidden structures beneath the Amazon canopy?  ",
+        "prompt": "",
+        "options": [
+          "A) Satellite photography  ",
+          "B) Carbon dating  ",
+          "C) Lidar  ",
+          "D) Ground-penetrating radar  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 7,
+        "type": "reading",
+        "text": "Question 7: How is the article primarily organized?  ",
+        "prompt": "",
+        "options": [
+          "A) Chronologically from pre-Columbian times to the present  ",
+          "B) By presenting a problem and then discussing solutions  ",
+          "C) Starting with myths, then presenting evidence, followed by societal aspects and modern implications  ",
+          "D) Comparing the Amazon civilizations with European ones  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 8,
+        "type": "reading",
+        "text": "Question 8: What does the author imply about Indigenous knowledge in the modern world?  ",
+        "prompt": "",
+        "options": [
+          "A) It is outdated and irrelevant  ",
+          "B) It provides sustainable practices that could help preserve the Amazon  ",
+          "C) It caused the decline of ancient cities  ",
+          "D) It is only useful for archaeological studies  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "article"
+  },
+  {
+    "id": "A-Level English No.13",
+    "title": "Article (13)",
+    "description": "A-Level อังกฤษพาร์ท Article 13",
+    "subtitle": "\n\n**The Ethical Dilemma of AI-Generated Art**  \n\n**Introduction: A New Frontier in Creativity**  \nArtificial intelligence has revolutionized art, enabling tools like DALL-E, MidJourney, and Stable Diffusion to transform text prompts into stunning visuals. While this innovation democratizes artistic expression, it also sparks complex ethical debates. Who owns AI-generated art? Does it devalue human creativity? These questions lie at the heart of a growing controversy, challenging our understanding of art, authorship, and accountability.  \n\n**Originality and Authorship in Question**  \nA central dilemma revolves around originality. AI systems generate art by analyzing vast datasets of existing works, remixing styles without conscious intent. This raises questions: Can output be “original” if derived from prior human creations? Moreover, authorship becomes ambiguous—is credit due to the user inputting prompts, the developers who trained the AI, or the artists whose works were scraped without consent? Current copyright laws, designed for human creators, falter here, leaving a legal gray area.  \n\n**Threats to Human Artists**  \nAI’s efficiency threatens artists economically and culturally. While it lowers barriers to entry, it risks devaluing professional artistry. Clients may opt for cheaper AI-generated designs over commissioned human work, potentially displacing jobs. Critics argue this undermines the years of skill development and emotional investment intrinsic to art. Yet proponents counter that AI is a tool, much like Photoshop, amplifying rather than replacing human creativity. The tension between empowerment and exploitation remains unresolved.  \n\n**Intellectual Property Challenges**  \nCopyright systems struggle to adapt. In 2022, the U.S. Copyright Office denied protection for an AI-generated image, stating it lacked human authorship. Similarly, lawsuits, like Getty Images suing Stability AI for using copyrighted photos without licensing, highlight systemic issues. If AI training data includes unlicensed works, is it plagiarism? Or is it transformative use? Current laws don’t clarify, urging policymakers to redefine ownership in the AI era.  \n\n**Bias and Representation**  \nAI models often perpetuate biases embedded in their training data. For instance, prompts for “CEO” might default to male figures, while “nurse” yields female stereotypes. This risks reinforcing harmful societal norms. Ensuring diverse, inclusive datasets is critical, but who bears responsibility—developers, users, or regulators? Without oversight, AI art could homogenize cultural narratives rather than expand them.  \n\n**Cultural and Emotional Disconnect**  \nArt has historically reflected human experiences, emotions, and cultural contexts. AI, devoid of consciousness, cannot replicate this intentionality. Works may mimic aesthetics but lack deeper meaning, risking a cultural erosion where art becomes purely transactional. Furthermore, AI-generated pieces inspired by Indigenous or traditional motifs might appropriate cultures without understanding their significance, sparking ethical concerns over respect and representation.  \n\n**Toward Ethical Frameworks**  \nAddressing these issues requires collaborative solutions. Transparent datasets, crediting original artists, and revenue-sharing models could promote fairness. Some propose new copyright categories for AI-generated content, distinguishing it from human work. Initiatives like “Ethical AI Art” badges might certify responsibly trained tools. Crucially, inclusive dialogues—engaging artists, tech experts, and lawmakers—must guide policies that balance innovation with integrity.  \n\n**Conclusion: Balancing Progress and Principles**  \nAI-generated art is a double-edged sword, offering boundless creative potential while challenging ethical norms. Navigating this landscape demands proactive measures: updating legal frameworks, mitigating biases, and preserving human artistry’s value. By fostering collaboration and accountability, society can harness AI’s power without compromising the soul of creativity. The future of art lies not in choosing between human and machine, but in ensuring they coexist with mutual respect.  \n\n",
+    "duration": 30,
+    "totalQuestions": 8,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "Question 1: What is the central theme of the article?  ",
+        "prompt": "",
+        "options": [
+          "A) The technical processes behind AI art tools like DALL-E  ",
+          "B) The economic benefits of AI-generated art for businesses  ",
+          "C) Ethical debates surrounding AI art’s impact on creativity and ownership  ",
+          "D) A historical comparison of AI art and traditional art techniques  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": "Question 2: In the conclusion, the phrase “double-edged sword” is used to describe AI-generated art. What does this phrase imply?  ",
+        "prompt": "",
+        "options": [
+          "A) AI art is dangerous and should be banned  ",
+          "B) AI art has both positive potential and negative consequences  ",
+          "C) AI tools are sharp and precise in creating visuals  ",
+          "D) AI art is a weapon against human creativity  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": "Question 3: In the introduction, the text states: “While this innovation democratizes artistic expression, it also sparks complex ethical debates.” What does “this innovation” refer to?  ",
+        "prompt": "",
+        "options": [
+          "A) Copyright lawsuits  ",
+          "B) AI systems like DALL-E that create art from text prompts  ",
+          "C) The development of Photoshop  ",
+          "D) Traditional art techniques  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "reading",
+        "text": "Question 4: According to the article, why did the U.S. Copyright Office deny protection for an AI-generated image in 2022?  ",
+        "prompt": "",
+        "options": [
+          "A) The image was plagiarized from a human artist  ",
+          "B) The image lacked human authorship  ",
+          "C) The AI developer refused to claim ownership  ",
+          "D) The image contained biased content  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "type": "reading",
+        "text": "Question 5: How would you describe the author’s tone in discussing AI-generated art?  ",
+        "prompt": "",
+        "options": [
+          "A) Strongly critical of AI’s threats to human artists  ",
+          "B) Enthusiastically optimistic about AI replacing humans  ",
+          "C) Neutral and balanced, acknowledging both benefits and risks  ",
+          "D) Dismissive of ethical concerns as exaggerated  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 6,
+        "type": "reading",
+        "text": "Question 6: The article mentions Getty Images suing Stability AI. What does this example primarily illustrate?  ",
+        "prompt": "",
+        "options": [
+          "A) The threat of AI replacing graphic designers  ",
+          "B) Challenges related to intellectual property and unauthorized data use  ",
+          "C) The superiority of AI-generated images over human-made photos  ",
+          "D) Efforts to eliminate bias in AI training datasets  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 7,
+        "type": "reading",
+        "text": "Question 7: How is the article structured?  ",
+        "prompt": "",
+        "options": [
+          "A) Chronological timeline of AI art advancements  ",
+          "B) Problem-solution format, outlining issues and proposing frameworks  ",
+          "C) Cause-effect analysis focusing on economic impacts  ",
+          "D) Comparison-contrast between AI and traditional art  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 8,
+        "type": "reading",
+        "text": "Question 8: What does the author imply about the future of AI and human artistry?  ",
+        "prompt": "",
+        "options": [
+          "A) AI will inevitably replace human artists entirely  ",
+          "B) Humans should reject AI tools to protect cultural integrity  ",
+          "C) Collaboration and regulation can allow coexistence  ",
+          "D) Ethical concerns are too complex to resolve  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "article"
+  },
+  {
+    "id": "A-Level English No.3",
+    "title": "Text Completion (3)",
+    "description": "A-Level อังกฤษพาร์ท Text completion 3",
+    "subtitle": "Emotional contagion, the phenomenon where emotions spread through groups, ____(61)____  extensively in the digital age. Social media platforms ____(62)____  as accelerators, rapidly transmitting moods across networks. Recent studies indicate that exposure to positive posts often ____(63)____  similar feelings in users, while negative content can deepen sadness. ____(64)____ , this effect isn’t universal; individual differences shape susceptibility. Researchers now explore ____(65)____  these dynamics to mitigate harm.  \n\n",
+    "duration": 30,
+    "totalQuestions": 5,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) has been studied  ",
+          "B) was studied  ",
+          "C) studied  ",
+          "D) is studying  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) acted  ",
+          "B) act  ",
+          "C) are acting  ",
+          "D) will act  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) evokes  ",
+          "B) evoking  ",
+          "C) evoked  ",
+          "D) evoke  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Therefore  ",
+          "B) Additionally  ",
+          "C) However  ",
+          "D) Similarly  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 5,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) how algorithms influence  ",
+          "B) how do algorithms influence  ",
+          "C) how algorithms influencing  ",
+          "D) how influence algorithms  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "text_completion"
+  },
+  {
+    "id": "A-Level English No.25",
+    "title": "Text Completion (25)",
+    "description": "A-Level อังกฤษพาร์ท Text completion 25",
+    "subtitle": "In recent years, architects **____(66)____** to integrate traditional building techniques into modern sustainable designs. For example, ancient civilizations **____(67)____** local materials like adobe or bamboo, which naturally regulate temperature. By reviving these methods, modern buildings can reduce energy consumption while maintaining cultural **____(68)____**. **____(69)____**, some argue that traditional methods may not meet today’s safety standards. To address this, researchers are investigating **____(70)____** without compromising historical integrity.  \n\n",
+    "duration": 30,
+    "totalQuestions": 5,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) have begun  ",
+          "B) began  ",
+          "C) are beginning  ",
+          "D) had begun  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) employ  ",
+          "B) employed  ",
+          "C) had employed  ",
+          "D) are employing  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) identity  ",
+          "B) identifiable  ",
+          "C) identification  ",
+          "D) identifies  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) However  ",
+          "B) Moreover  ",
+          "C) Therefore  ",
+          "D) Additionally  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 5,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) how they can be adapted  ",
+          "B) how can they adapt  ",
+          "C) how can be adapted they  ",
+          "D) how be adapted they can  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "text_completion"
+  },
+  {
+    "id": "A-Level English No.11",
+    "title": "Text Completion (11)",
+    "description": "A-Level อังกฤษพาร์ท Text completion 11",
+    "subtitle": "The decline of traditional industries, such as weaving or blacksmithing, has sparked debates between preserving heritage and embracing modernity. For generations, these trades ____(71)____ economic stability and cultural pride. However, globalization and automation have rendered many obsolete. While some communities ____(72)____ to adapt, others cling to nostalgia, viewing these crafts as irreplaceable symbols of identity.  \n\nThe ____(73)____ of automation has undeniably boosted productivity, but critics argue it erodes human skill. Nostalgia preserves cultural identity, ____(74)____ technological advancement drives efficiency. This tension raises a vital question: Can societies honor the past while pursuing innovation? Experts increasingly ask ____(75)____ sustainable progress without preserving heritage.  \n\n",
+    "duration": 30,
+    "totalQuestions": 5,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) provided  ",
+          "B) have provided  ",
+          "C) were providing  ",
+          "D) provide  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) struggle  ",
+          "B) are struggling  ",
+          "C) have struggled  ",
+          "D) struggled  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) rise  ",
+          "B) rising  ",
+          "C) risen  ",
+          "D) riser  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) however  ",
+          "B) although  ",
+          "C) whereas  ",
+          "D) despite  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 5,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) whether is it possible  ",
+          "B) if it is possible  ",
+          "C) whether it is possible  ",
+          "D) is it possible  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "text_completion"
+  },
+  {
+    "id": "A-Level English No.111",
+    "title": "Paragraph Organization (111)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 111",
+    "subtitle": "\n\n A: Technology has revolutionized the way humans communicate, reshaping both personal interactions and global connectivity.\n B: For instance, the rise of video conferencing platforms and social media has enabled real-time conversations across continents, breaking down geographical barriers.\n C: As these innovations continue to evolve, they collectively underscore technology’s role in creating a more interconnected and accessible world.\n D: Furthermore, advancements in artificial intelligence, such as language translation algorithms, have fostered cross-cultural collaboration by minimizing language obstacles.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-D-C",
+          " A-B-C-D",
+          " A-D-B-C",
+          " A-D-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.109",
+    "title": "Paragraph Organization (109)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 109",
+    "subtitle": "\n\n A: Moreover, these breakthroughs often build on prior knowledge, such as how CRISPR’s development relied on decades of foundational studies in bacterial immune systems.\n B: Scientific advancements continuously reshape our understanding of the natural world, driven by curiosity and rigorous experimentation.\n C: Therefore, the iterative nature of scientific inquiry not only solves existing challenges but also unveils new frontiers for exploration and collaboration.\n D: For instance, the discovery of CRISPR-Cas9 revolutionized genetics by enabling precise gene editing, which has since accelerated medical research and agricultural innovation.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.87",
+    "title": "Paragraph Organization (87)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 87",
+    "subtitle": "\n\n A: For instance, countries like South Korea and China have deployed nationwide 5G networks, enhancing smart city initiatives and industrial automation through real-time data processing.\n B: Moreover, this rapid adoption has spurred advancements in telemedicine and autonomous vehicles, as low-latency networks ensure reliable remote surgeries and safer self-driving systems.\n C: The global rollout of 5G technology is revolutionizing communication infrastructures, enabling unprecedented data speeds and connectivity across industries.\n D: As a result, the widespread integration of 5G is not only bridging digital divides but also accelerating economic growth and technological innovation worldwide.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.100",
+    "title": "Paragraph Organization (100)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 100",
+    "subtitle": "\n\n A: Major cybersecurity incidents in recent years, such as the SolarWinds supply-chain breach and the Colonial Pipeline ransomware attack, have underscored systemic vulnerabilities in critical infrastructure and corporate networks.\n B: Both events revealed not only the sophistication of threat actors but also how interconnected systems can amplify risks, as weak points in one organization often cascaded into broader economic and societal impacts.\n C: The SolarWinds attack, discovered in late 2020, compromised sensitive government and private-sector data by infiltrating widely used software updates, while the 2021 Colonial Pipeline incident disrupted fuel supplies across the U.S. East Coast, exposing gaps in operational technology security.\n D: Consequently, these incidents have spurred urgent calls for enhanced public-private collaboration, stricter regulatory frameworks, and proactive investments in cyber-defense technologies to mitigate future threats.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-B-D",
+          " A-C-D-B",
+          " A-B-C-D",
+          " A-B-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.4",
+    "title": "Paragraph Organization (4)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 4",
+    "subtitle": "\n\n A: As these efforts converge, the progress suggests a transformative future where quantum computing could revolutionize industries from cryptography to drug discovery.\n B: For instance, IBM unveiled its 127-qubit quantum processor in 2021, while Google demonstrated quantum supremacy in 2019 by completing a task in 200 seconds that would take classical supercomputers millennia.\n C: These milestones have not only accelerated global research but also spurred collaborations, such as partnerships between tech firms and academic institutions, to address challenges like error correction and scalability.\n D: In recent years, quantum computing has achieved significant breakthroughs, with industry leaders like IBM and Google driving unprecedented advancements in the field.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-C-A",
+          " D-B-A-C",
+          " D-C-B-A",
+          " D-C-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  }
+]

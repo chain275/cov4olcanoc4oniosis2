@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCAS Prep - Multiple Exams</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="combined_exam.css">
+    <link rel="stylesheet" href="multiple_exams.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="../ad-banner.css">
+</head>
+<body class="combined-exam-page">
+    <!-- Menu overlay for mobile -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Header will be included here -->
+    <div data-include="header"></div>
+    
+<!-- Left Ad Banner Container -->
+<div class="ad-container left">
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="English Tutors">
+        <div class="ad-content">
+            <h4>Expert English Tutors</h4>
+            <p>One-on-one sessions with TCAS exam specialists</p>
+            <a href="tutors.html" class="ad-action">Find a Tutor</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Study Materials">
+        <div class="ad-content">
+            <h4>Premium Study Materials</h4>
+            <p>Access exclusive TCAS English practice resources</p>
+            <a href="materials.html" class="ad-action">Browse Now</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+    
+<!-- Right Ad Banner Container -->
+<div class="ad-container right">
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Online Workshops">
+        <div class="ad-content">
+            <h4>TCAS English Workshops</h4>
+            <p>Join our weekly online preparation classes</p>
+            <a href="workshops.html" class="ad-action">Register</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Premium Subscription">
+        <div class="ad-content">
+            <h4>Go Premium</h4>
+            <p>Unlock all practice exams and performance analytics</p>
+            <a href="premium.html" class="ad-action">Upgrade</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+    
+    <main>
+        <section id="exam-selection">
+            <div class="section-header">
+                <h2>Multiple Exams</h2>
+                <p class="section-description">Select and take multiple exams from our complete collection</p>
+            </div>
+            
+            <div class="exam-selector-container">
+                <div class="exam-filter">
+                    <h3>Filter Exams</h3>
+                    <div class="filter-options">
+                        <div class="filter-item">
+                            <label for="exam-type-filter">Question Type:</label>
+                            <select id="exam-type-filter">
+                                <option value="all">All Types</option>
+                                <option value="short_conversation">Short Conversation</option>
+                                <option value="long_conversation">Long Conversation</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="product">Product</option>
+                                <option value="news_report">News Report</option>
+                                <option value="article">Article</option>
+                                <option value="text_completion">Text Completion</option>
+                                <option value="paragraph">Paragraph</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label for="exam-difficulty-filter">Difficulty:</label>
+                            <select id="exam-difficulty-filter">
+                                <option value="all">All Levels</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <button id="apply-filters" class="btn">Apply Filters</button>
+                    </div>
+                </div>
+                <div id="available-exams" class="exam-list">
+                    <!-- Exams will be loaded here -->
+                    <div class="loading-indicator">Loading available exams...</div>
+                </div>
+            </div>
+            
+            <div class="selected-exams-container">
+                <h3>Selected Exams</h3>
+                <div id="selected-exams" class="selected-exams-list">
+                    <!-- No exams selected message -->
+                    <p id="no-exams-selected" class="no-exams-message">No exams selected. Choose exams from the list above.</p>
+                    <!-- Selected exams will appear here -->
+                </div>
+                <div class="exam-start-container">
+                    <div class="exam-details" id="combined-exam-details">
+                        <h3>Combined Exam Summary</h3>
+                        <div class="exam-metadata">
+                            <div class="metadata-item">
+                                <span class="metadata-label">Total Questions:</span>
+                                <span id="total-questions-count">0</span>
+                            </div>
+                            <div class="metadata-item">
+                                <span class="metadata-label">Estimated Time:</span>
+                                <span id="estimated-time">0 minutes</span>
+                            </div>
+                            <div class="metadata-item">
+                                <span class="metadata-label">Selected Exams:</span>
+                                <span id="selected-exams-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-button-container">
+                        <button id="start-combined-exam" class="btn accent" disabled>Start Combined Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="exam-info" class="hidden">
+            <div class="section-header">
+                <h2>Combined Exam</h2>
+                <p class="section-description" id="exam-info-description">Custom combined exam with your selected question types.</p>
+            </div>
+            
+            <div class="exam-start-container">
+                <div class="exam-details">
+                    <h3 id="exam-info-title">Custom Combined Practice</h3>
+                    <div class="exam-metadata">
+                        <div class="metadata-item">
+                            <span class="metadata-label">Total Questions:</span>
+                            <span id="info-total-questions">0</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="metadata-label">Estimated Time:</span>
+                            <span id="info-estimated-time">0 minutes</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="metadata-label">Question Types:</span>
+                            <span id="info-question-types">Multiple Categories</span>
+                        </div>
+                    </div>
+                    <p class="exam-description" id="exam-info-full-description">
+                        This custom exam combines questions from the exams you selected.
+                        Each question will be labeled with its category to help you track your performance across different skills.
+                    </p>
+                    <div class="distribution-container">
+                        <h4>Question Distribution:</h4>
+                        <div class="distribution-grid" id="distribution-grid">
+                            <!-- Distribution will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+                <div class="start-button-container">
+                    <button id="back-to-selection" class="btn secondary">Back to Selection</button>
+                    <button id="begin-exam" class="btn accent">Begin Exam</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="exam-content" class="hidden">
+            <div class="exam-header">
+                <button id="back-button" class="btn-icon" aria-label="Back to exam info">
+                    <i class="icon-back"></i>
+                </button>
+                <div class="exam-title-container">
+                    <h2 id="exam-title">Combined Exam</h2>
+                    <!-- Subtitle will be inserted here by JavaScript -->
+                </div>
+                <div class="exam-timer">
+                    <i class="icon-timer"></i>
+                    <span id="timer-display">00:00</span>
+                </div>
+            </div>
+            
+            <div class="progress-container">    
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    Question <span id="current-question">0</span> of <span id="total-questions-progress">0</span>
+                </div>
+            </div>
+            
+            <div id="exam-questions">
+                <!-- Questions will be loaded here -->
+            </div>
+            
+            <div class="exam-navigation">
+                <button id="prev-question" class="btn secondary">Previous</button>
+                <button id="submit-exam" class="btn accent">Submit Answers</button>
+                <button id="next-question" class="btn">Next</button>
+            </div>
+        </section>
+        
+        <section id="results" class="hidden">
+            <h2>Your Results</h2>
+            
+            <div class="result-summary">
+                <div class="score-circle">
+                    <svg viewBox="0 0 36 36" class="score-chart">
+                        <path class="score-circle-bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="score-circle-fill"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              id="score-path"/>
+                        <text x="18" y="18" class="score-text" id="score">0%</text>
+                        <text x="18" y="24" class="score-label-text">Score</text>
+                    </svg>
+                    <div class="score-label">Overall Performance</div>
+                </div>
+                
+                <div class="result-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Correct Answers:</span>
+                        <span id="correct-count">0</span>/<span id="total-questions">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Time Taken:</span>
+                        <span id="time-taken">00:00</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Performance:</span>
+                        <span id="performance-text">Needs Improvement</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-scores">
+                <h3>Skill Breakdown</h3>
+                <div class="skill-scores-container">
+                    <div class="skill-score-item">
+                        <div class="skill-score-circle reading">
+                            <svg viewBox="0 0 36 36" class="score-chart">
+                                <path class="score-circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="score-circle-fill"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      id="reading-score-path"/>
+                                <text x="18" y="19" class="score-text" id="reading-score">0%</text>
+                                <text x="18" y="25" class="score-label-text">Reading</text>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <span id="reading-correct">0</span>/<span id="reading-total">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-score-item">
+                        <div class="skill-score-circle writing">
+                            <svg viewBox="0 0 36 36" class="score-chart">
+                                <path class="score-circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="score-circle-fill"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      id="writing-score-path"/>
+                                <text x="18" y="19" class="score-text" id="writing-score">0%</text>
+                                <text x="18" y="25" class="score-label-text">Writing</text>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <span id="writing-correct">0</span>/<span id="writing-total">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-score-item">
+                        <div class="skill-score-circle speaking">
+                            <svg viewBox="0 0 36 36" class="score-chart">
+                                <path class="score-circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="score-circle-fill"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      id="speaking-score-path"/>
+                                <text x="18" y="19" class="score-text" id="speaking-score">0%</text>
+                                <text x="18" y="25" class="score-label-text">Speaking</text>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <span id="speaking-correct">0</span>/<span id="speaking-total">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-type-breakdown">
+                <h3 class="type-breakdown-title">Performance by Question Type</h3>
+                <div class="type-breakdown-list" id="type-breakdown-list">
+                    <!-- Type breakdown will be populated dynamically -->
+                </div>
+            </div>
+            
+            <div class="result-actions">
+                <button id="back-to-home" class="btn">Back to Home</button>
+                <button id="view-feedback" class="btn secondary">View Detailed Feedback</button>
+            </div>
+            
+            <div id="feedback" class="feedback-container hidden">
+                <h3>Detailed Feedback</h3>
+                <div class="feedback-list">
+                    <!-- Feedback items will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer will be included here -->
+    <div data-include="footer"></div>
+
+    <script src="include.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="scripts.js"></script>
+    <script src="progress.js"></script>
+    <script src="../ad-banner.js"></script>
+    <script src="multiple_exams.js"></script>
+</body>
+</html> 

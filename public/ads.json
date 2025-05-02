@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "position": "left",
+    "title": "TCAS Preparation Course",
+    "description": "Get ready for your TCAS exams with our intensive preparation course",
+    "imageUrl": "images/ads/course-ad.jpg",
+    "actionUrl": "https://example.com/tcas-prep-course",
+    "actionText": "Sign Up",
+    "target": "_blank",
+    "width": 160,
+    "height": 120,
+    "backgroundColor": "#f5f9ff",
+    "textColor": "#333333"
+  },
+  {
+    "id": 2,
+    "position": "right", 
+    "title": "English Vocabulary Guide",
+    "description": "Download our free comprehensive vocabulary guide for TCAS English",
+    "imageUrl": "images/ads/vocab-ad.jpg",
+    "actionUrl": "https://example.com/english-vocab-guide",
+    "actionText": "Download",
+    "target": "_self",
+    "width": 160,
+    "height": 100,
+    "backgroundColor": "#fff5f5",
+    "textColor": "#333333"
+  },
+  {
+    "id": 3,
+    "position": "left",
+    "title": "Online Tutoring",
+    "description": "Book a one-on-one tutoring session with our expert teachers",
+    "imageUrl": "images/ads/tutor-ad.jpg",
+    "actionUrl": "https://tutoring-service.example.com/book",
+    "actionText": "Book Now",
+    "width": 160,
+    "height": 140,
+    "backgroundColor": "#f2fcf5",
+    "textColor": "#333333"
+  },
+  {
+    "id": 4,
+    "position": "right",
+    "title": "Practice Test Bundle",
+    "description": "Get access to 50+ practice tests with detailed explanations",
+    "imageUrl": "images/ads/tests-ad.jpg",
+    "actionUrl": "https://example.com/practice-tests",
+    "actionText": "Get Access",
+    "width": 160,
+    "height": 130,
+    "backgroundColor": "#fcf8f2",
+    "textColor": "#333333"
+  }
+] 
