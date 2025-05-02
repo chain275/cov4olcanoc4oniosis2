@@ -97,9 +97,9 @@ function loadImagesFromSlideshow() {
     const imagePaths = [];
     
     // First add the images in the slideshow folder that match our pattern
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 3; i++) {
         imagePaths.push(`images/slideshow/hero-slide${i}.jpg`);
-        imagePaths.push(`images/slideshow/hero-slide${i}.png`);
+        //imagePaths.push(`images/slideshow/hero-slide${i}.png`);
     }
     
     // Then add any other jpg or png files that might be in the folder
