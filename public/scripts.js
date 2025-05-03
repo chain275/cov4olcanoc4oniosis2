@@ -535,6 +535,7 @@ function startTimer() {
         const subtitleElement = document.getElementById('exam-subtitle');
         if (subtitleElement) {
             // Add a small bounce effect
+            subtitleElement.style.transform = 'translateY(-2px)';
             
             // Reset after the animation
             setTimeout(() => {

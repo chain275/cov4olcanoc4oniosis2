@@ -1069,7 +1069,7 @@
           " Maybe another time  ",
           " Are you serious?  "
         ],
-        "correctAnswer": 0
+        "correctAnswer": 2
       },
       {
         "id": 4,
@@ -1593,70 +1593,6 @@
           " Ideally, one with huge windows  ",
           " However, I’ll stay in a tent  ",
           " On the other hand, hotels are safer  "
-        ],
-        "correctAnswer": 1
-      }
-    ],
-    "type": "short_conversation"
-  },
-  {
-    "id": "A-Level English No.26",
-    "title": "Speaking (26)",
-    "description": "A-Level อังกฤษพาร์ท Short Conversation 26",
-    "subtitle": "\n\nConversation 1: Planning a Family Reunion  \nContext: Two cousins, Sarah and Tom, discuss preparations for an annual family reunion.  \n\nSarah: Hi Tom! Aunt Lucy asked me to finalize the menu for the reunion. Do you remember if Uncle Joe still ____(1)____ ?  \n\nTom: Yeah, he’s strictly vegetarian now. But don’t worry, Grandma’s apple pie recipe is always a hit. Maybe we should ____(2)____  for dessert?  \n\nSarah: Good idea. Oh, and Mom mentioned setting up the old photo slideshow. Do you think people will actually sit through it this year?  \n\nTom: ____(3)____ . Some younger cousins might find it boring, but the elders love reminiscing.  \n\nSarah: True. Maybe we can shorten it and add a trivia game about family history afterward.  \n\nTom: Perfect compromise! That way, we ____(4)____  while keeping things fresh.  \n\n",
-    "duration": 30,
-    "totalQuestions": 4,
-    "questions": [
-      {
-        "id": 1,
-        "type": "speaking",
-        "text": "",
-        "prompt": "",
-        "options": [
-          " avoids meat entirely  ",
-          " sticks to greens only  ",
-          " eats no animal products  ",
-          " hates barbecue  "
-        ],
-        "correctAnswer": 0,
-        "image": ""
-      },
-      {
-        "id": 2,
-        "type": "speaking",
-        "text": "",
-        "prompt": "",
-        "options": [
-          " go with that  ",
-          " pass it over  ",
-          " hand it out  ",
-          " bring it off  "
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "id": 3,
-        "type": "speaking",
-        "text": "",
-        "prompt": "",
-        "options": [
-          " Definitely not; let’s scrap it  ",
-          " I’m not sure that’s the best approach  ",
-          " It’s bound to fail again  ",
-          " Why bother changing tradition?  "
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "id": 4,
-        "type": "speaking",
-        "text": "",
-        "prompt": "",
-        "options": [
-          " honor the past  ",
-          " meet halfway  ",
-          " start from scratch  ",
-          " repeat the same routine  "
         ],
         "correctAnswer": 1
       }
