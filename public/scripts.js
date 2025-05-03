@@ -531,17 +531,8 @@ function startTimer() {
         
         timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
         
-        // Make exam-subtitle move when timer changes
-        const subtitleElement = document.getElementById('exam-subtitle');
-        if (subtitleElement) {
-            // Add a small bounce effect
-            subtitleElement.style.transform = 'translateY(-2px)';
-            
-            // Reset after the animation
-            setTimeout(() => {
-                subtitleElement.style.transform = 'translateY(0)';
-            }, 300);
-        }
+        // Remove the subtitle animation when timer changes
+        // No longer making exam-subtitle move when timer changes
     }, 1000);
 }
 

@@ -938,6 +938,8 @@ footer {
     line-height: 1.5;
     font-weight: 400;
     display: block;
+    width: 100%;
+    text-align: left; /* Center the subtitle text */
 }
 
 #exam-subtitle span {
@@ -1038,32 +1040,34 @@ question_text > p {
 /* Exam header */
 .exam-header {
     display: flex;
+    flex-direction: column; /* Changed from flex to column layout */
     align-items: flex-start;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
+/* Exam title container */
 .exam-title-container {
-    flex: 1;
-    min-width: 0;
-    margin-right: 1rem;
-}
-
-.exam-header h2 {
+    display: flex;
+    flex-direction: column; /* Changed from row to column layout */
+    align-items: flex-start; /* Align items to the start of the container */
+    width: 100%;
     margin-bottom: 0.5rem;
 }
 
+/* Ensure the back button stays to the left */
 .btn-icon {
+    position: absolute; /* Position the back button absolutely */
+    left: 1.5rem; /* Position from the left */
+    top: 1.5rem; /* Position from the top */
     background: none;
     border: none;
     font-size: 1.5rem;
     color: var(--text-secondary);
     cursor: pointer;
-    margin-right: 1rem;
     padding: 0.5rem;
     transition: var(--transition);
     border-radius: 50%;
-    align-self: flex-start;
 }
 
 .btn-icon:hover {
@@ -1071,12 +1075,25 @@ question_text > p {
     color: var(--primary);
 }
 
+/* Ensure the exam title is centered */
+.exam-header h2 {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center; /* Center the title text */
+    margin-top: 1rem; /* Add some space at the top to account for the absolute positioned back button */
+}
+
 .exam-timer {
-    margin-left: auto;
+    align-self: flex-end; /* Position timer to the right */
     display: flex;
     align-items: center;
     color: var(--text-secondary);
     font-weight: 500;
+    margin-top: 0.5rem; /* Add space between timer and title */
+    margin-left: 0; /* Reset left margin */
+    padding: 5px 10px; /* Add padding around timer */
+    background-color: rgba(0, 0, 0, 0.03); /* Light background to make it stand out */
+    border-radius: 4px; /* Rounded corners */
 }
 
 .exam-timer i {
