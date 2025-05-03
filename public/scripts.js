@@ -396,7 +396,7 @@ function createQuestionElement(question, index) {
     
     // Get the current page to determine formatting
     const currentPage = window.location.pathname.split('/').pop();
-    const isConversationPage = currentPage === 'Short_conversation.html' || currentPage === 'Long_Conversation.html';
+    const isConversationPage = currentPage === 'Short_conversation.html' || currentPage === 'Long_conversation.html';
     
     // Use special formatting for conversation questions
     const formattedText = isConversationPage 
@@ -592,7 +592,7 @@ function formatWithLineBreaks(text) {
         }).join('');
         return formattedText;
     }
-    if (['Long_Conversation.html', 'Short_conversation.html', 'Paragraph.html',].includes(currentPage)) {
+    if (['Long_conversation.html', 'Short_conversation.html', 'Paragraph.html',].includes(currentPage)) {
     // Check if text contains "Name: Value" patterns (conversation format)
         const hasNameValuePairs = /([^<>:]+):\s*([^<>]+)(?:<br>|$)/.test(formattedText);
         
