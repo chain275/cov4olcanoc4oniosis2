@@ -188,8 +188,8 @@ async function fetchExamData() {
             jsonFile = '../src/Paragraph.json';
         } else if (currentPage === 'Short_conversation.html') {
             jsonFile = '../src/Short_conversation.json';
-        } else if (currentPage === 'Long_Conversation.html') {
-            jsonFile = '../src/Long_Conversation.json';
+        } else if (currentPage === 'Long_conversation.html') {
+            jsonFile = '../src/Long_conversation.json';
         } else if (currentPage === 'News_report.html') {
             jsonFile = '../src/News_report.json';
         } else if (currentPage === 'Advertisement.html') {
