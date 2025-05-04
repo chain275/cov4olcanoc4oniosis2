@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const backButton = document.getElementById('back-button');
     const backToHomeButton = document.getElementById('back-to-home');
     const timerDisplay = document.getElementById('timer-display');
+    // Add view-feedback button reference
+    let viewFeedbackBtn = document.getElementById('view-feedback');
     
     // Map of type names to their corresponding IDs in the results section
     const typeScoreMap = {
@@ -1120,6 +1122,41 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Dispatch event that exam was submitted
             document.dispatchEvent(new CustomEvent('examSubmitted', { detail: results }));
+            
+            // Set up feedback button directly after submission
+            setTimeout(function() {
+                console.log('Setting up feedback button after exam submission');
+                const viewFeedbackBtn = document.getElementById('view-feedback');
+                const feedbackContainer = document.getElementById('feedback');
+                
+                if (viewFeedbackBtn && feedbackContainer) {
+                    // Force styles to ensure visibility control
+                    feedbackContainer.style.display = 'none';
+                    
+                    // Remove existing click handlers
+                    viewFeedbackBtn.replaceWith(viewFeedbackBtn.cloneNode(true));
+                    
+                    // Get the fresh element
+                    const freshBtn = document.getElementById('view-feedback');
+                    
+                    // Add click handler
+                    freshBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        console.log('Feedback button clicked (post-submission)');
+                        if (feedbackContainer.style.display === 'none' || 
+                            feedbackContainer.style.display === '') {
+                            feedbackContainer.style.display = 'block';
+                            freshBtn.textContent = 'Hide Detailed Feedback';
+                        } else {
+                            feedbackContainer.style.display = 'none';
+                            freshBtn.textContent = 'View Detailed Feedback';
+                        }
+                    });
+                    
+                    console.log('Feedback button handler attached post-submission');
+                }
+            }, 500); // Short delay to ensure DOM is ready
         }
     }
     
@@ -1476,6 +1513,36 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add progress tracker link to the result actions
         addProgressTrackerLink();
+        
+        // Add detailed feedback for each question
+        addDetailedFeedback(results.answers);
+        
+        // Re-attach event listener for view-feedback button after results are displayed
+        // This ensures the button exists in the DOM when we try to attach the listener
+        viewFeedbackBtn = document.getElementById('view-feedback');
+        if (viewFeedbackBtn) {
+            console.log('Found view-feedback button, adding event listener');
+            // Remove any existing listeners to avoid duplicates
+            viewFeedbackBtn.removeEventListener('click', toggleFeedback);
+            // Add the click event listener
+            viewFeedbackBtn.addEventListener('click', toggleFeedback);
+            
+            // Add inline onclick handler as a fallback
+            viewFeedbackBtn.onclick = function() {
+                console.log('View feedback button clicked (inline handler)');
+                const feedbackContainer = document.getElementById('feedback');
+                if (feedbackContainer) {
+                    feedbackContainer.classList.toggle('hidden');
+                    this.textContent = feedbackContainer.classList.contains('hidden') ? 
+                        'View Detailed Feedback' : 'Hide Detailed Feedback';
+                } else {
+                    console.error('Feedback container not found');
+                }
+                return false; // Prevent default behavior
+            };
+        } else {
+            console.error('View feedback button not found');
+        }
     }
     
     // Add a link to the progress tracker in the results section
@@ -2417,5 +2484,149 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call this at the start to inject the styles
     document.addEventListener('DOMContentLoaded', function() {
         addNavigationStyles();
+    });
+
+    // Toggle feedback visibility function (using direct style manipulation for reliability)
+    function toggleFeedback() {
+        console.log('Toggle feedback function called');
+        const feedbackContainer = document.getElementById('feedback');
+        const viewFeedbackBtn = document.getElementById('view-feedback');
+        
+        if (!feedbackContainer) {
+            console.error('Feedback container not found in toggleFeedback function');
+            return;
+        }
+        
+        console.log('Feedback container found, current display:', feedbackContainer.style.display);
+        
+        // Check current display state - prioritize the style.display property
+        const isHidden = feedbackContainer.style.display === 'none' || 
+                        (feedbackContainer.style.display === '' && feedbackContainer.classList.contains('hidden'));
+        
+        // Toggle display state
+        if (isHidden) {
+            // Show the feedback container
+            feedbackContainer.style.display = 'block';
+            feedbackContainer.classList.remove('hidden');
+            if (viewFeedbackBtn) {
+                viewFeedbackBtn.textContent = 'Hide Detailed Feedback';
+            }
+            console.log('Showing feedback container');
+        } else {
+            // Hide the feedback container
+            feedbackContainer.style.display = 'none';
+            feedbackContainer.classList.add('hidden');
+            if (viewFeedbackBtn) {
+                viewFeedbackBtn.textContent = 'View Detailed Feedback';
+            }
+            console.log('Hiding feedback container');
+        }
+    }
+
+    // Add detailed feedback for each question
+    function addDetailedFeedback(questionResults) {
+        const feedbackList = document.querySelector('.feedback-list');
+        if (!feedbackList) {
+            console.error('Feedback list container not found');
+            return;
+        }
+        
+        console.log('Adding detailed feedback for', questionResults.length, 'questions');
+        
+        // Clear existing feedback
+        feedbackList.innerHTML = '';
+        
+        // Add feedback for each question
+        questionResults.forEach((result, index) => {
+            const question = window.currentExam.questions[index];
+            if (!question) return;
+            
+            const feedbackItem = document.createElement('div');
+            feedbackItem.className = `feedback-item ${result.isCorrect ? 'correct' : 'incorrect'}`;
+            
+            // Get the selected option text and correct option text
+            const options = question.options || [];
+            const userOptionText = result.selectedOption !== null && options[result.selectedOption] 
+                ? options[result.selectedOption] 
+                : 'Not answered';
+            
+            const correctOptionText = options[result.correctOption] || 'Unknown';
+            
+            feedbackItem.innerHTML = `
+                <div class="feedback-question">
+                    <span class="question-number">Question ${index + 1}:</span>
+                    <span class="question-type">${formatTypeName(question.type || 'unknown')}</span>
+                    ${question.text ? `<p class="question-text">${question.text}</p>` : ''}
+                </div>
+                <div class="feedback-answer">
+                    <div class="user-answer ${result.selectedOption !== null ? (result.isCorrect ? 'correct' : 'incorrect') : 'unanswered'}">
+                        <span class="answer-label">Your answer:</span>
+                        <span class="answer-text">${userOptionText}</span>
+                    </div>
+                    <div class="correct-answer">
+                        <span class="answer-label">Correct answer:</span>
+                        <span class="answer-text">${correctOptionText}</span>
+                    </div>
+                </div>
+            `;
+            
+            feedbackList.appendChild(feedbackItem);
+        });
+        
+        // Apply direct styles to the feedback container to ensure it's visible when needed
+        const feedbackContainer = document.getElementById('feedback');
+        if (feedbackContainer) {
+            feedbackContainer.style.transition = 'all 0.3s ease';
+            feedbackContainer.style.backgroundColor = '#f8fafc';
+            feedbackContainer.style.borderRadius = '10px';
+            feedbackContainer.style.padding = '20px';
+            feedbackContainer.style.marginTop = '30px';
+            feedbackContainer.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            
+            // Initially hidden
+            feedbackContainer.style.display = 'none';
+            feedbackContainer.classList.add('hidden');
+        }
+        
+        console.log('Detailed feedback added successfully');
+    }
+
+    // Check for DOM-ready state and add button listener
+    document.addEventListener('DOMContentLoaded', function() {
+        // Existing code...
+        
+        // Add a direct approach to handle the feedback button click
+        setTimeout(function() {
+            const viewFeedbackBtn = document.getElementById('view-feedback');
+            const feedbackContainer = document.getElementById('feedback');
+            
+            if (viewFeedbackBtn && feedbackContainer) {
+                console.log('Setting up global feedback button handler');
+                
+                // Direct approach using style property instead of classList
+                viewFeedbackBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    console.log('View feedback button clicked (direct handler)');
+                    
+                    // Use direct style manipulation
+                    if (feedbackContainer.style.display === 'none' || 
+                        feedbackContainer.style.display === '' && feedbackContainer.classList.contains('hidden')) {
+                        feedbackContainer.style.display = 'block';
+                        feedbackContainer.classList.remove('hidden');
+                        viewFeedbackBtn.textContent = 'Hide Detailed Feedback';
+                        console.log('Showing feedback container');
+                    } else {
+                        feedbackContainer.style.display = 'none';
+                        feedbackContainer.classList.add('hidden');
+                        viewFeedbackBtn.textContent = 'View Detailed Feedback';
+                        console.log('Hiding feedback container');
+                    }
+                    
+                    return false;
+                });
+            }
+        }, 1000); // Give time for the DOM to fully render
     });
 }); 

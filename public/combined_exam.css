@@ -247,4 +247,124 @@
     padding: 4px 8px;
     border-radius: 4px;
     display: inline-block;
+}
+
+/* Feedback Container Styles */
+.feedback-container {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feedback-container.hidden {
+    display: none;
+}
+
+.feedback-container h3 {
+    color: #1e40af;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ccc;
+}
+
+.feedback-item.correct {
+    border-left-color: #22c55e;
+}
+
+.feedback-item.incorrect {
+    border-left-color: #ef4444;
+}
+
+.feedback-question {
+    margin-bottom: 10px;
+}
+
+.question-number {
+    font-weight: 600;
+    color: #1e293b;
+    margin-right: 8px;
+}
+
+.question-type {
+    background-color: #e0e7ff;
+    color: #4338ca;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.question-text {
+    margin-top: 8px;
+    color: #334155;
+}
+
+.feedback-answer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+    background-color: #f8fafc;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.user-answer, .correct-answer {
+    display: flex;
+    align-items: baseline;
+}
+
+.answer-label {
+    min-width: 110px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.user-answer.correct .answer-text {
+    color: #16a34a;
+    font-weight: 500;
+}
+
+.user-answer.incorrect .answer-text {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+.user-answer.unanswered .answer-text {
+    color: #f59e0b;
+    font-style: italic;
+}
+
+.correct-answer .answer-text {
+    color: #16a34a;
+    font-weight: 500;
+}
+
+/* Make the feedback button more visible */
+#view-feedback {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#view-feedback:hover {
+    background-color: #dbeafe;
+    border-color: #93c5fd;
 } 
