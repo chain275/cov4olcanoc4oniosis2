@@ -61,12 +61,133 @@ let navigateToPrevQuestion = null;
 let navigateToNextQuestion = null;
 let exitExamHandler = null;
 
+// Responsive variables
+let windowWidth = window.innerWidth;
+let isMobile = window.innerWidth < 768;
+let isTablet = window.innerWidth >= 768 && window.innerWidth < 992;
+let isDesktop = window.innerWidth >= 992;
+let isMidDesktop = window.innerWidth >= 1200 && window.innerWidth < 1570;
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     setupMobileMenu();
     setupDropdownMenus();
     fetchExamData();
+    setupResponsiveListeners();
+    applyResponsiveLayout();
+    
+    // Create menu overlay if it doesn't exist
+    if (!menuOverlay) {
+        const overlay = document.createElement('div');
+        overlay.className = 'menu-overlay';
+        document.body.appendChild(overlay);
+    }
 });
+
+// Setup responsive event listeners
+function setupResponsiveListeners() {
+    window.addEventListener('resize', () => {
+        const newWidth = window.innerWidth;
+        
+        // Only trigger changes if we cross a breakpoint
+        if (
+            (windowWidth < 768 && newWidth >= 768) ||
+            (windowWidth >= 768 && windowWidth < 992 && (newWidth < 768 || newWidth >= 992)) ||
+            (windowWidth >= 992 && windowWidth < 1200 && (newWidth < 992 || newWidth >= 1200)) ||
+            (windowWidth >= 1200 && windowWidth < 1570 && (newWidth < 1200 || newWidth >= 1570)) ||
+            (windowWidth >= 1570 && newWidth < 1570)
+        ) {
+            windowWidth = newWidth;
+            isMobile = newWidth < 768;
+            isTablet = newWidth >= 768 && newWidth < 992;
+            isDesktop = newWidth >= 992;
+            isMidDesktop = newWidth >= 1200 && newWidth < 1570;
+            
+            applyResponsiveLayout();
+        }
+        
+        windowWidth = newWidth;
+    });
+}
+
+// Apply layout changes based on current viewport size
+function applyResponsiveLayout() {
+    // Reset mobile menu when resizing to desktop
+    if (isDesktop && navigation && navigation.classList.contains('active')) {
+        navigation.classList.remove('active');
+        if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    // Adjust exam layout if exam content is visible
+    if (examContentSection && !examContentSection.classList.contains('hidden')) {
+        adjustExamLayout();
+    }
+    
+    // Reset dropdown menus on resize
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (isDesktop) {
+            menu.style.display = '';
+        } else {
+            menu.style.display = 'none';
+            menu.classList.remove('active');
+        }
+    });
+}
+
+// Adjust exam layout based on screen size
+function adjustExamLayout() {
+    if (!examContentSection) return;
+    
+    if (isMobile) {
+        // Mobile layout adjustments
+        if (examTitle) {
+            examTitle.style.fontSize = '1.2rem';
+        }
+        
+        // Make timer more compact
+        if (timerDisplay) {
+            timerDisplay.style.fontSize = '0.85rem';
+        }
+        
+        // Adjust navigation buttons
+        document.querySelectorAll('.btn-icon').forEach(btn => {
+            btn.style.padding = '8px';
+            btn.style.fontSize = '0.85rem';
+        });
+    } else if (isMidDesktop) {
+        // Special handling for 1200px-1569px range
+        if (examTitle) {
+            examTitle.style.fontSize = '1.4rem';
+        }
+        
+        if (timerDisplay) {
+            timerDisplay.style.fontSize = '1rem';
+        }
+        
+        // Ensure the header has proper scrolling
+        const examHeader = document.querySelector('.exam-header');
+        if (examHeader) {
+            examHeader.style.overflowY = 'auto';
+            examHeader.style.height = 'calc(100vh - 120px)';
+        }
+    } else {
+        // Reset styles for larger screens
+        if (examTitle) {
+            examTitle.style.fontSize = '';
+        }
+        
+        if (timerDisplay) {
+            timerDisplay.style.fontSize = '';
+        }
+        
+        document.querySelectorAll('.btn-icon').forEach(btn => {
+            btn.style.padding = '';
+            btn.style.fontSize = '';
+        });
+    }
+}
 
 // Setup mobile menu functionality
 function setupMobileMenu() {
@@ -74,18 +195,39 @@ function setupMobileMenu() {
         mobileMenuToggle.addEventListener('click', () => {
             mobileMenuToggle.classList.toggle('active');
             navigation.classList.toggle('active');
+            
+            // Create overlay if it doesn't exist
+            if (!menuOverlay) {
+                const overlay = document.createElement('div');
+                overlay.className = 'menu-overlay';
+                document.body.appendChild(overlay);
+                menuOverlay = document.querySelector('.menu-overlay');
+                
+                // Add click event to the newly created overlay
+                menuOverlay.addEventListener('click', closeMenu);
+            }
+            
             menuOverlay.classList.toggle('active');
             
             // Prevent scrolling when menu is open
             document.body.style.overflow = navigation.classList.contains('active') ? 'hidden' : '';
         });
-        
-        menuOverlay.addEventListener('click', () => {
-            mobileMenuToggle.classList.remove('active');
-            navigation.classList.remove('active');
-            menuOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
+    }
+    
+    // Add close menu function for reuse
+    function closeMenu() {
+        if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
+        if (navigation) navigation.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    // Add closeMenu to window to make it accessible from other functions
+    window.closeMenu = closeMenu;
+    
+    // Setup the menu overlay if it exists
+    if (menuOverlay) {
+        menuOverlay.addEventListener('click', closeMenu);
     }
 }
 
@@ -345,6 +487,9 @@ function startExam(examId) {
     
     // Setup event listeners for navigation
     setupNavigationListeners();
+    
+    // Apply responsive layout adjustments
+    adjustExamLayout();
 }
 
 // Helper function specifically for formatting conversation questions
@@ -525,6 +670,9 @@ function updateQuestionNavigation() {
         nextQuestionBtn.classList.remove('hidden');
         submitExamBtn.classList.add('hidden');
     }
+    
+    // Apply responsive adjustments
+    adjustExamLayout();
 }
 
 // Set up navigation listeners

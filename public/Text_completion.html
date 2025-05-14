@@ -6,6 +6,7 @@
     <title>TCAS Prep - Text Completion</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="slideshow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -16,7 +17,7 @@
     <div class="menu-overlay"></div>
     
     <!-- Header will be included here -->
-    <div data-include="header"></div>
+    <div id="header-placeholder"></div>
     
 <!-- Left Ad Banner Container -->
 <div class="ad-container left">
@@ -99,9 +100,9 @@
         
         <section id="exam-content" class="hidden">
             <!-- Back button repositioned outside the header -->
-            <button id="back-button" class="btn-icon" aria-label="Back to exam list">
-                <i class="icon-back"></i>
-            </button>
+                <button id="back-button" class="btn-icon" aria-label="Back to exam list">
+                    <i class="icon-back"></i>
+                </button>
             
             <div class="exam-header">
                 <div class="exam-title-container">
@@ -114,25 +115,25 @@
                 <div class="exam-timer">
                     <i class="icon-timer"></i>
                     <span id="timer-display">00:00</span>
-                </div>
-                
-                <div class="progress-container">
+            </div>
+            
+            <div class="progress-container">    
                     <div class="hidden">
-                        <div class="progress-fill" id="progress-fill"></div>
-                    </div>
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
                     <div class="progress-text" style="display: none;">
                         Question <span id="current-question">0</span>
-                    </div>
                 </div>
-
-                <div id="exam-questions">
-                    <!-- Questions will be loaded here -->
-                </div>
-                
-                <div class="exam-navigation">
-                    <button id="prev-question" class="btn secondary">Previous</button>
-                    <button id="submit-exam" class="btn accent">Submit Answers</button>
-                    <button id="next-question" class="btn">Next</button>
+            </div>
+            
+            <div id="exam-questions">
+                <!-- Questions will be loaded here -->
+            </div>
+            
+            <div class="exam-navigation">
+                <button id="prev-question" class="btn secondary">Previous</button>
+                <button id="submit-exam" class="btn accent">Submit Answers</button>
+                <button id="next-question" class="btn">Next</button>
                 </div>
 
                 <!-- New Question Progress and Navigator -->
@@ -295,7 +296,7 @@
     </main>
     
     <!-- Footer will be included here -->
-    <div data-include="footer"></div>
+    <div id="footer-placeholder"></div>
 
     <script src="include.js"></script>
     <script src="slideshow.js"></script>

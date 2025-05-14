@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
@@ -363,56 +364,56 @@
     </style>
 </head>
 <body>
-    <!-- Menu overlay for mobile -->
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Mobile Menu Overlay -->
     <div class="menu-overlay"></div>
     
-    <!-- Header will be included here -->
-    <div data-include="header"></div>
-    
-<!-- Left Ad Banner Container -->
-<div class="ad-container left">
-    <div class="ad-banner">
-        <img src="../src/images/grammar_exercise.jpg" alt="English Tutors">
-        <div class="ad-content">
-            <h4>Expert English Tutors</h4>
-            <p>One-on-one sessions with TCAS exam specialists</p>
-            <a href="tutors.html" class="ad-action">Find a Tutor</a>
+    <!-- Left Ad Banner Container -->
+    <div class="ad-container left">
+        <div class="ad-banner">
+            <img src="../src/images/grammar_exercise.jpg" alt="English Tutors">
+            <div class="ad-content">
+                <h4>Expert English Tutors</h4>
+                <p>One-on-one sessions with TCAS exam specialists</p>
+                <a href="tutors.html" class="ad-action">Find a Tutor</a>
+            </div>
+            <button class="ad-close"><i class="fas fa-times"></i></button>
         </div>
-        <button class="ad-close"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="ad-banner">
-        <img src="../src/images/grammar_exercise.jpg" alt="Study Materials">
-        <div class="ad-content">
-            <h4>Premium Study Materials</h4>
-            <p>Access exclusive TCAS English practice resources</p>
-            <a href="materials.html" class="ad-action">Browse Now</a>
+        <div class="ad-banner">
+            <img src="../src/images/grammar_exercise.jpg" alt="Study Materials">
+            <div class="ad-content">
+                <h4>Premium Study Materials</h4>
+                <p>Access exclusive TCAS English practice resources</p>
+                <a href="materials.html" class="ad-action">Browse Now</a>
+            </div>
+            <button class="ad-close"><i class="fas fa-times"></i></button>
         </div>
-        <button class="ad-close"><i class="fas fa-times"></i></button>
     </div>
-</div>
 
     
-<!-- Right Ad Banner Container -->
-<div class="ad-container right">
-    <div class="ad-banner">
-        <img src="../src/images/grammar_exercise.jpg" alt="Online Workshops">
-        <div class="ad-content">
-            <h4>TCAS English Workshops</h4>
-            <p>Join our weekly online preparation classes</p>
-            <a href="workshops.html" class="ad-action">Register</a>
+    <!-- Right Ad Banner Container -->
+    <div class="ad-container right">
+        <div class="ad-banner">
+            <img src="../src/images/grammar_exercise.jpg" alt="Online Workshops">
+            <div class="ad-content">
+                <h4>TCAS English Workshops</h4>
+                <p>Join our weekly online preparation classes</p>
+                <a href="workshops.html" class="ad-action">Register</a>
+            </div>
+            <button class="ad-close"><i class="fas fa-times"></i></button>
         </div>
-        <button class="ad-close"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="ad-banner">
-        <img src="../src/images/grammar_exercise.jpg" alt="Premium Subscription">
-        <div class="ad-content">
-            <h4>Go Premium</h4>
-            <p>Unlock all practice exams and performance analytics</p>
-            <a href="premium.html" class="ad-action">Upgrade</a>
+        <div class="ad-banner">
+            <img src="../src/images/grammar_exercise.jpg" alt="Premium Subscription">
+            <div class="ad-content">
+                <h4>Go Premium</h4>
+                <p>Unlock all practice exams and performance analytics</p>
+                <a href="premium.html" class="ad-action">Upgrade</a>
+            </div>
+            <button class="ad-close"><i class="fas fa-times"></i></button>
         </div>
-        <button class="ad-close"><i class="fas fa-times"></i></button>
     </div>
-</div>
 
     
     <main>
@@ -690,12 +691,16 @@
         </section>
     </main>
     
-    <!-- Footer will be included here -->
-    <div data-include="footer"></div>
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
     
+    <!-- Scripts -->
+    <script src="include.js"></script>
     <script src="scripts.js"></script>
     <script src="slideshow.js"></script>
-    <script src="../ad-banner.js"></script>
-    <script src="include.js"></script>
+    
+    <script>
+        // ... existing code ...
+    </script>
 </body>
 </html> 

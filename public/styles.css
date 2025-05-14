@@ -423,6 +423,17 @@ main:has(#exam-content:not(.hidden)) {
     }
 }
 
+/* Even larger screens get optimal sizing */
+@media (min-width: 1570px) {
+    #exam-content:not(.hidden) .exam-header {
+        width: 50%;
+    }
+    
+    #exam-content:not(.hidden) .exam-questions-container {
+        width: calc(50% - 30px);
+    }
+}
+
 section {
     background-color: var(--bg-white);
     border-radius: var(--border-radius);
@@ -1095,18 +1106,31 @@ question_text > p {
 
 /* Exam header */
 .exam-header {
+    width: 50%;
     display: flex;
-    flex-direction: column; /* Changed from flex to column layout */
+    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: calc(100vh - 100px);
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-light);
 }
 
 /* Exam title container */
 .exam-title-container {
     display: flex;
-    flex-direction: column; /* Changed from row to column layout */
-    align-items: flex-start; /* Align items to the start of the container */
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
     margin-bottom: 0.5rem;
 }
@@ -3275,7 +3299,7 @@ small {
 
 /* Left column for exam header with independent scrolling */
 .exam-header {
-    width: 25%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -3324,7 +3348,7 @@ small {
 
 /* Right column for exam questions */
 .exam-questions-container {
-    width: calc(75% - 30px);
+    width: calc(50% - 30px);
     display: flex;
     flex-direction: column;
     background-color: var(--bg-white);
@@ -3741,7 +3765,7 @@ section#exam-content:not(.hidden) + section#results {
 
 /* Ensure questions container layout is proper */
 .exam-questions-container {
-    width: calc(75% - 30px);
+    width: calc(50% - 30px);
     display: flex;
     flex-direction: column;
     background-color: var(--bg-white);
