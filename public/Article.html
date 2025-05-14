@@ -97,37 +97,86 @@
         </section>
         
         <section id="exam-content" class="hidden">
+            <!-- Back button repositioned outside the header -->
+            <button id="back-button" class="btn-icon" aria-label="Back to exam list">
+                <i class="icon-back"></i>
+            </button>
+            
             <div class="exam-header">
-                <button id="back-button" class="btn-icon" aria-label="Back to exam list">
-                    <i class="icon-back"></i>
-                </button>
                 <div class="exam-title-container">
                     <h2 id="exam-title">Exam Title</h2>
                     <!-- Subtitle will be inserted here by JavaScript -->
                 </div>
+                
+                
+
+            </div>
+            
+            <div class="exam-questions-container">
                 <div class="exam-timer">
                     <i class="icon-timer"></i>
                     <span id="timer-display">00:00</span>
                 </div>
-            </div>
-            
-            <div class="progress-container">    
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
+                
+                <div class="progress-container">
+                    <div class="hidden" >
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-text" style="display: none;">
+                        Question <span id="current-question">0</span>
+                    </div>
                 </div>
-                <div class="progress-text">
-                    Question <span id="current-question">0</span> of <span id="total-questions-progress">0</span>
+
+                <div id="exam-questions">
+                    <!-- Questions will be loaded here -->
                 </div>
-            </div>
-            
-            <div id="exam-questions">
-                <!-- Questions will be loaded here -->
-            </div>
-            
-            <div class="exam-navigation">
-                <button id="prev-question" class="btn secondary">Previous</button>
-                <button id="submit-exam" class="btn accent">Submit Answers</button>
-                <button id="next-question" class="btn">Next</button>
+                
+                <div class="exam-navigation">
+                    <button id="prev-question" class="btn secondary">Previous</button>
+                    <button id="submit-exam" class="btn accent">Submit Answers</button>
+                    <button id="next-question" class="btn">Next</button>
+                </div>
+
+                <!-- New Question Progress and Navigator (moved from exam-header) -->
+                <div class="question-progress-wrapper">
+                    <h3>Your Progress</h3>
+                    
+                    <!-- Visual progress indicator -->
+                    <div class="visual-progress">
+                        <div class="progress-indicator">
+                            <div class="progress-indicator-fill" id="visual-progress-fill"></div>
+                        </div>
+                        <div class="progress-stats">
+                            <span id="answered-count">0</span>
+                            <span id="total-question-count">0</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Question navigator -->
+                    <h3>Question Navigator</h3>
+                    <div class="question-navigator" id="question-navigator">
+                        <!-- Question buttons will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <!-- Legend -->
+                    <div class="question-legend">
+                        <div class="legend-item">
+                            <div class="legend-color legend-current"></div>
+                            <span>Current</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color legend-answered"></div>
+                            <span>Answered</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color legend-unanswered"></div>
+                            <span>Unanswered</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
             </div>
         </section>
         

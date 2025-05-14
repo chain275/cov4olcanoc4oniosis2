@@ -10,7 +10,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?**  ",
+        "text": " What is the central theme of the article?**  ",
         "prompt": "",
         "options": [
           "A) The dangers of unregulated biohacking experiments  ",
@@ -24,7 +24,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the article, the phrase \"roadmap to a longer, healthier life\" (paragraph 1) suggests biohacking is:**  ",
+        "text": " In the article, the phrase \"roadmap to a longer, healthier life\" (paragraph 1) suggests biohacking is:**  ",
         "prompt": "",
         "options": [
           "A) A literal map for traveling to health destinations  ",
@@ -37,7 +37,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: What does the pronoun \"these processes\" refer to in the sentence: \"Biohacking targets these processes by intervening at the molecular level\" (Section 1)?**  ",
+        "text": " What does the pronoun \"these processes\" refer to in the sentence: \"Biohacking targets these processes by intervening at the molecular level\" (Section 1)?**  ",
         "prompt": "",
         "options": [
           "A) Diets like keto and intermittent fasting  ",
@@ -50,7 +50,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, which method is specifically linked to triggering autophagy?**  ",
+        "text": " According to the article, which method is specifically linked to triggering autophagy?**  ",
         "prompt": "",
         "options": [
           "A) Ketogenic diet  ",
@@ -63,7 +63,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author’s tone toward biohacking?**  ",
+        "text": " How would you describe the author’s tone toward biohacking?**  ",
         "prompt": "",
         "options": [
           "A) Skeptical and dismissive  ",
@@ -76,7 +76,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which of the following is *not* explicitly stated as a biohacking strategy in the article?**  ",
+        "text": " Which of the following is *not* explicitly stated as a biohacking strategy in the article?**  ",
         "prompt": "",
         "options": [
           "A) Using Oura Rings to track sleep  ",
@@ -89,7 +89,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?**  ",
+        "text": " How is the article structured?**  ",
         "prompt": "",
         "options": [
           "A) Chronological order of biohacking’s development  ",
@@ -102,7 +102,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What is implied about the future of biohacking in the conclusion?**  ",
+        "text": " What is implied about the future of biohacking in the conclusion?**  ",
         "prompt": "",
         "options": [
           "A) It will replace traditional medicine entirely  ",
@@ -126,7 +126,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) Digital nomadism has only negative effects on local economies.  ",
@@ -140,7 +140,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the conclusion, the author describes digital nomadism as a \"double-edged sword.\" What does this phrase imply?  ",
+        "text": " In the conclusion, the author describes digital nomadism as a \"double-edged sword.\" What does this phrase imply?  ",
         "prompt": "",
         "options": [
           "A) It is a dangerous trend that should be banned.  ",
@@ -153,7 +153,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, \"Such policies aim to ensure nomads contribute fairly...\" (Taxation section), what does \"such policies\" refer to?  ",
+        "text": " In the sentence, \"Such policies aim to ensure nomads contribute fairly...\" (Taxation section), what does \"such policies\" refer to?  ",
         "prompt": "",
         "options": [
           "A) Digital nomad visas with fees or income requirements  ",
@@ -166,7 +166,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: Which locations are mentioned as facing housing shortages or rising rents due to digital nomads?  ",
+        "text": " Which locations are mentioned as facing housing shortages or rising rents due to digital nomads?  ",
         "prompt": "",
         "options": [
           "A) Estonia and Costa Rica  ",
@@ -179,7 +179,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What best describes the author’s tone in the article?  ",
+        "text": " What best describes the author’s tone in the article?  ",
         "prompt": "",
         "options": [
           "A) Optimistic about nomadism’s unchecked growth  ",
@@ -192,7 +192,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: According to the article, which strategy is suggested to ensure digital nomads contribute economically to host countries?  ",
+        "text": " According to the article, which strategy is suggested to ensure digital nomads contribute economically to host countries?  ",
         "prompt": "",
         "options": [
           "A) Banning short-term rentals  ",
@@ -205,7 +205,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological order of the nomadism trend  ",
@@ -218,7 +218,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: The author implies that sustainable digital nomadism requires:  ",
+        "text": " The author implies that sustainable digital nomadism requires:  ",
         "prompt": "",
         "options": [
           "A) Collaboration between nomads and locals for mutual benefit  ",
@@ -242,7 +242,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The Amazon is a pristine wilderness with no human history.  ",
@@ -256,7 +256,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the article, the phrase \"myth of an untamed jungle\" suggests that the Amazon:  ",
+        "text": " In the article, the phrase \"myth of an untamed jungle\" suggests that the Amazon:  ",
         "prompt": "",
         "options": [
           "A) Was completely wild and uninhabited  ",
@@ -269,7 +269,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, \"They constructed massive earthworks...\", who does \"they\" refer to?  ",
+        "text": " In the sentence, \"They constructed massive earthworks...\", who does \"they\" refer to?  ",
         "prompt": "",
         "options": [
           "A) European explorers  ",
@@ -282,7 +282,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, which factor is suggested as a reason for the decline of Amazonian civilizations?  ",
+        "text": " According to the article, which factor is suggested as a reason for the decline of Amazonian civilizations?  ",
         "prompt": "",
         "options": [
           "A) Invasion by Mesoamerican societies  ",
@@ -295,7 +295,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author's tone when discussing the ancient Amazonian societies?  ",
+        "text": " How would you describe the author's tone when discussing the ancient Amazonian societies?  ",
         "prompt": "",
         "options": [
           "A) Skeptical and dismissive  ",
@@ -308,7 +308,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which technology was crucial in revealing the hidden structures beneath the Amazon canopy?  ",
+        "text": " Which technology was crucial in revealing the hidden structures beneath the Amazon canopy?  ",
         "prompt": "",
         "options": [
           "A) Satellite photography  ",
@@ -321,7 +321,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article primarily organized?  ",
+        "text": " How is the article primarily organized?  ",
         "prompt": "",
         "options": [
           "A) Chronologically from pre-Columbian times to the present  ",
@@ -334,7 +334,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about Indigenous knowledge in the modern world?  ",
+        "text": " What does the author imply about Indigenous knowledge in the modern world?  ",
         "prompt": "",
         "options": [
           "A) It is outdated and irrelevant  ",
@@ -358,7 +358,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The benefits of plastic in modern society  ",
@@ -372,7 +372,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, \"Their discovery demands rigorous research to unravel health risks,\" what does \"their\" refer to?  ",
+        "text": " In the sentence, \"Their discovery demands rigorous research to unravel health risks,\" what does \"their\" refer to?  ",
         "prompt": "",
         "options": [
           "A) Scientists  ",
@@ -385,7 +385,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: What does the phrase \"tipping point\" (Conclusion section) imply in context?  ",
+        "text": " What does the phrase \"tipping point\" (Conclusion section) imply in context?  ",
         "prompt": "",
         "options": [
           "A) A moment when plastic production becomes profitable  ",
@@ -398,7 +398,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, which statement is a *fact* rather than an inference?  ",
+        "text": " According to the article, which statement is a *fact* rather than an inference?  ",
         "prompt": "",
         "options": [
           "A) Microplastics directly cause cardiovascular disease.  ",
@@ -411,7 +411,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What is the author’s tone in discussing microplastic contamination?  ",
+        "text": " What is the author’s tone in discussing microplastic contamination?  ",
         "prompt": "",
         "options": [
           "A) Neutral and indifferent  ",
@@ -424,7 +424,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which strategy does the author *criticize* as insufficient?  ",
+        "text": " Which strategy does the author *criticize* as insufficient?  ",
         "prompt": "",
         "options": [
           "A) Banning single-use plastics  ",
@@ -437,7 +437,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of plastic use  ",
@@ -450,7 +450,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What is the implied message of the line, \"plastic pollution isn’t just out there—it’s in us\"?  ",
+        "text": " What is the implied message of the line, \"plastic pollution isn’t just out there—it’s in us\"?  ",
         "prompt": "",
         "options": [
           "A) Plastic is essential for human survival.  ",
@@ -474,7 +474,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The history of brain-machine interface development  ",
@@ -488,7 +488,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, *\"Musk argues that BMIs could prevent humans from becoming 'house cats' to superintelligent machines,\"* what does the idiom \"house cats\" imply?  ",
+        "text": " In the sentence, *\"Musk argues that BMIs could prevent humans from becoming 'house cats' to superintelligent machines,\"* what does the idiom \"house cats\" imply?  ",
         "prompt": "",
         "options": [
           "A) Humans becoming physically weaker  ",
@@ -501,7 +501,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, *\"These threads connect to the N1 chip...\"*, what does \"these threads\" refer to?  ",
+        "text": " In the sentence, *\"These threads connect to the N1 chip...\"*, what does \"these threads\" refer to?  ",
         "prompt": "",
         "options": [
           "A) Wires used in traditional BCIs  ",
@@ -514,7 +514,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, what is Neuralink’s **immediate focus**?  ",
+        "text": " According to the article, what is Neuralink’s **immediate focus**?  ",
         "prompt": "",
         "options": [
           "A) Enhancing human intelligence  ",
@@ -527,7 +527,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: Which best describes the author’s tone toward Neuralink’s technology?  ",
+        "text": " Which best describes the author’s tone toward Neuralink’s technology?  ",
         "prompt": "",
         "options": [
           "A) Uncritically enthusiastic  ",
@@ -540,7 +540,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: The author states that Neuralink’s trials \"mark progress, but scalability and affordability remain unanswered questions.\" What strategy does this statement use?  ",
+        "text": " The author states that Neuralink’s trials \"mark progress, but scalability and affordability remain unanswered questions.\" What strategy does this statement use?  ",
         "prompt": "",
         "options": [
           "A) Dismissing ethical concerns  ",
@@ -553,7 +553,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article **structured**?  ",
+        "text": " How is the article **structured**?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of Neuralink’s development  ",
@@ -566,7 +566,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: The author implies that widespread BMI adoption could lead to:  ",
+        "text": " The author implies that widespread BMI adoption could lead to:  ",
         "prompt": "",
         "options": [
           "A) The elimination of all neurological disorders  ",
@@ -590,7 +590,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) Reducing carbon emissions to reverse climate change  ",
@@ -604,7 +604,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the context of the article, what does the term \"sponge cities\" mean?  ",
+        "text": " In the context of the article, what does the term \"sponge cities\" mean?  ",
         "prompt": "",
         "options": [
           "A) Cities that absorb and reuse wastewater  ",
@@ -617,7 +617,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: The sentence *\"These innovations highlight a shift from resisting nature to coexisting with it\"* refers to:  ",
+        "text": " The sentence *\"These innovations highlight a shift from resisting nature to coexisting with it\"* refers to:  ",
         "prompt": "",
         "options": [
           "A) The use of advanced materials in construction  ",
@@ -630,7 +630,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, what is the estimated annual cost of adaptation by 2030?  ",
+        "text": " According to the article, what is the estimated annual cost of adaptation by 2030?  ",
         "prompt": "",
         "options": [
           "A) $50–100 billion  ",
@@ -643,7 +643,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: The author’s tone in the article can best be described as:  ",
+        "text": " The author’s tone in the article can best be described as:  ",
         "prompt": "",
         "options": [
           "A) Pessimistic and dismissive  ",
@@ -656,7 +656,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which strategy is mentioned as a way the private sector is addressing climate adaptation?  ",
+        "text": " Which strategy is mentioned as a way the private sector is addressing climate adaptation?  ",
         "prompt": "",
         "options": [
           "A) Funding space exploration to relocate populations  ",
@@ -669,7 +669,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of climate change impacts  ",
@@ -682,7 +682,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: The author implies that successful adaptation primarily depends on:  ",
+        "text": " The author implies that successful adaptation primarily depends on:  ",
         "prompt": "",
         "options": [
           "A) Prioritizing technological solutions over community input  ",
@@ -706,7 +706,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The dangers of psychedelic substances in modern therapy  ",
@@ -720,7 +720,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the phrase \"emerged from the shadows of stigma\" (paragraph 1), what does \"emerged from the shadows\" imply?  ",
+        "text": " In the phrase \"emerged from the shadows of stigma\" (paragraph 1), what does \"emerged from the shadows\" imply?  ",
         "prompt": "",
         "options": [
           "A) Psychedelics became illegal  ",
@@ -733,7 +733,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In paragraph 2, the sentence \"However, the 20th century saw these substances criminalized...\" refers to \"these substances.\" What do \"these substances\" specifically mean?  ",
+        "text": " In paragraph 2, the sentence \"However, the 20th century saw these substances criminalized...\" refers to \"these substances.\" What do \"these substances\" specifically mean?  ",
         "prompt": "",
         "options": [
           "A) Antidepressants and talk therapy  ",
@@ -746,7 +746,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, what is a key reason for the renewed interest in psychedelic therapy?  ",
+        "text": " According to the article, what is a key reason for the renewed interest in psychedelic therapy?  ",
         "prompt": "",
         "options": [
           "A) The discovery of new psychedelic compounds  ",
@@ -759,7 +759,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: Which best describes the author’s tone in the article?  ",
+        "text": " Which best describes the author’s tone in the article?  ",
         "prompt": "",
         "options": [
           "A) Skeptical and dismissive  ",
@@ -772,7 +772,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: The article states that media coverage has played a \"dual role.\" What does this mean?  ",
+        "text": " The article states that media coverage has played a \"dual role.\" What does this mean?  ",
         "prompt": "",
         "options": [
           "A) Media both supports and criticizes all drug use  ",
@@ -785,7 +785,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) A comparison of ancient and modern psychedelic use  ",
@@ -798,7 +798,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about the future of psychedelic therapy?  ",
+        "text": " What does the author imply about the future of psychedelic therapy?  ",
         "prompt": "",
         "options": [
           "A) It will replace all existing mental health treatments  ",
@@ -822,7 +822,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?**  ",
+        "text": " What is the central theme of the article?**  ",
         "prompt": "",
         "options": [
           "A) The history of quantum computing development  ",
@@ -836,7 +836,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the phrase “harvest now, decrypt later” attacks, what does “harvest” most likely mean?**  ",
+        "text": " In the phrase “harvest now, decrypt later” attacks, what does “harvest” most likely mean?**  ",
         "prompt": "",
         "options": [
           "A) Planting data for future use  ",
@@ -849,7 +849,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: What does “these methods” refer to in the sentence: “These methods have safeguarded digital infrastructure for decades”?**  ",
+        "text": " What does “these methods” refer to in the sentence: “These methods have safeguarded digital infrastructure for decades”?**  ",
         "prompt": "",
         "options": [
           "A) Shor’s and Grover’s algorithms  ",
@@ -862,7 +862,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, which cryptographic systems are directly threatened by Shor’s algorithm?**  ",
+        "text": " According to the article, which cryptographic systems are directly threatened by Shor’s algorithm?**  ",
         "prompt": "",
         "options": [
           "A) AES and symmetric-key algorithms  ",
@@ -875,7 +875,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author’s tone regarding the quantum threat to cryptography?**  ",
+        "text": " How would you describe the author’s tone regarding the quantum threat to cryptography?**  ",
         "prompt": "",
         "options": [
           "A) Optimistic and dismissive  ",
@@ -888,7 +888,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: What is a key strategy mentioned to counter quantum threats?**  ",
+        "text": " What is a key strategy mentioned to counter quantum threats?**  ",
         "prompt": "",
         "options": [
           "A) Increasing the use of RSA encryption  ",
@@ -901,7 +901,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?**  ",
+        "text": " How is the article structured?**  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of quantum computing milestones  ",
@@ -914,7 +914,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about the timeline for quantum threats?**  ",
+        "text": " What does the author imply about the timeline for quantum threats?**  ",
         "prompt": "",
         "options": [
           "A) CRQCs are already widely available  ",
@@ -938,7 +938,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The inevitability of creating a real-life *Jurassic Park* with dinosaurs.  ",
@@ -952,7 +952,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the article, what does the term \"moral hazard\" imply in the context of de-extinction?  ",
+        "text": " In the article, what does the term \"moral hazard\" imply in the context of de-extinction?  ",
         "prompt": "",
         "options": [
           "A) The risk of resurrecting dangerous predators like *T. rex*.  ",
@@ -965,7 +965,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, “While these methods won’t recreate a *T. rex*, they could offer insights into dinosaur biology,” what does “they” refer to?  ",
+        "text": " In the sentence, “While these methods won’t recreate a *T. rex*, they could offer insights into dinosaur biology,” what does “they” refer to?  ",
         "prompt": "",
         "options": [
           "A) Paleogeneticists  ",
@@ -978,7 +978,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: Which of the following is a factual claim stated in the article?  ",
+        "text": " Which of the following is a factual claim stated in the article?  ",
         "prompt": "",
         "options": [
           "A) Dinosaurs will be reintroduced into modern ecosystems by 2030.  ",
@@ -991,7 +991,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What best describes the author’s tone and rhetorical style?  ",
+        "text": " What best describes the author’s tone and rhetorical style?  ",
         "prompt": "",
         "options": [
           "A) Enthusiastic advocacy for unrestricted de-extinction.  ",
@@ -1004,7 +1004,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: According to the article, what is a key strategy of current de-extinction projects like Revive & Restore?  ",
+        "text": " According to the article, what is a key strategy of current de-extinction projects like Revive & Restore?  ",
         "prompt": "",
         "options": [
           "A) Prioritizing dinosaurs over recently extinct species.  ",
@@ -1017,7 +1017,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) A chronological history of de-extinction technology.  ",
@@ -1030,7 +1030,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about de-extinction’s relationship to conservation?  ",
+        "text": " What does the author imply about de-extinction’s relationship to conservation?  ",
         "prompt": "",
         "options": [
           "A) It should replace traditional conservation entirely.  ",
@@ -1054,7 +1054,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The economic benefits of ecotourism in rewilded areas  ",
@@ -1068,7 +1068,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the article, the phrase \"trophic cascade\" (paragraph 3) most likely refers to:  ",
+        "text": " In the article, the phrase \"trophic cascade\" (paragraph 3) most likely refers to:  ",
         "prompt": "",
         "options": [
           "A) A sudden collapse of an ecosystem’s food chain  ",
@@ -1081,7 +1081,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In paragraph 3, the pronoun \"their\" in the sentence \"Their return triggered a trophic cascade\" refers to:  ",
+        "text": " In paragraph 3, the pronoun \"their\" in the sentence \"Their return triggered a trophic cascade\" refers to:  ",
         "prompt": "",
         "options": [
           "A) Elk  ",
@@ -1094,7 +1094,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, which challenge does rewilding face?  ",
+        "text": " According to the article, which challenge does rewilding face?  ",
         "prompt": "",
         "options": [
           "A) Overpopulation of keystone species in cities  ",
@@ -1107,7 +1107,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: Which best describes the author’s tone in the article?  ",
+        "text": " Which best describes the author’s tone in the article?  ",
         "prompt": "",
         "options": [
           "A) Neutral and detached  ",
@@ -1120,7 +1120,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: How does rewilding differ from traditional conservation, as described in the article?  ",
+        "text": " How does rewilding differ from traditional conservation, as described in the article?  ",
         "prompt": "",
         "options": [
           "A) Rewilding focuses on protecting individual species in controlled habitats.  ",
@@ -1133,7 +1133,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological order of rewilding projects worldwide  ",
@@ -1146,7 +1146,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: The author implies that rewilding’s success primarily depends on:  ",
+        "text": " The author implies that rewilding’s success primarily depends on:  ",
         "prompt": "",
         "options": [
           "A) Increased funding for zoos and captive breeding programs  ",
@@ -1170,7 +1170,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?**  ",
+        "text": " What is the central theme of the article?**  ",
         "prompt": "",
         "options": [
           "A) The benefits of working long hours for career success  ",
@@ -1184,7 +1184,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What does the idiom \"I’ll sleep when I’m dead\" imply in the context of the article?**  ",
+        "text": " What does the idiom \"I’ll sleep when I’m dead\" imply in the context of the article?**  ",
         "prompt": "",
         "options": [
           "A) Sleep is unnecessary for a fulfilling life  ",
@@ -1197,7 +1197,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, \"This mindset, amplified by technology blurring work-life boundaries, has normalized chronic sleep deprivation,\" what does \"this mindset\" refer to?**  ",
+        "text": " In the sentence, \"This mindset, amplified by technology blurring work-life boundaries, has normalized chronic sleep deprivation,\" what does \"this mindset\" refer to?**  ",
         "prompt": "",
         "options": [
           "A) The belief that technology causes insomnia  ",
@@ -1210,7 +1210,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, what did the 2020 CDC report find?**  ",
+        "text": " According to the article, what did the 2020 CDC report find?**  ",
         "prompt": "",
         "options": [
           "A) 1 in 5 adults sleeps fewer than 5 hours nightly  ",
@@ -1223,7 +1223,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author’s tone toward productivity culture?**  ",
+        "text": " How would you describe the author’s tone toward productivity culture?**  ",
         "prompt": "",
         "options": [
           "A) Neutral and observational  ",
@@ -1236,7 +1236,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which of the following is NOT a strategy suggested in the article to combat sleep deprivation?**  ",
+        "text": " Which of the following is NOT a strategy suggested in the article to combat sleep deprivation?**  ",
         "prompt": "",
         "options": [
           "A) Employers offering nap pods and flexible hours  ",
@@ -1249,7 +1249,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article’s structure organized?**  ",
+        "text": " How is the article’s structure organized?**  ",
         "prompt": "",
         "options": [
           "A) Chronological order of sleep research discoveries  ",
@@ -1262,7 +1262,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about sustainable productivity?**  ",
+        "text": " What does the author imply about sustainable productivity?**  ",
         "prompt": "",
         "options": [
           "A) It requires stricter deadlines and longer workweeks  ",
@@ -1286,7 +1286,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) Renewable energy is a flawless solution to climate change.  ",
@@ -1300,7 +1300,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, *\"The pursuit of 'clean' energy, ironically, often perpetuates environmental harm,\"* what does **\"perpetuates\"** mean?  ",
+        "text": " In the sentence, *\"The pursuit of 'clean' energy, ironically, often perpetuates environmental harm,\"* what does **\"perpetuates\"** mean?  ",
         "prompt": "",
         "options": [
           "A) Reduces  ",
@@ -1313,7 +1313,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: *\"Their extraction has devastating ecological impacts.\"* What does the pronoun **\"their\"** refer to?  ",
+        "text": " *\"Their extraction has devastating ecological impacts.\"* What does the pronoun **\"their\"** refer to?  ",
         "prompt": "",
         "options": [
           "A) Rare earth minerals (e.g., lithium, cobalt)  ",
@@ -1326,7 +1326,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, what percentage of solar panels are currently recycled?  ",
+        "text": " According to the article, what percentage of solar panels are currently recycled?  ",
         "prompt": "",
         "options": [
           "A) 10%  ",
@@ -1339,7 +1339,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author’s tone in the article?  ",
+        "text": " How would you describe the author’s tone in the article?  ",
         "prompt": "",
         "options": [
           "A) Entirely critical of green energy  ",
@@ -1352,7 +1352,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which solution is **explicitly mentioned** in the article to address green energy’s challenges?  ",
+        "text": " Which solution is **explicitly mentioned** in the article to address green energy’s challenges?  ",
         "prompt": "",
         "options": [
           "A) Banning all mining of rare earth minerals  ",
@@ -1365,7 +1365,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article primarily structured?  ",
+        "text": " How is the article primarily structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of green energy development  ",
@@ -1378,7 +1378,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about the future of green energy?  ",
+        "text": " What does the author imply about the future of green energy?  ",
         "prompt": "",
         "options": [
           "A) It is impossible to achieve.  ",
@@ -1402,7 +1402,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The technical processes behind AI art tools like DALL-E  ",
@@ -1416,7 +1416,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the conclusion, the phrase “double-edged sword” is used to describe AI-generated art. What does this phrase imply?  ",
+        "text": " In the conclusion, the phrase “double-edged sword” is used to describe AI-generated art. What does this phrase imply?  ",
         "prompt": "",
         "options": [
           "A) AI art is dangerous and should be banned  ",
@@ -1429,7 +1429,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the introduction, the text states: “While this innovation democratizes artistic expression, it also sparks complex ethical debates.” What does “this innovation” refer to?  ",
+        "text": " In the introduction, the text states: “While this innovation democratizes artistic expression, it also sparks complex ethical debates.” What does “this innovation” refer to?  ",
         "prompt": "",
         "options": [
           "A) Copyright lawsuits  ",
@@ -1442,7 +1442,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, why did the U.S. Copyright Office deny protection for an AI-generated image in 2022?  ",
+        "text": " According to the article, why did the U.S. Copyright Office deny protection for an AI-generated image in 2022?  ",
         "prompt": "",
         "options": [
           "A) The image was plagiarized from a human artist  ",
@@ -1455,7 +1455,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author’s tone in discussing AI-generated art?  ",
+        "text": " How would you describe the author’s tone in discussing AI-generated art?  ",
         "prompt": "",
         "options": [
           "A) Strongly critical of AI’s threats to human artists  ",
@@ -1468,7 +1468,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: The article mentions Getty Images suing Stability AI. What does this example primarily illustrate?  ",
+        "text": " The article mentions Getty Images suing Stability AI. What does this example primarily illustrate?  ",
         "prompt": "",
         "options": [
           "A) The threat of AI replacing graphic designers  ",
@@ -1481,7 +1481,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of AI art advancements  ",
@@ -1494,7 +1494,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about the future of AI and human artistry?  ",
+        "text": " What does the author imply about the future of AI and human artistry?  ",
         "prompt": "",
         "options": [
           "A) AI will inevitably replace human artists entirely  ",
@@ -1518,7 +1518,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The decline of physical economies due to the metaverse  ",
@@ -1532,7 +1532,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, “As Web3 evolves, interoperability between platforms will be key to a cohesive metaverse,” what does *interoperability* most likely mean?  ",
+        "text": " In the sentence, “As Web3 evolves, interoperability between platforms will be key to a cohesive metaverse,” what does *interoperability* most likely mean?  ",
         "prompt": "",
         "options": [
           "A) Competition among platforms to dominate the market  ",
@@ -1545,7 +1545,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the phrase, “These spaces host businesses, galleries, and entertainment venues,” what does *these spaces* refer to?  ",
+        "text": " In the phrase, “These spaces host businesses, galleries, and entertainment venues,” what does *these spaces* refer to?  ",
         "prompt": "",
         "options": [
           "A) Blockchain networks  ",
@@ -1558,7 +1558,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: The article states that a plot in Decentraland sold for $2.4 million in 2021. What does this example illustrate?  ",
+        "text": " The article states that a plot in Decentraland sold for $2.4 million in 2021. What does this example illustrate?  ",
         "prompt": "",
         "options": [
           "A) The risks of NFT scams  ",
@@ -1571,7 +1571,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: Which term best describes the author’s tone in the conclusion?  ",
+        "text": " Which term best describes the author’s tone in the conclusion?  ",
         "prompt": "",
         "options": [
           "A) Pessimistic and dismissive  ",
@@ -1584,7 +1584,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: According to the article, why are global brands like Gucci and Balenciaga investing in the metaverse?  ",
+        "text": " According to the article, why are global brands like Gucci and Balenciaga investing in the metaverse?  ",
         "prompt": "",
         "options": [
           "A) To replace physical stores with virtual ones  ",
@@ -1597,7 +1597,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of metaverse development  ",
@@ -1610,7 +1610,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: The author implies that the metaverse could replicate existing inequalities if:  ",
+        "text": " The author implies that the metaverse could replicate existing inequalities if:  ",
         "prompt": "",
         "options": [
           "A) VR devices become cheaper  ",
@@ -1634,7 +1634,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The decline of traditional farming due to urbanization  ",
@@ -1648,7 +1648,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, \"urban farms offer hyper-local access to nutritious greens, addressing 'food deserts' in cities,\" what does \"food deserts\" most likely mean?  ",
+        "text": " In the sentence, \"urban farms offer hyper-local access to nutritious greens, addressing 'food deserts' in cities,\" what does \"food deserts\" most likely mean?  ",
         "prompt": "",
         "options": [
           "A) Areas with excessive fast-food restaurants  ",
@@ -1661,7 +1661,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, \"They also eliminate the need for pesticides,\" what does \"they\" refer to?  ",
+        "text": " In the sentence, \"They also eliminate the need for pesticides,\" what does \"they\" refer to?  ",
         "prompt": "",
         "options": [
           "A) Traditional farms  ",
@@ -1674,7 +1674,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, how much less water do vertical farms use compared to traditional agriculture?  ",
+        "text": " According to the article, how much less water do vertical farms use compared to traditional agriculture?  ",
         "prompt": "",
         "options": [
           "A) 70% less  ",
@@ -1687,7 +1687,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What is the author’s tone toward vertical farming?  ",
+        "text": " What is the author’s tone toward vertical farming?  ",
         "prompt": "",
         "options": [
           "A) Skeptical and dismissive  ",
@@ -1700,7 +1700,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: What is a major challenge facing vertical farming mentioned in the article?  ",
+        "text": " What is a major challenge facing vertical farming mentioned in the article?  ",
         "prompt": "",
         "options": [
           "A) Lack of consumer interest in fresh produce  ",
@@ -1713,7 +1713,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological history of farming innovations  ",
@@ -1726,7 +1726,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about vertical farming’s role in addressing global hunger?  ",
+        "text": " What does the author imply about vertical farming’s role in addressing global hunger?  ",
         "prompt": "",
         "options": [
           "A) It will completely replace traditional farming.  ",
@@ -1750,7 +1750,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) TikTok’s impact on mental health and cyberbullying  ",
@@ -1764,7 +1764,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the phrase “The Double-Edged Sword of Virality,” what does “double-edged sword” imply?  ",
+        "text": " In the phrase “The Double-Edged Sword of Virality,” what does “double-edged sword” imply?  ",
         "prompt": "",
         "options": [
           "A) TikTok’s ability to create both fame and obscurity  ",
@@ -1777,7 +1777,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, “This has enabled unknown creators to achieve overnight stardom,” what does “this” refer to?  ",
+        "text": " In the sentence, “This has enabled unknown creators to achieve overnight stardom,” what does “this” refer to?  ",
         "prompt": "",
         "options": [
           "A) TikTok’s sound library  ",
@@ -1790,7 +1790,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: Which example does the article NOT mention as a TikTok-driven trend?  ",
+        "text": " Which example does the article NOT mention as a TikTok-driven trend?  ",
         "prompt": "",
         "options": [
           "A) The resurgence of Fleetwood Mac’s “Dreams”  ",
@@ -1803,7 +1803,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What best describes the author’s tone in the article?  ",
+        "text": " What best describes the author’s tone in the article?  ",
         "prompt": "",
         "options": [
           "A) Uncritically enthusiastic  ",
@@ -1816,7 +1816,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: According to the article, how does TikTok influence consumer behavior?  ",
+        "text": " According to the article, how does TikTok influence consumer behavior?  ",
         "prompt": "",
         "options": [
           "A) By partnering directly with retail companies  ",
@@ -1829,7 +1829,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological history of TikTok’s development  ",
@@ -1842,7 +1842,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about TikTok’s future?  ",
+        "text": " What does the author imply about TikTok’s future?  ",
         "prompt": "",
         "options": [
           "A) It will inevitably be replaced by competitors  ",
@@ -1866,7 +1866,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article about the Voynich Manuscript?**  ",
+        "text": " What is the central theme of the article about the Voynich Manuscript?**  ",
         "prompt": "",
         "options": [
           "A) A medieval book about herbal remedies deciphered by modern AI  ",
@@ -1880,7 +1880,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, \"Carbon-dated to between 1404 and 1438, its pages remain an unbreakable puzzle,\" what does \"carbon-dated\" mean?**  ",
+        "text": " In the sentence, \"Carbon-dated to between 1404 and 1438, its pages remain an unbreakable puzzle,\" what does \"carbon-dated\" mean?**  ",
         "prompt": "",
         "options": [
           "A) Decorated with carbon-based ink  ",
@@ -1893,7 +1893,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: The text states, \"Traces suggest it once belonged to Holy Roman Emperor Rudolf II.\" What does \"it\" refer to?**  ",
+        "text": " The text states, \"Traces suggest it once belonged to Holy Roman Emperor Rudolf II.\" What does \"it\" refer to?**  ",
         "prompt": "",
         "options": [
           "A) A Jesuit library  ",
@@ -1906,7 +1906,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: When did Wilfrid Voynich acquire the manuscript?**  ",
+        "text": " When did Wilfrid Voynich acquire the manuscript?**  ",
         "prompt": "",
         "options": [
           "A) 1404  ",
@@ -1919,7 +1919,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: Which best describes the author’s tone toward the Voynich Manuscript?**  ",
+        "text": " Which best describes the author’s tone toward the Voynich Manuscript?**  ",
         "prompt": "",
         "options": [
           "A) Skeptical and dismissive  ",
@@ -1932,7 +1932,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: The article mentions multiple theories about the manuscript’s origin. What strategy does the author use to present these ideas?**  ",
+        "text": " The article mentions multiple theories about the manuscript’s origin. What strategy does the author use to present these ideas?**  ",
         "prompt": "",
         "options": [
           "A) Only supports the hoax theory as fact  ",
@@ -1945,7 +1945,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?**  ",
+        "text": " How is the article structured?**  ",
         "prompt": "",
         "options": [
           "A) A chronological list of decryption attempts  ",
@@ -1958,7 +1958,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about the manuscript’s enduring appeal?**  ",
+        "text": " What does the author imply about the manuscript’s enduring appeal?**  ",
         "prompt": "",
         "options": [
           "A) It will be solved soon with advanced technology  ",
@@ -1982,7 +1982,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?  ",
+        "text": " What is the central theme of the article?  ",
         "prompt": "",
         "options": [
           "A) The benefits of deepfake technology in entertainment  ",
@@ -1996,7 +1996,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What does the term \"liar’s dividend\" (mentioned in the article) most likely mean?  ",
+        "text": " What does the term \"liar’s dividend\" (mentioned in the article) most likely mean?  ",
         "prompt": "",
         "options": [
           "A) Profits earned by creating deceptive deepfakes  ",
@@ -2009,7 +2009,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, \"The shift from entertainment to exploitation underscores the technology’s dangerous potential,\" what does \"the technology\" refer to?  ",
+        "text": " In the sentence, \"The shift from entertainment to exploitation underscores the technology’s dangerous potential,\" what does \"the technology\" refer to?  ",
         "prompt": "",
         "options": [
           "A) Social media algorithms  ",
@@ -2022,7 +2022,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, how much money did a UK energy firm lose due to a deepfake voice scam?  ",
+        "text": " According to the article, how much money did a UK energy firm lose due to a deepfake voice scam?  ",
         "prompt": "",
         "options": [
           "A) $100,000  ",
@@ -2035,7 +2035,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What best describes the author’s tone in the article?  ",
+        "text": " What best describes the author’s tone in the article?  ",
         "prompt": "",
         "options": [
           "A) Neutral and objective  ",
@@ -2048,7 +2048,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which strategy is **NOT** explicitly mentioned in the article as a way to combat deepfakes?  ",
+        "text": " Which strategy is **NOT** explicitly mentioned in the article as a way to combat deepfakes?  ",
         "prompt": "",
         "options": [
           "A) Blockchain-based verification tools  ",
@@ -2061,7 +2061,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?  ",
+        "text": " How is the article structured?  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of deepfake development  ",
@@ -2074,7 +2074,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What does the author imply about addressing deepfake threats?  ",
+        "text": " What does the author imply about addressing deepfake threats?  ",
         "prompt": "",
         "options": [
           "A) Only governments can solve the problem  ",
@@ -2098,7 +2098,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?**  ",
+        "text": " What is the central theme of the article?**  ",
         "prompt": "",
         "options": [
           "A) The health benefits of social media  ",
@@ -2112,7 +2112,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, \"Technology: A Double-Edged Sword,\" what does \"double-edged sword\" imply?**  ",
+        "text": " In the sentence, \"Technology: A Double-Edged Sword,\" what does \"double-edged sword\" imply?**  ",
         "prompt": "",
         "options": [
           "A) Technology is dangerous and should be avoided  ",
@@ -2125,7 +2125,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the sentence, \"Loneliness isn’t merely a fleeting emotion—it’s a public health emergency,\" what does \"it\" refer to?**  ",
+        "text": " In the sentence, \"Loneliness isn’t merely a fleeting emotion—it’s a public health emergency,\" what does \"it\" refer to?**  ",
         "prompt": "",
         "options": [
           "A) Fleeting emotion  ",
@@ -2138,7 +2138,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, what did the 2020 study in *The Lancet* find?**  ",
+        "text": " According to the article, what did the 2020 study in *The Lancet* find?**  ",
         "prompt": "",
         "options": [
           "A) Loneliness reduces life expectancy by 30%  ",
@@ -2151,7 +2151,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: What best describes the author’s tone in the article?**  ",
+        "text": " What best describes the author’s tone in the article?**  ",
         "prompt": "",
         "options": [
           "A) Neutral and detached  ",
@@ -2164,7 +2164,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: Which solution is NOT mentioned in the article to combat loneliness?**  ",
+        "text": " Which solution is NOT mentioned in the article to combat loneliness?**  ",
         "prompt": "",
         "options": [
           "A) Increasing social media usage  ",
@@ -2177,7 +2177,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article’s structure organized?**  ",
+        "text": " How is the article’s structure organized?**  ",
         "prompt": "",
         "options": [
           "A) Chronological timeline of loneliness research  ",
@@ -2190,7 +2190,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What is the author’s implied argument about overcoming loneliness?**  ",
+        "text": " What is the author’s implied argument about overcoming loneliness?**  ",
         "prompt": "",
         "options": [
           "A) It is solely an individual’s responsibility  ",
@@ -2214,7 +2214,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the central theme of the article?**  ",
+        "text": " What is the central theme of the article?**  ",
         "prompt": "",
         "options": [
           "A) The dangers of artificial intelligence replacing jobs  ",
@@ -2228,7 +2228,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: In the sentence, “While UBI is not a silver bullet, these experiments illuminate a path…”, what does “silver bullet” mean?**  ",
+        "text": " In the sentence, “While UBI is not a silver bullet, these experiments illuminate a path…”, what does “silver bullet” mean?**  ",
         "prompt": "",
         "options": [
           "A) A magical solution to all problems  ",
@@ -2241,7 +2241,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: In the paragraph about Finland’s experiment, what does “it” refer to in the sentence, “The study underscored UBI’s potential to reduce bureaucratic inefficiencies…”?**  ",
+        "text": " In the paragraph about Finland’s experiment, what does “it” refer to in the sentence, “The study underscored UBI’s potential to reduce bureaucratic inefficiencies…”?**  ",
         "prompt": "",
         "options": [
           "A) The control group  ",
@@ -2254,7 +2254,7 @@
       {
         "id": 4,
         "type": "reading",
-        "text": "Question 4: According to the article, how long did GiveDirectly’s UBI experiment in Kenya last?**  ",
+        "text": " According to the article, how long did GiveDirectly’s UBI experiment in Kenya last?**  ",
         "prompt": "",
         "options": [
           "A) 5 years  ",
@@ -2267,7 +2267,7 @@
       {
         "id": 5,
         "type": "reading",
-        "text": "Question 5: How would you describe the author’s tone toward UBI?**  ",
+        "text": " How would you describe the author’s tone toward UBI?**  ",
         "prompt": "",
         "options": [
           "A) Strongly critical and dismissive  ",
@@ -2280,7 +2280,7 @@
       {
         "id": 6,
         "type": "reading",
-        "text": "Question 6: What strategy does the author use to address criticisms of UBI?**  ",
+        "text": " What strategy does the author use to address criticisms of UBI?**  ",
         "prompt": "",
         "options": [
           "A) Ignoring counterarguments entirely  ",
@@ -2293,7 +2293,7 @@
       {
         "id": 7,
         "type": "reading",
-        "text": "Question 7: How is the article structured?**  ",
+        "text": " How is the article structured?**  ",
         "prompt": "",
         "options": [
           "A) A comparison of UBI policies in wealthy vs. poor nations  ",
@@ -2306,7 +2306,7 @@
       {
         "id": 8,
         "type": "reading",
-        "text": "Question 8: What is implied about UBI’s scalability in the article?**  ",
+        "text": " What is implied about UBI’s scalability in the article?**  ",
         "prompt": "",
         "options": [
           "A) It is guaranteed to succeed in all economic contexts  ",

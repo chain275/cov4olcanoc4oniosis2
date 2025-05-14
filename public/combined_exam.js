@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: "combined-exam",
                 title: "Combined Exam",
                 description: "A comprehensive practice test covering all question types",
-                subtitle: "This exam tests all skills: reading, writing, and speaking.",
+                subtitle: "",
                 duration: 60,
                 totalQuestions: validExams.length,
                 questions: validExams
@@ -1468,6 +1468,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 scorePath.style.strokeDasharray = `${circumference} ${circumference}`;
                 scorePath.style.strokeDashoffset = offset;
             }
+            
+            // Calculate percentile rank based on score.json data
+            calculatePercentileRank(results.correctCount);
         }
         
         // Update correct count
@@ -1486,16 +1489,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const performanceTextElement = document.getElementById('performance-text');
         if (performanceTextElement) {
             const percentage = (results.correctCount / results.totalQuestions) * 100;
-            let performanceText = 'Needs Improvement';
+            let performanceText = 'ต้องปรับปรุงอย่างเร่งด่วน';
             
             if (percentage >= 90) {
-                performanceText = 'Excellent';
-            } else if (percentage >= 75) {
-                performanceText = 'Very Good';
+                performanceText = 'ที่สุด 💯💯';
+            } else if (percentage >= 80) {
+                performanceText = 'ยอดเยี่ยม';
             } else if (percentage >= 60) {
-                performanceText = 'Good';
+                performanceText = 'ค่อนข้างดี';
+            } else if (percentage >= 50) {
+                performanceText = 'พอใช้';
             } else if (percentage >= 40) {
-                performanceText = 'Fair';
+                performanceText = 'ต้องปรับปรุง';
             }
             
             performanceTextElement.textContent = performanceText;
@@ -1543,6 +1548,945 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             console.error('View feedback button not found');
         }
+    }
+    
+    // Function to calculate percentile rank based on score distribution
+    function calculatePercentileRank(userScore) {
+        console.log('Original score:', userScore);
+        
+        // Apply score multiplier (1.25x) before percentile calculation
+            const adjustedScore = userScore * 1.25;
+        // Cap the adjusted score at 100 if it exceeds
+        const finalScore = Math.min(adjustedScore, 100);
+        
+        console.log('Calculating percentile rank for adjusted score:', finalScore, '(original score', userScore, 'multiplied by 1.25)');
+        
+        // Fetch the score distribution data from score.json
+        fetch('../src/score/score.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load score distribution data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (!data || !Array.isArray(data) || data.length === 0) {
+                    throw new Error('Invalid score distribution data format');
+                }
+                
+                const distributionData = data[0];
+                console.log('Score distribution data:', distributionData);
+                
+                // Parse distribution data and calculate percentile
+                let totalStudents = 0;
+                let studentsBelow = 0;
+                
+                // First calculate total number of students in the distribution
+                Object.entries(distributionData).forEach(([range, count]) => {
+                    totalStudents += parseInt(count.trim(), 10);
+                });
+                
+                // Calculate students below the user's score (using adjusted score)
+                Object.entries(distributionData).forEach(([range, count]) => {
+                    const [min, max] = range.split('-').map(val => parseFloat(val));
+                    const frequency = parseInt(count.trim(), 10);
+                    
+                    if (max < finalScore) {
+                        // Add all students in ranges completely below user's score
+                        studentsBelow += frequency;
+                    } else if (min <= finalScore && finalScore <= max) {
+                        // For the range containing the user's score, add a proportion
+                        // Assume uniform distribution within the range
+                        const rangeSize = max - min;
+                        const positionInRange = finalScore - min;
+                        const proportion = positionInRange / rangeSize;
+                        studentsBelow += frequency * proportion;
+                    }
+                });
+                
+                // Calculate percentile (percentage of students below user's score)
+                const percentile = (studentsBelow / totalStudents) * 100;
+                const roundedPercentile = percentile.toFixed(3);
+                
+                console.log(`User score: ${userScore}, Adjusted score: ${finalScore}, Percentile: ${roundedPercentile}%, Rank: ${Math.round(totalStudents - studentsBelow) + 1} of ${totalStudents}`);
+                
+                // Add percentile and rank to the results display
+                displayPercentileRank(roundedPercentile, Math.round(totalStudents - studentsBelow) + 1, totalStudents, userScore, finalScore);
+                
+                // Add histogram visualization of the score distribution (fixed parameter order)
+                addHistogramVisualization(distributionData, finalScore, userScore);
+            })
+            .catch(error => {
+                console.error('Error calculating percentile rank:', error);
+                // Show a notification about the error
+                showNotification('Could not calculate percentile rank: ' + error.message, 'warning');
+            });
+    }
+    
+    // Function to add histogram visualization of score distribution
+    function addHistogramVisualization(distributionData, adjustedScore, originalScore) {
+        // Find the container where we'll add the histogram
+        const container = document.getElementById('percentile-visualization');
+        if (!container) return;
+        
+        // Check if histogram already exists
+        let histogramContainer = document.getElementById('score-histogram');
+        if (histogramContainer) {
+            // If it exists, remove it to replace with updated version
+            histogramContainer.remove();
+        }
+        
+        // Create histogram container
+        histogramContainer = document.createElement('div');
+        histogramContainer.id = 'score-histogram';
+        histogramContainer.className = 'score-histogram';
+        
+        // Add title
+        const histogramTitle = document.createElement('h4');
+        histogramTitle.textContent = 'Score Distribution Histogram';
+        histogramContainer.appendChild(histogramTitle);
+        
+        // Process data for the histogram
+        const histogramData = [];
+        let maxFrequency = 0;
+        
+        Object.entries(distributionData).forEach(([range, count]) => {
+            const [min, max] = range.split('-').map(val => parseFloat(val));
+            const frequency = parseInt(count.trim(), 10);
+            
+            histogramData.push({
+                range,
+                min,
+                max,
+                frequency,
+                containsAdjusted: (min <= adjustedScore && adjustedScore <= max),
+                containsOriginal: (min <= originalScore && originalScore <= max)
+            });
+            
+            if (frequency > maxFrequency) {
+                maxFrequency = frequency;
+            }
+        });
+        
+        // Sort the data by min value to ensure correct order
+        histogramData.sort((a, b) => a.min - b.min);
+        
+        // Create the histogram bars
+        const barsContainer = document.createElement('div');
+        barsContainer.className = 'histogram-bars';
+        
+        histogramData.forEach(item => {
+            const barContainer = document.createElement('div');
+            barContainer.className = 'histogram-bar-container';
+            
+            const bar = document.createElement('div');
+            bar.className = 'histogram-bar';
+            
+            // Add appropriate classes based on which score(s) this bar contains
+            if (item.containsAdjusted) {
+                bar.classList.add('adjusted-score-bar');
+            }
+            if (item.containsOriginal) {
+                bar.classList.add('original-score-bar');
+            }
+            
+            // Calculate bar height as percentage of max frequency
+            const heightPercentage = (item.frequency / maxFrequency) * 100;
+            bar.style.height = `${heightPercentage}%`;
+            
+            // Add frequency as label on top of the bar
+            const frequencyLabel = document.createElement('span');
+            frequencyLabel.className = 'frequency-label';
+            frequencyLabel.textContent = item.frequency.toLocaleString();
+            
+            // Add range label for the bar
+            const rangeLabel = document.createElement('span');
+            rangeLabel.className = 'range-label';
+            rangeLabel.textContent = `${item.min}-${item.max}`;
+            
+            barContainer.appendChild(bar);
+            barContainer.appendChild(frequencyLabel);
+            barContainer.appendChild(rangeLabel);
+            
+            barsContainer.appendChild(barContainer);
+        });
+        
+        histogramContainer.appendChild(barsContainer);
+        
+        // Add a legend for the bar colors
+        const histogramLegend = document.createElement('div');
+        histogramLegend.className = 'histogram-legend';
+        histogramLegend.innerHTML = `
+            <div class="legend-item">
+                <span class="legend-color adjusted-color"></span>
+                <span>Adjusted Score (${adjustedScore.toFixed(3)}%)</span>
+            </div>
+        `;
+        histogramContainer.appendChild(histogramLegend);
+        
+        // Add the histogram to the page
+        container.appendChild(histogramContainer);
+        
+        // Add CSS styles for the histogram if not already in the CSS file
+        addHistogramStyles();
+    }
+    
+    // Function to add the necessary CSS styles for the histogram
+    function addHistogramStyles() {
+        // Check if styles already exist
+        if (document.getElementById('histogram-styles')) return;
+        
+        const styleElement = document.createElement('style');
+        styleElement.id = 'histogram-styles';
+        
+        styleElement.textContent = `
+            .score-histogram {
+                margin-top: 25px;
+                padding-top: 20px;
+                border-top: 1px solid #e5e7eb;
+            }
+            
+            .score-histogram h4 {
+                margin-bottom: 15px;
+                font-size: 16px;
+                color: #333;
+            }
+            
+            .histogram-bars {
+                display: flex;
+                align-items: flex-end;
+                height: 180px;
+                gap: 2px;
+                padding: 0 5px;
+                margin-bottom: 30px;
+            }
+            
+            .histogram-bar-container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                position: relative;
+            }
+            
+            .histogram-bar {
+                width: 100%;
+                background-color: #cbd5e1;
+                border-radius: 3px 3px 0 0;
+                transition: height 1s ease;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .histogram-bar.original-score-bar {
+                background-color: #93c5fd;
+            }
+            
+            .histogram-bar.adjusted-score-bar {
+                background-color: #3b82f6;
+            }
+            
+            /* Special styling when both scores are in the same bar */
+            .histogram-bar.original-score-bar.adjusted-score-bar {
+                background: linear-gradient(to top, #3b82f6 50%, #93c5fd 50%);
+                background-size: 100% 100%;
+            }
+            
+            .frequency-label {
+                position: absolute;
+                top: -20px;
+                font-size: 10px;
+                color: #64748b;
+                transform: rotate(-45deg);
+                transform-origin: bottom left;
+                white-space: nowrap;
+            }
+            
+            .range-label {
+                position: absolute;
+                bottom: -25px;
+                font-size: 10px;
+                color: #64748b;
+                transform: rotate(-45deg);
+                transform-origin: top left;
+                white-space: nowrap;
+            }
+            
+            .histogram-legend {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                justify-content: center;
+            }
+            
+            .legend-item {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 12px;
+                color: #475569;
+            }
+            
+            .legend-color {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 2px;
+            }
+            
+            .legend-color.original-color {
+                background-color: #93c5fd;
+            }
+            
+            .legend-color.adjusted-color {
+                background-color: #3b82f6;
+            }
+            
+            @media (max-width: 768px) {
+                .histogram-bars {
+                    height: 150px;
+                }
+                
+                .frequency-label, .range-label {
+                    font-size: 8px;
+                }
+                
+                .histogram-legend {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+        `;
+        
+        document.head.appendChild(styleElement);
+    }
+    
+    // Function to display percentile rank in the results section
+    function displayPercentileRank(percentile, rank, totalStudents, originalScore, adjustedScore) {
+        // Create or update percentile information in result stats
+        const resultStats = document.querySelector('.result-stats');
+        if (!resultStats) return;
+        
+        // Check if percentile element already exists
+        let percentileItem = document.getElementById('percentile-item');
+        if (!percentileItem) {
+            // Create new percentile and rank elements
+            percentileItem = document.createElement('div');
+            percentileItem.id = 'percentile-item';
+            percentileItem.className = 'stat-item';
+            resultStats.appendChild(percentileItem);
+        }
+        let performanceTextElement = document.getElementById('performance-text');
+        
+        // Update percentile element content
+        percentileItem.innerHTML = `
+            <span class="stat-label">เปอร์เซ็นไทล์:</span>
+            <span id="percentile-value">≈ ${percentile}%</span><br>
+            <span class="stat-label">อันดับที่:</span>
+            <span id="percentile-value">≈ ${rank}</span>
+            <span class="stat-note"> จาก ${totalStudents.toLocaleString()}</span><br>
+            <span class="stat-note">*อ้างอิงจากผลสอบ A-Level ภาษาอังกฤษ ปี68</span>
+        `;
+        
+        // Add helpful tooltip explaining percentile
+        percentileItem.title = `Your score is better than ${percentile}% of all test takers.`;
+        
+        let performanceClass = '';
+        // Add some styling to make the percentile stand out
+        const percentileValue = percentileItem.querySelector('#percentile-value');
+
+        if (percentileValue) {
+            // Color based on percentile value
+            if (percentile >= 90) {
+                percentileValue.style.color = '#22c55e'; // Green for top percentile
+                performanceClass = 'performance-excellent'; // Green for top percentile
+            } else if (percentile >= 70) {
+                percentileValue.style.color = '#3b82f6'; // Blue for good percentile
+                performanceClass = 'performance-good'; // Blue for good percentile
+            } else if (percentile >= 50) {
+                percentileValue.style.color = '#f59e0b'; // Yellow for average
+                performanceClass = 'performance-average'; // Yellow for average
+            } else {
+                percentileValue.style.color = '#ef4444'; // Red for below average
+                performanceClass = 'performance-poor'; // Red for below average
+            }
+            percentileValue.style.fontWeight = 'bold';
+        }
+        
+        performanceTextElement.className = performanceClass;
+
+
+        // Add score adjustment explanation
+        let scoreAdjustmentNote = document.getElementById('score-adjustment-note');
+        if (!scoreAdjustmentNote) {
+            scoreAdjustmentNote = document.createElement('div');
+            scoreAdjustmentNote.id = 'score-adjustment-note';
+            scoreAdjustmentNote.className = 'stat-item adjustment-note';
+            
+            // Add after percentile item
+            resultStats.insertBefore(scoreAdjustmentNote, percentileItem.nextSibling);
+        }
+        
+        // Update adjustment note content
+        scoreAdjustmentNote.innerHTML = `
+            <span class="stat-label">Score:</span>
+            <span class="adjustment-details">
+                <span class="adjusted-score">${adjustedScore.toFixed(3)} / 100.000</span>
+            </span>
+        `;
+        
+        // Add a note about what percentile means
+        let explanationNote = document.getElementById('percentile-explanation');
+        if (!explanationNote) {
+            explanationNote = document.createElement('div');
+            explanationNote.id = 'percentile-explanation';
+            explanationNote.className = 'explanation-note';
+            explanationNote.innerHTML = `
+                <i class="fas fa-info-circle"></i>
+                <span>The percentile indicates the percentage of test takers who scored lower than you. Your score has been adjusted with a 1.25x multiplier for percentile calculation.</span>
+            `;
+            
+            // Add after result stats
+            resultStats.parentNode.insertBefore(explanationNote, resultStats.nextSibling);
+        } else {
+            // Update existing explanation to include the multiplier info
+            const explanationText = explanationNote.querySelector('span');
+            if (explanationText) {
+                explanationText.textContent = 'The percentile indicates the percentage of test takers who scored lower than you. Your score has been adjusted with a 1.25x multiplier for percentile calculation.';
+            }
+        }
+        
+        // Add visual representation of percentile
+        addPercentileVisualization(percentile, resultStats.parentNode, originalScore, adjustedScore);
+    }
+    
+    // Function to add visual representation of percentile
+    function addPercentileVisualization(percentile, container, originalScore, adjustedScore) {
+        // Check if visualization already exists
+        let visualizationContainer = document.getElementById('percentile-visualization');
+        if (!visualizationContainer) {
+            // Create new container
+            visualizationContainer = document.createElement('div');
+            visualizationContainer.id = 'percentile-visualization';
+            visualizationContainer.className = 'percentile-visualization enhanced-visualization';
+            
+            // Create content
+            visualizationContainer.innerHTML = `
+                <h3 class="visualization-title">Your Percentile Ranking</h3>
+                <div class="visualization-summary">
+                    <div class="percentile-number">${percentile}%</div>
+                    <div class="percentile-description">
+                        <p>Your score is higher than <strong>${percentile}%</strong> of all test takers.</p>
+                        <div class="score-details">
+                            <div class="score-item">
+                                <span class="score-label">Score:</span>
+                                <span class="score-value adjusted">${adjustedScore.toFixed(3)}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="percentile-bar-container">
+                    <div class="percentile-bar">
+                        <div class="percentile-fill" style="width: 0%"></div>
+                        <div class="percentile-marker" style="left: ${percentile}%">
+                            <div class="marker-label">You</div>
+                        </div>
+                    </div>
+                    <div class="percentile-labels">
+                        <span>0%</span>
+                        <span>25%</span>
+                        <span>50%</span>
+                        <span>75%</span>
+                        <span>100%</span>
+                    </div>
+                </div>
+                <div class="percentile-context">
+                    <div class="context-item">
+                        <span class="context-range low">0-25%</span>
+                        <span class="context-description">แย่</span>
+                    </div>
+                    <div class="context-item">
+                        <span class="context-range average">26-50%</span>
+                        <span class="context-description">ค่อนข้างแย่</span>
+                    </div>
+                    <div class="context-item">
+                        <span class="context-range good">51-75%</span>
+                        <span class="context-description">พอประมาณ</span>
+                    </div>
+                    <div class="context-item">
+                        <span class="context-range excellent">76-90%</span>
+                        <span class="context-description">ค่อนข้างดี</span>
+                    </div>
+                    <div class="context-item">
+                        <span class="context-range exceptional">90-100%</span>
+                        <span class="context-description">ยอดเยี่ยม</span>
+                    </div>
+                </div>
+            `;
+            
+            // Add to container
+            container.appendChild(visualizationContainer);
+            
+            // Add enhanced visualization styles
+            addEnhancedVisualizationStyles();
+            
+            // Animate the fill after a short delay for visual effect
+            setTimeout(() => {
+                const percentileFill = visualizationContainer.querySelector('.percentile-fill');
+                if (percentileFill) {
+                    percentileFill.style.width = percentile + '%';
+                }
+            }, 300);
+        } else {
+            // Update existing visualization with new scores
+            const percentileNumber = visualizationContainer.querySelector('.percentile-number');
+            if (percentileNumber) {
+                percentileNumber.textContent = `${percentile}%`;
+            }
+            
+            const description = visualizationContainer.querySelector('.percentile-description p');
+            if (description) {
+                description.innerHTML = `Your score is higher than <strong>${percentile}%</strong> of all test takers.`;
+            }
+            
+            const originalScoreElement = visualizationContainer.querySelector('.score-value.original');
+            if (originalScoreElement) {
+                originalScoreElement.textContent = `${originalScore}%`;
+            }
+            
+            const adjustedScoreElement = visualizationContainer.querySelector('.score-value.adjusted');
+            if (adjustedScoreElement) {
+                adjustedScoreElement.textContent = `${Math.round(adjustedScore)}%`;
+            }
+            
+            // Update percentile marker and fill
+            const percentileMarker = visualizationContainer.querySelector('.percentile-marker');
+            const percentileFill = visualizationContainer.querySelector('.percentile-fill');
+            
+            if (percentileMarker) {
+                percentileMarker.style.left = percentile + '%';
+            }
+            
+            if (percentileFill) {
+                percentileFill.style.width = '0%';
+                setTimeout(() => {
+                    percentileFill.style.width = percentile + '%';
+                }, 50);
+            }
+        }
+    }
+    
+    // Add enhanced visualization styles
+    function addEnhancedVisualizationStyles() {
+        if (document.getElementById('enhanced-visualization-styles')) return;
+        
+        const styleElement = document.createElement('style');
+        styleElement.id = 'enhanced-visualization-styles';
+        
+        styleElement.textContent = `
+            .enhanced-visualization {
+                background-color: #f8f9fa;
+                border-radius: 12px;
+                padding: 25px;
+                margin-top: 30px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                border: 1px solid #e9ecef;
+            }
+            
+            .visualization-title {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #2c3e50;
+                font-weight: 700;
+            }
+            
+            .visualization-summary {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                gap: 20px;
+                padding: 0 15px;
+            }
+            
+            .percentile-number {
+                font-size: 48px;
+                font-weight: bold;
+                color: #3498db;
+                background: linear-gradient(135deg, #3498db, #2980b9);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 10px;
+                text-align: center;
+                min-width: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            
+            .percentile-number::after {
+                content: '';
+                position: absolute;
+                width: 130px;
+                height: 130px;
+                border: 4px solid #e1f0fa;
+                border-radius: 50%;
+                z-index: -1;
+            }
+            
+            .percentile-description {
+                flex-grow: 1;
+            }
+            
+            .percentile-description p {
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #34495e;
+            }
+            
+            .score-details {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                background-color: #ffffff;
+                padding: 15px;
+                border-radius: 8px;
+                border-left: 4px solid #3498db;
+            }
+            
+            
+            .score-label {
+                min-width: 120px;
+                font-weight: 600;
+                color: #2c3e50;
+                font-size: 15px;
+            }
+            
+            .score-value {
+                font-weight: 700;
+                font-size: 16px;
+                margin-right: 8px;
+            }
+            
+            .score-value.original {
+                color: #7f8c8d;
+            }
+            
+            .score-value.adjusted {
+                color: #2ecc71;
+            }
+            
+            .score-note {
+                font-size: 14px;
+                color: #95a5a6;
+                font-style: italic;
+            }
+            
+            /* Improved graph container */
+            .percentile-bar-container {
+                padding: 0 15px;
+                margin-bottom: 30px;
+                position: relative;
+            }
+            
+            /* Enhanced graph title */
+            .percentile-bar-container::before {
+                content: 'Percentile Distribution';
+                display: block;
+                text-align: center;
+                margin-bottom: 15px;
+                font-weight: 600;
+                color: #34495e;
+                font-size: 16px;
+            }
+            
+            /* Improved bar with tick marks */
+            .percentile-bar {
+                height: 35px;
+                background-color: #e9ecef;
+                border-radius: 5px;
+                position: relative;
+                overflow: visible;
+                box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+                margin-bottom: 25px;
+                border: 1px solid #dee2e6;
+            }
+            
+            /* Add tick marks */
+            .percentile-bar::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+            }
+            
+            /* Enhanced fill with better contrast */
+            .percentile-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #3498db 0%, #2ecc71 100%);
+                width: 0%;
+                transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+                position: relative;
+                border-radius: 4px;
+            }
+            
+            /* Add pulsing effect to fill edge */
+            .percentile-fill::after {
+                content: '';
+                position: absolute;
+                right: -2px;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background-color: rgba(255, 255, 255, 0.7);
+                animation: pulse 1.5s infinite;
+            }
+            
+            @keyframes pulse {
+                0% { opacity: 0.5; }
+                50% { opacity: 1; }
+                100% { opacity: 0.5; }
+            }
+            
+            /* Improved marker for better visibility */
+            .percentile-marker {
+                position: absolute;
+                top: -18.1px;
+                height: 60.4px;
+                width: 2px;
+                background-color: #e74c3c;
+                transform: translateX(-50%);
+                transition: left 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+                z-index: 10;
+            }
+            
+            /* Add visible dot at intersection with bar */
+            .percentile-marker::after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background-color: #e74c3c;
+                border: 2px solid white;
+                border-radius: 50%;
+                top: 29px;
+                left: 50%;
+                transform: translateX(-50%);
+                box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.3);
+            }
+            
+            .marker-label {
+                position: absolute;
+                top: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #e74c3c;
+                color: white;
+                padding: 5px 12px;
+                border-radius: 4px;
+                font-weight: bold;
+                font-size: 14px;
+                white-space: nowrap;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                letter-spacing: 0.5px;
+            }
+            
+            .marker-label::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-width: 6px;
+                border-style: solid;
+                border-color: #e74c3c transparent transparent transparent;
+            }
+            
+            /* Improved labels with better spacing and contrast */
+            .percentile-labels {
+                display: flex;
+                justify-content: space-between;
+                color: #2c3e50;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 0;
+                position: relative;
+                margin-top: -15px;
+            }
+            
+            .percentile-labels span {
+                position: relative;
+                text-align: center;
+                width: 40px;
+                margin-left: -20px; /* Center the label */
+            }
+            
+            .percentile-labels span:first-child {
+                margin-left: 0; /* Adjust first label */
+                text-align: left;
+            }
+            
+            .percentile-labels span:last-child {
+                margin-left: -40px; /* Adjust last label */
+                text-align: right;
+            }
+            
+            /* Add tick marks below labels */
+            .percentile-labels span::before {
+                content: '';
+                position: absolute;
+                height: 8px;
+                width: 2px;
+                background-color: #7f8c8d;
+                top: -10px;
+                left: 50%;
+            }
+            
+            .percentile-labels span:first-child::before {
+                left: 0;
+            }
+            
+            .percentile-labels span:last-child::before {
+                right: 0;
+                left: auto;
+            }
+            
+            .percentile-context {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                padding: 0;
+                gap: 10px;
+            }
+            
+            .context-item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 15px 10px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            }
+            
+            .context-range {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 4px;
+                margin-bottom: 8px;
+                color: white;
+                width: 85%;
+            }
+            
+            .context-range.low {
+                background-color: #e74c3c;
+            }
+            
+            .context-range.average {
+                background-color: #f39c12;
+            }
+            
+            .context-range.good {
+                background-color: #2ecc71;
+            }
+            
+            .context-range.excellent {
+                background-color: #3498db;
+            }
+
+            .context-range.exceptional {
+                background-color: #b13ce6;
+            }
+            
+            .context-description {
+                font-size: 14px;
+                color: #34495e;
+                font-weight: 600;
+            }
+            
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                .visualization-summary {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                
+                .percentile-number::after {
+                    width: 100px;
+                    height: 100px;
+                }
+                
+                .percentile-context {
+                    flex-wrap: wrap;
+                }
+                
+                .context-item {
+                    min-width: calc(50% - 10px);
+                    flex: none;
+                }
+                
+                .percentile-bar {
+                    height: 30px;
+                }
+                
+                .percentile-marker {
+                    height: 75px;
+                }
+                
+                .percentile-marker::after {
+                    top: 24px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .enhanced-visualization  {
+                    padding: 15px;
+                }
+                
+                .visualization-title {
+                    font-size: 20px;
+                }
+                
+                .percentile-number {
+                    font-size: 36px;
+                    min-width: auto;
+                }
+                
+                .percentile-description p {
+                    font-size: 16px;
+                }
+                
+                .score-label {
+                    min-width: 110px;
+                    font-size: 14px;
+                }
+                
+                .context-item {
+                    min-width: 100%;
+                    margin-bottom: 10px;
+                }
+                
+                .percentile-bar-container::before {
+                    font-size: 14px;
+                }
+                
+                .percentile-labels {
+                    font-size: 12px;
+                }
+            }
+        `;
+        
+        document.head.appendChild(styleElement);
     }
     
     // Add a link to the progress tracker in the results section
@@ -1700,7 +2644,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function addQuestionProgressText(container, currentQuestionNum, totalQuestions) {
         const progressText = document.createElement('div');
         progressText.className = 'question-progress-text';
-        progressText.textContent = `Question ${currentQuestionNum}`;
+        progressText.textContent = `ข้อที่ ${currentQuestionNum}`;
         container.appendChild(progressText);
     }
 

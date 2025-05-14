@@ -377,10 +377,50 @@ nav ul li a:hover:after, nav ul li a.active:after {
     }
 }
 
+/* Expand main content when exam is selected */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1.5rem;
+    transition: max-width 0.3s ease;
+}
+
+/* When exam is selected, expand the main content area */
+main:has(#exam-content:not(.hidden)) {
+    max-width: 1400px;
+    padding: 0 0.75rem;
+}
+
+/* Expanded layout for exam content */
+#exam-content:not(.hidden) {
+    margin: 0 -0.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+}
+
+/* Adjust exam content layout for better use of space */
+#exam-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Give questions more room on larger screens */
+@media (min-width: 1200px) {
+    main:has(#exam-content:not(.hidden)) {
+        max-width: 1600px;
+    }
+    
+    /* Adjust column widths for better space usage on large screens */
+    #exam-content:not(.hidden) .exam-header {
+        width: 49%;
+    }
+    
+    #exam-content:not(.hidden) .exam-questions-container {
+        width: 49%;
+    }
 }
 
 section {
@@ -414,7 +454,11 @@ h3 {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .btn {
@@ -531,7 +575,7 @@ h3 {
 .option label {
     display: block;
     padding: 1rem 1.25rem;
-    padding-left: 2.5rem;
+    padding-left: 3.1rem;
     cursor: pointer;
     position: relative;
     font-weight: 400;
@@ -699,52 +743,64 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
+/* Enhanced feedback items */
 .feedback-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
-/* Feedback styling for simple format */
 .feedback-item {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 16px;
-    border-left: 4px solid #ddd;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 0;
+    transition: all 0.2s ease;
+}
+
+.feedback-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .feedback-item.correct {
-    border-left-color: #4CAF50;
+    border-left: 4px solid var(--success);
 }
 
 .feedback-item.incorrect {
-    border-left-color: #F44336;
+    border-left: 4px solid var(--danger);
 }
 
 .question-text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     line-height: 1.5;
 }
 
 .user-answer {
-    font-size: 15px;
-    margin-bottom: 8px;
-    padding-left: 20px;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
 }
 
 .correct-answer {
-    font-size: 15px;
+    font-size: 0.95rem;
     font-weight: 500;
-    color: #4CAF50;
-    padding-left: 20px;
+    color: var(--success);
+    padding: 8px 12px;
+    background-color: rgba(56, 176, 0, 0.05);
+    border-radius: 4px;
 }
 
 .feedback-item.incorrect .user-answer {
-    color: #F44336;
-    font-weight: 500;
+    color: var(--danger);
+    background-color: rgba(231, 76, 60, 0.05);
 }
 
 .feedback-item h4 {
@@ -1002,7 +1058,7 @@ question_text > p {
 }
 
 .section-description {
-    color: white;
+    color: var(--text-primary);
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.15rem;
@@ -1057,9 +1113,7 @@ question_text > p {
 
 /* Ensure the back button stays to the left */
 .btn-icon {
-    position: absolute; /* Position the back button absolutely */
-    left: 1.5rem; /* Position from the left */
-    top: 1.5rem; /* Position from the top */
+    position: relative;
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -1071,8 +1125,8 @@ question_text > p {
 }
 
 .btn-icon:hover {
-    background-color: rgba(0, 0, 0, 0.05);
     color: var(--primary);
+    background-color: rgba(67, 97, 238, 0.05);
 }
 
 /* Ensure the exam title is centered */
@@ -1120,10 +1174,19 @@ question_text > p {
     transition: width 0.3s ease;
 }
 
+/* Progress text */
 .progress-text {
     text-align: left;
     font-size: 1.275rem;
     color: black;
+    margin: 8px 0 15px 0;
+}
+
+/* When progress-text is inside a question, make it more subtle */
+.question .progress-text {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 0px;
 }
 
 /* Exam navigation */
@@ -3202,3 +3265,645 @@ small {
         display: none;
     }
 } 
+
+/* Exam content layout */
+#exam-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Left column for exam header with independent scrolling */
+.exam-header {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: calc(100vh - 100px);
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-light);
+}
+
+/* Custom scrollbar for Webkit browsers */
+.exam-header::-webkit-scrollbar {
+    width: 6px;
+}
+
+.exam-header::-webkit-scrollbar-track {
+    background: var(--bg-light);
+    border-radius: 3px;
+}
+
+.exam-header::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 3px;
+}
+
+/* Ensure content in exam header is properly spaced */
+.exam-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+    min-height: 60px;
+}
+
+/* Right column for exam questions */
+.exam-questions-container {
+    width: calc(75% - 30px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+}
+
+/* Add animation for the exam content appearance */
+#exam-content.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#exam-content:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Make the questions display better with more space */
+#exam-questions {
+    margin-bottom: 0px;
+}
+
+.question {
+    margin-bottom: -2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.question:hover {
+    background-color: rgba(67, 97, 238, 0.02);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* Improve the options layout */
+.options {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+/* Make navigation buttons more prominent */
+.exam-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure the back button stays at the top left */
+.btn-icon {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: var(--transition);
+    border-radius: 50%;
+}
+
+.btn-icon:hover {
+    color: var(--primary);
+    background-color: rgba(67, 97, 238, 0.05);
+}
+
+/* Exam title container */
+.exam-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+}
+
+/* Reset exam title alignment */
+.exam-header h2 {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+/* Timer display */
+.exam-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-light);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    margin-top: 15px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+/* Adjustments for progress container */
+.progress-container {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    #exam-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .exam-header, .exam-questions-container {
+        width: 100%;
+    }
+    
+    .exam-header {
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+        order: 1;
+    }
+    
+    .exam-questions-container {
+        order: 2;
+    }
+}
+
+/* Question navigator and progress visualization */
+.question-progress-wrapper {
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.question-progress-wrapper h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 8px;
+}
+
+/* Visual progress indicator */
+.visual-progress {
+    margin-bottom: 20px;
+}
+
+.progress-indicator {
+    height: 8px;
+    background-color: var(--bg-white);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.progress-indicator-fill {
+    position: absolute;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.progress-stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.progress-stats span:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.progress-stats span:last-child::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Question navigator grid */
+.question-navigator {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.question-nav-item {
+    background-color: var(--bg-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.question-nav-item:hover {
+    background-color: rgba(67, 97, 238, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.question-nav-item.current {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(67, 97, 238, 0.2);
+}
+
+.question-nav-item.answered {
+    background-color: rgba(67, 97, 238, 0.15);
+    border-color: var(--primary);
+}
+
+.question-legend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.legend-current {
+    background-color: var(--primary);
+}
+
+.legend-answered {
+    background-color: rgba(67, 97, 238, 0.15);
+}
+
+.legend-unanswered {
+    background-color: var(--bg-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Adjustments for the main progress bar */
+.progress-container {
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments for question navigator */
+@media (max-width: 768px) {
+    .question-navigator {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .legend-item {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .question-navigator {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .question-legend {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+/* Results section layout fix */
+#results {
+    margin-top: 0;
+    max-width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+#results:not(.hidden) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    animation: fadeIn 0.4s ease;
+    position: relative;
+    top: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ensure proper spacing for all sections */
+section#exam-content:not(.hidden) + section#results {
+    margin-top: 30px;
+}
+
+/* Enhance the results display */
+.result-summary {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.skill-scores {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.result-actions {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-container {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    margin-top: 0;
+    border-top: none;
+}
+
+#results h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary);
+}
+
+/* Timer display in the questions container */
+.exam-questions-container .exam-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-light);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    width: auto;
+}
+
+/* Add some styling for titles in the exam header */
+.exam-header h2 {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+/* Ensure questions container layout is proper */
+.exam-questions-container {
+    width: calc(75% - 30px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+}
+
+/* Styles for exam header content sections */
+.exam-tips, .exam-info, .exam-instructions, .exam-resources {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.exam-header h3 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.exam-header h3:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+/* Tips list styling */
+.tips-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tips-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tips-list li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+}
+
+/* Exam information styling */
+.info-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.info-label {
+    font-weight: 600;
+    min-width: 120px;
+    color: var(--text-primary);
+}
+
+.info-value {
+    color: var(--text-secondary);
+}
+
+/* Instructions styling */
+.exam-instructions p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+/* Resources styling */
+.resources-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources-list li {
+    margin-bottom: 10px;
+}
+
+.resource-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.resource-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.resource-link:before {
+    content: '📌';
+    margin-right: 5px;
+}
+
+/* Back button styling when outside the header */
+#back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    background-color: var(--bg-white);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+#back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: var(--primary);
+}
+
+/* Adjust exam content to accommodate the button */
+#exam-content {
+    position: relative;
+    padding-top: 30px;
+}
+
+/* Exam layout adjustments */
+.exam-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+    min-height: 60px;
+}
+
+/* Question type styling */
+.question-type {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    margin-left: 0;
+    color: #fff;
+    font-weight: normal;
+}

@@ -248,23 +248,49 @@ function startExam(examId) {
     currentExamIndex = 0;
     examStartTime = new Date();
     
+    // Clear previous exam content if any
+    examQuestionsContainer.innerHTML = '';
+    
+    // Reset results section if it was previously shown
+    if (!resultsSection.classList.contains('hidden')) {
+        resultsSection.classList.add('hidden');
+        resultsSection.style.display = 'none';
+    }
+    
+    // Reset the exam header and content section styles
+    examContentSection.style.opacity = '';
+    examContentSection.style.transform = '';
+    examContentSection.style.display = '';
+    
     // Set up the exam UI
     examTitle.textContent = currentExam.title;
+    
+    // Reset any subtitle
+    const existingSubtitle = document.getElementById('exam-subtitle');
+    if (existingSubtitle) {
+        existingSubtitle.remove();
+    }
     
     // Add subtitle if available
     if (currentExam.subtitle) {
         // Check if subtitle element exists, create if not
-        let subtitleElement = document.getElementById('exam-subtitle');
-        if (!subtitleElement) {
-            subtitleElement = document.createElement('p');
-            subtitleElement.id = 'exam-subtitle';
-            const titleContainer = examTitle.closest('.exam-title-container');
-            titleContainer.appendChild(subtitleElement);
-        }
+        let subtitleElement = document.createElement('p');
+        subtitleElement.id = 'exam-subtitle';
+        const titleContainer = examTitle.closest('.exam-title-container');
+        titleContainer.appendChild(subtitleElement);
         subtitleElement.innerHTML = formatWithLineBreaks(currentExam.subtitle);
     }
     
-    examQuestionsContainer.innerHTML = '';
+    // Update exam information in the header
+    const totalQuestionsInfo = document.getElementById('info-total-questions');
+    if (totalQuestionsInfo) {
+        totalQuestionsInfo.textContent = currentExam.questions.length;
+    }
+    
+    const timeLimitInfo = document.getElementById('info-time-limit');
+    if (timeLimitInfo && currentExam.duration) {
+        timeLimitInfo.textContent = `${currentExam.duration} minutes`;
+    }
     
     // Create questions
     currentExam.questions.forEach((question, index) => {
@@ -283,16 +309,38 @@ function startExam(examId) {
     
     // Update progress indicators
     updateProgress();
-    totalQuestionsProgressElement.textContent = currentExam.questions.length;
     
-    // Show exam content, hide list
+    // Set up question navigator
+    setupQuestionNavigator();
+    
+    // Hide slideshow
+    const heroSlideshow = document.querySelector('.hero-slideshow');
+    if (heroSlideshow) {
+        heroSlideshow.style.display = 'none';
+    }
+    
+    // Prepare exam content for transition
     examContentSection.classList.remove('hidden');
-    document.getElementById('exam-container').classList.add('hidden');
     
-    // Scroll to exam content with smooth animation
-    examContentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Hide exam list with a fade out effect
+    const examContainer = document.getElementById('exam-container');
+    examContainer.style.opacity = '0';
+    examContainer.style.transform = 'translateY(-20px)';
+    examContainer.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     
-    // Start timer
+    // After a brief delay, hide exam container and ensure content is visible
+    setTimeout(() => {
+        examContainer.classList.add('hidden');
+        examContainer.style.opacity = '';
+        examContainer.style.transform = '';
+        examContainer.style.display = 'none';
+        
+        // Scroll to exam content with smooth animation
+        examContentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300);
+    
+    // Stop any existing timer and start a new one
+    stopTimer();
     startTimer();
     
     // Setup event listeners for navigation
@@ -405,6 +453,9 @@ function createQuestionElement(question, index) {
     
     questionElement.innerHTML = `
         <div class="question-type">${capitalizeFirstLetter(question.type || 'general')}</div>
+        <div class="progress-text">
+            Question <span id="current-question-inline">${currentExamIndex + 1}
+        </div>
         <h3>${question.prompt}</h3>
         ${imageHTML}
         ${formattedText}
@@ -446,7 +497,19 @@ function showQuestion(index) {
     
     // Update progress indicators
     currentQuestionElement.textContent = index + 1;
+    
+    // Update inline progress counters if they exist
+    const inlineCurrentElement = currentQuestion.querySelector('#current-question-inline');
+    if (inlineCurrentElement) {
+        inlineCurrentElement.textContent = index + 1;
+    }
+    
     updateProgress();
+    
+    // Scroll question into view with smooth animation
+    if (currentQuestion) {
+        currentQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 // Update question navigation buttons
@@ -498,8 +561,42 @@ function setupNavigationListeners() {
     exitExamHandler = function() {
         if (confirm('Are you sure you want to exit this exam? Your progress will be lost.')) {
             stopTimer();
-            examContentSection.classList.add('hidden');
-            document.getElementById('exam-container').classList.remove('hidden');
+            
+            // Fade out exam content
+            examContentSection.style.opacity = '0';
+            examContentSection.style.transform = 'translateY(-20px)';
+            examContentSection.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            
+            setTimeout(() => {
+                // Completely hide exam content
+                examContentSection.classList.add('hidden');
+                examContentSection.style.opacity = '';
+                examContentSection.style.transform = '';
+                examContentSection.style.display = 'none';
+                
+                // Show the exam list with a fade in effect
+                const examContainer = document.getElementById('exam-container');
+                examContainer.classList.remove('hidden');
+                examContainer.style.display = 'block';
+                examContainer.style.opacity = '0';
+                examContainer.style.transform = 'translateY(20px)';
+                
+                // Force reflow
+                void examContainer.offsetWidth;
+                
+                examContainer.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                examContainer.style.opacity = '1';
+                examContainer.style.transform = 'translateY(0)';
+                
+                // Show slideshow again
+                const heroSlideshow = document.querySelector('.hero-slideshow');
+                if (heroSlideshow) {
+                    heroSlideshow.style.display = 'block';
+                }
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 300);
         }
     };
     
@@ -509,12 +606,83 @@ function setupNavigationListeners() {
     backButton.addEventListener('click', exitExamHandler);
 }
 
-// Update progress indicators
+// Set up the question navigator
+function setupQuestionNavigator() {
+    const navigatorContainer = document.getElementById('question-navigator');
+    if (!navigatorContainer) return;
+    
+    navigatorContainer.innerHTML = '';
+    
+    // Set the total question count
+    const totalQuestionCountElement = document.getElementById('total-question-count');
+    if (totalQuestionCountElement) {
+        totalQuestionCountElement.textContent = `${currentExam.questions.length} questions`;
+    }
+    
+    // Create a button for each question
+    currentExam.questions.forEach((question, index) => {
+        const navItem = document.createElement('div');
+        navItem.className = 'question-nav-item';
+        navItem.textContent = index + 1;
+        navItem.dataset.index = index;
+        
+        if (index === currentExamIndex) {
+            navItem.classList.add('current');
+        }
+        
+        navItem.addEventListener('click', () => {
+            showQuestion(parseInt(navItem.dataset.index));
+        });
+        
+        navigatorContainer.appendChild(navItem);
+    });
+}
+
+// Update progress indicators with more info
 function updateProgress() {
     const answeredCount = userAnswers.filter(answer => answer !== null).length;
     const progressPercentage = (answeredCount / currentExam.questions.length) * 100;
     
+
+    // Update the regular progress bar
     progressFill.style.width = `${progressPercentage}%`;
+    
+    // Update the visual progress indicator
+    const visualProgressFill = document.getElementById('visual-progress-fill');
+    if (visualProgressFill) {
+        visualProgressFill.style.width = `${progressPercentage}%`;
+    }
+
+
+    
+    // Update the answered count
+    const answeredCountElement = document.getElementById('answered-count');
+    if (answeredCountElement) {
+        answeredCountElement.textContent = `${answeredCount} answered`;
+    }
+    
+    // Update the question nav items
+    updateQuestionNavItems();
+}
+
+// Update the question navigator to reflect answered/current questions
+function updateQuestionNavItems() {
+    const questionNavItems = document.querySelectorAll('.question-nav-item');
+    
+    questionNavItems.forEach((item, index) => {
+        // Reset classes
+        item.classList.remove('current', 'answered');
+        
+        // Set current
+        if (index === currentExamIndex) {
+            item.classList.add('current');
+        }
+        
+        // Set answered
+        if (userAnswers[index] !== null) {
+            item.classList.add('answered');
+        }
+    });
 }
 
 // Start the timer
@@ -560,7 +728,7 @@ function formatWithLineBreaks(text) {
     const currentPage = window.location.pathname.split('/').pop();
     
     // Apply bold formatting for specific pages
-    if (['Product.html', 'Paragraph.html', 'Article.html', 'Advertisement.html','product.html','news_report.html','text_completion.html',].includes(currentPage)) {
+    if (['Product.html', 'Paragraph.html', 'Article.html', 'Advertisement.html','product.html','News_report.html','text_completion.html',].includes(currentPage)) {
         // Replace text between ** ** with <strong> tags
         formattedText = formattedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     }
@@ -857,6 +1025,37 @@ function calculateResults() {
         feedbackList.appendChild(feedbackItem);
     });
     
+    // Fade out exam content section
+    examContentSection.style.opacity = '0';
+    examContentSection.style.transform = 'translateY(-20px)';
+    examContentSection.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    
+    // After a brief delay, hide exam content and show results
+    setTimeout(() => {
+        // Completely hide exam content
+        examContentSection.classList.add('hidden');
+        examContentSection.style.opacity = '';
+        examContentSection.style.transform = '';
+        examContentSection.style.display = 'none';
+        
+        // Prepare and show results section at the top of the page
+        resultsSection.style.opacity = '0';
+        resultsSection.style.transform = 'translateY(20px)';
+        resultsSection.classList.remove('hidden');
+        resultsSection.style.display = 'block';
+        
+        // Force reflow to ensure transition works
+        void resultsSection.offsetWidth;
+        
+        // Show results with animation
+        resultsSection.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        resultsSection.style.opacity = '1';
+        resultsSection.style.transform = 'translateY(0)';
+        
+        // Scroll to top of the page to show results
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 300);
+    
     // Save the results to the progress tracker
     if (typeof window.saveExamResult === 'function') {
         // Get the exam type from the loaded exam data instead of URL
@@ -891,10 +1090,6 @@ function calculateResults() {
             showProgressSavedNotification();
         }
     }
-    
-    // Hide exam content and show results
-    examContentSection.classList.add('hidden');
-    resultsSection.classList.remove('hidden');
 }
 
 // Show a notification that progress was saved
@@ -948,9 +1143,45 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (backToListBtn) {
         backToListBtn.addEventListener('click', () => {
-            examContentSection.classList.add('hidden');
-            resultsSection.classList.add('hidden');
-            document.querySelector('section#exam-container').classList.remove('hidden');
+            // Fade out the results section
+            resultsSection.style.opacity = '0';
+            resultsSection.style.transform = 'translateY(-20px)';
+            resultsSection.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            
+            setTimeout(() => {
+                // Completely hide results section
+                resultsSection.classList.add('hidden');
+                resultsSection.style.opacity = '';
+                resultsSection.style.transform = '';
+                resultsSection.style.display = 'none';
+                
+                // Make sure exam content is hidden too
+                examContentSection.classList.add('hidden');
+                examContentSection.style.display = 'none';
+                
+                // Show the exam list with a fade in effect
+                const examContainer = document.querySelector('section#exam-container');
+                examContainer.classList.remove('hidden');
+                examContainer.style.display = 'block';
+                examContainer.style.opacity = '0';
+                examContainer.style.transform = 'translateY(20px)';
+                
+                // Force reflow
+                void examContainer.offsetWidth;
+                
+                examContainer.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                examContainer.style.opacity = '1';
+                examContainer.style.transform = 'translateY(0)';
+                
+                // Show slideshow again
+                const heroSlideshow = document.querySelector('.hero-slideshow');
+                if (heroSlideshow) {
+                    heroSlideshow.style.display = 'block';
+                }
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 300);
         });
     }
     
