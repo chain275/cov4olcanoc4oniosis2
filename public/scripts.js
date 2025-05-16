@@ -370,9 +370,9 @@ function displayExamList() {
         examCard.innerHTML = `
             <h3>${exam.title}</h3>
             <p>${exam.description}</p>
-            <p><b>Duration:</b> ${exam.duration} minutes</p>
-            <p><qb>Questions:</qb> ${exam.totalQuestions}</p>
-            <button class="btn start-exam">Start Exam</button>
+            <p><b>เวลา:</b> ${exam.duration} minutes</p>
+            <p><qb>จำนวนข้อ:</qb> ${exam.totalQuestions}</p>
+            <button class="btn start-exam">เริ่มบททดสอบ</button>
         `;
         
         examCard.querySelector('.start-exam').addEventListener('click', () => startExam(exam.id));
@@ -764,7 +764,7 @@ function setupQuestionNavigator() {
     // Set the total question count
     const totalQuestionCountElement = document.getElementById('total-question-count');
     if (totalQuestionCountElement) {
-        totalQuestionCountElement.textContent = `${currentExam.questions.length} questions`;
+        totalQuestionCountElement.textContent = `${currentExam.questions.length} คำถาม`;
     }
     
     // Create a button for each question
@@ -806,7 +806,7 @@ function updateProgress() {
     // Update the answered count
     const answeredCountElement = document.getElementById('answered-count');
     if (answeredCountElement) {
-        answeredCountElement.textContent = `${answeredCount} answered`;
+        answeredCountElement.textContent = `${answeredCount} เลือกคำตอบแล้ว`;
     }
     
     // Update the question nav items
@@ -893,7 +893,7 @@ function formatWithLineBreaks(text) {
                 const remainingText = rest.join(':'); // In case there are multiple colons
                 
                 // Make text after colon bold and black with !important to override conflicting styles
-                return `<p class="adv-paragraph">${prefix}: <strong class="adv-content" style="color: black !important; font-weight: bold !important;">${remainingText}</strong></p>`;
+                return `<strong class="adv-content" style="color: black !important; font-weight: bold !important;">${prefix}:</strong> <p class="adv-paragraph">${remainingText}</p>`;
             } else {
                 return `<p class="adv-paragraph">${line}</p>`;
             }

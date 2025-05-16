@@ -418,6 +418,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Set up navigation handlers (prev/next buttons, etc.)
             setupNavigationHandlers();
             
+            // Initialize question navigator
+            initializeQuestionNavigator(validExams.length);
+            
             // Start timer
             if (typeof startTimer === 'function') {
                 startTimer(combinedExam.duration * 60);
@@ -530,6 +533,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup navigation handlers
     function setupNavigationHandlers() {
+        console.log('Setting up navigation handlers');
+        
         const prevButton = document.getElementById('prev-question');
         const nextButton = document.getElementById('next-question');
         const submitButton = document.getElementById('submit-exam');
@@ -583,183 +588,222 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.onclick = submitExam;
         }
         
-        // Question jump functionality
-        if (jumpMenuButton) {
-            jumpMenuButton.onclick = function() {
-                toggleQuestionJumpMenu();
-            };
-        }
+        // Instead of using the dedicated question jump button (which we removed),
+        // we're now using the question navigator directly
+        // No need for jumpMenuButton handler or createQuestionJumpMenu
         
-        // Create the question jump menu if it doesn't exist
-        createQuestionJumpMenu();
+        console.log('Navigation handlers set up successfully');
     }
     
-    // Create a question jump menu for quick navigation
-    function createQuestionJumpMenu() {
-        // Check if the menu already exists
-        if (document.getElementById('question-jump-menu')) return;
+    // Initialize question navigator
+    function initializeQuestionNavigator(questionCount) {
+        const navigator = document.getElementById('question-navigator');
+        if (!navigator) return;
         
-        // Create the question jump menu container
-        const jumpMenuContainer = document.createElement('div');
-        jumpMenuContainer.id = 'question-jump-menu';
-        jumpMenuContainer.className = 'question-jump-menu hidden';
+        // Clear any existing buttons
+        navigator.innerHTML = '';
         
-        // Create the menu header
-        const menuHeader = document.createElement('div');
-        menuHeader.className = 'jump-menu-header';
-        menuHeader.innerHTML = '<h4>Question Navigator</h4><button class="close-jump-menu">&times;</button>';
-        jumpMenuContainer.appendChild(menuHeader);
+        // Define the question categories
+        const categories = [
+            { name: 'SPEAKING', start: 1, end: 20, class: 'speaking' },
+            { name: 'READING', start: 21, end: 60, class: 'reading' },
+            { name: 'WRITING', start: 61, end: 80, class: 'writing' }
+        ];
         
-        // Close button functionality
-        menuHeader.querySelector('.close-jump-menu').addEventListener('click', function() {
-            toggleQuestionJumpMenu();
-        });
-        
-        // Add question type legend
-        const typeLegend = document.createElement('div');
-        typeLegend.className = 'type-legend';
-        typeLegend.innerHTML = `
-            <div class="legend-title">Question Types:</div>
-            <div class="legend-items">
-                <div class="legend-item"><span class="legend-color short-conversation"></span> Short Conversation</div>
-                <div class="legend-item"><span class="legend-color long-conversation"></span> Long Conversation</div>
-                <div class="legend-item"><span class="legend-color advertisement"></span> Advertisement</div>
-                <div class="legend-item"><span class="legend-color product"></span> Product</div>
-                <div class="legend-item"><span class="legend-color news-report"></span> News Report</div>
-                <div class="legend-item"><span class="legend-color article"></span> Article</div>
-                <div class="legend-item"><span class="legend-color text-completion"></span> Text Completion</div>
-                <div class="legend-item"><span class="legend-color paragraph"></span> Paragraph</div>
-            </div>
-        `;
-        jumpMenuContainer.appendChild(typeLegend);
-        
-        // Create the question buttons container
-        const questionGrid = document.createElement('div');
-        questionGrid.className = 'question-grid';
-        jumpMenuContainer.appendChild(questionGrid);
-        
-        // Create buttons for each question
-        if (window.currentExam && window.currentExam.questions) {
-            for (let i = 0; i < window.currentExam.questions.length; i++) {
-                const question = window.currentExam.questions[i];
-                const questionButton = document.createElement('div');
-                questionButton.className = 'question-jump-button';
-                questionButton.dataset.index = i;
+        // Loop through each category
+        categories.forEach(category => {
+            // Add category header
+            const categoryHeader = document.createElement('div');
+            categoryHeader.className = `category-header ${category.class}`;
+            categoryHeader.textContent = category.name;
+            navigator.appendChild(categoryHeader);
+            
+            // Create buttons for this category
+            for (let i = category.start - 1; i < Math.min(category.end, questionCount); i++) {
+                const button = document.createElement('div');
+                button.className = `question-nav-item ${category.class}`;
+                button.textContent = (i + 1).toString();
+                button.dataset.index = i;
                 
-                // Create button content with status indicator
-                questionButton.innerHTML = `
-                    <div class="question-number">${i + 1}</div>
-                    <div class="question-status"></div>
-                `;
-                
-                // Add question type indicator if available
-                if (question.type) {
-                    questionButton.title = `Question ${i + 1} (${formatTypeName(question.type)})`;
-                    questionButton.classList.add(`type-${question.type.replace('_', '-')}`);
-                } else {
-                    questionButton.title = `Question ${i + 1}`;
-                }
-                
-                // Handle click to jump to question
-                questionButton.addEventListener('click', function() {
+                // Add click handler
+                button.addEventListener('click', function() {
                     saveCurrentAnswer();
-                    loadQuestion(i);
-                    toggleQuestionJumpMenu();
+                    loadQuestion(parseInt(this.dataset.index));
                 });
                 
-                questionGrid.appendChild(questionButton);
-            }
-        }
-        
-        // Add status legend
-        const statusLegend = document.createElement('div');
-        statusLegend.className = 'status-legend';
-        statusLegend.innerHTML = `
-            <div class="legend-title">Status:</div>
-            <div class="status-items">
-                <div class="status-item"><span class="status-indicator current"></span> Current Question</div>
-                <div class="status-item"><span class="status-indicator answered"></span> Answered</div>
-                <div class="status-item"><span class="status-indicator not-answered"></span> Not Answered</div>
-            </div>
-        `;
-        jumpMenuContainer.appendChild(statusLegend);
-        
-        // Append to exam content section
-        const examContent = document.getElementById('exam-content');
-        if (examContent) {
-            examContent.appendChild(jumpMenuContainer);
-        }
-    }
-    
-    // Toggle the question jump menu visibility
-    function toggleQuestionJumpMenu() {
-        const jumpMenu = document.getElementById('question-jump-menu');
-        if (jumpMenu) {
-            jumpMenu.classList.toggle('hidden');
-            
-            // Update the status of each question when opening the menu
-            if (!jumpMenu.classList.contains('hidden')) {
-                updateJumpMenuStatuses();
-            }
-        }
-    }
-    
-    // Update the status indicators in the jump menu
-    function updateJumpMenuStatuses() {
-        const jumpMenu = document.getElementById('question-jump-menu');
-        if (!jumpMenu) return;
-        
-        const questionButtons = jumpMenu.querySelectorAll('.question-jump-button');
-        questionButtons.forEach((button, index) => {
-            // Reset classes
-            button.classList.remove('answered', 'current', 'not-answered');
-            
-            // Mark current question
-            if (index === window.currentQuestionIndex) {
-                button.classList.add('current');
-            }
-            
-            // Mark answered/unanswered questions
-            if (window.userAnswers && window.userAnswers[index] !== null) {
-                button.classList.add('answered');
-            } else {
-                button.classList.add('not-answered');
+                navigator.appendChild(button);
             }
         });
+        
+        // Set total question count
+        const totalQuestionCount = document.getElementById('total-question-count');
+        if (totalQuestionCount) {
+            totalQuestionCount.textContent = `${questionCount.toString()} ข้อ`;
+        }
+        
+        // Initialize the visual progress fill indicator
+        const visualProgressFill = document.getElementById('visual-progress-fill');
+        if (visualProgressFill) {
+            visualProgressFill.style.width = '0%';
+        }
+        
+        // Add some CSS to style the category headers
+        addCategoryStyles();
+    }
+
+    // Add CSS styles for question categories
+    function addCategoryStyles() {
+        // Check if styles already exist
+        if (document.getElementById('category-styles')) return;
+        
+        const styleElement = document.createElement('style');
+        styleElement.id = 'category-styles';
+        
+        styleElement.textContent = `
+            .category-header {
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                padding: 5px 0;
+                margin: 10px 0 5px 0;
+                border-radius: 4px;
+                color: white;
+                font-size: 12px;
+            }
+            
+            .category-header.speaking {
+                background-color: #FF5722;
+            }
+            
+            .category-header.reading {
+                background-color: #3F51B5;
+            }
+            
+            .category-header.writing {
+                background-color: #00BCD4;
+            }
+            
+            .question-nav-item.speaking {
+                border-bottom: 2px solid #FF5722;
+            }
+            
+            .question-nav-item.reading {
+                border-bottom: 2px solid #3F51B5;
+            }
+            
+            .question-nav-item.writing {
+                border-bottom: 2px solid #00BCD4;
+            }
+            
+            /* Make the navigator a bit more flexible for the categories */
+            .question-navigator {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                justify-content: center;
+                padding: 10px;
+            }
+        `;
+        
+        document.head.appendChild(styleElement);
+    }
+
+    // Update question navigator to maintain category styling
+    function updateQuestionNavigator(currentIndex) {
+        const navigator = document.getElementById('question-navigator');
+        if (!navigator) return;
+        
+        // Determine which category this question belongs to
+        let category = '';
+        if (currentIndex < 20) {
+            category = 'speaking';
+        } else if (currentIndex < 60) {
+            category = 'reading';
+        } else {
+            category = 'writing';
+        }
+        
+        // Update button states
+        const buttons = navigator.querySelectorAll('.question-nav-item');
+        buttons.forEach((button, index) => {
+            // Get the real question index from the dataset
+            const buttonIndex = parseInt(button.dataset.index);
+            
+            // Clear previous state classes
+            button.classList.remove('current', 'answered', 'unanswered');
+            
+            // Add appropriate class
+            if (buttonIndex === currentIndex) {
+                button.classList.add('current');
+            } else if (window.userAnswers && window.userAnswers[buttonIndex] !== null) {
+                button.classList.add('answered');
+            } else {
+                button.classList.add('unanswered');
+            }
+        });
+        
+        // Update answered count
+        const answeredCount = window.userAnswers ? window.userAnswers.filter(answer => answer !== null).length : 0;
+        const answeredCountElement = document.getElementById('answered-count');
+        if (answeredCountElement) {
+            answeredCountElement.textContent = `${answeredCount.toString()} เลือกคำตอบแล้ว`;
+        }
+        
+        // Update visual progress fill
+        const totalQuestions = window.currentExam ? window.currentExam.totalQuestions : 0;
+        const visualProgressFill = document.getElementById('visual-progress-fill');
+        if (visualProgressFill && totalQuestions > 0) {
+            const progressPercentage = (answeredCount / totalQuestions) * 100;
+            visualProgressFill.style.width = `${progressPercentage}%`;
+        }
     }
     
     // Update progress indicators
     function updateProgressIndicators(index) {
-        // Update current question indicator
-        const currentQuestionElement = document.getElementById('current-question');
-        if (currentQuestionElement) {
-            currentQuestionElement.textContent = index + 1;
+        try {
+            console.log(`Updating progress indicators for question ${index + 1}`);
+            
+            // Update current question indicator
+            const currentQuestionElement = document.getElementById('current-question');
+            if (currentQuestionElement) {
+                currentQuestionElement.textContent = index + 1;
+                console.log(`Updated current question to ${index + 1}`);
+            }
+            
+            // Update progress bar fill
+            const progressFill = document.getElementById('progress-fill');
+            if (progressFill && window.currentExam) {
+                const percentage = ((index + 1) / window.currentExam.totalQuestions) * 100;
+                progressFill.style.width = `${percentage}%`;
+                console.log(`Updated progress fill to ${percentage}%`);
+            }
+            
+            // Update answered questions count
+            const answeredCount = window.userAnswers ? window.userAnswers.filter(answer => answer !== null).length : 0;
+            const totalQuestions = window.currentExam ? window.currentExam.totalQuestions : 0;
+            
+            const answeredCountElement = document.getElementById('answered-count');
+            if (answeredCountElement) {
+                answeredCountElement.textContent = answeredCount;
+                console.log(`Updated answered count to ${answeredCount}`);
+            }
+
+            // Update the visual progress fill (new element in the updated layout)
+            const visualProgressFill = document.getElementById('visual-progress-fill');
+            if (visualProgressFill && totalQuestions > 0) {
+                const progressPercentage = (answeredCount / totalQuestions) * 100;
+                visualProgressFill.style.width = `${progressPercentage}%`;
+                console.log(`Updated visual progress fill to ${progressPercentage}%`);
+            }
+            
+            // Update question navigator
+            updateQuestionNavigator(index);
+            
+            // Setup navigation buttons
+            setupNavigationButtons(index);
+        } catch (error) {
+            console.error('Error updating progress indicators:', error);
         }
-        
-        // Update progress bar
-        const progressFill = document.getElementById('progress-fill');
-        if (progressFill && window.currentExam) {
-            const percentage = ((index + 1) / window.currentExam.totalQuestions) * 100;
-            progressFill.style.width = `${percentage}%`;
-        }
-        
-        // Update answered questions count
-        const answeredCount = window.userAnswers ? window.userAnswers.filter(answer => answer !== null).length : 0;
-        const totalQuestions = window.currentExam ? window.currentExam.totalQuestions : 0;
-        
-        const answeredCountElement = document.getElementById('questions-answered-count');
-        if (answeredCountElement) {
-            answeredCountElement.textContent = answeredCount;
-        }
-        
-        // Update question status indicator
-        updateQuestionStatusIndicator(index);
-        
-        // Update jump menu if visible
-        updateJumpMenuStatuses();
-        
-        // Setup navigation buttons
-        setupNavigationButtons(index);
     }
     
     // Setup navigation buttons
@@ -809,6 +853,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Update the status indicator immediately after answering
             updateQuestionStatusIndicator(window.currentQuestionIndex);
+            
+            // Update the question navigator
+            updateQuestionNavigator(window.currentQuestionIndex);
         }
     }
     
@@ -818,7 +865,9 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(`Loading question ${index}`);
             
             const questionsContainer = document.getElementById('exam-questions');
-            if (!questionsContainer || !window.currentExam || !window.currentExam.questions) {
+            const examHeader = document.querySelector('.exam-header');
+            
+            if (!questionsContainer || !examHeader || !window.currentExam || !window.currentExam.questions) {
                 throw new Error("Required elements not found");
             }
             
@@ -827,6 +876,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Clear previous questions
             questionsContainer.innerHTML = '';
+            
+            // Clear previous content from header
+            // Preserve the exam title container
+            const examTitleContainer = examHeader.querySelector('.exam-title-container');
+            examHeader.innerHTML = '';
+            examHeader.appendChild(examTitleContainer);
             
             const question = window.currentExam.questions[index];
             if (!question) {
@@ -840,15 +895,38 @@ document.addEventListener('DOMContentLoaded', function() {
             questionContainer.className = 'question-container';
             questionsContainer.appendChild(questionContainer);
             
-            // Add type indicator first
+            // Add question progress-text at the top of the question container
+            addQuestionProgressText(questionContainer, index + 1, window.currentExam.totalQuestions);
+            
+            // Add question text below the progress text
+            if (question.text) {
+                const textPara = document.createElement('p');
+                textPara.className = 'question-text';
+                
+                // Apply i**text** formatting to make text bold
+                let formattedText = question.text.replace(/i\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                
+                // Use innerHTML instead of textContent to preserve HTML formatting
+                textPara.innerHTML = formattedText;
+                
+                questionContainer.appendChild(textPara);
+            }
+            
+            // Add type indicator to the question container
             if (question.type) {
                 addTypeIndicator(questionContainer, question.type);
             }
             
+            // Create content wrapper to separate question content from options
+            // Now append to examHeader instead of questionContainer
+            const contentWrapper = document.createElement('div');
+            contentWrapper.className = 'content-wrapper';
+            examHeader.appendChild(contentWrapper);
+            
             // Create question content
             const questionContent = document.createElement('div');
             questionContent.className = 'question-content';
-            questionContainer.appendChild(questionContent);
+            contentWrapper.appendChild(questionContent);
             
             // Create question header - moved below content
             const questionHeader = document.createElement('div');
@@ -857,35 +935,16 @@ document.addEventListener('DOMContentLoaded', function() {
             // Remove question number text but keep the container for styling purposes
             questionHeader.innerHTML = `<div class="question-number"></div>`;
             
-            questionContainer.appendChild(questionHeader);
+            contentWrapper.appendChild(questionHeader);
             
             // Add subtitle with type-specific formatting first (moved before question text)
             if (question.subtitle) {
                 addFormattedSubtitle(questionContent, question.subtitle, question.type);
             }
             
-            // Add question progress-text below subtitle
-            addQuestionProgressText(questionContent, index + 1, window.currentExam.totalQuestions);
-
             console.log(`window: ${window.currentExam.type}`);
             
-            // Add question text (moved after subtitle)
-            if (question.text) {
-                const textPara = document.createElement('p');
-                textPara.className = 'question-text';
-                
-                // Apply i**text** formatting to make text bold
-                let formattedText = question.text.replace(/i\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                
-                textPara.textContent = formattedText;
-                
-                // Use innerHTML instead of textContent to preserve HTML formatting
-                textPara.innerHTML = formattedText;
-                
-                questionContent.appendChild(textPara);
-            }
-            
-            // Add question prompt
+            // Add question prompt if it exists
             if (question.prompt) {
                 const promptPara = document.createElement('p');
                 promptPara.className = 'question-prompt';
@@ -907,10 +966,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 questionContent.appendChild(imageDiv);
             }
             
+            // Options section - this remains in the question container
+            
+            // Create a separate options wrapper
+            const optionsWrapper = document.createElement('div');
+            optionsWrapper.className = 'options-wrapper';
+            questionContainer.appendChild(optionsWrapper);
+            
             // Create options container
             const optionsContainer = document.createElement('div');
             optionsContainer.className = 'options-container';
-            questionContainer.appendChild(optionsContainer);
+            optionsWrapper.appendChild(optionsContainer);
             
             // Use default options if none are provided
             const options = ensureOptions(question);
@@ -1421,132 +1487,186 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Calculate exam results
     function calculateResults() {
-        const results = {
-            totalQuestions: window.currentExam.totalQuestions,
-            correctCount: 0,
-            answers: []
-        };
-        
-        // Process each question
-        for (let i = 0; i < window.currentExam.questions.length; i++) {
-            const question = window.currentExam.questions[i];
-            const selectedOption = window.userAnswers[i];
+        try {
+            console.log('Calculating exam results');
             
-            const answerData = {
-                questionIndex: i,
-                selectedOption: selectedOption,
-                correctOption: question.correctAnswer,
-                isCorrect: selectedOption === question.correctAnswer
-            };
+            const totalQuestions = window.currentExam.totalQuestions;
+            const userAnswers = window.userAnswers || [];
+            const questions = window.currentExam.questions || [];
             
-            if (answerData.isCorrect) {
-                results.correctCount++;
+            let correctCount = 0;
+            const questionResults = [];
+            const typeStats = {};
+            
+            // Process each question and answer
+            questions.forEach((question, index) => {
+                const userAnswer = userAnswers[index];
+                const correctAnswer = question.correctAnswer;
+                const isCorrect = userAnswer === correctAnswer;
+                
+                // Update correct count
+                if (isCorrect) {
+                    correctCount++;
+                }
+                
+                // Store question result
+                questionResults.push({
+                    questionIndex: index,
+                    questionText: question.text,
+                    userAnswer: userAnswer,
+                    correctAnswer: correctAnswer,
+                    isCorrect: isCorrect,
+                    questionType: question.type,
+                    explanation: question.explanation || null
+                });
+                
+                // Update type statistics
+                const type = question.type || 'unknown';
+                if (!typeStats[type]) {
+                    typeStats[type] = { total: 0, correct: 0 };
+                }
+                
+                typeStats[type].total++;
+                if (isCorrect) {
+                    typeStats[type].correct++;
+                }
+            });
+            
+            // Calculate percentage scores for each type
+            const typeScores = {};
+            for (const [type, stats] of Object.entries(typeStats)) {
+                const percentage = (stats.correct / stats.total) * 100;
+                typeScores[type] = {
+                    total: stats.total,
+                    correct: stats.correct,
+                    percentage: percentage
+                };
             }
             
-            results.answers.push(answerData);
+            // Calculate overall percentage
+            const percentage = (correctCount / totalQuestions) * 100;
+            
+            // Format time taken
+            const minutes = Math.floor(elapsedSeconds / 60);
+            const seconds = elapsedSeconds % 60;
+            const timeTaken = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            
+            // Compile results object
+            const results = {
+                correctCount: correctCount,
+                totalQuestions: totalQuestions,
+                percentage: percentage,
+                timeTaken: timeTaken,
+                questionResults: questionResults,
+                typeScores: typeScores
+            };
+            
+            console.log('Results calculated:', results);
+            return results;
+        } catch (error) {
+            console.error('Error calculating results:', error);
+            // Return a basic results object in case of error
+            return {
+                correctCount: 0,
+                totalQuestions: window.currentExam ? window.currentExam.totalQuestions : 0,
+                percentage: 0,
+                timeTaken: '0:00',
+                questionResults: [],
+                typeScores: {}
+            };
         }
-        
-        return results;
+    }
+    
+    // Helper function to get performance text based on score percentage
+    function getPerformanceText(percentage) {
+        if (percentage >= 90) {
+            return 'ที่สุด 💯💯';
+        } else if (percentage >= 80) {
+            return 'ยอดเยี่ยม';
+        } else if (percentage >= 60) {
+            return 'ค่อนข้างดี';
+        } else if (percentage >= 50) {
+            return 'พอใช้';
+        } else if (percentage >= 40) {
+            return 'ต้องปรับปรุง';
+        } else {
+            return 'ควรปรับปรุงอย่างเร่งด่วน';
+        }
     }
     
     // Update results display
     function updateResultsDisplay(results) {
-        // Calculate skill-specific scores for UI update
-        const skillScores = calculateSkillScores(results);
-        
-        // Update score percentage
-        const scoreElement = document.getElementById('score');
-        if (scoreElement) {
-            const percentage = Math.round((results.correctCount / results.totalQuestions) * 100);
-            scoreElement.textContent = `${percentage}%`;
+        try {
+            console.log('Updating results display with:', results);
             
-            // Update score circle fill
+            // Set percentage score
+            const scoreElement = document.getElementById('score');
+            if (scoreElement) {
+                scoreElement.textContent = `${Math.round(results.percentage)}%`;
+            }
+            
+            // Animate score path
             const scorePath = document.getElementById('score-path');
             if (scorePath) {
                 const circumference = 2 * Math.PI * 15.9155;
-                const offset = circumference * (1 - percentage / 100);
+                const offset = circumference - (results.percentage / 100) * circumference;
+                
+                // First set initial state
                 scorePath.style.strokeDasharray = `${circumference} ${circumference}`;
+                scorePath.style.strokeDashoffset = `${circumference}`;
+                
+                // Force a reflow
+                scorePath.getBoundingClientRect();
+                
+                // Then animate
+                scorePath.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
                 scorePath.style.strokeDashoffset = offset;
             }
             
-            // Calculate percentile rank based on score.json data
-            calculatePercentileRank(results.correctCount);
-        }
-        
-        // Update correct count
-        const correctCountElement = document.getElementById('correct-count');
-        if (correctCountElement) {
-            correctCountElement.textContent = results.correctCount;
-        }
-        
-        // Update total questions
-        const totalQuestionsElement = document.getElementById('total-questions');
-        if (totalQuestionsElement) {
-            totalQuestionsElement.textContent = results.totalQuestions;
-        }
-        
-        // Update performance text
-        const performanceTextElement = document.getElementById('performance-text');
-        if (performanceTextElement) {
-            const percentage = (results.correctCount / results.totalQuestions) * 100;
-            let performanceText = 'ต้องปรับปรุงอย่างเร่งด่วน';
-            
-            if (percentage >= 90) {
-                performanceText = 'ที่สุด 💯💯';
-            } else if (percentage >= 80) {
-                performanceText = 'ยอดเยี่ยม';
-            } else if (percentage >= 60) {
-                performanceText = 'ค่อนข้างดี';
-            } else if (percentage >= 50) {
-                performanceText = 'พอใช้';
-            } else if (percentage >= 40) {
-                performanceText = 'ต้องปรับปรุง';
+            // Update correct count
+            const correctCountElement = document.getElementById('correct-count');
+            if (correctCountElement) {
+                correctCountElement.textContent = results.correctCount;
             }
             
-            performanceTextElement.textContent = performanceText;
-        }
-        
-        // Update skill-specific scores (reading, writing, speaking)
-        updateSkillScore('reading', skillScores.reading);
-        updateSkillScore('writing', skillScores.writing);
-        updateSkillScore('speaking', skillScores.speaking);
-        
-        // Update correct/total counts for each skill
-        updateSkillCount('reading', skillScores.skillCounts.reading);
-        updateSkillCount('writing', skillScores.skillCounts.writing);
-        updateSkillCount('speaking', skillScores.skillCounts.speaking);
-        
-        // Add progress tracker link to the result actions
-        addProgressTrackerLink();
-        
-        // Add detailed feedback for each question
-        addDetailedFeedback(results.answers);
-        
-        // Re-attach event listener for view-feedback button after results are displayed
-        // This ensures the button exists in the DOM when we try to attach the listener
-        viewFeedbackBtn = document.getElementById('view-feedback');
-        if (viewFeedbackBtn) {
-            console.log('Found view-feedback button, adding event listener');
-            // Remove any existing listeners to avoid duplicates
-            viewFeedbackBtn.removeEventListener('click', toggleFeedback);
-            // Add the click event listener
-            viewFeedbackBtn.addEventListener('click', toggleFeedback);
+            // Update total questions
+            const totalQuestionsElement = document.getElementById('total-questions');
+            if (totalQuestionsElement) {
+                totalQuestionsElement.textContent = results.totalQuestions;
+            }
             
-            // Add inline onclick handler as a fallback
-            viewFeedbackBtn.onclick = function() {
-                console.log('View feedback button clicked (inline handler)');
-                const feedbackContainer = document.getElementById('feedback');
-                if (feedbackContainer) {
-                    feedbackContainer.classList.toggle('hidden');
-                    this.textContent = feedbackContainer.classList.contains('hidden') ? 
-                        'View Detailed Feedback' : 'Hide Detailed Feedback';
-                } else {
-                    console.error('Feedback container not found');
-                }
-                return false; // Prevent default behavior
-            };
-        } else {
-            console.error('View feedback button not found');
+            // Update time taken
+            const timeTakenElement = document.getElementById('time-taken');
+            if (timeTakenElement) {
+                timeTakenElement.textContent = results.timeTaken;
+            }
+            
+            // Update performance text
+            const performanceTextElement = document.getElementById('performance-text');
+            if (performanceTextElement) {
+                const performanceText = getPerformanceText(results.percentage);
+                performanceTextElement.textContent = performanceText;
+            }
+            
+            // Update type scores
+            updateTypeScores(results);
+            
+            // Add detailed feedback
+            addDetailedFeedback(results.questionResults);
+            
+            // Add score suggestions based on the performance
+            // Pass the type scores to the function
+            addScoreSuggestions(results.percentage, results.typeScores);
+            
+            // Show the results section
+            const resultsSection = document.getElementById('results');
+            if (resultsSection) {
+                resultsSection.classList.remove('hidden');
+            }
+            
+            console.log('Results display updated successfully');
+        } catch (error) {
+            console.error('Error updating results display:', error);
         }
     }
     
@@ -2595,59 +2715,168 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update type-specific scores in the results
     function updateTypeScores(result) {
-        // Initialize counters for each type
-        const typeCorrect = {};
-        Object.keys(typeCounts).forEach(type => {
-            typeCorrect[type] = 0;
-        });
-        
-        // Count correct answers by type
-        if (result && result.answers) {
-            result.answers.forEach((answer, index) => {
-                const question = window.currentExam.questions[index];
-                if (question && question.type) {
-                    if (answer.isCorrect) {
-                        typeCorrect[question.type] = (typeCorrect[question.type] || 0) + 1;
-                    }
-                }
-            });
-        }
-        
-        // Update the UI for each type
-        Object.keys(typeScoreMap).forEach(type => {
-            const scoreElement = document.getElementById(typeScoreMap[type]);
-            if (scoreElement) {
-                const count = typeCorrect[type] || 0;
-                const total = typeCounts[type] || 0;
-                scoreElement.textContent = `${count}/${total}`;
+        try {
+            console.log('Updating type scores with:', result.typeScores);
+            
+            const typeScores = result.typeScores || {};
+            const typeContainer = document.querySelector('.type-scores-container');
+            
+            if (!typeContainer) {
+                console.error('Type scores container not found');
+                return;
+            }
+            
+            // Clear existing type scores (except for the first two which are in the HTML)
+            const existingItems = typeContainer.querySelectorAll('.type-score-item');
+            for (let i = 2; i < existingItems.length; i++) {
+                existingItems[i].remove();
+            }
+            
+            // Get the list of all types we need to display
+            const allTypes = Object.keys(typeScores);
+            
+            // Update the first two types that are already in the HTML
+            if (allTypes.length > 0 && typeScores[allTypes[0]]) {
+                updateTypeScoreElement('short-conversation', typeScores['short_conversation']);
+            }
+            
+            if (allTypes.length > 1 && typeScores[allTypes[1]]) {
+                updateTypeScoreElement('long-conversation', typeScores['long_conversation']);
+            }
+            
+            // Add the rest of the types
+            for (let i = 2; i < allTypes.length; i++) {
+                const type = allTypes[i];
+                const typeScore = typeScores[type];
                 
-                // Highlight scores
-                if (count === total) {
-                    scoreElement.classList.add('perfect-score');
-                } else if (count >= Math.floor(total * 0.7)) {
-                    scoreElement.classList.add('good-score');
-                } else if (count < Math.floor(total * 0.4)) {
-                    scoreElement.classList.add('poor-score');
+                if (!typeScore) continue;
+                
+                // Create a new type score item
+                const typeScoreItem = document.createElement('div');
+                typeScoreItem.className = 'type-score-item';
+                
+                // Create the SVG score circle
+                const scoreCircle = document.createElement('div');
+                scoreCircle.className = `skill-score-circle ${type.replace('_', '-')}`;
+                
+                const svgNamespace = "http://www.w3.org/2000/svg";
+                const svg = document.createElementNS(svgNamespace, 'svg');
+                svg.setAttribute('viewBox', '0 0 36 36');
+                svg.setAttribute('class', 'score-chart');
+                
+                const bgPath = document.createElementNS(svgNamespace, 'path');
+                bgPath.setAttribute('class', 'score-circle-bg');
+                bgPath.setAttribute('d', 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831');
+                
+                const fillPath = document.createElementNS(svgNamespace, 'path');
+                fillPath.setAttribute('class', 'score-circle-fill');
+                fillPath.setAttribute('d', 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831');
+                fillPath.setAttribute('id', `${type.replace('_', '-')}-score-path`);
+                
+                const scoreText = document.createElementNS(svgNamespace, 'text');
+                scoreText.setAttribute('x', '18');
+                scoreText.setAttribute('y', '19');
+                scoreText.setAttribute('class', 'score-text');
+                scoreText.setAttribute('id', `${type.replace('_', '-')}-score`);
+                scoreText.textContent = `${Math.round(typeScore.percentage)}%`;
+                
+                const labelText = document.createElementNS(svgNamespace, 'text');
+                labelText.setAttribute('x', '18');
+                labelText.setAttribute('y', '25');
+                labelText.setAttribute('class', 'score-label-text small');
+                labelText.textContent = formatTypeName(type);
+                
+                svg.appendChild(bgPath);
+                svg.appendChild(fillPath);
+                svg.appendChild(scoreText);
+                svg.appendChild(labelText);
+                scoreCircle.appendChild(svg);
+                
+                // Create the info text
+                const skillInfo = document.createElement('div');
+                skillInfo.className = 'skill-info';
+                skillInfo.innerHTML = `<span id="${type.replace('_', '-')}-correct">${typeScore.correct}</span>/<span id="${type.replace('_', '-')}-total">${typeScore.total}</span>`;
+                
+                // Add to the type score item
+                typeScoreItem.appendChild(scoreCircle);
+                typeScoreItem.appendChild(skillInfo);
+                
+                // Add to the container
+                typeContainer.appendChild(typeScoreItem);
+                
+                // Animate the score path
+                const pathElement = document.getElementById(`${type.replace('_', '-')}-score-path`);
+                if (pathElement) {
+                    const circumference = 2 * Math.PI * 15.9155;
+                    const offset = circumference - (typeScore.percentage / 100) * circumference;
+                    
+                    // First set initial state
+                    pathElement.style.strokeDasharray = `${circumference} ${circumference}`;
+                    pathElement.style.strokeDashoffset = `${circumference}`;
+                    
+                    // Force a reflow
+                    pathElement.getBoundingClientRect();
+                    
+                    // Then animate
+                    pathElement.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+                    pathElement.style.strokeDashoffset = offset;
                 }
             }
-        });
+            
+            console.log('Type scores updated successfully');
+        } catch (error) {
+            console.error('Error updating type scores:', error);
+        }
+    }
+
+    // Helper function to update an existing type score element
+    function updateTypeScoreElement(typeId, typeScore) {
+        if (!typeScore) return;
+        
+        // Update score text
+        const scoreText = document.getElementById(`${typeId}-score`);
+        if (scoreText) {
+            scoreText.textContent = `${Math.round(typeScore.percentage)}%`;
+        }
+        
+        // Update correct count
+        const correctElement = document.getElementById(`${typeId}-correct`);
+        if (correctElement) {
+            correctElement.textContent = typeScore.correct;
+        }
+        
+        // Update total count
+        const totalElement = document.getElementById(`${typeId}-total`);
+        if (totalElement) {
+            totalElement.textContent = typeScore.total;
+        }
+        
+        // Animate the score path
+        const pathElement = document.getElementById(`${typeId}-score-path`);
+        if (pathElement) {
+            const circumference = 2 * Math.PI * 15.9155;
+            const offset = circumference - (typeScore.percentage / 100) * circumference;
+            
+            // First set initial state
+            pathElement.style.strokeDasharray = `${circumference} ${circumference}`;
+            pathElement.style.strokeDashoffset = `${circumference}`;
+            
+            // Force a reflow
+            pathElement.getBoundingClientRect();
+            
+            // Then animate
+            pathElement.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+            pathElement.style.strokeDashoffset = offset;
+        }
+    }
+
+    // Format type name for display
+    function formatTypeName(type) {
+        // Replace underscores with spaces and capitalize words
+        return type.replace(/_/g, ' ')
+            .replace(/\b\w/g, letter => letter.toUpperCase());
     }
     
-    // Helper function to format type names for display
-    function formatTypeName(type) {
-        return type
-            .replace(/_/g, ' ')
-            .replace(/\b\w/g, l => l.toUpperCase());
-    }
-
-    // Add question progress text below subtitle
-    function addQuestionProgressText(container, currentQuestionNum, totalQuestions) {
-        const progressText = document.createElement('div');
-        progressText.className = 'question-progress-text';
-        progressText.textContent = `ข้อที่ ${currentQuestionNum}`;
-        container.appendChild(progressText);
-    }
-
     // Format subtitle based on question type
     function addFormattedSubtitle(container, subtitle, type) {
         if (!subtitle || !container) return;
@@ -2776,7 +3005,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 p.className = 'adv-paragraph';
                 
                 // Add prefix text - the remainingText already has HTML formatting applied
-                p.innerHTML = `${prefix}: <strong class="adv-content" style="color: black !important; font-weight: bold !important;">${remainingText}</strong>`;
+                p.innerHTML = `<strong class="adv-content" style="color: black !important; font-weight: bold !important;">${prefix}:</strong> ${remainingText}`;
                 
                 container.appendChild(p);
             } else {
@@ -3022,56 +3251,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add navigation elements to the exam interface
     function addNavigationElements() {
-        // Add jump to question button in the exam header
-        const examHeader = document.querySelector('.exam-header');
-        if (examHeader) {
-            const jumpButton = document.createElement('button');
-            jumpButton.id = 'question-jump-button';
-            jumpButton.className = 'btn-icon jump-button';
-            jumpButton.setAttribute('aria-label', 'Jump to question');
-            jumpButton.title = 'Open question navigator';
-            jumpButton.innerHTML = '<i class="icon-menu"></i>';
+        try {
+            console.log('Adding navigation elements for new layout');
             
-            // Insert before the timer
-            const timerElement = examHeader.querySelector('.exam-timer');
-            if (timerElement) {
-                examHeader.insertBefore(jumpButton, timerElement);
-            } else {
-                examHeader.appendChild(jumpButton);
+            // We don't need to manually add elements because they're now part of the HTML structure
+            // Just make sure the existing elements get proper initialization
+            
+            // Make sure all elements referenced in updateProgressIndicators and updateQuestionNavigator exist
+            const progressElements = [
+                'visual-progress-fill',
+                'answered-count',
+                'total-question-count',
+                'current-question',
+                'progress-fill',
+                'question-navigator'
+            ];
+            
+            // Log which elements are found/missing to help with debugging
+            progressElements.forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) {
+                    console.warn(`Navigation element not found: ${id}`);
+                } else {
+                    console.log(`Found navigation element: ${id}`);
+                }
+            });
+            
+            // Initialize the total question count if it exists
+            const totalQuestionCount = document.getElementById('total-question-count');
+            if (totalQuestionCount && window.currentExam) {
+                totalQuestionCount.textContent = window.currentExam.totalQuestions;
             }
-        }
-        
-        // Add question status indicator to the progress container
-        const progressContainer = document.querySelector('.progress-container');
-        if (progressContainer) {
-            // Create answered count element
-            const answeredCountElement = document.createElement('div');
-            answeredCountElement.className = 'answered-count';
-            answeredCountElement.innerHTML = 'Answered: <span id="questions-answered-count">0</span>/<span id="questions-total-count">' + 
-                (window.currentExam ? window.currentExam.totalQuestions : 0) + '</span>';
-            progressContainer.appendChild(answeredCountElement);
             
-            // Create question status indicator
-            const statusIndicator = document.createElement('div');
-            statusIndicator.id = 'question-status-indicator';
-            statusIndicator.className = 'question-status-indicator unanswered';
-            statusIndicator.title = 'Current question status';
-            progressContainer.appendChild(statusIndicator);
-        }
-        
-        // Add keyboard shortcuts hint
-        const examContent = document.getElementById('exam-content');
-        if (examContent) {
-            const shortcutsHint = document.createElement('div');
-            shortcutsHint.className = 'keyboard-shortcuts-hint';
-            shortcutsHint.innerHTML = 'Keyboard shortcuts: ← Previous | → Next';
-            
-            // Add after exam questions but before navigation
-            const examQuestions = document.getElementById('exam-questions');
-            const examNavigation = document.querySelector('.exam-navigation');
-            if (examQuestions && examNavigation) {
-                examContent.insertBefore(shortcutsHint, examNavigation);
-            }
+            console.log('Navigation elements setup completed successfully');
+        } catch (error) {
+            console.error('Error adding navigation elements:', error);
         }
     }
 
@@ -3097,6 +3311,96 @@ document.addEventListener('DOMContentLoaded', function() {
                 color: #333;
             }
             
+            /* Updated exam header and content structure */
+            .exam-header {
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e5e7eb;
+            }
+            
+            .exam-title-container {
+                margin-bottom: 20px;
+            }
+            
+            /* Question progress text styling */
+            .question-progress-text {
+                background-color: #f1f5f9;
+                color: #475569;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                padding: 8px 12px;
+                border-radius: 6px;
+                margin-bottom: 16px;
+                margin-top: 5px;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+                position: relative;
+                z-index: 2;
+            }
+            
+            /* Question text styling in its new position */
+            .question-container .question-text {
+                font-size: 18px;
+                font-weight: 500;
+                color: #1e293b;
+                background-color: white;
+                padding: 16px 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                line-height: 1.5;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                border-left: 4px solid #3b82f6;
+            }
+            
+            /* Content wrapper & options wrapper styles */
+            .content-wrapper {
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                padding: 20px;
+                margin-top: 15px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            }
+            
+            .options-wrapper {
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 16px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                border: 1px solid #eaeaea;
+                margin-top: 15px;
+            }
+            
+            .question-container {
+                position: relative;
+                padding-top: 15px;
+            }
+            
+            .question-content {
+                margin-bottom: 15px;
+            }
+            
+            .options-container {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            /* Type indicator repositioning */
+            .question-type-indicator {
+                display: inline-block;
+                padding: 4px 10px;
+                border-radius: 4px;
+                color: white;
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                position: absolute;
+                top: -10px;
+                right: 16px;
+                z-index: 5;
+            }
+            
+            /* Jump Menu Header */
             .jump-menu-header {
                 display: flex;
                 justify-content: space-between;
@@ -3573,4 +3877,251 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 1000); // Give time for the DOM to fully render
     });
+
+    // Add personalized score suggestions based on performance
+    function addScoreSuggestions(scorePercentage, typeScores) {
+        try {
+            console.log('Adding score suggestions based on performance:', { scorePercentage, typeScores });
+            
+            const suggestionsContainer = document.getElementById('score-suggestions');
+            const suggestionsContent = suggestionsContainer.querySelector('.suggestions-content');
+            
+            if (!suggestionsContent) {
+                console.error('Could not find suggestions content container');
+                return;
+            }
+            
+            // Clear previous content
+            suggestionsContent.innerHTML = '';
+            
+            // Generate personalized suggestions based on score percentage and weakest areas
+            const suggestions = generateSuggestions(scorePercentage, typeScores);
+            
+            // Create and append suggestion elements
+            suggestions.forEach(suggestion => {
+                const suggestionElement = document.createElement('div');
+                suggestionElement.className = 'suggestion-item';
+                
+                const titleElement = document.createElement('h4');
+                titleElement.className = 'suggestion-title';
+                titleElement.textContent = suggestion.title;
+                
+                const textElement = document.createElement('p');
+                textElement.className = 'suggestion-text';
+                textElement.textContent = suggestion.text;
+                
+                suggestionElement.appendChild(titleElement);
+                suggestionElement.appendChild(textElement);
+                suggestionsContent.appendChild(suggestionElement);
+            });
+            
+            console.log('Successfully added score suggestions');
+        } catch (error) {
+            console.error('Error adding score suggestions:', error);
+        }
+    }
+
+    // Generate personalized suggestions based on score
+    function generateSuggestions(scorePercentage, typeScores) {
+        const suggestions = [];
+        
+        // General suggestion based on overall score
+        if (scorePercentage < 40) {
+            suggestions.push({
+                title: 'พัฒนาพื้นฐานภาษาอังกฤษ',
+                text: 'คะแนนของคุณอยู่ในเกณฑ์ที่ต้องปรับปรุงอย่างมาก แนะนำให้เริ่มจากการทบทวนไวยากรณ์และคำศัพท์พื้นฐาน รวมถึงฝึกฝนการอ่านและเขียนเพิ่มเติม'
+            });
+        } else if (scorePercentage < 60) {
+            suggestions.push({
+                title: 'ทบทวนหลักไวยากรณ์',
+                text: 'คะแนนของคุณอยู่ในระดับพอใช้ การทบทวนหลักไวยากรณ์และฝึกการประยุกต์ใช้จะช่วยให้คุณพัฒนาได้อย่างต่อเนื่อง'
+            });
+        } else if (scorePercentage < 80) {
+            suggestions.push({
+                title: 'ฝึกฝนเทคนิคการทำข้อสอบ',
+                text: 'คะแนนของคุณอยู่ในระดับดี การฝึกเทคนิคการทำข้อสอบเพิ่มเติมจะช่วยให้คุณใช้เวลาในการทำข้อสอบได้อย่างมีประสิทธิภาพมากขึ้น'
+            });
+        } else {
+            suggestions.push({
+                title: 'รักษาระดับและเพิ่มความเชี่ยวชาญ',
+                text: 'คะแนนของคุณอยู่ในระดับดีเยี่ยม แนะนำให้รักษาระดับความสามารถและต่อยอดทักษะให้ละเอียดมากขึ้น'
+            });
+        }
+        
+        // Find weakest examination areas
+        if (typeScores && Object.keys(typeScores).length > 0) {
+            // Sort types by score (ascending)
+            const sortedTypes = Object.entries(typeScores)
+                .filter(([type, score]) => score.percentage !== undefined)
+                .sort((a, b) => a[1].percentage - b[1].percentage);
+            
+            // Get the weakest area if available
+            if (sortedTypes.length > 0) {
+                const [weakestType, weakestScore] = sortedTypes[0];
+                const formatted = formatTypeName(weakestType);
+                
+                // Add suggestion based on weakest area
+                if (weakestScore.percentage < 50) {
+                    let practiceText = '';
+                    
+                    switch (weakestType) {
+                        case 'short_conversation':
+                        case 'long_conversation':
+                            practiceText = 'ฝึกฟังบทสนทนาภาษาอังกฤษและจดโน้ตใจความสำคัญ ฝึกฟังบทสนทนาหลากหลายสถานการณ์';
+                            break;
+                        case 'advertisement':
+                        case 'product':
+                            practiceText = 'ฝึกอ่านโฆษณาและข้อมูลสินค้าในชีวิตประจำวัน เก็บคำศัพท์เฉพาะทางการตลาดและการประชาสัมพันธ์';
+                            break;
+                        case 'news_report':
+                        case 'article':
+                            practiceText = 'อ่านข่าวภาษาอังกฤษหรือบทความวิชาการเป็นประจำ และฝึกสรุปใจความสำคัญ';
+                            break;
+                        case 'text_completion':
+                            practiceText = 'ฝึกทำแบบฝึกหัดเติมคำในประโยคให้ถูกต้องตามหลักไวยากรณ์ และเรียนรู้คำเชื่อมประโยค';
+                            break;
+                        case 'paragraph':
+                            practiceText = 'ฝึกจัดเรียงย่อหน้าให้เป็นเรื่องราวที่ต่อเนื่อง โดยสังเกตคำเชื่อมและความต่อเนื่องของเนื้อหา';
+                            break;
+                        default:
+                            practiceText = 'ฝึกฝนทำแบบทดสอบในรูปแบบนี้ให้มากขึ้น และวิเคราะห์ข้อผิดพลาดเพื่อพัฒนาต่อไป';
+                    }
+                    
+                    suggestions.push({
+                        title: `พัฒนาทักษะด้าน ${formatted}`,
+                        text: `จุดที่ควรพัฒนามากที่สุดคือส่วนของ ${formatted} (${weakestScore.percentage.toFixed(0)}%) ${practiceText}`
+                    });
+                }
+            }
+        }
+        
+        // Add time management suggestion if needed
+        // This could be based on average time per question or other metrics
+        suggestions.push({
+            title: 'การบริหารเวลา',
+            text: 'ฝึกทำข้อสอบโดยจับเวลา กำหนดเวลาในการทำข้อสอบแต่ละส่วนให้เหมาะสม และฝึกการจัดลำดับความสำคัญของข้อสอบ'
+        });
+        
+        return suggestions;
+    }
+
+    // Initialize the question navigator
+    function initializeQuestionNavigator(questionCount) {
+        const navigator = document.getElementById('question-navigator');
+        if (!navigator) return;
+        
+        // Clear any existing buttons
+        navigator.innerHTML = '';
+        
+        // Define the question categories
+        const categories = [
+            { name: 'SPEAKING', start: 1, end: 20, class: 'speaking' },
+            { name: 'READING', start: 21, end: 60, class: 'reading' },
+            { name: 'WRITING', start: 61, end: 80, class: 'writing' }
+        ];
+        
+        // Loop through each category
+        categories.forEach(category => {
+            // Add category header
+            const categoryHeader = document.createElement('div');
+            categoryHeader.className = `category-header ${category.class}`;
+            categoryHeader.textContent = category.name;
+            navigator.appendChild(categoryHeader);
+            
+            // Create buttons for this category
+            for (let i = category.start - 1; i < Math.min(category.end, questionCount); i++) {
+                const button = document.createElement('div');
+                button.className = `question-nav-item ${category.class}`;
+                button.textContent = (i + 1).toString();
+                button.dataset.index = i;
+                
+                // Add click handler
+                button.addEventListener('click', function() {
+                    saveCurrentAnswer();
+                    loadQuestion(parseInt(this.dataset.index));
+                });
+                
+                navigator.appendChild(button);
+            }
+        });
+        
+        // Set total question count
+        const totalQuestionCount = document.getElementById('total-question-count');
+        if (totalQuestionCount) {
+            totalQuestionCount.textContent = `${questionCount.toString()} ข้อ`;
+        }
+        
+        // Initialize the visual progress fill indicator
+        const visualProgressFill = document.getElementById('visual-progress-fill');
+        if (visualProgressFill) {
+            visualProgressFill.style.width = '0%';
+        }
+        
+        // Add some CSS to style the category headers
+        addCategoryStyles();
+    }
+
+    // Update question navigator
+    function updateQuestionNavigator(currentIndex) {
+        const navigator = document.getElementById('question-navigator');
+        if (!navigator) return;
+        
+        // Determine which category this question belongs to
+        let category = '';
+        if (currentIndex < 20) {
+            category = 'speaking';
+        } else if (currentIndex < 60) {
+            category = 'reading';
+        } else {
+            category = 'writing';
+        }
+        
+        // Update button states
+        const buttons = navigator.querySelectorAll('.question-nav-item');
+        buttons.forEach((button, index) => {
+            // Get the real question index from the dataset
+            const buttonIndex = parseInt(button.dataset.index);
+            
+            // Clear previous state classes
+            button.classList.remove('current', 'answered', 'unanswered');
+            
+            // Add appropriate class
+            if (buttonIndex === currentIndex) {
+                button.classList.add('current');
+            } else if (window.userAnswers && window.userAnswers[buttonIndex] !== null) {
+                button.classList.add('answered');
+            } else {
+                button.classList.add('unanswered');
+            }
+        });
+        
+        // Update answered count
+        const answeredCount = window.userAnswers ? window.userAnswers.filter(answer => answer !== null).length : 0;
+        const answeredCountElement = document.getElementById('answered-count');
+        if (answeredCountElement) {
+            answeredCountElement.textContent = `${answeredCount.toString()} เลือกคำตอบแล้ว`;
+        }
+        
+        // Update visual progress fill
+        const totalQuestions = window.currentExam ? window.currentExam.totalQuestions : 0;
+        const visualProgressFill = document.getElementById('visual-progress-fill');
+        if (visualProgressFill && totalQuestions > 0) {
+            const progressPercentage = (answeredCount / totalQuestions) * 100;
+            visualProgressFill.style.width = `${progressPercentage}%`;
+        }
+    }
+
+    // Add question progress text to container
+    function addQuestionProgressText(container, currentQuestionNum, totalQuestions) {
+        const progressText = document.createElement('div');
+        progressText.className = 'question-progress-text';
+        progressText.textContent = `ข้อที่ ${currentQuestionNum} จาก ${totalQuestions}`;
+        
+        // Insert at the beginning of the container
+        if (container.firstChild) {
+            container.insertBefore(progressText, container.firstChild);
+        } else {
+            container.appendChild(progressText);
+        }
+    }
 }); 

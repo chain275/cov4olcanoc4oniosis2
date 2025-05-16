@@ -10,7 +10,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the duration of the warranty offered with the ChronoLuxe Smart Alarm Clock?  ",
+        "text": " What is the duration of the warranty offered with the ChronoLuxe Smart Alarm Clock?  ",
         "prompt": "",
         "options": [
           "A) 1-Year Warranty  ",
@@ -24,7 +24,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the tagline and closing line, what is the implied purpose of the ChronoLuxe Smart Alarm Clock?  ",
+        "text": " Based on the tagline and closing line, what is the implied purpose of the ChronoLuxe Smart Alarm Clock?  ",
         "prompt": "",
         "options": [
           "A) To replace traditional alarm clocks entirely  ",
@@ -37,7 +37,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT a feature of the ChronoLuxe Smart Alarm Clock?  ",
+        "text": " Which of the following is NOT a feature of the ChronoLuxe Smart Alarm Clock?  ",
         "prompt": "",
         "options": [
           "A) Built-in camera for video calls  ",
@@ -61,7 +61,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What percentage of VoltCore™ Batteries' materials are recyclable according to the article?  ",
+        "text": " What percentage of VoltCore™ Batteries' materials are recyclable according to the article?  ",
         "prompt": "",
         "options": [
           "A) 50%  ",
@@ -75,7 +75,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, which group is most likely to benefit from VoltCore™ Batteries?  ",
+        "text": " Based on the article, which group is most likely to benefit from VoltCore™ Batteries?  ",
         "prompt": "",
         "options": [
           "A) Parents with young children  ",
@@ -88,7 +88,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which battery size is NOT compatible with VoltCore™ Batteries?  ",
+        "text": " Which battery size is NOT compatible with VoltCore™ Batteries?  ",
         "prompt": "",
         "options": [
           "A) AA  ",
@@ -112,7 +112,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which feature of the Eclipse Luxe belt is highlighted for its durability and polished finish?  ",
+        "text": " Which feature of the Eclipse Luxe belt is highlighted for its durability and polished finish?  ",
         "prompt": "",
         "options": [
           "A) Adjustable Precision Fit  ",
@@ -126,7 +126,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What does the tagline \"Elevate Your Everyday\" imply about the product?  ",
+        "text": " What does the tagline \"Elevate Your Everyday\" imply about the product?  ",
         "prompt": "",
         "options": [
           "A) It is exclusively for luxury events.  ",
@@ -139,7 +139,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a selling point of the Eclipse Luxe belt?  ",
+        "text": " Which of the following is NOT mentioned as a selling point of the Eclipse Luxe belt?  ",
         "prompt": "",
         "options": [
           "A) Sustainably produced materials  ",
@@ -163,7 +163,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the wattage of the HyperBlend Motor in the BlendCraft Ultra?  ",
+        "text": " What is the wattage of the HyperBlend Motor in the BlendCraft Ultra?  ",
         "prompt": "",
         "options": [
           "A) 1800W  ",
@@ -177,7 +177,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, how does QuietPro Technology benefit users?  ",
+        "text": " Based on the article, how does QuietPro Technology benefit users?  ",
         "prompt": "",
         "options": [
           "A) It increases blending speed by 50%.  ",
@@ -190,7 +190,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which statement about the BlendCraft Ultra is NOT accurate?  ",
+        "text": " Which statement about the BlendCraft Ultra is NOT accurate?  ",
         "prompt": "",
         "options": [
           "A) The Tritan jar is dishwasher-safe.  ",
@@ -214,7 +214,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What feature ensures the Calculight Pro never runs out of power during critical moments?  ",
+        "text": " What feature ensures the Calculight Pro never runs out of power during critical moments?  ",
         "prompt": "",
         "options": [
           "A) Shock-resistant casing  ",
@@ -228,7 +228,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why might educators prefer the Calculight Pro, according to the advertisement?  ",
+        "text": " Why might educators prefer the Calculight Pro, according to the advertisement?  ",
         "prompt": "",
         "options": [
           "A) It includes a 2-year warranty  ",
@@ -241,7 +241,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature or benefit of the Calculight Pro?  ",
+        "text": " Which of the following is NOT listed as a feature or benefit of the Calculight Pro?  ",
         "prompt": "",
         "options": [
           "A) Water-resistant design  ",
@@ -265,7 +265,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material is the SwiftSeal can opener’s blade made of?  ",
+        "text": " What material is the SwiftSeal can opener’s blade made of?  ",
         "prompt": "",
         "options": [
           "A) Stainless steel  ",
@@ -279,7 +279,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why does SwiftSeal emphasize its Safety Lock Mechanism? ",
+        "text": " Why does SwiftSeal emphasize its Safety Lock Mechanism? ",
         "prompt": "",
         "options": [
           "A) To ensure the blade remains sharp longer  ",
@@ -292,7 +292,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a key feature of SwiftSeal?  ",
+        "text": " Which of the following is NOT listed as a key feature of SwiftSeal?  ",
         "prompt": "",
         "options": [
           "A) Auto-Seal Technology  ",
@@ -316,7 +316,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: According to the advertisement, how long does VoltStream claim it takes to fully charge a smartphone using the 100W HyperSpeed feature?  ",
+        "text": " According to the advertisement, how long does VoltStream claim it takes to fully charge a smartphone using the 100W HyperSpeed feature?  ",
         "prompt": "",
         "options": [
           "A) 15 minutes  ",
@@ -330,7 +330,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The Qi certification listed under \"Safety Certifications\" implicitly suggests the charger supports which feature?  ",
+        "text": " The Qi certification listed under \"Safety Certifications\" implicitly suggests the charger supports which feature?  ",
         "prompt": "",
         "options": [
           "A) Wireless charging  ",
@@ -343,7 +343,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the TurboCharge 100W charger?  ",
+        "text": " Which of the following is NOT listed as a feature of the TurboCharge 100W charger?  ",
         "prompt": "",
         "options": [
           "A) Surge protection  ",
@@ -367,7 +367,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the tagline of the BrewLuxe ArtisanTouch Pro Coffee Maker?  ",
+        "text": " What is the tagline of the BrewLuxe ArtisanTouch Pro Coffee Maker?  ",
         "prompt": "",
         "options": [
           "A) \"Brew Like a Barista, Every Morning.\"  ",
@@ -381,7 +381,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The FREE BrewLuxe Travel Tumbler offer is described as \"limited time.\" Which of the following inferences best explains why this is highlighted?  ",
+        "text": " The FREE BrewLuxe Travel Tumbler offer is described as \"limited time.\" Which of the following inferences best explains why this is highlighted?  ",
         "prompt": "",
         "options": [
           "A) The tumbler is only available to app users.  ",
@@ -394,7 +394,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature or component of the BrewLuxe ArtisanTouch Pro?  ",
+        "text": " Which of the following is NOT mentioned as a feature or component of the BrewLuxe ArtisanTouch Pro?  ",
         "prompt": "",
         "options": [
           "A) Recyclable stainless steel components  ",
@@ -418,7 +418,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: According to the product description, what feature of the CulinaryEase colander specifically prevents \"soggy pasta\"?  ",
+        "text": " According to the product description, what feature of the CulinaryEase colander specifically prevents \"soggy pasta\"?  ",
         "prompt": "",
         "options": [
           "A) Premium Stainless Steel  ",
@@ -432,7 +432,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The tagline \"Drain. Rinse. Serve. Repeat.\" most strongly emphasizes which aspect of the colander?  ",
+        "text": " The tagline \"Drain. Rinse. Serve. Repeat.\" most strongly emphasizes which aspect of the colander?  ",
         "prompt": "",
         "options": [
           "A) Its ability to replace multiple kitchen tools  ",
@@ -445,7 +445,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the StainlessSteel Quick-Drain Colander?  ",
+        "text": " Which of the following is NOT listed as a feature of the StainlessSteel Quick-Drain Colander?  ",
         "prompt": "",
         "options": [
           "A) Rust-resistant material  ",
@@ -469,7 +469,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material is the GlideLuxe UltraSleek Detangling Comb primarily made from?  ",
+        "text": " What material is the GlideLuxe UltraSleek Detangling Comb primarily made from?  ",
         "prompt": "",
         "options": [
           "A) Premium eco-friendly polymer  ",
@@ -483,7 +483,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the tagline, what two main benefits does the UltraSleek Detangling Comb aim to provide?  ",
+        "text": " Based on the tagline, what two main benefits does the UltraSleek Detangling Comb aim to provide?  ",
         "prompt": "",
         "options": [
           "A) Speed and affordability  ",
@@ -496,7 +496,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a key feature of the GlideLuxe comb?  ",
+        "text": " Which of the following is NOT listed as a key feature of the GlideLuxe comb?  ",
         "prompt": "",
         "options": [
           "A) Anti-static ions  ",
@@ -520,7 +520,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What are the dimensions of the ProChef Series Bamboo Cutting Board?  ",
+        "text": " What are the dimensions of the ProChef Series Bamboo Cutting Board?  ",
         "prompt": "",
         "options": [
           "A) 12\" x 18\" x 1.0\"  ",
@@ -534,7 +534,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The built-in juice groove is primarily included for what purpose?  ",
+        "text": " The built-in juice groove is primarily included for what purpose?  ",
         "prompt": "",
         "options": [
           "A) To enhance the board’s aesthetic appeal  ",
@@ -547,7 +547,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which statement about the ProChef Series Bamboo Cutting Board is NOT true?  ",
+        "text": " Which statement about the ProChef Series Bamboo Cutting Board is NOT true?  ",
         "prompt": "",
         "options": [
           "A) It includes a 2-year warranty.  ",
@@ -571,7 +571,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which of the following is NOT listed as one of Breeze's available scents?  ",
+        "text": " Which of the following is NOT listed as one of Breeze's available scents?  ",
         "prompt": "",
         "options": [
           "A) Crisp Citrus  ",
@@ -585,7 +585,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why might Breeze include a testimonial from Alex T., an \"Adventure Photographer\"?  ",
+        "text": " Why might Breeze include a testimonial from Alex T., an \"Adventure Photographer\"?  ",
         "prompt": "",
         "options": [
           "A) To highlight the product’s vegan-friendly formula  ",
@@ -598,7 +598,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: According to the article, which feature is NOT explicitly attributed to Breeze?  ",
+        "text": " According to the article, which feature is NOT explicitly attributed to Breeze?  ",
         "prompt": "",
         "options": [
           "A) Hypoallergenic formula  ",
@@ -622,7 +622,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which of the following colors is NOT listed as an available option for the ClarityDesk Pro™?  ",
+        "text": " Which of the following colors is NOT listed as an available option for the ClarityDesk Pro™?  ",
         "prompt": "",
         "options": [
           "A) Midnight Black  ",
@@ -636,7 +636,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What feature of the ClarityDesk Pro™ implies it could help reduce eye strain during extended work sessions?  ",
+        "text": " What feature of the ClarityDesk Pro™ implies it could help reduce eye strain during extended work sessions?  ",
         "prompt": "",
         "options": [
           "A) USB-C charging port  ",
@@ -649,7 +649,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature of the ClarityDesk Pro™?  ",
+        "text": " Which of the following is NOT mentioned as a feature of the ClarityDesk Pro™?  ",
         "prompt": "",
         "options": [
           "A) Adjustable color temperature (3000K to 6000K)  ",
@@ -673,7 +673,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What promotional code offers 30% off the first purchase of PureBrite™ detergent?  ",
+        "text": " What promotional code offers 30% off the first purchase of PureBrite™ detergent?  ",
         "prompt": "",
         "options": [
           "A) PURE30  ",
@@ -687,7 +687,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the advertisement, which of the following is NOT a certification claimed by PureBrite™?  ",
+        "text": " Based on the advertisement, which of the following is NOT a certification claimed by PureBrite™?  ",
         "prompt": "",
         "options": [
           "A) Dermatologist-tested  ",
@@ -700,7 +700,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT a feature of PureBrite™ Ultra-Stain Fighter Detergent?  ",
+        "text": " Which of the following is NOT a feature of PureBrite™ Ultra-Stain Fighter Detergent?  ",
         "prompt": "",
         "options": [
           "A) Works in handwashing  ",
@@ -724,7 +724,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is SecureSeal™’s tagline?  ",
+        "text": " What is SecureSeal™’s tagline?  ",
         "prompt": "",
         "options": [
           "A) \"Where Security Meets Elegance.\"  ",
@@ -738,7 +738,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, which feature of SecureSeal™ ensures that unauthorized opening is immediately detectable?  ",
+        "text": " Based on the article, which feature of SecureSeal™ ensures that unauthorized opening is immediately detectable?  ",
         "prompt": "",
         "options": [
           "A) Military-grade durability  ",
@@ -751,7 +751,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of SecureSeal™ envelopes?  ",
+        "text": " Which of the following is NOT listed as a feature of SecureSeal™ envelopes?  ",
         "prompt": "",
         "options": [
           "A) Carbon-neutral certification  ",
@@ -775,7 +775,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material are PureWipe Erasers made from?  ",
+        "text": " What material are PureWipe Erasers made from?  ",
         "prompt": "",
         "options": [
           "A) Biodegradable plastic  ",
@@ -789,7 +789,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: According to the article, what action does PureWipe take for sustainability with each purchase?  ",
+        "text": " According to the article, what action does PureWipe take for sustainability with each purchase?  ",
         "prompt": "",
         "options": [
           "A) Donates 10% of profits to schools  ",
@@ -802,7 +802,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT a feature of PureWipe Erasers?  ",
+        "text": " Which of the following is NOT a feature of PureWipe Erasers?  ",
         "prompt": "",
         "options": [
           "A) Non-abrasive formula  ",
@@ -826,7 +826,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the maximum brightness output of the EverGlow Pro-X Flashlight?  ",
+        "text": " What is the maximum brightness output of the EverGlow Pro-X Flashlight?  ",
         "prompt": "",
         "options": [
           "A) 1000 Lumens  ",
@@ -840,7 +840,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, why might professionals like firefighters or survival experts prefer the EverGlow Pro-X?  ",
+        "text": " Based on the article, why might professionals like firefighters or survival experts prefer the EverGlow Pro-X?  ",
         "prompt": "",
         "options": [
           "A) It includes a built-in compass for navigation.  ",
@@ -853,7 +853,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following features is NOT mentioned in the article about the EverGlow Pro-X Flashlight?  ",
+        "text": " Which of the following features is NOT mentioned in the article about the EverGlow Pro-X Flashlight?  ",
         "prompt": "",
         "options": [
           "A) IPX7 waterproof rating  ",
@@ -877,7 +877,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material are SturdiHold Premium Folders primarily made from?  ",
+        "text": " What material are SturdiHold Premium Folders primarily made from?  ",
         "prompt": "",
         "options": [
           "A) Recycled cardboard  ",
@@ -891,7 +891,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which feature of SturdiHold folders would most appeal to legal professionals needing secure document storage? ",
+        "text": " Which feature of SturdiHold folders would most appeal to legal professionals needing secure document storage? ",
         "prompt": "",
         "options": [
           "A) Availability in 8 modern colors  ",
@@ -904,7 +904,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of SturdiHold folders?  ",
+        "text": " Which of the following is NOT listed as a feature of SturdiHold folders?  ",
         "prompt": "",
         "options": [
           "A) Tear-resistant construction  ",
@@ -928,7 +928,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What temperature range do the UltraTherm Winter Gloves withstand according to the ThermaLined™ Insulation feature?  ",
+        "text": " What temperature range do the UltraTherm Winter Gloves withstand according to the ThermaLined™ Insulation feature?  ",
         "prompt": "",
         "options": [
           "A) -20°C to 5°C  ",
@@ -942,7 +942,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which feature of the gloves implies they are suitable for outdoor activities during early morning or late evening?  ",
+        "text": " Which feature of the gloves implies they are suitable for outdoor activities during early morning or late evening?  ",
         "prompt": "",
         "options": [
           "A) ThermaLined™ Insulation  ",
@@ -955,7 +955,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a key feature of the UltraTherm Winter Gloves?  ",
+        "text": " Which of the following is NOT listed as a key feature of the UltraTherm Winter Gloves?  ",
         "prompt": "",
         "options": [
           "A) Touchscreen-compatible fingertips  ",
@@ -979,7 +979,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the wattage of the Aeroglow ProSpeed Hair Dryer’s motor?  ",
+        "text": " What is the wattage of the Aeroglow ProSpeed Hair Dryer’s motor?  ",
         "prompt": "",
         "options": [
           "A) 2000W  ",
@@ -993,7 +993,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why might the Aeroglow ProSpeed Hair Dryer be particularly beneficial for users with frizzy hair?  ",
+        "text": " Why might the Aeroglow ProSpeed Hair Dryer be particularly beneficial for users with frizzy hair?  ",
         "prompt": "",
         "options": [
           "A) It includes a heat-protectant spray.  ",
@@ -1006,7 +1006,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the Aeroglow ProSpeed Hair Dryer?  ",
+        "text": " Which of the following is NOT listed as a feature of the Aeroglow ProSpeed Hair Dryer?  ",
         "prompt": "",
         "options": [
           "A) Advanced ceramic coating  ",
@@ -1030,7 +1030,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What technology does the GlidePro Detangling Hairbrush use to ensure effortless detangling without tugging?  ",
+        "text": " What technology does the GlidePro Detangling Hairbrush use to ensure effortless detangling without tugging?  ",
         "prompt": "",
         "options": [
           "A) Ionized Bristle System  ",
@@ -1044,7 +1044,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, how long is LuxeLocks’ satisfaction guarantee period?  ",
+        "text": " Based on the article, how long is LuxeLocks’ satisfaction guarantee period?  ",
         "prompt": "",
         "options": [
           "A) 14 days  ",
@@ -1057,7 +1057,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT a feature of the GlidePro Detangling Hairbrush?  ",
+        "text": " Which of the following is NOT a feature of the GlidePro Detangling Hairbrush?  ",
         "prompt": "",
         "options": [
           "A) Reduces frizz with ionized bristles  ",
@@ -1081,7 +1081,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What UPF rating does The Horizon Brim offer for sun protection?  ",
+        "text": " What UPF rating does The Horizon Brim offer for sun protection?  ",
         "prompt": "",
         "options": [
           "A) UPF 30+  ",
@@ -1095,7 +1095,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, which group is NOT explicitly mentioned as part of the target audience for The Horizon Brim?  ",
+        "text": " Based on the article, which group is NOT explicitly mentioned as part of the target audience for The Horizon Brim?  ",
         "prompt": "",
         "options": [
           "A) People who prioritize luxury brand names  ",
@@ -1108,7 +1108,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of The Horizon Brim?  ",
+        "text": " Which of the following is NOT listed as a feature of The Horizon Brim?  ",
         "prompt": "",
         "options": [
           "A) Reinforced stitching  ",
@@ -1132,7 +1132,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How long does the Aurora X9’s battery last on a single charge according to the article?  ",
+        "text": " How long does the Aurora X9’s battery last on a single charge according to the article?  ",
         "prompt": "",
         "options": [
           "A) 50 hours  ",
@@ -1146,7 +1146,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The tagline \"Own the Silence\" most directly refers to which feature of the Aurora X9?  ",
+        "text": " The tagline \"Own the Silence\" most directly refers to which feature of the Aurora X9?  ",
         "prompt": "",
         "options": [
           "A) Pro-Grade Sound with titanium drivers  ",
@@ -1159,7 +1159,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature or award in the article?  ",
+        "text": " Which of the following is NOT mentioned as a feature or award in the article?  ",
         "prompt": "",
         "options": [
           "A) IPX5 water resistance  ",
@@ -1183,7 +1183,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How many preset temperature settings does the SwiftBrew Electric Kettle Pro offer?  ",
+        "text": " How many preset temperature settings does the SwiftBrew Electric Kettle Pro offer?  ",
         "prompt": "",
         "options": [
           "A) 3  ",
@@ -1197,7 +1197,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What is a key incentive for pre-ordering the SwiftBrew Electric Kettle Pro?  ",
+        "text": " What is a key incentive for pre-ordering the SwiftBrew Electric Kettle Pro?  ",
         "prompt": "",
         "options": [
           "A) A 2-year warranty extension  ",
@@ -1210,7 +1210,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the SwiftBrew Electric Kettle Pro?  ",
+        "text": " Which of the following is NOT listed as a feature of the SwiftBrew Electric Kettle Pro?  ",
         "prompt": "",
         "options": [
           "A) Auto-shutoff and boil-dry protection  ",
@@ -1234,7 +1234,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which processor does the Aurora X7 Ultra laptop use?  ",
+        "text": " Which processor does the Aurora X7 Ultra laptop use?  ",
         "prompt": "",
         "options": [
           "A) 12th Gen Intel® Core™ i7  ",
@@ -1248,7 +1248,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, why is the Aurora X7 Ultra particularly suitable for gamers?  ",
+        "text": " Based on the article, why is the Aurora X7 Ultra particularly suitable for gamers?  ",
         "prompt": "",
         "options": [
           "A) It has an 18-hour battery life.  ",
@@ -1261,7 +1261,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature of the Aurora X7 Ultra?  ",
+        "text": " Which of the following is NOT mentioned as a feature of the Aurora X7 Ultra?  ",
         "prompt": "",
         "options": [
           "A) 15.6\" 4K OLED Touchscreen  ",
@@ -1285,7 +1285,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which ingredient is NOT included in GlossGuard’s Ultra-Hydrating Formula?  ",
+        "text": " Which ingredient is NOT included in GlossGuard’s Ultra-Hydrating Formula?  ",
         "prompt": "",
         "options": [
           "A) Shea butter  ",
@@ -1299,7 +1299,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why is GlossGuard’s packaging described as eco-conscious?  ",
+        "text": " Why is GlossGuard’s packaging described as eco-conscious?  ",
         "prompt": "",
         "options": [
           "A) It uses biodegradable plant-based caps.  ",
@@ -1312,7 +1312,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which statement about GlossGuard is FALSE based on the article?  ",
+        "text": " Which statement about GlossGuard is FALSE based on the article?  ",
         "prompt": "",
         "options": [
           "A) Contains parabens for long-lasting preservation.  ",
@@ -1336,7 +1336,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which ingredient is specifically mentioned as part of the Deep Hydration Boost in LuminaSkin Naturals?  ",
+        "text": " Which ingredient is specifically mentioned as part of the Deep Hydration Boost in LuminaSkin Naturals?  ",
         "prompt": "",
         "options": [
           "A) Shea Butter  ",
@@ -1350,7 +1350,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What can be inferred about LuminaSkin Naturals based on the article?  ",
+        "text": " What can be inferred about LuminaSkin Naturals based on the article?  ",
         "prompt": "",
         "options": [
           "A) It is unsuitable for sensitive skin.  ",
@@ -1363,7 +1363,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT claimed about LuminaSkin Naturals?  ",
+        "text": " Which of the following is NOT claimed about LuminaSkin Naturals?  ",
         "prompt": "",
         "options": [
           "A) Hypoallergenic  ",
@@ -1387,7 +1387,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which feature of InkMaster ProMarkers ensures that artwork does not smudge after application?  ",
+        "text": " Which feature of InkMaster ProMarkers ensures that artwork does not smudge after application?  ",
         "prompt": "",
         "options": [
           "A) Eco-Friendly Ink  ",
@@ -1401,7 +1401,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the advertisement, which feature would most likely appeal to someone creating designs on fabric?  ",
+        "text": " Based on the advertisement, which feature would most likely appeal to someone creating designs on fabric?  ",
         "prompt": "",
         "options": [
           "A) Non-Toxic Ink  ",
@@ -1414,7 +1414,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of InkMaster ProMarkers?  ",
+        "text": " Which of the following is NOT listed as a feature of InkMaster ProMarkers?  ",
         "prompt": "",
         "options": [
           "A) Odorless ink formulation  ",
@@ -1438,7 +1438,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How many total pieces are included in the AccuMeasure Multi-Cup Set?  ",
+        "text": " How many total pieces are included in the AccuMeasure Multi-Cup Set?  ",
         "prompt": "",
         "options": [
           "A) 6  ",
@@ -1452,7 +1452,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What feature ensures the measurement markings on the AccuMeasure cups remain accurate over time?  ",
+        "text": " What feature ensures the measurement markings on the AccuMeasure cups remain accurate over time?  ",
         "prompt": "",
         "options": [
           "A) Non-slip silicone handles  ",
@@ -1465,7 +1465,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature or component of the AccuMeasure Set?  ",
+        "text": " Which of the following is NOT listed as a feature or component of the AccuMeasure Set?  ",
         "prompt": "",
         "options": [
           "A) Made from BPA-free materials  ",
@@ -1489,7 +1489,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the duration of the warranty provided with the SwiftChef ProWave 360X?  ",
+        "text": " What is the duration of the warranty provided with the SwiftChef ProWave 360X?  ",
         "prompt": "",
         "options": [
           "A) 1 year  ",
@@ -1503,7 +1503,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The article mentions the Eco-Mode Energy Saver feature. What can be inferred about this feature’s primary purpose?  ",
+        "text": " The article mentions the Eco-Mode Energy Saver feature. What can be inferred about this feature’s primary purpose?  ",
         "prompt": "",
         "options": [
           "A) It increases cooking speed by 30%.  ",
@@ -1516,7 +1516,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT a feature of the ProWave 360X as stated in the article?  ",
+        "text": " Which of the following is NOT a feature of the ProWave 360X as stated in the article?  ",
         "prompt": "",
         "options": [
           "A) 12 pre-programmed menus  ",
@@ -1540,7 +1540,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the maximum duration the EverWarm Mug can keep drinks icy cold according to the article?  ",
+        "text": " What is the maximum duration the EverWarm Mug can keep drinks icy cold according to the article?  ",
         "prompt": "",
         "options": [
           "A) 4+ hours  ",
@@ -1554,7 +1554,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What can be inferred about the EverWarm Mug’s leak-proof lid based on the article?  ",
+        "text": " What can be inferred about the EverWarm Mug’s leak-proof lid based on the article?  ",
         "prompt": "",
         "options": [
           "A) It is included automatically with every purchase.  ",
@@ -1567,7 +1567,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the EverWarm Mug?  ",
+        "text": " Which of the following is NOT listed as a feature of the EverWarm Mug?  ",
         "prompt": "",
         "options": [
           "A) Non-toxic ceramic material  ",
@@ -1591,7 +1591,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What are the available color options for the EclipseNote ProSeries Notebook's vegan leather cover?  ",
+        "text": " What are the available color options for the EclipseNote ProSeries Notebook's vegan leather cover?  ",
         "prompt": "",
         "options": [
           "A) Slate Black, Sage Green, Ocean Teal  ",
@@ -1605,7 +1605,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The article implies that the EclipseNote ProSeries Notebook's eco-conscious design helps prevent which environmental issue?  ",
+        "text": " The article implies that the EclipseNote ProSeries Notebook's eco-conscious design helps prevent which environmental issue?  ",
         "prompt": "",
         "options": [
           "A) Air pollution from factory emissions  ",
@@ -1618,7 +1618,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following features is NOT mentioned as part of the EclipseNote ProSeries Notebook?  ",
+        "text": " Which of the following features is NOT mentioned as part of the EclipseNote ProSeries Notebook?  ",
         "prompt": "",
         "options": [
           "A) Elastic closure  ",
@@ -1642,7 +1642,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the maximum heat resistance of BlazeGuard Oven Mitts?  ",
+        "text": " What is the maximum heat resistance of BlazeGuard Oven Mitts?  ",
         "prompt": "",
         "options": [
           "A) 450°F  ",
@@ -1656,7 +1656,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The quilted silicone grip is designed primarily to address which issue?  ",
+        "text": " The quilted silicone grip is designed primarily to address which issue?  ",
         "prompt": "",
         "options": [
           "A) Improve aesthetic appeal  ",
@@ -1669,7 +1669,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of BlazeGuard Oven Mitts?  ",
+        "text": " Which of the following is NOT listed as a feature of BlazeGuard Oven Mitts?  ",
         "prompt": "",
         "options": [
           "A) Waterproof inner lining  ",
@@ -1693,7 +1693,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How many layers does the EverLast Pro Non-Stick Skillet’s diamond-infused coating have?  ",
+        "text": " How many layers does the EverLast Pro Non-Stick Skillet’s diamond-infused coating have?  ",
         "prompt": "",
         "options": [
           "A) 3 layers  ",
@@ -1707,7 +1707,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The product’s Stay-Cool Stainless Steel Handle is not recommended for broiler use. What is the most likely reason for this limitation?  ",
+        "text": " The product’s Stay-Cool Stainless Steel Handle is not recommended for broiler use. What is the most likely reason for this limitation?  ",
         "prompt": "",
         "options": [
           "A) The handle may melt under high heat.  ",
@@ -1720,7 +1720,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following features is NOT explicitly mentioned in the product description?  ",
+        "text": " Which of the following features is NOT explicitly mentioned in the product description?  ",
         "prompt": "",
         "options": [
           "A) Compatibility with induction cooktops  ",
@@ -1744,7 +1744,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material is used for the EverFlow Elite Series pen body according to the article?  ",
+        "text": " What material is used for the EverFlow Elite Series pen body according to the article?  ",
         "prompt": "",
         "options": [
           "A) Stainless steel  ",
@@ -1758,7 +1758,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which feature of the EverFlow Elite Series inferentially supports its eco-conscious claim?  ",
+        "text": " Which feature of the EverFlow Elite Series inferentially supports its eco-conscious claim?  ",
         "prompt": "",
         "options": [
           "A) Luxury packaging  ",
@@ -1771,7 +1771,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a finish option for the EverFlow Elite Series?  ",
+        "text": " Which of the following is NOT listed as a finish option for the EverFlow Elite Series?  ",
         "prompt": "",
         "options": [
           "A) Midnight Black  ",
@@ -1795,7 +1795,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: According to the article, what material is used for EverSharp pencils' \"Smooth Writing Core\"?  ",
+        "text": " According to the article, what material is used for EverSharp pencils' \"Smooth Writing Core\"?  ",
         "prompt": "",
         "options": [
           "A) Sustainably sourced cedar wood  ",
@@ -1809,7 +1809,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, why does EverSharp plant a tree for every pack sold?  ",
+        "text": " Based on the article, why does EverSharp plant a tree for every pack sold?  ",
         "prompt": "",
         "options": [
           "A) To improve the quality of their pencils  ",
@@ -1822,7 +1822,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a key feature of EverSharp pencils?  ",
+        "text": " Which of the following is NOT listed as a key feature of EverSharp pencils?  ",
         "prompt": "",
         "options": [
           "A) Built-in smudge-free eraser  ",
@@ -1846,7 +1846,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the maximum oven-safe temperature for the EverSteel Pro Series cookware?  ",
+        "text": " What is the maximum oven-safe temperature for the EverSteel Pro Series cookware?  ",
         "prompt": "",
         "options": [
           "A) 400°F (204°C)  ",
@@ -1860,7 +1860,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which two factors contribute to the Eco-Conscious Design of the cookware? (Inference required)  ",
+        "text": " Which two factors contribute to the Eco-Conscious Design of the cookware? (Inference required)  ",
         "prompt": "",
         "options": [
           "A) Use of 80% recycled materials and silicone utensils  ",
@@ -1873,7 +1873,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which feature is NOT explicitly mentioned in the product description?  ",
+        "text": " Which feature is NOT explicitly mentioned in the product description?  ",
         "prompt": "",
         "options": [
           "A) Triple-layer stainless steel construction  ",
@@ -1897,7 +1897,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which two ingredients are included in SwiftGlide’s SkinGuard Technology?  ",
+        "text": " Which two ingredients are included in SwiftGlide’s SkinGuard Technology?  ",
         "prompt": "",
         "options": [
           "A) Shea butter and coconut oil  ",
@@ -1911,7 +1911,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: According to the article, why does the Flex360 Head effectively tackle tough spots like the neck and jawline?  ",
+        "text": " According to the article, why does the Flex360 Head effectively tackle tough spots like the neck and jawline?  ",
         "prompt": "",
         "options": [
           "A) It adapts to facial contours for seamless gliding.  ",
@@ -1924,7 +1924,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which feature is NOT mentioned as part of SwiftGlide Razors?  ",
+        "text": " Which feature is NOT mentioned as part of SwiftGlide Razors?  ",
         "prompt": "",
         "options": [
           "A) Laser-Honed Blades  ",
@@ -1948,7 +1948,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the maximum speed offered by the HyperStream X2000 Wi-Fi 6 Router according to the product description?  ",
+        "text": " What is the maximum speed offered by the HyperStream X2000 Wi-Fi 6 Router according to the product description?  ",
         "prompt": "",
         "options": [
           "A) 3.0 Gbps  ",
@@ -1962,7 +1962,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The Tri-Band Efficiency feature of the HyperStream X2000 is designed to eliminate lag by dedicating bands to specific uses. How many dedicated bands does the router have in total?  ",
+        "text": " The Tri-Band Efficiency feature of the HyperStream X2000 is designed to eliminate lag by dedicating bands to specific uses. How many dedicated bands does the router have in total?  ",
         "prompt": "",
         "options": [
           "A) 2  ",
@@ -1975,7 +1975,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a security feature of the HyperStream X2000?  ",
+        "text": " Which of the following is NOT listed as a security feature of the HyperStream X2000?  ",
         "prompt": "",
         "options": [
           "A) WPA3 encryption  ",
@@ -1999,7 +1999,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What does FlexGuard™ UltraGrip’s Triple-Layer Latex Technology specifically provide?  ",
+        "text": " What does FlexGuard™ UltraGrip’s Triple-Layer Latex Technology specifically provide?  ",
         "prompt": "",
         "options": [
           "A) A cotton-lined interior for comfort  ",
@@ -2013,7 +2013,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why are FlexGuard UltraGrip gloves described as \"trusted by pros\" like chefs and janitorial services?  ",
+        "text": " Why are FlexGuard UltraGrip gloves described as \"trusted by pros\" like chefs and janitorial services?  ",
         "prompt": "",
         "options": [
           "A) They come with a 20% discount for first-time buyers.  ",
@@ -2026,7 +2026,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as an eco-conscious feature of UltraGrip gloves?  ",
+        "text": " Which of the following is NOT listed as an eco-conscious feature of UltraGrip gloves?  ",
         "prompt": "",
         "options": [
           "A) Vegan-friendly materials  ",
@@ -2050,7 +2050,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material is the PrecisionPro Elite Series 12\" ruler primarily made of?  ",
+        "text": " What material is the PrecisionPro Elite Series 12\" ruler primarily made of?  ",
         "prompt": "",
         "options": [
           "A) Stainless steel  ",
@@ -2064,7 +2064,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which feature ensures that the ruler’s markings remain precise and smudge-free over time?  ",
+        "text": " Which feature ensures that the ruler’s markings remain precise and smudge-free over time?  ",
         "prompt": "",
         "options": [
           "A) Non-slip rubberized edges  ",
@@ -2077,7 +2077,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: According to the article, which of the following is NOT included in the product’s warranty or guarantee?  ",
+        "text": " According to the article, which of the following is NOT included in the product’s warranty or guarantee?  ",
         "prompt": "",
         "options": [
           "A) 30-day money-back guarantee  ",
@@ -2101,7 +2101,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material is the LuxeWeave Winter Scarf primarily made of?  ",
+        "text": " What material is the LuxeWeave Winter Scarf primarily made of?  ",
         "prompt": "",
         "options": [
           "A) 100% polyester  ",
@@ -2115,7 +2115,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why does the article suggest that each scarf \"tells a story\"?  ",
+        "text": " Why does the article suggest that each scarf \"tells a story\"?  ",
         "prompt": "",
         "options": [
           "A) Because customers can personalize them with symbols  ",
@@ -2128,7 +2128,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature or offer in the article?  ",
+        "text": " Which of the following is NOT mentioned as a feature or offer in the article?  ",
         "prompt": "",
         "options": [
           "A) Free worldwide shipping on orders over $100  ",
@@ -2152,7 +2152,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which of the following is listed as a key ingredient in VibrantVita HydraSilk Moisture Shampoo?  ",
+        "text": " Which of the following is listed as a key ingredient in VibrantVita HydraSilk Moisture Shampoo?  ",
         "prompt": "",
         "options": [
           "A) Coconut Water  ",
@@ -2166,7 +2166,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: According to the article, what benefit does bamboo extract provide?  ",
+        "text": " According to the article, what benefit does bamboo extract provide?  ",
         "prompt": "",
         "options": [
           "A) Adds a subtle fragrance  ",
@@ -2179,7 +2179,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT claimed as a feature of HydraSilk Moisture Shampoo?  ",
+        "text": " Which of the following is NOT claimed as a feature of HydraSilk Moisture Shampoo?  ",
         "prompt": "",
         "options": [
           "A) Vegan  ",
@@ -2203,7 +2203,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How many color options are available for the ZenithSeries UltraLight shoes?  ",
+        "text": " How many color options are available for the ZenithSeries UltraLight shoes?  ",
         "prompt": "",
         "options": [
           "A) 6  ",
@@ -2217,7 +2217,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What is the primary purpose of the TractionGrip Outsole technology mentioned in the article?  ",
+        "text": " What is the primary purpose of the TractionGrip Outsole technology mentioned in the article?  ",
         "prompt": "",
         "options": [
           "A) Enhances cushioning responsiveness  ",
@@ -2230,7 +2230,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the ZenithSeries UltraLight shoes?  ",
+        "text": " Which of the following is NOT listed as a feature of the ZenithSeries UltraLight shoes?  ",
         "prompt": "",
         "options": [
           "A) Responsive midsole adaptation (CloudFlex™)  ",
@@ -2254,7 +2254,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question: What is the screen size of the Velocity X1 Pro 5G Smartphone?  ",
+        "text": "What is the screen size of the Velocity X1 Pro 5G Smartphone?  ",
         "prompt": "",
         "options": [
           "A) 6.5 inches  ",
@@ -2268,7 +2268,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why might a customer pre-order the Velocity X1 Pro during the launch period?  ",
+        "text": " Why might a customer pre-order the Velocity X1 Pro during the launch period?  ",
         "prompt": "",
         "options": [
           "A) To receive a 20% discount on the phone  ",
@@ -2281,7 +2281,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT a feature of the Velocity X1 Pro’s durability or security?  ",
+        "text": " Which of the following is NOT a feature of the Velocity X1 Pro’s durability or security?  ",
         "prompt": "",
         "options": [
           "A) IP68 water/dust resistance  ",
@@ -2305,7 +2305,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the tagline of RadiantSage Daily Renewal Bar?  ",
+        "text": " What is the tagline of RadiantSage Daily Renewal Bar?  ",
         "prompt": "",
         "options": [
           "A) “Unlock Nature’s Radiance, One Lather at a Time!”  ",
@@ -2319,7 +2319,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why is RadiantSape Daily Renewal Bar suitable for eczema-prone skin?  ",
+        "text": " Why is RadiantSape Daily Renewal Bar suitable for eczema-prone skin?  ",
         "prompt": "",
         "options": [
           "A) It contains organic coconut oil for deep cleansing.  ",
@@ -2332,7 +2332,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a free-from claim in the product’s key features?  ",
+        "text": " Which of the following is NOT listed as a free-from claim in the product’s key features?  ",
         "prompt": "",
         "options": [
           "A) Sulfates  ",
@@ -2356,7 +2356,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What percentage of organic cotton is used in SoleStride Everyday Comfort Crew Socks?  ",
+        "text": " What percentage of organic cotton is used in SoleStride Everyday Comfort Crew Socks?  ",
         "prompt": "",
         "options": [
           "A) 75%  ",
@@ -2370,7 +2370,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which of the following groups would most likely be the target audience for SoleStride socks, based on the article?  ",
+        "text": " Which of the following groups would most likely be the target audience for SoleStride socks, based on the article?  ",
         "prompt": "",
         "options": [
           "A) People who collect rare footwear  ",
@@ -2383,7 +2383,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which feature is NOT listed as part of the SoleStride socks’ key attributes?  ",
+        "text": " Which feature is NOT listed as part of the SoleStride socks’ key attributes?  ",
         "prompt": "",
         "options": [
           "A) Antibacterial coating  ",
@@ -2407,7 +2407,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the maximum temperature the UltraGrip Pro Spatula can withstand?  ",
+        "text": " What is the maximum temperature the UltraGrip Pro Spatula can withstand?  ",
         "prompt": "",
         "options": [
           "A) 400°F (204°C)  ",
@@ -2421,7 +2421,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Why does the UltraGrip Pro Spatula feature an ergonomic design?  ",
+        "text": " Why does the UltraGrip Pro Spatula feature an ergonomic design?  ",
         "prompt": "",
         "options": [
           "A) To enhance its heat resistance  ",
@@ -2434,7 +2434,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature or claim about the UltraGrip Pro Spatula?  ",
+        "text": " Which of the following is NOT mentioned as a feature or claim about the UltraGrip Pro Spatula?  ",
         "prompt": "",
         "options": [
           "A) Made with biodegradable materials  ",
@@ -2458,7 +2458,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: According to the advertisement, what is the battery life of the StreamLuxe VoiceCommand Pro remote under everyday use?  ",
+        "text": " According to the advertisement, what is the battery life of the StreamLuxe VoiceCommand Pro remote under everyday use?  ",
         "prompt": "",
         "options": [
           "A) 6 months  ",
@@ -2472,7 +2472,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The slogan \"Take Control. Speak Your Entertainment\" most directly emphasizes which feature of the VoiceCommand Pro?  ",
+        "text": " The slogan \"Take Control. Speak Your Entertainment\" most directly emphasizes which feature of the VoiceCommand Pro?  ",
         "prompt": "",
         "options": [
           "A) Backlit design  ",
@@ -2485,7 +2485,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the StreamLuxe VoiceCommand Pro?  ",
+        "text": " Which of the following is NOT listed as a feature of the StreamLuxe VoiceCommand Pro?  ",
         "prompt": "",
         "options": [
           "A) Backlit design  ",
@@ -2509,7 +2509,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Which feature of TapeMaster Pro ensures that surfaces remain clean when the tape is removed?  ",
+        "text": " Which feature of TapeMaster Pro ensures that surfaces remain clean when the tape is removed?  ",
         "prompt": "",
         "options": [
           "A) Industrial-Strength Adhesive  ",
@@ -2523,7 +2523,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, in which situation would TapeMaster Pro be most effective due to its specific features?  ",
+        "text": " Based on the article, in which situation would TapeMaster Pro be most effective due to its specific features?  ",
         "prompt": "",
         "options": [
           "A) Securing a heavy package outdoors during a rainstorm  ",
@@ -2536,7 +2536,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: The article mentions TapeMaster Pro’s compatibility with multiple surfaces. Which of the following is NOT explicitly listed as a compatible surface?  ",
+        "text": " The article mentions TapeMaster Pro’s compatibility with multiple surfaces. Which of the following is NOT explicitly listed as a compatible surface?  ",
         "prompt": "",
         "options": [
           "A) Cardboard  ",
@@ -2560,7 +2560,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How many browning levels does the SwiftToast Pro offer according to the key features?  ",
+        "text": " How many browning levels does the SwiftToast Pro offer according to the key features?  ",
         "prompt": "",
         "options": [
           "A) 5  ",
@@ -2574,7 +2574,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which feature of the SwiftToast Pro most directly supports the claim \"Toast Perfected\" in the tagline?  ",
+        "text": " Which feature of the SwiftToast Pro most directly supports the claim \"Toast Perfected\" in the tagline?  ",
         "prompt": "",
         "options": [
           "A) Dual high-performance heating coils  ",
@@ -2587,7 +2587,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which safety feature is NOT listed for the SwiftToast Pro?  ",
+        "text": " Which safety feature is NOT listed for the SwiftToast Pro?  ",
         "prompt": "",
         "options": [
           "A) Auto shut-off  ",
@@ -2611,7 +2611,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: How many plies does CloudSoft toilet paper have?  ",
+        "text": " How many plies does CloudSoft toilet paper have?  ",
         "prompt": "",
         "options": [
           "A) 2  ",
@@ -2625,7 +2625,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Which of the following best explains why CloudSoft is considered \"planet-friendly\"?  ",
+        "text": " Which of the following best explains why CloudSoft is considered \"planet-friendly\"?  ",
         "prompt": "",
         "options": [
           "A) It uses 100% recycled materials and plastic-free packaging.  ",
@@ -2638,7 +2638,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which statement about CloudSoft is NOT true based on the advertisement?  ",
+        "text": " Which statement about CloudSoft is NOT true based on the advertisement?  ",
         "prompt": "",
         "options": [
           "A) It is packaged in recyclable materials.  ",
@@ -2662,7 +2662,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: Detail Identification (Factual Recall)  ",
+        "text": " Detail Identification (Factual Recall)  ",
         "prompt": "",
         "options": [
           "A) 2  ",
@@ -2676,7 +2676,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Detail Identification (Inference)  ",
+        "text": " Detail Identification (Inference)  ",
         "prompt": "",
         "options": [
           "A) 1 week  ",
@@ -2689,7 +2689,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Detail Analysis (Negative Factual Identification)  ",
+        "text": " Detail Analysis (Negative Factual Identification)  ",
         "prompt": "",
         "options": [
           "A) 30-day battery life on a single charge  ",
@@ -2713,7 +2713,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What three benefits does BrightSmile™ Toothpaste’s Triple Action Formula provide?  ",
+        "text": " What three benefits does BrightSmile™ Toothpaste’s Triple Action Formula provide?  ",
         "prompt": "",
         "options": [
           "A) Whitens teeth, fights cavities, freshens breath  ",
@@ -2727,7 +2727,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What does the statistic “94% of users saw whiter teeth in just 2 weeks!” imply about BrightSmile™?  ",
+        "text": " What does the statistic “94% of users saw whiter teeth in just 2 weeks!” imply about BrightSmile™?  ",
         "prompt": "",
         "options": [
           "A) It guarantees whiter teeth for all users.  ",
@@ -2740,7 +2740,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a benefit of BrightSmile™ Toothpaste?  ",
+        "text": " Which of the following is NOT listed as a benefit of BrightSmile™ Toothpaste?  ",
         "prompt": "",
         "options": [
           "A) Strengthens enamel  ",
@@ -2764,7 +2764,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What is the GSM weight of the LuxeWeave CloudTouch Towel?  ",
+        "text": " What is the GSM weight of the LuxeWeave CloudTouch Towel?  ",
         "prompt": "",
         "options": [
           "A) 500 GSM  ",
@@ -2778,7 +2778,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: According to the article, what is a key benefit of the EcoSmart Finish?  ",
+        "text": " According to the article, what is a key benefit of the EcoSmart Finish?  ",
         "prompt": "",
         "options": [
           "A) Resists odors and fading  ",
@@ -2791,7 +2791,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following features is NOT mentioned as part of the CloudTouch Towel Collection?  ",
+        "text": " Which of the following features is NOT mentioned as part of the CloudTouch Towel Collection?  ",
         "prompt": "",
         "options": [
           "A) Reinforced edges  ",
@@ -2815,7 +2815,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material are PrecisionGrip™ tweezers primarily made from?  ",
+        "text": " What material are PrecisionGrip™ tweezers primarily made from?  ",
         "prompt": "",
         "options": [
           "A) Surgical-grade stainless steel  ",
@@ -2829,7 +2829,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: According to the article, what does the ergonomic non-slip grip ensure?  ",
+        "text": " According to the article, what does the ergonomic non-slip grip ensure?  ",
         "prompt": "",
         "options": [
           "A) Easy sanitization  ",
@@ -2842,7 +2842,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which feature is NOT listed as part of PrecisionGrip™ tweezers?  ",
+        "text": " Which feature is NOT listed as part of PrecisionGrip™ tweezers?  ",
         "prompt": "",
         "options": [
           "A) Free mini case with every order  ",
@@ -2866,7 +2866,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What encryption standard does the Nexus X1 use to protect data?  ",
+        "text": " What encryption standard does the Nexus X1 use to protect data?  ",
         "prompt": "",
         "options": [
           "A) AES-128  ",
@@ -2880,7 +2880,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: Based on the article, what can be inferred about using the Nexus X1 with Android devices?  ",
+        "text": " Based on the article, what can be inferred about using the Nexus X1 with Android devices?  ",
         "prompt": "",
         "options": [
           "A) It requires third-party encryption software.  ",
@@ -2893,7 +2893,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT mentioned as a feature or detail about the Nexus X1?  ",
+        "text": " Which of the following is NOT mentioned as a feature or detail about the Nexus X1?  ",
         "prompt": "",
         "options": [
           "A) Available in Forest Green  ",
@@ -2917,7 +2917,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: According to the article, what wind speed can the EverGuard Elite Umbrella withstand due to its reinforced fiberglass frame?  ",
+        "text": " According to the article, what wind speed can the EverGuard Elite Umbrella withstand due to its reinforced fiberglass frame?  ",
         "prompt": "",
         "options": [
           "A) 50 mph  ",
@@ -2931,7 +2931,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: What is included in the free travel pouch offered with the promotional \"Buy 2, Get 1\" deal?  ",
+        "text": " What is included in the free travel pouch offered with the promotional \"Buy 2, Get 1\" deal?  ",
         "prompt": "",
         "options": [
           "A) UV Guard Coating spray  ",
@@ -2944,7 +2944,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following features is NOT mentioned in the article about the EverGuard Elite Umbrella?  ",
+        "text": " Which of the following features is NOT mentioned in the article about the EverGuard Elite Umbrella?  ",
         "prompt": "",
         "options": [
           "A) Instant Dry Technology  ",
@@ -2968,7 +2968,7 @@
       {
         "id": 1,
         "type": "reading",
-        "text": "Question 1: What material is used for the SwiftBlend Pro Whisk’s ergonomic grip?  ",
+        "text": " What material is used for the SwiftBlend Pro Whisk’s ergonomic grip?  ",
         "prompt": "",
         "options": [
           "A) Stainless steel  ",
@@ -2982,7 +2982,7 @@
       {
         "id": 2,
         "type": "reading",
-        "text": "Question 2: The article implies that the ergonomic grip design primarily addresses which common problem?  ",
+        "text": " The article implies that the ergonomic grip design primarily addresses which common problem?  ",
         "prompt": "",
         "options": [
           "A) Rust accumulation  ",
@@ -2995,7 +2995,7 @@
       {
         "id": 3,
         "type": "reading",
-        "text": "Question 3: Which of the following is NOT listed as a feature of the SwiftBlend Pro Whisk?  ",
+        "text": " Which of the following is NOT listed as a feature of the SwiftBlend Pro Whisk?  ",
         "prompt": "",
         "options": [
           "A) Stainless steel construction  ",

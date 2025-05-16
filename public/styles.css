@@ -102,6 +102,9 @@ conversation {
 .speaker-text {
     flex: 1;
     font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    font-size: large;
 }
 
 /* Specific styles for Short_conversation and Long_Conversation */
@@ -3246,9 +3249,9 @@ small {
     right: 5px;
     background: rgba(255, 255, 255, 0.8);
     border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    border-radius: 75%;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3523,7 +3526,7 @@ small {
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 226, 226);
 }
 
 .progress-indicator-fill {
@@ -3576,7 +3579,7 @@ small {
 
 .question-nav-item {
     background-color: var(--bg-white);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: flex;
     align-items: center;

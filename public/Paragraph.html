@@ -142,15 +142,15 @@
                     <div class="question-legend">
                         <div class="legend-item">
                             <div class="legend-color legend-current"></div>
-                            <span>Current</span>
+                            <span>ขณะนี้</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-color legend-answered"></div>
-                            <span>Answered</span>
+                            <span>เลือกคำตอบแล้ว</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-color legend-unanswered"></div>
-                            <span>Unanswered</span>
+                            <span>ยังไม่เลือกคำตอบ</span>
                         </div>
                 </div>
             </div>
@@ -169,9 +169,9 @@
             </div>
             
             <div class="exam-navigation">
-                <button id="prev-question" class="btn secondary">Previous</button>
-                <button id="submit-exam" class="btn accent">Submit Answers</button>
-                <button id="next-question" class="btn">Next</button>
+                <button id="prev-question" class="btn secondary">ข้อก่อนหน้า</button>
+                <button id="submit-exam" class="btn accent">ส่งคำตอบ</button>
+                <button id="next-question" class="btn">ข้อต่อไป</button>
                 </div>
             </div>
         </section>
@@ -194,27 +194,27 @@
                         <text x="18" y="18" class="score-text" id="score">0%</text>
                         <text x="18" y="24" class="score-label-text">Score</text>
                     </svg>
-                    <div class="score-label">Overall Performance</div>
+                    <div class="score-label">คะแนนโดยรวม</div>
                 </div>
                 
                 <div class="result-stats">
                     <div class="stat-item">
-                        <span class="stat-label">Correct Answers:</span>
-                        <span id="correct-count">0</span>/<span id="total-questions">0</span>
+                        <span class="stat-label">ข้อที่ถูก:</span>
+                        <span id="correct-count">0</span> ข้อ จากคะแนนเต็ม <span id="total-questions">0</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-label">Time Taken:</span>
+                        <span class="stat-label">ใช้เวลา:</span>
                         <span id="time-taken">00:00</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-label">Performance:</span>
+                        <span class="stat-label">เกณฑ์คะแนน:</span>
                         <span id="performance-text">Needs Improvement</span>
                     </div>
                 </div>
             </div>
             
             <div class="skill-scores">
-                <h3>Skill Breakdown</h3>
+                <h3>คะแนนตามทักษะ</h3>
                 <div class="skill-scores-container">
                     <div class="skill-score-item">
                         <div class="skill-score-circle reading">
@@ -229,7 +229,7 @@
                                         a 15.9155 15.9155 0 0 1 0 -31.831"
                                       id="reading-score-path"/>
                                 <text x="18" y="19" class="score-text" id="reading-score">0%</text>
-                                <text x="18" y="25" class="score-label-text">Reading</text>
+                                <text x="18" y="25" class="score-label-text">อ่าน</text>
                             </svg>
                         </div>
                         <div class="skill-info">
@@ -250,7 +250,7 @@
                                         a 15.9155 15.9155 0 0 1 0 -31.831"
                                       id="writing-score-path"/>
                                 <text x="18" y="19" class="score-text" id="writing-score">0%</text>
-                                <text x="18" y="25" class="score-label-text">Writing</text>
+                                <text x="18" y="25" class="score-label-text">เขียน</text>
                             </svg>
                         </div>
                         <div class="skill-info">
@@ -271,7 +271,7 @@
                                         a 15.9155 15.9155 0 0 1 0 -31.831"
                                       id="speaking-score-path"/>
                                 <text x="18" y="19" class="score-text" id="speaking-score">0%</text>
-                                <text x="18" y="25" class="score-label-text">Speaking</text>
+                                <text x="18" y="25" class="score-label-text">พูด</text>
                             </svg>
                         </div>
                         <div class="skill-info">
@@ -303,6 +303,7 @@
     <script src="scripts.js"></script>
     <script src="../ad-banner.js"></script>
     <script src="progress.js"></script>
+<script src="score-suggestions.js"></script>
 </body>
 </html> 
 

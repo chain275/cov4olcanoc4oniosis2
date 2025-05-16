@@ -138,37 +138,80 @@
         </section>
         
         <section id="exam-content" class="hidden">
+            <!-- Back button repositioned outside the header -->
+            <button id="back-button" class="btn-icon" aria-label="Back to exam info">
+                <i class="icon-back"></i>
+            </button>
+            
             <div class="exam-header">
-                <button id="back-button" class="btn-icon" aria-label="Back to exam info">
-                    <i class="icon-back"></i>
-                </button>
                 <div class="exam-title-container">
                     <h2 id="exam-title">Combined Exam</h2>
                     <!-- Subtitle will be inserted here by JavaScript -->
                 </div>
+            </div>
+            
+            <div class="exam-questions-container">
                 <div class="exam-timer">
                     <i class="icon-timer"></i>
                     <span id="timer-display">00:00</span>
                 </div>
-            </div>
-            
-            <div class="progress-container">    
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
+                
+                <div class="progress-container">
+                    <div class="hidden">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-text" style="display: none;">
+                        Question <span id="current-question">0</span>
+                    </div>
                 </div>
-                <div class="progress-text">
-                    ข้อที่ <span id="current-question">0</span> จาก <span id="total-questions-progress">0</span>
+                
+                <div id="exam-questions">
+                    <!-- Questions will be loaded here -->
                 </div>
-            </div>
-            
-            <div id="exam-questions">
-                <!-- Questions will be loaded here -->
-            </div>
-            
-            <div class="exam-navigation">
-                <button id="prev-question" class="btn secondary">Previous</button>
-                <button id="submit-exam" class="btn accent">Submit Answers</button>
-                <button id="next-question" class="btn">Next</button>
+                
+                <div class="exam-navigation">
+                    <button id="prev-question" class="btn secondary">ข้อก่อนหน้า</button>
+                    <button id="submit-exam" class="btn accent">ส่งคำตอบ</button>
+                    <button id="next-question" class="btn">ข้อต่อไป</button>
+                </div>
+                
+                <!-- New Question Progress and Navigator -->
+                <div class="question-progress-wrapper">
+                    <h3>Your Progress</h3>
+                    
+                    <!-- Visual progress indicator -->
+                    <div class="visual-progress">
+                        <div class="progress-indicator">
+                            <div class="progress-indicator-fill" id="visual-progress-fill"></div>
+                        </div>
+                        <div class="progress-stats">
+                            <span id="answered-count">0</span>
+                            <span id="total-question-count">0</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Question navigator -->
+                    <h3>Question Navigator</h3>
+                    <div class="question-navigator" id="question-navigator">
+                        <!-- Question buttons will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <!-- Legend -->
+                    <div class="question-legend">
+                        <div class="legend-item">
+                            <div class="legend-color legend-current"></div>
+                            <span>ขณะนี้</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color legend-answered"></div>
+                            <span>เลือกคำตอบแล้ว</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color legend-unanswered"></div>
+                            <span>ยังไม่เลือกคำตอบ</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -209,11 +252,11 @@
                 </div>
             </div>
             
-            <div class="skill-scores">
-                <h3>Skill Breakdown</h3>
-                <div class="skill-scores-container">
-                    <div class="skill-score-item">
-                        <div class="skill-score-circle reading">
+            <div class="type-scores">
+                <h3>คะแนนตามประเภทข้อสอบ</h3>
+                <div class="type-scores-container">
+                    <div class="type-score-item">
+                        <div class="skill-score-circle short-conversation">
                             <svg viewBox="0 0 36 36" class="score-chart">
                                 <path class="score-circle-bg"
                                       d="M18 2.0845
@@ -223,18 +266,19 @@
                                       d="M18 2.0845
                                         a 15.9155 15.9155 0 0 1 0 31.831
                                         a 15.9155 15.9155 0 0 1 0 -31.831"
-                                      id="reading-score-path"/>
-                                <text x="18" y="19" class="score-text" id="reading-score">0%</text>
-                                <text x="18" y="25" class="score-label-text">Reading</text>
+                                      id="short-conversation-score-path"/>
+                                <text x="18" y="19" class="score-text" id="short-conversation-score">0%</text>
+                                <text x="18" y="25" class="score-label-text small">บทสนทนาสั้น</text>
                             </svg>
                         </div>
                         <div class="skill-info">
-                            <span id="reading-correct">0</span>/<span id="reading-total">0</span>
+                            <span id="short-conversation-correct">0</span>/<span id="short-conversation-total">0</span>
                         </div>
                     </div>
                     
-                    <div class="skill-score-item">
-                        <div class="skill-score-circle writing">
+                    <!-- Repeat for other types -->
+                    <div class="type-score-item">
+                        <div class="skill-score-circle long-conversation">
                             <svg viewBox="0 0 36 36" class="score-chart">
                                 <path class="score-circle-bg"
                                       d="M18 2.0845
@@ -244,99 +288,51 @@
                                       d="M18 2.0845
                                         a 15.9155 15.9155 0 0 1 0 31.831
                                         a 15.9155 15.9155 0 0 1 0 -31.831"
-                                      id="writing-score-path"/>
-                                <text x="18" y="19" class="score-text" id="writing-score">0%</text>
-                                <text x="18" y="25" class="score-label-text">Writing</text>
+                                      id="long-conversation-score-path"/>
+                                <text x="18" y="19" class="score-text" id="long-conversation-score">0%</text>
+                                <text x="18" y="25" class="score-label-text small">บทสนทนายาว</text>
                             </svg>
                         </div>
                         <div class="skill-info">
-                            <span id="writing-correct">0</span>/<span id="writing-total">0</span>
+                            <span id="long-conversation-correct">0</span>/<span id="long-conversation-total">0</span>
                         </div>
                     </div>
                     
-                    <div class="skill-score-item">
-                        <div class="skill-score-circle speaking">
-                            <svg viewBox="0 0 36 36" class="score-chart">
-                                <path class="score-circle-bg"
-                                      d="M18 2.0845
-                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                <path class="score-circle-fill"
-                                      d="M18 2.0845
-                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                      id="speaking-score-path"/>
-                                <text x="18" y="19" class="score-text" id="speaking-score">0%</text>
-                                <text x="18" y="25" class="score-label-text">Speaking</text>
-                            </svg>
-                        </div>
-                        <div class="skill-info">
-                            <span id="speaking-correct">0</span>/<span id="speaking-total">0</span>
-                        </div>
-                    </div>
+                    <!-- More type scores can be added dynamically by JavaScript -->
                 </div>
             </div>
             
-            <div class="skill-type-breakdown">
-                <h3 class="type-breakdown-title">Performance by Question Type</h3>
-                <div class="type-breakdown-list">
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Short Conversation</span>
-                        <span class="type-score" id="short-conversation-score">0/12</span>
-                    </div>
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Long Conversation</span>
-                        <span class="type-score" id="long-conversation-score">0/8</span>
-                    </div>
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Advertisement</span>
-                        <span class="type-score" id="advertisement-score">0/6</span>
-                    </div>  
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Product</span>
-                        <span class="type-score" id="product-score">0/12</span>
-                    </div>
-                    <div class="type-breakdown-item">
-                        <span class="type-name">News Report</span>
-                        <span class="type-score" id="news-report-score">0/8</span>
-                    </div>
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Article</span>
-                        <span class="type-score" id="article-score">0/16</span>
-                    </div>
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Text Completion</span>
-                        <span class="type-score" id="text-completion-score">0/15</span>
-                    </div>
-                    <div class="type-breakdown-item">
-                        <span class="type-name">Paragraph</span>
-                        <span class="type-score" id="paragraph-score">0/5</span>
-                    </div>
+            <!-- Score suggestions section -->
+            <div id="score-suggestions" class="suggestions-container">
+                <h3>คำแนะนำเพื่อการพัฒนา</h3>
+                <div class="suggestions-content">
+                    <!-- Suggestions will be inserted here by JavaScript -->
                 </div>
             </div>
             
             <div class="result-actions">
-                <button id="back-to-home" class="btn">Back to Home</button>
-                <button id="view-feedback" class="btn secondary">View Detailed Feedback</button>
+                <button id="view-feedback" class="btn secondary">แสดงผลลัพธ์โดยละเอียด</button>
+                <button id="retry-exam" class="btn">ทำข้อสอบชุดนี้อีกครั้ง</button>
+                <button id="back-to-home" class="btn accent">กลับไปหน้าหลัก</button>
+                <button id="view-progress" class="btn secondary">ดูพัฒนาการ</button>
             </div>
             
             <div id="feedback" class="feedback-container hidden">
-                <h3>Detailed Feedback</h3>
-                <div class="feedback-list">
-                    <!-- Feedback items will be loaded here -->
-                </div>
+                <!-- Feedback will be inserted here by JavaScript -->
+            </div>
+            
+            <div id="score-histogram" class="histogram-container">
+                <!-- Score histogram will be inserted here by JavaScript -->
             </div>
         </section>
     </main>
     
     <!-- Footer will be included here -->
     <div id="footer-placeholder"></div>
-
+    
     <script src="include.js"></script>
-    <script src="slideshow.js"></script>
     <script src="scripts.js"></script>
-    <script src="progress.js"></script>
-    <script src="../ad-banner.js"></script>
     <script src="combined_exam.js"></script>
+    <script src="../ad-banner.js"></script>
 </body>
 </html> 

@@ -9,14 +9,14 @@ async function includeHTML() {
                 const headerHtml = await headerResponse.text();
                 headerPlaceholder.innerHTML = headerHtml;
                 
-                // Highlight current page in navigation
-                const currentPage = window.location.pathname.split('/').pop();
-                if (currentPage === 'index.html' || currentPage === '') {
-                    const homeLink = document.querySelector('.nav-home');
-                    if (homeLink) homeLink.classList.add('active');
-                } else if (currentPage === 'contact.html') {
-                    const contactLink = document.querySelector('.nav-contact');
-                    if (contactLink) contactLink.classList.add('active');
+                    // Highlight current page in navigation
+                    const currentPage = window.location.pathname.split('/').pop();
+                    if (currentPage === 'index.html' || currentPage === '') {
+                        const homeLink = document.querySelector('.nav-home');
+                        if (homeLink) homeLink.classList.add('active');
+                    } else if (currentPage === 'contact.html') {
+                        const contactLink = document.querySelector('.nav-contact');
+                        if (contactLink) contactLink.classList.add('active');
                 } else if (currentPage === 'donate.html') {
                     const donateLink = document.querySelector('.nav-donate');
                     if (donateLink) donateLink.classList.add('active');
@@ -58,13 +58,13 @@ async function includeHTML() {
                 // Initialize responsive menu functionality
                 if (typeof setupMobileMenu === 'function') {
                     setTimeout(setupMobileMenu, 100);
+                    }
+                    
+                    // Initialize dropdown functionality
+                    if (typeof setupDropdownMenus === 'function') {
+                        setTimeout(setupDropdownMenus, 100);
+                    }
                 }
-                
-                // Initialize dropdown functionality
-                if (typeof setupDropdownMenus === 'function') {
-                    setTimeout(setupDropdownMenus, 100);
-                }
-            }
         }
         
         // Load footer
@@ -76,12 +76,12 @@ async function includeHTML() {
                 footerPlaceholder.innerHTML = footerHtml;
                 
                 // Update copyright year
-                const yearSpan = document.querySelector('.year');
-                if (yearSpan) {
-                    yearSpan.textContent = new Date().getFullYear();
+                    const yearSpan = document.querySelector('.year');
+                    if (yearSpan) {
+                        yearSpan.textContent = new Date().getFullYear();
+                    }
                 }
             }
-        }
         
         // Initialize ad banners
         if (typeof initAdBanners === 'function') {
@@ -93,7 +93,7 @@ async function includeHTML() {
             setTimeout(applyResponsiveLayout, 300);
         }
         
-    } catch (error) {
+        } catch (error) {
         console.error('Error loading components:', error);
     }
 }
