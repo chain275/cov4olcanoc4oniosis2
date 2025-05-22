@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCAS Prep - Progress Tracker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/slideshow.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        kbd {
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+            color: #333;
+            display: inline-block;
+            font-size: 0.85em;
+            font-family: monospace;
+            line-height: 1;
+            padding: 2px 4px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu overlay for mobile -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Header will be included here -->
+    <div id="header-placeholder"></div>
+    
+<!-- Left Ad Banner Container -->
+<div class="ad-container left">
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="English Tutors">
+        <div class="ad-content">
+            <h4>Expert English Tutors</h4>
+            <p>One-on-one sessions with TCAS exam specialists</p>
+            <a href="../templates/tutors.html" class="ad-action">Find a Tutor</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Study Materials">
+        <div class="ad-content">
+            <h4>Premium Study Materials</h4>
+            <p>Access exclusive TCAS English practice resources</p>
+            <a href="materials.html" class="ad-action">Browse Now</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+    
+<!-- Right Ad Banner Container -->
+<div class="ad-container right">
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Online Workshops">
+        <div class="ad-content">
+            <h4>TCAS English Workshops</h4>
+            <p>Join our weekly online preparation classes</p>
+            <a href="workshops.html" class="ad-action">Register</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="ad-banner">
+        <img src="../src/images/grammar_exercise.jpg" alt="Premium Subscription">
+        <div class="ad-content">
+            <h4>Go Premium</h4>
+            <p>Unlock all practice exams and performance analytics</p>
+            <a href="premium.html" class="ad-action">Upgrade</a>
+        </div>
+        <button class="ad-close"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+    
+    <main>
+        <section class="progress-section">
+            <div class="section-header">
+                <h2>Progress Tracker</h2>
+                <p class="section-description">Monitor your improvement over time with detailed performance analytics</p>
+                <!-- Test button (hidden in production) -->
+                <button id="test-button" class="btn" onclick="addTestResult()">
+                    <i class="fas fa-plus"></i> Add Test Result
+                </button>
+                <!-- Generate full sample data button -->
+                <button id="generate-sample-data" class="btn" onclick="generateFullSampleData()" title="Press Ctrl+G to generate sample data from anywhere on the page">
+                    <i class="fas fa-database"></i> Generate Sample Data <kbd>Ctrl+G</kbd>
+                </button>
+            </div>
+            
+            <div class="progress-dashboard">
+                <div class="dashboard-sidebar">
+                    <div class="dashboard-profile">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Your Progress</h3>
+                            <p>Last exam: <span id="last-exam-date">--</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-nav">
+                        <button class="dashboard-nav-item active" data-tab="overview">
+                            <i class="fas fa-chart-line"></i> Overview
+                        </button>
+                        <button class="dashboard-nav-item" data-tab="skills">
+                            <i class="fas fa-brain"></i> Skills Analysis
+                        </button>
+                        <button class="dashboard-nav-item" data-tab="history">
+                            <i class="fas fa-history"></i> Exam History
+                        </button>
+                        <button class="dashboard-nav-item" data-tab="insights">
+                            <i class="fas fa-lightbulb"></i> Insights
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dashboard-content">
+                    <div class="dashboard-tab active" id="overview-tab">
+                        <div class="dashboard-header">
+                            <h3>คะแนนโดยรวม</h3>
+                            <div class="progress-filters">
+                                <div class="filter-group">
+                                    <label for="exam-type-filter">Exam Type:</label>
+                                    <select id="exam-type-filter" class="filter-select">
+                                        <option value="all">All Exam Types</option>
+                                        <option value="Short_conversation">Short Conversation</option>
+                                        <option value="Long_Conversation">Long Conversation</option>
+                                        <option value="Advertisement">Advertisement</option>
+                                        <option value="Product">Product Review</option>
+                                        <option value="News_report">News Report</option>
+                                        <option value="Article">Article</option>
+                                        <option value="Text_completion">Text Completion</option>
+                                        <option value="Paragraph">Paragraph Organization</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="filter-group">
+                                    <label for="time-period-filter">Time Period:</label>
+                                    <select id="time-period-filter" class="filter-select">
+                                        <option value="7days">Last 7 Days</option>
+                                        <option value="30days">Last 30 Days</option>
+                                        <option value="90days">Last 90 Days</option>
+                                        <option value="all" selected>All Time</option>
+                                    </select>
+                                </div>
+                                
+                                <button id="reset-filters" class="btn-reset-filter">
+                                    <i class="fas fa-sync-alt"></i> Reset
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-container">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <h3>Exams Taken</h3>
+                                    <p class="stat-value" id="total-exams">0</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <h3>Average Score</h3>
+                                    <p class="stat-value" id="average-score">0%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <h3>Highest Score</h3>
+                                    <p class="stat-value" id="highest-score">0%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <h3>Recent Score</h3>
+                                    <p class="stat-value" id="recent-score">0%</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-chart-section">
+                            <div class="chart-header">
+                                <h3>Score Progression</h3>
+                                <div class="chart-actions">
+                                    <select id="chart-type" class="chart-select">
+                                        <option value="line">Line Chart</option>
+                                        <option value="bar">Bar Chart</option>
+                                        <option value="radar">Radar Chart</option>
+                                    </select>
+                                    <button id="toggle-trend" class="btn-chart-action">
+                                        <i class="fas fa-chart-line"></i> Show Trend
+                                    </button>
+                                    <button id="export-data" class="btn-chart-action" title="Export progress data as CSV">
+                                        <i class="fas fa-download"></i> Export Data
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-chart-container">
+                                <canvas id="progressChart"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-overview">
+                            <h3>Skill Performance Overview</h3>
+                            <div class="skill-charts">
+                                <div class="skill-chart">
+                                    <h4>Reading</h4>
+                                    <div class="score-circle-container">
+                                        <svg class="score-circle" width="120" height="120" viewBox="0 0 120 120">
+                                            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12"/>
+                                            <path id="reading-score-path" d="M60,6 A54,54 0 0,1 60,114 A54,54 0 0,1 60,6" fill="none" stroke="#4CAF50" stroke-width="12"/>
+                                            <text id="reading-score" x="60" y="65" text-anchor="middle" font-size="24" font-weight="bold">0%</text>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="skill-chart">
+                                    <h4>Writing</h4>
+                                    <div class="score-circle-container">
+                                        <svg class="score-circle" width="120" height="120" viewBox="0 0 120 120">
+                                            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12"/>
+                                            <path id="writing-score-path" d="M60,6 A54,54 0 0,1 60,114 A54,54 0 0,1 60,6" fill="none" stroke="#2196F3" stroke-width="12"/>
+                                            <text id="writing-score" x="60" y="65" text-anchor="middle" font-size="24" font-weight="bold">0%</text>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="skill-chart">
+                                    <h4>Speaking</h4>
+                                    <div class="score-circle-container">
+                                        <svg class="score-circle" width="120" height="120" viewBox="0 0 120 120">
+                                            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12"/>
+                                            <path id="speaking-score-path" d="M60,6 A54,54 0 0,1 60,114 A54,54 0 0,1 60,6" fill="none" stroke="#FF9800" stroke-width="12"/>
+                                            <text id="speaking-score" x="60" y="65" text-anchor="middle" font-size="24" font-weight="bold">0%</text>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-tab" id="skills-tab">
+                        <div class="dashboard-header">
+                            <h3>Skills Analysis</h3>
+                        </div>
+                        
+                        <div class="skills-progress">
+                            <div class="skills-chart-container">
+                                <canvas id="skillsRadarChart"></canvas>
+                            </div>
+                            
+                            <div class="skills-detail">
+                                <div class="skill-detail-item">
+                                    <div class="skill-detail-header">
+                                        <h4>Reading</h4>
+                                        <span class="skill-score" id="reading-detail-score">0%</span>
+                                    </div>
+                                    <div class="skill-progress-bar">
+                                        <div class="skill-progress-fill reading-fill" style="width: 0%"></div>
+                                    </div>
+                                    <p class="skill-tip">Focus on comprehension and analysis of written texts.</p>
+                                </div>
+                                
+                                <div class="skill-detail-item">
+                                    <div class="skill-detail-header">
+                                        <h4>Writing</h4>
+                                        <span class="skill-score" id="writing-detail-score">0%</span>
+                                    </div>
+                                    <div class="skill-progress-bar">
+                                        <div class="skill-progress-fill writing-fill" style="width: 0%"></div>
+                                    </div>
+                                    <p class="skill-tip">Practice organizing your thoughts and expressing ideas clearly.</p>
+                                </div>
+                                
+                                <div class="skill-detail-item">
+                                    <div class="skill-detail-header">
+                                        <h4>Speaking</h4>
+                                        <span class="skill-score" id="speaking-detail-score">0%</span>
+                                    </div>
+                                    <div class="skill-progress-bar">
+                                        <div class="skill-progress-fill speaking-fill" style="width: 0%"></div>
+                                    </div>
+                                    <p class="skill-tip">Work on listening comprehension and conversation analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-by-exam">
+                            <h3>Performance by Exam Type</h3>
+                            <div class="exam-type-chart-container">
+                                <canvas id="examTypeChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-tab" id="history-tab">
+                        <div class="dashboard-header">
+                            <h3>Exam History</h3>
+                            <div class="table-actions">
+                                <input type="text" id="history-search" class="search-input" placeholder="Search exams...">
+                                <select id="history-sort" class="filter-select">
+                                    <option value="date-desc">Newest First</option>
+                                    <option value="date-asc">Oldest First</option>
+                                    <option value="score-desc">Highest Score</option>
+                                    <option value="score-asc">Lowest Score</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="exam-history-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date <i class="fas fa-sort"></i></th>
+                                        <th>Exam Type <i class="fas fa-sort"></i></th>
+                                        <th>Score <i class="fas fa-sort"></i></th>
+                                        <th>Time Taken <i class="fas fa-sort"></i></th>
+                                        <th>Skills</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="exam-history-body">
+                                    <!-- Will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="pagination">
+                            <button id="prev-page" class="pagination-btn" disabled>
+                                <i class="fas fa-chevron-left"></i> ข้อก่อนหน้า
+                            </button>
+                            <span id="page-info">Page 1 of 1</span>
+                            <button id="next-page" class="pagination-btn" disabled>
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-tab" id="insights-tab">
+                        <div class="dashboard-header">
+                            <h3>Performance Insights</h3>
+                        </div>
+                        
+                        <div class="insights-container">
+                            <div class="insight-card" id="trend-insight">
+                                <div class="insight-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Score Trend</h4>
+                                    <p id="trend-text">Your scores are improving over time!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="insight-card" id="strongest-skill">
+                                <div class="insight-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Strongest Skill</h4>
+                                    <p id="strongest-skill-text">Reading is your strongest skill.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="insight-card" id="weakest-skill">
+                                <div class="insight-icon">
+                                    <i class="fas fa-wrench"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Area for Improvement</h4>
+                                    <p id="weakest-skill-text">Focus on improving your Speaking skills.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="insight-card" id="consistency">
+                                <div class="insight-icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="insight-content">
+                                    <h4>Practice Consistency</h4>
+                                    <p id="consistency-text">You've taken 3 exams in the last 7 days.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recommendation-section">
+                            <h3>Recommended Next Steps</h3>
+                            <div class="recommendations" id="recommendations-list">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="time-analysis">
+                            <h3>Time Spent Analysis</h3>
+                            <div class="time-chart-container">
+                                <canvas id="timeAnalysisChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer will be included here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/include.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/progress.js"></script>
+    
+    <!-- Ensure proper initialization of progress page -->
+    <script src="../ad-banner.js"></script>
+    <script>
+        // Additional initialization to ensure everything loads properly
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Document fully loaded, initializing progress tracker...');
+            
+            // Make sure Chart.js and its plugins are available
+            if (typeof Chart === 'undefined') {
+                console.error('Chart.js is not loaded!');
+                alert('Error: Chart.js library not loaded. Progress visualization may not work properly.');
+            }
+            
+            // Style the test button
+            const testButton = document.getElementById('test-button');
+            if (testButton) {
+                testButton.style.position = 'absolute';
+                testButton.style.right = '20px';
+                testButton.style.top = '20px';
+                
+                // Optional: hide in production
+                // testButton.style.display = 'none';
+            }
+            
+            // Style the generate sample data button
+            const generateButton = document.getElementById('generate-sample-data');
+            if (generateButton) {
+                generateButton.style.position = 'absolute';
+                generateButton.style.right = '180px';
+                generateButton.style.top = '20px';
+                generateButton.style.backgroundColor = '#4285F4';
+                
+                // Optional: hide in production
+                // generateButton.style.display = 'none';
+            }
+        });
+    </script>
+<script src="score-suggestions.js"></script>
+</body>
+</html> 

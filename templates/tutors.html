@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Tutor - TCAS Prep</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/slideshow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+<body>
+    <!-- Menu overlay for mobile -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Header directly included -->
+    <header>
+        <div class="logo-container">
+            <h1>TCAS Prep</h1>
+            <span class="tagline">English Exam Practice</span>
+        </div>
+        
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav>
+            <ul>
+                <li><a href="../templates/index.html" class="nav-home"><i class="icon-home"></i>Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Speaking</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../templates/Short_conversation.html">Short Conversation</a></li>
+                        <li><a href="Long_Conversation.html">Long Conversation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Reading</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../public/Advertisement.html">Advertisement</a></li>
+                        <li><a href="../templates/Product.html">Product Review</a></li>
+                        <li><a href="../templates/News_report.html">News Report</a></li>
+                        <li><a href="#">Visual</a></li>
+                        <li><a href="../templates/Article.html">Article</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Writing</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../templates/Text_completion.html">Text Completion</a></li>
+                        <li><a href="../templates/Paragraph.html">Paragraph Organization</a></li>
+                    </ul>
+                </li>
+                <li><a href="../templates/contact.html" class="nav-contact">Contact</a></li>
+                <li><a href="../templates/donate.html" class="nav-donate">Donate</a></li>
+                <li><a href="../templates/tutors.html" class="nav-tutors">Tutors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="tutor-header">
+            <div class="section-header">
+                <h2>Find Your Ideal English Tutor</h2>
+                <p class="section-description">Get personalized guidance from our experienced tutors to boost your TCAS English performance</p>
+            </div>
+        </section>
+        
+        
+        <section class="featured-tutors">
+            <div class="section-header">
+                <h2>Our Featured Tutors</h2>
+                <p class="section-description">Meet some of our experienced TCAS English tutors</p>
+            </div>
+            
+            <div class="tutors-grid" id="tutors-container">
+                <!-- Tutor cards will be loaded here dynamically -->
+                <div class="loading-animation">
+                    <div class="spinner"></div>
+                    <p>Loading tutors...</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tutoring-benefits">
+            <div class="section-header">
+                <h2>สาเหตุที่ควรมีติวเตอร์ช่วยสอน</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>สอนได้ตรงจุด</h3>
+                    <p>ติวเตอร์/อาจารย์หลายท่านมีประสบการณ์การสอนที่เยอะดังนั้นคุณจะเข้าใจตรงจุดมากกว่าเรียนด้วยตัวเองแน่นอน</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏱️</div>
+                    <h3>การเรียนรู้ที่มีประสิทธิภาพ</h3>
+                    <p>เรียนกับ ติวเตอร์/อาจารย์ ช่วยทำให้เข้าใจและเรียนรู้อย่างมีประสิทธิภาพมากกว่าการเรียนรู้ด้วยตนเอง</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>เทคนิคลับ</h3>
+                    <p>ติวเตอร์/อาจารย์บางท่านอาจมีเทคนิคลับที่จะช่วยให้เราทำข้อสอบได้เร็วยิ่งขึ้น</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3>เสริมความมั่นใจ</h3>
+                    <p>เรียนกับติวเตอร์</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>แก้ไขจุดอ่อนได้ทันที</h3>
+                    <p>เนื่องจากการเรียนแบบตัวต่อตัว ติวเตอร์สามารถแก้ไขจุดผิดพลาด/จุดอ่อนของเราได้ทันที</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>พื้นฐานแน่นๆ</h3>
+                    <p>เนื่องจากติวเตอร์สอนคุณแบบตัวต่อตัวคุณสามารถคุยถามตอบกับติวเตอร์ได้โดยตรง</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer will be included here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/include.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../ad-banner.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up navigation active state
+            const tutorLink = document.querySelector('.nav-tutors');
+            if (tutorLink) {
+                tutorLink.classList.add('active');
+            }
+            
+            // Setup mobile menu
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navigation = document.querySelector('nav');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            
+            if (mobileMenuToggle && navigation && menuOverlay) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenuToggle.classList.toggle('active');
+                    navigation.classList.toggle('active');
+                    menuOverlay.classList.toggle('active');
+                    document.body.style.overflow = navigation.classList.contains('active') ? 'hidden' : '';
+                });
+                
+                menuOverlay.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    navigation.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            // Load tutors data
+            fetchTutors();
+            
+            // Setup dropdown menus
+            const dropdownToggleButtons = document.querySelectorAll('.dropdown-toggle');
+            
+            dropdownToggleButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Close all other dropdowns
+                    dropdownToggleButtons.forEach(otherButton => {
+                        if (otherButton !== button) {
+                            const otherMenu = otherButton.parentElement.querySelector('.dropdown-menu');
+                            otherMenu.style.display = 'none';
+                            otherMenu.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current dropdown
+                    const dropdown = this.parentElement;
+                    const menu = dropdown.querySelector('.dropdown-menu');
+                    
+                    if (window.innerWidth <= 768) {
+                        // For mobile: use classList for toggle
+                        if (menu.classList.contains('active')) {
+                            menu.classList.remove('active');
+                            menu.style.display = 'none';
+                        } else {
+                            menu.classList.add('active');
+                            menu.style.display = 'block';
+                        }
+                    } else {
+                        // For desktop: use style.display
+                        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                        menu.style.display = 'none';
+                        menu.classList.remove('active');
+                    });
+                }
+            });
+            
+            // Form validation and submission
+            const tutorForm = document.getElementById('tutor-form');
+            if (tutorForm) {
+                tutorForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Check if at least one area is selected
+                    const areas = document.querySelectorAll('input[name="areas"]:checked');
+                    if (areas.length === 0) {
+                        alert('Please select at least one area you want to improve.');
+                        return;
+                    }
+                    
+                    // In a real implementation, you would send the form data to a server
+                    // For now, we'll just show a success message
+                    alert('Thank you for your tutor request! We will contact you within 24-48 hours to discuss available tutors.');
+                    
+                    // Reset form
+                    this.reset();
+                });
+            }
+            
+            // Function to fetch tutors data
+            async function fetchTutors() {
+                try {
+                    const response = await fetch('../data/tutors.json');
+                    
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch tutors data');
+                    }
+                    
+                    const tutors = await response.json();
+                    displayTutors(tutors);
+                } catch (error) {
+                    console.error('Error loading tutors data:', error);
+                    const tutorsContainer = document.getElementById('tutors-container');
+                    if (tutorsContainer) {
+                        tutorsContainer.innerHTML = `<p class="error">Error loading tutors data. Please try again later.</p>`;
+                    }
+                }
+            }
+            
+            // Function to display tutors
+            function displayTutors(tutors) {
+                const tutorsContainer = document.getElementById('tutors-container');
+                if (!tutorsContainer) return;
+                
+                // Clear loading animation
+                tutorsContainer.innerHTML = '';
+                
+                // Display each tutor
+                tutors.forEach(tutor => {
+                    const tutorCard = document.createElement('div');
+                    tutorCard.className = 'tutor-card';
+                    tutorCard.dataset.tutorId = tutor.id;
+                    
+                    // Create credentials HTML
+                    const credentialsHTML = tutor.credentials
+                        .map(credential => `<span class="tutor-badge">${credential}</span>`)
+                        .join('');
+                    
+                    // Create social media links
+                    const socialMediaHTML = tutor.socialMedia ? 
+                        `<div class="tutor-social">
+                            ${tutor.socialMedia.facebook ? 
+                                `<a href="${tutor.socialMedia.facebook}" target="_blank" class="social-btn facebook" aria-label="Facebook profile" title="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                                    </svg>
+                                </a>` : ''
+                            }
+                            ${tutor.socialMedia.twitter ? 
+                                `<a href="${tutor.socialMedia.twitter}" target="_blank" class="social-btn twitter" aria-label="Twitter profile" title="Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                    </svg>
+                                </a>` : ''
+                            }
+                            ${tutor.socialMedia.linkedin ? 
+                                `<a href="${tutor.socialMedia.linkedin}" target="_blank" class="social-btn linkedin" aria-label="LinkedIn profile" title="LinkedIn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                                    </svg>
+                                </a>` : ''
+                            }
+                            <a href="mailto:${tutor.contact}" class="social-btn email" aria-label="Email" title="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                                </svg>
+                            </a>
+                        </div>` : '';
+                    
+                    tutorCard.innerHTML = `
+                        <div class="tutor-avatar">
+                            <img src="${tutor.image}" alt="${tutor.name}" onerror="this.src='https://via.placeholder.com/150?text=${encodeURIComponent(tutor.name)}'">
+                        </div>
+                        <div class="tutor-details">
+                            <h3>${tutor.name}</h3>
+                            <div class="tutor-credentials">
+                                ${credentialsHTML}
+                            </div>
+                            <p class="tutor-speciality">${tutor.speciality}</p>
+                            <p class="tutor-bio">${tutor.bio}</p>
+                            ${socialMediaHTML}
+                        </div>
+                    `;
+                    
+                    // Add click event to show more details (could expand to show full profile)
+                    tutorCard.addEventListener('click', (e) => {
+                        // Don't trigger the detail view when clicking social buttons
+                        if (!e.target.closest('.tutor-social')) {
+                            showTutorDetails(tutor);
+                        }
+                    });
+                    
+                    tutorsContainer.appendChild(tutorCard);
+                });
+            }
+            
+            // Function to show detailed tutor information (modal or expanded view)
+            function showTutorDetails(tutor) {
+                // This could be expanded to show a modal with more tutor details
+                // For now just log to console
+                console.log('Tutor details:', tutor);
+                
+                // Example implementation could be:
+                // - Create a modal with additional information
+                // - Show availability calendar
+                // - Add contact/booking functionality
+            }
+        });
+    </script>
+<script src="score-suggestions.js"></script>
+</body>
+</html>
