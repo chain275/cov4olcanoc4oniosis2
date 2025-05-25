@@ -198,6 +198,15 @@ function renderSlides(validImages) {
         const slide = document.createElement('div');
         slide.className = index === 0 ? 'slide active' : 'slide';
         slide.style.backgroundImage = `url('${imgPath}')`;
+        slide.style.cursor = 'pointer'; // Add pointer cursor to indicate clickability
+        
+        // Add click event listener to the slide
+        slide.addEventListener('click', function() {
+            // Get the current slide index from data attribute
+            const clickedIndex = Array.from(slideshowContainer.querySelectorAll('.slide')).indexOf(this);
+            handleSlideClick(clickedIndex, imgPath);
+        });
+        
         slideshowContainer.appendChild(slide);
         console.log('Added slide:', imgPath, index === 0 ? '(active)' : '');
     });
@@ -314,4 +323,42 @@ function startSlideshow() {
     // Auto-advance slides every 9 seconds
     window.slideshowInterval = setInterval(nextSlide, 9000);
     console.log('Slideshow interval set for 9 seconds');
+}
+
+/**
+ * Handle click on a slide
+ * @param {number} index - The index of the clicked slide
+ * @param {string} imagePath - The path to the slide image
+ */
+function handleSlideClick(index, imagePath) {
+    console.log('Slide clicked:', index, imagePath);
+    
+    // Option 1: Open the image in a new tab
+    window.open(imagePath, '_blank');
+    
+    // Option 2: Navigate to a specific page based on the slide index
+    // Uncomment the following code and customize as needed
+    /*
+    const slideLinks = [
+        'templates/news.html',
+        'templates/courses.html',
+        'templates/events.html'
+    ];
+    
+    // Check if we have a defined link for this slide
+    if (index < slideLinks.length) {
+        window.location.href = slideLinks[index];
+    }
+    */
+    
+    // Reset the slideshow timer
+    if (window.slideshowInterval) {
+        clearInterval(window.slideshowInterval);
+        window.slideshowInterval = setInterval(() => {
+            const slides = document.querySelectorAll('.slide');
+            const currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+            const nextIndex = (currentIndex + 1) % slides.length;
+            window.goToSlide(nextIndex);
+        }, 9000);
+    }
 } 

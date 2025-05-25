@@ -2,7 +2,8 @@ import os
 import re
 
 replacements = [
-    ("ประสิทธิภาพ:", "เกณฑ์คะแนน:"),
+    ('<span class="stat-label">เกณฑ์คะแนน:</span>', '<span class="stat-label">คอมเม้นต์:</span>')
+    ,
 ]
 
 def replace_in_file(file_path):
@@ -28,7 +29,7 @@ def update_html_files():
     and add the menu overlay element.
     """
     # Directory containing HTML files
-    public_dir = 'public'
+    public_dir = 'templates'
     
     # Get a list of all HTML files
     html_files = [f for f in os.listdir(public_dir) if f.endswith('.html')]

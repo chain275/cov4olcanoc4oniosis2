@@ -5,8 +5,8 @@ from pathlib import Path
 
 # Define the replacements
 replacements = [
-    ("ประสิทธิภาพ:", "คอมเม้นต์"),
-]
+    ('<span class="stat-label">เกณฑ์คะแนน:</span>', '<span class="stat-label">คอมเม้นต์:</span>')
+    ]
 
 def replace_in_file(file_path):
     """Replace words in the given file based on the defined replacements."""
