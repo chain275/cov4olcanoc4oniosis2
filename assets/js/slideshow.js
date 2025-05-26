@@ -115,38 +115,77 @@ function loadImagesFromSlideshow() {
     placeholderSlide.style.backgroundColor = '#4361ee'; // Use theme color as fallback
     slideshowContainer.appendChild(placeholderSlide);
     
-    imagePaths.forEach(path => {
-        const img = new Image();
-        
-        img.onload = function() {
-            // Image exists, add to valid images if not already included
-            if (!validImages.includes(path)) {
-                validImages.push(path);
-                console.log('Found valid image:', path);
-            }
+    // Load the slideshow links configuration first
+    fetch('../data/slideshow-links.json')
+        .then(response => response.json())
+        .then(slideLinks => {
+            // Store the links globally for later use
+            window.slideshowLinks = slideLinks;
             
-            loadedCount++;
-            if (loadedCount === totalChecks) {
-                renderSlides(validImages);
-            }
-        };
-        
-        img.onerror = function() {
-            // Image doesn't exist
-            console.log('Image not found:', path);
-            loadedCount++;
-            if (loadedCount === totalChecks) {
-                renderSlides(validImages);
-            }
-        };
-        
-        img.src = path;
-    });
+            // Continue with image loading
+            imagePaths.forEach(path => {
+                const img = new Image();
+                
+                img.onload = function() {
+                    // Image exists, add to valid images if not already included
+                    if (!validImages.includes(path)) {
+                        validImages.push(path);
+                        console.log('Found valid image:', path);
+                    }
+                    
+                    loadedCount++;
+                    if (loadedCount === totalChecks) {
+                        renderSlides(validImages, slideLinks);
+                    }
+                };
+                
+                img.onerror = function() {
+                    // Image doesn't exist
+                    console.log('Image not found:', path);
+                    loadedCount++;
+                    if (loadedCount === totalChecks) {
+                        renderSlides(validImages, slideLinks);
+                    }
+                };
+                
+                img.src = path;
+            });
+        })
+        .catch(error => {
+            console.error('Error loading slideshow links:', error);
+            
+            // Continue without links
+            imagePaths.forEach(path => {
+                const img = new Image();
+                
+                img.onload = function() {
+                    // Image exists, add to valid images if not already included
+                    if (!validImages.includes(path)) {
+                        validImages.push(path);
+                    }
+                    
+                    loadedCount++;
+                    if (loadedCount === totalChecks) {
+                        renderSlides(validImages, {});
+                    }
+                };
+                
+                img.onerror = function() {
+                    // Image doesn't exist
+                    loadedCount++;
+                    if (loadedCount === totalChecks) {
+                        renderSlides(validImages, {});
+                    }
+                };
+                
+                img.src = path;
+            });
+        });
     
     // After a timeout, render any slides that were found in case we're still waiting
     setTimeout(() => {
         if (validImages.length > 0) {
-            renderSlides(validImages);
+            renderSlides(validImages, window.slideshowLinks || {});
         }
     }, 2000); // Give it 2 seconds to try loading images
 }
@@ -154,7 +193,7 @@ function loadImagesFromSlideshow() {
 /**
  * Render slides after loading checks
  */
-function renderSlides(validImages) {
+function renderSlides(validImages, slideLinks) {
     console.log('Rendering slides with', validImages.length, 'images');
     
     if (validImages.length === 0) {
@@ -199,6 +238,14 @@ function renderSlides(validImages) {
         slide.className = index === 0 ? 'slide active' : 'slide';
         slide.style.backgroundImage = `url('${imgPath}')`;
         slide.style.cursor = 'pointer'; // Add pointer cursor to indicate clickability
+        
+        // Extract filename for URL lookup
+        const filename = imgPath.split('/').pop();
+        
+        // Add data attribute with target URL if available
+        if (slideLinks && slideLinks[filename]) {
+            slide.dataset.targetUrl = slideLinks[filename];
+        }
         
         // Add click event listener to the slide
         slide.addEventListener('click', function() {
@@ -333,23 +380,25 @@ function startSlideshow() {
 function handleSlideClick(index, imagePath) {
     console.log('Slide clicked:', index, imagePath);
     
-    // Option 1: Open the image in a new tab
-    window.open(imagePath, '_blank');
+    // Get the slides
+    const slides = document.querySelectorAll('.slide');
+    const clickedSlide = slides[index];
     
-    // Option 2: Navigate to a specific page based on the slide index
-    // Uncomment the following code and customize as needed
-    /*
-    const slideLinks = [
-        'templates/news.html',
-        'templates/courses.html',
-        'templates/events.html'
-    ];
-    
-    // Check if we have a defined link for this slide
-    if (index < slideLinks.length) {
-        window.location.href = slideLinks[index];
+    // Check if we have a defined target URL from data attribute
+    if (clickedSlide && clickedSlide.dataset.targetUrl) {
+        window.location.href = clickedSlide.dataset.targetUrl;
+    } else {
+        // Extract the filename from the path
+        const filename = imagePath.split('/').pop();
+        
+        // Check if we have the global links object
+        if (window.slideshowLinks && window.slideshowLinks[filename]) {
+            window.location.href = window.slideshowLinks[filename];
+        } else {
+            // Fallback to opening the image in a new tab
+            window.open(imagePath, '_blank');
+        }
     }
-    */
     
     // Reset the slideshow timer
     if (window.slideshowInterval) {

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - TCAS Prep</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <style>
+        .error-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: var(--bg-white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .error-icon {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+        }
+        
+        .error-icon i {
+            font-size: 4rem;
+            color: white;
+        }
+        
+        .error-title {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+        
+        .error-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+        
+        .error-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 576px) {
+            .error-title {
+                font-size: 2.5rem;
+            }
+            
+            .error-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>TCAS Prep</h1>
+            <span class="tagline">Your Path to English Exam Success</span>
+        </div>
+        <button class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/templates/index.html">Home</a></li>
+                <li class="dropdown">
+                    <span class="dropdown-toggle">Exams</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="/templates/exams.html">All Exams</a></li>
+                        <li><a href="/templates/practice.html">Practice Tests</a></li>
+                    </ul>
+                </li>
+                <li><a href="/templates/tutors.html">Tutors</a></li>
+                <li><a href="/templates/progress.html">Progress</a></li>
+                <li><a href="/templates/contact.html">Contact</a></li>
+                <li><a href="/templates/donate.html" class="btn">Donate</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <main>
+        <div class="error-container">
+            <div class="error-icon">
+                <i class="fas fa-compass"></i>
+            </div>
+            <h1 class="error-title">404</h1>
+            <h2 class="error-subtitle">Page Not Found</h2>
+            <p class="error-message">
+                The page you're looking for doesn't exist or has been moved. 
+                Don't worry though, you can find your way back to continue your TCAS preparation.
+            </p>
+            <div class="error-links">
+                <a href="/templates/index.html" class="btn">Back to Home</a>
+                <a href="/templates/exams.html" class="btn secondary">Practice Exams</a>
+                <a href="/templates/contact.html" class="btn accent">Contact Support</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>TCAS Prep</h3>
+                <p>Your Path to English Exam Success</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/templates/index.html">Home</a></li>
+                    <li><a href="/templates/exams.html">Exams</a></li>
+                    <li><a href="/templates/tutors.html">Tutors</a></li>
+                    <li><a href="/templates/progress.html">Progress</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/templates/about.html">About Us</a></li>
+                    <li><a href="/templates/faq.html">FAQ</a></li>
+                    <li><a href="/templates/contact.html">Contact Us</a></li>
+                    <li><a href="/templates/donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TCAS Prep. All Rights Reserved.</p>
+            <div>
+                <a href="/templates/privacy.html">Privacy Policy</a> |
+                <a href="/templates/terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+        });
+        
+        // Handle dropdown menu on mobile
+        document.querySelectorAll('.dropdown-toggle').forEach(function(item) {
+            item.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -40,6 +40,28 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Clickable overlay with call-to-action */
+.slide::before {
+    content: 'Click to learn more';
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+.slide.active:hover::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Add a clickable indicator */
 .slide::after {
     content: '';

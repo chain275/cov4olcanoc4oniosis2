@@ -40,7 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let timerInterval = null;
     window.examTimerValue = 0; // Store elapsed time globally for progress tracking
     
-                // Start the combined exam
+    // Multiple Exam Selection Functionality
+    initializeExamSelection();
+    
+    // Start the combined exam
     startButton.addEventListener('click', function() {
         document.getElementById("exam-info").scrollIntoView({ behavior: 'smooth' });
         examInfoSection.classList.add('hidden');
@@ -2024,6 +2027,99 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }, 300);
             
+            // Check if percentile is below 85% and add tutor recommendation
+            if (parseFloat(percentile) < 85) {
+                const tutorRecommendation = document.createElement('div');
+                tutorRecommendation.className = 'tutor-recommendation';
+                tutorRecommendation.innerHTML = `
+                    <div class="recommendation-alert">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="recommendation-content">
+                            <h4>เพิ่มคะแนนของคุณด้วยผู้สอนส่วนตัว</h4>
+                            <p>คะแนนของคุณอยู่ต่ำกว่าเปอร์เซ็นไทล์ที่ 85 การเรียนกับผู้เชี่ยวชาญจะช่วยให้คุณพัฒนาทักษะและเพิ่มคะแนนได้</p>
+                            <a href="../templates/tutors.html" class="tutor-link">ค้นหาผู้สอนที่เหมาะกับคุณ</a>
+                        </div>
+                    </div>
+                `;
+                
+                // Add the recommendation after the percentile container
+                percentileContainer.appendChild(tutorRecommendation);
+                
+                // Add styles for the tutor recommendation
+                const styleElement = document.createElement('style');
+                styleElement.id = 'tutor-recommendation-styles';
+                styleElement.textContent = `
+                    .tutor-recommendation {
+                        margin-top: 20px;
+                        padding: 15px;
+                        border-radius: 8px;
+                        background-color: #fff8e1;
+                        border-left: 4px solid #ffb300;
+                    }
+                    
+                    .recommendation-alert {
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                    
+                    .recommendation-alert i {
+                        font-size: 24px;
+                        color: #ffb300;
+                        margin-right: 15px;
+                        margin-top: 5px;
+                    }
+                    
+                    .recommendation-content {
+                        flex: 1;
+                    }
+                    
+                    .recommendation-content h4 {
+                        margin: 0 0 8px 0;
+                        color: #e65100;
+                        font-size: 16px;
+                    }
+                    
+                    .recommendation-content p {
+                        margin: 0 0 12px 0;
+                        color: #5d4037;
+                        font-size: 14px;
+                    }
+                    
+                    .tutor-link {
+                        display: inline-block;
+                        background-color: #ff9800;
+                        color: white;
+                        padding: 8px 16px;
+                        border-radius: 4px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        transition: background-color 0.2s ease;
+                    }
+                    
+                    .tutor-link:hover {
+                        background-color: #f57c00;
+                        text-decoration: none;
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .recommendation-alert {
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        
+                        .recommendation-alert i {
+                            margin-right: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                `;
+                
+                if (!document.getElementById('tutor-recommendation-styles')) {
+                    document.head.appendChild(styleElement);
+                }
+            }
+            
             console.log('Percentile visualization added successfully at the top of result-summary');
         } catch (error) {
             console.error('Error displaying percentile rank:', error);
@@ -3699,5 +3795,335 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             container.appendChild(progressText);
         }
+    }
+
+    // Add this function to the file
+    function initializeExamSelection() {
+        const examOptions = document.querySelectorAll('.exam-option');
+        const startButton = document.getElementById('start-combined-exam');
+        
+        // Exam data for different exams
+        const examData = {
+            'exam1': {
+                id: 'exam1',
+                title: 'A-Level ภาษาอังกฤษ',
+                date: '06-05-2025',
+                questionCount: 80,
+                duration: 90,
+                difficulty: 'ปานกลาง-ยาก',
+                descriptionTh: 'แบบทดสอบรวมทักษะที่หลากหลาย ประกอบด้วยโจทย์บทสนทนาสั้น (12) บทสนทนายาว (8) โฆษณา (6) สินค้า (12) ข่าว (6) บทความ (16) แบบเติมคำ (15) และการจัดย่อหน้า (5)',
+                descriptionEn: 'This comprehensive A-Level exam combines all question types to simulate the full TCAS English testing experience. Each question will be labeled with its category to help you track your performance across different skills.',
+                distribution: {
+                    speaking: 20, // in percentage
+                    reading: 50,
+                    writing: 30
+                },
+                questions: {
+                    'short_conversation': 12,
+                    'long_conversation': 8,
+                    'advertisement': 6,
+                    'product': 12,
+                    'news_report': 6,
+                    'article': 16,
+                    'text_completion': 15,
+                    'paragraph': 5
+                },
+                jsonPath: '../src/complete exam/combined_exam.json'
+            },
+            'exam2': {
+                id: 'exam2',
+                title: 'ข้อสอบ O-NET',
+                date: '15-04-2025',
+                questionCount: 60,
+                duration: 60,
+                difficulty: 'ปานกลาง',
+                descriptionTh: 'ข้อสอบ O-NET ภาษาอังกฤษรูปแบบล่าสุด เน้นการวัดความสามารถทางด้านการสื่อสาร การอ่าน และการเขียน',
+                descriptionEn: 'The latest O-NET English exam format focusing on communication skills, reading comprehension, and writing abilities.',
+                distribution: {
+                    speaking: 20,
+                    reading: 60,
+                    writing: 20
+                },
+                questions: {
+                    'short_conversation': 8,
+                    'long_conversation': 4,
+                    'advertisement': 8,
+                    'product': 10,
+                    'news_report': 10,
+                    'article': 8,
+                    'text_completion': 8,
+                    'paragraph': 4
+                },
+                jsonPath: '../src/complete exam/onet_exam.json'
+            },
+            'exam3': {
+                id: 'exam3',
+                title: '9 วิชาสามัญ',
+                date: '25-03-2025',
+                questionCount: 75,
+                duration: 85,
+                difficulty: 'ยาก',
+                descriptionTh: 'ข้อสอบ 9 วิชาสามัญ ภาษาอังกฤษ เน้นคำศัพท์ระดับสูง ไวยากรณ์ที่ซับซ้อน และการอ่านเชิงวิเคราะห์',
+                descriptionEn: 'The 9 Common Subjects English exam focuses on advanced vocabulary, complex grammar structures, and analytical reading comprehension.',
+                distribution: {
+                    speaking: 15,
+                    reading: 45,
+                    writing: 40
+                },
+                questions: {
+                    'short_conversation': 6,
+                    'long_conversation': 5,
+                    'advertisement': 5,
+                    'product': 8,
+                    'news_report': 8,
+                    'article': 13,
+                    'text_completion': 20,
+                    'paragraph': 10
+                },
+                jsonPath: '../src/complete exam/common_exam.json'
+            }
+        };
+        
+        // Set up click handlers for exam options
+        examOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const examId = this.dataset.examId;
+                
+                // Update active state
+                examOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update exam details
+                updateExamDetails(examData[examId]);
+                
+                // Update start button
+                startButton.dataset.currentExam = examId;
+            });
+        });
+        
+        // Modify the start button click handler to use the selected exam
+        startButton.addEventListener('click', function() {
+            const selectedExamId = this.dataset.currentExam;
+            const selectedExam = examData[selectedExamId];
+            
+            // Store the selected exam data for use during the exam
+            window.selectedExamData = selectedExam;
+            
+            // Show the exam content section
+            document.getElementById("exam-info").scrollIntoView({ behavior: 'smooth' });
+            document.getElementById("exam-info").classList.add('hidden');
+            document.getElementById("exam-content").classList.remove('hidden');
+            
+            // Reset timer tracking variables when starting a new exam
+            startTime = Date.now();
+            elapsedSeconds = 0;
+            window.examTimerValue = 0;
+            window.finalElapsedTime = 0; // Initialize final time storage
+            
+            // CRITICAL: Store exact timestamp when exam starts for reliable timing
+            window.examStartTimestamp = Date.now();
+            console.log('Stored exam start timestamp:', window.examStartTimestamp);
+            
+            // Reset timer display
+            const timerElement = document.getElementById('timer-display');
+            if (timerElement) {
+                timerElement.textContent = '00:00';
+            }
+            
+            // Load the selected exam
+            loadSelectedExam(selectedExam);
+        });
+        
+        // Initialize with the first exam
+        updateExamDetails(examData.exam1);
+    }
+
+    // Function to update the UI with the selected exam details
+    function updateExamDetails(examData) {
+        // Update metadata
+        document.getElementById('total-questions-count').textContent = examData.questionCount;
+        document.getElementById('exam-time').textContent = `${examData.duration} นาที`;
+        document.getElementById('exam-difficulty').textContent = examData.difficulty;
+        
+        // Update descriptions
+        document.getElementById('exam-description-th').textContent = examData.descriptionTh;
+        document.getElementById('exam-description-en').textContent = examData.descriptionEn;
+        
+        // Update distribution bar
+        const distributionBar = document.querySelector('.distribution-bar');
+        if (distributionBar) {
+            distributionBar.innerHTML = `
+                <div class="bar-segment speaking-segment" style="width: ${examData.distribution.speaking}%;" 
+                     title="Speaking: ${examData.distribution.speaking}%"></div>
+                <div class="bar-segment reading-segment" style="width: ${examData.distribution.reading}%;" 
+                     title="Reading: ${examData.distribution.reading}%"></div>
+                <div class="bar-segment writing-segment" style="width: ${examData.distribution.writing}%;" 
+                     title="Writing: ${examData.distribution.writing}%"></div>
+            `;
+        }
+        
+        // Update question counts
+        document.querySelector('.total-value').textContent = examData.questionCount;
+        
+        // Update skill counts
+        const speakingCount = examData.questions.short_conversation + examData.questions.long_conversation;
+        const readingCount = examData.questions.advertisement + examData.questions.product + 
+                            examData.questions.news_report + examData.questions.article;
+        const writingCount = examData.questions.text_completion + examData.questions.paragraph;
+        
+        document.querySelector('.skill-section.speaking .skill-count').textContent = `${speakingCount} ข้อ`;
+        document.querySelector('.skill-section.reading .skill-count').textContent = `${readingCount} ข้อ`;
+        document.querySelector('.skill-section.writing .skill-count').textContent = `${writingCount} ข้อ`;
+        
+        // Update individual question type counts
+        updateQuestionTypeCount('short-conversation', examData.questions.short_conversation);
+        updateQuestionTypeCount('long-conversation', examData.questions.long_conversation);
+        updateQuestionTypeCount('advertisement', examData.questions.advertisement);
+        updateQuestionTypeCount('product', examData.questions.product);
+        updateQuestionTypeCount('news-report', examData.questions.news_report);
+        updateQuestionTypeCount('article', examData.questions.article);
+        updateQuestionTypeCount('text-completion', examData.questions.text_completion);
+        updateQuestionTypeCount('paragraph', examData.questions.paragraph);
+    }
+
+    // Helper function to update question type count
+    function updateQuestionTypeCount(typeClass, count) {
+        const typeCountElement = document.querySelector(`.question-type-indicator.${typeClass}`).nextElementSibling;
+        if (typeCountElement) {
+            typeCountElement.textContent = `${count} ข้อ`;
+        }
+    }
+
+    // Function to load the selected exam
+    function loadSelectedExam(examData) {
+        console.log(`Loading selected exam: ${examData.title}`);
+        
+        // Try to load the exam JSON file
+        fetch(examData.jsonPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Path ${examData.jsonPath} failed with status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(examJson => {
+                console.log(`Successfully loaded exam data from: ${examData.jsonPath}`);
+                // Process the exam data to flatten questions before initializing
+                const processedData = processExamData(examJson);
+                initExam(processedData); // Use the processed, flattened data
+            })
+            .catch(error => {
+                console.warn(`Error loading from ${examData.jsonPath}: ${error.message}`);
+                // Fall back to sample data
+                console.warn("Using sample exam data instead.");
+                const sampleData = generateSampleExamData(examData);
+                initExam(sampleData);
+            });
+    }
+
+    // Generate sample exam data based on the selected exam configuration
+    function generateSampleExamData(examData) {
+        const sampleData = [];
+        
+        // Generate sample questions for each type based on the specified counts
+        let questionCounter = 0;
+        
+        // Add sample short conversation questions
+        for (let i = 0; i < examData.questions.short_conversation; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `short_conversation_${i+1}`,
+                type: "short_conversation",
+                text: `Sample short conversation question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample long conversation questions
+        for (let i = 0; i < examData.questions.long_conversation; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `long_conversation_${i+1}`,
+                type: "long_conversation",
+                text: `Sample long conversation question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample advertisement questions
+        for (let i = 0; i < examData.questions.advertisement; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `advertisement_${i+1}`,
+                type: "advertisement",
+                text: `Sample advertisement question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample product questions
+        for (let i = 0; i < examData.questions.product; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `product_${i+1}`,
+                type: "product",
+                text: `Sample product question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample news report questions
+        for (let i = 0; i < examData.questions.news_report; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `news_report_${i+1}`,
+                type: "news_report",
+                text: `Sample news report question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample article questions
+        for (let i = 0; i < examData.questions.article; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `article_${i+1}`,
+                type: "article",
+                text: `Sample article question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample text completion questions
+        for (let i = 0; i < examData.questions.text_completion; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `text_completion_${i+1}`,
+                type: "text_completion",
+                text: `Sample text completion question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        // Add sample paragraph questions
+        for (let i = 0; i < examData.questions.paragraph; i++) {
+            questionCounter++;
+            sampleData.push({
+                id: `paragraph_${i+1}`,
+                type: "paragraph",
+                text: `Sample paragraph question ${questionCounter}`,
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correctAnswer: Math.floor(Math.random() * 4)
+            });
+        }
+        
+        return sampleData;
     }
 }); 

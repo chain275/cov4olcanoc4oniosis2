@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCAS Prep - Combined Exam</title>
+    <title>TCAS Prep - Mock Exam</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/slideshow.css">
     <link rel="stylesheet" href="../assets/css/combined_exam.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
@@ -67,72 +66,240 @@
     
     <main>
         <section id="exam-info">
-            <div class="section-header">
-                <h2>Combined Exam</h2>
-                <p class="section-description">แบบทดสอบรวมทักษะที่หลากหลาย ประกอบด้วยโจทย์บทสนทนาสั้น (3) บทสนทนายาว (1) โฆษณา (2) สินค้า (2) ข่าว (2) บทความ (2) แบบเติมคำ (3) และการจัดย่อหน้า (5)</p>
-            </div>
-            
-            <div class="exam-start-container">
-                <div class="exam-details">
-                    <h3>A-Level ภาษาอังกฤษ ข้อสอบจำลอง ฉบับ 06-05-2025</h3>
-                    <div class="exam-metadata">
-                        <div class="metadata-item">
-                            <span class="metadata-label">จำนวนข้อสอบ:</span>
-                            <span id="total-questions-count">80</span>
+            <div class="exam-info-container">
+                <div class="exam-info-header">
+                    <h1>ข้อสอบจำลอง A-Level ภาษาอังกฤษ</h1>
+                    <p class="header-description">เลือกข้อสอบที่ต้องการทำ</p>
+                </div>
+                
+                <!-- Exam Selection Section -->
+                <div class="exam-selection">
+                    <div class="exam-options">
+                        <div class="exam-option active" data-exam-id="exam1">
+                            <div class="exam-option-header">
+                                <h3>A-Level ภาษาอังกฤษ</h3>
+                                <span class="exam-date">06-05-2025</span>
+                            </div>
+                            <div class="exam-option-details">
+                                <div class="option-metadata">
+                                    <span><i class="fas fa-list-ol"></i> 80 ข้อ</span>
+                                    <span><i class="fas fa-clock"></i> 90 นาที</span>
+                                </div>
+                                <div class="option-skill-bars">
+                                    <div class="skill-bar speaking" style="width: 25%"></div>
+                                    <div class="skill-bar reading" style="width: 50%"></div>
+                                    <div class="skill-bar writing" style="width: 25%"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="metadata-item">
-                            <span class="metadata-label">เวลา:</span>
-                            <span>90 นาที</span>
+                        
+                        <div class="exam-option" data-exam-id="exam2">
+                            <div class="exam-option-header">
+                                <h3>ข้อสอบ O-NET</h3>
+                                <span class="exam-date">15-04-2025</span>
+                            </div>
+                            <div class="exam-option-details">
+                                <div class="option-metadata">
+                                    <span><i class="fas fa-list-ol"></i> 60 ข้อ</span>
+                                    <span><i class="fas fa-clock"></i> 60 นาที</span>
+                                </div>
+                                <div class="option-skill-bars">
+                                    <div class="skill-bar speaking" style="width: 20%"></div>
+                                    <div class="skill-bar reading" style="width: 60%"></div>
+                                    <div class="skill-bar writing" style="width: 20%"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="metadata-item">
-                            <span class="metadata-label">Question Types:</span>
-                            <span>Multiple Categories</span>
-                        </div>
-                    </div>
-                    <p class="exam-description">
-                        This comprehensive exam combines all question types to simulate the full TCAS English testing experience. 
-                        Each question will be labeled with its category to help you track your performance across different skills.
-                    </p>
-                    <div class="distribution-container">
-                        <h4>Question Distribution:</h4>
-                        <div class="distribution-grid">
-                            <div class="distribution-item">
-                                <span class="question-type-indicator short-conversation">Short Conversation</span>
-                                <span class="count">3 ข้อ</span>
+                        
+                        <div class="exam-option" data-exam-id="exam3">
+                            <div class="exam-option-header">
+                                <h3>9 วิชาสามัญ</h3>
+                                <span class="exam-date">25-03-2025</span>
                             </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator long-conversation">Long Conversation</span>
-                                <span class="count">1 ข้อ</span>
-                            </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator advertisement">Advertisement</span>
-                                <span class="count">2 ข้อ</span>
-                            </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator product">Product</span>
-                                <span class="count">2 ข้อ</span>
-                            </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator news-report">News Report</span>
-                                <span class="count">2 ข้อ</span>
-                            </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator article">Article</span>
-                                <span class="count">2 ข้อ</span>
-                            </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator text-completion">Text Completion</span>
-                                <span class="count">3 ข้อ</span>
-                            </div>
-                            <div class="distribution-item">
-                                <span class="question-type-indicator paragraph">Paragraph</span>
-                                <span class="count">5 ข้อ</span>
+                            <div class="exam-option-details">
+                                <div class="option-metadata">
+                                    <span><i class="fas fa-list-ol"></i> 75 ข้อ</span>
+                                    <span><i class="fas fa-clock"></i> 85 นาที</span>
+                                </div>
+                                <div class="option-skill-bars">
+                                    <div class="skill-bar speaking" style="width: 15%"></div>
+                                    <div class="skill-bar reading" style="width: 45%"></div>
+                                    <div class="skill-bar writing" style="width: 40%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="start-button-container">
-                    <button id="start-combined-exam" class="btn accent">Start Combined Exam</button>
+                
+                <!-- Exam Details Section (will be dynamically updated based on selection) -->
+                <div class="exam-info-content">
+                    <!-- Left column: Exam details -->
+                    <div class="exam-details-column">
+                        <div class="exam-card">
+                            <div class="exam-card-header">
+                                <i class="fas fa-info-circle"></i>
+                                <h3>รายละเอียดการทดสอบ</h3>
+                            </div>
+                            <div class="exam-metadata-grid">
+                                <div class="metadata-item">
+                                    <i class="fas fa-list-ol"></i>
+                                    <div class="metadata-content">
+                                        <span class="metadata-label">จำนวนข้อสอบ:</span>
+                                        <span id="total-questions-count" class="metadata-value">80</span>
+                                    </div>
+                                </div>
+                                <div class="metadata-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div class="metadata-content">
+                                        <span class="metadata-label">เวลา:</span>
+                                        <span id="exam-time" class="metadata-value">90 นาที</span>
+                                    </div>
+                                </div>
+                                <div class="metadata-item">
+                                    <i class="fas fa-tasks"></i>
+                                    <div class="metadata-content">
+                                        <span class="metadata-label">ประเภทข้อสอบ:</span>
+                                        <span class="metadata-value">Multiple Categories</span>
+                                    </div>
+                                </div>
+                                <div class="metadata-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div class="metadata-content">
+                                        <span class="metadata-label">ระดับความยาก:</span>
+                                        <span id="exam-difficulty" class="metadata-value">ปานกลาง-ยาก</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="exam-description">
+                                <p id="exam-description-th">แบบทดสอบรวมทักษะที่หลากหลาย ประกอบด้วยโจทย์บทสนทนาสั้น (3) บทสนทนายาว (1) โฆษณา (2) สินค้า (2) ข่าว (2) บทความ (2) แบบเติมคำ (3) และการจัดย่อหน้า (5)</p>
+                                <p id="exam-description-en">This comprehensive exam combines all question types to simulate the full TCAS English testing experience. Each question will be labeled with its category to help you track your performance across different skills.</p>
+                            </div>
+                            
+                            <div class="exam-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-chart-pie"></i>
+                                    <span>วิเคราะห์ความสามารถของคุณแยกตามทักษะ</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-bullseye"></i>
+                                    <span>ค้นพบจุดแข็งและจุดที่ต้องปรับปรุง</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>ประเมินความพร้อมก่อนสอบจริง</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="start-exam-card">
+                            <button id="start-combined-exam" class="btn-start-exam" data-current-exam="exam1">
+                                <i class="fas fa-play-circle"></i>
+                                <span>เริ่มทำข้อสอบ</span>
+                            </button>
+                            <p class="start-note">เมื่อเริ่มทำข้อสอบ นาฬิกาจะเริ่มนับเวลาทันที</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right column: Question distribution -->
+                    <div class="question-distribution-column">
+                        <div class="distribution-card">
+                            <div class="distribution-card-header">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>Question Distribution</h3>
+                            </div>
+                            
+                            <div class="distribution-skills">
+                                <!-- Speaking Section -->
+                                <div class="skill-section speaking">
+                                    <div class="skill-header">
+                                        <h4><i class="fas fa-comment"></i> Speaking</h4>
+                                        <span class="skill-count">20 ข้อ</span>
+                                    </div>
+                                    <div class="question-types">
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator short-conversation">Short Conversation</span>
+                                            <span class="type-count">12 ข้อ</span>
+                                        </div>
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator long-conversation">Long Conversation</span>
+                                            <span class="type-count">8 ข้อ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Reading Section -->
+                                <div class="skill-section reading">
+                                    <div class="skill-header">
+                                        <h4><i class="fas fa-book"></i> Reading</h4>
+                                        <span class="skill-count">40 ข้อ</span>
+                                    </div>
+                                    <div class="question-types">
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator advertisement">Advertisement</span>
+                                            <span class="type-count">6 ข้อ</span>
+                                        </div>
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator product">Product</span>
+                                            <span class="type-count">12 ข้อ</span>
+                                        </div>
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator news-report">News Report</span>
+                                            <span class="type-count">6 ข้อ</span>
+                                        </div>
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator article">Article</span>
+                                            <span class="type-count">16 ข้อ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Writing Section -->
+                                <div class="skill-section writing">
+                                    <div class="skill-header">
+                                        <h4><i class="fas fa-pen"></i> Writing</h4>
+                                        <span class="skill-count">20 ข้อ</span>
+                                    </div>
+                                    <div class="question-types">
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator text-completion">Text Completion</span>
+                                            <span class="type-count">15 ข้อ</span>
+                                        </div>
+                                        <div class="question-type-item">
+                                            <span class="question-type-indicator paragraph">Paragraph</span>
+                                            <span class="type-count">5 ข้อ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="total-distribution">
+                                <div class="total-item">
+                                    <div class="total-label">Total Questions:</div>
+                                    <div class="total-value">80</div>
+                                </div>
+                                <div class="distribution-bar">
+                                    <div class="bar-segment speaking-segment" style="width: 25%;" title="Speaking: 4 questions (20%)"></div>
+                                    <div class="bar-segment reading-segment" style="width: 50%;" title="Reading: 8 questions (40%)"></div>
+                                    <div class="bar-segment writing-segment" style="width: 25%;" title="Writing: 8 questions (40%)"></div>
+                                </div>
+                                <div class="distribution-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-color speaking-color"></span>
+                                        <span>Speaking</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color reading-color"></span>
+                                        <span>Reading</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color writing-color"></span>
+                                        <span>Writing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -145,7 +312,7 @@
             
             <div class="exam-header">
                 <div class="exam-title-container">
-                    <h2 id="exam-title">Combined Exam</h2>
+                    <h2 id="exam-title">Mock Exam</h2>
                     <!-- Subtitle will be inserted here by JavaScript -->
                 </div>
             </div>

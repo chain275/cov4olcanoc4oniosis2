@@ -1,0 +1,467 @@
+2025-05-25 06:50:56,083 - INFO - Starting security scan of .
+2025-05-25 06:50:56,083 - WARNING - Potential xss vulnerability in index.html: <script>
+2025-05-25 06:50:56,084 - WARNING - Potential xss vulnerability in index.html: window.location
+2025-05-25 06:50:56,121 - WARNING - Potential sensitive_data vulnerability in assets\css\styles.css: auth
+2025-05-25 06:50:56,122 - WARNING - Potential sensitive_data vulnerability in assets\css\styles.css: credentials
+2025-05-25 06:50:56,124 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: innerHTML =
+2025-05-25 06:50:56,124 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: innerHTML =
+2025-05-25 06:50:56,125 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: innerHTML =
+2025-05-25 06:50:56,125 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: window.location
+2025-05-25 06:50:56,126 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: window.location
+2025-05-25 06:50:56,135 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: innerHTML =
+2025-05-25 06:50:56,135 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: innerHTML =
+2025-05-25 06:50:56,135 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: innerHTML =
+2025-05-25 06:50:56,139 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: window.location
+2025-05-25 06:50:56,181 - WARNING - Potential xss vulnerability in assets\js\csrf-protection.js: document.cookie
+2025-05-25 06:50:56,181 - WARNING - Potential xss vulnerability in assets\js\csrf-protection.js: document.cookie
+2025-05-25 06:50:56,183 - WARNING - Potential sensitive_data vulnerability in assets\js\csrf-protection.js: token
+2025-05-25 06:50:56,183 - WARNING - Potential sensitive_data vulnerability in assets\js\csrf-protection.js: token
+2025-05-25 06:50:56,184 - WARNING - Potential sensitive_data vulnerability in assets\js\csrf-protection.js: Token
+2025-05-25 06:50:56,185 - WARNING - Potential xss vulnerability in assets\js\include.js: innerHTML =
+2025-05-25 06:50:56,185 - WARNING - Potential xss vulnerability in assets\js\include.js: innerHTML =
+2025-05-25 06:50:56,185 - WARNING - Potential xss vulnerability in assets\js\include.js: window.location
+2025-05-25 06:50:56,191 - WARNING - Potential xss vulnerability in assets\js\progress.js: innerHTML =
+2025-05-25 06:50:56,192 - WARNING - Potential xss vulnerability in assets\js\progress.js: innerHTML =
+2025-05-25 06:50:56,192 - WARNING - Potential xss vulnerability in assets\js\progress.js: innerHTML =
+2025-05-25 06:50:56,211 - WARNING - Potential xss vulnerability in assets\js\scripts.js: innerHTML =
+2025-05-25 06:50:56,212 - WARNING - Potential xss vulnerability in assets\js\scripts.js: innerHTML =
+2025-05-25 06:50:56,212 - WARNING - Potential xss vulnerability in assets\js\scripts.js: innerHTML =
+2025-05-25 06:50:56,213 - WARNING - Potential xss vulnerability in assets\js\scripts.js: window.location
+2025-05-25 06:50:56,213 - WARNING - Potential xss vulnerability in assets\js\scripts.js: window.location
+2025-05-25 06:50:56,214 - WARNING - Potential xss vulnerability in assets\js\scripts.js: window.location
+2025-05-25 06:50:56,228 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: innerHTML =
+2025-05-25 06:50:56,229 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: innerHTML =
+2025-05-25 06:50:56,229 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: innerHTML =
+2025-05-25 06:50:56,230 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: window.location
+2025-05-25 06:50:56,238 - WARNING - Potential sensitive_data vulnerability in assets\php\csrf_validator.php: token
+2025-05-25 06:50:56,238 - WARNING - Potential sensitive_data vulnerability in assets\php\csrf_validator.php: token
+2025-05-25 06:50:56,239 - WARNING - Potential sensitive_data vulnerability in assets\php\csrf_validator.php: token
+2025-05-25 06:50:56,268 - WARNING - Potential sql_injection vulnerability in data\Advertisement.json: select retailers.  \n\nContact & Social Proof:  \n...
+2025-05-25 06:50:56,273 - WARNING - Potential sql_injection vulnerability in data\Advertisement.json: updates, and AI-powered threat detection.  \n✅ Sma...
+2025-05-25 06:50:56,309 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: password
+2025-05-25 06:50:56,313 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: Secret
+2025-05-25 06:50:56,317 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: auth
+2025-05-25 06:50:56,319 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: Credentials
+2025-05-25 06:50:56,382 - WARNING - Potential sensitive_data vulnerability in data\Article.json: Secret
+2025-05-25 06:50:56,382 - WARNING - Potential sensitive_data vulnerability in data\Article.json: Secret
+2025-05-25 06:50:56,383 - WARNING - Potential sensitive_data vulnerability in data\Article.json: secret
+2025-05-25 06:50:56,384 - WARNING - Potential sensitive_data vulnerability in data\Article.json: Token
+2025-05-25 06:50:56,385 - WARNING - Potential sensitive_data vulnerability in data\Article.json: token
+2025-05-25 06:50:56,386 - WARNING - Potential sensitive_data vulnerability in data\Article.json: auth
+2025-05-25 06:50:56,387 - WARNING - Potential sensitive_data vulnerability in data\Article.json: auth
+2025-05-25 06:50:56,387 - WARNING - Potential sensitive_data vulnerability in data\Article.json: auth
+2025-05-25 06:50:56,421 - WARNING - Potential sensitive_data vulnerability in data\exams.json: auth
+2025-05-25 06:50:56,421 - WARNING - Potential sensitive_data vulnerability in data\exams.json: auth
+2025-05-25 06:50:56,421 - WARNING - Potential sensitive_data vulnerability in data\exams.json: auth
+2025-05-25 06:50:56,507 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: password
+2025-05-25 06:50:56,513 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: secret
+2025-05-25 06:50:56,514 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: secret
+2025-05-25 06:50:56,514 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: secret
+2025-05-25 06:50:56,518 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: auth
+2025-05-25 06:50:56,519 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: auth
+2025-05-25 06:50:56,519 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: auth
+2025-05-25 06:50:56,552 - WARNING - Potential sql_injection vulnerability in data\News_report.json: select products. Critics, however, cite scalabilit...
+2025-05-25 06:50:56,610 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: auth
+2025-05-25 06:50:56,610 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: auth
+2025-05-25 06:50:56,610 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: Auth
+2025-05-25 06:50:56,612 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: credentials
+2025-05-25 06:50:56,612 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: credentials
+2025-05-25 06:50:56,668 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: Token
+2025-05-25 06:50:56,669 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: Token
+2025-05-25 06:50:56,671 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: auth
+2025-05-25 06:50:56,672 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: auth
+2025-05-25 06:50:56,672 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: auth
+2025-05-25 06:50:56,713 - WARNING - Potential sql_injection vulnerability in data\Product.json: Selection & Hidden Gems**  \nWhat sets *The Litera...
+2025-05-25 06:50:56,722 - WARNING - Potential sql_injection vulnerability in data\Product.json: updates, reducing queue times. Interactive kiosks ...
+2025-05-25 06:50:56,740 - WARNING - Potential sql_injection vulnerability in data\Product.json: updates, I was met with a shrug and an eye roll. E...
+2025-05-25 06:50:56,804 - WARNING - Potential sensitive_data vulnerability in data\Product.json: token
+2025-05-25 06:50:56,807 - WARNING - Potential sensitive_data vulnerability in data\Product.json: auth
+2025-05-25 06:50:56,808 - WARNING - Potential sensitive_data vulnerability in data\Product.json: auth
+2025-05-25 06:50:56,808 - WARNING - Potential sensitive_data vulnerability in data\Product.json: Auth
+2025-05-25 06:50:56,867 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: secret
+2025-05-25 06:50:56,867 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: secret
+2025-05-25 06:50:56,870 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: auth
+2025-05-25 06:50:56,871 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: auth
+2025-05-25 06:50:56,917 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation44.json: secret
+2025-05-25 06:50:56,917 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation44.json: secret
+2025-05-25 06:50:56,918 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation44.json: secret
+2025-05-25 06:50:56,997 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: auth
+2025-05-25 06:50:56,997 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: auth
+2025-05-25 06:50:56,997 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: auth
+2025-05-25 06:50:56,999 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: credentials
+2025-05-25 06:50:57,000 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: credentials
+2025-05-25 06:50:57,000 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: credentials
+2025-05-25 06:50:57,006 - WARNING - Potential sensitive_data vulnerability in data\tutors.json: credentials
+2025-05-25 06:50:57,006 - WARNING - Potential sensitive_data vulnerability in data\tutors.json: credentials
+2025-05-25 06:50:57,006 - WARNING - Potential sensitive_data vulnerability in data\tutors.json: credentials
+2025-05-25 06:50:57,012 - WARNING - Potential file_inclusion vulnerability in scripts\combine_exams.py: include (
+2025-05-25 06:50:57,023 - WARNING - Potential xss vulnerability in scripts\security_scanner.py: javascript:
+2025-05-25 06:50:57,024 - WARNING - Potential xss vulnerability in scripts\security_scanner.py: document.cookie
+2025-05-25 06:50:57,024 - WARNING - Potential csrf vulnerability in scripts\security_scanner.py: <form.*?>
+2025-05-25 06:50:57,025 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: SELECT.*FROM
+2025-05-25 06:50:57,026 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: UPDATE.*SET
+2025-05-25 06:50:57,027 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: mysql_query
+2025-05-25 06:50:57,027 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: mysqli_query
+2025-05-25 06:50:57,030 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: password
+2025-05-25 06:50:57,030 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: password
+2025-05-25 06:50:57,031 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: api_key
+2025-05-25 06:50:57,031 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: api_key
+2025-05-25 06:50:57,032 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: secret
+2025-05-25 06:50:57,032 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: secret
+2025-05-25 06:50:57,033 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: token
+2025-05-25 06:50:57,033 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: token
+2025-05-25 06:50:57,033 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: token
+2025-05-25 06:50:57,034 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: auth
+2025-05-25 06:50:57,034 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: credentials
+2025-05-25 06:50:57,035 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: credentials
+2025-05-25 06:50:57,035 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: private_key
+2025-05-25 06:50:57,037 - WARNING - Potential sql_injection vulnerability in scripts\update_file_paths.py: Update file paths in HTML files to point to the ne...
+2025-05-25 06:50:57,063 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: Secret
+2025-05-25 06:50:57,064 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: secret
+2025-05-25 06:50:57,065 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: auth
+2025-05-25 06:50:57,066 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: auth
+2025-05-25 06:50:57,066 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: auth
+2025-05-25 06:50:57,069 - WARNING - Potential xss vulnerability in templates\404.html: <script>
+2025-05-25 06:50:57,073 - WARNING - Potential xss vulnerability in templates\Advertisement.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,073 - WARNING - Potential xss vulnerability in templates\Advertisement.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,074 - WARNING - Potential xss vulnerability in templates\Advertisement.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,079 - WARNING - Potential xss vulnerability in templates\Article.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,080 - WARNING - Potential xss vulnerability in templates\Article.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,080 - WARNING - Potential xss vulnerability in templates\Article.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,085 - WARNING - Potential xss vulnerability in templates\Combined_Exam.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,086 - WARNING - Potential xss vulnerability in templates\Combined_Exam.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,087 - WARNING - Potential xss vulnerability in templates\Combined_Exam.html: <script src="../assets/js/combined_exam.js">
+2025-05-25 06:50:57,096 - WARNING - Potential xss vulnerability in templates\contact.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,097 - WARNING - Potential xss vulnerability in templates\contact.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,097 - WARNING - Potential xss vulnerability in templates\contact.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,101 - WARNING - Potential xss vulnerability in templates\donate.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,102 - WARNING - Potential xss vulnerability in templates\donate.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,102 - WARNING - Potential xss vulnerability in templates\donate.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,114 - WARNING - Potential xss vulnerability in templates\header.html: <script src="../assets/js/csrf-protection.js">
+2025-05-25 06:50:57,118 - WARNING - Potential xss vulnerability in templates\index.html: <script src="../assets/js/main.js">
+2025-05-25 06:50:57,118 - WARNING - Potential xss vulnerability in templates\index.html: <script>
+2025-05-25 06:50:57,120 - WARNING - Potential xss vulnerability in templates\index.html: innerHTML =
+2025-05-25 06:50:57,121 - WARNING - Potential xss vulnerability in templates\index.html: innerHTML =
+2025-05-25 06:50:57,144 - WARNING - Potential sensitive_data vulnerability in templates\index.html: auth
+2025-05-25 06:50:57,145 - WARNING - Potential sensitive_data vulnerability in templates\index.html: auth
+2025-05-25 06:50:57,145 - WARNING - Potential sensitive_data vulnerability in templates\index.html: auth
+2025-05-25 06:50:57,147 - WARNING - Potential xss vulnerability in templates\Long_conversation.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,147 - WARNING - Potential xss vulnerability in templates\Long_conversation.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,147 - WARNING - Potential xss vulnerability in templates\Long_conversation.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,152 - WARNING - Potential xss vulnerability in templates\new-landing.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,153 - WARNING - Potential xss vulnerability in templates\new-landing.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,153 - WARNING - Potential xss vulnerability in templates\new-landing.html: <script>
+2025-05-25 06:50:57,161 - WARNING - Potential sensitive_data vulnerability in templates\new-landing.html: auth
+2025-05-25 06:50:57,162 - WARNING - Potential sensitive_data vulnerability in templates\new-landing.html: auth
+2025-05-25 06:50:57,162 - WARNING - Potential sensitive_data vulnerability in templates\new-landing.html: Auth
+2025-05-25 06:50:57,164 - WARNING - Potential xss vulnerability in templates\News_report.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,164 - WARNING - Potential xss vulnerability in templates\News_report.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,164 - WARNING - Potential xss vulnerability in templates\News_report.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,169 - INFO - Scanned 50 files...
+2025-05-25 06:50:57,170 - WARNING - Potential xss vulnerability in templates\Paragraph.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,171 - WARNING - Potential xss vulnerability in templates\Paragraph.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,171 - WARNING - Potential xss vulnerability in templates\Paragraph.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,177 - WARNING - Potential xss vulnerability in templates\Product.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,178 - WARNING - Potential xss vulnerability in templates\Product.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,178 - WARNING - Potential xss vulnerability in templates\Product.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,184 - WARNING - Potential xss vulnerability in templates\progress.html: <script src="https://cdn.jsdelivr.net/npm/chart.js...
+2025-05-25 06:50:57,184 - WARNING - Potential xss vulnerability in templates\progress.html: <script src="https://cdn.jsdelivr.net/npm/chartjs-...
+2025-05-25 06:50:57,185 - WARNING - Potential xss vulnerability in templates\progress.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,193 - WARNING - Potential xss vulnerability in templates\Short_conversation.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,194 - WARNING - Potential xss vulnerability in templates\Short_conversation.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,194 - WARNING - Potential xss vulnerability in templates\Short_conversation.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,199 - WARNING - Potential xss vulnerability in templates\template.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,200 - WARNING - Potential xss vulnerability in templates\template.html: <script src="../ad-banner.js">
+2025-05-25 06:50:57,200 - WARNING - Potential xss vulnerability in templates\template.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,203 - WARNING - Potential xss vulnerability in templates\Text_completion.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,203 - WARNING - Potential xss vulnerability in templates\Text_completion.html: <script src="../assets/js/slideshow.js">
+2025-05-25 06:50:57,204 - WARNING - Potential xss vulnerability in templates\Text_completion.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,209 - WARNING - Potential xss vulnerability in templates\tutors.html: <script src="../assets/js/include.js">
+2025-05-25 06:50:57,210 - WARNING - Potential xss vulnerability in templates\tutors.html: <script src="../assets/js/scripts.js">
+2025-05-25 06:50:57,210 - WARNING - Potential xss vulnerability in templates\tutors.html: <script src="../ad-banner.js">
+2025-05-25 06:50:57,211 - WARNING - Potential xss vulnerability in templates\tutors.html: innerHTML =
+2025-05-25 06:50:57,211 - WARNING - Potential xss vulnerability in templates\tutors.html: innerHTML =
+2025-05-25 06:50:57,211 - WARNING - Potential xss vulnerability in templates\tutors.html: innerHTML =
+2025-05-25 06:50:57,217 - WARNING - Potential sensitive_data vulnerability in templates\tutors.html: credentials
+2025-05-25 06:50:57,217 - WARNING - Potential sensitive_data vulnerability in templates\tutors.html: credentials
+2025-05-25 06:50:57,217 - WARNING - Potential sensitive_data vulnerability in templates\tutors.html: credentials
+2025-05-25 06:50:57,377 - INFO - Found 0 forms, 0 with CSRF protection
+2025-05-25 06:50:57,496 - INFO - CSP meta tag found in .\templates\header.html
+2025-05-25 06:50:57,497 - WARNING - CSP uses unsafe-inline or unsafe-eval in .\templates\header.html
+2025-05-25 06:50:57,499 - INFO - 
+--- Security Scan Report ---
+2025-05-25 06:50:57,500 - INFO - Files scanned: 56
+2025-05-25 06:50:57,500 - INFO - Issues found: 502
+2025-05-25 06:50:57,500 - INFO - 
+Vulnerability summary:
+2025-05-25 06:50:57,500 - INFO -   Xss: 161
+2025-05-25 06:50:57,500 - INFO -   Csrf: 1
+2025-05-25 06:50:57,501 - INFO -   Sql Injection: 11
+2025-05-25 06:50:57,501 - INFO -   File Inclusion: 1
+2025-05-25 06:50:57,501 - INFO -   Insecure Config: 0
+2025-05-25 06:50:57,502 - INFO -   Insecure Headers: 1
+2025-05-25 06:50:57,502 - INFO -   Sensitive Data: 327
+2025-05-25 06:50:57,502 - INFO - 
+Recommendations:
+2025-05-25 06:50:57,503 - INFO - - Implement proper output escaping to prevent XSS attacks
+2025-05-25 06:50:57,503 - INFO - - Use a Content Security Policy to mitigate XSS impact
+2025-05-25 06:50:57,503 - INFO - - Add CSRF tokens to all forms
+2025-05-25 06:50:57,503 - INFO - - Validate CSRF tokens on the server-side
+2025-05-25 06:50:57,504 - INFO - - Use parameterized queries or prepared statements
+2025-05-25 06:50:57,504 - INFO - - Apply input validation and sanitization
+2025-05-25 06:50:57,504 - INFO - - Validate and sanitize file paths
+2025-05-25 06:50:57,504 - INFO - - Use whitelisting for included files
+2025-05-25 06:50:57,504 - INFO - - Implement all recommended security headers
+2025-05-25 06:50:57,505 - INFO - - Enforce HTTPS with HSTS
+2025-05-25 06:50:57,505 - INFO - - Encrypt sensitive data
+2025-05-25 06:50:57,505 - INFO - - Review code for hardcoded credentials
+2025-05-25 06:50:57,505 - INFO - 
+Scan completed at 2025-05-25 06:50:57
+2025-05-25 06:50:57,506 - INFO - Scan completed in 1.422603 seconds
+2025-05-25 07:35:09,262 - INFO - Starting security scan of .
+2025-05-25 07:35:09,264 - WARNING - Potential xss vulnerability in index.html: <script>
+2025-05-25 07:35:09,264 - WARNING - Potential xss vulnerability in index.html: window.location
+2025-05-25 07:35:09,306 - WARNING - Potential sensitive_data vulnerability in assets\css\styles.css: auth
+2025-05-25 07:35:09,307 - WARNING - Potential sensitive_data vulnerability in assets\css\styles.css: credentials
+2025-05-25 07:35:09,313 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: innerHTML =
+2025-05-25 07:35:09,319 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: innerHTML =
+2025-05-25 07:35:09,320 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: innerHTML =
+2025-05-25 07:35:09,321 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: window.location
+2025-05-25 07:35:09,321 - WARNING - Potential xss vulnerability in assets\js\ad-banner.js: window.location
+2025-05-25 07:35:09,330 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: innerHTML =
+2025-05-25 07:35:09,330 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: innerHTML =
+2025-05-25 07:35:09,330 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: innerHTML =
+2025-05-25 07:35:09,334 - WARNING - Potential xss vulnerability in assets\js\combined_exam.js: window.location
+2025-05-25 07:35:09,388 - WARNING - Potential xss vulnerability in assets\js\csrf-protection.js: document.cookie
+2025-05-25 07:35:09,389 - WARNING - Potential xss vulnerability in assets\js\csrf-protection.js: document.cookie
+2025-05-25 07:35:09,390 - WARNING - Potential sensitive_data vulnerability in assets\js\csrf-protection.js: token
+2025-05-25 07:35:09,390 - WARNING - Potential sensitive_data vulnerability in assets\js\csrf-protection.js: token
+2025-05-25 07:35:09,391 - WARNING - Potential sensitive_data vulnerability in assets\js\csrf-protection.js: Token
+2025-05-25 07:35:09,392 - WARNING - Potential xss vulnerability in assets\js\include.js: innerHTML =
+2025-05-25 07:35:09,392 - WARNING - Potential xss vulnerability in assets\js\include.js: innerHTML =
+2025-05-25 07:35:09,392 - WARNING - Potential xss vulnerability in assets\js\include.js: window.location
+2025-05-25 07:35:09,396 - WARNING - Potential xss vulnerability in assets\js\progress.js: innerHTML =
+2025-05-25 07:35:09,396 - WARNING - Potential xss vulnerability in assets\js\progress.js: innerHTML =
+2025-05-25 07:35:09,396 - WARNING - Potential xss vulnerability in assets\js\progress.js: innerHTML =
+2025-05-25 07:35:09,412 - WARNING - Potential xss vulnerability in assets\js\scripts.js: innerHTML =
+2025-05-25 07:35:09,413 - WARNING - Potential xss vulnerability in assets\js\scripts.js: innerHTML =
+2025-05-25 07:35:09,413 - WARNING - Potential xss vulnerability in assets\js\scripts.js: innerHTML =
+2025-05-25 07:35:09,415 - WARNING - Potential xss vulnerability in assets\js\scripts.js: window.location
+2025-05-25 07:35:09,415 - WARNING - Potential xss vulnerability in assets\js\scripts.js: window.location
+2025-05-25 07:35:09,415 - WARNING - Potential xss vulnerability in assets\js\scripts.js: window.location
+2025-05-25 07:35:09,429 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: innerHTML =
+2025-05-25 07:35:09,430 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: innerHTML =
+2025-05-25 07:35:09,430 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: innerHTML =
+2025-05-25 07:35:09,430 - WARNING - Potential xss vulnerability in assets\js\slideshow.js: window.location
+2025-05-25 07:35:09,435 - WARNING - Potential sensitive_data vulnerability in assets\php\csrf_validator.php: token
+2025-05-25 07:35:09,436 - WARNING - Potential sensitive_data vulnerability in assets\php\csrf_validator.php: token
+2025-05-25 07:35:09,436 - WARNING - Potential sensitive_data vulnerability in assets\php\csrf_validator.php: token
+2025-05-25 07:35:09,438 - WARNING - Potential sql_injection vulnerability in assets\php\database.php: INSERT INTO
+2025-05-25 07:35:09,438 - WARNING - Potential sql_injection vulnerability in assets\php\database.php: UPDATE %s SET
+2025-05-25 07:35:09,438 - WARNING - Potential sql_injection vulnerability in assets\php\database.php: DELETE FROM
+2025-05-25 07:35:09,439 - WARNING - Potential sql_injection vulnerability in assets\php\database.php: execute(
+2025-05-25 07:35:09,440 - WARNING - Potential sensitive_data vulnerability in assets\php\database.php: password
+2025-05-25 07:35:09,442 - WARNING - Potential sensitive_data vulnerability in assets\php\file_include.php: auth
+2025-05-25 07:35:09,442 - WARNING - Potential sensitive_data vulnerability in assets\php\file_include.php: auth
+2025-05-25 07:35:09,443 - WARNING - Potential csrf vulnerability in assets\php\form_processor.php: <form method="post" action="../assets/php/form_pro...
+2025-05-25 07:35:09,445 - WARNING - Potential sensitive_data vulnerability in assets\php\form_processor.php: token
+2025-05-25 07:35:09,445 - WARNING - Potential sensitive_data vulnerability in assets\php\form_processor.php: token
+2025-05-25 07:35:09,445 - WARNING - Potential sensitive_data vulnerability in assets\php\form_processor.php: token
+2025-05-25 07:35:09,447 - WARNING - Potential csrf vulnerability in assets\php\page_processor.php: <form[^>
+2025-05-25 07:35:09,448 - WARNING - Potential file_inclusion vulnerability in assets\php\page_processor.php: file_get_contents(
+2025-05-25 07:35:09,449 - WARNING - Potential sensitive_data vulnerability in assets\php\page_processor.php: Token
+2025-05-25 07:35:09,450 - WARNING - Potential sensitive_data vulnerability in assets\php\page_processor.php: token
+2025-05-25 07:35:09,450 - WARNING - Potential sensitive_data vulnerability in assets\php\page_processor.php: Token
+2025-05-25 07:35:09,454 - WARNING - Potential sensitive_data vulnerability in assets\php\security.php: token
+2025-05-25 07:35:09,454 - WARNING - Potential sensitive_data vulnerability in assets\php\security.php: token
+2025-05-25 07:35:09,454 - WARNING - Potential sensitive_data vulnerability in assets\php\security.php: token
+2025-05-25 07:35:09,476 - WARNING - Potential sql_injection vulnerability in data\Advertisement.json: select retailers.  \n\nContact & Social Proof:  \n...
+2025-05-25 07:35:09,480 - WARNING - Potential sql_injection vulnerability in data\Advertisement.json: updates, and AI-powered threat detection.  \n✅ Sma...
+2025-05-25 07:35:09,510 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: password
+2025-05-25 07:35:09,514 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: Secret
+2025-05-25 07:35:09,518 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: auth
+2025-05-25 07:35:09,519 - WARNING - Potential sensitive_data vulnerability in data\Advertisement.json: Credentials
+2025-05-25 07:35:09,585 - WARNING - Potential sensitive_data vulnerability in data\Article.json: Secret
+2025-05-25 07:35:09,585 - WARNING - Potential sensitive_data vulnerability in data\Article.json: Secret
+2025-05-25 07:35:09,585 - WARNING - Potential sensitive_data vulnerability in data\Article.json: secret
+2025-05-25 07:35:09,587 - WARNING - Potential sensitive_data vulnerability in data\Article.json: Token
+2025-05-25 07:35:09,587 - WARNING - Potential sensitive_data vulnerability in data\Article.json: token
+2025-05-25 07:35:09,589 - WARNING - Potential sensitive_data vulnerability in data\Article.json: auth
+2025-05-25 07:35:09,589 - WARNING - Potential sensitive_data vulnerability in data\Article.json: auth
+2025-05-25 07:35:09,590 - WARNING - Potential sensitive_data vulnerability in data\Article.json: auth
+2025-05-25 07:35:09,593 - WARNING - Potential sensitive_data vulnerability in data\db_config.php: password
+2025-05-25 07:35:09,594 - WARNING - Potential sensitive_data vulnerability in data\db_config.php: password
+2025-05-25 07:35:09,594 - WARNING - Potential sensitive_data vulnerability in data\db_config.php: password
+2025-05-25 07:35:09,594 - WARNING - Potential sensitive_data vulnerability in data\db_config.php: credentials
+2025-05-25 07:35:09,619 - WARNING - Potential sensitive_data vulnerability in data\exams.json: auth
+2025-05-25 07:35:09,619 - WARNING - Potential sensitive_data vulnerability in data\exams.json: auth
+2025-05-25 07:35:09,620 - WARNING - Potential sensitive_data vulnerability in data\exams.json: auth
+2025-05-25 07:35:09,682 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: password
+2025-05-25 07:35:09,687 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: secret
+2025-05-25 07:35:09,687 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: secret
+2025-05-25 07:35:09,687 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: secret
+2025-05-25 07:35:09,692 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: auth
+2025-05-25 07:35:09,692 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: auth
+2025-05-25 07:35:09,692 - WARNING - Potential sensitive_data vulnerability in data\Long_conversation.json: auth
+2025-05-25 07:35:09,716 - WARNING - Potential sql_injection vulnerability in data\News_report.json: select products. Critics, however, cite scalabilit...
+2025-05-25 07:35:09,762 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: auth
+2025-05-25 07:35:09,762 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: auth
+2025-05-25 07:35:09,762 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: Auth
+2025-05-25 07:35:09,764 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: credentials
+2025-05-25 07:35:09,765 - WARNING - Potential sensitive_data vulnerability in data\News_report.json: credentials
+2025-05-25 07:35:09,809 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: Token
+2025-05-25 07:35:09,810 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: Token
+2025-05-25 07:35:09,812 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: auth
+2025-05-25 07:35:09,814 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: auth
+2025-05-25 07:35:09,816 - WARNING - Potential sensitive_data vulnerability in data\Paragraph.json: auth
+2025-05-25 07:35:09,854 - WARNING - Potential sql_injection vulnerability in data\Product.json: Selection & Hidden Gems**  \nWhat sets *The Litera...
+2025-05-25 07:35:09,860 - WARNING - Potential sql_injection vulnerability in data\Product.json: updates, reducing queue times. Interactive kiosks ...
+2025-05-25 07:35:09,861 - WARNING - Potential sql_injection vulnerability in data\Product.json: updates, I was met with a shrug and an eye roll. E...
+2025-05-25 07:35:09,913 - WARNING - Potential sensitive_data vulnerability in data\Product.json: token
+2025-05-25 07:35:09,916 - WARNING - Potential sensitive_data vulnerability in data\Product.json: auth
+2025-05-25 07:35:09,916 - WARNING - Potential sensitive_data vulnerability in data\Product.json: auth
+2025-05-25 07:35:09,917 - WARNING - Potential sensitive_data vulnerability in data\Product.json: Auth
+2025-05-25 07:35:09,975 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: secret
+2025-05-25 07:35:09,975 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: secret
+2025-05-25 07:35:09,978 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: auth
+2025-05-25 07:35:09,979 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation.json: auth
+2025-05-25 07:35:10,025 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation44.json: secret
+2025-05-25 07:35:10,025 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation44.json: secret
+2025-05-25 07:35:10,026 - WARNING - Potential sensitive_data vulnerability in data\Short_conversation44.json: secret
+2025-05-25 07:35:10,101 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: auth
+2025-05-25 07:35:10,101 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: auth
+2025-05-25 07:35:10,102 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: auth
+2025-05-25 07:35:10,104 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: credentials
+2025-05-25 07:35:10,104 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: credentials
+2025-05-25 07:35:10,105 - WARNING - Potential sensitive_data vulnerability in data\Text_completion.json: credentials
+2025-05-25 07:35:10,109 - WARNING - Potential sensitive_data vulnerability in data\tutors.json: credentials
+2025-05-25 07:35:10,109 - WARNING - Potential sensitive_data vulnerability in data\tutors.json: credentials
+2025-05-25 07:35:10,109 - WARNING - Potential sensitive_data vulnerability in data\tutors.json: credentials
+2025-05-25 07:35:10,114 - WARNING - Potential file_inclusion vulnerability in scripts\combine_exams.py: include (
+2025-05-25 07:35:10,122 - WARNING - Potential xss vulnerability in scripts\security_scanner.py: javascript:
+2025-05-25 07:35:10,123 - WARNING - Potential xss vulnerability in scripts\security_scanner.py: document.cookie
+2025-05-25 07:35:10,124 - WARNING - Potential csrf vulnerability in scripts\security_scanner.py: <form.*?>
+2025-05-25 07:35:10,124 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: SELECT.*FROM
+2025-05-25 07:35:10,125 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: UPDATE.*SET
+2025-05-25 07:35:10,126 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: mysql_query
+2025-05-25 07:35:10,126 - WARNING - Potential sql_injection vulnerability in scripts\security_scanner.py: mysqli_query
+2025-05-25 07:35:10,129 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: password
+2025-05-25 07:35:10,129 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: password
+2025-05-25 07:35:10,130 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: api_key
+2025-05-25 07:35:10,130 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: api_key
+2025-05-25 07:35:10,130 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: secret
+2025-05-25 07:35:10,131 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: secret
+2025-05-25 07:35:10,131 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: token
+2025-05-25 07:35:10,131 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: token
+2025-05-25 07:35:10,131 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: token
+2025-05-25 07:35:10,132 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: auth
+2025-05-25 07:35:10,132 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: credentials
+2025-05-25 07:35:10,132 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: credentials
+2025-05-25 07:35:10,133 - WARNING - Potential sensitive_data vulnerability in scripts\security_scanner.py: private_key
+2025-05-25 07:35:10,134 - WARNING - Potential sql_injection vulnerability in scripts\update_file_paths.py: Update file paths in HTML files to point to the ne...
+2025-05-25 07:35:10,156 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: Secret
+2025-05-25 07:35:10,156 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: secret
+2025-05-25 07:35:10,158 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: auth
+2025-05-25 07:35:10,158 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: auth
+2025-05-25 07:35:10,159 - WARNING - Potential sensitive_data vulnerability in src\complete exam\combined_exam.json: auth
+2025-05-25 07:35:10,162 - WARNING - Potential xss vulnerability in templates\404.html: <script>
+2025-05-25 07:35:10,164 - WARNING - Potential xss vulnerability in templates\Advertisement.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,165 - WARNING - Potential xss vulnerability in templates\Advertisement.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,165 - WARNING - Potential xss vulnerability in templates\Advertisement.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,170 - WARNING - Potential xss vulnerability in templates\Article.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,170 - WARNING - Potential xss vulnerability in templates\Article.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,171 - WARNING - Potential xss vulnerability in templates\Article.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,176 - WARNING - Potential xss vulnerability in templates\Combined_Exam.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,177 - WARNING - Potential xss vulnerability in templates\Combined_Exam.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,177 - WARNING - Potential xss vulnerability in templates\Combined_Exam.html: <script src="../assets/js/combined_exam.js">
+2025-05-25 07:35:10,183 - INFO - Scanned 50 files...
+2025-05-25 07:35:10,184 - WARNING - Potential xss vulnerability in templates\contact.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,184 - WARNING - Potential xss vulnerability in templates\contact.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,185 - WARNING - Potential xss vulnerability in templates\contact.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,189 - WARNING - Potential xss vulnerability in templates\donate.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,189 - WARNING - Potential xss vulnerability in templates\donate.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,190 - WARNING - Potential xss vulnerability in templates\donate.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,197 - WARNING - Potential xss vulnerability in templates\header.html: <script src="../assets/php/load_script.php?script=...
+2025-05-25 07:35:10,197 - WARNING - Potential xss vulnerability in templates\header.html: <script nonce="{{CSP_NONCE}}">
+2025-05-25 07:35:10,198 - WARNING - Potential xss vulnerability in templates\header.html: window.location
+2025-05-25 07:35:10,199 - WARNING - Potential xss vulnerability in templates\header.html: window.location
+2025-05-25 07:35:10,199 - WARNING - Potential xss vulnerability in templates\header.html: window.location
+2025-05-25 07:35:10,201 - WARNING - Potential xss vulnerability in templates\index.html: <script src="../assets/js/main.js">
+2025-05-25 07:35:10,201 - WARNING - Potential xss vulnerability in templates\index.html: <script>
+2025-05-25 07:35:10,203 - WARNING - Potential xss vulnerability in templates\index.html: innerHTML =
+2025-05-25 07:35:10,204 - WARNING - Potential xss vulnerability in templates\index.html: innerHTML =
+2025-05-25 07:35:10,218 - WARNING - Potential sensitive_data vulnerability in templates\index.html: auth
+2025-05-25 07:35:10,218 - WARNING - Potential sensitive_data vulnerability in templates\index.html: auth
+2025-05-25 07:35:10,219 - WARNING - Potential sensitive_data vulnerability in templates\index.html: auth
+2025-05-25 07:35:10,220 - WARNING - Potential xss vulnerability in templates\Long_conversation.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,221 - WARNING - Potential xss vulnerability in templates\Long_conversation.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,221 - WARNING - Potential xss vulnerability in templates\Long_conversation.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,226 - WARNING - Potential xss vulnerability in templates\new-landing.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,226 - WARNING - Potential xss vulnerability in templates\new-landing.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,227 - WARNING - Potential xss vulnerability in templates\new-landing.html: <script>
+2025-05-25 07:35:10,234 - WARNING - Potential sensitive_data vulnerability in templates\new-landing.html: auth
+2025-05-25 07:35:10,235 - WARNING - Potential sensitive_data vulnerability in templates\new-landing.html: auth
+2025-05-25 07:35:10,235 - WARNING - Potential sensitive_data vulnerability in templates\new-landing.html: Auth
+2025-05-25 07:35:10,237 - WARNING - Potential xss vulnerability in templates\News_report.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,237 - WARNING - Potential xss vulnerability in templates\News_report.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,237 - WARNING - Potential xss vulnerability in templates\News_report.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,243 - WARNING - Potential xss vulnerability in templates\Paragraph.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,243 - WARNING - Potential xss vulnerability in templates\Paragraph.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,244 - WARNING - Potential xss vulnerability in templates\Paragraph.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,249 - WARNING - Potential xss vulnerability in templates\Product.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,249 - WARNING - Potential xss vulnerability in templates\Product.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,249 - WARNING - Potential xss vulnerability in templates\Product.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,255 - WARNING - Potential xss vulnerability in templates\progress.html: <script src="https://cdn.jsdelivr.net/npm/chart.js...
+2025-05-25 07:35:10,255 - WARNING - Potential xss vulnerability in templates\progress.html: <script src="https://cdn.jsdelivr.net/npm/chartjs-...
+2025-05-25 07:35:10,255 - WARNING - Potential xss vulnerability in templates\progress.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,264 - WARNING - Potential xss vulnerability in templates\Short_conversation.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,264 - WARNING - Potential xss vulnerability in templates\Short_conversation.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,265 - WARNING - Potential xss vulnerability in templates\Short_conversation.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,270 - WARNING - Potential xss vulnerability in templates\template.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,270 - WARNING - Potential xss vulnerability in templates\template.html: <script src="../ad-banner.js">
+2025-05-25 07:35:10,271 - WARNING - Potential xss vulnerability in templates\template.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,272 - WARNING - Potential xss vulnerability in templates\Text_completion.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,273 - WARNING - Potential xss vulnerability in templates\Text_completion.html: <script src="../assets/js/slideshow.js">
+2025-05-25 07:35:10,273 - WARNING - Potential xss vulnerability in templates\Text_completion.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,278 - WARNING - Potential xss vulnerability in templates\tutors.html: <script src="../assets/js/include.js">
+2025-05-25 07:35:10,279 - WARNING - Potential xss vulnerability in templates\tutors.html: <script src="../assets/js/scripts.js">
+2025-05-25 07:35:10,279 - WARNING - Potential xss vulnerability in templates\tutors.html: <script src="../ad-banner.js">
+2025-05-25 07:35:10,280 - WARNING - Potential xss vulnerability in templates\tutors.html: innerHTML =
+2025-05-25 07:35:10,281 - WARNING - Potential xss vulnerability in templates\tutors.html: innerHTML =
+2025-05-25 07:35:10,281 - WARNING - Potential xss vulnerability in templates\tutors.html: innerHTML =
+2025-05-25 07:35:10,286 - WARNING - Potential sensitive_data vulnerability in templates\tutors.html: credentials
+2025-05-25 07:35:10,287 - WARNING - Potential sensitive_data vulnerability in templates\tutors.html: credentials
+2025-05-25 07:35:10,287 - WARNING - Potential sensitive_data vulnerability in templates\tutors.html: credentials
+2025-05-25 07:35:10,342 - INFO - Found 1 forms, 1 with CSRF protection
+2025-05-25 07:35:10,457 - INFO - CSP meta tag found in .\templates\header.html
+2025-05-25 07:35:10,458 - WARNING - CSP uses unsafe-inline or unsafe-eval in .\templates\header.html
+2025-05-25 07:35:10,460 - INFO - 
+--- Security Scan Report ---
+2025-05-25 07:35:10,460 - INFO - Files scanned: 65
+2025-05-25 07:35:10,461 - INFO - Issues found: 548
+2025-05-25 07:35:10,461 - INFO - 
+Vulnerability summary:
+2025-05-25 07:35:10,461 - INFO -   Xss: 168
+2025-05-25 07:35:10,461 - INFO -   Csrf: 3
+2025-05-25 07:35:10,462 - INFO -   Sql Injection: 15
+2025-05-25 07:35:10,462 - INFO -   File Inclusion: 2
+2025-05-25 07:35:10,462 - INFO -   Insecure Config: 0
+2025-05-25 07:35:10,462 - INFO -   Insecure Headers: 1
+2025-05-25 07:35:10,462 - INFO -   Sensitive Data: 359
+2025-05-25 07:35:10,463 - INFO - 
+Recommendations:
+2025-05-25 07:35:10,463 - INFO - - Implement proper output escaping to prevent XSS attacks
+2025-05-25 07:35:10,463 - INFO - - Use a Content Security Policy to mitigate XSS impact
+2025-05-25 07:35:10,463 - INFO - - Add CSRF tokens to all forms
+2025-05-25 07:35:10,464 - INFO - - Validate CSRF tokens on the server-side
+2025-05-25 07:35:10,464 - INFO - - Use parameterized queries or prepared statements
+2025-05-25 07:35:10,464 - INFO - - Apply input validation and sanitization
+2025-05-25 07:35:10,464 - INFO - - Validate and sanitize file paths
+2025-05-25 07:35:10,464 - INFO - - Use whitelisting for included files
+2025-05-25 07:35:10,465 - INFO - - Implement all recommended security headers
+2025-05-25 07:35:10,465 - INFO - - Enforce HTTPS with HSTS
+2025-05-25 07:35:10,465 - INFO - - Encrypt sensitive data
+2025-05-25 07:35:10,465 - INFO - - Review code for hardcoded credentials
+2025-05-25 07:35:10,465 - INFO - 
+Scan completed at 2025-05-25 07:35:10
+2025-05-25 07:35:10,466 - INFO - Scan completed in 1.202696 seconds

@@ -1072,7 +1072,7 @@ question_text > p {
 }
 
 .section-description {
-    color: var(--text-primary);
+    color: white;
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.15rem;

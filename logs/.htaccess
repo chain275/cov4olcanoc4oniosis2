@@ -1,0 +1,25 @@
+# Deny access to all files in this directory
+Order deny,allow
+Deny from all
+
+# Prevent directory listing
+Options -Indexes
+
+# Disable script execution
+<FilesMatch "\.(php|pl|py|jsp|asp|sh|cgi)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Block access to specific files
+<FilesMatch "\.(log|sql|txt|md|htaccess|htpasswd)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Additional security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule> 
