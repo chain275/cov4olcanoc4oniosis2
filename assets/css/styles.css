@@ -1126,14 +1126,6 @@ question_text > p {
     scrollbar-color: var(--primary) var(--bg-light);
 }
 
-/* Exam title container */
-.exam-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 0.5rem;
-}
 
 /* Ensure the back button stays to the left */
 .btn-icon {
@@ -3343,17 +3335,7 @@ small {
     border-radius: 3px;
 }
 
-/* Ensure content in exam header is properly spaced */
-.exam-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    padding-bottom: 15px;
-    min-height: 60px;
-}
+
 
 /* Right column for exam questions */
 .exam-questions-container {
@@ -3435,17 +3417,6 @@ small {
 .btn-icon:hover {
     color: var(--primary);
     background-color: rgba(67, 97, 238, 0.05);
-}
-
-/* Exam title container */
-.exam-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    padding-bottom: 15px;
 }
 
 /* Reset exam title alignment */
@@ -3918,17 +3889,7 @@ section#exam-content:not(.hidden) + section#results {
     padding-top: 30px;
 }
 
-/* Exam layout adjustments */
-.exam-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    padding-bottom: 15px;
-    min-height: 60px;
-}
+
 
 /* Question type styling */
 .question-type {

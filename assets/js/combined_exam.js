@@ -1988,7 +1988,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="percentile-right-column">
                         <h3 class="percentile-title">เปอร์เซ็นไทล์ของคุณ</h3>
                         <div class="percentile-summary">
-                            <div class="percentile-number">${percentile}%</div>
+                            <div class="percentile-number">≈ ${percentile}%</div>
                             <p class="percentile-description">คะแนนของคุณสูงกว่า <strong>${percentile}%</strong> ของผู้ทดสอบทั้งหมด</p>
                         </div>
                     </div>
