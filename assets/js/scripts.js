@@ -70,18 +70,19 @@ let isMidDesktop = window.innerWidth >= 1200 && window.innerWidth < 1570;
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
-    setupMobileMenu();
-    setupDropdownMenus();
-    fetchExamData();
-    setupResponsiveListeners();
-    applyResponsiveLayout();
-    
     // Create menu overlay if it doesn't exist
+    let menuOverlay = document.querySelector('.menu-overlay');
     if (!menuOverlay) {
         const overlay = document.createElement('div');
         overlay.className = 'menu-overlay';
         document.body.appendChild(overlay);
     }
+    
+    setupMobileMenu();
+    setupDropdownMenus();
+    fetchExamData();
+    setupResponsiveListeners();
+    applyResponsiveLayout();
 });
 
 // Setup responsive event listeners
@@ -191,34 +192,52 @@ function adjustExamLayout() {
 
 // Setup mobile menu functionality
 function setupMobileMenu() {
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', () => {
-            mobileMenuToggle.classList.toggle('active');
-            navigation.classList.toggle('active');
+    // Get the mobile menu toggle by both ID and class if needed
+    const mobileMenuToggleEl = document.getElementById('mobile-menu-toggle') || document.querySelector('.mobile-menu-toggle');
+    const navigationEl = document.querySelector('nav');
+    let menuOverlayEl = document.querySelector('.menu-overlay');
+    
+    console.debug('Mobile Menu Setup:', { 
+        mobileMenuToggle: mobileMenuToggleEl, 
+        navigation: navigationEl, 
+        menuOverlay: menuOverlayEl
+    });
+    
+    if (mobileMenuToggleEl && navigationEl) {
+        mobileMenuToggleEl.addEventListener('click', () => {
+            console.debug('Mobile menu toggle clicked');
+            mobileMenuToggleEl.classList.toggle('active');
+            navigationEl.classList.toggle('active');
             
             // Create overlay if it doesn't exist
-            if (!menuOverlay) {
+            if (!menuOverlayEl) {
                 const overlay = document.createElement('div');
                 overlay.className = 'menu-overlay';
                 document.body.appendChild(overlay);
-                menuOverlay = document.querySelector('.menu-overlay');
+                menuOverlayEl = document.querySelector('.menu-overlay');
+                console.debug('Created menu overlay:', menuOverlayEl);
                 
                 // Add click event to the newly created overlay
-                menuOverlay.addEventListener('click', closeMenu);
+                menuOverlayEl.addEventListener('click', closeMenu);
             }
             
-            menuOverlay.classList.toggle('active');
+            menuOverlayEl.classList.toggle('active');
             
             // Prevent scrolling when menu is open
-            document.body.style.overflow = navigation.classList.contains('active') ? 'hidden' : '';
+            document.body.style.overflow = navigationEl.classList.contains('active') ? 'hidden' : '';
+        });
+    } else {
+        console.error('Mobile menu elements not found:', { 
+            mobileMenuToggle: mobileMenuToggleEl, 
+            navigation: navigationEl
         });
     }
     
     // Add close menu function for reuse
     function closeMenu() {
-        if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
-        if (navigation) navigation.classList.remove('active');
-        if (menuOverlay) menuOverlay.classList.remove('active');
+        if (mobileMenuToggleEl) mobileMenuToggleEl.classList.remove('active');
+        if (navigationEl) navigationEl.classList.remove('active');
+        if (menuOverlayEl) menuOverlayEl.classList.remove('active');
         document.body.style.overflow = '';
     }
     
@@ -226,8 +245,8 @@ function setupMobileMenu() {
     window.closeMenu = closeMenu;
     
     // Setup the menu overlay if it exists
-    if (menuOverlay) {
-        menuOverlay.addEventListener('click', closeMenu);
+    if (menuOverlayEl) {
+        menuOverlayEl.addEventListener('click', closeMenu);
     }
 }
 

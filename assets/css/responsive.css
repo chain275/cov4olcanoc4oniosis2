@@ -71,10 +71,86 @@
   }
 }
 
+/* Fix for 1179px-1199px range (right before the major breakpoint) */
+@media (min-width: 1179px) and (max-width: 1199px) {
+  /* Adjust exam header and questions container to prevent overlap */
+  #exam-content:not(.hidden) .exam-header {
+    width: 48% !important;
+  }
+  
+  #exam-content:not(.hidden) .exam-questions-container {
+    width: calc(48% - 30px) !important;
+  }
+  
+  /* Ensure proper spacing */
+  .exam-content-wrapper {
+    gap: 30px;
+  }
+}
+
 /* Large Devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
+  }
+}
+
+/* Specific fix for width range 977-1178px where overlap persists */
+@media (min-width: 977px) and (max-width: 1178px) {
+  /* Reset exam content structure to ensure proper layout */
+  #exam-content,
+  #exam-content:not(.hidden),
+  section#exam-content:not(.hidden) {
+    display: block !important;
+    padding-top: 60px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+  }
+  
+  .exam-content-wrapper {
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  /* Force exam header and questions container to full width */
+  .exam-header,
+  .exam-content-wrapper .exam-header,
+  #exam-content .exam-header,
+  #exam-content:not(.hidden) .exam-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 60vh !important;
+    max-height: 65vh !important;
+    position: relative !important;
+    top: 0 !important;
+    margin-bottom: 20px !important;
+    overflow-y: auto !important;
+    padding: 20px !important;
+  }
+  
+  .exam-questions-container,
+  .exam-content-wrapper .exam-questions-container,
+  #exam-content .exam-questions-container,
+  #exam-content:not(.hidden) .exam-questions-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    clear: both !important;
+  }
+  
+  /* Ensure proper spacing for content */
+  .question-progress-wrapper {
+    margin-top: 20px !important;
+  }
+  
+  /* Optimize back button position */
+  #back-button {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    z-index: 1001 !important;
   }
 }
 
@@ -255,6 +331,49 @@
   footer {
     padding: 30px 0 15px;
   }
+  
+  /* Fix for the exam timer on small screens */
+  .exam-header {
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    max-height: 50vh;
+  }
+  
+  .exam-timer {
+    margin-top: 10px;
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--bg-white);
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  /* Make navigation buttons smaller */
+  .btn-icon {
+    padding: 8px;
+    font-size: 0.85rem;
+    min-width: 32px;
+  }
+  
+  /* Fix question display */
+  .question {
+    padding: 15px 10px;
+  }
+  
+  /* Fix question navigation */
+  .question-navigator {
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    gap: 5px;
+  }
+  
+  .question-nav-item {
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* Specific adjustments for navigation */
@@ -361,25 +480,6 @@ input, select, textarea {
   width: 100%;
 }
 
-/* Fix for the exam timer on small screens */
-@media (max-width: 576px) {
-  .exam-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .exam-timer {
-    margin-top: 10px;
-    align-self: flex-start;
-  }
-  
-  /* Make navigation buttons smaller */
-  .btn-icon {
-    padding: 8px;
-    font-size: 0.85rem;
-  }
-}
-
 /* Adjust dropdown menu for touch devices */
 @media (hover: none) {
   .dropdown-menu {
@@ -463,5 +563,146 @@ input, select, textarea {
   
   .legend-item {
     margin-bottom: 8px;
+  }
+}
+
+/* Fix for portrait orientation on mobile devices */
+@media (max-width: 767px) and (orientation: portrait) {
+  /* Improve container spacing in portrait mode */
+  .container {
+    padding: 0 10px;
+  }
+  
+  /* Address hero section in portrait mode */
+  .hero-section {
+    height: auto;
+    min-height: 70vh;
+    padding: 40px 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Complete exam container restructuring for portrait mode */
+  #exam-content,
+  #exam-content:not(.hidden),
+  section#exam-content:not(.hidden) {
+    display: block !important; /* Force block display */
+    padding-top: 60px !important; /* Add extra space for back button */
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+  }
+  
+  /* New wrapper for exam content */
+  .exam-content-wrapper {
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  /* Reset all exam layout elements */
+  .exam-header, 
+  #exam-content .exam-header,
+  #exam-content:not(.hidden) .exam-header,
+  .exam-content-wrapper .exam-header {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 35vh !important;
+    overflow-y: auto !important;
+    padding: 15px !important;
+    margin: 0 0 15px 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    order: unset !important;
+    float: none !important;
+  }
+  
+  .exam-questions-container,
+  #exam-content .exam-questions-container,
+  #exam-content:not(.hidden) .exam-questions-container,
+  .exam-content-wrapper .exam-questions-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 15px !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    order: unset !important;
+    float: none !important;
+    clear: both !important;
+  }
+  
+  /* Fix question display */
+  .question {
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Fix question navigation container */
+  .question-progress-wrapper {
+    margin-top: 15px !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    clear: both !important;
+  }
+  
+  /* Optimize navigation buttons */
+  .exam-navigation {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-top: 20px !important;
+  }
+  
+  .exam-navigation button#submit-exam {
+    grid-column: span 2 !important;
+    order: -1 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  /* Fix navigation in portrait orientation */
+  nav.active {
+    width: 85%;
+  }
+  
+  /* Fix footer spacing */
+  footer {
+    padding: 30px 10px;
+  }
+  
+  /* Optimize back button position */
+  #back-button {
+    top: 10px !important;
+    left: 10px !important;
+    position: absolute !important;
+    z-index: 1001 !important;
+  }
+  
+  /* Fix timer positioning */
+  .exam-timer {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+    width: 100% !important;
+    background-color: white !important;
+    margin: 0 0 15px 0 !important;
+    padding: 8px 0 !important;
+    text-align: center !important;
   }
 } 

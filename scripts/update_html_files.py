@@ -2,7 +2,7 @@ import os
 import re
 
 replacements = [
-    ('<span class="stat-label">เกณฑ์คะแนน:</span>', '<span class="stat-label">คอมเม้นต์:</span>')
+    ('<script src="../ad-banner.js"></script>', '<script src="../assets/js/ad-banner.js"></script>')
     ,
 ]
 
