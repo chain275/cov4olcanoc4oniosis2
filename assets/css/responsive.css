@@ -576,7 +576,6 @@ input, select, textarea {
   /* Address hero section in portrait mode */
   .hero-section {
     height: auto;
-    min-height: 70vh;
     padding: 40px 0;
   }
   
@@ -619,7 +618,7 @@ input, select, textarea {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
-    max-height: 35vh !important;
+    max-height: 50vh !important;
     overflow-y: auto !important;
     padding: 15px !important;
     margin: 0 0 15px 0 !important;
