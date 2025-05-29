@@ -601,7 +601,6 @@ input, select, textarea {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    position: relative !important;
   }
   
   /* New wrapper for exam content */
@@ -671,7 +670,6 @@ input, select, textarea {
   
   .exam-navigation button#submit-exam {
     grid-column: span 2 !important;
-    order: -1 !important;
     margin-bottom: 10px !important;
   }
   

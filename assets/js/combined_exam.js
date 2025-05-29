@@ -2365,7 +2365,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 .percentile-title,
                 .percentile-summary {
-                    text-align: left;
+                    text-align: center;
                 }
                 
                 .score-summary-title {
