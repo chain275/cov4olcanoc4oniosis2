@@ -313,9 +313,9 @@
   }
   
   /* Adjust progress charts and stats */
-  .score-circle {
-    width: 100px;
-    height: 100px;
+  .score-circle { 
+    width: 200px;
+    height: 200px;
   }
   
   .exam-timer {

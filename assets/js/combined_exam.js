@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backButton = document.getElementById('back-button');
     const backToHomeButton = document.getElementById('back-to-home');
     const timerDisplay = document.getElementById('timer-display');
+    const percentileValue = document.getElementById('percentile-value');
     // Add view-feedback button reference
     let viewFeedbackBtn = document.getElementById('view-feedback');
     
@@ -938,7 +939,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function saveCurrentAnswer() {
         const selectedOption = document.querySelector(`input[name="question${window.currentQuestionIndex}"]:checked`);
         if (selectedOption) {
-            window.userAnswers[window.currentQuestionIndex] = parseInt(selectedOption.value);
+            // Get the original index from the parent div's data attribute
+            const optionDiv = selectedOption.closest('.option');
+            const originalIndex = parseInt(optionDiv.dataset.originalIndex);
+            
+            // Store the original index, not the randomized one
+            window.userAnswers[window.currentQuestionIndex] = originalIndex;
             
             // Update the status indicator immediately after answering
             updateQuestionStatusIndicator(window.currentQuestionIndex);
@@ -1068,30 +1074,40 @@ document.addEventListener('DOMContentLoaded', function() {
             optionsWrapper.appendChild(optionsContainer);
             
             // Use default options if none are provided
-            const options = ensureOptions(question);
+            const originalOptions = ensureOptions(question);
             
-            // Create each option
-            options.forEach((option, optionIndex) => {
+            // Randomize options order while keeping track of original indices
+            const { randomizedOptions, originalIndices } = randomizeOptions(originalOptions);
+            
+            // Store the original indices mapping for this question if not already stored
+            if (!window.optionsMappings) {
+                window.optionsMappings = [];
+            }
+            window.optionsMappings[index] = originalIndices;
+            
+            // Create each option with randomized order
+            randomizedOptions.forEach((option, randomIndex) => {
                 // Skip empty options
                 if (!option || (typeof option === 'string' && option.trim() === '')) {
-                    console.warn(`Skipping empty option at index ${optionIndex}`);
+                    console.warn(`Skipping empty option at randomized index ${randomIndex}`);
                     return;
                 }
                 
                 const optionDiv = document.createElement('div');
                 optionDiv.className = 'option';
-                optionDiv.dataset.index = optionIndex;
+                optionDiv.dataset.index = randomIndex;
+                optionDiv.dataset.originalIndex = originalIndices[randomIndex]; // Store original index for reference
                 optionsContainer.appendChild(optionDiv);
                 
                 const input = document.createElement('input');
                 input.type = 'radio';
-                input.id = `q${index}_option${optionIndex}`;
+                input.id = `q${index}_option${randomIndex}`;
                 input.name = `question${index}`;
-                input.value = optionIndex;
+                input.value = randomIndex;
                 optionDiv.appendChild(input);
                 
                 const label = document.createElement('label');
-                label.htmlFor = `q${index}_option${optionIndex}`;
+                label.htmlFor = `q${index}_option${randomIndex}`;
                 
                 // Handle different option formats
                 if (typeof option === 'object' && option !== null) {
@@ -1108,8 +1124,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 optionDiv.appendChild(label);
                 
                 // Check if this option was previously selected
-                if (window.userAnswers[index] === optionIndex) {
-                    input.checked = true;
+                // Map from original index to randomized index for previously answered questions
+                if (window.userAnswers[index] !== null) {
+                    // Find which randomized index corresponds to the original selected index
+                    const selectedOriginalIndex = window.userAnswers[index];
+                    // Find which randomized index now maps to that original index
+                    const randomizedSelectedIndex = originalIndices.indexOf(selectedOriginalIndex);
+                    if (randomIndex === randomizedSelectedIndex) {
+                        input.checked = true;
+                    }
                 }
                 
                 // Add click handler for the entire option div for better UX
@@ -1118,9 +1141,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     allInputs.forEach(input => input.checked = false);
                     
                     input.checked = true;
-                    window.userAnswers[index] = optionIndex;
+                    // Store the original index, not the randomized one
+                    window.userAnswers[index] = parseInt(this.dataset.originalIndex);
                     
-                    console.log(`Selected option ${optionIndex} for question ${index}`);
+                    console.log(`Selected option ${randomIndex} (original index: ${this.dataset.originalIndex}) for question ${index}`);
                 });
             });
             
@@ -1163,6 +1187,37 @@ document.addEventListener('DOMContentLoaded', function() {
             
             alert(`There was a problem loading question ${index+1}. Please try again.`);
         }
+    }
+    
+    // Function to randomize options while keeping track of original indices
+    function randomizeOptions(options) {
+        if (!Array.isArray(options) || options.length === 0) {
+            return { randomizedOptions: options, originalIndices: [] };
+        }
+        
+        // Create an array of original indices
+        const indices = Array.from({ length: options.length }, (_, i) => i);
+        
+        // Create copies of the arrays to avoid modifying the original
+        const optionsCopy = [...options];
+        const indicesCopy = [...indices];
+        
+        // Perform Fisher-Yates shuffle algorithm on both arrays in sync
+        for (let i = optionsCopy.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            
+            // Swap options
+            [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+            
+            // Swap indices in the same way
+            [indicesCopy[i], indicesCopy[j]] = [indicesCopy[j], indicesCopy[i]];
+        }
+        
+        // Return both the randomized options and the mapping of new positions to original indices
+        return {
+            randomizedOptions: optionsCopy,
+            originalIndices: indicesCopy
+        };
     }
     
     // Ensure we have valid options for the question
@@ -1320,8 +1375,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // Save the results to the progress tracking system
             saveToProgressTracker(results);
             
+            // Ensure percentile visualization is updated correctly
+            calculatePercentileRank(results.correctCount);
+            updatePercentileVisualization(Math.round(results.percentage));
+            
             // Dispatch event that exam was submitted
             document.dispatchEvent(new CustomEvent('examSubmitted', { detail: results }));
+            
+            // Update type progress bars if the function exists
+            if (typeof window.updateTypeProgressBars === 'function') {
+                setTimeout(() => {
+                    window.updateTypeProgressBars();
+                }, 500);
+            }
             
             // Set up feedback button directly after submission
             setTimeout(function() {
@@ -1763,7 +1829,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Set percentage score
             const scoreElement = document.getElementById('score');
             if (scoreElement) {
-                scoreElement.textContent = `${Math.round(results.percentage)}%`;
+                scoreElement.textContent = `${(results.percentage).toFixed(3)}`;
             }
             
             // Animate score path
@@ -1859,16 +1925,67 @@ document.addEventListener('DOMContentLoaded', function() {
             // Calculate percentile rank based on score
             calculatePercentileRank(results.correctCount);
             
+            // Update percentile visualization in the results section
+            updatePercentileVisualization(Math.round(results.percentage));
+            
             // Show the results section
             const resultsSection = document.getElementById('results');
             if (resultsSection) {
                 resultsSection.classList.remove('hidden');
             }
             
+            // Update type progress bars
+            // First call our local function
+            updateTypeProgressBars();
+            
+            // Also call the window function for backward compatibility
+            if (typeof window.updateTypeProgressBars === 'function') {
+                setTimeout(() => {
+                    window.updateTypeProgressBars();
+                }, 500);
+            }
+            
             console.log('Results display updated successfully');
         } catch (error) {
             console.error('Error updating results display:', error);
         }
+    }
+
+    // Function to update the percentile visualization in the results section
+    function updatePercentileVisualization(percentile) {
+        // Update percentile number and text
+        const percentileValue = document.getElementById('percentile-value');
+        const percentileText = document.getElementById('percentile-text');
+        if (percentileValue && percentileText) {
+            percentileValue.textContent = percentile;
+            percentileText.textContent = `${percentile}%`;
+        }
+        
+        // Update progress bar fill width
+        const progressFill = document.getElementById('percentile-progress');
+        if (progressFill) {
+            progressFill.style.width = `${percentile}%`;
+        }
+        
+        // Update the marker position based on percentile
+        const percentileMarker = document.getElementById('percentile-marker');
+        if (percentileMarker) {
+            percentileMarker.style.transform = `translateX(${percentile}%)`;
+        }
+        
+        // Also update total students and average score with default values if they're empty
+        const totalStudentsEl = document.getElementById('total-students');
+        const averageScoreEl = document.getElementById('average-score');
+        
+        if (totalStudentsEl && totalStudentsEl.textContent === '0') {
+            totalStudentsEl.textContent = '1238'; // Default value
+        }
+        
+        if (averageScoreEl && averageScoreEl.textContent === '0%') {
+            averageScoreEl.textContent = '68%'; // Default value
+        }
+        
+        console.log('Percentile visualization updated with percentile:', percentile);
     }
     
     // Function to calculate percentile rank based on score distribution
@@ -1931,6 +2048,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 console.log(`User score: ${userScore}, Adjusted score: ${finalScore}, Percentile: ${roundedPercentile}%, Rank: ${Math.round(totalStudents - studentsBelow) + 1} of ${totalStudents}`);
                 
+                // Update percentile value in the results display
+                const percentileValueElement = document.getElementById('percentile-value');
+                if (percentileValueElement) {
+                    percentileValueElement.textContent = roundedPercentile + '%';
+                }
+                
                 // Add percentile and rank to the results display
                 displayPercentileRank(roundedPercentile, Math.round(totalStudents - studentsBelow) + 1, totalStudents, userScore, finalScore);
             })
@@ -1938,13 +2061,61 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error calculating percentile rank:', error);
                 // Show a notification about the error
                 showNotification('Could not calculate percentile rank: ' + error.message, 'warning');
+                
+                // Fallback to a default percentile calculation if score.json can't be loaded
+                const fallbackPercentile = calculateFallbackPercentile(userScore);
+                displayPercentileRank(fallbackPercentile, '-', '-', userScore, Math.min(userScore * 1.25, 100));
             });
+    }
+
+    // Fallback percentile calculation if score.json can't be loaded
+    function calculateFallbackPercentile(score) {
+        // Simple formula to estimate percentile based on score
+        // This is just an approximation
+        let percentile;
+        if (score >= 90) {
+            percentile = 95 + (score - 90) / 2; // 95-100%
+        } else if (score >= 80) {
+            percentile = 85 + (score - 80); // 85-95%
+        } else if (score >= 70) {
+            percentile = 70 + (score - 70) * 1.5; // 70-85%
+        } else if (score >= 60) {
+            percentile = 50 + (score - 60) * 2; // 50-70%
+        } else if (score >= 50) {
+            percentile = 30 + (score - 50) * 2; // 30-50%
+        } else if (score >= 40) {
+            percentile = 15 + (score - 40) * 1.5; // 15-30%
+        } else if (score >= 30) {
+            percentile = 5 + (score - 30); // 5-15%
+        } else {
+            percentile = score / 6; // 0-5%
+        }
+        
+        // Cap at 99.9%
+        percentile = Math.min(percentile, 99.9);
+        
+        return percentile.toFixed(1);
     }
     
     // Function to display percentile rank in the results section
     function displayPercentileRank(percentile, rank, totalStudents, originalScore, adjustedScore) {
         try {
             console.log('Displaying percentile rank:', percentile);
+            
+            // Update percentile visualization in the results section
+            updatePercentileVisualization(percentile);
+            
+            // Update the total students and rank information
+            const totalStudentsEl = document.getElementById('total-students');
+            if (totalStudentsEl) {
+                totalStudentsEl.textContent = totalStudents;
+            }
+            
+            // Update the percentile text with correct ranking information
+            const percentileText = document.getElementById('percentile-text');
+            if (percentileText) {
+                percentileText.textContent = `${(totalStudents-(percentile*totalStudents)).toFixed(0)}`;
+            }
             
             // Find the result-summary container and its parent
             const resultSummary = document.querySelector('.result-summary');
@@ -1960,62 +2131,47 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
+            // Check if percentile container already exists and remove it
+            const existingContainer = document.querySelector('.percentile-container');
+            if (existingContainer) {
+                existingContainer.remove();
+            }
+            
             // Create percentile visualization container
             const percentileContainer = document.createElement('div');
             percentileContainer.className = 'percentile-container';
             percentileContainer.style.marginBottom = '25px'; // Add some spacing below
             
-            // Add title and description with two-column layout
+            // Add the HTML content for the percentile visualization
             percentileContainer.innerHTML = `
-                <div class="percentile-flex-container">
-                    <!-- Left column - Score Summary -->
-                    <div class="percentile-left-column">
-                        <h3 class="score-summary-title">คะแนนของคุณ</h3>
-                        <div class="score-summary">
-                            <div class="score-summary-item">
-                                <span class="summary-value highlighted">${adjustedScore.toFixed(3)}</span>
-                            </div>
-                            <div class="stat-item">
-                                <p id="percentile-description">ควรปรับปรุงอย่างเร่งด่วน</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Middle Separator -->
-                    <div class="percentile-separator"></div>
-                    
-                    <!-- Right column - Percentile Information -->
-                    <div class="percentile-right-column">
-                        <h3 class="percentile-title">เปอร์เซ็นไทล์ของคุณ</h3>
-                        <div class="percentile-summary">
-                            <div class="percentile-number">≈ ${percentile}%</div>
-                            <p class="percentile-description">คะแนนของคุณสูงกว่า <strong>${percentile}%</strong> ของผู้ทดสอบทั้งหมด</p>
-                        </div>
+                <div class="percentile-header">
+                    <h4>เปอร์เซ็นไทล์คะแนนของคุณ</h4>
+                    <div class="percentile-details">
+                        <span class="percentile-value-display">${percentile}%</span>
+                        <span class="rank-display">อันดับ ${rank} จากผู้สอบทั้งหมด ${totalStudents} คน</span>
                     </div>
                 </div>
-                
-                <div class="percentile-visualization">
-                    <div class="percentile-bar">
+                <div class="percentile-bar">
+                    <div class="percentile-track">
                         <div class="percentile-fill" style="width: 0%"></div>
-                        <div class="percentile-marker" style="left: ${percentile}%"></div>
                     </div>
-                    <div class="percentile-labels">
-                        <span>0%</span>
-                        <span>25%</span>
-                        <span>50%</span>
-                        <span>75%</span>
-                        <span>100%</span>
+                    <div class="percentile-markers">
+                        <span class="marker" style="left: 0%">0%</span>
+                        <span class="marker" style="left: 25%">25%</span>
+                        <span class="marker" style="left: 50%">50%</span>
+                        <span class="marker" style="left: 75%">75%</span>
+                        <span class="marker" style="left: 100%">100%</span>
                     </div>
                 </div>
-                <div class="rank-info">
-                    <span>อันดับที่: <strong>≈ ${rank}</strong> จาก ${totalStudents.toLocaleString()} คน</span>
-                    <span class="data-source">*อ้างอิงจากข้อมูลการสอบ A-Level ภาษาอังกฤษ ปี 68</span>
+                <div class="score-adjustment-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>คะแนนดิบ: ${originalScore} (ปรับเป็น ${adjustedScore.toFixed(1)} สำหรับการคำนวณเปอร์เซ็นไทล์)</span>
                 </div>
             `;
             
-            // Insert the percentile container BEFORE the result-summary
+            // Insert the percentile container before the result-summary
             resultsSection.insertBefore(percentileContainer, resultSummary);
-
+            
             // Add styles for percentile visualization
             addPercentileStyles();
             
@@ -2042,85 +2198,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
                 
-                // Add the recommendation after the percentile container
+                // Add the recommendation to the percentile container
                 percentileContainer.appendChild(tutorRecommendation);
-                
-                // Add styles for the tutor recommendation
-                const styleElement = document.createElement('style');
-                styleElement.id = 'tutor-recommendation-styles';
-                styleElement.textContent = `
-                    .tutor-recommendation {
-                        margin-top: 20px;
-                        padding: 15px;
-                        border-radius: 8px;
-                        background-color: #fff8e1;
-                        border-left: 4px solid #ffb300;
-                    }
-                    
-                    .recommendation-alert {
-                        display: flex;
-                        align-items: flex-start;
-                    }
-                    
-                    .recommendation-alert i {
-                        font-size: 24px;
-                        color: #ffb300;
-                        margin-right: 15px;
-                        margin-top: 5px;
-                    }
-                    
-                    .recommendation-content {
-                        flex: 1;
-                    }
-                    
-                    .recommendation-content h4 {
-                        margin: 0 0 8px 0;
-                        color: #e65100;
-                        font-size: 16px;
-                    }
-                    
-                    .recommendation-content p {
-                        margin: 0 0 12px 0;
-                        color: #5d4037;
-                        font-size: 14px;
-                    }
-                    
-                    .tutor-link {
-                        display: inline-block;
-                        background-color: #ff9800;
-                        color: white;
-                        padding: 8px 16px;
-                        border-radius: 4px;
-                        text-decoration: none;
-                        font-weight: 500;
-                        transition: background-color 0.2s ease;
-                    }
-                    
-                    .tutor-link:hover {
-                        background-color: #f57c00;
-                        text-decoration: none;
-                    }
-                    
-                    @media (max-width: 768px) {
-                        .recommendation-alert {
-                            flex-direction: column;
-                            align-items: center;
-                            text-align: center;
-                        }
-                        
-                        .recommendation-alert i {
-                            margin-right: 0;
-                            margin-bottom: 10px;
-                        }
-                    }
-                `;
-                
-                if (!document.getElementById('tutor-recommendation-styles')) {
-                    document.head.appendChild(styleElement);
-                }
             }
             
-            console.log('Percentile visualization added successfully at the top of result-summary');
+            console.log('Percentile visualization added successfully');
         } catch (error) {
             console.error('Error displaying percentile rank:', error);
         }
@@ -2132,255 +2214,173 @@ document.addEventListener('DOMContentLoaded', function() {
         if (document.getElementById('percentile-styles')) return;
         
         const styleElement = document.createElement('style');
-        styleElement.id = 'percentile-styles';
+        styleElement.id = 'percentile-styles'; 
         
         styleElement.textContent = `
             .percentile-container {
                 background-color: #f8f9fa;
                 border-radius: 10px;
                 padding: 20px;
-                margin: 25px 0;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                margin-top: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             }
             
-            .percentile-flex-container {
+            .percentile-header {
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-start;
-                margin-bottom: 20px;
-            }
-            
-            .percentile-left-column {
-                flex: 1;
-                padding-right: 15px;
-                text-align: center;
-            }
-            
-            .percentile-separator {
-                width: 1px;
-                align-self: stretch;
-                background-color: #d1d5db;
-                margin: 0 20px;
-            }
-            
-            .percentile-right-column {
-                flex: 1;
-                padding-left: 15px;
-            }
-            
-            .score-summary-title {
-                color: #39D455;
-                font-size: 1.3rem;
+                align-items: center;
                 margin-bottom: 15px;
+                flex-wrap: wrap;
             }
             
-            .score-summary {
-                margin-bottom: 20px;
+            .percentile-header h4 {
+                margin: 0;
+                font-size: 18px;
+                color: #333;
+                font-weight: 600;
             }
             
-            .score-summary-item {
-                margin-bottom: 8px;
-                font-size: 1rem;
+            .percentile-details {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                flex-wrap: wrap;
             }
             
-            .summary-label {
-                color: #4b5563;
-                margin-right: 8px;
-                font-weight: 500;
-            }
-            
-            .summary-value {
-                font-weight: bold;
-                color: #1f2937;
-            }
-            
-            .summary-value.highlighted {
-                color: #39D455;
-                font-size: 2.5rem;
-            }
-            
-            .adjustment-note {
-                font-size: 0.85rem;
-                color: #6b7280;
-                font-style: italic;
-                margin-top: 5px;
-            }
-            
-            .percentile-title {
-                color: #3b82f6;
-                font-size: 1.3rem;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-            
-            .percentile-summary {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            
-            .percentile-number {
-                font-size: 2.5rem;
-                font-weight: bold;
+            .percentile-value-display {
+                font-size: 24px;
+                font-weight: 700;
                 color: #2563eb;
-                margin-bottom: 5px;
             }
             
-            .percentile-description {
-                font-size: 1rem;
-                color: #4b5563;
-                margin-bottom: 15px;
-            }
-            
-            .adjustment-arrow {
+            .rank-display {
+                font-size: 14px;
                 color: #64748b;
             }
             
-            .percentile-visualization {
-                margin: 25px 0;
-                padding: 0 10px;
-            }
-            
             .percentile-bar {
-                height: 25px;
-                background-color: #e5e7eb;
-                border-radius: 25px;
+                margin-bottom: 20px;
                 position: relative;
-                overflow: visible;
-                margin-bottom: 10px;
+                padding-bottom: 25px;
             }
             
-            .percentile-bar::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
-                border-radius: 25px;
+            .percentile-track {
+                height: 12px;
+                background-color: #e2e8f0;
+                border-radius: 6px;
+                overflow: hidden;
             }
             
             .percentile-fill {
                 height: 100%;
-                background: linear-gradient(90deg, #3b82f6, #2563eb);
-                width: 0%;
-                transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1);
-                border-radius: 25px;
+                background: linear-gradient(to right, #3b82f6, #2563eb);
+                border-radius: 6px;
+                transition: width 1.5s ease-in-out;
             }
             
-            .percentile-marker {
+            .percentile-markers {
                 position: absolute;
-                top: -20px;
-                width: 4px;
-                height: 0px;
-                background-color: #2563eb;
-                transform: translateX(-50%);
-                transition: left 1.5s cubic-bezier(0.23, 1, 0.32, 1);
-                z-index: 10;
-            }
-            
-            .percentile-marker::after {
-                content: 'คุณ';
-                position: absolute;
-                top: -25px;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: #2563eb;
-                color: white;
-                padding: 4px 8px;
-                border-radius: 4px;
-                font-size: 12px;
-                font-weight: bold;
-                white-space: nowrap;
-            }
-            
-            .percentile-marker::before {
-                content: '';
-                position: absolute;
-                width: 12px;
-                height: 12px;
-                background-color: #2563eb;
-                border: 2px solid white;
-                border-radius: 50%;
-                top: 25px;
-                left: 50%;
-                transform: translateX(-50%);
-                box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.3);
-            }
-            
-            .percentile-labels {
+                bottom: 0;
+                left: 0;
+                right: 0;
                 display: flex;
                 justify-content: space-between;
-                font-size: 0.85rem;
-                color: #6b7280;
-                padding: 5px 0;
             }
             
-            .percentile-labels span {
-                position: relative;
-            }
-            
-            .percentile-labels span::before {
-                content: '';
+            .marker {
                 position: absolute;
-                top: -10px;
-                left: 50%;
+                font-size: 12px;
+                color: #64748b;
                 transform: translateX(-50%);
-                height: 5px;
-                width: 1px;
-                background-color: #9ca3af;
             }
             
-            .rank-info {
-                text-align: center;
-                font-size: 0.9rem;
-                color: #4b5563;
+            .score-adjustment-note {
+                font-size: 13px;
+                color: #64748b;
                 display: flex;
-                flex-direction: column;
-                gap: 5px;
+                align-items: center;
+                gap: 8px;
+                margin-top: 5px;
             }
             
-            .data-source {
-                font-size: 0.8rem;
-                color: #9ca3af;
-                font-style: italic;
+            .score-adjustment-note i {
+                color: #3b82f6;
+            }
+            
+            /* Tutor recommendation styles */
+            .tutor-recommendation {
+                margin-top: 20px;
+                padding: 15px;
+                border-radius: 8px;
+                background-color: #fff8e1;
+                border-left: 4px solid #ffb300;
+            }
+            
+            .recommendation-alert {
+                display: flex;
+                align-items: flex-start;
+            }
+            
+            .recommendation-alert i {
+                font-size: 24px;
+                color: #ffb300;
+                margin-right: 15px;
+                margin-top: 5px;
+            }
+            
+            .recommendation-content {
+                flex: 1;
+            }
+            
+            .recommendation-content h4 {
+                margin: 0 0 8px 0;
+                color: #e65100;
+                font-size: 16px;
+            }
+            
+            .recommendation-content p {
+                margin: 0 0 12px 0;
+                color: #5d4037;
+                font-size: 14px;
+            }
+            
+            .tutor-link {
+                display: inline-block;
+                background-color: #ff9800;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 4px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: background-color 0.2s ease;
+            }
+            
+            .tutor-link:hover {
+                background-color: #f57c00;
+                text-decoration: none;
             }
             
             @media (max-width: 768px) {
-                .percentile-flex-container {
+                .percentile-header {
                     flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
                 }
                 
-                .percentile-left-column,
-                .percentile-right-column {
+                .percentile-details {
                     width: 100%;
-                    padding: 0;
+                    justify-content: space-between;
                 }
                 
-                .percentile-separator {
-                    width: 100%;
-                    height: 1px;
-                    margin: 15px 0;
-                }
-                
-                .percentile-title,
-                .percentile-summary {
+                .recommendation-alert {
+                    flex-direction: column;
+                    align-items: center;
                     text-align: center;
                 }
                 
-                .score-summary-title {
+                .recommendation-alert i {
+                    margin-right: 0;
                     margin-bottom: 10px;
-                }
-            }
-            
-            @media (max-width: 640px) {
-                .percentile-number {
-                    font-size: 2rem;
-                }
-                
-                .percentile-marker::after {
-                    font-size: 10px;
-                    padding: 3px 6px;
                 }
             }
         `;
@@ -2461,19 +2461,30 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Updating type scores with:', result.typeScores);
             
             const typeScores = result.typeScores || {};
-            const typeContainer = document.querySelector('.type-breakdown-list');
             
-            if (!typeContainer) {
-                console.error('Type breakdown list container not found');
-                return;
-            }
+            // Define mapping between type keys and display IDs
+            const typeMapping = {
+                'short_conversation': 'short-conversation',
+                'long_conversation': 'long-conversation',
+                'advertisement': 'advertisement',
+                'product': 'product',
+                'news_report': 'news-report',
+                'article': 'article',
+                'text_completion': 'text-completion',
+                'paragraph': 'paragraph'
+            };
             
-            // Update all type scores in the breakdown list
+            // Update all type scores in the breakdown grid
             for (const [type, score] of Object.entries(typeScores)) {
-                // Convert type to element ID format (replace underscore with hyphen)
-                const typeId = type.replace(/_/g, '-');
+                // Convert type to element ID format using the mapping
+                const typeId = typeMapping[type] || type.replace(/_/g, '-');
                 updateTypeScoreElement(typeId, score);
             }
+            
+            // Update progress bars after a short delay to ensure scores are set
+            setTimeout(() => {
+                updateTypeProgressBars();
+            }, 200);
             
             console.log('Type scores updated successfully');
         } catch (error) {
@@ -2496,6 +2507,13 @@ document.addEventListener('DOMContentLoaded', function() {
             console.warn(`Score element for ${typeId} not found in DOM`);
         }
         
+        // Update progress bar - will be fully handled by updateTypeProgressBars
+        const progressBar = document.getElementById(`${typeId}-progress`);
+        if (progressBar) {
+            // Store the percentage as a data attribute for later use
+            progressBar.dataset.percentage = typeScore.percentage;
+        }
+        
         // Animate the score path (only for skill scores, not type breakdown)
         const pathElement = document.getElementById(`${typeId}-score-path`);
         if (pathElement) {
@@ -2514,14 +2532,88 @@ document.addEventListener('DOMContentLoaded', function() {
             pathElement.style.strokeDashoffset = offset;
         }
     }
+    
+    // Function to update all type progress bars based on scores
+    function updateTypeProgressBars() {
+        try {
+            console.log('Updating type progress bars');
+            
+            // Get all progress bars in the type breakdown section
+            const progressBars = document.querySelectorAll('.type-progress-bar');
+            
+            progressBars.forEach(progressBar => {
+                const typeId = progressBar.id.replace('-progress', '');
+                const scoreElement = document.getElementById(`${typeId}-score`);
+                
+                if (scoreElement) {
+                    // Parse the score text (format: "correct/total")
+                    const scoreText = scoreElement.textContent;
+                    const [correct, total] = scoreText.split('/').map(num => parseInt(num.trim(), 10));
+                    
+                    // Calculate percentage if both numbers are valid
+                    if (!isNaN(correct) && !isNaN(total) && total > 0) {
+                        const percentage = (correct / total) * 100;
+                        
+                        // Animate the width
+                        progressBar.style.transition = 'width 1s ease-out';
+                        progressBar.style.width = `${percentage}%`;
+                        
+                        // Set color based on percentage
+                        if (percentage < 40) {
+                            progressBar.style.backgroundColor = '#f44336'; // Red for low scores
+                        } else if (percentage < 70) {
+                            progressBar.style.backgroundColor = '#ff9800'; // Orange for medium scores
+                        } else {
+                            progressBar.style.backgroundColor = '#4caf50'; // Green for high scores
+                        }
+                    } else {
+                        console.warn(`Invalid score format for ${typeId}: ${scoreText}`);
+                    }
+                }
+            });
+            
+            console.log('Type progress bars updated successfully');
+        } catch (error) {
+            console.error('Error updating type progress bars:', error);
+        }
+    }
 
+    // Make the function available to window for external use
+    window.updateTypeProgressBars = updateTypeProgressBars;
+    
+    // Add event listener to initialize progress bars when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add a mutation observer to watch for changes in the results section
+        const resultsSection = document.getElementById('results');
+        
+        if (resultsSection) {
+            // Wait a bit after DOMContentLoaded to update progress bars in case content is dynamically added
+            setTimeout(updateTypeProgressBars, 500);
+            
+            // Setup mutation observer to detect when results are shown
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        // If the results section is no longer hidden, update the progress bars
+                        if (!resultsSection.classList.contains('hidden')) {
+                            setTimeout(updateTypeProgressBars, 300);
+                        }
+                    }
+                });
+            });
+            
+            // Start observing the results section for class changes
+            observer.observe(resultsSection, { attributes: true });
+        }
+    });
+    
     // Format type name for display
     function formatTypeName(type) {
         // Replace underscores with spaces and capitalize words
         return type.replace(/_/g, ' ')
             .replace(/\b\w/g, letter => letter.toUpperCase());
     }
-
+    
     // Format subtitle based on question type
     function addFormattedSubtitle(container, subtitle, type) {
         if (!subtitle || !container) return;
