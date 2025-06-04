@@ -362,7 +362,10 @@
         let filtered = [...examHistory];
         
         // Filter by exam type
-        if (examType !== 'all') {
+        if (examType === 'all') {
+            // For "All Exam Types," exclude mock exams (combined_exam and Visual)
+            filtered = filtered.filter(exam => exam.examType !== 'combined_exam');
+        } else {
             filtered = filtered.filter(exam => exam.examType === examType);
         }
         
@@ -764,43 +767,75 @@
             skillsRadarChartInstance.destroy();
         }
         
+        // Add height style to the canvas container to make the chart bigger
+        const chartContainer = document.querySelector('.skills-chart-container');
+        if (chartContainer) {
+            chartContainer.style.height = '350px'; // Increase from default height
+            chartContainer.style.width = '400px';
+            chartContainer.style.maxWidth = '600px'; // Add a max-width to ensure it's not too wide
+            chartContainer.style.margin = '0 auto 30px'; // Center the chart with margin
+        }
+        
+        // Convert to pie chart
         skillsRadarChartInstance = new Chart(skillsRadarChart, {
-            type: 'radar',
+            type: 'pie',
             data: {
                 labels: ['Reading', 'Writing', 'Speaking'],
                 datasets: [{
-                    label: 'Skill Performance',
                     data: [reading, writing, speaking],
-                    backgroundColor: 'rgba(76, 175, 80, 0.2)',
-                    borderColor: 'rgba(76, 175, 80, 0.7)',
-                    pointBackgroundColor: 'rgba(76, 175, 80, 1)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgba(76, 175, 80, 1)'
+                    backgroundColor: [
+                        'rgba(76, 175, 80, 0.7)',  // Green for Reading
+                        'rgba(33, 150, 243, 0.7)', // Blue for Writing
+                        'rgba(255, 152, 0, 0.7)'   // Orange for Speaking
+                    ],
+                    borderColor: [
+                        'rgba(76, 175, 80, 1)',
+                        'rgba(33, 150, 243, 1)',
+                        'rgba(255, 152, 0, 1)'
+                    ],
+                    borderWidth: 2,
+                    hoverOffset: 15
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                scales: {
-                    r: {
-                        angleLines: {
-                            display: true
-                        },
-                        suggestedMin: 0,
-                        suggestedMax: 100
-                    }
-                },
                 plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            font: {
+                                size: 16
+                            },
+                            padding: 20
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const label = context.label || '';
+                                const value = context.raw || 0;
+                                return `${label}: ${value}%`;
+                            }
+                        }
+                    },
                     datalabels: {
-                        display: false
+                        formatter: (value) => {
+                            return value + '%';
+                        },
+                        color: '#fff',
+                        font: {
+                            weight: 'bold',
+                            size: 16
+                        },
+                        display: true
                     }
                 }
             }
         });
     }
 
-    // Update the exam type chart
+    // Update the exam type chartxz 
     function updateExamTypeChart(data) {
         if (examTypeChartInstance) {
             examTypeChartInstance.destroy();
@@ -811,7 +846,7 @@
         
         data.forEach(exam => {
             // Skip combined_exam type
-            if (exam.examType === 'combined_exam') {
+            if (exam.examType === 'combined_exam' || exam.examType === 'Visual') {
                 return;
             }
             
@@ -826,17 +861,47 @@
             examTypeGroups[exam.examType].count++;
         });
         
-        // Calculate average score per exam type
+        // Define the desired order of exam types
+        const orderedExamTypes = [
+            'Short_conversation',
+            'Long_Conversation',
+            'Advertisement',
+            'Product',
+            'News_report',
+            'Article',
+            'Text_completion',
+            'Paragraph'
+        ];
+        
+        // Create ordered arrays for labels, averageScores, and counts
         const labels = [];
         const averageScores = [];
         const counts = [];
         
+        // Process exam types in the specified order
+        orderedExamTypes.forEach(examType => {
+            // Only include types that exist in the data
+            if (examTypeGroups[examType]) {
+                labels.push(formatExamType(examType));
+                
+                const avg = Math.round(
+                    examTypeGroups[examType].scores.reduce((a, b) => a + b, 0) / 
+                    examTypeGroups[examType].count
+                );
+                averageScores.push(avg);
+                counts.push(examTypeGroups[examType].count);
+            }
+        });
+        
+        // If we have any exam types not in our ordered list, add them at the end
         for (const [examType, data] of Object.entries(examTypeGroups)) {
-            labels.push(formatExamType(examType));
-            
-            const avg = Math.round(data.scores.reduce((a, b) => a + b, 0) / data.count);
-            averageScores.push(avg);
-            counts.push(data.count);
+            if (!orderedExamTypes.includes(examType)) {
+                labels.push(formatExamType(examType));
+                
+                const avg = Math.round(data.scores.reduce((a, b) => a + b, 0) / data.count);
+                averageScores.push(avg);
+                counts.push(data.count);
+            }
         }
         
         // Create the chart
@@ -891,245 +956,310 @@
             return;
         }
         
-        // Calculate trend
-        const recentExams = [...data].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
-        
-        if (recentExams.length >= 2) {
-            const firstScore = recentExams[recentExams.length - 1].score;
-            const lastScore = recentExams[0].score;
+        try {
+            // Calculate trend
+            const recentExams = [...data].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
             
-            if (lastScore > firstScore) {
-                trendTextElement.textContent = `Your scores have improved by ${lastScore - firstScore}% recently!`;
-                trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #4CAF50';
-            } else if (lastScore < firstScore) {
-                trendTextElement.textContent = `Your scores have decreased by ${firstScore - lastScore}% recently.`;
-                trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #F44336';
+            if (recentExams.length >= 2) {
+                const firstScore = recentExams[recentExams.length - 1].score;
+                const lastScore = recentExams[0].score;
+                
+                if (lastScore > firstScore) {
+                    trendTextElement.textContent = `Your scores have improved by ${lastScore - firstScore}% recently!`;
+                    trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #4CAF50';
+                } else if (lastScore < firstScore) {
+                    trendTextElement.textContent = `Your scores have decreased by ${firstScore - lastScore}% recently.`;
+                    trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #F44336';
+                } else {
+                    trendTextElement.textContent = 'Your scores have remained stable recently.';
+                    trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #FF9800';
+                }
             } else {
-                trendTextElement.textContent = 'Your scores have remained stable recently.';
-                trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #FF9800';
+                trendTextElement.textContent = 'Take more exams to see your score trend.';
             }
-        } else {
-            trendTextElement.textContent = 'Take more exams to see your score trend.';
+            
+            // Calculate strongest and weakest skills
+            const skillAverages = {
+                reading: 0,
+                writing: 0,
+                speaking: 0
+            };
+            
+            // Calculate skill averages
+            const totalExams = data.length;
+            const readingTotal = data.reduce((sum, exam) => sum + (exam.skills && exam.skills.reading ? exam.skills.reading : 0), 0);
+            const writingTotal = data.reduce((sum, exam) => sum + (exam.skills && exam.skills.writing ? exam.skills.writing : 0), 0);
+            const speakingTotal = data.reduce((sum, exam) => sum + (exam.skills && exam.skills.speaking ? exam.skills.speaking : 0), 0);
+            
+            skillAverages.reading = Math.round(readingTotal / totalExams);
+            skillAverages.writing = Math.round(writingTotal / totalExams);
+            skillAverages.speaking = Math.round(speakingTotal / totalExams);
+            
+            // Find strongest skill
+            const strongestSkill = Object.entries(skillAverages).reduce((a, b) => a[1] > b[1] ? a : b);
+            
+            // Find weakest skill
+            const weakestSkill = Object.entries(skillAverages).reduce((a, b) => a[1] < b[1] ? a : b);
+            
+            // Update insights
+            strongestSkillTextElement.textContent = `${capitalizeFirstLetter(strongestSkill[0])} is your strongest skill with an average of ${strongestSkill[1]}%.`;
+            weakestSkillTextElement.textContent = `Focus on improving your ${capitalizeFirstLetter(weakestSkill[0])} skills (currently ${weakestSkill[1]}%).`;
+            
+            // Calculate consistency
+            const now = new Date();
+            const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
+            const examsInLast7Days = data.filter(exam => new Date(exam.date) >= sevenDaysAgo).length;
+            
+            if (examsInLast7Days > 0) {
+                consistencyTextElement.textContent = `You've taken ${examsInLast7Days} exam${examsInLast7Days === 1 ? '' : 's'} in the last 7 days.`;
+            } else {
+                consistencyTextElement.textContent = 'You haven\'t taken any exams in the last 7 days.';
+            }
+            
+            // Generate recommendations
+            generateRecommendations(data, weakestSkill[0]);
+            
+            // Update time analysis chart
+            updateTimeAnalysisChart(data);
+        } catch (error) {
+            console.error('Error updating insights:', error);
+            
+            // Provide fallback content
+            trendTextElement.textContent = 'Error analyzing your score trend.';
+            strongestSkillTextElement.textContent = 'Error analyzing your skill strengths.';
+            weakestSkillTextElement.textContent = 'Error analyzing your skill weaknesses.';
+            consistencyTextElement.textContent = 'Error analyzing your exam consistency.';
+            
+            // Add basic recommendations and empty chart as fallback
+            recommendationsListElement.innerHTML = `
+                <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="recommendation-content">
+                        <h4>Error Generating Recommendations</h4>
+                        <p>We encountered an error analyzing your data. Please try refreshing the page.</p>
+                    </div>
+                </div>
+            `;
+            
+            // Create a fallback chart if needed
+            if (timeAnalysisChartInstance) timeAnalysisChartInstance.destroy();
         }
-        
-        // Calculate strongest and weakest skills
-        const skillAverages = {
-            reading: 0,
-            writing: 0,
-            speaking: 0
-        };
-        
-        // Calculate skill averages
-        const totalExams = data.length;
-        const readingTotal = data.reduce((sum, exam) => sum + exam.skills.reading, 0);
-        const writingTotal = data.reduce((sum, exam) => sum + exam.skills.writing, 0);
-        const speakingTotal = data.reduce((sum, exam) => sum + exam.skills.speaking, 0);
-        
-        skillAverages.reading = Math.round(readingTotal / totalExams);
-        skillAverages.writing = Math.round(writingTotal / totalExams);
-        skillAverages.speaking = Math.round(speakingTotal / totalExams);
-        
-        // Find strongest skill
-        const strongestSkill = Object.entries(skillAverages).reduce((a, b) => a[1] > b[1] ? a : b);
-        
-        // Find weakest skill
-        const weakestSkill = Object.entries(skillAverages).reduce((a, b) => a[1] < b[1] ? a : b);
-        
-        // Update insights
-        strongestSkillTextElement.textContent = `${capitalizeFirstLetter(strongestSkill[0])} is your strongest skill with an average of ${strongestSkill[1]}%.`;
-        weakestSkillTextElement.textContent = `Focus on improving your ${capitalizeFirstLetter(weakestSkill[0])} skills (currently ${weakestSkill[1]}%).`;
-        
-        // Calculate consistency
-        const now = new Date();
-        const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
-        const examsInLast7Days = data.filter(exam => new Date(exam.date) >= sevenDaysAgo).length;
-        
-        if (examsInLast7Days > 0) {
-            consistencyTextElement.textContent = `You've taken ${examsInLast7Days} exam${examsInLast7Days === 1 ? '' : 's'} in the last 7 days.`;
-        } else {
-            consistencyTextElement.textContent = 'You haven\'t taken any exams in the last 7 days.';
-        }
-        
-        // Generate recommendations
-        generateRecommendations(data, weakestSkill[0]);
-        
-        // Update time analysis chart
-        updateTimeAnalysisChart(data);
     }
 
     // Generate personalized recommendations
     function generateRecommendations(data, weakestSkill) {
-        const recommendations = [];
-        
-        // Recommendation based on weakest skill
-        let skillRecommendation = '';
-        let skillExamType = '';
-        
-        switch(weakestSkill) {
-            case 'reading':
-                skillRecommendation = 'Practice reading comprehension with Article and News Report exams';
-                skillExamType = 'Article';
-                break;
-            case 'writing':
-                skillRecommendation = 'Improve your writing skills with Text Completion exercises';
-                skillExamType = 'Text_completion';
-                break;
-            case 'speaking':
-                skillRecommendation = 'Work on your speaking and listening with Conversation exercises';
-                skillExamType = 'Short_conversation';
-                break;
-        }
-        
-        recommendations.push({
-            title: `Improve ${capitalizeFirstLetter(weakestSkill)}`,
-            text: skillRecommendation,
-            action: `Practice Now`,
-            link: `${skillExamType}.html`
-        });
-        
-        // Recommendation based on consistency
-        const now = new Date();
-        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
-        const recentExams = data.filter(exam => new Date(exam.date) >= threeDaysAgo);
-        
-        if (recentExams.length === 0) {
+        try {
+            const recommendations = [];
+            
+            // Check if recommendationsListElement exists before proceeding
+            if (!recommendationsListElement) {
+                console.error('Recommendations list element not found in the DOM');
+                return;
+            }
+            
+            // Recommendation based on weakest skill
+            let skillRecommendation = '';
+            let skillExamType = '';
+            
+            switch(weakestSkill) {
+                case 'reading':
+                    skillRecommendation = 'Practice reading comprehension with Article and News Report exams';
+                    skillExamType = 'Article';
+                    break;
+                case 'writing':
+                    skillRecommendation = 'Improve your writing skills with Text Completion exercises';
+                    skillExamType = 'Text_completion';
+                    break;
+                case 'speaking':
+                    skillRecommendation = 'Work on your speaking and listening with Conversation exercises';
+                    skillExamType = 'Short_conversation';
+                    break;
+            }
+            
             recommendations.push({
-                title: 'Maintain Consistency',
-                text: 'Try to practice regularly, aim for at least 3 exams per week',
-                action: 'View Exams',
-                link: 'index.html#exam-list'
+                title: `Improve ${capitalizeFirstLetter(weakestSkill)}`,
+                text: skillRecommendation,
+                action: `Practice Now`,
+                link: `${skillExamType}.html`
             });
-        }
-        
-        // Find most successful exam type
-        if (data.length >= 3) {
-            const examTypeScores = {};
             
-            // Group by exam type and calculate average scores
-            data.forEach(exam => {
-                if (!examTypeScores[exam.examType]) {
-                    examTypeScores[exam.examType] = {
-                        total: 0,
-                        count: 0,
-                        average: 0
-                    };
-                }
+            // Recommendation based on consistency
+            const now = new Date();
+            const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+            const recentExams = data.filter(exam => new Date(exam.date) >= threeDaysAgo);
+            
+            if (recentExams.length === 0) {
+                recommendations.push({
+                    title: 'Maintain Consistency',
+                    text: 'Try to practice regularly, aim for at least 3 exams per week',
+                    action: 'View Exams',
+                    link: 'index.html#exam-list'
+                });
+            }
+            
+            // Find most successful exam type
+            if (data.length >= 3) {
+                const examTypeScores = {};
                 
-                examTypeScores[exam.examType].total += exam.score;
-                examTypeScores[exam.examType].count++;
-            });
-            
-            // Calculate averages
-            Object.keys(examTypeScores).forEach(type => {
-                if (examTypeScores[type].count > 0) {
-                    examTypeScores[type].average = Math.round(examTypeScores[type].total / examTypeScores[type].count);
-                }
-            });
-            
-            // Find the best and worst exam types
-            let bestExamType = null;
-            let bestScore = 0;
-            let worstExamType = null;
-            let worstScore = 100;
-            
-            Object.keys(examTypeScores).forEach(type => {
-                if (examTypeScores[type].count >= 2) { // At least 2 exams of this type
-                    if (examTypeScores[type].average > bestScore) {
-                        bestScore = examTypeScores[type].average;
-                        bestExamType = type;
+                // Group by exam type and calculate average scores
+                data.forEach(exam => {
+                    if (!exam.examType) return; // Skip entries without examType
+                    
+                    if (!examTypeScores[exam.examType]) {
+                        examTypeScores[exam.examType] = {
+                            total: 0,
+                            count: 0,
+                            average: 0
+                        };
                     }
                     
-                    if (examTypeScores[type].average < worstScore) {
-                        worstScore = examTypeScores[type].average;
-                        worstExamType = type;
+                    examTypeScores[exam.examType].total += exam.score;
+                    examTypeScores[exam.examType].count++;
+                });
+                
+                // Calculate averages
+                Object.keys(examTypeScores).forEach(type => {
+                    if (examTypeScores[type].count > 0) {
+                        examTypeScores[type].average = Math.round(examTypeScores[type].total / examTypeScores[type].count);
+                    }
+                });
+                
+                // Find the best and worst exam types
+                let bestExamType = null;
+                let bestScore = 0;
+                let worstExamType = null;
+                let worstScore = 100;
+                
+                Object.keys(examTypeScores).forEach(type => {
+                    if (examTypeScores[type].count >= 2) { // At least 2 exams of this type
+                        if (examTypeScores[type].average > bestScore) {
+                            bestScore = examTypeScores[type].average;
+                            bestExamType = type;
+                        }
+                        
+                        if (examTypeScores[type].average < worstScore) {
+                            worstScore = examTypeScores[type].average;
+                            worstExamType = type;
+                        }
+                    }
+                });
+                
+                // Add recommendations based on strengths and weaknesses
+                if (bestExamType && bestScore >= 70) {
+                    recommendations.push({
+                        title: 'Build on Your Strengths',
+                        text: `You're doing well in ${formatExamType(bestExamType)} (${bestScore}%). Continue to challenge yourself here.`,
+                        action: 'Practice More',
+                        link: `${bestExamType.replace(/\s+/g, '_')}.html`
+                    });
+                }
+                
+                if (worstExamType && bestExamType !== worstExamType) {
+                    recommendations.push({
+                        title: 'Focus on Improvement',
+                        text: `Your ${formatExamType(worstExamType)} scores (${worstScore}%) show room for improvement.`,
+                        action: 'Practice Now',
+                        link: `${worstExamType.replace(/\s+/g, '_')}.html`
+                    });
+                }
+            }
+            
+            // Add recommendation based on time analysis
+            if (data.length >= 5 && data.every(exam => exam.timeTaken)) {
+                const timeScoreCorrelation = calculateTimeScoreCorrelation(data);
+                
+                if (Math.abs(timeScoreCorrelation) >= 0.3) {
+                    if (timeScoreCorrelation > 0) {
+                        recommendations.push({
+                            title: 'Time Management',
+                            text: 'Taking more time tends to improve your scores. Consider being more thorough in your exam approach.',
+                            action: 'Learn More',
+                            link: '#'
+                        });
+                    } else {
+                        recommendations.push({
+                            title: 'Speed Strategy',
+                            text: 'You perform better when you work more quickly. Try to trust your instincts when answering questions.',
+                            action: 'Learn More',
+                            link: '#'
+                        });
                     }
                 }
-            });
+            }
             
-            // Add recommendations based on strengths and weaknesses
-            if (bestExamType && bestScore >= 70) {
+            // Add more recommendations as needed
+            if (data.length < 5) {
                 recommendations.push({
-                    title: 'Build on Your Strengths',
-                    text: `You're doing well in ${formatExamType(bestExamType)} (${bestScore}%). Continue to challenge yourself here.`,
-                    action: 'Practice More',
-                    link: `${bestExamType}.html`
+                    title: 'Build Your Profile',
+                    text: 'Take more exams to get more detailed insights and track your progress',
+                    action: 'Start Now',
+                    link: 'index.html#exam-list'
                 });
             }
             
-            if (worstExamType && bestExamType !== worstExamType) {
+            // Diversify exam types if needed
+            const examTypes = new Set(data.filter(exam => exam.examType).map(exam => exam.examType));
+            if (examTypes.size < 3) {
                 recommendations.push({
-                    title: 'Focus on Improvement',
-                    text: `Your ${formatExamType(worstExamType)} scores (${worstScore}%) show room for improvement.`,
-                    action: 'Practice Now',
-                    link: `${worstExamType}.html`
+                    title: 'Diversify Your Practice',
+                    text: 'Try different exam types to build well-rounded skills',
+                    action: 'Explore',
+                    link: 'index.html#exam-list'
                 });
             }
-        }
-        
-        // Add recommendation based on time analysis
-        if (data.length >= 5) {
-            const timeScoreCorrelation = calculateTimeScoreCorrelation(data);
             
-            if (Math.abs(timeScoreCorrelation) >= 0.3) {
-                if (timeScoreCorrelation > 0) {
-                    recommendations.push({
-                        title: 'Time Management',
-                        text: 'Taking more time tends to improve your scores. Consider being more thorough in your exam approach.',
-                        action: 'Learn More',
-                        link: '#'
-                    });
-                } else {
-                    recommendations.push({
-                        title: 'Speed Strategy',
-                        text: 'You perform better when you work more quickly. Try to trust your instincts when answering questions.',
-                        action: 'Learn More',
-                        link: '#'
-                    });
-                }
+            // Make sure we always have at least one recommendation
+            if (recommendations.length === 0) {
+                recommendations.push({
+                    title: 'Continue Practicing',
+                    text: 'Keep taking regular exams to maintain your skills and track your progress',
+                    action: 'Take an Exam',
+                    link: 'index.html#exam-list'
+                });
+            }
+            
+            // Clear the recommendations list
+            recommendationsListElement.innerHTML = '';
+            
+            // Render recommendations
+            recommendations.forEach(rec => {
+                const recItem = document.createElement('div');
+                recItem.className = 'recommendation-item';
+                
+                recItem.innerHTML = `
+                    <div class="recommendation-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="recommendation-content">
+                        <h4>${rec.title}</h4>
+                        <p>${rec.text}</p>
+                    </div>
+                    <a href="${rec.link}" class="recommendation-action">${rec.action}</a>
+                `;
+                
+                recommendationsListElement.appendChild(recItem);
+            });
+        } catch (error) {
+            console.error('Error generating recommendations:', error);
+            
+            // Provide fallback recommendations if an error occurs
+            if (recommendationsListElement) {
+                recommendationsListElement.innerHTML = `
+                    <div class="recommendation-item">
+                        <div class="recommendation-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="recommendation-content">
+                            <h4>General Recommendation</h4>
+                            <p>Continue practicing regularly across all exam types to improve your overall performance.</p>
+                        </div>
+                        <a href="index.html#exam-list" class="recommendation-action">Continue Practice</a>
+                    </div>
+                `;
             }
         }
-        
-        // Add more recommendations as needed
-        if (data.length < 5) {
-            recommendations.push({
-                title: 'Build Your Profile',
-                text: 'Take more exams to get more detailed insights and track your progress',
-                action: 'Start Now',
-                link: 'index.html#exam-list'
-            });
-        }
-        
-        // Diversify exam types if needed
-        const examTypes = new Set(data.map(exam => exam.examType));
-        if (examTypes.size < 3) {
-            recommendations.push({
-                title: 'Diversify Your Practice',
-                text: 'Try different exam types to build well-rounded skills',
-                action: 'Explore',
-                link: 'index.html#exam-list'
-            });
-        }
-        
-        // Render recommendations
-        recommendationsListElement.innerHTML = '';
-        
-        recommendations.forEach(rec => {
-            const recItem = document.createElement('div');
-            recItem.className = 'recommendation-item';
-            
-            recItem.innerHTML = `
-                <div class="recommendation-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
-                <div class="recommendation-content">
-                    <h4>${rec.title}</h4>
-                    <p>${rec.text}</p>
-                </div>
-                <a href="${rec.link}" class="recommendation-action">${rec.action}</a>
-            `;
-            
-            recommendationsListElement.appendChild(recItem);
-        });
     }
 
     // Calculate correlation between time spent and scores
@@ -1168,68 +1298,190 @@
 
     // Update time analysis chart
     function updateTimeAnalysisChart(data) {
-        if (timeAnalysisChartInstance) {
-            timeAnalysisChartInstance.destroy();
-        }
-        
-        // Process time data
-        const timeData = data.map(exam => {
-            const [minutes, seconds] = exam.timeTaken.split(':').map(Number);
-            return minutes + seconds / 60; // Convert to minutes
-        });
-        
-        const scoreData = data.map(exam => exam.score);
-        
-        // Create scatter plot
-        timeAnalysisChartInstance = new Chart(timeAnalysisChart, {
-            type: 'scatter',
-            data: {
-                datasets: [{
-                    label: 'Time vs. Score',
-                    data: timeData.map((time, i) => ({
-                        x: time,
-                        y: scoreData[i]
-                    })),
-                    backgroundColor: 'rgba(255, 99, 132, 0.7)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    pointRadius: 6,
-                    pointHoverRadius: 8
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Time (minutes)'
-                        }
-                    },
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'Score (%)'
-                        },
-                        min: 0,
-                        max: 100
-                    }
+        try {
+            // Check if the chart element exists
+            if (!timeAnalysisChart) {
+                console.error('Time analysis chart element not found in the DOM');
+                return;
+            }
+            
+            // Destroy previous chart instance if it exists
+            if (timeAnalysisChartInstance) {
+                timeAnalysisChartInstance.destroy();
+            }
+            
+            // Filter data to only include entries with valid timeTaken values
+            const validData = data.filter(exam => exam.timeTaken && exam.timeTaken.includes(':'));
+            
+            // If no valid data, show an empty chart with a message
+            if (validData.length === 0) {
+                const ctx = timeAnalysisChart.getContext('2d');
+                if (ctx) {
+                    // Clear canvas
+                    ctx.clearRect(0, 0, timeAnalysisChart.width, timeAnalysisChart.height);
+                    
+                    // Draw message
+                    ctx.font = '16px Arial';
+                    ctx.fillStyle = '#666';
+                    ctx.textAlign = 'center';
+                    ctx.fillText('No time data available', timeAnalysisChart.width / 2, timeAnalysisChart.height / 2);
+                }
+                return;
+            }
+            
+            // Process time data
+            const timeData = validData.map(exam => {
+                const [minutes, seconds] = exam.timeTaken.split(':').map(Number);
+                return minutes + seconds / 60; // Convert to minutes
+            });
+            
+            const scoreData = validData.map(exam => exam.score);
+            
+            // Create scatter plot
+            timeAnalysisChartInstance = new Chart(timeAnalysisChart, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Time vs. Score',
+                        data: timeData.map((time, i) => ({
+                            x: time,
+                            y: scoreData[i]
+                        })),
+                        backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
                 },
-                plugins: {
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                const point = context.raw;
-                                return `Score: ${point.y}%, Time: ${Math.floor(point.x)}m ${Math.round((point.x % 1) * 60)}s`;
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Time (minutes)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            min: 0, // Always start at 0
+                            ticks: {
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Score (%)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                font: {
+                                    size: 12
+                                }
                             }
                         }
                     },
-                    datalabels: {
-                        display: false
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const point = context.raw;
+                                    return `Score: ${point.y}%, Time: ${Math.floor(point.x)}m ${Math.round((point.x % 1) * 60)}s`;
+                                }
+                            }
+                        },
+                        datalabels: {
+                            display: false
+                        },
+                        legend: {
+                            labels: {
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        }
                     }
                 }
+            });
+            
+            // Add trend line if there are enough data points
+            if (validData.length >= 3) {
+                addTrendlineToTimeChart(timeData, scoreData);
             }
-        });
+        } catch (error) {
+            console.error('Error updating time analysis chart:', error);
+            
+            // Create a fallback empty chart
+            if (timeAnalysisChart) {
+                const ctx = timeAnalysisChart.getContext('2d');
+                if (ctx) {
+                    ctx.clearRect(0, 0, timeAnalysisChart.width, timeAnalysisChart.height);
+                    ctx.font = '16px Arial';
+                    ctx.fillStyle = '#666';
+                    ctx.textAlign = 'center';
+                    ctx.fillText('Error loading time analysis chart', timeAnalysisChart.width / 2, timeAnalysisChart.height / 2);
+                }
+            }
+        }
+    }
+    
+    // Helper function to add trendline to time analysis chart
+    function addTrendlineToTimeChart(timeData, scoreData) {
+        if (!timeAnalysisChartInstance) return;
+        
+        try {
+            // Calculate linear regression
+            let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+            const n = timeData.length;
+            
+            for (let i = 0; i < n; i++) {
+                sumX += timeData[i];
+                sumY += scoreData[i];
+                sumXY += timeData[i] * scoreData[i];
+                sumX2 += timeData[i] * timeData[i];
+            }
+            
+            const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+            const intercept = (sumY - slope * sumX) / n;
+            
+            // Find min and max x values
+            const minX = Math.min(...timeData);
+            const maxX = Math.max(...timeData);
+            
+            // Create trendline data points
+            const trendlineData = [
+                { x: minX, y: slope * minX + intercept },
+                { x: maxX, y: slope * maxX + intercept }
+            ];
+            
+            // Add trendline dataset
+            timeAnalysisChartInstance.data.datasets.push({
+                label: 'Trend',
+                data: trendlineData,
+                type: 'line',
+                borderColor: 'rgba(54, 162, 235, 0.8)',
+                borderWidth: 2,
+                borderDash: [5, 5],
+                pointRadius: 0,
+                pointHoverRadius: 0,
+                fill: false
+            });
+            
+            // Update the chart
+            timeAnalysisChartInstance.update();
+        } catch (error) {
+            console.error('Error adding trendline to time chart:', error);
+        }
     }
 
     // Format date for display

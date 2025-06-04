@@ -1,5 +1,5 @@
-// Combined Exam Script
-document.addEventListener('DOMContentLoaded', function() {
+    // Combined Exam Script
+    document.addEventListener('DOMContentLoaded', function() {
     const examInfoSection = document.getElementById('exam-info');
     const examContentSection = document.getElementById('exam-content');
     const resultsSection = document.getElementById('results');
@@ -1454,6 +1454,38 @@ document.addEventListener('DOMContentLoaded', function() {
         let allSaved = true;
         let typesSavedCount = 0;
         const dateStamp = new Date().toISOString(); // Use the same date for all parts
+        
+        // Calculate overall exam score and skills
+        let totalQuestions = 0;
+        let totalCorrect = 0;
+        const overallSkills = { reading: 0, writing: 0, speaking: 0 };
+        const skillQuestionCounts = { reading: 0, writing: 0, speaking: 0 };
+        
+        // Aggregate counts for the overall score calculation
+        for (const type in typeBreakdown) {
+            if (typeBreakdown.hasOwnProperty(type)) {
+                const counts = typeBreakdown[type];
+                if (counts.total > 0) {
+                    totalQuestions += counts.total;
+                    totalCorrect += counts.correct;
+                    
+                    // Attribute to appropriate skill
+                    const skill = typeToSkill[type] || 'reading';
+                    overallSkills[skill] += counts.correct;
+                    skillQuestionCounts[skill] += counts.total;
+                }
+            }
+        }
+        
+        // Calculate overall percentage for each skill
+        for (const skill in overallSkills) {
+            if (skillQuestionCounts[skill] > 0) {
+                overallSkills[skill] = Math.round((overallSkills[skill] / skillQuestionCounts[skill]) * 100);
+            }
+        }
+        
+        // Calculate overall score percentage
+        const overallScorePercentage = totalQuestions > 0 ? Math.round((totalCorrect / totalQuestions) * 100) : 0;
 
         // Iterate through each type found in the exam results
         for (const type in typeBreakdown) {
@@ -1496,6 +1528,38 @@ document.addEventListener('DOMContentLoaded', function() {
                         allSaved = false;
                     }
                 }
+            }
+        }
+        
+        // Save the overall combined score
+        if (totalQuestions > 0) {
+            // Get the time taken from the results if available
+            const timeTaken = results.timeTaken || '0:00';
+            
+            // Create the exam result data object for the overall score
+            const overallExamData = {
+                examType: 'combined_exam',
+                score: overallScorePercentage,
+                date: dateStamp,
+                totalQuestions: totalQuestions,
+                correctAnswers: totalCorrect,
+                skills: overallSkills,
+                timeTaken: timeTaken
+            };
+            
+            // Save the overall score
+            try {
+                const saved = window.saveExamResult(overallExamData);
+                if (saved) {
+                    console.log('Saved overall combined exam score to progress tracker.');
+                    typesSavedCount++;
+                } else {
+                    console.warn('Failed to save overall combined exam score to progress tracker.');
+                    allSaved = false;
+                }
+            } catch (error) {
+                console.error('Error saving overall combined exam score to progress tracker:', error);
+                allSaved = false;
             }
         }
 

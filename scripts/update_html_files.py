@@ -2,7 +2,7 @@ import os
 import re
 
 replacements = [
-    ('<script src="../ad-banner.js"></script>', '<script src="../assets/js/ad-banner.js"></script>')
+    ('<script src="../assets/js/progress.js"></script>', '')
     ,
 ]
 

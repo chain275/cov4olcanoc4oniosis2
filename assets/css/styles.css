@@ -16,8 +16,9 @@
     --success: #38b000;
     --warning: #f48c06;
     --danger: #e5383b;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --border: rgba(0, 0, 0, 0.08);
+    --border-radius: 12px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
 }
 
@@ -1842,6 +1843,15 @@ small {
     margin-bottom: 2rem;
 }
 
+.progress-info-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
 .testimonial-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -2281,19 +2291,17 @@ small {
 
 /* Enhanced Progress Tracker Styles */
 .progress-section {
-    background-color: var(--bg-light);
-    padding: 2rem;
+    background-color: var(--bg-white);
+    padding: 0;
+    margin-bottom: 0;
     border-radius: var(--border-radius);
-    margin-bottom: 2rem;
 }
 
 /* Dashboard Layout */
 .progress-dashboard {
     display: flex;
     gap: 1.5rem;
-    margin-top: 2rem;
     background-color: white;
-    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     overflow: hidden;
 }
@@ -3712,6 +3720,20 @@ section#exam-content:not(.hidden) + section#results {
     margin-bottom: 2rem;
     text-align: center;
     color: var(--primary);
+}
+
+.exam-info-header {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: white;
+        padding: 1.5rem 2rem;
+        position: relative;
+}
+
+.exam-info-header h1 {
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 700;
 }
 
 /* Timer display in the questions container */

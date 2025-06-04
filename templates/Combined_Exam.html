@@ -1528,7 +1528,7 @@
                 // For each type, update the progress bar based on score
                 const updateTypeProgress = (typeId, score) => {
                     const progressBar = document.getElementById(`${typeId}-progress`);
-                    if (progressBar) {
+                    if (progressBar) {          
                         const [correct, total] = score.split('/');
                         const percentage = (parseInt(correct) / parseInt(total)) * 100;
                         progressBar.style.width = `${percentage}%`;

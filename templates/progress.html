@@ -83,10 +83,9 @@
 
     
     <main>
+        <div class="progress-info-container">
         <section class="progress-section">
-            <div class="section-header">
-                <h2>Progress Tracker</h2>
-                <p class="section-description">Monitor your improvement over time with detailed performance analytics</p>
+            <div class="section-header-Ilovepp">
                 <!-- Test button (hidden in production) -->
                 <button id="test-button" class="btn" onclick="addTestResult()">
                     <i class="fas fa-plus"></i> Add Test Result
@@ -95,6 +94,12 @@
                 <button id="generate-sample-data" class="btn" onclick="generateFullSampleData()" title="Press Ctrl+G to generate sample data from anywhere on the page">
                     <i class="fas fa-database"></i> Generate Sample Data <kbd>Ctrl+G</kbd>
                 </button>
+            </div>
+
+
+            <div class="exam-info-header">
+                    <h1>ข้อสอบจำลอง A-Level ภาษาอังกฤษ</h1>
+                    <p class="header-description">เลือกข้อสอบที่ต้องการทำ</p>
             </div>
             
             <div class="progress-dashboard">
@@ -133,7 +138,8 @@
                                 <div class="filter-group">
                                     <label for="exam-type-filter">Exam Type:</label>
                                     <select id="exam-type-filter" class="filter-select">
-                                        <option value="all">All Exam Types</option>
+                                        <option value="all">All Individual Exam Types</option>
+                                        <option value="combined_exam" selected>Combined Exam</option>
                                         <option value="Short_conversation">Short Conversation</option>
                                         <option value="Long_Conversation">Long Conversation</option>
                                         <option value="Advertisement">Advertisement</option>
@@ -423,6 +429,7 @@
                 </div>
             </div>
         </section>
+        </div>
     </main>
     
     <!-- Footer will be included here -->
@@ -431,7 +438,7 @@
     <script src="../assets/js/include.js"></script>
     <script src="../assets/js/slideshow.js"></script>
     <script src="../assets/js/scripts.js"></script>
-    <script src="../assets/js/progress.js"></script>
+    
     
     <!-- Ensure proper initialization of progress page -->
     <script src="../assets/js/ad-banner.js"></script>
