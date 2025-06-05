@@ -964,15 +964,28 @@
                 const firstScore = recentExams[recentExams.length - 1].score;
                 const lastScore = recentExams[0].score;
                 
+                const trendInsightCard = document.getElementById('trend-insight');
+                // Remove any existing trend classes
+                trendInsightCard.classList.remove('trend-up', 'trend-down', 'trend-stable');
+                
                 if (lastScore > firstScore) {
                     trendTextElement.textContent = `Your scores have improved by ${lastScore - firstScore}% recently!`;
-                    trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #4CAF50';
+                    trendInsightCard.classList.add('trend-up');
+                    const iconElement = trendInsightCard.querySelector('.insight-icon i');
+                    iconElement.className = 'fas fa-arrow-trend-up';
+                    iconElement.style.color = 'white'; // Keep white for upward trend
                 } else if (lastScore < firstScore) {
                     trendTextElement.textContent = `Your scores have decreased by ${firstScore - lastScore}% recently.`;
-                    trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #F44336';
+                    trendInsightCard.classList.add('trend-down');
+                    const iconElement = trendInsightCard.querySelector('.insight-icon i');
+                    iconElement.className = 'fas fa-arrow-trend-down';
+                    iconElement.style.color = '#ff0000'; // Bright red color for downward trend
                 } else {
                     trendTextElement.textContent = 'Your scores have remained stable recently.';
-                    trendTextElement.parentElement.parentElement.style.borderLeft = '4px solid #FF9800';
+                    trendInsightCard.classList.add('trend-stable');
+                    const iconElement = trendInsightCard.querySelector('.insight-icon i');
+                    iconElement.className = 'fas fa-equals';
+                    iconElement.style.color = 'white'; // Keep white for stable trend
                 }
             } else {
                 trendTextElement.textContent = 'Take more exams to see your score trend.';

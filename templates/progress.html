@@ -27,6 +27,55 @@
             margin-left: 5px;
             vertical-align: middle;
         }
+        
+        /* Trend Insight Card Styles */
+        .trend-up {
+            border-left: 4px solid #4CAF50 !important;
+            background-color: rgba(76, 175, 80, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .trend-up .insight-icon {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .trend-up .insight-content h4,
+        .trend-up .insight-content p {
+            color: #4CAF50;
+        }
+        
+        .trend-down {
+            border-left: 4px solid #F44336 !important;
+            background-color: rgba(244, 67, 54, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .trend-down .insight-icon {
+            background-color: #FFEEEE; /* Light red/pink background */
+            color: white;
+        }
+        
+        .trend-down .insight-content h4,
+        .trend-down .insight-content p {
+            color: #F44336;
+        }
+        
+        .trend-stable {
+            border-left: 4px solid #FF9800 !important;
+            background-color: rgba(255, 152, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .trend-stable .insight-icon {
+            background-color: #FF9800;
+            color: white;
+        }
+        
+        .trend-stable .insight-content h4,
+        .trend-stable .insight-content p {
+            color: #FF9800;
+        }
     </style>
 </head>
 <body>
@@ -216,7 +265,6 @@
                                     <select id="chart-type" class="chart-select">
                                         <option value="line">Line Chart</option>
                                         <option value="bar">Bar Chart</option>
-                                        <option value="radar">Radar Chart</option>
                                     </select>
                                     <button id="toggle-trend" class="btn-chart-action">
                                         <i class="fas fa-chart-line"></i> Show Trend
@@ -434,7 +482,7 @@
     
     <!-- Footer will be included here -->
     <div id="footer-placeholder"></div>
-
+    <script src="../assets/js/progress.js"></script>
     <script src="../assets/js/include.js"></script>
     <script src="../assets/js/slideshow.js"></script>
     <script src="../assets/js/scripts.js"></script>
