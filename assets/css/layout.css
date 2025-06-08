@@ -1,0 +1,223 @@
+/* Main layout styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    transition: max-width 0.3s ease;
+}
+
+/* When exam is selected, expand the main content area */
+main:has(#exam-content:not(.hidden)) {
+    max-width: 1400px;
+    padding: 0 0.75rem;
+}
+
+section {
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Expanded layout for exam content */
+#exam-content:not(.hidden) {
+    margin: 0 -0.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+}
+
+/* Adjust exam content layout for better use of space */
+#exam-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 3rem 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: white;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Section headers */
+.section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-description {
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+}
+
+.section-header-description {
+    color: #ffffffad;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 3rem 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-logo h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.footer-logo p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
+.footer-links h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 992px) {
+    #exam-content {
+        padding: 20px 0;
+    }
+    
+    .exam-header, .exam-questions-container {
+        border-radius: var(--border-radius);
+    }
+    
+    .exam-header {
+        margin-bottom: 20px;
+        overflow-y: auto;
+        max-height: 60vh;
+    }
+    
+    .exam-questions-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 1.5rem 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
+
+/* Responsive exam list */
+@media (max-width: 768px) {
+    #exam-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Responsive results section */
+    .result-summary {
+        flex-direction: column;
+    }
+    
+    .result-stats {
+        width: 100%;
+    }
+    
+    .skill-scores-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Give questions more room on larger screens */
+@media (min-width: 1200px) {
+    /* Adjust column widths for better space usage on large screens */
+    #exam-content:not(.hidden) .exam-header {
+        width: 49%;
+    }
+    
+    #exam-content:not(.hidden) .exam-questions-container {
+        width: 49%;
+    }
+}
+
+/* Even larger screens get optimal sizing */
+@media (min-width: 1570px) {
+    #exam-content:not(.hidden) .exam-header {
+        width: 50%;
+    }
+    
+    #exam-content:not(.hidden) .exam-questions-container {
+        width: calc(50% - 30px);
+    }
+} 

@@ -1,0 +1,17 @@
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary: #7209b7;
+    --accent: #f72585;
+    --text-primary: #2b2d42;
+    --text-secondary: #6c757d;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --success: #38b000;
+    --warning: #f48c06;
+    --danger: #e5383b;
+    --border: rgba(0, 0, 0, 0.08);
+    --border-radius: 12px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+} 

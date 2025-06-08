@@ -1,0 +1,135 @@
+/* Exam content styles - subtitle, info sections, etc. */
+
+/* Exam subtitle styling */
+#exam-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#exam-subtitle span {
+    display: table-row;
+}
+
+#exam-subtitle span span:first-child {
+    display: table-cell;
+    padding-right: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--text-primary);
+}
+
+#exam-subtitle span span:last-child, 
+#exam-subtitle span conversation {
+    display: table-cell;
+}
+
+#exam-subtitle > p, 
+question_text > p {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+/* Tips list styling */
+.tips-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tips-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tips-list li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+}
+
+/* Exam information styling */
+.info-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.info-label {
+    font-weight: 600;
+    min-width: 120px;
+    color: var(--text-primary);
+}
+
+.info-value {
+    color: var(--text-secondary);
+}
+
+/* Instructions styling */
+.exam-instructions p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+/* Resources styling */
+.resources-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources-list li {
+    margin-bottom: 10px;
+}
+
+.resource-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.resource-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.resource-link:before {
+    content: '📌';
+    margin-right: 5px;
+}
+
+/* Responsive styles for exam content */
+@media (max-width: 768px) {
+    #exam-title {
+        padding: 10px 0;
+        text-align: center !important;
+    }
+    
+    #exam-title h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    /* Fix spacing for reading content */
+    question_text {
+        margin-bottom: 1rem;
+    }
+    
+    /* Improve font sizes for better readability */
+    .exam-header p, .exam-info-item, .info-label, .info-value {
+        font-size: 1rem !important;
+    }
+} 

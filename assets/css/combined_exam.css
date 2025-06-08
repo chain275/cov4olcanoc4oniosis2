@@ -4,6 +4,28 @@
         background-position: center;
     }
 
+    /* Fix for the layout of exam-content and results sections */
+    .combined-exam-page #exam-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .combined-exam-page #results {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Ensure proper stacking when toggling between sections */
+    .combined-exam-page #exam-content.hidden {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .combined-exam-page #results:not(.hidden) {
+        position: relative;
+        z-index: 10;
+    }
+
     /* Redesigned Exam Info Section Styles */
     .exam-info-container {
         background-color: #fff;
@@ -749,6 +771,43 @@
         .combined-exam-page .type-breakdown-list {
             grid-template-columns: 1fr;
         }
+
+        /* Fix for hidden exam content in portrait mode */
+        #exam-content.hidden {
+            display: none !important;
+            height: 0 !important;
+            min-height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            position: absolute !important;
+            visibility: hidden !important;
+            z-index: -1 !important;
+        }
+
+        /* Make sure results section displays properly at the top in portrait mode */
+        #results:not(.hidden) {
+            margin-top: 0 !important;
+            position: relative !important;
+            top: 0 !important;
+        }
+
+        /* Ensure there's no unexpected spacing between elements */
+        #exam-content.hidden + #results:not(.hidden) {
+            margin-top: 0 !important;
+            padding-top: 1rem !important;
+        }
+    }
+
+    /* Improve hidden class to ensure elements don't take space in the layout */
+    .hidden {
+        display: none !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        visibility: hidden !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     /* Timer styles */  

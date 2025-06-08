@@ -2,7 +2,7 @@ import os
 import re
 
 replacements = [
-    ('<script src="../assets/js/progress.js"></script>', '')
+    ('<link rel="stylesheet" href="../assets/css/styles.css">', '<link rel="stylesheet" href="../assets/css/styles.min.css">')
     ,
 ]
 

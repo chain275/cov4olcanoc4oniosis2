@@ -1,0 +1,25 @@
+/* Import all stylesheets */
+
+/* Base styles first */
+@import url('variables.css');
+@import url('base.css');
+
+/* Layout and structure */
+@import url('layout.css');
+@import url('header.css');
+
+/* Components */
+@import url('components.css');
+@import url('questions.css');
+@import url('results.css');
+
+/* Exam-specific styles */
+@import url('exams.css');
+@import url('exam_content.css');
+
+/* Page-specific styles */
+@import url('pages.css');
+@import url('progress-tracker.css');
+
+/* Utility styles */
+@import url('utils.css'); 

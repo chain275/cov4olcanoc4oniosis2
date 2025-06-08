@@ -559,160 +559,120 @@ function createQuestionElement(question, index) {
     const questionElement = document.createElement('div');
     questionElement.className = 'question';
     questionElement.dataset.index = index;
-    questionElement.id = `question-${index}`;
+    questionElement.dataset.questionType = question.type || 'general';
     
-    // Create question header
-    const questionHeader = document.createElement('div');
-    questionHeader.className = 'question-header';
-    
-    const questionNumber = document.createElement('div');
-    questionNumber.className = 'question-number';
-    questionNumber.textContent = `Question ${index + 1}`;
-    
-    const questionType = document.createElement('div');
-    questionType.className = 'question-type';
-    questionType.textContent = question.type || 'Multiple Choice';
-    
-    questionHeader.appendChild(questionNumber);
-    questionHeader.appendChild(questionType);
-    
-    // Create question content
-    const questionContent = document.createElement('div');
-    questionContent.className = 'question-content';
-    
-    let questionText = question.text;
-    
-    // Handle special formatting for conversation questions
-    if (question.type === 'Short Conversation' || question.type === 'Long Conversation') {
-        questionText = formatConversationQuestion(questionText);
-    } else {
-        // Apply general formatting with line breaks
-        questionText = formatWithLineBreaks(questionText);
-    }
-    
-    // Handle images in questions (with lazy loading)
-    if (question.image) {
-        const imageContainer = document.createElement('div');
-        imageContainer.className = 'question-image-container lazy-placeholder';
-        
-        const image = document.createElement('img');
-        image.className = 'question-image lazy';
-        // Use a tiny SVG as placeholder
-        image.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E";
-        image.dataset.src = question.image;
-        image.alt = `Image for question ${index + 1}`;
-        
-        imageContainer.appendChild(image);
-        questionContent.appendChild(imageContainer);
-    }
-    
-    // Create text content
-    const textElement = document.createElement('div');
-    textElement.className = 'question-text';
-    textElement.innerHTML = questionText;
-    questionContent.appendChild(textElement);
-    
-    // Create options list
-    const optionsList = document.createElement('div');
-    optionsList.className = 'options-list';
-    
-    // Create options based on question type
+    let optionsHTML = '';
     if (question.options) {
-        question.options.forEach((option, optIndex) => {
-            const optionItem = document.createElement('div');
-            optionItem.className = 'option-item';
-            
-            const optionInput = document.createElement('input');
-            optionInput.type = 'radio';
-            optionInput.name = `question-${index}`;
-            optionInput.id = `q${index}-option${optIndex}`;
-            optionInput.value = option.value || String.fromCharCode(65 + optIndex); // A, B, C, D...
-            
-            const optionLabel = document.createElement('label');
-            optionLabel.htmlFor = `q${index}-option${optIndex}`;
-            
-            // Create option content container
-            const optionContent = document.createElement('div');
-            optionContent.className = 'option-content';
-            
-            // Option marker (A, B, C, D...)
-            const optionMarker = document.createElement('span');
-            optionMarker.className = 'option-marker';
-            optionMarker.textContent = String.fromCharCode(65 + optIndex);
-            
-            // Option text
-            const optionText = document.createElement('span');
-            optionText.className = 'option-text';
-            
-            // Handle option images (with lazy loading)
-            if (option.image) {
-                const optionImageContainer = document.createElement('div');
-                optionImageContainer.className = 'option-image-container lazy-placeholder';
-                
-                const optionImage = document.createElement('img');
-                optionImage.className = 'option-image lazy';
-                // Use a tiny SVG as placeholder
-                optionImage.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E";
-                optionImage.dataset.src = option.image;
-                optionImage.alt = `Option ${String.fromCharCode(65 + optIndex)} image`;
-                
-                optionImageContainer.appendChild(optionImage);
-                optionText.appendChild(optionImageContainer);
-            }
-            
-            const textSpan = document.createElement('span');
-            textSpan.innerHTML = formatWithLineBreaks(option.text);
-            optionText.appendChild(textSpan);
-            
-            // Assemble option
-            optionContent.appendChild(optionMarker);
-            optionContent.appendChild(optionText);
-            optionLabel.appendChild(optionContent);
-            
-            optionItem.appendChild(optionInput);
-            optionItem.appendChild(optionLabel);
-            optionsList.appendChild(optionItem);
+        // Create a copy of the options and store the correct answer
+        const originalOptions = [...question.options];
+        const correctOption = originalOptions[question.correctAnswer];
+        
+        // Store original options for feedback
+        questionElement.dataset.originalOptions = JSON.stringify(originalOptions);
+        
+        // Shuffle the options
+        const shuffledOptions = shuffleArray(originalOptions);
+        
+        // Store shuffled options for feedback
+        questionElement.dataset.shuffledOptions = JSON.stringify(shuffledOptions);
+        
+        // Find the new index of the correct answer after shuffling
+        const newCorrectIndex = shuffledOptions.indexOf(correctOption);
+        
+        // Store the mapping for this question in a data attribute
+        questionElement.dataset.shuffleMap = JSON.stringify({
+            originalCorrect: question.correctAnswer,
+            newCorrect: newCorrectIndex
         });
+        
+        optionsHTML = `
+            <div class="options">
+                ${shuffledOptions.map((option, optIndex) => `
+                    <div class="option">
+                        <input type="radio" name="question-${index}" id="option-${index}-${optIndex}" value="${optIndex}">
+                        <label for="option-${index}-${optIndex}">${option}</label>
+                    </div>
+                `).join('')}
+            </div>
+        `;
     }
     
-    // Add elements to question
-    questionElement.appendChild(questionHeader);
-    questionElement.appendChild(questionContent);
-    questionElement.appendChild(optionsList);
+    let imageHTML = '';
+    if (question.image) {
+        imageHTML = `
+            <div class="question-image-container">
+                <img src="${question.image}" alt="Question image" class="question-image">
+            </div>
+        `;
+    }
+    
+    // Get the current page to determine formatting
+    const currentPage = window.location.pathname.split('/').pop();
+    const isConversationPage = currentPage === 'Short_conversation.html' || currentPage === 'Long_conversation.html';
+    
+    // Use special formatting for conversation questions
+    const formattedText = isConversationPage 
+        ? formatConversationQuestion(question.text)
+        : `<question_text>${formatWithLineBreaks(question.text)}</question_text>`;
+    
+    questionElement.innerHTML = `
+        <div class="question-type">${capitalizeFirstLetter(question.type || 'general')}</div>
+        <div class="progress-text">
+            Question <span id="current-question-inline">${currentExamIndex + 1}
+        </div>
+        <h3>${question.prompt}</h3>
+        ${imageHTML}
+        ${formattedText}
+        ${optionsHTML}
+    `;
+    
+    // Add event listeners to radio buttons
+    const radioButtons = questionElement.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', () => {
+            userAnswers[index] = parseInt(radio.value);
+            updateProgress();
+        });
+    });
     
     return questionElement;
 }
 
 // Show a specific question
 function showQuestion(index) {
+    // Validate index
+    if (index < 0) index = 0;
+    if (index >= currentExam.questions.length) index = currentExam.questions.length - 1;
+    
+    currentExamIndex = index;
+    
     // Hide all questions
     const questions = examQuestionsContainer.querySelectorAll('.question');
     questions.forEach(q => q.classList.add('hidden'));
     
-    // Show the selected question
-    const selectedQuestion = document.getElementById(`question-${index}`);
-    if (selectedQuestion) {
-        selectedQuestion.classList.remove('hidden');
-        
-        // Initialize lazy loading for the visible question
-        initQuestionLazyLoad(selectedQuestion);
-        
-        // Update current question counter
-        if (currentQuestionElement) {
-            currentQuestionElement.textContent = index + 1;
-        }
-        
-        // Update progress
-        updateProgress(index);
-        
-        // Update the navigation state
-        updateQuestionNavigation();
-        
-        // Update the question nav items
-        updateQuestionNavItems(index);
-        
-        // Store the current index
-        currentExamIndex = index;
+    // Show current question
+    const currentQuestion = examQuestionsContainer.querySelector(`.question[data-index="${index}"]`);
+    if (currentQuestion) {
+        currentQuestion.classList.remove('hidden');
+    }
+    
+    // Update navigation buttons
+    updateQuestionNavigation();
+    
+    // Update progress indicators
+    currentQuestionElement.textContent = index + 1;
+    
+    // Update inline progress counters if they exist
+    const inlineCurrentElement = currentQuestion.querySelector('#current-question-inline');
+    if (inlineCurrentElement) {
+        inlineCurrentElement.textContent = index + 1;
+    }
+    
+    updateProgress();
+    
+    // Scroll question into view with smooth animation
+    if (currentQuestion) {
+        currentQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
 
@@ -1399,72 +1359,4 @@ document.addEventListener('DOMContentLoaded', function() {
     if (submitExamBtn) {
         submitExamBtn.addEventListener('click', calculateResults);
     }
-});
-
-/**
- * Initialize lazy loading for images in a specific question
- */
-function initQuestionLazyLoad(questionElement) {
-    if (!questionElement) return;
-    
-    const lazyImages = questionElement.querySelectorAll('img.lazy');
-    const lazyBackgrounds = questionElement.querySelectorAll('.lazy-background');
-    
-    if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const element = entry.target;
-                    
-                    if (element.tagName === 'IMG') {
-                        if (element.dataset.src) {
-                            element.src = element.dataset.src;
-                            element.removeAttribute('data-src');
-                        }
-                    } else if (element.classList.contains('lazy-background')) {
-                        if (element.dataset.background) {
-                            element.style.backgroundImage = `url('${element.dataset.background}')`;
-                            element.removeAttribute('data-background');
-                        }
-                    }
-                    
-                    element.classList.remove('lazy');
-                    element.classList.add('loaded');
-                    
-                    observer.unobserve(element);
-                }
-            });
-        }, {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        });
-        
-        lazyImages.forEach(img => {
-            observer.observe(img);
-        });
-        
-        lazyBackgrounds.forEach(element => {
-            observer.observe(element);
-        });
-    } else {
-        // Fallback for browsers without Intersection Observer
-        lazyImages.forEach(img => {
-            if (img.dataset.src) {
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
-            }
-            img.classList.remove('lazy');
-            img.classList.add('loaded');
-        });
-        
-        lazyBackgrounds.forEach(element => {
-            if (element.dataset.background) {
-                element.style.backgroundImage = `url('${element.dataset.background}')`;
-                element.removeAttribute('data-background');
-            }
-            element.classList.remove('lazy');
-            element.classList.add('loaded');
-        });
-    }
-} 
+}); 
