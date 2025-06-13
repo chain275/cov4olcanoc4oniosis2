@@ -14,4 +14,9 @@
     --border-radius: 12px;
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 25px rgba(0, 0, 0, 0.08);
+    --gradient-primary:linear-gradient(45deg, #4361ee, #4cc9f0)
 } 

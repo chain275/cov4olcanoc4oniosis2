@@ -7,61 +7,367 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https:; media-src 'self'; object-src 'none'; frame-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests;">
     <meta name="description" content="TCAS Prep - Your path to university success with comprehensive English exam practice">
-    <title>Header</title>
+    <title>TCAS Prep | English Exam Practice</title>
     <!-- CSRF Protection Script -->
     <script src="../assets/js/csrf-protection.js"></script>
-<header>
-    <div class="logo-container">
-        <h1>TCAS Prep</h1>
-        <span class="tagline">English Exam Practice</span>
-    </div>
-    
-    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    
-    <nav>
-        <ul>
-            <li><a href="../templates/index.html" class="nav-home"><i class="icon-home"></i>Home</a></li>
-            <li><a href="../templates/Combined_Exam.html" class="nav-combined-exam">Mock Exam</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Speaking</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../templates/Short_conversation.html">Short Conversation</a></li>
-                    <li><a href="../templates/Long_conversation.html">Long Conversation</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Reading</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../templates/Advertisement.html">Advertisement</a></li>
-                    <li><a href="../templates/Product.html">Product Review</a></li>
-                    <li><a href="../templates/News_report.html">News Report</a></li>
-                    <li><a href="#">Visual</a></li>
-                    <li><a href="../templates/Article.html">Article</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Writing</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../templates/Text_completion.html">Text Completion</a></li>
-                    <li><a href="../templates/Paragraph.html">Paragraph Organization</a></li>
-                </ul>
-            </li>
-            <li><a href="../templates/contact.html" class="nav-contact">Contact</a></li>
-            <li><a href="../templates/donate.html" class="nav-donate">Donate</a></li>
-            <li><a href="../templates/tutors.html" class="nav-tutors">Tutors</a></li>
-            <li><a href="../templates/progress.html" class="nav-progress">Progress Tracker</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Dropdown Navigation Script -->
+    <script src="../assets/js/dropdown-navigation.js"></script>
+    <!-- Add Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom styles for multi-level dropdown -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4cc9f0;
+            --text-color: #2b2d42;
+            --light-color: #f8f9fa;
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0.8rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-container h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+        
+        .tagline {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+        
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .dropdown-toggle::after {
+            content: '\f107';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            transition: var(--transition);
+        }
+        
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            padding: 0.8rem 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1001;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu li {
+            padding: 0;
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .dropdown-menu a:hover {
+            background-color: rgba(67, 97, 238, 0.1);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1002;
+        }
+        
+        .mobile-menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-color);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+        
+        .hero-section {
+            background: linear-gradient(45deg, #4361ee, #4cc9f0);
+            padding: 5rem 5%;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 1024px) {
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .hero-content h2 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 0.8rem 4%;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                padding: 5rem 2rem 2rem;
+                transition: var(--transition);
+                overflow-y: auto;
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.2rem;
+            }
+            
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                max-height: 0;
+                overflow: hidden;
+                padding: 0;
+                transition: max-height 0.3s ease;
+            }
+            
+            .dropdown.active .dropdown-menu {
+                max-height: 500px;
+                padding: 0.5rem 0 0.5rem 1rem;
+            }
+            
+            .dropdown-toggle::after {
+                margin-left: auto;
+            }
+            
+            .dropdown-menu a {
+                padding: 0.5rem 0;
+            }
+            
+            .dropdown {
+                width: 100%;
+            }
+            
+            .dropdown-toggle {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .hero-section {
+                padding: 4rem 4%;
+            }
+            
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .dropdown-submenu {
+            position: relative;
+            }
 
-<section class="hero-section">
-    <div class="hero-content">
-        <h2>Practice Your English Skills</h2>
-        <p>เตรียมความพร้อมสอบ ข้อสอบวิชา A-level ภาษาอังกฤษ ค้นหาและวิเคราะห์จุดอ่อนด้วย<br>แบบทดสอบและแบบฝึกหัด</p>
-    </div>
-</section> 
+            .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>TCAS Prep</h1>
+            <span class="tagline">English Exam Practice</span>
+        </div>
+        
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav id="main-nav">
+            <div class="nav-container">
+            <ul>
+                <li><a href="../templates/index.html"><i class="fas fa-home me-2"></i> Home</a></li>
+                <li><a href="../templates/Combined_Exam.html" class="nav-combined-exam">Mock Exam</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" tabindex="0">Categories</a>
+                    <ul class="dropdown-menu">
+                        <a href="#" class="dropdown-toggle" tabindex="0">Speaking</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="../templates/Short_conversation.html" tabindex="0">Short Conversation</a></li>
+                                <li><a href="../templates/Long_conversation.html" tabindex="0">Long Conversation</a></li>
+                            </ul>
+                            <a href="#" class="dropdown-toggle" tabindex="0">Reading</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="../templates/Advertisement.html" tabindex="0">Advertisement</a></li>
+                                <li><a href="../templates/Product.html" tabindex="0">Product Review</a></li>
+                                <li><a href="../templates/News_report.html" tabindex="0">News Report</a></li>
+                                <li><a href="#" tabindex="0">Visual</a></li>
+                                <li><a href="../templates/Article.html" tabindex="0">Article</a></li>
+                            </ul>
+                            <a href="#" class="dropdown-toggle" tabindex="0">Writing</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="../templates/Text_completion.html" tabindex="0">Text Completion</a></li>
+                                <li><a href="../templates/Paragraph.html" tabindex="0">Paragraph Organization</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><a href="../templates/contact.html" class="nav-contact">Contact</a></li>    
+                <li><a href="../templates/tutors.html" class="nav-donate">Tutors</a></li></div>
+                <div class="cta-container"><a class="cta-button" href="../templates/donate.html">Donate</a>
+                                           <a href="../templates/progress.html"><i class="fas fa-chart-line me-2"></i> Progress</a></div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>Practice Your English Skills</h2>
+            <p>เตรียมความพร้อมสอบ ข้อสอบวิชา A-level ภาษาอังกฤษ ค้นหาและวิเคราะห์จุดอ่อนด้วย<br>แบบทดสอบและแบบฝึกหัด</p>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+            
+            // Mobile dropdown toggles
+            if (window.innerWidth <= 768) {
+                dropdowns.forEach(dropdown => {
+                    const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+                    
+                    dropdownToggle.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    });
+                });
+            }
+        });
+    </script>
+    <script src="../assets/js/include.js"></script>
+</body>
+</html> 
 
