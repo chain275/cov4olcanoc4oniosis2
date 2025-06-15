@@ -61,6 +61,7 @@ let navigateToPrevQuestion = null;
 let navigateToNextQuestion = null;
 let exitExamHandler = null;
 
+
 // Responsive variables
 let windowWidth = window.innerWidth;
 let isMobile = window.innerWidth < 768;
@@ -273,7 +274,7 @@ function setupDropdownMenus() {
             const dropdown = this.parentElement;
             const menu = dropdown.querySelector('.dropdown-menu');
             
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 992) {
                 // For mobile: use classList for toggle
                 if (menu.classList.contains('active')) {
                     menu.classList.remove('active');

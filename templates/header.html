@@ -10,280 +10,24 @@
     <title>TCAS Prep | English Exam Practice</title>
     <!-- CSRF Protection Script -->
     <script src="../assets/js/csrf-protection.js"></script>
-    <!-- Dropdown Navigation Script -->
-    <script src="../assets/js/dropdown-navigation.js"></script>
     <!-- Add Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom styles for multi-level dropdown -->
-    <link rel="stylesheet" href="../assets/css/custom.css">
+    <!-- Custom styles -->
     <style>
-        :root {
-            --primary-color: #4361ee;
-            --secondary-color: #3f37c9;
-            --accent-color: #4cc9f0;
-            --text-color: #2b2d42;
-            --light-color: #f8f9fa;
-            --transition: all 0.3s ease;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 0.8rem 5%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .logo-container {
+        /* Ensure vertical stacking for submenu items */
+        .submenu {
             display: flex;
             flex-direction: column;
+            gap:1rem;
         }
-        
-        .logo-container h1 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 0;
-            letter-spacing: 0.5px;
+        .submenu li {
+            width: 100%;
         }
-        
-        .tagline {
-            color: var(--text-color);
-            font-size: 0.9rem;
-            font-weight: 400;
-        }
-        
-        nav {
-            flex-grow: 1;
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            padding: 0.5rem 0;
-            position: relative;
-            transition: var(--transition);
-        }
-        
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--primary-color);
-            transition: var(--transition);
-        }
-        
-        
-        .dropdown {
-            position: relative;
-        }
-        
-        .dropdown-toggle {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        
-        .dropdown-toggle::after {
-            content: '\f107';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            transition: var(--transition);
-        }
-        
-        
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            min-width: 200px;
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            padding: 0.8rem 0;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: var(--transition);
-            z-index: 1001;
-        }
-        
-        .dropdown:hover .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        
-        .dropdown-menu li {
-            padding: 0;
-        }
-        
-        .dropdown-menu a {
+        .submenu li a {
             display: block;
-            padding: 0.5rem 1.5rem;
-            transition: var(--transition);
-        }
-        
-        .dropdown-menu a:hover {
-            background-color: rgba(67, 97, 238, 0.1);
-        }
-        
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-            z-index: 1002;
-        }
-        
-        .mobile-menu-toggle span {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color: var(--text-color);
-            margin: 5px 0;
-            transition: var(--transition);
-        }
-        
-        .hero-section {
-            background: linear-gradient(45deg, #4361ee, #4cc9f0);
-            padding: 5rem 5%;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .hero-content p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-        
-        /* Responsive styles */
-        @media screen and (max-width: 1024px) {
-            nav ul {
-                gap: 1rem;
-            }
-            
-            .hero-content h2 {
-                font-size: 2.2rem;
-            }
-        }
-        
-        @media screen and (max-width: 768px) {
-            header {
-                padding: 0.8rem 4%;
-            }
-            
-            .mobile-menu-toggle {
-                display: block;
-            }
-            
-            nav {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                max-width: 400px;
-                height: 100vh;
-                background-color: white;
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-                padding: 5rem 2rem 2rem;
-                transition: var(--transition);
-                overflow-y: auto;
-            }
-            
-            nav.active {
-                right: 0;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1.2rem;
-            }
-            
-            .dropdown-menu {
-                position: static;
-                box-shadow: none;
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-                max-height: 0;
-                overflow: hidden;
-                padding: 0;
-                transition: max-height 0.3s ease;
-            }
-            
-            .dropdown.active .dropdown-menu {
-                max-height: 500px;
-                padding: 0.5rem 0 0.5rem 1rem;
-            }
-            
-            .dropdown-toggle::after {
-                margin-left: auto;
-            }
-            
-            .dropdown-menu a {
-                padding: 0.5rem 0;
-            }
-            
-            .dropdown {
-                width: 100%;
-            }
-            
-            .dropdown-toggle {
-                width: 100%;
-                justify-content: space-between;
-            }
-            
-            .hero-section {
-                padding: 4rem 4%;
-            }
-            
-            .hero-content h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero-content p {
-                font-size: 1rem;
-            }
-            .dropdown-submenu {
-            position: relative;
-            }
-
-            .dropdown-submenu .dropdown-menu {
-            top: 0;
-            left: 100%;
-            margin-top: -1px;
-            }
+            width: 100%;
         }
     </style>
 </head>
@@ -300,38 +44,49 @@
             <span></span>
         </button>
         
+        <div id="menu-overlay" class="menu-overlay"></div>
+        
         <nav id="main-nav">
-            <div class="nav-container">
             <ul>
-                <li><a href="../templates/index.html"><i class="fas fa-home me-2"></i> Home</a></li>
+                <li><a href="../templates/index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="../templates/Combined_Exam.html" class="nav-combined-exam">Mock Exam</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" tabindex="0">Categories</a>
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <a href="#" class="dropdown-toggle" tabindex="0">Speaking</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="../templates/Short_conversation.html" tabindex="0">Short Conversation</a></li>
-                                <li><a href="../templates/Long_conversation.html" tabindex="0">Long Conversation</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" >Speaking <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="../templates/Short_conversation.html">Short Conversation</a></li>
+                                <li><a href="../templates/Long_conversation.html">Long Conversation</a></li>
                             </ul>
-                            <a href="#" class="dropdown-toggle" tabindex="0">Reading</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="../templates/Advertisement.html" tabindex="0">Advertisement</a></li>
-                                <li><a href="../templates/Product.html" tabindex="0">Product Review</a></li>
-                                <li><a href="../templates/News_report.html" tabindex="0">News Report</a></li>
-                                <li><a href="#" tabindex="0">Visual</a></li>
-                                <li><a href="../templates/Article.html" tabindex="0">Article</a></li>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" >Reading <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="../templates/Advertisement.html">Advertisement</a></li>
+                                <li><a href="../templates/Product.html">Product Review</a></li>
+                                <li><a href="../templates/News_report.html">News Report</a></li>
+                                <li><a href="#">Visual</a></li>
+                                <li><a href="../templates/Article.html">Article</a></li>
                             </ul>
-                            <a href="#" class="dropdown-toggle" tabindex="0">Writing</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="../templates/Text_completion.html" tabindex="0">Text Completion</a></li>
-                                <li><a href="../templates/Paragraph.html" tabindex="0">Paragraph Organization</a></li>
-                        </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" >Writing <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="../templates/Text_completion.html">Text Completion</a></li>
+                                <li><a href="../templates/Paragraph.html">Paragraph Organization</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="../templates/contact.html" class="nav-contact">Contact</a></li>    
-                <li><a href="../templates/tutors.html" class="nav-donate">Tutors</a></li></div>
-                <div class="cta-container"><a class="cta-button" href="../templates/donate.html">Donate</a>
-                                           <a href="../templates/progress.html"><i class="fas fa-chart-line me-2"></i> Progress</a></div>
+                <li><a href="../templates/tutors.html" class="nav-tutors">Tutors</a></li>
+                <li class="nav-cta">
+                    <a class="cta-button" href="../templates/donate.html">Donate</a>
+                </li>
+                <li>
+                    <a href="../templates/progress.html"><i class="fas fa-chart-line"></i> Progress</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -347,27 +102,65 @@
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
             const mainNav = document.getElementById('main-nav');
-            const dropdowns = document.querySelectorAll('.dropdown');
+            const menuOverlay = document.getElementById('menu-overlay');
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
             
+            // Mobile menu toggle
             mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
                 mainNav.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
                 document.body.classList.toggle('menu-open');
             });
             
-            // Mobile dropdown toggles
-            if (window.innerWidth <= 768) {
-                dropdowns.forEach(dropdown => {
-                    const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+            // Close menu when clicking overlay
+            menuOverlay.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                mainNav.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+            
+            // Handle dropdown menus
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
                     
-                    dropdownToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        dropdown.classList.toggle('active');
-                    });
+                    // Get parent li element
+                    const parent = this.closest('li');
+                    
+                    // For mobile view or submenu toggles - toggle active class
+                    if (window.innerWidth <= 991 || parent.classList.contains('dropdown-submenu')) {
+                        parent.classList.toggle('active');
+                        
+                        // Close other dropdowns at same level
+                        const siblingDropdowns = parent.parentElement.querySelectorAll('.dropdown, .dropdown-submenu');
+                        siblingDropdowns.forEach(sibling => {
+                            if (sibling !== parent) {
+                                sibling.classList.remove('active');
+                            }
+                        });
+                    }
                 });
-            }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 991) {
+                    // Remove active classes when resizing to desktop
+                    document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    
+                    // Reset mobile menu
+                    mobileMenuToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
         });
     </script>
-    <script src="../assets/js/include.js"></script>
 </body>
 </html> 
 
