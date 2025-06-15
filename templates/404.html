@@ -169,7 +169,7 @@
         // Handle dropdown menu on mobile
         document.querySelectorAll('.dropdown-toggle').forEach(function(item) {
             item.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
+                if (window.innerWidth <= 992) {
                     this.nextElementSibling.classList.toggle('active');
                 }
             });
