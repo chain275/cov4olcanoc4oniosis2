@@ -345,84 +345,146 @@ nav ul li a i {
     .mobile-menu-toggle {
         display: block;
     }
-    
+
     nav {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 80%;
-        max-width: 350px;
-        height: 100vh;
+        right: -300px;
+        width: 280px;
+        height: 100%;
         background-color: var(--bg-white);
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-        padding: 5rem 1.5rem 2rem;
+        box-shadow: var(--shadow-lg);
+        z-index: 1001;
         transition: right 0.3s ease;
-        z-index: 1000;
         overflow-y: auto;
+        padding: 70px 20px 20px;
     }
-    
+
     nav.active {
         right: 0;
     }
-    
+
     nav ul {
         flex-direction: column;
-        gap: 0;
-        width: 100%;
         align-items: flex-start;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
-    
+
+    #main-nav ul {
+        width: 100%;
+        max-width: 100%;
+    }
+
     nav ul li {
         width: 100%;
-        margin: 0.5rem 0;
+        margin: 0;
+        padding: 0.5rem 0;
     }
-    
+
     nav ul li a {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 0.75rem 1rem;
-        font-size: 1rem;
+    }
+
+    nav ul li:last-child {
+        margin-top: 1rem;
     }
     
-    /* Reset position for dropdowns on mobile */
-    .dropdown-menu, .submenu {
+    .dropdown-menu {
         position: static;
-        width: 100%;
         box-shadow: none;
-        border: none;
         opacity: 1;
         visibility: visible;
         transform: none;
-        max-height: 0;
-        overflow: hidden;
-        padding: 0;
-        background-color: rgba(67, 97, 238, 0.05);
-        transition: max-height 0.3s ease;
-        border-radius: 0;
-    }
-    
-    .dropdown.active > .dropdown-menu,
-    .dropdown-submenu.active > .submenu {
-        max-height: 2000px;
+        display: none;
         padding: 0.5rem 0;
+        margin-top: 0.5rem;
+        border-radius: 0;
+        border-left: 2px solid var(--primary);
+        width: 100%;
+        max-width: 100%;
     }
-    
-    /* Adjust dropdown icon rotation for mobile */
-    .dropdown-toggle .fa-chevron-down {
-        transition: transform 0.3s ease;
+
+    .dropdown-menu li {
+        width: 100%;
     }
-    
-    .dropdown.active > a .fa-chevron-down,
-    .dropdown-submenu.active > a .fa-chevron-down {
-        transform: rotate(180deg);
-    }
-    
-    /* Indent submenu items */
+
     .dropdown-menu li a {
-        padding-left: 2rem;
+        width: 100%;
+        padding: 0.75rem 1rem 0.75rem 1.5rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+    
+    .dropdown-toggle::after {
+        transform: rotate(0);
+    }
+    
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
+    
+    .menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Submenu styling for mobile */
+    .submenu {
+        display: none;
+        position: static;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-top: 0.5rem;
+        border-left: 2px solid var(--accent);
+    }
+    
+    .submenu li {
+        width: 100%;
     }
     
     .submenu li a {
-        padding-left: 3rem;
+        width: 100%;
+        padding: 0.75rem 1rem 0.75rem 2.5rem;
+    }
+    
+    .dropdown-submenu.active > .submenu {
+        display: block;
+    }
+
+    .dropdown-submenu > a .fa-chevron-down {
+        transform: rotate(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .dropdown-submenu.active > a .fa-chevron-down {
+        transform: rotate(180deg);
     }
 }
 
