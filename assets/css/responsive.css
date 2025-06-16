@@ -122,8 +122,8 @@
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    min-height: 60vh !important;
-    max-height: 65vh !important;
+    min-height: auto !important;
+    max-height: none !important;
     position: relative !important;
     top: 0 !important;
     margin-bottom: 20px !important;
@@ -463,9 +463,24 @@
 
 /* Image responsiveness */
 img {
-  max-width: 100%;
+  max-width: 32px;
   height: auto;
 }
+
+.exam-info-header {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: white;
+        padding: 1.5rem 2rem;
+        position: relative;
+}
+
+.exam-info-header h1 {
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 700;
+}
+
 
 /* Flexible tables */
 table {

@@ -316,7 +316,7 @@ nav ul li a i {
 /* Large screens */
 @media (min-width: 1400px) {
     header {
-        padding: 1rem 8%;
+        padding: 1rem 3%;
     }
     
     nav ul {
