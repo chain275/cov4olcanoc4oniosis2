@@ -10,11 +10,14 @@
     <title>TCAS Prep | English Exam Practice</title>
     <!-- CSRF Protection Script -->
     <script src="../assets/js/csrf-protection.js"></script>
+    <!-- Responsive script -->
+    <script src="../assets/js/responsive.js"></script>
     <!-- Add Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom styles -->
+    <link rel="stylesheet" href="../assets/css/header.css">
     <style>
         /* Ensure vertical stacking for submenu items */
         .submenu {
@@ -54,14 +57,14 @@
                     <a href="#" class="dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-submenu">
-                            <a href="#" >Speaking <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle">Speaking <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="../templates/Short_conversation.html">Short Conversation</a></li>
                                 <li><a href="../templates/Long_conversation.html">Long Conversation</a></li>
                             </ul>
                         </li>
                         <li class="dropdown-submenu">
-                            <a href="#" >Reading <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle">Reading <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="../templates/Advertisement.html">Advertisement</a></li>
                                 <li><a href="../templates/Product.html">Product Review</a></li>
@@ -71,7 +74,7 @@
                             </ul>
                         </li>
                         <li class="dropdown-submenu">
-                            <a href="#" >Writing <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle">Writing <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="../templates/Text_completion.html">Text Completion</a></li>
                                 <li><a href="../templates/Paragraph.html">Paragraph Organization</a></li>
@@ -97,70 +100,6 @@
             <p>เตรียมความพร้อมสอบ ข้อสอบวิชา A-level ภาษาอังกฤษ ค้นหาและวิเคราะห์จุดอ่อนด้วย<br>แบบทดสอบและแบบฝึกหัด</p>
         </div>
     </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-            const mainNav = document.getElementById('main-nav');
-            const menuOverlay = document.getElementById('menu-overlay');
-            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-            
-            // Mobile menu toggle
-            mobileMenuToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                mainNav.classList.toggle('active');
-                menuOverlay.classList.toggle('active');
-                document.body.classList.toggle('menu-open');
-            });
-            
-            // Close menu when clicking overlay
-            menuOverlay.addEventListener('click', function() {
-                mobileMenuToggle.classList.remove('active');
-                mainNav.classList.remove('active');
-                menuOverlay.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-            
-            // Handle dropdown menus
-            dropdownToggles.forEach(toggle => {
-                toggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Get parent li element
-                    const parent = this.closest('li');
-                    
-                    // For mobile view or submenu toggles - toggle active class
-                    if (window.innerWidth <= 991 || parent.classList.contains('dropdown-submenu')) {
-                        parent.classList.toggle('active');
-                        
-                        // Close other dropdowns at same level
-                        const siblingDropdowns = parent.parentElement.querySelectorAll('.dropdown, .dropdown-submenu');
-                        siblingDropdowns.forEach(sibling => {
-                            if (sibling !== parent) {
-                                sibling.classList.remove('active');
-                            }
-                        });
-                    }
-                });
-            });
-            
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 991) {
-                    // Remove active classes when resizing to desktop
-                    document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(el => {
-                        el.classList.remove('active');
-                    });
-                    
-                    // Reset mobile menu
-                    mobileMenuToggle.classList.remove('active');
-                    mainNav.classList.remove('active');
-                    menuOverlay.classList.remove('active');
-                    document.body.classList.remove('menu-open');
-                }
-            });
-        });
-    </script>
 </body>
 </html> 
 
