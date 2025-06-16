@@ -155,7 +155,7 @@
 }
 
 /* Medium Devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1030px) {
   .container {
     max-width: 720px;
   }
@@ -377,7 +377,7 @@
 }
 
 /* Specific adjustments for navigation */
-@media (max-width: 991px) {
+@media (max-width: 1030px) {
   /* Mobile menu toggle */
   .mobile-menu-toggle {
     display: block;

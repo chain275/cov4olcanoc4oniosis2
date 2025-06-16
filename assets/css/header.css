@@ -341,7 +341,7 @@ nav ul li a i {
 }
 
 /* Tablets and Mobile */
-@media (max-width: 991px) {
+@media (max-width: 1030px) {
     .mobile-menu-toggle {
         display: block;
     }
