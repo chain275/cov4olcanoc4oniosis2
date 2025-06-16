@@ -65,8 +65,8 @@ let exitExamHandler = null;
 // Responsive variables
 let windowWidth = window.innerWidth;
 let isMobile = window.innerWidth < 768;
-let isTablet = window.innerWidth >= 768 && window.innerWidth < 992;
-let isDesktop = window.innerWidth >= 992;
+let isTablet = window.innerWidth >= 768 && window.innerWidth < 1030;
+let isDesktop = window.innerWidth >= 1030;
 let isMidDesktop = window.innerWidth >= 1200 && window.innerWidth < 1570;
 
 // Initialize the application
@@ -96,15 +96,15 @@ function setupResponsiveListeners() {
         // Only trigger changes if we cross a breakpoint
         if (
             (windowWidth < 768 && newWidth >= 768) ||
-            (windowWidth >= 768 && windowWidth < 992 && (newWidth < 768 || newWidth >= 992)) ||
-            (windowWidth >= 992 && windowWidth < 1200 && (newWidth < 992 || newWidth >= 1200)) ||
+            (windowWidth >= 768 && windowWidth < 1030 && (newWidth < 768 || newWidth >= 1030)) ||
+            (windowWidth >= 1030 && windowWidth < 1200 && (newWidth < 1030 || newWidth >= 1200)) ||
             (windowWidth >= 1200 && windowWidth < 1570 && (newWidth < 1200 || newWidth >= 1570)) ||
             (windowWidth >= 1570 && newWidth < 1570)
         ) {
             windowWidth = newWidth;
             isMobile = newWidth < 768;
-            isTablet = newWidth >= 768 && newWidth < 992;
-            isDesktop = newWidth >= 992;
+            isTablet = newWidth >= 768 && newWidth < 1030;
+            isDesktop = newWidth >= 1030;
             isMidDesktop = newWidth >= 1200 && newWidth < 1570;
             
             applyResponsiveLayout();
@@ -121,7 +121,7 @@ function applyResponsiveLayout() {
     const menuOverlay = document.getElementById('menu-overlay');
     
     // Reset mobile menu when resizing to desktop
-    if (window.innerWidth > 991) {
+    if (window.innerWidth > 1030) {
         // Remove active classes when resizing to desktop
         document.querySelectorAll('.dropdown.active, .dropdown-submenu.active').forEach(el => {
             el.classList.remove('active');
@@ -137,7 +137,7 @@ function applyResponsiveLayout() {
     
     // Reset dropdown menus based on screen size
     document.querySelectorAll('.dropdown-menu, .submenu').forEach(menu => {
-        if (window.innerWidth > 991) {
+        if (window.innerWidth > 1030) {
             menu.style.display = '';
         } else {
             if (!menu.closest('.dropdown, .dropdown-submenu').classList.contains('active')) {
@@ -260,7 +260,7 @@ function setupDropdownMenus() {
             
             // Get parent element (dropdown or dropdown-submenu)
             const parent = this.closest('.dropdown, .dropdown-submenu');
-            const isMobile = window.innerWidth <= 991;
+            const isMobile = window.innerWidth <= 1030;
             const isSubmenu = parent.classList.contains('dropdown-submenu');
             
             // For mobile view or submenu toggles
@@ -319,7 +319,7 @@ function setupDropdownMenus() {
     
     // Close dropdowns when clicking outside
     document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown') && window.innerWidth > 991) {
+        if (!e.target.closest('.dropdown') && window.innerWidth > 1030) {
             document.querySelectorAll('.dropdown-menu, .submenu').forEach(menu => {
                 menu.style.display = 'none';
             });
