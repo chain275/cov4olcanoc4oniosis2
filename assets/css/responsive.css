@@ -88,8 +88,8 @@
   }
 }
 
-/* Large Devices (desktops, 1100px and up) */
-@media (min-width: 1100px) and (max-width: 1199px) {
+/* Large Devices (desktops, 1030px and up) */
+@media (min-width: 1030px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
   }
