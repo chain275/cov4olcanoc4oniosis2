@@ -73,6 +73,165 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    // Cache control functions
+    function getNextMondayMidnight() {
+        const now = new Date();
+        // Convert to GMT+7
+        const offsetHours = 7;
+        now.setHours(now.getHours() + offsetHours);
+        
+        // Find the next Monday (day 1)
+        const daysUntilNextMonday = (1 + 7 - now.getDay()) % 7;
+        
+        // If today is Monday and it's before midnight, use today
+        if (daysUntilNextMonday === 0 && now.getHours() < 24) {
+            // Set time to midnight (00:00:00)
+            now.setHours(24, 0, 0, 0);
+        } else {
+            // Set to next Monday midnight
+            now.setDate(now.getDate() + daysUntilNextMonday);
+            now.setHours(0, 0, 0, 0);
+        }
+        
+        // Convert back to local time for storage
+        now.setHours(now.getHours() - offsetHours);
+        return now.getTime();
+    }
+
+    function isCacheValid(cacheKey) {
+        try {
+            const cache = localStorage.getItem(cacheKey);
+            if (!cache) return false;
+            
+            const cacheData = JSON.parse(cache);
+            const now = new Date().getTime();
+            
+            // Check if current time is before expiry time
+            return now < cacheData.expiresAt;
+        } catch (error) {
+            console.error('Cache validation error:', error);
+            return false;
+        }
+    }
+
+    function clearExamCaches() {
+        // Find all localStorage keys that start with exam_data_
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('exam_data_') || key.startsWith('combined_exam_')) {
+                localStorage.removeItem(key);
+            }
+        });
+        console.log('All exam caches cleared');
+        
+        // Refresh the page to fetch fresh data
+        if (confirm('Caches cleared. Reload page to fetch fresh data?')) {
+            window.location.reload();
+        }
+    }
+
+    function handleOfflineMode(cacheKey, jsonPath) {
+        console.log('Operating in offline mode, checking for any cached data');
+        
+        // First check if we have any cached data at all
+        const cache = localStorage.getItem(cacheKey);
+        
+        if (cache) {
+            try {
+                // Use cached data even if expired
+                const cachedData = JSON.parse(cache);
+                
+                showOfflineNotification(cachedData.timestamp);
+                
+                return cachedData.data;
+            } catch (error) {
+                console.error('Error parsing cached data:', error);
+                showError('Unable to load cached data. Please check your internet connection.');
+                return null;
+            }
+        } else {
+            showError(`No cached data available for ${jsonPath}. Please connect to the internet and try again.`);
+            return null;
+        }
+    }
+
+    function showOfflineNotification(timestamp) {
+        const cachedDate = new Date(timestamp);
+        const formattedDate = cachedDate.toLocaleDateString() + ' ' + cachedDate.toLocaleTimeString();
+        
+        // Create notification container if it doesn't exist
+        let notification = document.getElementById('offline-notification');
+        if (!notification) {
+            notification = document.createElement('div');
+            notification.id = 'offline-notification';
+            notification.style.cssText = `
+                position: fixed;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #fff3cd;
+                border: 1px solid #ffeeba;
+                color: #856404;
+                padding: 10px 15px;
+                border-radius: 4px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                z-index: 9999;
+                max-width: 90%;
+                text-align: center;
+                font-size: 14px;
+            `;
+            
+            document.body.appendChild(notification);
+        }
+        
+        // Set notification content
+        notification.innerHTML = `
+            <div style="margin-bottom: 5px;"><strong>You are offline</strong></div>
+            <div>Using cached data from ${formattedDate}</div>
+            <div style="margin-top: 5px; font-size: 12px;">Connect to internet for updated data</div>
+        `;
+        
+        // Auto-hide after 8 seconds
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            notification.style.transition = 'opacity 0.5s ease';
+            
+            // Remove after fade out
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 500);
+        }, 8000);
+    }
+
+    function showError(message) {
+        const examContainer = document.querySelector('#exam-content');
+        if (!examContainer) return;
+        
+        examContainer.innerHTML = `
+            <div class="error-container" style="text-align: center; padding: 20px;">
+                <p class="error" style="color: #d9534f; font-weight: bold;">${message}</p>
+                <button id="retry-button" style="
+                    padding: 10px 15px;
+                    background-color: #337ab7;
+                    color: white;
+                    border: none;
+                    border-radius: 3px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                ">Retry</button>
+            </div>
+        `;
+        
+        // Add event listener to retry button
+        const retryButton = document.getElementById('retry-button');
+        if (retryButton) {
+            retryButton.addEventListener('click', () => {
+                window.location.reload(); // Reload the page to retry
+            });
+        }
+    }
+
     // Original non-cached elements - preserving original references for compatibility
     const examInfoSection = DOM.examInfo;
     const examContentSection = DOM.examContent;
@@ -134,7 +293,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function loadCombinedExam() {
-
         const possiblePaths = [
             '../src/complete exam/combined_exam.json'
         ];
@@ -144,15 +302,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function tryNextPath(paths, index) {
         if (index >= paths.length) {
-
             const processedSampleData = processExamData(getSampleExamData());
             initExam(processedSampleData);
             return;
         }
 
         const path = paths[index];
+        
+        // Generate a unique cache key for this file
+        const cacheKey = `combined_exam_${path.replace(/[^a-zA-Z0-9]/g, '_')}`;
+        
+        // Check if we have valid cached data
+        if (isCacheValid(cacheKey)) {
+            console.log(`Using cached exam data for ${path}`);
+            try {
+                const cachedData = JSON.parse(localStorage.getItem(cacheKey));
+                const processedData = processExamData(cachedData.data);
+                initExam(processedData);
+                return;
+            } catch (error) {
+                console.error('Error processing cached data:', error);
+                // Continue with fetch if cache processing fails
+            }
+        }
+        
+        // Check network status
+        if (!navigator.onLine) {
+            const offlineData = handleOfflineMode(cacheKey, path);
+            if (offlineData) {
+                const processedData = processExamData(offlineData);
+                initExam(processedData);
+                return;
+            } else {
+                // Try next path if offline and no cache
+                tryNextPath(paths, index + 1);
+                return;
+            }
+        }
 
-        fetch(path)
+        console.log(`Fetching fresh exam data from ${path}`);
+        fetch(path, {
+            cache: 'no-cache',  // Force fresh data from server
+            headers: { 'Cache-Control': 'no-cache' }
+        })
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Path ${path} failed with status: ${response.status}`);
@@ -160,12 +352,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.json();
             })
             .then(examData => {
+                // Store the data in cache
+                try {
+                    // Calculate next Monday midnight for cache expiry
+                    const expiresAt = getNextMondayMidnight();
+                    
+                    // Store in localStorage with expiry time
+                    localStorage.setItem(cacheKey, JSON.stringify({
+                        data: examData,
+                        expiresAt: expiresAt,
+                        timestamp: new Date().getTime()
+                    }));
+                    
+                    console.log(`Exam data cached with expiry: ${new Date(expiresAt).toLocaleString()}`);
+                } catch (error) {
+                    console.error('Error caching exam data:', error);
+                }
 
                 const processedData = processExamData(examData);
                 initExam(processedData); 
             })
             .catch(error => {
-
+                console.error(`Error fetching ${path}:`, error);
+                // Try next path if fetch fails
                 tryNextPath(paths, index + 1);
             });
     }
@@ -2225,6 +2434,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener('DOMContentLoaded', function() {
         addNavigationStyles();
+        
+        // Set up network status listeners
+        setupNetworkListeners();
+        
+        // Check for admin URL parameter
+        setupCacheAdminPanel();
 
         const retryButton = document.getElementById('retry-exam');
         if (retryButton) {
@@ -2249,6 +2464,280 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+    
+    // Set up network status event listeners
+    function setupNetworkListeners() {
+        // Listen for online event
+        window.addEventListener('online', handleOnlineStatus);
+        
+        // Listen for offline event
+        window.addEventListener('offline', handleOfflineStatus);
+        
+        // Initial check of network status
+        if (!navigator.onLine) {
+            handleOfflineStatus();
+        }
+    }
+
+    // Handle when the user goes online
+    function handleOnlineStatus() {
+        console.log('Connection restored: online');
+        
+        // Create notification
+        showNetworkStatusNotification(true);
+        
+        // Check if we need to refresh data
+        const shouldRefresh = checkForExpiredCache();
+        
+        if (shouldRefresh) {
+            // Only reload if we have expired caches
+            if (confirm('Internet connection restored. Refresh data now?')) {
+                // Clear expired caches and reload
+                clearExpiredCaches();
+                window.location.reload();
+            }
+        }
+    }
+
+    // Handle when the user goes offline
+    function handleOfflineStatus() {
+        console.log('Connection lost: offline');
+        showNetworkStatusNotification(false);
+    }
+
+    // Check if any caches are expired
+    function checkForExpiredCache() {
+        let hasExpiredCache = false;
+        
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('combined_exam_') || key.startsWith('exam_data_')) {
+                try {
+                    const cache = localStorage.getItem(key);
+                    const cacheData = JSON.parse(cache);
+                    const now = new Date().getTime();
+                    
+                    if (now >= cacheData.expiresAt) {
+                        hasExpiredCache = true;
+                    }
+                } catch (e) {
+                    console.error('Error checking cache expiry:', e);
+                }
+            }
+        });
+        
+        return hasExpiredCache;
+    }
+
+    // Clear only expired caches
+    function clearExpiredCaches() {
+        const now = new Date().getTime();
+        let clearedCount = 0;
+        
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('combined_exam_') || key.startsWith('exam_data_')) {
+                try {
+                    const cache = localStorage.getItem(key);
+                    const cacheData = JSON.parse(cache);
+                    
+                    if (now >= cacheData.expiresAt) {
+                        localStorage.removeItem(key);
+                        clearedCount++;
+                    }
+                } catch (e) {
+                    console.error('Error clearing expired cache:', e);
+                }
+            }
+        });
+        
+        console.log(`Cleared ${clearedCount} expired caches`);
+        return clearedCount;
+    }
+
+    // Show network status notification
+    function showNetworkStatusNotification(isOnline) {
+        // Create or get notification container
+        let notification = document.getElementById('network-status-notification');
+        if (!notification) {
+            notification = document.createElement('div');
+            notification.id = 'network-status-notification';
+            notification.style.cssText = `
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                padding: 10px 15px;
+                border-radius: 4px;
+                color: white;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                z-index: 9999;
+                font-size: 14px;
+                transition: opacity 0.5s ease, transform 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+        }
+        
+        // Set styles and content based on status
+        if (isOnline) {
+            notification.style.backgroundColor = '#28a745';
+            notification.innerHTML = '<strong>✓ Online</strong> - Connection restored';
+        } else {
+            notification.style.backgroundColor = '#dc3545';
+            notification.innerHTML = '<strong>✗ Offline</strong> - Using cached data';
+        }
+        
+        // Show with animation
+        notification.style.opacity = '1';
+        notification.style.transform = 'translateY(0)';
+        
+        // Hide after delay
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateY(-10px)';
+            
+            // Remove after fade out
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 500);
+        }, 5000);
+    }
+    
+    // Set up Cache Admin Panel
+    function setupCacheAdminPanel() {
+        // Only create if admin=cache in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('admin') !== 'cache') return;
+        
+        // Create panel container
+        const panel = document.createElement('div');
+        panel.className = 'cache-control-panel';
+        panel.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #fff;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+            z-index: 9999;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            max-width: 400px;
+        `;
+        
+        // Create panel header
+        const header = document.createElement('h3');
+        header.textContent = 'Cache Control Panel';
+        header.style.margin = '0 0 10px 0';
+        panel.appendChild(header);
+        
+        // Create cache info section
+        const cacheInfo = document.createElement('div');
+        cacheInfo.className = 'cache-info';
+        
+        // Find and display all exam caches
+        const caches = [];
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('combined_exam_') || key.startsWith('exam_data_')) {
+                try {
+                    const cacheData = JSON.parse(localStorage.getItem(key));
+                    caches.push({
+                        key: key,
+                        expiresAt: cacheData.expiresAt,
+                        timestamp: cacheData.timestamp,
+                        size: JSON.stringify(cacheData).length
+                    });
+                } catch (e) {
+                    console.error('Error parsing cache:', e);
+                }
+            }
+        });
+        
+        if (caches.length === 0) {
+            cacheInfo.innerHTML = '<p>No active caches found.</p>';
+        } else {
+            const cacheTable = document.createElement('table');
+            cacheTable.style.width = '100%';
+            cacheTable.style.borderCollapse = 'collapse';
+            cacheTable.style.marginBottom = '10px';
+            cacheTable.style.fontSize = '12px';
+            
+            // Add table header
+            cacheTable.innerHTML = `
+                <thead>
+                    <tr style="background: #f0f0f0;">
+                        <th style="padding: 5px; text-align: left; border: 1px solid #ddd;">Cache Key</th>
+                        <th style="padding: 5px; text-align: left; border: 1px solid #ddd;">Created</th>
+                        <th style="padding: 5px; text-align: left; border: 1px solid #ddd;">Expires</th>
+                        <th style="padding: 5px; text-align: left; border: 1px solid #ddd;">Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            `;
+            
+            // Add cache data rows
+            const tbody = cacheTable.querySelector('tbody');
+            caches.forEach(cache => {
+                const tr = document.createElement('tr');
+                
+                // Format dates
+                const created = new Date(cache.timestamp);
+                const expires = new Date(cache.expiresAt);
+                
+                tr.innerHTML = `
+                    <td style="padding: 5px; border: 1px solid #ddd;">${cache.key.substring(0, 25)}...</td>
+                    <td style="padding: 5px; border: 1px solid #ddd;">${created.toLocaleDateString()} ${created.toLocaleTimeString()}</td>
+                    <td style="padding: 5px; border: 1px solid #ddd;">${expires.toLocaleDateString()} ${expires.toLocaleTimeString()}</td>
+                    <td style="padding: 5px; border: 1px solid #ddd;">${Math.round(cache.size / 1024)} KB</td>
+                `;
+                tbody.appendChild(tr);
+            });
+            
+            cacheInfo.appendChild(cacheTable);
+            
+            // Add info about next refresh
+            const nextRefresh = document.createElement('p');
+            const nextMonday = new Date(getNextMondayMidnight());
+            nextRefresh.innerHTML = `<strong>Next scheduled refresh:</strong> ${nextMonday.toLocaleDateString()} ${nextMonday.toLocaleTimeString()} (GMT+7: Monday midnight)`;
+            nextRefresh.style.fontSize = '13px';
+            cacheInfo.appendChild(nextRefresh);
+        }
+        
+        panel.appendChild(cacheInfo);
+        
+        // Add control buttons
+        const btnContainer = document.createElement('div');
+        btnContainer.style.display = 'flex';
+        btnContainer.style.gap = '10px';
+        btnContainer.style.marginTop = '10px';
+        
+        // Clear cache button
+        const clearBtn = document.createElement('button');
+        clearBtn.textContent = 'Clear All Caches';
+        clearBtn.style.cssText = 'padding: 8px 12px; background: #ff3b30; color: white; border: none; border-radius: 4px; cursor: pointer;';
+        clearBtn.addEventListener('click', clearExamCaches);
+        btnContainer.appendChild(clearBtn);
+        
+        // Refresh page button
+        const refreshBtn = document.createElement('button');
+        refreshBtn.textContent = 'Refresh Page';
+        refreshBtn.style.cssText = 'padding: 8px 12px; background: #007aff; color: white; border: none; border-radius: 4px; cursor: pointer;';
+        refreshBtn.addEventListener('click', () => window.location.reload());
+        btnContainer.appendChild(refreshBtn);
+        
+        // Close panel button
+        const closeBtn = document.createElement('button');
+        closeBtn.textContent = 'Close Panel';
+        closeBtn.style.cssText = 'padding: 8px 12px; background: #8e8e93; color: white; border: none; border-radius: 4px; cursor: pointer;';
+        closeBtn.addEventListener('click', () => panel.remove());
+        btnContainer.appendChild(closeBtn);
+        
+        panel.appendChild(btnContainer);
+        
+        // Add panel to page
+        document.body.appendChild(panel);
+    }
 
     function toggleFeedback() {
         const feedbackContainer = document.getElementById('feedback');
@@ -2556,7 +3045,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function addQuestionProgressText(container, currentQuestionNum, totalQuestions) {
         const progressText = document.createElement('div');
         progressText.className = 'question-progress-text';
-        progressText.textContent = `ข้อที่ ${currentQuestionNum} จาก ${totalQuestions}`;
+        progressText.textContent = `ข้อที่ ${currentQuestionNum}   `;
 
         if (container.firstChild) {
             container.insertBefore(progressText, container.firstChild);
@@ -2740,18 +3229,74 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function loadSelectedExam(examData) {
-        fetch(examData.jsonPath)
+        const jsonPath = examData.jsonPath;
+        
+        // Generate a unique cache key for this exam
+        const cacheKey = `combined_exam_${jsonPath.replace(/[^a-zA-Z0-9]/g, '_')}`;
+        
+        // Check if we have valid cached data
+        if (isCacheValid(cacheKey)) {
+            console.log(`Using cached data for ${examData.title}`);
+            try {
+                const cachedData = JSON.parse(localStorage.getItem(cacheKey));
+                const processedData = processExamData(cachedData.data);
+                initExam(processedData);
+                return;
+            } catch (error) {
+                console.error('Error processing cached exam data:', error);
+                // Continue with fetch if cache processing fails
+            }
+        }
+        
+        // Check network status
+        if (!navigator.onLine) {
+            const offlineData = handleOfflineMode(cacheKey, jsonPath);
+            if (offlineData) {
+                const processedData = processExamData(offlineData);
+                initExam(processedData);
+                return;
+            } else {
+                // Use sample data if offline and no cache
+                const sampleData = generateSampleExamData(examData);
+                initExam(sampleData);
+                return;
+            }
+        }
+        
+        console.log(`Fetching fresh data for ${examData.title}`);
+        fetch(jsonPath, {
+            cache: 'no-cache',  // Force fresh data from server
+            headers: { 'Cache-Control': 'no-cache' }
+        })
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`Path ${examData.jsonPath} failed with status: ${response.status}`);
+                    throw new Error(`Path ${jsonPath} failed with status: ${response.status}`);
                 }
                 return response.json();
             })
             .then(examJson => {
+                // Store the data in cache
+                try {
+                    // Calculate next Monday midnight for cache expiry
+                    const expiresAt = getNextMondayMidnight();
+                    
+                    // Store in localStorage with expiry time
+                    localStorage.setItem(cacheKey, JSON.stringify({
+                        data: examJson,
+                        expiresAt: expiresAt,
+                        timestamp: new Date().getTime()
+                    }));
+                    
+                    console.log(`Exam data cached with expiry: ${new Date(expiresAt).toLocaleString()}`);
+                } catch (error) {
+                    console.error('Error caching exam data:', error);
+                }
+                
                 const processedData = processExamData(examJson);
                 initExam(processedData); 
             })
             .catch(error => {
+                console.error(`Error loading exam ${examData.title}:`, error);
                 const sampleData = generateSampleExamData(examData);
                 initExam(sampleData);
             });
