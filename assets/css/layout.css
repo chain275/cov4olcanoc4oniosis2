@@ -72,6 +72,13 @@ section {
     font-size: 1.15rem;
 }
 
+section-description-up {
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+}
+
 .section-header-description {
     color: #ffffffad;
     max-width: 700px;

@@ -274,7 +274,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeExamSelection();
 
     startButton.addEventListener('click', function() {
-        DOM.examInfo.scrollIntoView({ behavior: 'smooth' });
+        // Add a delay before scrolling
+        setTimeout(function() {
+            DOM.examInfo.scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+        
         DOM.examInfo.classList.add('hidden');
         DOM.examContent.classList.remove('hidden');
 
@@ -301,11 +305,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function tryNextPath(paths, index) {
-        if (index >= paths.length) {
-            const processedSampleData = processExamData(getSampleExamData());
-            initExam(processedSampleData);
-            return;
-        }
 
         const path = paths[index];
         
@@ -380,9 +379,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function processExamData(examData) {
-        if (!examData || !Array.isArray(examData)) {
-            return getSampleExamData();
-        }
 
         logExamTypeExamples(examData);
 
@@ -472,91 +468,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ];
 
         return overallIndex < typesByPosition.length ? typesByPosition[overallIndex] : 'unknown';
-    }
-
-    function getSampleExamData() {
-
-        const sampleData = [];
-
-        for (let i = 0; i < 3; i++) {
-            sampleData.push({
-                id: `short_conversation_${i+1}`,
-                type: "short_conversation",
-                text: "Sample short conversation question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 0
-            });
-        }
-
-        sampleData.push({
-            id: "long_conversation_1",
-            type: "long_conversation",
-            text: "Sample long conversation question",
-            options: ["Option A", "Option B", "Option C", "Option D"],
-            correctAnswer: 1
-        });
-
-        for (let i = 0; i < 2; i++) {
-            sampleData.push({
-                id: `advertisement_${i+1}`,
-                type: "advertisement",
-                text: "Sample advertisement question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 2
-            });
-        }
-
-        for (let i = 0; i < 2; i++) {
-            sampleData.push({
-                id: `product_${i+1}`,
-                type: "product",
-                text: "Sample product question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 3
-            });
-        }
-
-        for (let i = 0; i < 2; i++) {
-            sampleData.push({
-                id: `news_report_${i+1}`,
-                type: "news_report",
-                text: "Sample news report question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 0
-            });
-        }
-
-        for (let i = 0; i < 2; i++) {
-            sampleData.push({
-                id: `article_${i+1}`,
-                type: "article",
-                text: "Sample article question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 1
-            });
-        }
-
-        for (let i = 0; i < 3; i++) {
-            sampleData.push({
-                id: `text_completion_${i+1}`,
-                type: "text_completion",
-                text: "Sample text completion question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 2
-            });
-        }
-
-        for (let i = 0; i < 5; i++) {
-            sampleData.push({
-                id: `paragraph_${i+1}`,
-                type: "paragraph",
-                text: "Sample paragraph question",
-                options: ["Option A", "Option B", "Option C", "Option D"],
-                correctAnswer: 3
-            });
-        }
-
-        return sampleData;
     }
 
     backButton.addEventListener('click', function() {
@@ -1350,19 +1261,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (counts.total > 0) {
                     const typeScorePercentage = Math.round((counts.correct / counts.total) * 100);
                     const primarySkill = typeToSkill[type] || 'reading'; 
+                    
+                    // Create compressed skills array [reading, writing, speaking]
+                    const skillsArray = [0, 0, 0];
+                    if (primarySkill === 'reading') skillsArray[0] = typeScorePercentage;
+                    else if (primarySkill === 'writing') skillsArray[1] = typeScorePercentage;
+                    else if (primarySkill === 'speaking') skillsArray[2] = typeScorePercentage;
 
-                    const skillsObject = { reading: 0, writing: 0, speaking: 0 };
-                    skillsObject[primarySkill] = typeScorePercentage;
-
+                    // Compressed data format
                     const examResultData = {
-                        examType: formatTypeName(type), 
-                        score: typeScorePercentage,
-                        date: dateStamp,
-                        totalQuestions: counts.total,
-                        correctAnswers: counts.correct,
-                        skills: skillsObject,
-                        timeTaken: 0, 
-
+                        t: formatTypeName(type),  // type
+                        s: typeScorePercentage,   // score
+                        d: dateStamp,             // date
+                        q: counts.total,          // totalQuestions
+                        c: counts.correct,        // correctAnswers
+                        sk: skillsArray,          // skills [reading, writing, speaking]
+                        tt: '0:00'                // timeTaken
                     };
 
                     try {
@@ -1383,17 +1297,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (totalQuestions > 0) {
-
             const timeTaken = results.timeTaken || '0:00';
+            
+            // Create compressed skills array for overall exam
+            const overallSkillsArray = [
+                overallSkills.reading || 0,
+                overallSkills.writing || 0, 
+                overallSkills.speaking || 0
+            ];
 
+            // Compressed format for overall exam data
             const overallExamData = {
-                examType: 'combined_exam',
-                score: overallScorePercentage,
-                date: dateStamp,
-                totalQuestions: totalQuestions,
-                correctAnswers: totalCorrect,
-                skills: overallSkills,
-                timeTaken: timeTaken
+                t: 'combined_exam',    // examType
+                s: overallScorePercentage,  // score
+                d: dateStamp,          // date
+                q: totalQuestions,     // totalQuestions
+                c: totalCorrect,       // correctAnswers
+                sk: overallSkillsArray, // skills array
+                tt: timeTaken          // timeTaken
             };
 
             try {
@@ -1971,16 +1892,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function addTypeIndicator(container, type) {
-        if (!container || !type) return;
+    if (!container || !type) return;
 
-        if (container.querySelector('.question-type-indicator')) return;
+    if (container.querySelector('.question-type-indicator')) return;
 
-        const indicator = document.createElement('div');
-        indicator.className = `question-type-indicator ${type.replace('_', '-')}`;
-        indicator.textContent = formatTypeName(type);
+    const indicator = document.createElement('div');
+    indicator.className = `question-type-indicator ${type.replace('_', '-')}`;
+    indicator.textContent = formatTypeName(type);
 
-        container.insertBefore(indicator, container.firstChild);
-    }
+    // Instead of inserting at the beginning, append it to place it inside the container
+    container.appendChild(indicator);
+}
 
     function handleExamSubmission(event) {
         const result = event.detail;

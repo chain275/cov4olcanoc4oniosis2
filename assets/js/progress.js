@@ -30,23 +30,19 @@
     let trendTextElement, strongestSkillTextElement, weakestSkillTextElement, consistencyTextElement, recommendationsListElement;
     
     // Immediately expose saveExamResult function to window to ensure it's available
-    // Function to save a new exam result
+    // Function to save a new exam result with compressed data format
     function saveExamResult(examData) {
-        console.log('Saving exam result:', examData);
+        console.log('Saving exam result (compressed):', examData);
         
-        // Validate exam data
-        if (!examData || !examData.date || !examData.examType || !examData.score) {
-            console.error('Invalid exam data provided to saveExamResult:', examData);
+        // Validate compressed exam data
+        if (!examData || !examData.d || !examData.t || !examData.s) {
+            console.error('Invalid compressed exam data provided to saveExamResult:', examData);
             return false;
         }
         
-        // Ensure skills object exists
-        if (!examData.skills) {
-            examData.skills = {
-                reading: 0,
-                writing: 0, 
-                speaking: 0
-            };
+        // Ensure skills array exists
+        if (!examData.sk) {
+            examData.sk = [0, 0, 0]; // [reading, writing, speaking]
         }
         
         // Load current history
@@ -59,10 +55,10 @@
         // Save updated history
         try {
             localStorage.setItem('examHistory', JSON.stringify(currentHistory));
-            console.log('Exam result saved successfully');
+            console.log('Compressed exam result saved successfully');
             return true;
         } catch (e) {
-            console.error('Error saving exam result to localStorage:', e);
+            console.error('Error saving compressed exam result to localStorage:', e);
             return false;
         }
     }
@@ -277,57 +273,6 @@
         updateData();
     }
 
-    // Generate sample data for demonstration purposes
-    function generateSampleData() {
-        const examTypes = [
-            'Short_conversation', 
-            'Long_Conversation', 
-            'Advertisement', 
-            'Product', 
-            'News_report', 
-            'Article', 
-            'Text_completion', 
-            'Paragraph',
-            'Visual'
-        ];
-        
-        const sampleData = [];
-        
-        // Generate 30 sample exam records spanning the last 90 days
-        for (let i = 0; i < 30; i++) {
-            const date = new Date();
-            date.setDate(date.getDate() - Math.floor(Math.random() * 90));
-            
-            const examType = examTypes[Math.floor(Math.random() * examTypes.length)];
-            const score = Math.floor(40 + Math.random() * 60); // Scores between 40-100
-            
-            // Generate random skill scores
-            let readingScore = Math.floor(30 + Math.random() * 70);
-            let writingScore = Math.floor(30 + Math.random() * 70);
-            let speakingScore = Math.floor(30 + Math.random() * 70);
-            
-            // Generate random time taken (in minutes)
-            const minutes = Math.floor(5 + Math.random() * 25);
-            const seconds = Math.floor(Math.random() * 60);
-            const timeTaken = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-            
-            sampleData.push({
-                date: date.toISOString(),
-                examType,
-                score,
-                skills: {
-                    reading: readingScore,
-                    writing: writingScore,
-                    speaking: speakingScore
-                },
-                timeTaken
-            });
-        }
-        
-        // Sort by date (newest first)
-        return sampleData.sort((a, b) => new Date(b.date) - new Date(a.date));
-    }
-
     // Update all data based on filters
     function updateData() {
         const examType = examTypeFilter.value;
@@ -357,19 +302,19 @@
         }
     }
 
-    // Filter exam history based on selected filters
+    // Filter exam history based on selected filters using compressed data format
     function filterExamHistory(examType, timePeriod) {
         let filtered = [...examHistory];
         
-        // Filter by exam type
+        // Filter by exam type (t = examType)
         if (examType === 'all') {
             // For "All Exam Types," exclude mock exams (combined_exam and Visual)
-            filtered = filtered.filter(exam => exam.examType !== 'combined_exam');
+            filtered = filtered.filter(exam => exam.t !== 'combined_exam');
         } else {
-            filtered = filtered.filter(exam => exam.examType === examType);
+            filtered = filtered.filter(exam => exam.t === examType);
         }
         
-        // Filter by time period
+        // Filter by time period (d = date)
         if (timePeriod !== 'all') {
             const now = new Date();
             let days = 0;
@@ -387,16 +332,16 @@
             }
             
             const cutoffDate = new Date(now.getTime() - (days * 24 * 60 * 60 * 1000));
-            filtered = filtered.filter(exam => new Date(exam.date) >= cutoffDate);
+            filtered = filtered.filter(exam => new Date(exam.d) >= cutoffDate);
         }
         
         // Sort by date (newest first) by default
-        filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+        filtered.sort((a, b) => new Date(b.d) - new Date(a.d));
         
         return filtered;
     }
 
-    // Update summary statistics
+    // Update summary statistics using compressed data format
     function updateStatistics(data) {
         if (data.length === 0) {
             totalExamsElement.textContent = '0';
@@ -410,15 +355,15 @@
             return;
         }
         
-        // Calculate statistics
+        // Calculate statistics from compressed data
         const totalExams = data.length;
-        const totalScore = data.reduce((sum, exam) => sum + exam.score, 0);
+        const totalScore = data.reduce((sum, exam) => sum + exam.s, 0);
         const averageScore = Math.round(totalScore / totalExams);
-        const highestScore = Math.max(...data.map(exam => exam.score));
-        const recentScore = data[0].score; // First item is most recent due to sorting
+        const highestScore = Math.max(...data.map(exam => exam.s));
+        const recentScore = data[0].s; // First item is most recent due to sorting
         
         // Format the last exam date
-        const lastExamDate = new Date(data[0].date);
+        const lastExamDate = new Date(data[0].d);
         const lastExamDateFormatted = lastExamDate.toLocaleDateString('en-US', { 
             year: 'numeric', 
             month: 'short', 
@@ -432,10 +377,10 @@
         recentScoreElement.textContent = `${recentScore}%`;
         lastExamDateElement.textContent = lastExamDateFormatted;
         
-        // Calculate average skill scores
-        const readingTotal = data.reduce((sum, exam) => sum + exam.skills.reading, 0);
-        const writingTotal = data.reduce((sum, exam) => sum + exam.skills.writing, 0);
-        const speakingTotal = data.reduce((sum, exam) => sum + exam.skills.speaking, 0);
+        // Calculate average skill scores - reading (0), writing (1), speaking (2)
+        const readingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[0] : 0), 0);
+        const writingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[1] : 0), 0);
+        const speakingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[2] : 0), 0);
         
         const readingAvg = Math.round(readingTotal / totalExams);
         const writingAvg = Math.round(writingTotal / totalExams);
@@ -513,19 +458,19 @@
         return `M${startX},${startY} A${radius},${radius} 0 ${largeArcFlag},1 ${endX},${endY}`;
     }
 
-    // Update the chart with filtered data
+    // Update the chart with filtered compressed data
     function updateChart(data) {
         // Prepare data for the chart
         const labels = [];
         const scores = [];
         
         // Process data in chronological order (oldest to newest)
-        const sortedData = [...data].sort((a, b) => new Date(a.date) - new Date(b.date));
+        const sortedData = [...data].sort((a, b) => new Date(a.d) - new Date(b.d));
         
         sortedData.forEach(exam => {
-            const date = new Date(exam.date);
+            const date = new Date(exam.d);  // d = date
             labels.push(formatDate(date));
-            scores.push(exam.score);
+            scores.push(exam.s);            // s = score
         });
         
         // Destroy previous chart instance if it exists
@@ -652,7 +597,7 @@
         return trendline;
     }
 
-    // Update exam history table with search, sorting, and pagination
+    // Update exam history table with search, sorting, and pagination for compressed data
     function updateHistoryTable() {
         // Apply search filter if there's a search term
         let filteredResults = [...filteredHistory];
@@ -661,27 +606,27 @@
         if (searchTerm) {
             filteredResults = filteredResults.filter(exam => {
                 return (
-                    formatExamType(exam.examType).toLowerCase().includes(searchTerm) ||
-                    exam.score.toString().includes(searchTerm) ||
-                    formatDate(new Date(exam.date)).toLowerCase().includes(searchTerm)
+                    formatExamType(exam.t).toLowerCase().includes(searchTerm) ||
+                    exam.s.toString().includes(searchTerm) ||
+                    formatDate(new Date(exam.d)).toLowerCase().includes(searchTerm)
                 );
             });
         }
         
-        // Apply sorting
+        // Apply sorting using compressed keys
         const sortValue = historySortSelect.value;
         switch (sortValue) {
             case 'date-desc':
-                filteredResults.sort((a, b) => new Date(b.date) - new Date(a.date));
+                filteredResults.sort((a, b) => new Date(b.d) - new Date(a.d));
                 break;
             case 'date-asc':
-                filteredResults.sort((a, b) => new Date(a.date) - new Date(b.date));
+                filteredResults.sort((a, b) => new Date(a.d) - new Date(b.d));
                 break;
             case 'score-desc':
-                filteredResults.sort((a, b) => b.score - a.score);
+                filteredResults.sort((a, b) => b.s - a.s);
                 break;
             case 'score-asc':
-                filteredResults.sort((a, b) => a.score - b.score);
+                filteredResults.sort((a, b) => a.s - b.s);
                 break;
         }
         
@@ -711,24 +656,24 @@
         pageItems.forEach(exam => {
             const row = document.createElement('tr');
             
-            const date = new Date(exam.date);
+            const date = new Date(exam.d);
             const formattedDate = formatDate(date);
             
             // Format exam type for display (convert from ID to readable name)
-            const examTypeDisplay = formatExamType(exam.examType);
+            const examTypeDisplay = formatExamType(exam.t);
             
-            // Create skill badges
+            // Create skill badges using compressed skills array [reading, writing, speaking]
             const skillBadges = `
-                <span class="skill-badge reading">${exam.skills.reading}%</span>
-                <span class="skill-badge writing">${exam.skills.writing}%</span>
-                <span class="skill-badge speaking">${exam.skills.speaking}%</span>
+                <span class="skill-badge reading">${exam.sk ? exam.sk[0] : 0}%</span>
+                <span class="skill-badge writing">${exam.sk ? exam.sk[1] : 0}%</span>
+                <span class="skill-badge speaking">${exam.sk ? exam.sk[2] : 0}%</span>
             `;
             
             row.innerHTML = `
                 <td>${formattedDate}</td>
                 <td>${examTypeDisplay}</td>
-                <td>${exam.score}%</td>
-                <td>${exam.timeTaken}</td>
+                <td>${exam.s}%</td>
+                <td>${exam.tt || '0:00'}</td>
                 <td>${skillBadges}</td>
             `;
             
@@ -736,7 +681,7 @@
         });
     }
 
-    // Update the skills analysis tab
+    // Update the skills analysis tab with compressed data
     function updateSkillsAnalysis(data) {
         if (data.length === 0) {
             if (skillsRadarChartInstance) skillsRadarChartInstance.destroy();
@@ -744,10 +689,10 @@
             return;
         }
         
-        // Calculate skill averages
-        const readingTotal = data.reduce((sum, exam) => sum + exam.skills.reading, 0);
-        const writingTotal = data.reduce((sum, exam) => sum + exam.skills.writing, 0);
-        const speakingTotal = data.reduce((sum, exam) => sum + exam.skills.speaking, 0);
+        // Calculate skill averages from compressed skills array [reading, writing, speaking]
+        const readingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[0] : 0), 0);
+        const writingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[1] : 0), 0);
+        const speakingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[2] : 0), 0);
         
         const totalExams = data.length;
         const readingAvg = Math.round(readingTotal / totalExams);
@@ -835,30 +780,33 @@
         });
     }
 
-    // Update the exam type chartxz 
+    // Update the exam type chart with compressed data
     function updateExamTypeChart(data) {
         if (examTypeChartInstance) {
             examTypeChartInstance.destroy();
         }
         
-        // Group data by exam type
+        // Use the full exam history instead of filtered data
+        const fullData = [...examHistory];
+        
+        // Group data by exam type using compressed format (t = examType, s = score)
         const examTypeGroups = {};
         
-        data.forEach(exam => {
+        fullData.forEach(exam => {
             // Skip combined_exam type
-            if (exam.examType === 'combined_exam' || exam.examType === 'Visual') {
+            if (exam.t === 'combined_exam' || exam.t === 'Visual') {
                 return;
             }
             
-            if (!examTypeGroups[exam.examType]) {
-                examTypeGroups[exam.examType] = {
+            if (!examTypeGroups[exam.t]) {
+                examTypeGroups[exam.t] = {
                     scores: [],
                     count: 0
                 };
             }
             
-            examTypeGroups[exam.examType].scores.push(exam.score);
-            examTypeGroups[exam.examType].count++;
+            examTypeGroups[exam.t].scores.push(exam.s);
+            examTypeGroups[exam.t].count++;
         });
         
         // Define the desired order of exam types
@@ -943,7 +891,7 @@
         });
     }
 
-    // Update the insights tab
+    // Update the insights tab using compressed data
     function updateInsights(data) {
         if (data.length === 0) {
             trendTextElement.textContent = 'No exam data available';
@@ -957,12 +905,12 @@
         }
         
         try {
-            // Calculate trend
-            const recentExams = [...data].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+            // Calculate trend with compressed data (d = date, s = score)
+            const recentExams = [...data].sort((a, b) => new Date(b.d) - new Date(a.d)).slice(0, 5);
             
             if (recentExams.length >= 2) {
-                const firstScore = recentExams[recentExams.length - 1].score;
-                const lastScore = recentExams[0].score;
+                const firstScore = recentExams[recentExams.length - 1].s;
+                const lastScore = recentExams[0].s;
                 
                 const trendInsightCard = document.getElementById('trend-insight');
                 // Remove any existing trend classes
@@ -998,11 +946,11 @@
                 speaking: 0
             };
             
-            // Calculate skill averages
+            // Calculate skill averages from compressed format (sk[0]=reading, sk[1]=writing, sk[2]=speaking)
             const totalExams = data.length;
-            const readingTotal = data.reduce((sum, exam) => sum + (exam.skills && exam.skills.reading ? exam.skills.reading : 0), 0);
-            const writingTotal = data.reduce((sum, exam) => sum + (exam.skills && exam.skills.writing ? exam.skills.writing : 0), 0);
-            const speakingTotal = data.reduce((sum, exam) => sum + (exam.skills && exam.skills.speaking ? exam.skills.speaking : 0), 0);
+            const readingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[0] : 0), 0);
+            const writingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[1] : 0), 0);
+            const speakingTotal = data.reduce((sum, exam) => sum + (exam.sk ? exam.sk[2] : 0), 0);
             
             skillAverages.reading = Math.round(readingTotal / totalExams);
             skillAverages.writing = Math.round(writingTotal / totalExams);
@@ -1018,10 +966,10 @@
             strongestSkillTextElement.textContent = `${capitalizeFirstLetter(strongestSkill[0])} is your strongest skill with an average of ${strongestSkill[1]}%.`;
             weakestSkillTextElement.textContent = `Focus on improving your ${capitalizeFirstLetter(weakestSkill[0])} skills (currently ${weakestSkill[1]}%).`;
             
-            // Calculate consistency
+            // Calculate consistency using compressed date (d)
             const now = new Date();
             const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
-            const examsInLast7Days = data.filter(exam => new Date(exam.date) >= sevenDaysAgo).length;
+            const examsInLast7Days = data.filter(exam => new Date(exam.d) >= sevenDaysAgo).length;
             
             if (examsInLast7Days > 0) {
                 consistencyTextElement.textContent = `You've taken ${examsInLast7Days} exam${examsInLast7Days === 1 ? '' : 's'} in the last 7 days.`;
@@ -1098,10 +1046,10 @@
                 link: `${skillExamType}.html`
             });
             
-            // Recommendation based on consistency
+            // Recommendation based on consistency (using compressed date d)
             const now = new Date();
             const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
-            const recentExams = data.filter(exam => new Date(exam.date) >= threeDaysAgo);
+            const recentExams = data.filter(exam => new Date(exam.d) >= threeDaysAgo);
             
             if (recentExams.length === 0) {
                 recommendations.push({
@@ -1116,20 +1064,20 @@
             if (data.length >= 3) {
                 const examTypeScores = {};
                 
-                // Group by exam type and calculate average scores
+                // Group by exam type and calculate average scores (t = examType, s = score)
                 data.forEach(exam => {
-                    if (!exam.examType) return; // Skip entries without examType
+                    if (!exam.t) return; // Skip entries without examType
                     
-                    if (!examTypeScores[exam.examType]) {
-                        examTypeScores[exam.examType] = {
+                    if (!examTypeScores[exam.t]) {
+                        examTypeScores[exam.t] = {
                             total: 0,
                             count: 0,
                             average: 0
                         };
                     }
                     
-                    examTypeScores[exam.examType].total += exam.score;
-                    examTypeScores[exam.examType].count++;
+                    examTypeScores[exam.t].total += exam.s;
+                    examTypeScores[exam.t].count++;
                 });
                 
                 // Calculate averages
@@ -1275,15 +1223,15 @@
         }
     }
 
-    // Calculate correlation between time spent and scores
+    // Calculate correlation between time spent and scores with compressed data
     function calculateTimeScoreCorrelation(data) {
-        // Extract time and score data
+        // Extract time and score data using compressed keys tt = timeTaken, s = score
         const timeData = data.map(exam => {
-            const [minutes, seconds] = exam.timeTaken.split(':').map(Number);
+            const [minutes, seconds] = (exam.tt || '0:00').split(':').map(Number);
             return minutes + seconds / 60; // Convert to minutes
         });
         
-        const scoreData = data.map(exam => exam.score);
+        const scoreData = data.map(exam => exam.s);
         
         // Calculate means
         const timeMean = timeData.reduce((sum, time) => sum + time, 0) / timeData.length;
@@ -1309,7 +1257,7 @@
         return correlation;
     }
 
-    // Update time analysis chart
+    // Update time analysis chart with compressed data
     function updateTimeAnalysisChart(data) {
         try {
             // Check if the chart element exists
@@ -1323,8 +1271,8 @@
                 timeAnalysisChartInstance.destroy();
             }
             
-            // Filter data to only include entries with valid timeTaken values
-            const validData = data.filter(exam => exam.timeTaken && exam.timeTaken.includes(':'));
+            // Filter data to only include entries with valid timeTaken values (tt = timeTaken)
+            const validData = data.filter(exam => exam.tt && exam.tt.includes(':'));
             
             // If no valid data, show an empty chart with a message
             if (validData.length === 0) {
@@ -1342,13 +1290,13 @@
                 return;
             }
             
-            // Process time data
+            // Process time data using compressed format (tt = timeTaken)
             const timeData = validData.map(exam => {
-                const [minutes, seconds] = exam.timeTaken.split(':').map(Number);
+                const [minutes, seconds] = exam.tt.split(':').map(Number);
                 return minutes + seconds / 60; // Convert to minutes
             });
             
-            const scoreData = validData.map(exam => exam.score);
+            const scoreData = validData.map(exam => exam.s); // s = score
             
             // Create scatter plot
             timeAnalysisChartInstance = new Chart(timeAnalysisChart, {
@@ -1554,69 +1502,6 @@
     window.toggleChartType = toggleChartType;
     window.exportProgressData = exportProgressData;
 
-    // Add a function to generate a complete set of sample data
-    function generateFullSampleData() {
-        // Clear existing exam history from localStorage
-        localStorage.removeItem('examHistory');
-        
-        // Generate fresh sample data
-        examHistory = generateSampleData();
-        
-        // Save to localStorage
-        localStorage.setItem('examHistory', JSON.stringify(examHistory));
-        
-        // Update the UI
-        updateData();
-        
-        // Notify the user
-        alert('Sample data generated successfully! The page will refresh with new data.');
-        location.reload();
-    }
-
-    // Add a test function to create a sample result (for testing purposes)
-    function addTestResult() {
-        const examTypes = [
-            'Short_conversation', 
-            'Long_Conversation', 
-            'Advertisement', 
-            'Product', 
-            'News_report', 
-            'Article', 
-            'Text_completion', 
-            'Paragraph',
-            'Visual'
-            
-        ];
-        
-        const examType = examTypes[Math.floor(Math.random() * examTypes.length)];
-        const score = Math.floor(40 + Math.random() * 60);
-        let readingScore = Math.floor(30 + Math.random() * 70);
-        let writingScore = Math.floor(30 + Math.random() * 70);
-        let speakingScore = Math.floor(30 + Math.random() * 70);
-        
-        const minutes = Math.floor(5 + Math.random() * 25);
-        const seconds = Math.floor(Math.random() * 60);
-        const timeTaken = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-        
-        const testData = {
-            date: new Date().toISOString(),
-            examType,
-            score,
-            skills: {
-                reading: readingScore,
-                writing: writingScore,
-                speaking: speakingScore
-            },
-            timeTaken
-        };
-        
-        if (saveExamResult(testData)) {
-            alert('Test result added successfully! Refreshing page...');
-            location.reload();
-        } else {
-            alert('Failed to add test result');
-        }
-    }
 
     // Toggle between different chart types (line, bar, area)
     function toggleChartType() {
@@ -1634,7 +1519,7 @@
         updateChart(filteredHistory);
     }
 
-    // Export progress data as CSV
+    // Export progress data as CSV (using compressed data)
     function exportProgressData() {
         if (examHistory.length === 0) {
             alert('No data to export.');
@@ -1644,15 +1529,15 @@
         // Create CSV header row
         let csvContent = 'Date,Exam Type,Score,Reading,Writing,Speaking,Time Taken\n';
         
-        // Add data rows
+        // Add data rows using compressed format keys
         examHistory.forEach(exam => {
-            const date = new Date(exam.date).toLocaleDateString();
-            const examType = formatExamType(exam.examType);
-            const score = exam.score;
-            const reading = exam.skills.reading;
-            const writing = exam.skills.writing;
-            const speaking = exam.skills.speaking;
-            const timeTaken = exam.timeTaken || '0:00';
+            const date = new Date(exam.d).toLocaleDateString(); // d = date
+            const examType = formatExamType(exam.t);           // t = examType
+            const score = exam.s;                             // s = score
+            const reading = exam.sk ? exam.sk[0] : 0;         // sk[0] = reading
+            const writing = exam.sk ? exam.sk[1] : 0;         // sk[1] = writing
+            const speaking = exam.sk ? exam.sk[2] : 0;        // sk[2] = speaking
+            const timeTaken = exam.tt || '0:00';              // tt = timeTaken
             
             csvContent += `${date},${examType},${score},${reading},${writing},${speaking},${timeTaken}\n`;
         });

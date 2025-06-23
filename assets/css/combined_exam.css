@@ -1686,20 +1686,6 @@
         gap: 12px;
     }
 
-    .question-type-indicator {
-        display: inline-block;
-        padding: 4px 10px;
-        border-radius: 4px;
-        color: white;
-        font-size: 12px;
-        font-weight: 500;
-        margin-bottom: 10px;
-        position: absolute;
-        top: -10px;
-        right: 16px;
-        z-index: 5;
-    }
-
     .jump-menu-header {
         display: flex;
         justify-content: space-between;
