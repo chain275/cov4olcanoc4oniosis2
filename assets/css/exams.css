@@ -105,13 +105,15 @@
 /* Exam subtitle styling */
 #exam-subtitle {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: large;
     margin-bottom: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.65rem;
     font-weight: 400;
     display: block;
     width: 100%;
     text-align: left;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 #exam-subtitle span {
@@ -453,6 +455,13 @@ question_text > p {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+}
+
+.text-completion-content{
+    font-size: large;
+    line-height: 1.65rem;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
 }
 
 /* Back button styling when outside the header */

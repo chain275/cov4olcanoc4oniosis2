@@ -1,0 +1,80 @@
+[
+  {
+    "id": "exam1",
+    "title": "A-Level ภาษาอังกฤษ",
+    "date": "06-05-2025",
+    "qc": 80,
+    "du": 90,
+    "dif": "ปานกลาง-ยาก",
+    "deTh": "แบบทดสอบรวมทักษะที่หลากหลาย ประกอบด้วยโจทย์บทสนทนาสั้น (12) บทสนทนายาว (8) โฆษณา (6) สินค้า (12) ข่าว (6) บทความ (16) แบบเติมคำ (15) และการจัดย่อหน้า (5)",
+    "deEN": "This comprehensive A-Level exam combines all question types to simulate the full TCAS English testing experience. Each question will be labeled with its category to help you track your performance across different skills.",
+    "dis": {
+      "s": 20,
+      "r": 50,
+      "w": 30
+    },
+    "q": {
+      "s_c": 12,
+      "l_c": 8,
+      "ad": 6,
+      "pr": 12,
+      "n_r": 6,
+      "ar": 16,
+      "t_c": 15,
+      "pa": 5
+    },
+    "jsonPath": "../src/complete exam/combined_exam.json"
+  },
+  {
+    "id": "exam2",
+    "title": "ข้อสอบ O-NET",
+    "date": "15-04-2025",
+    "qc": 60,
+    "du": 60,
+    "dif": "ปานกลาง",
+    "deTh": "ข้อสอบ O-NET ภาษาอังกฤษรูปแบบล่าสุด เน้นการวัดความสามารถทางด้านการสื่อสาร การอ่าน และการเขียน",
+    "deEN": "The latest O-NET English exam format focusing on communication skills, r comprehension, and w abilities.",
+    "dis": {
+      "s": 20,
+      "r": 60,
+      "w": 20
+    },
+    "q": {
+      "s_c": 8,
+      "l_c": 4,
+      "ad": 8,
+      "pr": 10,
+      "n_r": 10,
+      "ar": 8,
+      "t_c": 8,
+      "pa": 4
+    },
+    "jsonPath": "../src/complete exam/onet_exam.json"
+  },
+  {
+    "id": "exam3",
+    "title": "9 วิชาสามัญ",
+    "date": "25-03-2025",
+    "qc": 75,
+    "du": 85,
+    "dif": "ยาก",
+    "deTh": "ข้อสอบ 9 วิชาสามัญ ภาษาอังกฤษ เน้นคำศัพท์ระดับสูง ไวยากรณ์ที่ซับซ้อน และการอ่านเชิงวิเคราะห์",
+    "deEN": "The 9 Common Subjects English exam focuses on advanced vocabulary, complex grammar structures, and analytical r comprehension.",
+    "dis": {
+      "s": 15,
+      "r": 45,
+      "w": 40
+    },
+    "q": {
+      "s_c": 6,
+      "l_c": 5,
+      "ad": 5,
+      "pr": 8,
+      "n_r": 8,
+      "ar": 13,
+      "t_c": 20,
+      "pa": 10
+    },
+    "jsonPath": "../src/complete exam/common_exam.json"
+  }
+] 

@@ -2745,6 +2745,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.addEventListener('DOMContentLoaded', function() {
+        // Initialize exam selection when DOM is loaded
+        if (typeof initializeExamSelection === 'function') {
+            initializeExamSelection();
+        }
+        
         setTimeout(function() {
             const viewFeedbackBtn = document.getElementById('view-feedback');
             const feedbackContainer = document.getElementById('feedback');
@@ -2977,170 +2982,147 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function initializeExamSelection() {
-        const examOptions = document.querySelectorAll('.exam-option');
+            const examOptionsContainer = document.getElementById('exam-options-container');
         const startButton = document.getElementById('start-combined-exam');
-
-        const examData = {
-            'exam1': {
-                id: 'exam1',
-                title: 'A-Level ภาษาอังกฤษ',
-                date: '06-05-2025',
-                questionCount: 80,
-                duration: 90,
-                difficulty: 'ปานกลาง-ยาก',
-                descriptionTh: 'แบบทดสอบรวมทักษะที่หลากหลาย ประกอบด้วยโจทย์บทสนทนาสั้น (12) บทสนทนายาว (8) โฆษณา (6) สินค้า (12) ข่าว (6) บทความ (16) แบบเติมคำ (15) และการจัดย่อหน้า (5)',
-                descriptionEn: 'This comprehensive A-Level exam combines all question types to simulate the full TCAS English testing experience. Each question will be labeled with its category to help you track your performance across different skills.',
-                distribution: {
-                    speaking: 20, 
-                    reading: 50,
-                    writing: 30
-                },
-                questions: {
-                    'short_conversation': 12,
-                    'long_conversation': 8,
-                    'advertisement': 6,
-                    'product': 12,
-                    'news_report': 6,
-                    'article': 16,
-                    'text_completion': 15,
-                    'paragraph': 5
-                },
-                jsonPath: '../src/complete exam/combined_exam.json'
-            },
-            'exam2': {
-                id: 'exam2',
-                title: 'ข้อสอบ O-NET',
-                date: '15-04-2025',
-                questionCount: 60,
-                duration: 60,
-                difficulty: 'ปานกลาง',
-                descriptionTh: 'ข้อสอบ O-NET ภาษาอังกฤษรูปแบบล่าสุด เน้นการวัดความสามารถทางด้านการสื่อสาร การอ่าน และการเขียน',
-                descriptionEn: 'The latest O-NET English exam format focusing on communication skills, reading comprehension, and writing abilities.',
-                distribution: {
-                    speaking: 20,
-                    reading: 60,
-                    writing: 20
-                },
-                questions: {
-                    'short_conversation': 8,
-                    'long_conversation': 4,
-                    'advertisement': 8,
-                    'product': 10,
-                    'news_report': 10,
-                    'article': 8,
-                    'text_completion': 8,
-                    'paragraph': 4
-                },
-                jsonPath: '../src/complete exam/onet_exam.json'
-            },
-            'exam3': {
-                id: 'exam3',
-                title: '9 วิชาสามัญ',
-                date: '25-03-2025',
-                questionCount: 75,
-                duration: 85,
-                difficulty: 'ยาก',
-                descriptionTh: 'ข้อสอบ 9 วิชาสามัญ ภาษาอังกฤษ เน้นคำศัพท์ระดับสูง ไวยากรณ์ที่ซับซ้อน และการอ่านเชิงวิเคราะห์',
-                descriptionEn: 'The 9 Common Subjects English exam focuses on advanced vocabulary, complex grammar structures, and analytical reading comprehension.',
-                distribution: {
-                    speaking: 15,
-                    reading: 45,
-                    writing: 40
-                },
-                questions: {
-                    'short_conversation': 6,
-                    'long_conversation': 5,
-                    'advertisement': 5,
-                    'product': 8,
-                    'news_report': 8,
-                    'article': 13,
-                    'text_completion': 20,
-                    'paragraph': 10
-                },
-                jsonPath: '../src/complete exam/common_exam.json'
-            }
-        };
-
-        examOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                const examId = this.dataset.examId;
-
-                examOptions.forEach(opt => opt.classList.remove('active'));
-                this.classList.add('active');
-
-                updateExamDetails(examData[examId]);
-
-                startButton.dataset.currentExam = examId;
+        
+        let examData = {};
+        
+        // Fetch exam metadata from JSON file
+        fetch('../data/Info/exam_metadata.json')
+            .then(response => response.json())
+            .then(data => {
+                // Transform array to object with exam id as key
+                data.forEach(exam => {
+                    examData[exam.id] = exam;
+                });
+                
+                // Generate HTML for each exam option
+                data.forEach((exam, index) => {
+                    const isActive = index === 0; // Make first exam active
+                    
+                    const examOption = document.createElement('div');
+                    examOption.className = `exam-option ${isActive ? 'active' : ''}`;
+                    examOption.setAttribute('data-exam-id', exam.id);
+                    
+                    examOption.innerHTML = `
+                        <div class="exam-option-header">
+                            <h3>${exam.title}</h3>
+                            <span class="exam-date">${exam.date}</span>
+                        </div>
+                        <div class="exam-option-details">
+                            <div class="option-metadata">
+                                <span><i class="fas fa-list-ol"></i> ${exam.qc} ข้อ</span>
+                                <span><i class="fas fa-clock"></i> ${exam.du} นาที</span>
+                            </div>
+                            <div class="option-skill-bars">
+                                <div class="skill-bar speaking" style="width: ${exam.dis.s}%"></div>
+                                <div class="skill-bar reading" style="width: ${exam.dis.r}%"></div>
+                                <div class="skill-bar writing" style="width: ${exam.dis.w}%"></div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    examOptionsContainer.appendChild(examOption);
+                });
+                
+                // Initialize UI after data is loaded
+                initializeExamUI();
+            })
+            .catch(error => {
+                console.error('Error loading exam metadata:', error);
             });
-        });
-
-        startButton.addEventListener('click', function() {
-            const selectedExamId = this.dataset.currentExam;
-            const selectedExam = examData[selectedExamId];
-
-            window.selectedExamData = selectedExam;
-
-            document.getElementById("exam-info").scrollIntoView({ behavior: 'smooth' });
-            document.getElementById("exam-info").classList.add('hidden');
-            document.getElementById("exam-content").classList.remove('hidden');
-
-            startTime = Date.now();
-            elapsedSeconds = 0;
-            window.examTimerValue = 0;
-            window.finalElapsedTime = 0; 
-
-            window.examStartTimestamp = Date.now();
-
-            const timerElement = document.getElementById('timer-display');
-            if (timerElement) {
-                timerElement.textContent = '00:00';
+            
+        function initializeExamUI() {
+            const examOptions = document.querySelectorAll('.exam-option');
+            
+            examOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const examId = this.dataset.examId;
+                    
+                    examOptions.forEach(opt => opt.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    updateExamDetails(examData[examId]);
+                    
+                    startButton.dataset.currentExam = examId;
+                });
+            });
+            
+            startButton.addEventListener('click', function() {
+                const selectedExamId = this.dataset.currentExam;
+                const selectedExam = examData[selectedExamId];
+                
+                window.selectedExamData = selectedExam;
+                
+                document.getElementById("exam-info").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("exam-info").classList.add('hidden');
+                document.getElementById("exam-content").classList.remove('hidden');
+                
+                startTime = Date.now();
+                elapsedSeconds = 0;
+                window.examTimerValue = 0;
+                window.finalElapsedTime = 0; 
+                
+                window.examStartTimestamp = Date.now();
+                
+                const timerElement = document.getElementById('timer-display');
+                if (timerElement) {
+                    timerElement.textContent = '00:00';
+                }
+                
+                loadSelectedExam(selectedExam);
+            });
+            
+            // Initialize with the first exam if available
+            if (Object.keys(examData).length > 0) {
+                const firstExamId = Object.keys(examData)[0];
+                updateExamDetails(examData[firstExamId]);
+                
+                // Set the current exam id for the start button
+                startButton.dataset.currentExam = firstExamId;
             }
-
-            loadSelectedExam(selectedExam);
-        });
-
-        updateExamDetails(examData.exam1);
+        }
     }
 
     function updateExamDetails(examData) {
-        document.getElementById('total-questions-count').textContent = examData.questionCount;
-        document.getElementById('exam-time').textContent = `${examData.duration} นาที`;
-        document.getElementById('exam-difficulty').textContent = examData.difficulty;
+        document.getElementById('total-questions-count').textContent = examData.qc;
+        document.getElementById('exam-time').textContent = `${examData.du} นาที`;
+        document.getElementById('exam-difficulty').textContent = examData.dif;
 
-        document.getElementById('exam-description-th').textContent = examData.descriptionTh;
-        document.getElementById('exam-description-en').textContent = examData.descriptionEn;
+        document.getElementById('exam-description-th').textContent = examData.deTh;
+        document.getElementById('exam-description-en').textContent = examData.deEN;
 
-        const distributionBar = document.querySelector('.distribution-bar');
+        const distributionBar = document.querySelector('.dis-bar');
         if (distributionBar) {
             distributionBar.innerHTML = `
-                <div class="bar-segment speaking-segment" style="width: ${examData.distribution.speaking}%;" 
-                     title="Speaking: ${examData.distribution.speaking}%"></div>
-                <div class="bar-segment reading-segment" style="width: ${examData.distribution.reading}%;" 
-                     title="Reading: ${examData.distribution.reading}%"></div>
-                <div class="bar-segment writing-segment" style="width: ${examData.distribution.writing}%;" 
-                     title="Writing: ${examData.distribution.writing}%"></div>
+                <div class="bar-segment s-segment" style="width: ${examData.dis.s}%;" 
+                     title="Speaking: ${examData.dis.s}%"></div>
+                <div class="bar-segment r-segment" style="width: ${examData.dis.r}%;" 
+                     title="Reading: ${examData.dis.r}%"></div>
+                <div class="bar-segment w-segment" style="width: ${examData.dis.w}%;" 
+                     title="Writing: ${examData.dis.w}%"></div>
             `;
         }
 
-        document.querySelector('.total-value').textContent = examData.questionCount;
+        document.querySelector('.total-value').textContent = examData.qc;
 
-        const speakingCount = examData.questions.short_conversation + examData.questions.long_conversation;
-        const readingCount = examData.questions.advertisement + examData.questions.product + 
-                            examData.questions.news_report + examData.questions.article;
-        const writingCount = examData.questions.text_completion + examData.questions.paragraph;
+        const speakingCount = examData.q.s_c + examData.q.l_c;
+        const readingCount = examData.q.ad + examData.q.pr + 
+                            examData.q.n_r + examData.q.ar;
+        const writingCount = examData.q.t_c + examData.q.pa;
 
-        document.querySelector('.skill-section.speaking .skill-count').textContent = `${speakingCount} ข้อ`;
-        document.querySelector('.skill-section.reading .skill-count').textContent = `${readingCount} ข้อ`;
-        document.querySelector('.skill-section.writing .skill-count').textContent = `${writingCount} ข้อ`;
+        document.querySelector('.skill-section.s .skill-count').textContent = `${speakingCount} ข้อ`;
+        document.querySelector('.skill-section.r .skill-count').textContent = `${readingCount} ข้อ`;
+        document.querySelector('.skill-section.w .skill-count').textContent = `${writingCount} ข้อ`;
 
-        updateQuestionTypeCount('short-conversation', examData.questions.short_conversation);
-        updateQuestionTypeCount('long-conversation', examData.questions.long_conversation);
-        updateQuestionTypeCount('advertisement', examData.questions.advertisement);
-        updateQuestionTypeCount('product', examData.questions.product);
-        updateQuestionTypeCount('news-report', examData.questions.news_report);
-        updateQuestionTypeCount('article', examData.questions.article);
-        updateQuestionTypeCount('text-completion', examData.questions.text_completion);
-        updateQuestionTypeCount('paragraph', examData.questions.paragraph);
+        updateQuestionTypeCount('short-conversation', examData.q.s_c);
+        updateQuestionTypeCount('long-conversation', examData.q.l_c);
+        updateQuestionTypeCount('ad', examData.q.ad);
+        updateQuestionTypeCount('pr', examData.q.pr);
+        updateQuestionTypeCount('news-report', examData.q.n_r);
+        updateQuestionTypeCount('ar', examData.q.ar);
+        updateQuestionTypeCount('text-completion', examData.q.t_c);
+        updateQuestionTypeCount('pa', examData.q.pa);
     }
 
     function updateQuestionTypeCount(typeClass, count) {

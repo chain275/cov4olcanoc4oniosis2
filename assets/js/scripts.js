@@ -536,7 +536,6 @@ function setupDropdownMenus() {
 async function fetchExamData() {
     try {
         // Determine which JSON file to load based on the current page
-        let jsonFile = '../data/exams.json';
         
         // Get the current page filename
         const currentPage = window.location.pathname.split('/').pop();
@@ -733,9 +732,9 @@ function displayExamList() {
         
         examCard.innerHTML = `
             <h3>${exam.title}</h3>
-            <p>${exam.description}</p>
-            <p><b>เวลา:</b> ${exam.duration} minutes</p>
-            <p><qb>จำนวนข้อ:</qb> ${exam.totalQuestions}</p>
+            <p>${exam.des}</p>
+            <p><b>เวลา:</b> ${exam.dur} minutes</p>
+            <p><qb>จำนวนข้อ:</qb> ${exam.tq}</p>
             <button class="btn start-exam">เริ่มบททดสอบ</button>
         `;
         
@@ -778,28 +777,37 @@ function startExam(examId) {
     }
     
     // Add subtitle if available
-    if (currentExam.subtitle) {
+    if (currentExam.st) {
+        // Get the current page to determine formatting
+        const currentPage = window.location.pathname.split('/').pop();
+        const isTextCompletionPage = currentPage === 'Text_completion.html';
+
         // Check if subtitle element exists, create if not
         let subtitleElement = document.createElement('p');
         subtitleElement.id = 'exam-subtitle';
         const titleContainer = examTitle.closest('.exam-title-container');
         titleContainer.appendChild(subtitleElement);
-        subtitleElement.innerHTML = formatWithLineBreaks(currentExam.subtitle);
+        
+        if (isTextCompletionPage) {
+            formatTextCompletion(subtitleElement, currentExam.st);
+        } else {
+            subtitleElement.innerHTML = formatWithLineBreaks(currentExam.st);
+        }
     }
     
     // Update exam information in the header
     const totalQuestionsInfo = document.getElementById('info-total-questions');
     if (totalQuestionsInfo) {
-        totalQuestionsInfo.textContent = currentExam.questions.length;
+        totalQuestionsInfo.textContent = currentExam.q.length;
     }
     
     const timeLimitInfo = document.getElementById('info-time-limit');
-    if (timeLimitInfo && currentExam.duration) {
-        timeLimitInfo.textContent = `${currentExam.duration} minutes`;
+    if (timeLimitInfo && currentExam.dur) {
+        timeLimitInfo.textContent = `${currentExam.dur} minutes`;
     }
     
     // Create questions
-    currentExam.questions.forEach((question, index) => {
+    currentExam.q.forEach((question, index) => {
         const questionElement = createQuestionElement(question, index);
         examQuestionsContainer.appendChild(questionElement);
         
@@ -907,10 +915,10 @@ function createQuestionElement(question, index) {
     questionElement.dataset.questionType = question.type || 'general';
     
     let optionsHTML = '';
-    if (question.options) {
+    if (question.op) {
         // Create a copy of the options and store the correct answer
-        const originalOptions = [...question.options];
-        const correctOption = originalOptions[question.correctAnswer];
+        const originalOptions = [...question.op];
+        const correctOption = originalOptions[question.ca];
         
         // Store original options for feedback
         questionElement.dataset.originalOptions = JSON.stringify(originalOptions);
@@ -926,7 +934,7 @@ function createQuestionElement(question, index) {
         
         // Store the mapping for this question in a data attribute
         questionElement.dataset.shuffleMap = JSON.stringify({
-            originalCorrect: question.correctAnswer,
+            originalCorrect: question.ca,
             newCorrect: newCorrectIndex
         });
         
@@ -954,22 +962,34 @@ function createQuestionElement(question, index) {
     // Get the current page to determine formatting
     const currentPage = window.location.pathname.split('/').pop();
     const isConversationPage = currentPage === 'Short_conversation.html' || currentPage === 'Long_conversation.html';
+    const isTextCompletionPage = currentPage === 'Text_completion.html';
     
     // Use special formatting for conversation questions
-    const formattedText = isConversationPage 
-        ? formatConversationQuestion(question.text)
-        : `<question_text>${formatWithLineBreaks(question.text)}</question_text>`;
+    let formattedText = '';
+    if (isConversationPage) {
+        formattedText = formatConversationQuestion(question.te);
+    } else if (isTextCompletionPage) {
+        formattedText = `<div class="text-completion-wrapper"></div>`;
+    } else {
+        formattedText = `<question_text>${formatWithLineBreaks(question.te)}</question_text>`;
+    }
     
     questionElement.innerHTML = `
         <div class="question-type">${capitalizeFirstLetter(question.type || 'general')}</div>
         <div class="progress-text">
             Question <span id="current-question-inline">${currentExamIndex + 1}
         </div>
-        <h3>${question.prompt}</h3>
+        <h3>${question.p}</h3>
         ${imageHTML}
         ${formattedText}
         ${optionsHTML}
     `;
+    
+    // Apply formatTextCompletion for Text_completion.html
+    if (isTextCompletionPage && question.te) {
+        const textCompletionWrapper = questionElement.querySelector('.text-completion-wrapper');
+        formatTextCompletion(textCompletionWrapper, question.te);
+    }
     
     // Add event listeners to radio buttons
     const radioButtons = questionElement.querySelectorAll('input[type="radio"]');
@@ -987,7 +1007,7 @@ function createQuestionElement(question, index) {
 function showQuestion(index) {
     // Validate index
     if (index < 0) index = 0;
-    if (index >= currentExam.questions.length) index = currentExam.questions.length - 1;
+    if (index >= currentExam.q.length) index = currentExam.q.length - 1;
     
     currentExamIndex = index;
     
@@ -1014,20 +1034,16 @@ function showQuestion(index) {
     }
     
     updateProgress();
-    
-    // Scroll question into view with smooth animation
-    if (currentQuestion) {
-        currentQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+
 }
 
 // Update question navigation buttons
 function updateQuestionNavigation() {
     prevQuestionBtn.disabled = currentExamIndex === 0;
-    nextQuestionBtn.disabled = currentExamIndex === currentExam.questions.length - 1;
+    nextQuestionBtn.disabled = currentExamIndex === currentExam.q.length - 1;
     
     // Show/hide buttons based on position
-    if (currentExamIndex === currentExam.questions.length - 1) {
+    if (currentExamIndex === currentExam.q.length - 1) {
         nextQuestionBtn.classList.add('hidden');
         submitExamBtn.classList.remove('hidden');
     } else {
@@ -1058,9 +1074,9 @@ function setupNavigationListeners() {
     };
     
     navigateToNextQuestion = function() {
-        console.log(`Next button clicked. Current index before increment: ${currentExamIndex}, Total questions: ${currentExam.questions.length}`);
+        console.log(`Next button clicked. Current index before increment: ${currentExamIndex}, Total questions: ${currentExam.q.length}`);
         // Ensure we are not already on the last question before trying to advance
-        if (currentExamIndex < currentExam.questions.length - 1) {
+        if (currentExamIndex < currentExam.q.length - 1) {
             showQuestion(currentExamIndex + 1);
             console.log(`Index after calling showQuestion: ${currentExamIndex}`);
         } else {
@@ -1128,11 +1144,11 @@ function setupQuestionNavigator() {
     // Set the total question count
     const totalQuestionCountElement = document.getElementById('total-question-count');
     if (totalQuestionCountElement) {
-        totalQuestionCountElement.textContent = `${currentExam.questions.length} คำถาม`;
+        totalQuestionCountElement.textContent = `${currentExam.q.length} คำถาม`;
     }
     
     // Create a button for each question
-    currentExam.questions.forEach((question, index) => {
+    currentExam.q.forEach((question, index) => {
         const navItem = document.createElement('div');
         navItem.className = 'question-nav-item';
         navItem.textContent = index + 1;
@@ -1153,7 +1169,7 @@ function setupQuestionNavigator() {
 // Update progress indicators with more info
 function updateProgress() {
     const answeredCount = userAnswers.filter(answer => answer !== null).length;
-    const progressPercentage = (answeredCount / currentExam.questions.length) * 100;
+    const progressPercentage = (answeredCount / currentExam.q.length) * 100;
     
 
     // Update the regular progress bar
@@ -1244,6 +1260,8 @@ function formatWithLineBreaks(text) {
         // Replace text between ** ** with <strong> tags
         formattedText = formattedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     }
+
+
     
     // Skip conversation formatting for Advertisement.html
     if (currentPage === 'Advertisement.html') {
@@ -1297,7 +1315,8 @@ function formatWithLineBreaks(text) {
                         formattedText += `<p>${line}</p>`;
                     }
                 }
-            });}
+            });
+        }
         
         // Close the conversation container
         formattedText += '</div>';
@@ -1306,14 +1325,39 @@ function formatWithLineBreaks(text) {
         if (currentPage === 'Text_completion.html') {
             formattedText = formattedText.split('<br>').map(line => 
                 line.trim() ? `<Tc>${line}</Tc>` : ''
-            ).join('');}
-        else { 
-        formattedText = formattedText.split('<br>').map(line => 
-            line.trim() ? `<p>${line}</p>` : ''
-        ).join('');}
+            ).join('');
+        } else { 
+            formattedText = formattedText.split('<br>').map(line => 
+                line.trim() ? `<p>${line}</p>` : ''
+            ).join('');
+        }
     }
     
     return formattedText;
+}
+
+// Format Text Completion content with proper styling for blanks and highlighted text
+function formatTextCompletion(container, subtitle) {
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'text-completion-content';
+
+    let processedText = subtitle.replace(/\n/g, '<br>');
+
+    // Make sure all replacements preserve inline display
+    processedText = processedText.replace(/i\*\*(.*?)\*\*/g, '<strong style="display: inline;">$1</strong>');
+
+    processedText = processedText.replace(/\{([^}]+)\}/g, '<strong style="display: inline;">$1</strong>');
+
+    processedText = processedText.replace(/____\((\d+)\)____/g, 
+        '<span style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-weight: bold; display: inline;">__($1)__</span>');
+
+    processedText = processedText.replace(/____/g, 
+        '<span style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-weight: bold; display: inline;">____</span>');
+
+    // Ensure the text-completion-content container is properly styled for inline flow
+    contentDiv.style.display = 'inline';
+    contentDiv.innerHTML = processedText;
+    container.appendChild(contentDiv);
 }
 
 // Calculate circle path based on percentage
@@ -1365,7 +1409,7 @@ function calculateResults() {
     // Get all question elements to access the shuffle mapping
     const questionElements = document.querySelectorAll('.question');
     
-    currentExam.questions.forEach((question, index) => {
+    currentExam.q.forEach((question, index) => {
         const userAnswer = userAnswers[index];
         
         // Get the question element and its shuffle mapping
@@ -1397,11 +1441,11 @@ function calculateResults() {
             if (shuffleMap) {
                 isCorrect = userAnswer === shuffleMap.newCorrect;
             } else {
-                isCorrect = userAnswer === question.correctAnswer;
+                isCorrect = userAnswer === question.ca;
             }
         } else {
             // Fallback to direct comparison if no element exists
-            isCorrect = userAnswer === question.correctAnswer;
+            isCorrect = userAnswer === question.ca;
             originalOptions = question.options || [];
             shuffledOptions = originalOptions;
         }
@@ -1433,9 +1477,9 @@ function calculateResults() {
         
         // Prepare feedback item with both original and shuffled options
         feedbackItems.push({
-            questionText: question.text,
+            questionText: question.te,
             userAnswer: userAnswer,
-            correctAnswer: question.correctAnswer,
+            correctAnswer: question.ca,
             explanation: question.explanation || 'No explanation provided.',
             isCorrect: isCorrect,
             originalOptions: originalOptions,
@@ -1445,7 +1489,7 @@ function calculateResults() {
     });
     
     // Calculate percentages
-    const totalQuestions = currentExam.questions.length;
+    const totalQuestions = currentExam.q.length;
     const scorePercentage = Math.round((correctCount / totalQuestions) * 100);
     
     // Calculate skill-specific scores
@@ -1537,36 +1581,27 @@ function calculateResults() {
         feedbackList.appendChild(feedbackItem);
     });
     
-    // Fade out exam content section
+    // Immediately hide exam content to prevent any layout issues
+    examContentSection.classList.add('hidden');
+    examContentSection.style.display = 'none';
+    examContentSection.style.height = '0';
+    examContentSection.style.overflow = 'hidden';
     examContentSection.style.opacity = '0';
-    examContentSection.style.transform = 'translateY(-20px)';
-    examContentSection.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     
-    // After a brief delay, hide exam content and show results
-    setTimeout(() => {
-        // Completely hide exam content
-        examContentSection.classList.add('hidden');
-        examContentSection.style.opacity = '';
-        examContentSection.style.transform = '';
-        examContentSection.style.display = 'none';
-        
-        // Prepare and show results section at the top of the page
-        resultsSection.style.opacity = '0';
-        resultsSection.style.transform = 'translateY(20px)';
-        resultsSection.classList.remove('hidden');
-        resultsSection.style.display = 'block';
-        
-        // Force reflow to ensure transition works
-        void resultsSection.offsetWidth;
-        
-        // Show results with animation
-        resultsSection.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-        resultsSection.style.opacity = '1';
-        resultsSection.style.transform = 'translateY(0)';
-        
-        // Scroll to top of the page to show results
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 300);
+    // Prepare and show results section at the top of the page
+    resultsSection.style.opacity = '0';
+    resultsSection.classList.remove('hidden');
+    resultsSection.style.display = 'block';
+    
+    // Force reflow to ensure transition works
+    void resultsSection.offsetWidth;
+    
+    // Show results with animation
+    resultsSection.style.transition = 'opacity 0.4s ease';
+    resultsSection.style.opacity = '1';
+    
+    // Scroll to top of the page to show results
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     
     // Save the results to the progress tracker
     if (typeof window.saveExamResult === 'function') {

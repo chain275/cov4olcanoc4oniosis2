@@ -116,7 +116,7 @@ function loadImagesFromSlideshow() {
     slideshowContainer.appendChild(placeholderSlide);
     
     // Load the slideshow links configuration first
-    fetch('../data/slideshow-links.json')
+    fetch('../data/info/slideshow-links.json')
         .then(response => response.json())
         .then(slideLinks => {
             // Store the links globally for later use

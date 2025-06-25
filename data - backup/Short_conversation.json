@@ -1,0 +1,5314 @@
+[
+  {
+    "id": "A-Level English No.1",
+    "title": "Speaking (1)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 1",
+    "subtitle": "----ARTICLE----\nConversation 1: At a Café  \nEmma: Hey, Liam! You look exhausted. What’s going on?  \nLiam: Ugh, final exams are ____(1)____ . I’ve barely slept this week.  \nEmma: That sounds rough. Have you tried any stress-management techniques?  \nLiam: Not really. I just keep pushing through, but it’s not ____(2)____ .  \nEmma: Hmm. Maybe you should ____(3)____ . Like taking short walks or deep breathing?  \nLiam: Maybe… But I feel guilty stepping away from my desk.  \nEmma: ____(4)____ . Small breaks actually improve focus. Trust me!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) weighing me down  ",
+          "B) kicking my heels  ",
+          "C) burning the midnight oil  ",
+          "D) hitting me like a truck  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) paying off  ",
+          "B) turning up  ",
+          "C) getting by  ",
+          "D) breaking through  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) incorporate mindfulness practices  ",
+          "B) pull yourself together  ",
+          "C) shake it off  ",
+          "D) go with the flow  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a shame  ",
+          "B) Don’t be ridiculous  ",
+          "C) You’ve got a point  ",
+          "D) Think outside the box  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.2",
+    "title": "Speaking (2)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 2",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma: Hey, Liam! I’ve been thinking about the best advice I’ve ever received. My grandpa once told me, ____(1)____. It changed how I approach challenges.  \nLiam: Wow, that’s profound. What made it stick with you?  \nEmma: He had a way of simplifying things. Like when I struggled with work stress, he said, ____(2)____. It taught me resilience.  \nLiam: ____(3)____. Did you ever share that advice with others?  \nEmma: All the time! My colleague was overwhelmed last week, and I told her, ____(4)____. She said it helped her refocus.  \nLiam: Sounds like your grandpa’s wisdom lives on!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) “Always keep your eyes on the stars and your feet on the ground.”  ",
+          "B) “Never let your guard down, even with friends.”  ",
+          "C) “Eat breakfast like a king to stay healthy.”  ",
+          "D) “Money is the root of all happiness.”  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) “Just put up with it until things improve.”  ",
+          "B) “Break it down into smaller steps and chip away at it.”  ",
+          "C) “Run over the problem with a positive mindset.”  ",
+          "D) “Take it back to basics and start fresh.”  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) “That’s nice, but stress is unavoidable.”  ",
+          "B) “I’d probably ignore advice like that.”  ",
+          "C) “That must have been so hard for you.”  ",
+          "D) “Your grandpa sounds like a wise man.”  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) “Maybe you should quit if it’s that stressful.”  ",
+          "B) “Just work harder and stop complaining.”  ",
+          "C) “Why not ask for a raise instead?”  ",
+          "D) “Don’t let temporary chaos cloud your long-term goals.”  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.3",
+    "title": "Speaking (3)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 3",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Bookstore Café  \nLena and Tom are discussing influential books while waiting for coffee.  \n\nLena: I just finished a book that completely shifted how I view climate activism.  \nTom: Really? Which one? I’ve been looking for something ____(1)____.  \nLena: Braiding Sweetgrass by Robin Wall Kimmerer. It blends indigenous wisdom with science.  \nTom: Hmm, never heard of it. How did you ____(2)____ it?  \nLena: My professor recommended it. At first, I thought it’d be too academic, but it’s surprisingly poetic.  \nTom: Poetic? ____(3)____. I usually avoid \"message-driven\" books.  \nLena: Oh, this isn’t preachy. ____(4)____, it made me see environmentalism as a relationship, not a duty.  \nTom: That does sound refreshing. Maybe I’ll give it a try.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) to broaden my horizons  ",
+          "B) for expanding my horizons  ",
+          "C) to stretch my views  ",
+          "D) for stretching my horizons  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come across  ",
+          "B) run into  ",
+          "C) stumble upon  ",
+          "D) bump against  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a bit over the top  ",
+          "B) You’re kidding!  ",
+          "C) I can’t argue with that  ",
+          "D) Let’s agree to disagree  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) In contrast  ",
+          "B) At the end  ",
+          "C) All in all  ",
+          "D) On the flip side  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.4",
+    "title": "Speaking (4)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 4",
+    "subtitle": "\n----ARTICLE----\nEmma: I just found my old copy of Charlotte’s Web while cleaning. It’s wild how much it still ____(1)____.  \nLiam: Right? Some childhood books just stick with you. What do you think makes them so timeless?  \nEmma: Maybe the themes—like friendship and loss. I still ____(2)____ tearing up at Charlotte’s sacrifice.  \nLiam: ____(3)____. I felt the same way rereading The Little Prince. It’s deeper now that I’m older.  \nEmma: Exactly! Those stories ____(4)____, even if we didn’t grasp everything as kids.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) holds up today  ",
+          "B) holds on today  ",
+          "C) holds back today  ",
+          "D) holds out today  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) end up  ",
+          "B) come across  ",
+          "C) get over  ",
+          "D) turn into  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s so relatable!  ",
+          "B) That’s unfortunate.  ",
+          "C) How strange.  ",
+          "D) I doubt it.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) shaped who I am today  ",
+          "B) made me famous today  ",
+          "C) taught me practical skills  ",
+          "D) wasted my time  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.5",
+    "title": "Speaking (5)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 5",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma: Hey, Lucas! You’ve seemed really relaxed lately. What’s your secret?  \nLucas: Honestly, I started pottery classes. It’s amazing how working with clay helps me ____(1)____  after stressful days.  \nEmma: That sounds fun! I’ve been meaning to try something creative too, but I’m not sure where to start.  \nLucas: Why not ____(2)____ ? You could try painting or even journaling. The key is to pick something you enjoy.  \nEmma: Hmm, maybe. I’ve just been so overwhelmed with work. I barely have time to breathe.  \nLucas: ____(3)____ . But even 20 minutes a day can make a difference. It’s about consistency, not perfection.  \nEmma: You’re right. I guess I’ve been putting too much pressure on myself.  \nLucas: Exactly! Creative hobbies aren’t about results; they’re about the process. ____(4)____ ?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) blow off steam  ",
+          "B) cool down pressure  ",
+          "C) break the heat  ",
+          "D) melt the tension  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take on a project  ",
+          "B) dive into it  ",
+          "C) pick up one thing  ",
+          "D) start over  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s ridiculous  ",
+          "B) I know the feeling  ",
+          "C) You’re exaggerating  ",
+          "D) It’s all your fault  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Why not give it a shot  ",
+          "B) Isn’t that the truth  ",
+          "C) Like what, for example?  ",
+          "D) How’s that working?  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.6",
+    "title": "Speaking (6)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 6",
+    "subtitle": "\n----ARTICLE----\nSituation: Emma and Liam discuss a persistent household issue while preparing dinner.  \n\nEmma: Ugh, this leaky faucet is driving me crazy. It’s been dripping nonstop for days.  \nLiam: I know what you mean. ____(1)____ . Have you tried tightening the valve under the sink?  \nEmma: Yeah, but the wrench I have is too big. ____(2)____  until I buy a smaller one?  \nLiam: Hmm… Actually, my cousin once used a rubber band to temporarily seal a leak.  \nEmma: ____(3)____ ? That sounds too simple!  \nLiam: Seriously! You wrap it around the spout to redirect the water flow. It might ____(4)____  until we fix it properly.  \nEmma: Worth a shot. Let me grab some rubber bands from the drawer.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) It’s like a broken drumbeat.  ",
+          "B) The noise made me awake every hour.  ",
+          "C) It must keep you up all night.  ",
+          "D) You’re drowning in irritation.  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) hold off the dripping  ",
+          "B) put off the repair  ",
+          "C) take off the handle  ",
+          "D) call off the plumber  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s okay, I’ll manage.  ",
+          "B) Are you pulling my leg?  ",
+          "C) That’s ingenious! How does that work?  ",
+          "D) Why bother with temporary fixes?  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) buy us some time  ",
+          "B) worsen the problem  ",
+          "C) confuse the landlord  ",
+          "D) drain your patience  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.7",
+    "title": "Speaking (7)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 7",
+    "subtitle": "\n----ARTICLE----\nEmma: I’ve been researching cultural traditions for my next trip. There’s so much I want to experience!  \nLiam: Like what? I’m curious!  \nEmma: Well, I’d love to attend Japan’s tea ceremony. ____(1)____  It’s about mindfulness and history.  \nLiam: That sounds amazing. I’ve always wanted to join a traditional Bavarian Oktoberfest. The energy must be unreal!  \nEmma: Oh, definitely! ____(2)____  Or is this your first time?  \nLiam: First time! I finally ____(3)____  a group tour last week.  \nEmma: ____(4)____  I’ve heard the parades and music are unforgettable.  \nLiam: Absolutely! Plus, I need to practice my German—beer orders don’t count!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’m really into immersing myself in local rituals.  ",
+          "B) I’m totally engaging myself with local rituals.  ",
+          "C) I’m highly involving myself into local rituals.  ",
+          "D) I’m deeply plunging myself onto local rituals.  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Have you got through with planning it yet?  ",
+          "B) Did you turn up to one before?  ",
+          "C) Have you set off for it previously?  ",
+          "D) Did you sign up for it last year?  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You lucky thing!  ",
+          "B) That’s too bad.  ",
+          "C) How ordinary.  ",
+          "D) Not surprising.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) However, I’m jealous!  ",
+          "B) Speaking of which, my cousin went!  ",
+          "C) Anyway, let’s change topics.  ",
+          "D) Similarly, I prefer quiet events.  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.8",
+    "title": "Speaking (8)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 8",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma: Hey, Liam! I heard you’re taking online courses these days. What are you focusing on?  \nLiam: Mostly data analysis. I’ve been ____(1)____  to switch careers, so this feels crucial. How about you?  \nEmma: Same! I’m trying to ____(2)____  coding. The logic part is fun, but debugging makes me want to scream.  \nLiam: ____(3)____ . I felt that way when I started too. What resources are you using?  \nEmma: Interactive platforms mostly. ____(4)____ , I joined a study group for accountability.  \nLiam: Smart move. Maybe we should team up sometime!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) pushing myself  ",
+          "B) pulling myself  ",
+          "C) dragging myself  ",
+          "D) lifting myself  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take in  ",
+          "B) pick up  ",
+          "C) pass through  ",
+          "D) hold onto  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Don’t overdo it  ",
+          "B) That’s a shame  ",
+          "C) Hang in there  ",
+          "D) You’re impossible  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) In contrast  ",
+          "B) On top of that  ",
+          "C) Meanwhile  ",
+          "D) For instance  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.9",
+    "title": "Speaking (9)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 9",
+    "subtitle": "\n----ARTICLE----\nEmma: I’ve been researching dream vacation spots lately. For me, it’s all about places with pristine beaches and ____(1)____.  \nLiam: Same! But I also want somewhere I can ____(2)____ hidden hiking trails. What’s your top pick?  \nEmma: The Maldives. Imagine waking up to crystal-clear water every morning!  \nLiam: ____(3)____. I’d choose Patagonia—it’s rugged and untouched.  \nEmma: Really? Isn’t the terrain super challenging?  \nLiam: Absolutely, but that’s part of the appeal. Plus, ____(4)____, I’ve started training for mountain trekking!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) strong cultural heritage  ",
+          "B) rich cultural heritage  ",
+          "C) thick cultural heritage  ",
+          "D) full cultural heritage  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come across  ",
+          "B) stumble upon  ",
+          "C) run into  ",
+          "D) look up  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds boring.  ",
+          "B) That sounds like an incredible challenge!  ",
+          "C) I’d rather stay home.  ",
+          "D) Maybe next decade.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) in contrast  ",
+          "B) speaking of which  ",
+          "C) anyway  ",
+          "D) however  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.10",
+    "title": "Speaking (10)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 10",
+    "subtitle": "\n----ARTICLE----\nEmma: I’ve been experimenting with workspaces lately. Working from home boosts my productivity, but my creativity suffers.  \nLiam: Interesting! I’ve heard some people thrive in quiet spaces, while others need stimulation. ____(1)____?  \nEmma: Definitely. At home, I get fewer interruptions, but the monotony ____(2)____ my creative blocks.  \nLiam: So where do you go when you need fresh ideas?  \nEmma: Oddly, crowded cafés. The background chatter somehow helps me focus.  \nLiam: ____(3)____ Maybe ambient noise creates a balance between calm and energy.  \nEmma: That makes sense! I’ve also noticed natural light improves my mood.  \nLiam: ____(4)____ For example, studies show environments with plants can enhance divergent thinking.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Do you link productivity with surroundings  ",
+          "B) Does your setting correlate to your efficiency  ",
+          "C) Are you associating environment with output  ",
+          "D) Would you connect creativity to your location  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) works out  ",
+          "B) breaks through  ",
+          "C) ends up worsening  ",
+          "D) gets over  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s completely illogical.  ",
+          "B) I guess that could work for some people.  ",
+          "C) You’re missing the point entirely.  ",
+          "D) Why don’t you just try a library?  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Let’s change the subject.  ",
+          "B) Exactly, and even subtle background noise might trigger ideas.  ",
+          "C) Anyway, how’s your project going?  ",
+          "D) But natural light has nothing to do with creativity.  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.11",
+    "title": "Speaking (11)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 11",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Sarah and Liam discuss family traditions at a café  \nSarah: I’ve been thinking a lot about the traditions my grandparents started. Every winter, we ____(1)____  making gingerbread houses together. It’s chaotic but so special.  \nLiam: That’s lovely! My family’s big tradition is our annual camping trip. My dad always says it’s how we ____(2)____  his father’s love for nature.  \nSarah: Oh, that’s a beautiful way to connect generations. Do your kids enjoy it too?  \nLiam: Mostly, though my youngest complains about the bugs. ____(3)____ ?  \nSarah: Honestly, the gingerbread tradition nearly collapsed last year when my oven broke. But my cousin stepped in to host—it taught me flexibility matters more than perfection.  \nLiam: ____(4)____ ?  \nSarah: Exactly! The messiness is part of the memory.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep up with  ",
+          "B) hold on  ",
+          "C) carry through  ",
+          "D) put off  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) handed down  ",
+          "B) passed by  ",
+          "C) gave up  ",
+          "D) turned over  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds stressful  ",
+          "B) That’s wild  ",
+          "C) Ever had a disaster?  ",
+          "D) That’s a relief  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) So perfection isn’t the goal?  ",
+          "B) Why bother continuing?  ",
+          "C) Did you buy a new oven?  ",
+          "D) How do you think that’s affected your family bonds?  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.12",
+    "title": "Speaking (12)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 12",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Planning a Game Night  \nLiam and Emma discuss games for their upcoming gathering.  \n\nLiam: I’m so glad we’re hosting a game night this weekend! What should we start with? Maybe something classic like Monopoly?  \nEmma: Monopoly always ____(1)____ . Let’s pick something quicker to break the ice. How about Codenames?  \nLiam: Good call. But what if some guests aren’t into word games? We shouldn’t ____(2)____  entirely.  \nEmma: True. Let’s keep Catan as a backup. It’s strategic but not too intimidating.  \nLiam: ____(3)____ . Oh, and we need a cooperative game too—like Pandemic.  \nEmma: Perfect! ____(4)____ , everyone loves teamwork challenges. Let’s finalize the list!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) drags on forever  ",
+          "B) lifts the spirits  ",
+          "C) breaks the bank  ",
+          "D) wins the day  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) rule it out  ",
+          "B) count it out  ",
+          "C) cross it off  ",
+          "D) pass it up  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a solid pick  ",
+          "B) You’re overcomplicating  ",
+          "C) I’m not convinced  ",
+          "D) Let’s skip it  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Plus  ",
+          "B) However  ",
+          "C) Meanwhile  ",
+          "D) Therefore  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.13",
+    "title": "Speaking (13)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 13",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma and Liam discuss their morning routines while waiting for coffee.  \n\nEmma: I’m so glad we finally caught up! My mornings are usually hectic. What about you?  \nLiam: Same here. I ____(1)____  to stay energized. Skipping breakfast leaves me exhausted by noon.  \nEmma: Totally! I’ve started meal-prepping overnight oats. How do you ____(2)____  cooking early?  \nLiam: Honestly, I often grab a banana and ____(3)____ . But on weekends, I’ll make pancakes.  \nEmma: Pancakes sound heavenly! I’d probably sleep in if I didn’t have work.  \nLiam: ____(4)____ . My Sunday ritual is flipping pancakes while listening to jazz.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stick to a balanced meal  ",
+          "B) eat a heavy feast  ",
+          "C) rely on sugary snacks  ",
+          "D) avoid anything solid  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep up with  ",
+          "B) get through  ",
+          "C) put off  ",
+          "D) run out of  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) call it a day  ",
+          "B) rush out the door  ",
+          "C) take my sweet time  ",
+          "D) hit the snooze button  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s why I’m always late  ",
+          "B) By the way, jazz is overrated  ",
+          "C) Same, weekdays are brutal  ",
+          "D) You’re missing out  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.14",
+    "title": "Speaking (14)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 14",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a park bench  \nSarah and Mike catch up while watching kids play.  \n\nSarah: I always think about summers at my grandparents’ farm. The smell of hay, chasing fireflies... ____(1)____.  \n\nMike: Oh, totally! Mine was building a treehouse with my brother. We’d spend hours up there, pretending it was a pirate ship.  \n\nSarah: ____(2)____? That sounds amazing! Did you ever finish it?  \n\nMike: Not really. Dad said we ____(3)____ using his tools without asking. But honestly, the chaos was half the fun.  \n\nSarah: ____(4)____. My brother and I once tried baking cookies and nearly burned the kitchen down!  \n\nMike: Hah! Memories don’t need perfection, right?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Those were my golden years.  ",
+          "B) Those were my best days.  ",
+          "C) It was my early stages.  ",
+          "D) It was the hardest time.  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You stumbled upon that idea?  ",
+          "B) You came up with that yourselves?  ",
+          "C) You looked into that project?  ",
+          "D) You went through that phase?  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) should’ve avoided  ",
+          "B) weren’t allowed to keep  ",
+          "C) might have messed up  ",
+          "D) couldn’t resist  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s so irresponsible!  ",
+          "B) I can picture that!  ",
+          "C) What did you end up doing?  ",
+          "D) How old were you then?  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.15",
+    "title": "Speaking (15)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 15",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Bus Stop  \nEmma: I can’t believe how packed the campus is today. Want to grab coffee after class?  \nLiam: Sure! Let’s go to that café you mentioned last week. ____(1)____ ?  \n\nEmma: Bean Haven? Oh, absolutely! ____(2)____  when I first discovered it. The vibe is just perfect.  \n\nLiam: I heard their seasonal drinks are amazing. What do you usually order?  \nEmma: Their caramel latte with oat milk. But honestly, ____(3)____ .  \n\nLiam: (Looking at his phone) Wait, they close at 8? We’d better hurry.  \nEmma: Don’t worry. ____(4)____ . We have plenty of time.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) What’s the name of it again  ",
+          "B) Where exactly is it located  ",
+          "C) How much do they charge  ",
+          "D) Is it always crowded  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I was totally hooked on it  ",
+          "B) I stumbled upon it  ",
+          "C) I made it up  ",
+          "D) I turned it down  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) you should try their sandwiches too  ",
+          "B) I’m not really a coffee person  ",
+          "C) the barista remembers everyone’s name  ",
+          "D) it’s hard to choose sometimes  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) my last class ends at 6:30  ",
+          "B) I’ve never been there after dark  ",
+          "C) they extend hours during exams  ",
+          "D) let’s skip class and go now  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.16",
+    "title": "Speaking (16)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 16",
+    "subtitle": "\n----ARTICLE----\nEmma: I’ve been thinking about comfort foods lately. Whenever I’m stressed, I always ____(1)____  my grandma’s chicken soup. It’s like a warm hug!  \nLiam: Same here! When work gets overwhelming, I ____(2)____  eating an entire tub of mint chocolate chip ice cream. Not the healthiest habit, honestly.  \nEmma: ____(3)____ . At least it’s something that brings you joy. What makes it your go-to?  \nLiam: My mom used to buy it for me after school exams. ____(4)____ , it’s more about the memories than the taste.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) turn to  ",
+          "B) look at  ",
+          "C) think about  ",
+          "D) go for  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) end up  ",
+          "B) take up  ",
+          "C) put off  ",
+          "D) break down  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds really unhealthy  ",
+          "B) You should try exercising instead  ",
+          "C) That sounds really special  ",
+          "D) Maybe you need willpower  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Therefore  ",
+          "B) Actually  ",
+          "C) However  ",
+          "D) Besides  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.17",
+    "title": "Speaking (17)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 17",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey, Liam! If you could visit any historical period, which one would you pick?  \nLiam: Hmm, I’ve always been ____(1)____  the Renaissance. The art and scientific curiosity are so inspiring!  \nEmma: Interesting! What specifically draws you to that era?  \nLiam: Well, imagine being able to ____(2)____  like da Vinci’s workshops or Galileo’s experiments firsthand.  \nEmma: ____(3)____ ? Isn’t that risky, given the political conflicts back then?  \nLiam: Maybe, but the chance to witness cultural rebirth outweighs that. ____(4)____ ?  \nEmma: Actually, I’d go to the 1920s—jazz, social change… less plague, more parties!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) fascinated with  ",
+          "B) captivated by  ",
+          "C) obsessed by  ",
+          "D) attracted to  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stumble upon  ",
+          "B) look into  ",
+          "C) come across  ",
+          "D) run after  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You’re kidding! That sounds dangerous!  ",
+          "B) Seriously? That’s a bit boring.  ",
+          "C) Really? I’d prefer something modern.  ",
+          "D) Wow, that’s so predictable.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) How about you?  ",
+          "B) Don’t you agree?  ",
+          "C) Isn’t it obvious?  ",
+          "D) Why do you ask?  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.18",
+    "title": "Speaking (18)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 18",
+    "subtitle": "\n----ARTICLE----\nConversation at a Community Market  \nEmma: I’m so glad we finally have time to visit the new farmers’ market. Have you tried the bakery stall here?  \nLiam: Not yet. Why, is there one that ____(1)____?  \n\nEmma: Absolutely! Sweet Grains. They’re a ____(1)____ family-run business that uses organic flour. Their sourdough is unmatched.  \nLiam: Oh, I’ve heard about them! Do they ____(2)____ any specialty diets?  \n\nEmma: Yes, they cater to gluten-free and vegan customers too. Plus, their prices are fair.  \nLiam: Wow, that’s impressive! ____(3)____  \n\nEmma: I go there every weekend. Supporting them means supporting local jobs.  \nLiam: True. I’ve been trying to ____(4)____ more conscious about where I spend my money.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) sticks out  ",
+          "B) stands out  ",
+          "C) comes out  ",
+          "D) breaks out  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) look after  ",
+          "B) run into  ",
+          "C) cater to  ",
+          "D) set up  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’d rather shop at big chains.  ",
+          "B) How often do you go there?  ",
+          "C) That sounds overpriced.  ",
+          "D) Maybe I’ll avoid it.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) turn into  ",
+          "B) come across  ",
+          "C) make up  ",
+          "D) be more  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.19",
+    "title": "Speaking (19)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 19",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Emma and Liam discuss seasonal activities  \nEmma: I love how each season offers something unique for outdoor fun. What’s your go-to summer activity, Liam?  \nLiam: Definitely swimming! I head to the lake every weekend to ____(1)____ . How about you?  \nEmma: Same! Though I also enjoy hiking in the mountains. Autumn’s my favorite, though—nothing like a crisp walk through fallen leaves.  \nLiam: True! I usually ____(2)____  biking in autumn. The trails are stunning.  \nEmma: Oh, speaking of trails, have you tried the new one at Pine Ridge?  \nLiam: Not yet. Is it worth the drive?  \nEmma: Absolutely! The views are breathtaking. Plus, there’s a cozy café halfway.  \nLiam: ____(3)____ ! I’ll check it out this weekend. What do you do in winter?  \nEmma: Ice skating, mostly. But spring’s all about gardening for me.  \nLiam: Gardening? I’d never have the patience.  \nEmma: It’s relaxing! You should try it. ____(4)____ ?  \nLiam: Maybe… though I’m more of a winter sports person.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) fight the heat  ",
+          "B) beat the heat  ",
+          "C) escape the sun  ",
+          "D) avoid the warmth  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take up  ",
+          "B) take on  ",
+          "C) take over  ",
+          "D) take after  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds perfect  ",
+          "B) I’m not sure  ",
+          "C) Maybe next time  ",
+          "D) That’s too bad  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Why don’t you join me sometime?  ",
+          "B) Isn’t it boring?  ",
+          "C) What about winter? Any snowy plans?  ",
+          "D) Do you prefer flowers or vegetables?  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.20",
+    "title": "Speaking (20)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 20",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Discussing Favorite Parks  \nEmma and Liam are coworkers talking during a lunch break.  \nEmma: I’ve been trying to explore more outdoor spots lately. Do you have a favorite park nearby?  \nLiam: Definitely! I always go to Riverside Park. It’s such a ____(1)____  from the city noise.  \nEmma: Oh, I’ve heard of it! What do you usually do there?  \nLiam: I ____(2)____  the walking trails by the river. Sometimes I bring a book and relax under the trees.  \nEmma: ____(3)____ . I need somewhere to unwind after work.  \nLiam: You should try it! The sunset views are incredible. Plus, the community gardens ____(4)____ .  \nEmma: That settles it—I’m visiting this weekend!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) calm exit  ",
+          "B) peaceful escape  ",
+          "C) quiet leaving  ",
+          "D) serene departure  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) check off  ",
+          "B) check out  ",
+          "C) check in  ",
+          "D) check up  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds awful.  ",
+          "B) That sounds amazing!  ",
+          "C) I don’t care.  ",
+          "D) Maybe next year.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) are always crowded.  ",
+          "B) make the air smell weird.  ",
+          "C) add so much color to the place.  ",
+          "D) should be removed.  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.21",
+    "title": "Speaking (21)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 21",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Autumn Festival Plans  \nShawn: Hey Lily, what’s your favorite season?  \nLily: Definitely autumn! I love the crisp air and ____(1)____.  \nShawn: Same! Are you doing anything special this year?  \nLily: Yes! My family’s been ____(2)____ the town’s harvest festival for weeks.  \nShawn: Sounds fun! What’s the highlight?  \nLily: The pumpkin-carving contest. But honestly, I’m more excited about Halloween.  \nShawn: ____(3)____? I thought you hated scary movies!  \nLily: Haha, true! But decorating the house and seeing kids in costumes? That’s my jam.  \nShawn: Fair enough. ____(4)____, want to go apple picking this weekend?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) falling leaves  ",
+          "B) burning sunsets  ",
+          "C) frozen lakes  ",
+          "D) blooming flowers  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) getting off  ",
+          "B) putting up with  ",
+          "C) gearing up for  ",
+          "D) running out of  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Seriously  ",
+          "B) How come  ",
+          "C) Nice one  ",
+          "D) No worries  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) By the way  ",
+          "B) On the contrary  ",
+          "C) In summary  ",
+          "D) Speaking of traditions  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.22",
+    "title": "Speaking (22)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 22",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma and Liam are discussing their favorite times of day.  \n\nEmma: I’ve always been an early riser. My favorite time is dawn. There’s something magical about ____(1)____.  \n\nLiam: Really? I’m the opposite—I thrive at night. But why dawn? Isn’t it hard to wake up that early?  \n\nEmma: It’s worth it. The stillness helps me ____(2)____. Plus, the colors of the sunrise inspire me.  \n\nLiam: Hmm. I guess I’ve never given mornings a fair chance. What do you do during that time?  \n\nEmma: I journal or take a quiet walk. It’s like the world is resetting. How about you? What makes evenings special?  \n\nLiam: Evenings are when I finally ____(3)____. The pressure of the day fades, and I can just… breathe.  \n\nEmma: That sounds peaceful. Maybe I should try staying up later sometime.  \n\nLiam: Or I could attempt waking up early! Though I’d probably ____(4)____ after five minutes.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) the break of day  ",
+          "B) the burst of day  ",
+          "C) the split of day  ",
+          "D) the flash of day  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) set off my thoughts  ",
+          "B) turn up my energy  ",
+          "C) zone out the noise  ",
+          "D) come around to ideas  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) let my guard down  ",
+          "B) put my feet up  ",
+          "C) take my mind off  ",
+          "D) keep my head up  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) pass out  ",
+          "B) drop off  ",
+          "C) nod off  ",
+          "D) fade away  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.23",
+    "title": "Speaking (23)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 23",
+    "subtitle": "\n----ARTICLE----\nMia: I’ve been feeling cooped up indoors lately. What’s your favorite way to ____(1)____  in nature?  \nShawn: Definitely hiking! There’s nothing like ____(2)____  early to catch the sunrise from a trail.  \nMia: That sounds amazing! I’m more into ____(3)____  by the lake with a book.  \nShawn: Oh, that’s peaceful too. ____(4)____  if you ever want company!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) spend time  ",
+          "B) kill time  ",
+          "C) pass time  ",
+          "D) take time  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) heading out  ",
+          "B) checking off  ",
+          "C) setting up  ",
+          "D) taking over  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) racing around  ",
+          "B) lounging lazily  ",
+          "C) arguing loudly  ",
+          "D) sketching quickly  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Let’s avoid lakes  ",
+          "B) Speaking of lakes  ",
+          "C) Forget the sunrise  ",
+          "D) I’ll stay indoors  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.24",
+    "title": "Speaking (24)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 24",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nShawn: Hey, Jen! You look exhausted. Tough day?  \nJen: Ugh, the worst. Meetings back-to-back. I need to ____(1)____  badly.  \nShawn: ____(2)____ ? I usually watch comedy specials to shake off stress.  \nJen: ____(3)____ . Laughter does help. But I prefer baking—it’s therapeutic.  \nShawn: Nice! ____(4)____ , want to grab dinner after this? I know a new pasta place.  \nJen: Perfect. Carbs fix everything.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) loosen up my mind  ",
+          "B) unwind properly  ",
+          "C) free up my thoughts  ",
+          "D) dissolve the tension  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Have you tried zoning out  ",
+          "B) Did you end up putting off  ",
+          "C) Do you ever give in  ",
+          "D) Would you rather take up  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a bit over the top  ",
+          "B) Tell me about it  ",
+          "C) How irresponsible!  ",
+          "D) I’ll pass, thanks  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) However  ",
+          "B) Speaking of which  ",
+          "C) On the contrary  ",
+          "D) For instance  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.25",
+    "title": "Speaking (25)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 25",
+    "subtitle": "\n----ARTICLE----\nConversation 1  \nLiam and Emma discuss their plans on a rainy afternoon.  \n\nLiam: This downpour is relentless! What’s your favorite way to ____(1)____  when it’s like this?  \n\nEmma: Honestly, I love staying cozy indoors. I’ll make tea, grab a blanket, and ____(2)____  with a book. How about you?  \n\nLiam: Same! Though I usually ____(3)____  old movies. Have you read anything good lately?  \n\nEmma: Just started a mystery novel. The plot’s slow at first, but I’m trying to ____(4)____  the first few chapters.  \n\nLiam: Oh, I’ve heard of that one! The twists later are worth it.  \n\nEmma: (5) ? Maybe I’ll stick with it then.  \n\nLiam: Definitely. Hey, next rainy day, we should binge that new fantasy series!  \n\nEmma: (6) . Let’s plan it!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) kill time  ",
+          "B) pass the hours  ",
+          "C) spend moments  ",
+          "D) waste the day  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) curl up  ",
+          "B) lay down  ",
+          "C) sit around  ",
+          "D) turn over  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds right up my alley.  ",
+          "B) I’m not really into that.  ",
+          "C) Why would you do that?  ",
+          "D) Maybe another time.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Speaking of which,  ",
+          "B) Anyway,  ",
+          "C) On the other hand,  ",
+          "D) For instance,  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.26",
+    "title": "Speaking (26)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 26",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nShawn: Hey, have you ever tried dipping fries in a milkshake? I swear it’s amazing.  \nLena: Really? That sounds… unusual. ____(1)____ .  \nShawn: Don’t knock it till you try it! The salty and sweet combo just ____(2)____ .  \nLena: Hmm… I guess I’ll have to ____(3)____ . But honestly, I still think pineapple on pizza is weirder.  \nShawn: Oh, pineapple on pizza is a classic! ____(4)____ .  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’d rather stick to ketchup.  ",
+          "B) What’s the catch?  ",
+          "C) Is that even edible?  ",
+          "D) How do you come up with this?  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) works out  ",
+          "B) balances out  ",
+          "C) turns out  ",
+          "D) sets off  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take your word for it  ",
+          "B) pass on it  ",
+          "C) give it a shot  ",
+          "D) call it a day  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Let’s agree to disagree.  ",
+          "B) You’re missing out!  ",
+          "C) It’s an acquired taste.  ",
+          "D) That’s beside the point.  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.27",
+    "title": "Speaking (27)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 27",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Kitchen Disaster Turnaround  \nContext: Emma and Liam are discussing their recent cooking experiments.  \n\nEmma: I tried making croissants from scratch last weekend. Let’s just say it didn’t go as planned.  \nLiam: Oh no! What happened?  \nEmma: Well, I forgot to ____(1)____ , so the dough didn’t rise properly.  \nLiam: Classic mistake. Did you salvage them?  \nEmma: Sort of. After baking, they ____(2)____  more like rock-hard biscuits.  \nLiam: Ouch. At least you tried! My attempt at ramen broth was worse. I accidentally used cinnamon instead of chili powder.  \nEmma: ____(3)____ ? That must’ve been… interesting.  \nLiam: Yeah, my roommate took one sip and said it tasted like “spicy dessert soup.”  \nEmma: Harsh! ____(4)____ , have you tried any successful recipes lately?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) let the dough rest  ",
+          "B) follow the recipe to the letter  ",
+          "C) add enough yeast  ",
+          "D) knead it thoroughly  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) turned out  ",
+          "B) ended up  ",
+          "C) came off  ",
+          "D) wound up  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You’re kidding! That sounds intense.  ",
+          "B) How dreadful! You should’ve known better.  ",
+          "C) Why would you do that?  ",
+          "D) That’s unfortunate, but mistakes happen.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Anyway  ",
+          "B) On the contrary  ",
+          "C) Speaking of which  ",
+          "D) Regardless  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.28",
+    "title": "Speaking (28)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 28",
+    "subtitle": "\n----ARTICLE----\nShawn: I never realized how much abstract art could ____(1)____ until I saw that exhibition last week.  \nMia: Really? What stood out to you?  \nShawn: There was this chaotic painting that made me rethink how I ____(2)____ emotions. At first, I felt overwhelmed, but then...  \nMia: ____(3)____ Was it the colors or the composition?  \nShawn: Both! And the more I analyzed it, the more I saw patterns in my own life. It’s like art forces you to ____(4)____.  \nMia: Hmm, maybe I should try interpreting music that way. Lyrics already shape how I see relationships.  \nShawn: (5) Different forms connect in unexpected ways.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) open my eyes  ",
+          "B) change my vision  ",
+          "C) widen my sight  ",
+          "D) adjust my view  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take in  ",
+          "B) look into  ",
+          "C) come across  ",
+          "D) put up with  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s too bad.  ",
+          "B) You’re overreacting.  ",
+          "C) I can see why.  ",
+          "D) Sounds boring.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) slow down  ",
+          "B) look backward  ",
+          "C) piece things together  ",
+          "D) second-guess others  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.29",
+    "title": "Speaking (29)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 29",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Family Group Chat Discussion  \nContext: Three generations discuss communication preferences in a family group chat.  \n\nGrandma: Shawn, I saw your message about the reunion, but I couldn’t find the video link. Could you send it again?  \nShawn: Sure, Grandma! I’ll ____(1)____ . Maybe email works better for you?  \nGrandma: Yes, dear. These apps are so confusing. Your mom keeps telling me to ____(2)____ , but I’m too slow!  \n\nMom: Don’t worry, Mom. Shawn, maybe we should stick to one platform. Last week, she ____(3)____  me because she tapped the wrong button!  \nShawn: ____(4)____ . Let’s switch to email for details and use the chat just for quick updates.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) drop it in your inbox  ",
+          "B) throw it into your mailbox  ",
+          "C) pass it through your letters  ",
+          "D) shoot it over text  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) get with the program  ",
+          "B) pick up the pace  ",
+          "C) turn over a new leaf  ",
+          "D) break the ice  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) accidentally hung up on  ",
+          "B) totally annoyed  ",
+          "C) completely ignored  ",
+          "D) barely recognized  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s ridiculous  ",
+          "B) I’m swamped with work  ",
+          "C) I get where you’re coming from  ",
+          "D) Let’s start from scratch  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.30",
+    "title": "Speaking (30)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 30",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Colleagues Discussing Weather and Work  \nEmma and Liam chat in the office break room.  \n\nEmma: Ugh, another rainy Monday. I swear, this weather ____(1)____. I can’t focus at all.  \nLiam: Tell me about it. My productivity tanks when it’s gloomy. I ____(2)____ the cold, but rain makes it worse.  \nEmma: ____(3)____. I even skipped the gym this morning. At least sunny days motivate me to get things done.  \nLiam: Same! Maybe we should ____(4)____. Working from a café with big windows might help.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) really lifts my mood  ",
+          "B) completely dampens my spirits  ",
+          "C) slightly improves my focus  ",
+          "D) never affects my routine  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) get over  ",
+          "B) put up with  ",
+          "C) come across  ",
+          "D) run into  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s ridiculous  ",
+          "B) You can say that again  ",
+          "C) I highly doubt it  ",
+          "D) Let’s disagree  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) relocate the office  ",
+          "B) invest in better coffee  ",
+          "C) try working somewhere brighter  ",
+          "D) complain to HR  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.31",
+    "title": "Speaking (31)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 31",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Regional Food Preferences  \n(At a university cafeteria, Ana (from the southern U.S.) and Liam (from New England) discuss food habits.)  \nAna: I still can’t believe y’all don’t have sweet tea here. Back home, it’s ____(1)____ .  \nLiam: Really? We mostly drink iced coffee, even in winter. The seafood here is amazing, though.  \nAna: Oh, we love fried catfish and grits. But I’ve had to ____(2)____  the lack of spice in Northern dishes.  \nLiam: Haha, my grandma would say you need to “toughen up”! Still, I tried biscuits and gravy once—way heavier than I expected.  \nAna: ____(3)____ ! My roommate nearly fainted when I put hot sauce on pancakes.  \nLiam: Regional quirks, right? ____(4)____ , we’re all picky about something.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) a part of the culture  ",
+          "B) a way of life  ",
+          "C) a daily necessity  ",
+          "D) a common trend  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) put up with  ",
+          "B) get used to  ",
+          "C) come across  ",
+          "D) look after  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds ridiculous  ",
+          "B) That must have been a shock!  ",
+          "C) You’re overreacting  ",
+          "D) I can’t handle that  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) At the end of the day  ",
+          "B) On the contrary  ",
+          "C) To be honest  ",
+          "D) But that’s what makes it interesting  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.32",
+    "title": "Speaking (32)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 32",
+    "subtitle": "\n----ARTICLE----\nEmma: I’ve been thinking about how technology has totally transformed how I cook. Remember when we used to flip through cookbooks?  \nLiam: Yeah! Now everything’s online. What’s the biggest change for you?  \nEmma: Definitely ____(1)____ . Apps like Yummly analyze my ingredients and suggest recipes instantly.  \nLiam: That’s handy! How did you even ____(2)____  new dishes before?  \nEmma: I’d ask friends or experiment blindly. Now, AI even adjusts recipes based on dietary needs.  \nLiam: ____(3)____ ! Does it save you time?  \nEmma: ____(4)____ . I used to spend hours planning meals; now it’s done in minutes.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) meal planning  ",
+          "B) dieting routine  ",
+          "C) grocery shopping  ",
+          "D) kitchen cleaning  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come across  ",
+          "B) look up  ",
+          "C) put off  ",
+          "D) turn down  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s impressive  ",
+          "B) How frustrating  ",
+          "C) I’m not convinced  ",
+          "D) Sounds exhausting  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Absolutely  ",
+          "B) Not really  ",
+          "C) Maybe later  ",
+          "D) I doubt it  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.33",
+    "title": "Speaking (33)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 33",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Coffee Shop  \nEmma and Liam discuss birthday gifts for a mutual friend.  \n\nEmma: I’m really stuck on what to get Clara for her birthday. She’s so particular about things.  \nLiam: Yeah, I get that. You have to ____(1)____ . Maybe something practical?  \nEmma: Like what? Last year, I got her a fancy planner, and she barely used it.  \nLiam: Hmm. What if you ____(2)____  a gift card? At least she can choose what she wants.  \nEmma: ____(3)____ . It feels impersonal, though.  \nLiam: True. But you could pair it with a small handmade item. That way, it’s thoughtful but still flexible.  \nEmma: Not bad! Actually, she mentioned needing a new tote bag. Maybe I’ll ____(4)____ .  \nLiam: Perfect! She’ll appreciate the practicality and the personal touch.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) put your heart on it  ",
+          "B) put thought into it  ",
+          "C) put money down first  ",
+          "D) put effort over it  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) fall out on  ",
+          "B) fall back on  ",
+          "C) fall through with  ",
+          "D) fall apart over  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s ridiculous  ",
+          "B) You’re missing the point  ",
+          "C) That’s true  ",
+          "D) How dare you  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) make her one with her initials  ",
+          "B) forget the whole idea  ",
+          "C) ask someone else instead  ",
+          "D) just plan a surprise party  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.34",
+    "title": "Speaking (34)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 34",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Learning to Code  \nEmma and Liam are discussing strategies for learning a new skill.  \n\nEmma: I’ve decided to learn Python, but honestly, I’m overwhelmed. There’s so much information! How do you ____(1)____  when tackling something totally new?  \n\nLiam: I get that. My approach is to ____(2)____  into smaller chunks. Start with basics like variables and loops before jumping into complex projects.  \n\nEmma: Hmm. But what if I hit a roadblock and can’t figure out an error?  \n\nLiam: That’s normal! Online forums like Stack Overflow are gold. You could also ____(3)____ , like joining a study group.  \n\nEmma: ____(4)____ . Maybe I’m overcomplicating it. Thanks for the tips!  \n\nLiam: No problem! Just remember, consistency beats intensity.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) figure out where to start  ",
+          "B) know the initiation  ",
+          "C) decide the beginning  ",
+          "D) understand the opening  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) break it down  ",
+          "B) turn it over  ",
+          "C) put it off  ",
+          "D) run it through  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) ask for a favor  ",
+          "B) collaborate with experts  ",
+          "C) seek out support  ",
+          "D) demand solutions  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds exhausting  ",
+          "B) That makes sense!  ",
+          "C) You’re missing the point  ",
+          "D) I’ll ignore that advice  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.35",
+    "title": "Speaking (35)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 35",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Community Volunteering  \nShawn: Hey Maria, I heard you’re involved with the neighborhood cleanup group. How did you ____(1)____ ?  \nMaria: Oh, a friend invited me last year. At first, I wasn’t sure, but now I love contributing.  \nShawn: That’s awesome! I’ve been meaning to ____(2)____  more activities. Any advice?  \nMaria: Start small—maybe help organize the food bank drive. But honestly, it’s easy to feel overwhelmed.  \nShawn: ____(3)____ . How do you balance it with work?  \nMaria: I set clear boundaries. ____(4)____ , the food bank team meets Sundays if you’re free.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) get into local initiatives  ",
+          "B) jump over community projects  ",
+          "C) break into volunteer work  ",
+          "D) dive under social plans  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep up with  ",
+          "B) take on  ",
+          "C) look into  ",
+          "D) put off  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s ridiculous  ",
+          "B) I’m not surprised  ",
+          "C) I can imagine  ",
+          "D) You’re overreacting  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Anyway  ",
+          "B) By the way  ",
+          "C) Speaking of which  ",
+          "D) In contrast  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.36",
+    "title": "Speaking (36)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 36",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam! It’s been months since we last talked. How’ve you been?  \nLiam: I know, time flies! Work’s been crazy, but I’ve been meaning to ____(1)____ .  \nEmma: Same here. How do you even ____(2)____  with friends when life gets this hectic?  \nLiam: Honestly, I schedule calls like appointments. It sounds rigid, but you have to ____(3)____ .  \nEmma: ____(3)____ ? That’s so methodical! Doesn’t it feel forced?  \nLiam: At first, maybe. But once it becomes routine, you realize consistency ____(4)____ .  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep in touch  ",
+          "B) hold contact  ",
+          "C) stick communication  ",
+          "D) grab a chat  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) reach out  ",
+          "B) call off  ",
+          "C) break into  ",
+          "D) hand over  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) No kidding!  ",
+          "B) You’re lying!  ",
+          "C) Seriously though,  ",
+          "D) That’s ridiculous!  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) is the key to drifting apart  ",
+          "B) beats never connecting at all  ",
+          "C) makes friendships artificial  ",
+          "D) ruins spontaneity  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.37",
+    "title": "Speaking (37)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 37",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, I heard your sister moved to Australia last month. ____(1)____ ?  \nLiam: Yeah, it’s been tough, but we video call every weekend. I also send her little care packages now and then.  \nEmma: That’s sweet! Do you ever worry about losing touch?  \nLiam: Sometimes, but I try to ____(2)____  by scheduling regular chats. How about you and your grandparents?  \nEmma: Oh, we write old-fashioned letters! It feels more personal. Though time zones can be a pain.  \nLiam: ____(3)____ . I guess the key is finding what works for both people.  \nEmma: Totally. ____(4)____ , even if it takes extra effort.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) How do you stay connected  ",
+          "B) How do you keep attached  ",
+          "C) How do you remain linked  ",
+          "D) How do you hold united  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) run into her  ",
+          "B) catch up with her  ",
+          "C) check off her  ",
+          "D) pass by her  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds really thoughtful!  ",
+          "B) That seems excessive.  ",
+          "C) You’re missing the point.  ",
+          "D) I can’t stand that.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) It’s better to ignore the distance  ",
+          "B) It’s worth staying in the loop  ",
+          "C) Technology ruins everything  ",
+          "D) Letters are outdated  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.38",
+    "title": "Speaking (38)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 38",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, you always seem so focused during exams. ____(1)____  when things get tough?  \nLiam: Honestly, I break tasks into smaller steps. If I feel stuck, I ____(2)____  for a bit and revisit the problem later.  \nEmma: Hmm, but what if you’re overwhelmed by deadlines?  \nLiam: ____(3)____ . I prioritize ruthlessly. And sometimes, treating myself to coffee helps!  \nEmma: ____(4)____ . Rewards do work. Maybe I should try that.  \nLiam: Exactly! Small wins keep you going.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) How you keep your spirits up  ",
+          "B) When you lose your motivation  ",
+          "C) Why you make it harder  ",
+          "D) Where you find your energy  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) step aside  ",
+          "B) push through  ",
+          "C) put it off  ",
+          "D) turn it over  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) No way! That’s crazy  ",
+          "B) That makes sense  ",
+          "C) I’d rather not say  ",
+          "D) You’re missing the point  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Anyway, let’s change topics  ",
+          "B) Speaking of which  ",
+          "C) However, it’s not ideal  ",
+          "D) On the contrary  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.39",
+    "title": "Speaking (39)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 39",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Emma and Liam catching up at a café  \nEmma: Hey Liam! It’s been ages. How’s life?  \nLiam: Honestly, it’s been a rollercoaster. I’ve been reflecting a lot lately—especially on how my definition of success has changed.  \nEmma: Oh? How so?  \nLiam: Well, in my 20s, I thought success was all about ____(1)____ . Now, I care more about balance.  \nEmma: That makes sense. What triggered the shift?  \nLiam: Burnout, mostly. I had to ____(2)____  that constantly chasing promotions wasn’t sustainable.  \nEmma: ____(3)____ . Society pushes hustle culture so hard.  \nLiam: Exactly! Now I value time with family and mental health. It’s funny how ____(4)____ , isn’t it?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) climbing the corporate ladder  ",
+          "B) counting every penny  ",
+          "C) racing against time  ",
+          "D) painting the town red  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) figure out  ",
+          "B) find out  ",
+          "C) settle into  ",
+          "D) work in  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a bit dramatic.  ",
+          "B) I couldn’t agree more.  ",
+          "C) You’re missing the point.  ",
+          "D) Let’s change the subject.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) we end up back where we started  ",
+          "B) success is just an illusion  ",
+          "C) age makes everything clearer  ",
+          "D) how much our priorities shift  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.40",
+    "title": "Speaking (40)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 40",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, I heard you’ve been tweaking your workout plan lately. How’s that going?  \nLiam: Honestly, it’s been a journey! I ____(1)____  because I used to just lift weights, but now I mix in cardio.  \nEmma: Oh, interesting! What made you ____(2)____  yoga? I remember you hated stretching!  \nLiam: Hah, true! But my trainer said flexibility matters. Anyway, how about you? Still doing marathon training?  \nEmma: ____(3)____ . I actually switched to swimming—it’s easier on my knees.  \nLiam: Smart move! ____(4)____ , my gym just added a pool. Maybe we could go together?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stuck with it  ",
+          "B) branched out  ",
+          "C) toned down  ",
+          "D) held onto it  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) move into  ",
+          "B) get into  ",
+          "C) turn onto  ",
+          "D) put up with  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Not at all!  ",
+          "B) That’s quite a shift!  ",
+          "C) You’re kidding!  ",
+          "D) Not exactly.  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) By the way  ",
+          "B) For instance  ",
+          "C) Speaking of cross-training  ",
+          "D) On the other hand  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.41",
+    "title": "Speaking (41)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 41",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a café  \nEmma (visiting her hometown after 5 years) and Liam (a local resident) catch up.  \nEmma: I can’t believe how much this place has changed! The old park near the river is gone.  \nLiam: Yeah, they replaced it with a shopping complex last year. ____(1)____ .  \nEmma: Really? What about the family-owned bakery on Maple Street?  \nLiam: Oh, it closed down after the owner retired. ____(2)____ .  \nEmma: That’s a shame. I used to love their pastries.  \nLiam: Me too. On the bright side, the new tram system ____(3)____ .  \nEmma: Wait, there’s a tram now?  \nLiam: Yep! It’s reduced traffic downtown. ____(4)____ .  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) They’ve passed major changes around here  ",
+          "B) This town’s undergone significant transformations  ",
+          "C) They’ve done big differences to the area  ",
+          "D) It was a total mess before  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) They put off the business after a while  ",
+          "B) It got taken over by a café chain  ",
+          "C) They made it up with new owners  ",
+          "D) It broke down last winter  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) has really turned things around  ",
+          "B) has put up with delays  ",
+          "C) has broken through the budget  ",
+          "D) has made off with funds  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You should get over the past  ",
+          "B) Are there any initiatives to preserve local history?  ",
+          "C) Let’s focus on the future instead  ",
+          "D) The roads are quieter now, right?  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.42",
+    "title": "Speaking (42)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 42",
+    "subtitle": "\n----ARTICLE----\nSarah: Hey Tom, have you noticed how much our neighborhood has ____(1)____  over the past decade?  \nTom: Absolutely! When I first moved here, there were barely any shops. Now there’s a whole shopping complex.  \nSarah: Right? And the old park was renovated last year. Though I miss how quiet it used to be.  \nTom: Yeah, the new skatepark and cafes are nice, but it’s always crowded. I guess progress ____(2)____ .  \nSarah: ____(3)____ . At least the community center hosts more events now.  \nTom: ____(4)____ . Maybe we should join the next cleanup drive to meet more neighbors.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) made big changes  ",
+          "B) undergone significant changes  ",
+          "C) transformed heavily  ",
+          "D) been through big shifts  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) comes with trade-offs  ",
+          "B) goes through phases  ",
+          "C) puts up with noise  ",
+          "D) sets off debates  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s not the point  ",
+          "B) I see where you’re coming from  ",
+          "C) You must be kidding  ",
+          "D) There’s no way around it  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Anyway, how’s your family?  ",
+          "B) By the way, did you hear about the festival?  ",
+          "C) In contrast, it used to be better  ",
+          "D) That’s actually a great point  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.43",
+    "title": "Speaking (43)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 43",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a café, Emma and Liam discuss personal style changes.  \nEmma: I was cleaning out my closet yesterday and found some old photos. My outfits back in high school were… something else.  \nLiam: Oh, same! I cringe at my neon phase. ____(1)____ . How would you say your style’s changed?  \nEmma: Honestly, I used to just follow trends, but now I ____(2)____  comfort over everything. What about you?  \nLiam: I’ve started experimenting more. Last year, I even ____(3)____  thrifting vintage pieces.  \nEmma: Really? I’d never have guessed!  \nLiam: ____(4)____ . My friends say I’ve gone from “basic” to “bold” in two years.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I went through so many awkward stages  ",
+          "B) I’ve been through so many awkward phases  ",
+          "C) I had so many awkward moments  ",
+          "D) I made so many awkward choices  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) prioritize  ",
+          "B) stick to  ",
+          "C) get along with  ",
+          "D) put up with  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) got into  ",
+          "B) got over  ",
+          "C) got through  ",
+          "D) got off  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You’re kidding!  ",
+          "B) That’s a shame.  ",
+          "C) I can imagine.  ",
+          "D) Don’t mention it.  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.44",
+    "title": "Speaking (44)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 44",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma: Hey, Liam! I haven’t seen you online much lately. Did you finally ____(1)____ ?  \nLiam: Sort of. I realized I was spending hours mindlessly scrolling, so I decided to ____(2)____ .  \nEmma: Wow, that’s a big change! How’s it going?  \nLiam: Honestly? At first, I felt really out of the loop, but now I ____(3)____ .  \nEmma: I get it. Sometimes I think I should do the same, but…  \nLiam: Maybe start small? Like, instead of deleting apps, you could ____(4)____ .  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) quit the internet entirely  ",
+          "B) log off your accounts  ",
+          "C) ghost social media  ",
+          "D) take a digital detox  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) cut down on it  ",
+          "B) check it out  ",
+          "C) turn it up  ",
+          "D) put it off  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) can’t stop thinking about memes  ",
+          "B) feel way more present in real life  ",
+          "C) still post twice a day  ",
+          "D) miss all the drama  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) set time limits for yourself  ",
+          "B) buy a new phone  ",
+          "C) watch more TV  ",
+          "D) ignore your friends  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.45",
+    "title": "Speaking (45)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 45",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, have you noticed how your music preferences shift as you get older?  \nLiam: Totally! When I was a teen, I only listened to punk rock. But now, I’ve started exploring jazz and classical. ____(1)____.  \nEmma: Same! I used to play pop on repeat, but lately, I’ve ____(2)____ overly polished tracks. How about you?  \nLiam: Honestly, I’ve started appreciating lyrics more. A song’s message hits differently now.  \nEmma: ____(3)____. Depth matters way more than just a catchy beat.  \nLiam: Exactly! Oh, and I’ve been revisiting old albums my parents loved. ____(4)____, they’re growing on me!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I guess my ears matured  ",
+          "B) It really broadened my horizons  ",
+          "C) Music is just noise anyway  ",
+          "D) I’ve narrowed my scope  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) got tired of  ",
+          "B) got over with  ",
+          "C) got into  ",
+          "D) got through  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s so true!  ",
+          "B) That’s unfortunate.  ",
+          "C) I’m not sure.  ",
+          "D) You’re missing out.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Anyway  ",
+          "B) Speaking of which  ",
+          "C) In contrast  ",
+          "D) To be honest  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.46",
+    "title": "Speaking (46)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 46",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At the office coffee station  \nEmma: Hey Liam, do you remember how we used to work late every day last year?  \nLiam: Ugh, don’t remind me. I was practically ____(1)____  by December.  \nEmma: Same here. But lately, I’ve noticed you leaving on time. What changed?  \nLiam: Well, I decided to ____(2)____  working late unless it’s urgent. My mental health was tanking.  \nEmma: ____(3)____ . How’s that working out?  \nLiam: Surprisingly well! I’ve started hiking on weekends. You should try it.  \nEmma: Hmm. ____(4)____ , but I’m still struggling to disconnect.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) burnt out  ",
+          "B) worn off  ",
+          "C) stressed up  ",
+          "D) cooled down  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) put off  ",
+          "B) cut back on  ",
+          "C) take up  ",
+          "D) run into  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s too bad.  ",
+          "B) You’re kidding!  ",
+          "C) That sounds like a step in the right direction.  ",
+          "D) Whatever works for you.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I might consider it  ",
+          "B) Lucky you  ",
+          "C) I’ve been meaning to set those boundaries  ",
+          "D) It’s not my thing  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.47",
+    "title": "Speaking (47)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 47",
+    "subtitle": "\n----ARTICLE----\nEmma: I just learned why we say \"it’s raining cats and dogs\"! ____(1)____   \nLiam: Seriously? I always assumed it was just a silly exaggeration. What’s the real story?  \nEmma: Some historians think it ____(2)____  17th-century England. Poor drainage caused stray animals to wash into streets during heavy storms.  \nLiam: ____(3)____ ! But why cats and dogs specifically?  \nEmma: Good question! Others argue it ____(4)____  Norse mythology, where storms symbolized fighting animals.  \nLiam: Huh. Either way, it’s way darker than I thought!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Have you ever imagined how idioms form?  ",
+          "B) Did you ever hear the phrase’s background?  ",
+          "C) Have you ever wondered where that phrase comes from?  ",
+          "D) Do you know if animals were involved?  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) came across  ",
+          "B) stemmed from  ",
+          "C) turned up in  ",
+          "D) broke out in  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s fascinating!  ",
+          "B) You’re pulling my leg!  ",
+          "C) I’m not following.  ",
+          "D) How dreadful!  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) relates to  ",
+          "B) traces back to  ",
+          "C) points at  ",
+          "D) refers as  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.48",
+    "title": "Speaking (48)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 48",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma and Liam are discussing fascinating trivia they’ve recently encountered.  \n\nEmma: Hey Liam, did you know I ____(1)____  yesterday? Apparently, honey never spoils. Archaeologists found 3,000-year-old pots of edible honey in Egyptian tombs!  \nLiam: Really? That’s wild! I ____(2)____  a similar fact last week. Octopuses have three hearts, and two of them stop beating when they swim.  \nEmma: ____(3)____ ? That’s both cool and creepy. How do they even evolve like that?  \nLiam: Evolution’s full of surprises! Oh, and here’s another one: giraffes hum at night, but only ____(4)____ . Scientists think it’s a way to communicate in the dark.  \nEmma: Now that I need to Google later. Nature’s full of hidden quirks!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) tripped over an article  ",
+          "B) stumbled upon an article  ",
+          "C) crashed into a study  ",
+          "D) fell for a documentary  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) came across  ",
+          "B) got over  ",
+          "C) put off  ",
+          "D) turned down  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a shame  ",
+          "B) No way!  ",
+          "C) I knew that  ",
+          "D) Let’s move on  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) when they’re lonely  ",
+          "B) if they’re hungry  ",
+          "C) at low frequencies  ",
+          "D) speaking of which  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.49",
+    "title": "Speaking (49)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 49",
+    "subtitle": "\n----ARTICLE----\nShawn: Hey, Mia! I need some new podcasts. Got any recommendations?  \nMia: Sure! What ____(1)____ ?  \nShawn: I’m into true crime and tech stuff, but open to anything engaging.  \nMia: For true crime, \"Dark Histories\" is ____(2)____ . It’s super detailed.  \nShawn: Sounds perfect. What makes it stand out?  \nMia: The host digs up obscure cases and ____(3)____ . You’ll be hooked!  \nShawn: Cool. Any tech podcasts that aren’t too dry?  \nMia: \"Future Vision\" balances depth with humor. ____(4)____ , they interview top innovators.  \nShawn: Awesome, thanks! I’ll check them out.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) topics do you lean towards  ",
+          "B) genres are you interested in  ",
+          "C) subjects do you bother with  ",
+          "D) themes have you heard  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) a tough act to follow  ",
+          "B) hard to put down  ",
+          "C) off the beaten track  ",
+          "D) going through the motions  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) rushes through the analysis  ",
+          "B) leaves you on the edge of your seat  ",
+          "C) sounds overly scripted  ",
+          "D) avoids controversial angles  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Besides, it’s too technical  ",
+          "B) However, the pacing drags  ",
+          "C) Plus, if you’re into trends  ",
+          "D) Meanwhile, skip the ads  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.50",
+    "title": "Speaking (50)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 50",
+    "subtitle": "\n----ARTICLE----\nEmma: I finally organized my kitchen drawers and realized how many gadgets I never use. But a few actually ____(1)____.  \nSarah: Oh? Which ones made the cut?  \nEmma: The avocado slicer! I thought it was gimmicky, but ____(2)____ after making guacamole twice a week.  \nSarah: ____(3)____! I tossed mine because it kept jamming. What else?  \nEmma: This garlic press my mom gave me. I doubted it at first, but ____(4)____.  \nSarah: Hmm, maybe I should give these another shot...  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) lived up to the hype  ",
+          "B) cost a fortune  ",
+          "C) broke immediately  ",
+          "D) looked outdated  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I came across it  ",
+          "B) I ended up keeping it  ",
+          "C) I turned it down  ",
+          "D) I ran out of it  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds tedious  ",
+          "B) You should be careful  ",
+          "C) That sounds dangerous!  ",
+          "D) Lucky you!  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) it’s sitting in the cupboard  ",
+          "B) it’s a lifesaver for soups  ",
+          "C) it’s too complicated  ",
+          "D) she never uses it  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.51",
+    "title": "Speaking (51)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 51",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Tourist Information Booth  \nShawn: Hi! I’m visiting for a few days and want to explore places most tourists don’t know about. Any recommendations?  \nLena: Absolutely! If you’re into quirky spots, there’s a tiny bookstore ____(1)____ . It’s got vintage comics and a café upstairs.  \nShawn: Oh, that’s cool! How do I get there?  \nLena: Head two blocks east, then turn left at the pharmacy. It’s ____(2)____  behind the old theater. Easy to miss!  \nShawn: Got it. Are there any good eats nearby?  \nLena: Definitely! There’s a family-run bakery that ____(3)____ . Their sourdough is legendary.  \nShawn: ____(4)____ . I’ll check both out! Thanks!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) called \"Page Turner\" tucked in an alley  ",
+          "B) named \"Page Turner\" hidden in an alley  ",
+          "C) titled \"Page Turner\" buried in an alley  ",
+          "D) branded \"Page Turner\" placed in an alley  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) put aside  ",
+          "B) tucked away  ",
+          "C) set off  ",
+          "D) turned over  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) opens at dawn and closes by noon  ",
+          "B) has been around since the 1950s  ",
+          "C) only accepts cash, unfortunately  ",
+          "D) sells out by 10 a.m., so go early  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a bit too early for me.  ",
+          "B) That sounds perfect!  ",
+          "C) I’m not a fan of bread.  ",
+          "D) Why is it so popular?  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.52",
+    "title": "Speaking (52)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 52",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Sharing a Family Recipe  \nContext: Emma visits her friend Liam, who is flipping through an old recipe book.  \n\nLiam: My grandma gave me this cookbook. It’s full of recipes from her childhood in Mexico.  \nEmma: Wow! ____(1)____ ?  \nLiam: This one for mole poblano—she used to make it every Christmas. The spices are so unique!  \nEmma: ____(2)____  how she learned to make it?  \nLiam: She said her mother taught her, but the recipe might actually ____(3)____  from my great-great-grandmother in Spain.  \nEmma: ____(4)____ ! It’s amazing how food connects generations.  \nLiam: Totally. Maybe I’ll try cooking it this weekend.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Did she ever let you taste any of them  ",
+          "B) Which one means the most to you  ",
+          "C) Why don’t you try baking cookies instead  ",
+          "D) How old is that book exactly  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Did you look into  ",
+          "B) Have you tracked down  ",
+          "C) Were you checking up on  ",
+          "D) Did you bring up  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) have been passed over  ",
+          "B) have come across  ",
+          "C) have originated  ",
+          "D) have turned up  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a bit excessive  ",
+          "B) That’s fascinating  ",
+          "C) That sounds risky  ",
+          "D) You’re overreacting  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.53",
+    "title": "Speaking (53)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 53",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Planning a Spontaneous Getaway  \nContext: Two friends, Emma and Liam, discuss a last-minute road trip.  \n\nEmma: I can’t stop thinking about that road trip we took last summer—the one where we ____(1)____  near the mountains. What a disaster!  \nLiam: Oh, right! The car ____(2)____  in the middle of nowhere. But wasn’t that also when we found that amazing waterfall?  \nEmma: Exactly! Speaking of adventures, my cousin told me about a hidden lake up north. ____(3)____ ?  \nLiam: ____(4)____ . Let’s just grab a map and go. Overplanning ruins the fun anyway.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) hit a snag  ",
+          "B) lost our minds  ",
+          "C) burned the midnight oil  ",
+          "D) caught a break  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) turned over  ",
+          "B) broke down  ",
+          "C) pulled through  ",
+          "D) took off  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Are you even listening?  ",
+          "B) What’s your point?  ",
+          "C) Fancy giving it a shot this weekend?  ",
+          "D) Why bother trying?  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’m swamped with work.  ",
+          "B) Let’s stick to the original plan.  ",
+          "C) Count me out this time.  ",
+          "D) Why not keep it spontaneous?  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.54",
+    "title": "Speaking (54)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 54",
+    "subtitle": "\n\n\n----ARTICLE----\nConversation 1: Book Club Discussion  \nEmma and Liam are discussing influential books at a café.  \n\nEmma: I just finished this non-fiction book that ____(1)____ . It’s about how societal structures shape our behaviors.  \nLiam: Oh? What’s the title? I’ve been looking for something thought-provoking.  \nEmma: \"Invisible Chains by Dr. Rosa Velez. At first, I struggled with the dense theories, but I decided to ____(2)____  it, and it paid off.  \nLiam: That sounds intense. Did it challenge your existing beliefs?  \nEmma: Absolutely! The author doesn’t shy away from controversial data. There’s a chapter on education systems that left me speechless.  \nLiam: ____(3)____ . Maybe I should borrow your copy?  \nEmma: Sure! Just promise you’ll ____(4)____ . I’d love to hear your thoughts.  \nLiam: Deal. Thanks for the recommendation!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) completely adjusted my perspective  ",
+          "B) fundamentally changed my worldview  ",
+          "C) deeply moved my emotions  ",
+          "D) slightly improved my knowledge  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) pass through  ",
+          "B) stick with  ",
+          "C) get over  ",
+          "D) look into  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s too bad.  ",
+          "B) I’m not surprised.  ",
+          "C) You’re exaggerating.  ",
+          "D) Now I’m intrigued.  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) return it quickly  ",
+          "B) keep it forever  ",
+          "C) let me know what you think after you finish it  ",
+          "D) recommend it to others immediately  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.55",
+    "title": "Speaking (55)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 55",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, have you seen any good documentaries lately? I just watched one that left me completely ____(1)____.  \nLiam: Oh? What was it about?  \nEmma: It’s called \"The Hidden Mind\" – it explores how subconscious biases shape our decisions. I ____(2)____ it while browsing educational content.  \nLiam: Sounds intense. Was it too technical?  \nEmma: Not at all! They used real-life scenarios and interviews. Honestly, by the end, I kept thinking, ____(3)____?  \nLiam: Hmm, maybe I should give it a try. Did you ____(4)____ after watching it?  \nEmma: Totally. I started questioning my own habits!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) in shock  ",
+          "B) speechless  ",
+          "C) bored stiff  ",
+          "D) over the moon  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) came across  ",
+          "B) looked after  ",
+          "C) turned down  ",
+          "D) put off  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) \"Why does this even matter?\"  ",
+          "B) \"How do they come up with this stuff?\"  ",
+          "C) \"Who would believe this?\"  ",
+          "D) \"Is this even scientifically proven?\"  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) recommend it to friends  ",
+          "B) lose sleep over it  ",
+          "C) rethink your daily choices  ",
+          "D) forget the main points  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.56",
+    "title": "Speaking (56)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 56",
+    "subtitle": "\n----ARTICLE----\nLiam: Hey, Emma! I finally visited that interactive history museum you recommended. ____(1)____ !  \nEmma: Oh, you went? What did you think of the WWII exhibit?  \nLiam: Honestly, I ____(2)____  a room full of letters from soldiers. It made everything feel so personal.  \nEmma: Right? I cried when I read those. Did you try the virtual reality trench experience?  \nLiam: No, the line was too long. But ____(3)____ , I’d love to go back for that.  \nEmma: ____(4)____ . Let me know if you need a buddy next time!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) It absolutely brought history to life  ",
+          "B) It was very history  ",
+          "C) It made history alive  ",
+          "D) It had a lot of old things  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) came across  ",
+          "B) came up with  ",
+          "C) came over  ",
+          "D) came through  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) to be honest  ",
+          "B) in contrast  ",
+          "C) as a result  ",
+          "D) at first glance  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I don’t care either way  ",
+          "B) That’s a shame  ",
+          "C) That’s incredible  ",
+          "D) You’re totally right  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.57",
+    "title": "Speaking (57)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 57",
+    "subtitle": "\n----ARTICLE----\nEmma: So, Liam, what’s your most memorable travel mishap?  \nLiam: Oh, the time I got stranded in Prague after missing my flight! I’d left my passport at the hotel, and by the time I retrieved it, check-in had closed. ____(1)____ .  \nEmma: Yikes! What did you do?  \nLiam: I panicked at first, but then I met a local couple who helped me find a cheap hostel. ____(2)____  until the next flight.  \nEmma: Thank goodness for kind strangers! Did everything work out?  \nLiam: Surprisingly, yes! The hostel owner let me help in the kitchen for free meals, and ____(3)____ .  \nEmma: Wow! So it turned into an adventure?  \nLiam: Exactly! ____(4)____ . I even made friends I still talk to!  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) It was a total disaster for my schedule.  ",
+          "B) The whole thing was a bit of a nightmare.  ",
+          "C) I felt like a small trouble occurred.  ",
+          "D) It wasn’t too bad, honestly.  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) They put me up  ",
+          "B) They showed me off  ",
+          "C) They took me over  ",
+          "D) They came around  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I ended up learning to cook traditional goulash!  ",
+          "B) I hated every minute of it.  ",
+          "C) The food was terrible.  ",
+          "D) They paid me a lot of money.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’d never go back.  ",
+          "B) Every cloud has a silver lining.  ",
+          "C) It was just luck.  ",
+          "D) Travel is always risky.  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.58",
+    "title": "Speaking (58)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 58",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, have you tried any good productivity apps lately? I’m drowning in deadlines.  \nLiam: Actually, yes! I started using TaskFlow. It lets you ____(1)____ and even syncs with calendars.  \nEmma: Sounds perfect! Was it hard to ____(2)____?  \nLiam: Not at all. I just ____(2)____ the free version for a week before upgrading.  \nEmma: ____(3)____. My old app keeps crashing.  \nLiam: Same here. But with this one, you can ____(4)____ if you need team collaboration.  \nEmma: Team features? That’s a game-changer. Can you share the details?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep track with tasks  ",
+          "B) manage your tasks visually  ",
+          "C) organize your time strictly  ",
+          "D) fix deadlines harshly  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stick out  ",
+          "B) stick with  ",
+          "C) stick through  ",
+          "D) stick by  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s exactly what I needed!  ",
+          "B) I don’t really care.  ",
+          "C) Maybe I’ll think about it.  ",
+          "D) Sounds too complicated.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) invite coworkers easily  ",
+          "B) delete tasks accidentally  ",
+          "C) ignore notifications  ",
+          "D) start arguments  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.59",
+    "title": "Speaking (59)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 59",
+    "subtitle": "\n\n----ARTICLE----\nMia: Hey Liam, have I told you about the household hack I discovered for cleaning showerheads?  \nLiam: No, what’s the ____(1)____ ?  \nMia: Using white vinegar! You soak the showerhead in it overnight, and it dissolves all the mineral buildup.  \nLiam: Seriously? How did you ____(2)____  that idea?  \nMia: I read it online. At first, I thought it was too simple, but it worked like magic!  \nLiam: ____(3)____ ! My showerhead has been dripping weirdly. Maybe I’ll try it.  \nMia: Definitely! Just make sure to ____(4)____  afterward to avoid leaving residue.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) secret weapon  ",
+          "B) game-changer  ",
+          "C) time-saver  ",
+          "D) quick fix  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come up with  ",
+          "B) come across  ",
+          "C) come after  ",
+          "D) come by  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You’re kidding  ",
+          "B) That’s unfortunate  ",
+          "C) I’m not convinced  ",
+          "D) How tedious  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) rinse it thoroughly  ",
+          "B) scrub it aggressively  ",
+          "C) mix equal parts  ",
+          "D) let it dry naturally  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.60",
+    "title": "Speaking (60)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 60",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Coffee Shop  \nShawn: Hey, Mia! I heard you’ve been working on self-improvement lately. What’s the most useful life skill you’ve developed?  \nMia: Honestly, learning to ____(1)____ . It’s helped me manage stress and stay productive.  \nShawn: That’s impressive. How did you start?  \nMia: I ____(2)____  a strict routine and stuck to it, even when I felt overwhelmed.  \nShawn: Wow. Do you ever struggle to maintain it?  \nMia: Sometimes, but I’ve learned to ____(3)____ . Flexibility is key!  \nShawn: I should try that. Any tips for someone like me?  \nMia: Sure! Start small, and ____(4)____ . Consistency matters more than perfection.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stay on top of my responsibilities  ",
+          "B) hold up my duties  ",
+          "C) keep above my tasks  ",
+          "D) float through obligations  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) came across  ",
+          "B) came up with  ",
+          "C) came down with  ",
+          "D) came over to  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) give up entirely  ",
+          "B) adjust my expectations  ",
+          "C) ignore the problem  ",
+          "D) You should try harder  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) don’t forget to multitask  ",
+          "B) track every minute of your day  ",
+          "C) focus on one habit at a time  ",
+          "D) What’s your favorite app?  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.61",
+    "title": "Speaking (61)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 61",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, remember that philosophy class we took sophomore year? It completely changed how I approach problems.  \nLiam: Oh yeah! Professor Green’s course, right? ____(1)____. I still use those frameworks in my job!  \nEmma: Same! At first, I struggled to ____(2)____ when the debates got intense.  \nLiam: ____(3)____? I almost switched to an easier elective!  \nEmma: But pushing through was worth it. Now, structuring arguments feels natural.  \nLiam: Totally. ____(4)____. Even my team at work notices how clearly I communicate.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) It really boosted my creativity  ",
+          "B) It sharpened my critical thinking skills  ",
+          "C) It expanded my musical talents  ",
+          "D) It simplified my math anxiety  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep up with it  ",
+          "B) stick with it  ",
+          "C) put up with it  ",
+          "D) get over it  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Absolutely, it was challenging but so rewarding!  ",
+          "B) Why would you even try?  ",
+          "C) I thought it was a total breeze.  ",
+          "D) Maybe you should’ve quit earlier.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s exactly why I chose a career in public relations!  ",
+          "B) However, I still hate group projects.  ",
+          "C) I barely remember the syllabus.  ",
+          "D) Let’s take another class together.  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.62",
+    "title": "Speaking (62)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 62",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, do you ever hear a song that instantly ____(1)____ ?  \nLiam: Absolutely! Like that summer anthem we played nonstop during our road trip. Just a few notes and I’m right back in that rented convertible.  \nEmma: Same! For me, it’s my grandma’s old jazz records. Whenever I ____(2)____  one in a café, I tear up a little.  \nLiam: Oh, I get that. My dad used to blast classic rock while fixing his car. Now, every time I smell engine oil, ____(3)____ .  \nEmma: ____(4)____ ? We could relive all those moments through music.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) transports your mind  ",
+          "B) takes me back  ",
+          "C) reminds me back  ",
+          "D) pulls your memory  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come over  ",
+          "B) come across  ",
+          "C) come off  ",
+          "D) come through  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds tough  ",
+          "B) That’s awesome!  ",
+          "C) I’m starving  ",
+          "D) Let’s go dancing  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Why don’t you fix cars too?  ",
+          "B) Want to grab coffee instead?  ",
+          "C) Did your dad sing along?  ",
+          "D) Let’s make a playlist of all those meaningful tracks  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.63",
+    "title": "Speaking (63)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 63",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma and Liam discuss their approaches to decision-making.  \n\nEmma: I’ve been reflecting on how personal philosophies shape our choices. For me, ____(1)____, like prioritizing kindness even in competitive environments.  \nLiam: That’s admirable. How do you ____(2)____ that principle when facing conflicting priorities?  \nEmma: It’s tough, but I remind myself that short-term gains aren’t worth compromising my values. What guides your decisions?  \nLiam: I focus on long-term impact. ____(3)____. Sacrificing ethics for quick success always backfires.  \nEmma: I agree, but doesn’t that limit opportunities sometimes?  \nLiam: Occasionally, but ____(4)____. Staying true to my values brings deeper fulfillment.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) a moral compass is essential  ",
+          "B) the main idea is to win  ",
+          "C) basic instincts take over  ",
+          "D) primary goals matter most  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stick to  ",
+          "B) put off  ",
+          "C) turn down  ",
+          "D) run into  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Who cares about consequences?  ",
+          "B) That’s easier said than done.  ",
+          "C) For instance, I’ll never cut corners.  ",
+          "D) Maybe I’m just too idealistic.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’m too stubborn to change  ",
+          "B) it’s not worth stressing over  ",
+          "C) I weigh the pros and cons first  ",
+          "D) integrity isn’t negotiable  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.64",
+    "title": "Speaking (64)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 64",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Local Café  \nMia: Hey, Liam! I heard you’re working on that project about meaningful places in the city. How’s it going?  \nLiam: It’s been interesting! I’ve been interviewing people about spots that hold personal significance. For example, Mrs. Lee talked about the old library downtown. She said, “____(1)____.”  \nMia: Oh, the one they’re renovating? What makes it so special to her?  \nLiam: She spent her childhood there. Apparently, she’s been ____(2)____ old photos and records to preserve its history.  \nMia: That’s dedication. I can see why she’s attached.  \nLiam: Exactly. When I mentioned the city might turn it into a mall, she got emotional and said, “____(3)____.”  \nMia: Wow. Do you think the community will support saving it?  \nLiam: Maybe. But honestly, ____(4)____. Let’s grab coffee there later and brainstorm?  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) My safe haven when life gets chaotic  ",
+          "B) My comfort zone for reading books  ",
+          "C) My favorite spot to hang out  ",
+          "D) My usual place to kill time  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) looking after  ",
+          "B) looking into  ",
+          "C) looking through  ",
+          "D) looking forward to  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds really special  ",
+          "B) I’m sorry to hear that  ",
+          "C) They can’t just erase history!  ",
+          "D) Maybe it’s for the best  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’m not holding my breath  ",
+          "B) it’s up in the air  ",
+          "C) we’re running out of time  ",
+          "D) let’s table that for now  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.65",
+    "title": "Speaking (65)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 65",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At the Office Break Room  \nShawn: Hey Clara, you look exhausted. Did you pull an all-nighter or something?  \nClara: Ugh, not exactly. I’ve been ____(1)____  lately, and it’s wrecking my focus.  \nShawn: Oh no! What’s going on?  \nClara: My neighbor’s dog barks nonstop at night. I tried ____(2)____  caffeine after 5 PM, but it hasn’t helped.  \nShawn: ____(3)____ . Have you talked to them about it?  \nClara: I did, but they brushed it off. Now I’m so tired that I ____(4)____  during meetings. It’s embarrassing.  \nShawn: Maybe try noise-canceling headphones? My cousin swore by them during construction season.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) burning the midnight oil  ",
+          "B) chasing sleep dragons  ",
+          "C) tossing and turning  ",
+          "D) riding the insomnia train  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) cutting down on  ",
+          "B) cutting off  ",
+          "C) cutting out  ",
+          "D) cutting through  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds delightful  ",
+          "B) That sounds rough  ",
+          "C) You’re overreacting  ",
+          "D) Maybe you’re imagining it  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) zone out completely  ",
+          "B) crack hilarious jokes  ",
+          "C) dominate the conversation  ",
+          "D) take meticulous notes  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.66",
+    "title": "Speaking (66)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 66",
+    "subtitle": "\n----ARTICLE----\nShawn: Hey Emma, have you seen the finale of Chronicles of the Void? I just finished it last night and—____(1)____!  \nEmma: Not yet! Wait, don’t spoil it. I’m only halfway through. Was the ending really that shocking?  \nShawn: Absolutely! The whole season ____(2)____ being a simulation. I never saw that twist coming.  \nEmma: Seriously? ____(3)____! Now I need to binge the rest. Did they hint at it earlier?  \nShawn: A few subtle clues, but nothing obvious. The writers really stuck the landing. ____(4)____?  \nEmma: Probably not until next year. I heard the showrunner wants a longer production break.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) my mind went blank  ",
+          "B) I was on the edge of my seat  ",
+          "C) I couldn’t keep up with it  ",
+          "D) it blew me away  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) turned out to be  ",
+          "B) ended up being  ",
+          "C) came across as  ",
+          "D) looked forward to  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You’re pulling my leg  ",
+          "B) That’s a relief  ",
+          "C) I’m not bothered  ",
+          "D) Sounds tedious  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Will there be a sequel soon  ",
+          "B) How many episodes are left  ",
+          "C) Why did they cancel it  ",
+          "D) When’s the next season dropping  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.67",
+    "title": "Speaking (67)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 67",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, you mentioned making some small lifestyle tweaks. What’s worked for you lately?  \nLiam: Honestly, ____(1)____. I used to skip breakfast, but now I prep overnight oats every evening.  \nEmma: Nice! How’s that helped?  \nLiam: It’s easier to focus at work, and I’ve ____(2)____ ordering takeout for lunch.  \nEmma: ____(3)____. Do you track your meals too?  \nLiam: Not really. ____(4)____, I’ve also started a 10-minute stretching routine every morning.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I’ve forced myself into meal prepping  ",
+          "B) I’ve gotten into the habit of meal prepping  ",
+          "C) I’ve decided meal prepping  ",
+          "D) I’ve made meal prepping a crime  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) cut down on  ",
+          "B) cut back  ",
+          "C) cut off  ",
+          "D) cut through  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a shame.  ",
+          "B) I don’t believe you.  ",
+          "C) That sounds really efficient!  ",
+          "D) Why would you do that?  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Anyway,  ",
+          "B) On the other hand,  ",
+          "C) Speaking of which,  ",
+          "D) In conclusion,  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.68",
+    "title": "Speaking (68)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 68",
+    "subtitle": "\n----ARTICLE----\n\nConversation 2: At a Café  \nEmma: I’ve been trying to notice little things that make my day better. Like, this morning, I sat by the window with a warm ____(1)____. It felt so peaceful.  \nLiam: Oh, I get that! For me, it’s the first sip of herbal tea after a busy meeting. ____(2)____ the day without it feels impossible.  \nEmma: Exactly! Or when my cat curls up on my lap while I’m reading. It’s those tiny moments, you know?  \nLiam: ____(3)____. My dog always nudges my hand for attention when I’m stressed. It’s like he knows.  \nEmma: Right? And honestly, even things like… ____(4)____. They’re small, but they add up.  \nLiam: Totally. It’s all about savoring the in-between.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) glass of coffee  ",
+          "B) cup of coffee  ",
+          "C) jar of coffee  ",
+          "D) mug of coffee  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Getting through  ",
+          "B) Starting off  ",
+          "C) Coming around  ",
+          "D) Getting by  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You should get a dog instead.  ",
+          "B) That’s too predictable.  ",
+          "C) That’s so sweet!  ",
+          "D) I’ve never had a pet.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) forgetting my keys every morning  ",
+          "B) the sound of rain tapping on the roof  ",
+          "C) why don’t people appreciate these things?  ",
+          "D) I’m the same way with how the light filters through my curtains in the afternoon  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.69",
+    "title": "Speaking (69)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 69",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nMia and Tom are discussing a keepsake Mia brought with her.  \n\nMia: This pocket watch is the only thing I have from my grandfather. He carried it every day until he passed away.  \nTom: It’s beautiful. ____(1)____ How did it end up with you?  \nMia: Well, after he died, my aunt was ____(2)____ his belongings and found it hidden in his desk. She thought I’d appreciate it most.  \nTom: That’s so meaningful. Do you ever wind it up?  \nMia: Actually, it hasn’t worked for years. ____(3)____ But I keep it to feel connected to him.  \nTom: I get that. My dad’s old journal is like that for me. I’ve ____(4)____ it dozens of times, but I still can’t bring myself to write in it.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Where did you purchase it?  ",
+          "B) The engraving looks intricate.  ",
+          "C) Is it made of gold?  ",
+          "D) Why are you carrying it around?  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) sorting through  ",
+          "B) throwing away  ",
+          "C) donating to  ",
+          "D) arguing over  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Maybe I should sell it.  ",
+          "B) It’s practically worthless now.  ",
+          "C) I’ve tried fixing it, but no luck.  ",
+          "D) He probably broke it himself.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) read through  ",
+          "B) torn up  ",
+          "C) lost  ",
+          "D) copied  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.70",
+    "title": "Speaking (70)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 70",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey Liam, I just finished a novel that’s been on my mind for weeks.  \nLiam: Oh? ____(1)____ . What’s it about?  \nEmma: It’s a dystopian story where memories are currency. The protagonist ____(2)____  a hidden truth about the system.  \nLiam: ____(3)____ . Did it have a satisfying ending?  \nEmma: Surprisingly hopeful, despite the bleak setting. The author’s focus on resilience ____(4)____ .  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) What’s been keeping you up at night?  ",
+          "B) What’s your current obsession?  ",
+          "C) What’s troubling your thoughts?  ",
+          "D) What’s the title again?  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) looked up  ",
+          "B) came across  ",
+          "C) went through  ",
+          "D) turned over  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds tedious  ",
+          "B) That sounds intense  ",
+          "C) How predictable  ",
+          "D) I’m not surprised  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) really messed with the pacing  ",
+          "B) tied everything together perfectly  ",
+          "C) left me utterly confused  ",
+          "D) felt forced and unrealistic  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.71",
+    "title": "Speaking (71)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 71",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Moving to a New Apartment  \nEmma and Liam discuss Emma’s recent move to a smaller apartment.  \n\nEmma: I finally moved out of that cramped basement suite last week. The new studio has huge windows—____(1)____.  \nLiam: That sounds refreshing! Did the old place really affect your mood that much?  \nEmma: More than I realized. The lack of sunlight made me ____(2)____ every morning.  \nLiam: I get it. My old apartment had terrible ventilation. How’s the noise level there?  \nEmma: Surprisingly quiet, though the neighbors play jazz occasionally. ____(3)____.  \nLiam: Well, at least you’ve got your sanctuary now. Any plans to personalize the space?  \nEmma: Definitely. I’m thinking of adding plants and artwork. ____(4)____.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) natural light streaming in  ",
+          "B) bright colors painted everywhere  ",
+          "C) noisy traffic outside  ",
+          "D) furniture stacked up  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) wake up energized  ",
+          "B) drag myself out of bed  ",
+          "C) get over my fatigue  ",
+          "D) put up with the gloom  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s totally unacceptable!  ",
+          "B) It’s not ideal, but I can live with it.  ",
+          "C) I’ll report them immediately.  ",
+          "D) Jazz is my least favorite genre.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) I might just leave it empty.  ",
+          "B) It’ll help me focus on work.  ",
+          "C) It should lift the atmosphere.  ",
+          "D) My landlord hates decorations.  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.72",
+    "title": "Speaking (72)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 72",
+    "subtitle": "\n----ARTICLE----\nContext: Two strangers strike up a conversation at a bookstore café.  \n\nEmma: This book you’re holding—Sapiens—I’ve read it twice! What do you think so far?  \nLiam: Honestly, it’s mind-blowing. I never realized how much human history ties into ____(1)____.  \nEmma: Right? It makes you rethink everything. How did you even ____(2)____ picking this up?  \nLiam: My professor mentioned it in a lecture. I wasn’t sure at first, but now I can’t put it down.  \nEmma: Same here! The part about shared myths—like money or laws—being what holds societies together...  \nLiam: Exactly! ____(3)____. It’s wild how we all just... agree to believe in these constructs.  \nEmma: Totally. Hey, I’d love to hear your thoughts after you finish. ____(4)____?  \nLiam: Sure! Let me grab my phone—we can swap contacts.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) collective illusions  ",
+          "B) group fantasies  ",
+          "C) team delusions  ",
+          "D) mass daydreams  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) end up  ",
+          "B) carry on  ",
+          "C) set off  ",
+          "D) come across  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) You’re kidding!  ",
+          "B) That’s incredible!  ",
+          "C) No way!  ",
+          "D) Whatever.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Want to grab coffee later?  ",
+          "B) Do you need more time to read?  ",
+          "C) Could you summarize it for me?  ",
+          "D) We should definitely exchange numbers before we go.  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.73",
+    "title": "Speaking (73)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 73",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Café  \nEmma: Hey Liam! Guess who I ____(1)____  at the community art fair last weekend?  \nLiam: Hmm, someone from work?  \nEmma: No! This woman named Zara. She’s a street artist who ____(2)____  massive murals about climate change.  \nLiam: Oh, ____(3)____ ? I’ve never met a muralist before. What was she like?  \nEmma: Surprisingly down-to-earth. She kept ____(4)____  how art should inspire action, not just look pretty.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) bumped into  ",
+          "B) came across  ",
+          "C) ran into  ",
+          "D) stumbled upon  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) puts up  ",
+          "B) sets off  ",
+          "C) takes over  ",
+          "D) breaks down  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) No way!  ",
+          "B) Seriously?  ",
+          "C) That’s fascinating!  ",
+          "D) Interesting, but…  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) emphasizing  ",
+          "B) denying  ",
+          "C) assuming  ",
+          "D) complaining  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.74",
+    "title": "Speaking (74)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 74",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Morning Coffee Chat  \nEmma and Liam meet at a café before work.  \nEmma: Mornings are chaotic for me unless I follow my routine. If I skip even one step, my whole day feels off.  \nLiam: Same! My ritual starts the night before—I ____(1)____  to avoid decision fatigue.  \nEmma: Smart. What’s the first thing you do when you wake up?  \nLiam: I ____(2)____  for 10 minutes. It helps me focus. Do you do anything like that?  \nEmma: Not really. I just chug coffee and rush out. But lately, I’ve been thinking about ____(3)____ .  \nLiam: You should try journaling! It’s been life-changing for me.  \nEmma: ____(4)____ ? Maybe I’ll give it a shot.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) lay out my clothes and prep meals  ",
+          "B) crash into bed immediately  ",
+          "C) scroll social media endlessly  ",
+          "D) call my friends late at night  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) work out intensely  ",
+          "B) meditate quietly  ",
+          "C) nap accidentally  ",
+          "D) pace around nervously  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) quitting caffeine cold turkey  ",
+          "B) adopting a mindfulness practice  ",
+          "C) adopting a stricter diet  ",
+          "D) hiring a personal trainer  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds exhausting  ",
+          "B) How’s that working for you?  ",
+          "C) You’re overcomplicating things  ",
+          "D) Isn’t that time-consuming?  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.75",
+    "title": "Speaking (75)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 75",
+    "subtitle": "\n----ARTICLE----\nScenario 1: At a coffee shop  \nEmma and Liam, colleagues on a break, discuss practical skills.  \n\nEmma: I’ve been thinking about how some skills don’t get enough credit. Like, ____(1)____ . It saves so much time!  \nLiam: Oh, totally! My roommate never plans meals and ends up wasting food.  \nEmma: Exactly! Another one is being able to ____(2)____  when you’re stressed.  \nLiam: ____(3)____ ? I panic and forget everything.  \nEmma: Practice helps. Also, knowing how to ____(4)____ —like fixing a loose button instead of replacing the shirt.  \nLiam: True! Those little fixes add up.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keeping an eye on details  ",
+          "B) attention to detail  ",
+          "C) focusing on specifics  ",
+          "D) memorizing routines  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) make up for disorganization  ",
+          "B) calm yourself down  ",
+          "C) push through tasks  ",
+          "D) sort things out  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) Why would anyone do that?  ",
+          "B) You’re telling me! It’s like…  ",
+          "C) That’s not a big deal.  ",
+          "D) I’m an expert at that.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) repair minor things yourself  ",
+          "B) avoid buying new clothes  ",
+          "C) rely on professionals  ",
+          "D) master advanced techniques  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.76",
+    "title": "Speaking (76)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 76",
+    "subtitle": "\n----ARTICLE----\nEmma: Hey, Liam! I heard you got promoted to project manager. Congrats! What’s been the biggest surprise in the role?  \nLiam: Thanks! Honestly, the most unexpected thing is how useful my old part-time job as a barista has been. You wouldn’t believe how often I ____(1)____  during client meltdowns.  \nEmma: Really? How does making coffee relate to project management?  \nLiam: It’s all about multitasking under pressure. Plus, learning to ____(2)____  when conflicts arise. Turns out calming angry customers translates well to handling stakeholders!  \nEmma: Huh, never thought of that. My “useless” skill was improv comedy. I took classes for fun, but now I ____(3)____  during brainstorming sessions.  \nLiam: Improv? Seriously?  \nEmma: Yep! It taught me to think on my feet. ____(4)____ , your juggling hobby probably helps with balancing deadlines!  \nLiam: laughs Actually, you’re not wrong…  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) keep a cool head  ",
+          "B) lose my temper  ",
+          "C) break the ice  ",
+          "D) burn the midnight oil  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) come up with compromises  ",
+          "B) fall back on patience  ",
+          "C) put up with delays  ",
+          "D) get away with excuses  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) totally freeze up  ",
+          "B) awkwardly change the subject  ",
+          "C) end up dominating  ",
+          "D) lean into wild ideas  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) On the other hand  ",
+          "B) Speaking of multitasking  ",
+          "C) In contrast  ",
+          "D) Regardless of that  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.77",
+    "title": "Speaking (77)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 77",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Office Break Room  \nEmma: Hey Liam, have you ever ____(1)____  during your time working here?  \nLiam: Hmm, actually, yes! I never thought I’d become good at fixing printers. One day, I just had to ____(2)____  when ours broke down.  \nEmma: Seriously? That’s so random! How did you even figure it out?  \nLiam: I watched a few tutorials and sort of trial-and-errored it. Now people call me the “Printer Whisperer.”  \nEmma: ____(3)____ ! I guess you never know what you’ll end up learning.  \nLiam: Exactly. What about you? Any hidden talents?  \nEmma: Well, after dealing with endless client calls, I’ve somehow ____(4)____ . It’s like I can predict what they’ll complain about next.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) developed some accidental abilities  ",
+          "B) picked up some unexpected skills  ",
+          "C) learned a few intentional tricks  ",
+          "D) acquired planned competencies  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) go through with the repairs  ",
+          "B) keep up with the manual  ",
+          "C) step in and handle it  ",
+          "D) put up with the mess  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds tedious  ",
+          "B) That’s incredible  ",
+          "C) I don’t believe you  ",
+          "D) Why bother?  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) mastered time management  ",
+          "B) become a mind reader  ",
+          "C) improved my typing speed  ",
+          "D) lost my patience  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.78",
+    "title": "Speaking (78)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 78",
+    "subtitle": "\n----ARTICLE----\nConversation at a Coffee Shop  \nShawn: You look deep in thought. Working on something challenging?  \nLena: Yeah, I’ve hit a ____(1)____  with this marketing campaign. Nothing feels fresh.  \nShawn: That’s rough. Sometimes inspiration comes from the weirdest places. Last week, I ____(2)____  an old journal at the park bench.  \nLena: Seriously? What was in it?  \nShawn: Poems from a stranger! Their metaphors made me rethink my entire design approach.  \nLena: ____(3)____  How’d you even connect that to your work?  \nShawn: It made me realize simplicity can be powerful. Maybe you should ____(4)____ .  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) creative block  ",
+          "B) artistic stop  ",
+          "C) imaginative wall  ",
+          "D) inventive gap  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) bumped into  ",
+          "B) came across  ",
+          "C) ran over  ",
+          "D) looked after  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s unfortunate.  ",
+          "B) That’s fascinating!  ",
+          "C) Whatever works.  ",
+          "D) I don’t believe you.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take a nap instead  ",
+          "B) try something totally mundane  ",
+          "C) ask your boss for help  ",
+          "D) hire a professional  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.79",
+    "title": "Speaking (79)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 79",
+    "subtitle": "\n----ARTICLE----\nShawn: Hey Maria, I heard you redesigned your apartment. What changes did you make?  \nMaria: Well, I work from home now, so I prioritized functionality. First, I turned the spare bedroom into ____(1)____.  \nShawn: Nice! How’s that working out?  \nMaria: Great! But I also had to ____(2)____ the wall between the kitchen and living room to make it feel less cramped.  \nShawn: ____(3)____  \nMaria: Exactly! Now I can cook and chat with guests at the same time. What about you?  \nShawn: I focused on storage. I installed floating shelves and added a foldable desk. Oh, and I’m ____(4)____ the balcony into a mini-garden.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) a cozy guest area  ",
+          "B) a dedicated workspace  ",
+          "C) an entertainment zone  ",
+          "D) a makeshift gym  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) take down  ",
+          "B) knock down  ",
+          "C) break down  ",
+          "D) pull down  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That sounds unnecessary.  ",
+          "B) You’re overcomplicating things.  ",
+          "C) So it’s more open now?  ",
+          "D) Why would you do that?  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) renovating  ",
+          "B) converting  ",
+          "C) rebuilding  ",
+          "D) demolishing  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.80",
+    "title": "Speaking (80)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 80",
+    "subtitle": "\n----ARTICLE----\nConversation 1: At a Coffee Shop  \nEmma and Liam, close friends for over a decade, catch up during their weekly coffee meet-up.  \n\nEmma: I was thinking about how we’ve stayed friends for so long. It’s rare these days.  \nLiam: Absolutely. I guess we’ve ____(1)____ , even when life got chaotic.  \nEmma: True! Like when you moved abroad for work, I thought we’d drift apart. But you always ____(2)____ .  \nLiam: ____(3)____ ? You’re the one who video-called me every Sunday without fail!  \nEmma: Well, I think the key is that ____(4)____ . We don’t force it.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) pushed through the storm  ",
+          "B) stuck by each other  ",
+          "C) avoided the hurdles  ",
+          "D) chased the highs  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) put up with my nonsense  ",
+          "B) got by with minimal effort  ",
+          "C) dealt around the silence  ",
+          "D) lived up to expectations  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s so rude of you to say!  ",
+          "B) Come on, you know that’s not true!  ",
+          "C) Exactly, it’s been exhausting.  ",
+          "D) Maybe we should part ways.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) we never disagree on anything  ",
+          "B) we share absolutely everything  ",
+          "C) we just click naturally  ",
+          "D) we help each other financially  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.81",
+    "title": "Speaking (81)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 81",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Workplace Project Reflection  \nEmma and Liam discuss a recent project error during a coffee break.  \nEmma: I can’t stop thinking about how I mishandled the client’s request last week. I should’ve double-checked the details.  \nLiam: Don’t beat yourself up. The important thing is ____(1)____. What’s your plan now?  \nEmma: I’m not sure. Part of me wants to hide under a rock, but I know that’s not productive.  \nLiam: Exactly. You need to ____(2)____ and focus on fixing things. Maybe start by apologizing to the team?  \nEmma: ____(3)____. They’re probably upset with me, though.  \nLiam: Trust me, they’ll respect you more for addressing it head-on. Why not propose a revised strategy in tomorrow’s meeting?  \nEmma: Good idea. If I outline clearer quality checks, ____(4)____.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) owning up to it  ",
+          "B) confessing it fully  ",
+          "C) pointing it out  ",
+          "D) declaring it openly  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) put it behind you  ",
+          "B) get over it  ",
+          "C) move it along  ",
+          "D) brush it off  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s a good point  ",
+          "B) I hadn’t thought of that  ",
+          "C) Maybe you’re right  ",
+          "D) I guess so  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) we can prevent similar issues  ",
+          "B) we can solve this faster  ",
+          "C) everyone will be happier  ",
+          "D) it’ll save time  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.82",
+    "title": "Speaking (82)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 82",
+    "subtitle": "\n----ARTICLE----\n\nConversation 1: Language Learning Strategies  \nEmma and Liam discuss approaches to mastering a new language.  \n\nEmma: I’ve been struggling with Spanish fluency. How do you ____(1)____  so quickly?  \nLiam: Honestly, I focus on daily immersion. Instead of memorizing lists, I watch shows with subtitles and try to ____(2)____  a 30-minute speaking routine.  \nEmma: That’s intense! Don’t you get overwhelmed?  \nLiam: Sometimes, but pushing through the awkward phase helps. What trips you up most?  \nEmma: Pronunciation! My brain freezes during conversations.  \nLiam: ____(3)____ . Maybe join a virtual conversation club? Practicing with strangers helped me.  \nEmma: Hmm, I’ve avoided that because I’m shy. But ____(4)____  if it builds confidence.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) pick it up  ",
+          "B) immerse yourself  ",
+          "C) engage deeply  ",
+          "D) tackle the challenge  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stick to  ",
+          "B) keep up with  ",
+          "C) hold on to  ",
+          "D) break into  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That’s your problem  ",
+          "B) I don’t blame you  ",
+          "C) That sounds frustrating  ",
+          "D) Just give up then  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) it’s not worth the effort  ",
+          "B) I might as well try  ",
+          "C) I’ll never improve  ",
+          "D) you’re probably right  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "short_conversation"
+  },
+  {
+    "id": "A-Level English No.83",
+    "title": "Speaking (83)",
+    "description": "A-Level อังกฤษพาร์ท Short Conversation 83",
+    "subtitle": "\n----ARTICLE----\nConversation 1: Planning Personal Goals  \nEmma and Liam discuss their approaches to New Year’s resolutions.  \n\nEmma: I’ve been thinking about my goals for next year. I want to ____(1)____ , but I’m not sure how to stay consistent.  \nLiam: Same here! Last year, I struggled because I didn’t ____(2)____  smaller tasks. This time, I’m using a planner.  \nEmma: Oh, that’s smart! Do you prioritize certain goals over others?  \nLiam: Definitely. I ____(3)____  focusing on health first. What about you?  \nEmma: I’m torn between career and fitness. Maybe I should ____(4)____  to avoid burnout.  \n\n",
+    "duration": 30,
+    "totalQuestions": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) stick to my resolution  ",
+          "B) set in my plans  ",
+          "C) achieve a big dream  ",
+          "D) track my habits  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) start off with  ",
+          "B) begin by  ",
+          "C) break down into  ",
+          "D) try out for  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) That makes sense  ",
+          "B) I guess I’ll just  ",
+          "C) Maybe I should  ",
+          "D) Not really, but  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "type": "speaking",
+        "text": "",
+        "prompt": "",
+        "options": [
+          "A) balance both  ",
+          "B) give up one  ",
+          "C) rush through them  ",
+          "D) postpone everything  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "short_conversation"
+  }
+]

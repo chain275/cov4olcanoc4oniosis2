@@ -1,0 +1,3011 @@
+[
+  {
+    "id": "A-Level English No.1",
+    "title": "Advertisement (1)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 1",
+    "subtitle": "Brand Name: Rise & Shine Innovations  \nProduct: ChronoLuxe Smart Alarm Clock  \n\nTagline:  \n\"Wake Up to Your Best Day Yet!\"  \n\nKey Features:  \n✅ Sunrise Simulation: Gentle light mimics a natural dawn to wake you peacefully.  \n✅ Customizable Alarms: Choose from soothing nature sounds, FM radio, or your favorite playlist.  \n✅ Wireless Charging Pad: Power up your phone overnight while you sleep.  \n✅ Voice Control: Compatible with Alexa and Google Assistant for hands-free adjustments.  \n✅ Smart Display: Glare-free LED screen with adjustable brightness and real-time weather updates.  \n✅ Battery Backup: Never miss an alarm, even during a power outage.  \n✅ Sleek Design: Modern, minimalist look in Midnight Black, Pearl White, or Ocean Blue.  \n\nWhy Choose ChronoLuxe?  \n🔹 Innovation Meets Simplicity: Designed for tech lovers who crave intuitive functionality.  \n🔹 Backed by Science: Sleep experts endorse our sunrise technology for healthier wake-ups.  \n🔹 5-Year Warranty: We stand by our quality—guaranteed.  \n\nLimited-Time Offer!  \n🎁 Order Now and Transform Your Mornings!  \n👉 Get 20% Off with code RISE20 at checkout (valid until 10/31).  \n\nVisit: www.riseandshinechrono.com  \nCall: 1-800-RISE-NOW  \nFollow Us: @RiseAndShineInnovations  \n\nClosing Line:  \n\"Don’t Just Wake Up—Rise & Shine!\"  \n#ChronoLuxe #SmartMornings    \nRise & Shine Innovations: Elevating Everyday Routines Since 2022.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the duration of the warranty offered with the ChronoLuxe Smart Alarm Clock?  ",
+        "prompt": "",
+        "options": [
+          "A) 1-Year Warranty  ",
+          "B) 3-Year Warranty  ",
+          "C) 5-Year Warranty  ",
+          "D) 10-Year Warranty  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the tagline and closing line, what is the implied purpose of the ChronoLuxe Smart Alarm Clock?  ",
+        "prompt": "",
+        "options": [
+          "A) To replace traditional alarm clocks entirely  ",
+          "B) To improve sleep quality through advanced tracking  ",
+          "C) To integrate seamlessly with smart home security systems  ",
+          "D) To encourage users to elevate their morning experience beyond basic awakening  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT a feature of the ChronoLuxe Smart Alarm Clock?  ",
+        "prompt": "",
+        "options": [
+          "A) Built-in camera for video calls  ",
+          "B) Battery backup during power outages  ",
+          "C) Sunrise simulation with gradual light  ",
+          "D) Wireless charging pad for phones  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.2",
+    "title": "Advertisement (2)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 2",
+    "subtitle": "\nBrand Name: VoltCore™ Batteries  \nTagline: \"Power That Lasts – Energize Your World!\"    \n\nUnbeatable Performance, Every Time.  \nVoltCore™ Batteries are engineered to keep your devices running longer, stronger, and smarter. Whether it’s your child’s favorite toy, a critical work gadget, or emergency essentials, trust VoltCore™ to deliver relentless power when you need it most.  \n\nWhy VoltCore™?  \n⚡ Ultra-Long Life: 50% more power retention than standard batteries.  \n⚡ Leak-Proof Technology: Safeguard your devices with advanced protective casing.  \n⚡ Eco-Conscious Design: Made with 90% recyclable materials for a greener future.  \n⚡ Universal Compatibility: Perfect for AA, AAA, C, D, and 9V sizes.  \n\nAvailable at: Major retailers, electronics stores, and online at www.voltcorebatteries.com.    \n\nSpecial Offer!  \nStock up today! Buy 3 packs, get 1 FREE (limited time only).  \n\nVoltCore™ – Powering Life’s Moments, Big and Small.  \n\nFollow us for energy-saving tips and deals:  \n📱 @VoltCoreOfficial | #VoltCorePower    \nBold energy. Brighter future. 🔋✨\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What percentage of VoltCore™ Batteries' materials are recyclable according to the article?  ",
+        "prompt": "",
+        "options": [
+          "A) 50%  ",
+          "B) 75%  ",
+          "C) 90%  ",
+          "D) 100%  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, which group is most likely to benefit from VoltCore™ Batteries?  ",
+        "prompt": "",
+        "options": [
+          "A) Parents with young children  ",
+          "B) Professionals relying on work gadgets  ",
+          "C) Individuals preparing for emergencies  ",
+          "D) All of the above  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which battery size is NOT compatible with VoltCore™ Batteries?  ",
+        "prompt": "",
+        "options": [
+          "A) AA  ",
+          "B) AAA  ",
+          "C) C  ",
+          "D) AAAA  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.3",
+    "title": "Advertisement (3)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 3",
+    "subtitle": "\nBRAND NAME: ECLIPSE LUXE  \nTAGLINE: \"Elevate Your Everyday\"    \n\nFEATURES:  \n- Premium Full-Grain Leather: Handcrafted for unmatched durability and a polished finish.  \n- Adjustable Precision Fit: Micro-notch design for the perfect fit, every time.  \n- Scratch-Resistant Buckle: Reinforced stainless steel with a sleek, modern silhouette.  \n- Lifetime Craftsmanship Warranty: Built to last, guaranteed.  \n\nWHY CHOOSE ECLIPSE LUXE?  \n- Versatile Style: Seamlessly transitions from office attire to weekend casual.  \n- Unisex Design: Tailored for both men and women.  \n- Ethically Sourced: Sustainably produced with eco-conscious materials.  \n\nLIMITED-TIME OFFER:  \nGet 20% off your first purchase with code BELTELEVATE24.  \n\nSHOP NOW:  \n🌐 [www.eclipseluxe.com/belts](https://www.eclipseluxe.com)  \n📞 Customer Support: 1-800-ECLIPSE  \n\nFOLLOW US:  \n📷 Instagram: [@EclipseLuxe](https://instagram.com/eclipseluxe)  \n👍 Facebook: [Eclipse Luxe Official](https://facebook.com/eclipseluxe)    \nECLIPSE LUXE — Where Quality Meets Refinement.    \n\"Step into Confidence. Step into Eclipse Luxe.\"\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which feature of the Eclipse Luxe belt is highlighted for its durability and polished finish?  ",
+        "prompt": "",
+        "options": [
+          "A) Adjustable Precision Fit  ",
+          "B) Premium Full-Grain Leather  ",
+          "C) Scratch-Resistant Buckle  ",
+          "D) Lifetime Craftsmanship Warranty  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What does the tagline \"Elevate Your Everyday\" imply about the product?  ",
+        "prompt": "",
+        "options": [
+          "A) It is exclusively for luxury events.  ",
+          "B) It prioritizes durability over style.  ",
+          "C) It enhances everyday experiences with versatile use.  ",
+          "D) It is only suitable for office attire.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a selling point of the Eclipse Luxe belt?  ",
+        "prompt": "",
+        "options": [
+          "A) Sustainably produced materials  ",
+          "B) Unisex design  ",
+          "C) Free engraving service  ",
+          "D) 20% discount for first-time buyers  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.4",
+    "title": "Advertisement (4)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 4",
+    "subtitle": "\nBrand Name: BlendCraft Ultra  \nTagline: \"Transform Your Kitchen, One Blend at a Time!\"  \n\nFEATURES THAT ELEVATE YOUR BLENDING EXPERIENCE:  \n✅ 2000W HyperBlend Motor – Crush ice, nuts, and frozen fruits effortlessly.  \n✅ 6 Precision-Crafted Stainless Steel Blades – For silky-smooth textures every time.  \n✅ SmartTouch Control Panel – 12 pre-programmed settings (smoothies, soups, nut butters, and more).  \n✅ QuietPro Technology – 50% quieter than conventional blenders.  \n✅ Unbreakable Tritan Jar – BPA-free, shatter-resistant, and dishwasher-safe.  \n✅ 10-Year Warranty – Built to last, backed by confidence.  \n\nWHY CHOOSE BLENDCRAFT ULTRA?  \n✨ Versatility Meets Power: From morning green juices to evening hummus, conquer any recipe.  \n✨ Sleek Design: Compact, modern, and fits seamlessly into any kitchen.  \n✨ Easy Cleanup: One-touch self-cleaning function saves time and effort.  \n\nSPECIAL OFFER:  \n🎉 LIMITED TIME! Get a FREE travel tumbler ($29.99 value) with every purchase!  \n\nCall to Action:  \n\"Upgrade your kitchen today! Visit [www.blendcraftultra.com](https://www.blendcraftultra.com) or find us at leading retailers nationwide.\"  \n\nSOCIAL PROOF:  \n⭐️⭐️⭐️⭐️⭐️  \n\"This blender changed my meal prep game! It’s a powerhouse!\" – Sarah J., Home Chef  \n\"Finally, a blender that doesn’t wake the kids!\" – Mike T., Busy Dad  \n\nBrand Credentials:  \n🔹 Certified: ENERGY STAR® rated | FDA-approved materials  \n🔹 Proudly Made in the USA  \n\nConnect With Us:  \n📱 Instagram: @BlendCraftUltra | 📧 Support: care@blendcraftultra.com    \nBlendCraft Ultra – Where Innovation Meets Flavor. 🥤🔪\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the wattage of the HyperBlend Motor in the BlendCraft Ultra?  ",
+        "prompt": "",
+        "options": [
+          "A) 1800W  ",
+          "B) 2000W  ",
+          "C) 2200W  ",
+          "D) 1500W  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, how does QuietPro Technology benefit users?  ",
+        "prompt": "",
+        "options": [
+          "A) It increases blending speed by 50%.  ",
+          "B) It reduces energy consumption by half.  ",
+          "C) It operates at half the noise level of standard blenders.  ",
+          "D) It extends the motor lifespan by 50%.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which statement about the BlendCraft Ultra is NOT accurate?  ",
+        "prompt": "",
+        "options": [
+          "A) The Tritan jar is dishwasher-safe.  ",
+          "B) The blender includes a one-touch self-cleaning function.  ",
+          "C) The SmartTouch panel has 12 pre-programmed settings.  ",
+          "D) The product comes with a 5-year warranty.  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.5",
+    "title": "Advertisement (5)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 5",
+    "subtitle": "\nADVERTISEMENT: CALCULIGHT PRO  \nBrand Name: Calculight Pro  \nTagline: \"Precision Meets Simplicity – Your Ultimate Math Companion!\"    \nKey Features:  \n- Multifunctional Design: Handles basic arithmetic, scientific calculations, graphing, and statistical analysis.  \n- Solar/Battery Dual Power: Never run out of power during critical moments.  \n- Sleek & Portable: Ultra-thin, lightweight design fits effortlessly into bags or pockets.  \n- High-Resolution Display: Crystal-clear screen with adjustable contrast for easy readability.  \n- Durable Build: Shock-resistant casing built to withstand daily wear and tear.    \nPerfect For:  \n- Students: Ace exams with quick equation-solving and formula storage.  \n- Professionals: Streamline financial or engineering tasks with advanced functions.  \n- Educators: Simplify classroom demonstrations with intuitive controls.    \nWhy Choose Calculight Pro?  \n- 2-Year Warranty: Confidence in every calculation.  \n- Eco-Friendly: Made with 30% recycled materials.  \n- 24/7 Customer Support: We’re here when you need us.    \nAvailable Now:  \n- Retailers: Amazon, Best Buy, Walmart, and select electronics stores.  \n- Online: Order at www.calculightpro.com for exclusive bundle deals!    \nSocial Proof:  \n\"The Calculight Pro transformed how I teach complex equations!\" – Dr. Emily R., Math Professor  \n\"A lifesaver for my engineering projects!\" – Mark T., Civil Engineer    \nLimited-Time Offer:  \nGet 15% off with code MATHGENIUS at checkout!    \nConnect With Us:  \n📱 Instagram: @CalculightPro  \n📧 Email: support@calculightpro.com    \nCalculight Pro – Where Every Calculation Sparks Brilliance.  \n#CalculateSmarter    \n[Footer] Calculight Pro is a registered trademark of InnovateTech Solutions. Terms and conditions apply.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What feature ensures the Calculight Pro never runs out of power during critical moments?  ",
+        "prompt": "",
+        "options": [
+          "A) Shock-resistant casing  ",
+          "B) Solar/Battery Dual Power  ",
+          "C) High-resolution display  ",
+          "D) Formula storage capability  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why might educators prefer the Calculight Pro, according to the advertisement?  ",
+        "prompt": "",
+        "options": [
+          "A) It includes a 2-year warranty  ",
+          "B) It streamlines financial tasks  ",
+          "C) It simplifies classroom demonstrations with intuitive controls  ",
+          "D) It is made with recycled materials  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature or benefit of the Calculight Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) Water-resistant design  ",
+          "B) 30% recycled materials  ",
+          "C) 24/7 customer support  ",
+          "D) 2-year warranty  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.6",
+    "title": "Advertisement (6)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 6",
+    "subtitle": "\nBrand Name: SwiftSeal  \n\nHeadline:  \n\"Unlock Effortless Convenience with SwiftSeal’s Next-Gen Can Opener!\"  \n\nSubheadline:  \n\"Experience Precision, Safety, and Durability – Every Twist, Every Time!\"    \n\nKey Features:  \n✅ Ergonomic Grip Design: Comfortable, slip-resistant handle for effortless turning.  \n✅ Auto-Seal Technology: Cuts lids smoothly without sharp edges – no spills, no mess!  \n✅ Rust-Resistant Stainless Steel Blade: Built to last, even in the busiest kitchens.  \n✅ Universal Compatibility: Works flawlessly with standard, pull-tab, and jumbo-sized cans.  \n✅ Safety Lock Mechanism: Child-proof blade guard for worry-free storage.  \n\nWhy SwiftSeal?  \n✔️ Trusted by Home Chefs Worldwide  \n✔️ 1-Year Warranty & 24/7 Customer Support  \n✔️ Eco-Friendly Packaging    \n\nVisual Description (Imagery):  \nA sleek, modern kitchen countertop featuring the SwiftSeal can opener in action. A vibrant tomato sauce can is being opened effortlessly, with a smiling family prepping ingredients in the background. The tagline \"No Struggle, Just Simplicity\" overlays the scene.    \n\nCall to Action:  \n\"Upgrade Your Kitchen Today!  \nVisit www.swiftseal.com or find us at leading retailers near you.  \nLimited-Time Offer: Get 15% off your first order with code EFFORTLESS15!    \n\nBrand Promise:  \nSwiftSeal – Where Innovation Meets Everyday Simplicity.    \nEndline:  \n\"SwiftSeal – Opening Doors to Effortless Living, One Can at a Time!\"    \n#SwiftSeal #KitenEssentials #EffortlesslyYours\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material is the SwiftSeal can opener’s blade made of?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel  ",
+          "B) Aluminum alloy  ",
+          "C) Titanium-coated carbon  ",
+          "D) Ceramic  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why does SwiftSeal emphasize its Safety Lock Mechanism? ",
+        "prompt": "",
+        "options": [
+          "A) To ensure the blade remains sharp longer  ",
+          "B) To prevent accidental access by children  ",
+          "C) To enhance the ergonomic grip during use  ",
+          "D) To improve compatibility with jumbo-sized cans  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a key feature of SwiftSeal?  ",
+        "prompt": "",
+        "options": [
+          "A) Auto-Seal Technology  ",
+          "B) Built-in bottle opener  ",
+          "C) Rust-resistant stainless steel blade  ",
+          "D) Universal compatibility with pull-tab cans  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.7",
+    "title": "Advertisement (7)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 7",
+    "subtitle": "\nBrand Name: VoltStream  \nProduct: TurboCharge 100W Multi-Device Fast Charger  \n\nHeadline:  \n\"Power Up Faster, Smarter, Everywhere – Only with VoltStream!\"  \n\nTagline:  \nCharge Smarter, Not Harder.  \n\nKey Features:  \n✅ 100W HyperSpeed Charging: Fully charge your laptop in 60 minutes, phone in 15.  \n✅ Universal Compatibility: Works with iPhone, Android, MacBook, iPad, Galaxy, and more.  \n✅ 4-Port SmartSync Technology: Charge 4 devices simultaneously without slowdowns.  \n✅ Travel-Ready Design: Compact, foldable plug, and surge protection for global use.  \n✅ Eco-Safe Certified: Overheating prevention, energy-efficient, and carbon-neutral manufacturing.  \n\nWhy Choose VoltStream TurboCharge?  \n⚡ #1 Rated Charger by TechGear Magazine (2024).  \n⚡ 18-Month Warranty – We stand by our power.  \n⚡ 5-Star Reviews – Loved by 500,000+ users worldwide.  \n\nLimited-Time Offer:  \nGet 20% Off + Free Worldwide Shipping!  \nUse Code: POWERUP20 at checkout (valid until 10/31/24).  \n\nCall to Action:  \nDon’t Settle for Slow. Upgrade to VoltStream Today!  \n👉 Shop Now: [www.voltstream.com/turbocharge](http://www.voltstream.com/turbocharge)  \n\nSocial Proof:  \n\"This charger is a game-changer! I can power my laptop, phone, and earbuds all at once while traveling.\" – Sarah L., Digital Nomad  \n\nBranding Elements:  \n🔌 VoltStream – Engineered for the Future.  \n📍 Follow Us: @VoltStreamTech | #ChargeWithPower    \nSafety Certifications: FCC, CE, RoHS, Qi-Certified.  \nAvailability: Global (US, EU, Asia).  \n\nAd Closing:  \nLife Moves Fast. Keep Up with VoltStream. ⚡\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " According to the advertisement, how long does VoltStream claim it takes to fully charge a smartphone using the 100W HyperSpeed feature?  ",
+        "prompt": "",
+        "options": [
+          "A) 15 minutes  ",
+          "B) 30 minutes  ",
+          "C) 60 minutes  ",
+          "D) 90 minutes  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The Qi certification listed under \"Safety Certifications\" implicitly suggests the charger supports which feature?  ",
+        "prompt": "",
+        "options": [
+          "A) Wireless charging  ",
+          "B) Surge protection  ",
+          "C) Foldable plug mechanism  ",
+          "D) Carbon-neutral energy usage  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the TurboCharge 100W charger?  ",
+        "prompt": "",
+        "options": [
+          "A) Surge protection  ",
+          "B) 4-port simultaneous charging  ",
+          "C) Waterproof design  ",
+          "D) Eco-Safe certification  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.8",
+    "title": "Advertisement (8)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 8",
+    "subtitle": "\nBrand Name: BrewLuxe  \nProduct Name: ArtisanTouch Pro Coffee Maker  \nTagline: \"Craft Perfection, One Cup at a Time.\"  \n\nBrew Like a Barista, Every Morning.  \nTired of settling for mediocre coffee? Meet the BrewLuxe ArtisanTouch Pro—the ultimate smart coffee maker designed for those who demand café-quality flavor at home.  \n\nKey Features:  \n✅ Precision Brew Technology: Patented temperature control and extraction system for optimal flavor.  \n✅ Customizable Settings: Adjust strength, temperature, and brew size (espresso, pour-over, or carafe).  \n✅ 60-Second Rapid Brew: Perfect for busy mornings.  \n✅ Sleek, Durable Design: Stainless steel finish with intuitive touchscreen.  \n✅ Smart Connectivity: Program schedules, track freshness, and reorder beans via the BrewLuxe App.  \n\nSpecial Offer:  \n✨ Order Now & Get 20% Off Your First Purchase!  \n✨ FREE BrewLuxe Travel Tumbler with every ArtisanTouch Pro (limited time).  \n\nWhy Choose BrewLuxe?  \n🌟 Award-Winning Quality: Voted \"Best Home Brewer 2023\" by Coffee Connoisseur Magazine.  \n🌟 Sustainability First: Certified Fair Trade partnerships + recyclable stainless steel components.  \n🌟 24/7 Customer Support: We’re here to ensure every sip is perfection.  \n\nCall to Action:  \n☕ Upgrade Your Coffee Ritual Today!  \nVisit BrewLuxe.com/ArtisanTouch-Pro or find us at retailers nationwide.  \n\n#BrewLuxePerfection | @BrewLuxe    \nTerms apply. Limited stock. BrewLuxe: For coffee lovers, by coffee lovers.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the tagline of the BrewLuxe ArtisanTouch Pro Coffee Maker?  ",
+        "prompt": "",
+        "options": [
+          "A) \"Brew Like a Barista, Every Morning.\"  ",
+          "B) \"Upgrade Your Coffee Ritual Today!\"  ",
+          "C) \"Craft Perfection, One Cup at a Time.\"  ",
+          "D) \"Sustainability First, Flavor Always.\"  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The FREE BrewLuxe Travel Tumbler offer is described as \"limited time.\" Which of the following inferences best explains why this is highlighted?  ",
+        "prompt": "",
+        "options": [
+          "A) The tumbler is only available to app users.  ",
+          "B) The offer may expire or run out of stock soon.  ",
+          "C) The tumbler is incompatible with older BrewLuxe models.  ",
+          "D) The offer applies only to carafe-style brews.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature or component of the BrewLuxe ArtisanTouch Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) Recyclable stainless steel components  ",
+          "B) 24/7 customer support  ",
+          "C) Certified Fair Trade partnerships  ",
+          "D) A 3-year warranty period  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.9",
+    "title": "Advertisement (9)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 9",
+    "subtitle": "\nBrand Name: CulinaryEase  \nProduct Name: StainlessSteel Quick-Drain Colander    \n\nHeadline:  \n\"Effortless Draining Meets Stylish Design – The Ultimate Kitchen Companion!\"    \n\nKey Features:  \n✅ Premium Stainless Steel: Durable, rust-resistant, and built to last a lifetime.  \n✅ Ergonomic Grip Handle: Comfortable, non-slip design for secure control.  \n✅ 360° Quick-Drain Holes: Say goodbye to soggy pasta and clogged strainers.  \n✅ Multipurpose Use: Perfect for pasta, veggies, salads, or rinsing fresh fruits.  \n✅ Easy Clean-Up: Dishwasher-safe for hassle-free maintenance.  \n✅ Sleek & Modern: Elevate your kitchen aesthetics with a polished finish.    \n\nWhy Choose CulinaryEase?  \nAt CulinaryEase, we blend innovation with functionality to transform your cooking experience. Our colander isn’t just a tool – it’s a statement of efficiency and elegance.    \n\nCall to Action:  \n\"Upgrade Your Kitchen Today!  \n🛒 Shop Now at [www.culinaryease.com/colander](https://www.culinaryease.com)  \n📞 Or Call: 1-800-KITCHEN  \n\nLimited Stock Alert! Don’t miss out – free silicone grip mat included with every purchase!    \n\nTagline:  \n\"Drain. Rinse. Serve. Repeat. – Simplicity Perfected.\"    \n\nLegal Disclaimer:  \nProduct design may vary slightly. CulinaryEase® is not liable for misuse. Terms apply. Visit website for details.    \n#CulinaryEase #DrainLikeAPro #KitchenEssentials\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " According to the product description, what feature of the CulinaryEase colander specifically prevents \"soggy pasta\"?  ",
+        "prompt": "",
+        "options": [
+          "A) Premium Stainless Steel  ",
+          "B) Ergonomic Grip Handle  ",
+          "C) 360° Quick-Drain Holes  ",
+          "D) Free Silicone Grip Mat  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The tagline \"Drain. Rinse. Serve. Repeat.\" most strongly emphasizes which aspect of the colander?  ",
+        "prompt": "",
+        "options": [
+          "A) Its ability to replace multiple kitchen tools  ",
+          "B) Its contribution to kitchen aesthetics  ",
+          "C) Its simplicity and repetitive efficiency  ",
+          "D) Its compatibility with dishwashers  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the StainlessSteel Quick-Drain Colander?  ",
+        "prompt": "",
+        "options": [
+          "A) Rust-resistant material  ",
+          "B) Heat-resistant base  ",
+          "C) Non-slip handle design  ",
+          "D) Dishwasher-safe maintenance  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.10",
+    "title": "Advertisement (10)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 10",
+    "subtitle": "\nBrand Name: GlideLuxe  \nProduct Name: UltraSleek Detangling Comb  \nTagline: \"Untangle the Beauty, Unleash Your Shine!\"  \n\nKey Features:  \n✨ Effortless Detangling: Precision-engineered teeth glide through knots without tugging or breakage.  \n✨ Ergonomic Design: Soft-grip handle for ultimate comfort and control.  \n✨ Static-Free: Crafted with anti-static ions to keep flyaways in check.  \n✨ For All Hair Types: Gentle on curls, waves, straight, or textured hair.  \n✨ Travel-Friendly: Sleek, durable, and compact—fits in any bag.  \n\nWhy Choose GlideLuxe?  \nTired of battling stubborn tangles or damaging your hair with cheap combs? GlideLuxe UltraSleek combines luxury and innovation to transform your haircare routine. Made from premium, eco-friendly polymer, it’s designed to protect your strands while delivering salon-smooth results.  \n\nPerfect For:  \n- Daily styling  \n- Post-shower detangling  \n- On-the-go touch-ups  \n- Sensitive scalps  \n\nCustomer Love:  \n\"I’ve never used a comb this gentle! My curly hair finally feels pampered, not punished.\"  \n— Sophia R., Haircare Enthusiast  \n\nOrder Now & Glide With Ease!  \nAvailable at www.glideluxe.com or select retailers nationwide.  \n\n#GlideWithEase | @GlideLuxeBeauty    \nGlideLuxe: Where Innovation Meets Elegance.  \nContact: support@glideluxe.com | 1-800-GLIDE-NOW\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material is the GlideLuxe UltraSleek Detangling Comb primarily made from?  ",
+        "prompt": "",
+        "options": [
+          "A) Premium eco-friendly polymer  ",
+          "B) Bamboo fiber  ",
+          "C) Recycled ceramic  ",
+          "D) Stainless steel  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the tagline, what two main benefits does the UltraSleek Detangling Comb aim to provide?  ",
+        "prompt": "",
+        "options": [
+          "A) Speed and affordability  ",
+          "B) Volume and color protection  ",
+          "C) Heat resistance and durability  ",
+          "D) Detangling and enhanced shine  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a key feature of the GlideLuxe comb?  ",
+        "prompt": "",
+        "options": [
+          "A) Anti-static ions  ",
+          "B) Ergonomic soft-grip handle  ",
+          "C) Heat-resistant teeth  ",
+          "D) Compact travel-friendly design  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.11",
+    "title": "Advertisement (11)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 11",
+    "subtitle": "\nBrand Name: EverCraft Kitchenware  \nProduct Name: ProChef Series Bamboo Cutting Board  \nTagline: \"Slice, Dice, Chop – Your Kitchen’s Trusted Partner\"  \n\nImage Spotlight:  \n[Visual of the cutting board in action: fresh vegetables being chopped, a chef’s knife gliding smoothly, and a sleek design with a natural bamboo finish.]  \n\nKey Features:  \n✅ Premium Sustainably-Sourced Bamboo: Durable, eco-friendly, and naturally antimicrobial.  \n✅ Knife-Friendly Surface: Gentle on blades while resisting scratches and stains.  \n✅ Built-In Juice Groove: Keeps countertops clean by trapping liquids and food scraps.  \n✅ Non-Slip Silicone Edges: Stays firmly in place for safe, effortless prep.  \n✅ Easy Cleanup: Dishwasher-safe or wipe with a damp cloth.  \n✅ Versatile Size: 18\" x 12\" x 0.6\" – perfect for meal prep, serving charcuterie, or as a stylish kitchen accent.  \n\nWhy Choose EverCraft?  \n> \"We blend sustainability with innovation to create tools that chefs and home cooks love. The ProChef Series isn’t just a cutting board—it’s the foundation of every great meal.\"  \n\nCall to Action:  \n✨ Upgrade Your Kitchen Today! ✨  \n🔹 Limited-Time Offer: Buy 2, Get 15% Off + Free Recipe E-Book!  \n🔹 Visit EverCraftKitchen.com or shop on Amazon, Walmart, and select retailers.  \n\nContact & Social Proof:  \n📞 Customer Support: 1-800-EVER-CRAFT  \n📸 Tag Us: @EverCraftKitchen #ProChefPrep  \n⭐️ \"This board is a game-changer! Looks beautiful and stands up to daily use.\" – Maria T., 5-Star Review  \n\nSustainability Promise:  \n🌱 Every purchase plants a tree through our partnership with OneTreePlanted.  \n\nDisclaimer:  \nBamboo sourced from FSC-certified forests. Non-slip edges contain food-grade silicone. 2-year warranty included.    \nEverCraft Kitchenware – Crafted for Excellence, Built for Life. 🍴✨\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What are the dimensions of the ProChef Series Bamboo Cutting Board?  ",
+        "prompt": "",
+        "options": [
+          "A) 12\" x 18\" x 1.0\"  ",
+          "B) 18\" x 12\" x 1.2\"  ",
+          "C) 18\" x 12\" x 0.6\"  ",
+          "D) 20\" x 15\" x 0.5\"  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The built-in juice groove is primarily included for what purpose?  ",
+        "prompt": "",
+        "options": [
+          "A) To enhance the board’s aesthetic appeal  ",
+          "B) To prevent liquids from spilling onto countertops  ",
+          "C) To protect knives from dulling  ",
+          "D) To reduce the board’s weight  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which statement about the ProChef Series Bamboo Cutting Board is NOT true?  ",
+        "prompt": "",
+        "options": [
+          "A) It includes a 2-year warranty.  ",
+          "B) EverCraft partners with OneTreePlanted for sustainability.  ",
+          "C) The non-slip edges are made of food-grade silicone.  ",
+          "D) The board is fully compostable.  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.12",
+    "title": "Advertisement (12)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 12",
+    "subtitle": "\nBrand Name: Breeze  \nTagline: \"Stay Fresh, Stay Fearless\"    \nWhy Choose Breeze?  \n- 72-Hour Freshness: Confidence that lasts through workouts, meetings, and everything in between.  \n- Natural Defense: Infused with aloe vera and vitamin E to soothe skin while fighting odor.  \n- Light as Air: Non-sticky, fast-drying formula for an invisible, weightless feel.  \n- For All: Hypoallergenic and vegan-friendly—crafted for every body.  \n- Scents That Inspire: Choose from Crisp Citrus, Mountain Breeze, or Midnight Orchid.    \nCall to Action:  \n\"Ready to conquer your day?  \nShop now at www.breeze.com or find Breeze at your nearest retailer.  \nFirst 100 online orders receive a FREE travel-sized Breeze Deo Spray!\"    \nSocial Proof:  \n\"Breeze is my go-to—keeps me fresh even during marathon workdays!\"  \n— Alex T., Adventure Photographer    \nVisual Direction (Imagery):  \nVibrant shots of active individuals hiking, dancing, or working, with a crisp, airy color palette (whites, blues, greens). Logo: a minimalist swirl symbolizing freshness in motion.    \nBreeze — Where Freshness Meets Fearlessness. 🌿✨    \n#BreezeConfidence #StayFreshStayFearless\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as one of Breeze's available scents?  ",
+        "prompt": "",
+        "options": [
+          "A) Crisp Citrus  ",
+          "B) Midnight Orchid  ",
+          "C) Fresh Lavender  ",
+          "D) Mountain Breeze  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why might Breeze include a testimonial from Alex T., an \"Adventure Photographer\"?  ",
+        "prompt": "",
+        "options": [
+          "A) To highlight the product’s vegan-friendly formula  ",
+          "B) To emphasize its availability in retail stores  ",
+          "C) To showcase its use of aloe vera and vitamin E  ",
+          "D) To imply effectiveness during active, demanding lifestyles  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " According to the article, which feature is NOT explicitly attributed to Breeze?  ",
+        "prompt": "",
+        "options": [
+          "A) Hypoallergenic formula  ",
+          "B) SPF sun protection  ",
+          "C) 72-hour freshness  ",
+          "D) Fast-drying texture  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.13",
+    "title": "Advertisement (13)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 13",
+    "subtitle": "\nBrand Name: Luminova  \nProduct Name: ClarityDesk Pro™  \nTagline: \"Illuminate Your Productivity, Naturally.\"  \n\n✨ Why Choose the ClarityDesk Pro™?  \n✔️ Adjustable Brightness & Color Temperature – Seamlessly switch from warm (3000K) to daylight (6000K) to match your task or mood.  \n✔️ Eye Comfort Technology – Flicker-free, glare-reducing light certified by ophthalmologists for long hours of work or study.  \n✔️ 360° Flexible Gooseneck – Position your light exactly where you need it, every time.  \n✔️ Smart Touch Controls – Intuitive interface for dimming, color adjustment, and power-saving mode.  \n✔️ Sleek & Space-Saving – Modern matte finish (available in Midnight Black, Arctic White, and Rose Gold).  \n\n🌟 Special Features:  \n🔋 USB-C Charging Port – Power your devices while you work.  \n⏲️ Built-In Timer – Set auto-off for 30/60 minutes to save energy.  \n🌱 Eco-Friendly Design – Energy-efficient LEDs with a 50,000-hour lifespan.  \n\n🎁 Limited-Time Offer!  \n\"Light Up Your Workspace\" Deal:  \n✅ 30% Off for first-time customers – use code LUMI30 at checkout.  \n✅ Free Shipping on all orders over $50.  \n\n📢 Call to Action:  \n\"Upgrade your desk setup today! Visit [www.luminova-lighting.com](http://www.luminova-lighting.com) or shop now on Amazon. Limited stock – don’t miss the glow!\"    \nFollow Us:  \n📸 Instagram: @LuminovaLighting  \n📘 Facebook: /LuminovaInnovations  \n🔗 LinkedIn: Luminova Tech Solutions    \n#ClarityDeskPro #WorkBrighter #LuminovaLighting    \nLuminova – Lighting the Path to Better Focus. 💡\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which of the following colors is NOT listed as an available option for the ClarityDesk Pro™?  ",
+        "prompt": "",
+        "options": [
+          "A) Midnight Black  ",
+          "B) Arctic White  ",
+          "C) Blush Pink  ",
+          "D) Rose Gold  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What feature of the ClarityDesk Pro™ implies it could help reduce eye strain during extended work sessions?  ",
+        "prompt": "",
+        "options": [
+          "A) USB-C charging port  ",
+          "B) Energy-efficient LEDs  ",
+          "C) Eye Comfort Technology certified by ophthalmologists  ",
+          "D) Built-in timer  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature of the ClarityDesk Pro™?  ",
+        "prompt": "",
+        "options": [
+          "A) Adjustable color temperature (3000K to 6000K)  ",
+          "B) Wireless charging pad  ",
+          "C) 360° flexible gooseneck  ",
+          "D) Smart touch controls  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.14",
+    "title": "Advertisement (14)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 14",
+    "subtitle": "\nBrand Name: PureBrite™  \nTagline: \"Brighter Clothes, Happier Life!\"  \n\nAdvertisement Copy:  \n\n🌟 Introducing PureBrite™ Ultra-Stain Fighter Detergent 🌟  \n\nTired of stubborn stains and dull fabrics? PureBrite™ is here to revolutionize your laundry routine!  \n\nWhy Choose PureBrite™?  \n✅ Ultra-Stain Fighter Technology: Effortlessly removes grease, coffee, wine, and mud.  \n✅ 24-Hour Freshness Lock: Clothes stay crisp and fragrant for longer.  \n✅ Eco-Clean Formula: Plant-based ingredients, gentle on skin and the planet.  \n✅ Brightens Whites & Colors: Advanced enzymes preserve fabric vibrancy.  \n✅ Works in All Machines: Perfect for HE, standard, and handwashing.  \n\nLimited-Time Offer!  \n🎉 30% Off Your First Purchase! 🎉  \nUse code PURE30 at checkout.  \n\nCustomer Love:  \n\"PureBrite transformed my laundry! My whites have never been brighter!\" – Sarah L.  \n\nCertified Safe:  \n✔️ Dermatologist-tested | ✔️ Biodegradable packaging | ✔️ Cruelty-Free  \n\nCall to Action:  \n👉 Shop Now at [www.purebrite.com](http://www.purebrite.com)  \n👉 Follow us @PureBriteLaundry for tips and giveaways!  \n\nVisual Concept:  \n- Main Image: Bright, sunlit laundry room with sparkling clothes on a line. A smiling family holds a PureBrite™ bottle.  \n- Logo: Bold blue and green waves (symbolizing freshness and eco-friendliness) with the brand name in crisp white font.    \n#PureBriteMagic | #LaundryRevolution | #EcoClean    \nPureBrite™ – Where Science Meets Nature for a Brighter Tomorrow. 🌍✨\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What promotional code offers 30% off the first purchase of PureBrite™ detergent?  ",
+        "prompt": "",
+        "options": [
+          "A) PURE30  ",
+          "B) BRITE30  ",
+          "C) FRESH30  ",
+          "D) CLEAN30  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the advertisement, which of the following is NOT a certification claimed by PureBrite™?  ",
+        "prompt": "",
+        "options": [
+          "A) Dermatologist-tested  ",
+          "B) Biodegradable packaging  ",
+          "C) Cruelty-Free  ",
+          "D) Vegan Certification  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT a feature of PureBrite™ Ultra-Stain Fighter Detergent?  ",
+        "prompt": "",
+        "options": [
+          "A) Works in handwashing  ",
+          "B) 24-hour freshness lock  ",
+          "C) Plant-based ingredients  ",
+          "D) Compatible with industrial washing machines  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.15",
+    "title": "Advertisement (15)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 15",
+    "subtitle": "\nBrand Name: SecureSeal™ Envelopes  \nTagline: \"Protecting What Matters, One Seal at a Time.\"  \n\nHEADER:  \nSecureSeal™  \nThe Ultimate Guardian for Your Documents  \n\nWhy SecureSeal?  \n✔️ Military-Grade Durability – Tear-resistant, water-resistant, and built to withstand the toughest handling.  \n✔️ Tamper-Proof Design – Self-adhesive security strip leaves a visible \"VOID\" pattern if opened illegally.  \n✔️ Eco-Friendly Choice – Made from 100% recycled materials, fully recyclable.  \n✔️ Sleek Professional Look – Crisp linen finish, available in classic white, corporate navy, and elegant gold.  \n✔️ Versatile Sizes – From compact (4x6 in) for gift cards to legal (9x12 in) for contracts.  \n\nPerfect For:  \n- Personal Use: Wedding invites, birthday cards, confidential letters.  \n- Business Essentials: Invoices, contracts, sensitive reports.  \n- Legal & Financial: Tax documents, certificates, notarized papers.  \n\nCALL TO ACTION:  \n\"Don’t Just Send It—Secure It.\"  \n📦 Order Now and get a 20% discount on your first box!  \nLimited-time offer: Free shipping on orders over $30.  \n\nVisit: [www.secure-seal.com](https://www.secure-seal.com)  \nCall: 1-800-SEC-SEAL  \n\nTESTIMONIALS:  \n\"As a small business owner, SecureSeal gives me confidence that my clients’ data stays safe. Plus, the professional look impresses!\" – Jessica R., Austin TX  \n\"Finally, an envelope that doesn’t rip when I stuff it with photos! 10/10.\" – Mark T., Seattle WA  \n\nFOOTER:  \nSecureSeal™ – Where Security Meets Elegance.  \n📍 Proudly Made in the USA | 🌱 Carbon-Neutral Certified  \n\nFollow Us:  \n[Facebook](#) | [Instagram](#) | [LinkedIn](#)  \n\nScan to Shop Now:  \n[QR CODE IMAGE LINKING TO WEBSITE]    \nTerms apply. Void where prohibited. ©2023 SecureSeal LLC. \"SecureSeal\" is a trademark of SecureSeal LLC.    \nDesign Notes:  \n- Brand Colors: Navy blue, crisp white, and gold accents.  \n- Logo Placement: Top-left corner (shield icon with \"SecureSeal\" in bold serif font).  \n- Visuals: Mockups of envelopes in use (e.g., hand sealing a wedding invite, business professional holding a document).  \n\nYour trust, sealed securely. 🔒\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is SecureSeal™’s tagline?  ",
+        "prompt": "",
+        "options": [
+          "A) \"Where Security Meets Elegance.\"  ",
+          "B) \"Protecting What Matters, One Seal at a Time.\"  ",
+          "C) \"Don’t Just Send It—Secure It.\"  ",
+          "D) \"The Ultimate Guardian for Your Documents.\"  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, which feature of SecureSeal™ ensures that unauthorized opening is immediately detectable?  ",
+        "prompt": "",
+        "options": [
+          "A) Military-grade durability  ",
+          "B) Crisp linen finish  ",
+          "C) Self-adhesive security strip  ",
+          "D) 100% recycled materials  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of SecureSeal™ envelopes?  ",
+        "prompt": "",
+        "options": [
+          "A) Carbon-neutral certification  ",
+          "B) Fire-resistant material  ",
+          "C) Tamper-proof design  ",
+          "D) Available in legal size (9x12 in)  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.16",
+    "title": "Advertisement (16)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 16",
+    "subtitle": "\nBrand Name: PureWipe Erasers  \nTagline: \"Where Mistakes Disappear, Perfection Remains.\"  \n\nHeadline:  \n\"Erase with Confidence!\"  \n\nSubheadline:  \nIntroducing PureWise Precision Erasers – For Flawless Creations, Every Time.  \n\nKey Features:  \n✔️ Non-Abrasive Formula – Gentle on paper, tough on mistakes.  \n✔️ Zero Smudge Guarantee – Leaves no residue or streaks.  \n✔️ High-Precision Design – Sharp edges for detailed erasing.  \n✔️ Eco-Friendly Materials – Made from 100% recycled, latex-free rubber.  \n✔️ Long-Lasting Durability – Outlasts ordinary erasers.  \n\nBody Copy:  \nTired of smudged pages, torn paper, or erasers that vanish mid-task? Meet PureWipe Erasers – crafted with care for artists, students, and professionals who demand perfection.  \n\nWhether you’re sketching a masterpiece, drafting equations, or jotting notes, PureWipe glides effortlessly, removing errors without a trace. Its compact shape fits seamlessly in your hand, desk, or pencil case, ready to rescue every \"oops\" moment.  \n\nCall to Action:  \n\"Make Every Stroke Count – Choose PureWipe Erasers.  \nAvailable at stationery stores nationwide and online at [purewipe-erasers.com](http://www.purewipe-erasers.com).  \n\nFinal Tagline:  \n\"PureWipe: Because Every Masterpiece Deserves a Second Chance.\"  \n\n[Small print: PureWipe is committed to sustainability. For every eraser purchased, we plant one tree.]    \nBrand Colors: Soft white and mint green (to emphasize cleanliness and eco-friendliness).  \nLogo: A minimalist eraser icon with a leaf embedded in its side.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material are PureWipe Erasers made from?  ",
+        "prompt": "",
+        "options": [
+          "A) Biodegradable plastic  ",
+          "B) Latex-infused rubber  ",
+          "C) 100% recycled, latex-free rubber  ",
+          "D) Synthetic polymer blend  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " According to the article, what action does PureWipe take for sustainability with each purchase?  ",
+        "prompt": "",
+        "options": [
+          "A) Donates 10% of profits to schools  ",
+          "B) Recycles used erasers for free  ",
+          "C) Uses solar energy in production  ",
+          "D) Plants one tree per eraser sold  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT a feature of PureWipe Erasers?  ",
+        "prompt": "",
+        "options": [
+          "A) Non-abrasive formula  ",
+          "B) Erasable ink compatibility  ",
+          "C) Zero smudge guarantee  ",
+          "D) High-precision design  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.17",
+    "title": "Advertisement (17)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 17",
+    "subtitle": "\nBrand Name: LuminaCore  \nProduct Name: EverGlow Pro-X Flashlight  \nTagline: \"Light Up Your World, Anywhere, Anytime!\"    \n\nKey Features:  \n🔦 1000 Lumens Ultra-Bright LED – Illuminate even the darkest trails or power outages.  \n🔋 48-Hour Runtime – Powered by a rechargeable lithium-ion battery (USB-C charging included).  \n⚡ Military-Grade Aluminum Body – Shockproof, crush-resistant, and built to survive extreme conditions.  \n🌧️ IPX7 Waterproof – Works flawlessly in heavy rain or submerged up to 1 meter.  \n🔧 Versatile Modes – Adjust brightness (High, Low, Strobe, SOS) for any situation.  \n👜 Compact & Lightweight – Fits in your pocket, backpack, or emergency kit.    \n\nPerfect For:  \n✅ Outdoor Adventures (camping, hiking, fishing)  \n✅ Emergency Preparedness (storms, blackouts, car breakdowns)  \n✅ Everyday Use (home repairs, dog walks, nighttime security)    \n\nCall to Action:  \n\"Don’t Get Left in the Dark!  \nShop the EverGlow Pro-X Today at [LuminaCore.com](https://www.luminacore.com)  \nUse Code: BRIGHT15 for 15% Off!    \n\nWhy Choose LuminaCore?  \n✔️ Lifetime Warranty – We stand by our products.  \n✔️ Trusted by Professionals – Used by firefighters, rangers, and survival experts.  \n✔️ Eco-Friendly – Rechargeable design reduces battery waste.    \n\nVisual Imagery (Optional Note for Ad Design):  \nInclude dynamic visuals of the flashlight cutting through darkness, a side-by-side size comparison with a smartphone, and a rugged outdoor scene.    \n\nSocial Proof:  \n⭐ \"This flashlight saved our camping trip during a storm!\" – Sarah T., Verified Buyer  \n⭐ \"Brightest and most durable light I’ve ever owned.\" – Mark R., Survival Instructor    \n\nFinal Tagline:  \n\"When Reliability Matters – Trust LuminaCore.\"    \nContact: 📞 1-800-LUMINA | 📧 support@luminacore.com  \nFollow Us: @LuminaCore (Instagram, Facebook, TikTok)  \n\nSustainability Note: Every purchase plants a tree through our partnership with #GreenEarthInitiative.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the maximum brightness output of the EverGlow Pro-X Flashlight?  ",
+        "prompt": "",
+        "options": [
+          "A) 1000 Lumens  ",
+          "B) 800 Lumens  ",
+          "C) 1200 Lumens  ",
+          "D) 1500 Lumens  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, why might professionals like firefighters or survival experts prefer the EverGlow Pro-X?  ",
+        "prompt": "",
+        "options": [
+          "A) It includes a built-in compass for navigation.  ",
+          "B) Its military-grade aluminum body ensures durability in extreme conditions.  ",
+          "C) It has a colorful design for easy visibility.  ",
+          "D) It uses disposable batteries for convenience.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following features is NOT mentioned in the article about the EverGlow Pro-X Flashlight?  ",
+        "prompt": "",
+        "options": [
+          "A) IPX7 waterproof rating  ",
+          "B) Built-in USB power bank for charging devices  ",
+          "C) 48-hour runtime on a single charge  ",
+          "D) SOS mode for emergencies  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.18",
+    "title": "Advertisement (18)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 18",
+    "subtitle": "\nBrand Name: SturdiHold  \nTagline: \"Organize with Strength, Present with Style.\"  \n\nIntroducing SturdiHold Premium Folders  \nYour documents deserve better than chaos. SturdiHold Folders combine sleek design with unshakable durability to keep your papers secure, organized, and professional—every time.  \n\nWhy SturdiHold?  \n✅ Built to Last: Made from tear-resistant, 100% recycled polypropylene with reinforced edges.  \n✅ Sleek & Professional: Matte finish in 8 modern colors (from Midnight Black to Arctic White).  \n✅ Smart Organization: Interior pockets, label tabs, and customizable divider inserts.  \n✅ Eco-Conscious: Sustainably sourced materials and 100% recyclable.  \n✅ Secure Closure: Magnetic snap or elastic band options to keep contents safe.  \n\nPerfect For:  \n- Business presentations  \n- Academic projects  \n- Legal documents  \n- Creative portfolios  \n\nSpecial Offer:  \nBuy 3, Get 1 Free!  \n(Limited time only. Use code HOLDIT23 at checkout.)  \n\nVisuals & Branding:  \n- Main image: A hand holding a SturdiHold folder against a minimalist desk setup (laptop, coffee cup, plant).  \n- Logo placement: Bottom-right corner with tagline.  \n- Color palette: Navy blue, gold accents, crisp white.  \n\nCall to Action:  \nUpgrade your organization game today!  \nVisit www.sturdihold.com or find us at office supply stores nationwide.  \n\nSturdiHold – Where Order Meets Elegance.    \nContact: support@sturdihold.com | 📞 1-800-STURDI-1  \nFollow us: @SturdiHold (Instagram, LinkedIn, TikTok)  \nScan QR code for a 10% first-order discount!    \n#OrganizeBetter #SturdiHoldFolders #WorkSmarter    \nAd design © 2023 SturdiHold Inc. All rights reserved.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material are SturdiHold Premium Folders primarily made from?  ",
+        "prompt": "",
+        "options": [
+          "A) Recycled cardboard  ",
+          "B) 100% recycled polypropylene  ",
+          "C) Organic cotton blend  ",
+          "D) Biodegradable plastic  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which feature of SturdiHold folders would most appeal to legal professionals needing secure document storage? ",
+        "prompt": "",
+        "options": [
+          "A) Availability in 8 modern colors  ",
+          "B) Eco-conscious materials  ",
+          "C) Customizable divider inserts  ",
+          "D) Magnetic snap or elastic band closures  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of SturdiHold folders?  ",
+        "prompt": "",
+        "options": [
+          "A) Tear-resistant construction  ",
+          "B) Water-resistant coating  ",
+          "C) Matte finish in multiple colors  ",
+          "D) Interior pockets and label tabs  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.19",
+    "title": "Advertisement (19)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 19",
+    "subtitle": "\nBrand Name: ThermoGrip  \nTagline: \"Feel the Warmth, Embrace the Comfort.\"    \n\nProduct Name: UltraTherm Winter Gloves  \nKey Features:  \n✔️ ThermaLined™ Insulation – Stay warm in sub-zero temperatures (-30°C to 10°C).  \n✔️ Weather-Resistant Shell – Repels snow, rain, and wind.  \n✔️ Enhanced Grip Technology – Non-slip palms for secure handling.  \n✔️ Touchscreen-Compatible Fingertips – Stay connected without removing your gloves.  \n✔️ Breathable & Flexible Design – All-day comfort for work, sports, or play.  \n✔️ Reflective Accents – Stay visible in low-light conditions.  \n\nWhy Choose ThermoGrip?  \n✅ Unisex Sizing – Perfect for men, women, and teens.  \n✅ Durability Guaranteed – Reinforced stitching for long-lasting wear.  \n✅ Versatile Use – Ideal for skiing, hiking, commuting, or everyday errands.  \n✅ Eco-Friendly Materials – Crafted with 50% recycled fibers.  \n\nLimited-Time Offer:  \n🔥 Buy 1 Pair, Get 15% Off Your Next Purchase!  \nUse Code: WARMHANDS23  \n\nCall to Action:  \n\"Don’t let the cold slow you down! Shop ThermoGrip UltraTherm Gloves today and experience unmatched warmth and agility.  \n👉 Shop Now at thermogrip.com 👈  \n\nFollow Us:  \n📱 Instagram: @ThermoGrip_Official  \n📧 Email: hello@thermogrip.com  \n🏷️ #ThermoGripWinter    \nThermoGrip – Engineered for Every Season.  \nFree shipping on orders over $50. 30-day satisfaction guarantee.    \nFooter: Advertisement by ThermoGrip® | Sustainability meets innovation since 2015.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What temperature range do the UltraTherm Winter Gloves withstand according to the ThermaLined™ Insulation feature?  ",
+        "prompt": "",
+        "options": [
+          "A) -20°C to 5°C  ",
+          "B) -30°C to 10°C  ",
+          "C) -25°C to 15°C  ",
+          "D) -40°C to 0°C  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which feature of the gloves implies they are suitable for outdoor activities during early morning or late evening?  ",
+        "prompt": "",
+        "options": [
+          "A) ThermaLined™ Insulation  ",
+          "B) Enhanced Grip Technology  ",
+          "C) Weather-Resistant Shell  ",
+          "D) Reflective Accents  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a key feature of the UltraTherm Winter Gloves?  ",
+        "prompt": "",
+        "options": [
+          "A) Touchscreen-compatible fingertips  ",
+          "B) Unisex sizing  ",
+          "C) Breathable & flexible design  ",
+          "D) Reinforced stitching  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.20",
+    "title": "Advertisement (20)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 20",
+    "subtitle": "\nBrand Name: Aeroglow ✨  \n\nTagline: \"Unleash the Power of Perfect Hair, Every Day.\"    \n\nIntroducing the Aeroglow ProSpeed Hair Dryer  \nWhere Innovation Meets Salon-Quality Results    \n\nKey Features:  \n🔹 2X Faster Drying: 2200W motor with 3 Heat + 2 Speed Settings for customizable styling.  \n🔹 Ionic Technology: Reduces frizz by 80% and boosts shine for silky-smooth locks.  \n🔹 Lightweight Design: Ergonomic handle for fatigue-free styling—perfect for travel or daily use.  \n🔹 Advanced Ceramic Coating: Even heat distribution to protect hair from damage.  \n🔹 Cool Shot Button: Lock in styles with a burst of cool air for long-lasting volume.  \n🔹 Dual Voltage: Globally compatible—take your A-game anywhere!    \n\nWhy Choose Aeroglow?  \n✅ Professional Results at Home: Trusted by stylists, loved by users.  \n✅ Quiet Motor Technology: Powerful yet whisper-quiet—no more deafening blowouts!  \n✅ Includes 2 Attachments: Concentrator nozzle + diffuser for curls, waves, or sleek finishes.  \n✅ 2-Year Warranty: We stand by our products.    \n\nSpecial Offer:  \n🎁 Limited Time: Free heat-protectant spray ($25 value) with every purchase!    \n\nCall to Action:  \n\"Ready for hair that turns heads?  \nShop Now at [AeroglowHair.com](https://www.aeroglowhair.com) | Use Code GLOW10 for 10% Off!\"    \n\nSocial Proof:  \n⭐️⭐️⭐️⭐️⭐️  \n\"The Aeroglow dryer cut my styling time in half—my hair’s never looked healthier!\" – Emma L.    \n\nStay Connected:  \n📱 Follow us @AeroglowHair for styling tips, giveaways, and more!    \nAeroglow – Empowering Your Beauty, One Strand at a Time. 💇♀️✨    \nFooter:  \n🔌 Eco-friendly packaging | 📞 24/7 Customer Support | 🌍 Ships globally\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the wattage of the Aeroglow ProSpeed Hair Dryer’s motor?  ",
+        "prompt": "",
+        "options": [
+          "A) 2000W  ",
+          "B) 2100W  ",
+          "C) 2200W  ",
+          "D) 2300W  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why might the Aeroglow ProSpeed Hair Dryer be particularly beneficial for users with frizzy hair?  ",
+        "prompt": "",
+        "options": [
+          "A) It includes a heat-protectant spray.  ",
+          "B) Its ionic technology reduces frizz by 80%.  ",
+          "C) It has a lightweight ergonomic design.  ",
+          "D) It ships globally with eco-friendly packaging.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the Aeroglow ProSpeed Hair Dryer?  ",
+        "prompt": "",
+        "options": [
+          "A) Advanced ceramic coating  ",
+          "B) Dual voltage compatibility  ",
+          "C) Auto-shutoff safety feature  ",
+          "D) Quiet motor technology  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.21",
+    "title": "Advertisement (21)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 21",
+    "subtitle": "\nBrand Name: LuxeLocks  \nProduct Name: GlidePro Detangling Hairbrush    \n\nHeadline:  \n✨ Untangle Your Beauty ✨  \n\nSubhead:  \nIntroducing the GlidePro – Where Luxury Meets Every Strand    \n\nWhy GlidePro?  \n✅ Effortless Detangling: Advanced FlexBristle Technology glides through knots without tugging or breakage.  \n✅ Scalp Care: Ultra-soft, tapered bristles massage your scalp while boosting natural shine.  \n✅ All Hair Types: Works seamlessly on curls, waves, straight, thick, or fine hair.  \n✅ Durable & Ergonomic: Sleek, non-slip grip designed for precision styling.  \n✅ Static-Free Finish: Ionized bristles reduce frizz for salon-smooth results.    \n\nCall to Action:  \n✨ Upgrade Your Routine Today! ✨  \nOnly $24.99  \nShop now at [luxelocks.com/glidepro](https://www.luxelocks.com/glidepro)  \n\nFollow Us for Haircare Tips:  \n📸 Instagram: [@LuxeLocks](https://www.instagram.com/luxelocks)  \n💬 TikTok: [@LuxeLocksOfficial](https://www.tiktok.com/@luxelocksofficial)    \n\nTagline:  \nGlidePro – Because Every Brushstroke Should Feel Like a Luxury.  \n\nFinal Note:  \nBacked by our 30-Day Satisfaction Guarantee. Love it or your money back!    \n\nVisual Concept (for reference):  \nImagine a model with glossy, flowing hair mid-brushstroke, holding the GlidePro in rose gold against a soft, sunlit backdrop. Close-up shots highlight its ergonomic design and gentle bristles.  \n\nColors: Rose gold accents, minimalist white packaging.  \nHashtags: #LuxeLocksMagic #GlideProPerfection    \nLuxeLocks – Elevating Haircare, One Brush at a Time.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What technology does the GlidePro Detangling Hairbrush use to ensure effortless detangling without tugging?  ",
+        "prompt": "",
+        "options": [
+          "A) Ionized Bristle System  ",
+          "B) FlexBristle Technology  ",
+          "C) ScalpCare Plus  ",
+          "D) ErgoGrip Design  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, how long is LuxeLocks’ satisfaction guarantee period?  ",
+        "prompt": "",
+        "options": [
+          "A) 14 days  ",
+          "B) 60 days  ",
+          "C) 30 days  ",
+          "D) 7 days  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT a feature of the GlidePro Detangling Hairbrush?  ",
+        "prompt": "",
+        "options": [
+          "A) Reduces frizz with ionized bristles  ",
+          "B) Designed exclusively for curly hair  ",
+          "C) Includes a non-slip grip for precision styling  ",
+          "D) Massages the scalp with ultra-soft tapered bristles  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.22",
+    "title": "Advertisement (22)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 22",
+    "subtitle": "\nBrand Name: Skyline Headwear Co.  \nProduct Name: The Horizon Brim  \nTagline: \"Elevate Your Style, Embrace the Sky.\"  \n\nHEADLINE:  \nMeet Your New Signature Look.  \n\nSUBHEADLINE:  \nCrafted for adventurers, urban explorers, and style pioneers.  \n\nFEATURES HIGHLIGHTED:  \n✅ Lightweight & Breathable: Premium cotton-blend fabric keeps you cool all day.  \n✅ UPF 50+ Sun Protection: Shield yourself in style.  \n✅ Adjustable Fit: Hidden inner band for a perfect fit, every time.  \n✅ Durable Design: Reinforced stitching, weather-resistant finish.  \n\nDESCRIPTION:  \nWhether you’re conquering city streets or mountain trails, The Horizon Brim by Skyline Headwear Co. is your ultimate companion. With its sleek, unisex design and timeless silhouette, this hat blends function and fashion effortlessly. Pair it with your weekend casuals or your outdoor gear—it’s versatility redefined.  \n\nAVAILABLE IN:  \n- Classic Noir | Desert Sand | Ocean Blue | Olive Grove  \n\nCALL TO ACTION:  \n\"Step into the Spotlight. Limited-Time Offer: Free Shipping on All Orders!\"  \n🛒 Shop Now at [skylineheadwear.com/horizonbrim](http://www.skylineheadwear.com/horizonbrim)  \n\nFOLLOW THE SKYLINE:  \n📸 Instagram: [@SkylineHeadwear](https://www.instagram.com/SkylineHeadwear)  \n🔵 Facebook: [SkylineHeadwearCo](https://www.facebook.com/SkylineHeadwearCo)  \n\nLOGO PLACEMENT:  \nSubtle embroidered logo on the inner band—a mark of craftsmanship, not clutter.  \n\nHASHTAGS:  \n#HorizonBrim #SkylineStyle #HatsReimagined    \nSkyline Headwear Co. — Where Every Head Turn Begins. 🌟\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What UPF rating does The Horizon Brim offer for sun protection?  ",
+        "prompt": "",
+        "options": [
+          "A) UPF 30+  ",
+          "B) UPF 40+  ",
+          "C) UPF 50+  ",
+          "D) UPF 60+  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, which group is NOT explicitly mentioned as part of the target audience for The Horizon Brim?  ",
+        "prompt": "",
+        "options": [
+          "A) People who prioritize luxury brand names  ",
+          "B) People who value both style and practicality  ",
+          "C) Adventurers and outdoor enthusiasts  ",
+          "D) Urban explorers and trendsetters  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of The Horizon Brim?  ",
+        "prompt": "",
+        "options": [
+          "A) Reinforced stitching  ",
+          "B) Breathable cotton-blend fabric  ",
+          "C) Waterproof material  ",
+          "D) Hidden adjustable inner band  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.23",
+    "title": "Advertisement (23)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 23",
+    "subtitle": "\nBrand Name: SonicPulse  \nModel Name: Aurora X9 Wireless Noise-Canceling Headphones  \nTagline: \"Hear Every Beat, Own the Silence.\"  \n\nHEADLINE:  \nUnleash Your Sound Universe  \nWhere Brilliant Clarity Meets Unmatched Comfort  \n\nKey Features:  \n🎵 Pro-Grade Sound: 40mm titanium drivers deliver crystal-clear highs, rich mids, and earth-shaking bass.  \n🔇 Adaptive Noise Cancellation: Silence the world with AI-powered noise blocking.  \n⚡ 50-Hour Playtime: Fast-charging battery fuels 2 weeks of play.  \n🛋️ CloudFit Pro Ear Cushions: Memory foam for all-day comfort.  \n🌍 Smart Touch Controls: Swipe, tap, or speak—your music obeys.  \n\nWhy Choose SonicPulse?  \n✔️ Award-Winning Design (2024 Red Dot Winner)  \n✔️ IPX5 Water-Resistant: Perfect for workouts or rain.  \n✔️ Dual Connectivity: Pair with two devices seamlessly.  \n✔️ 24/7 Support: We’re here, always.  \n\nLimited-Time Offer:  \n🔥 Pre-Order Now & Save 20%  \nPLUS Free Worldwide Shipping + 3 Months of Tidal Premium  \n\nCall to Action:  \n\"Don’t just listen—immerse. Elevate your audio journey today.\"  \n👉 Shop Now at SonicPulse.com  \n\nVisual Concept (Imagery):  \nGlossy black headphones floating against a starry galaxy backdrop, with soundwaves rippling in neon blue.  \nTagline overlay: \"Hear Every Beat, Own the Silence.\"    \nSonicPulse: For the ones who refuse to compromise. 🎧✨\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How long does the Aurora X9’s battery last on a single charge according to the article?  ",
+        "prompt": "",
+        "options": [
+          "A) 50 hours  ",
+          "B) 40 hours  ",
+          "C) 24 hours  ",
+          "D) 100 hours  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The tagline \"Own the Silence\" most directly refers to which feature of the Aurora X9?  ",
+        "prompt": "",
+        "options": [
+          "A) Pro-Grade Sound with titanium drivers  ",
+          "B) Adaptive Noise Cancellation  ",
+          "C) 50-hour playtime  ",
+          "D) CloudFit Pro Ear Cushions  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature or award in the article?  ",
+        "prompt": "",
+        "options": [
+          "A) IPX5 water resistance  ",
+          "B) 24/7 customer support  ",
+          "C) Winner of the 2023 Red Dot Design Award  ",
+          "D) Dual-device pairing  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.24",
+    "title": "Advertisement (24)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 24",
+    "subtitle": "\nBrand Name: SwiftBrew  \nProduct Name: SwiftBrew Electric Kettle Pro    \n\nTagline:  \n\"Boil Smarter, Not Harder – Precision in Every Pour.\"  \n\nKey Features:  \n- Lightning-Fast Boiling: 1500W rapid-boil technology delivers piping-hot water in under 3 minutes.  \n- Smart Temperature Control: 5 preset settings (100°C black tea, 85°C green tea, 70°C coffee, and more) for perfect brews.  \n- Safety First: Auto-shutoff, boil-dry protection, and BPA-free materials ensure worry-free use.  \n- Sleek & Durable: Stainless steel body with ergonomic handle and 360° swivel base.  \n- Easy to Clean: Wide opening and removable scale filter for hassle-free maintenance.  \n\nWhy Choose SwiftBrew?  \n✔️ Quiet Operation – No loud whistling, just smooth efficiency.  \n✔️ 1.7L Capacity – Ideal for families, guests, or your morning matcha ritual.  \n✔️ Energy-Saving – Boils only what you need, reducing power waste.  \n\nSpecial Offer:  \nPre-order now and get a FREE tea sampler box (worth $15)!  \n\nPricing:  \n$49.99 (MSRP: $69.99) – Limited-time launch discount!  \n\nAvailable At:  \nAmazon | Target | SwiftBrew.com  \n\nWarranty:  \n2-year limited warranty + 24/7 customer support.    \nSwiftBrew – Elevate Your Brewing Game.  \nBecause every cup deserves perfection.    \n#SwiftBrewKettle #SmartKitchenEssentials\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How many preset temperature settings does the SwiftBrew Electric Kettle Pro offer?  ",
+        "prompt": "",
+        "options": [
+          "A) 3  ",
+          "B) 4  ",
+          "C) 5  ",
+          "D) 6  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What is a key incentive for pre-ordering the SwiftBrew Electric Kettle Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) A 2-year warranty extension  ",
+          "B) A discounted price of $49.99  ",
+          "C) Free 24/7 customer support  ",
+          "D) Receiving a complimentary tea sampler box  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the SwiftBrew Electric Kettle Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) Auto-shutoff and boil-dry protection  ",
+          "B) Built-in timer for brewing  ",
+          "C) Energy-saving technology  ",
+          "D) BPA-free materials  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.25",
+    "title": "Advertisement (25)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 25",
+    "subtitle": "\nNexTech Laptops  \nModel: Aurora X7 Ultra  \nSlogan: \"Unleash Speed. Ignite Creativity.\"  \n\n🔥 Key Features:  \n- Powerhouse Performance: 13th Gen Intel® Core™ i9 Processor | NVIDIA® GeForce RTX™ 4070 GPU  \n- Stunning Visuals: 15.6\" 4K OLED Touchscreen (120Hz Refresh Rate | 100% DCI-P3 Color)  \n- All-Day Battery: 18 hours of productivity or entertainment on a single charge.  \n- Ultra-Fast Storage: 1TB NVMe SSD + 32GB DDR5 RAM for seamless multitasking.  \n- Sleek & Lightweight: Magnesium-alloy chassis | 0.6” thin | 2.9 lbs.  \n\n🎯 Designed For:  \n- Creators (4K video editing, 3D rendering)  \n- Gamers (Ray tracing, ultra-smooth gameplay)  \n- Professionals (Portable power for remote work)  \n\n🌟 Exclusive Features:  \n- FrostCool™ Dual-Fan Cooling System  \n- Thunderbolt™ 4 Ports + Wi-Fi 6E  \n- Backlit RGB Keyboard with Anti-Ghosting  \n- Windows 11 Pro (Pre-installed)  \n\n💰 Special Offer:  \n$2,299.99 (Limited Time Only | MSRP $2,799)  \n🎁 Free Wireless NexTech Mouse with purchase!  \n🎓 Student Discount: 10% off with verified .edu email.  \n\n🔒 Peace of Mind:  \n- 2-Year Warranty + 24/7 Premium Support  \n- Carbon-Neutral Manufacturing  \n\n📍 Where to Buy:  \nVisit NexTech.com/AuroraX7  \nOr find us at Amazon, BestBuy, and select retailers.  \n\nNexTech Logo (insert logo here)  \n\"Pioneering Tomorrow’s Innovation Today.\"    \n#AuroraX7Ultra #NexTechLaptops #PowerRedefined    \nTerms apply. Offer valid until [Month XX, 20XX].\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which processor does the Aurora X7 Ultra laptop use?  ",
+        "prompt": "",
+        "options": [
+          "A) 12th Gen Intel® Core™ i7  ",
+          "B) 13th Gen Intel® Core™ i9  ",
+          "C) AMD Ryzen™ 9 7900X  ",
+          "D) Apple M2 Pro  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, why is the Aurora X7 Ultra particularly suitable for gamers?  ",
+        "prompt": "",
+        "options": [
+          "A) It has an 18-hour battery life.  ",
+          "B) It includes a free wireless mouse.  ",
+          "C) NVIDIA® GeForce RTX™ 4070 GPU with ray tracing support.  ",
+          "D) Carbon-neutral manufacturing.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature of the Aurora X7 Ultra?  ",
+        "prompt": "",
+        "options": [
+          "A) 15.6\" 4K OLED Touchscreen  ",
+          "B) FrostCool™ Dual-Fan Cooling System  ",
+          "C) Thunderbolt™ 4 Ports  ",
+          "D) Built-in fingerprint scanner  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.26",
+    "title": "Advertisement (26)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 26",
+    "subtitle": "\nBrand Name: GlossGuard  \nTagline: \"Kiss Dryness Goodbye – Hydrate Naturally.\"  \n\nProduct Highlights:  \n🌿 Nourish & Protect  \n- Ultra-Hydrating Formula: Enriched with shea butter, coconut oil, and vitamin E for 24-hour moisture.  \n- SPF 15 Defense: Shields lips from sun damage.  \n- 100% Natural Ingredients: Vegan-friendly, cruelty-free, and free from parabens or synthetic dyes.  \n- Silky Smooth Finish: Non-greasy, weightless feel with a subtle shine.  \n\nFlavors to Love:  \n🍦 Classic Vanilla | 🍇 Berry Burst | 🍃 Mint Fresh | 🌸 Unscented  \n\nWhy GlossGuard?  \n✔️ Dermatologist-tested for sensitive skin.  \n✔️ Eco-conscious packaging (recyclable tube).  \n✔️ Perfect for all seasons – from winter chapping to summer sun.  \n\nCall to Action:  \n✨ \"Ready for Lips That Wow?\"  \n👉 Shop Now at [www.glossguard.com](http://www.glossguard.com)  \n📱 Follow Us: @GlossGuardOfficial (Instagram | TikTok | Facebook)  \n🛒 Available at Target, Sephora, and Amazon.  \n\nVisual Concept (Ad Imagery):  \n- Close-up of dewy, hydrated lips against a backdrop of natural elements (sunrise, coconut trees, or frosty morning).  \n- Minimalist design with bold text: \"Your Lips Deserve Better.\"  \n- Product shot showing sleek, matte-finish tube in signature pastel shades.  \n\nHashtags: #GlossGuardGlow #HydrateNaturally #LipCareRevolution    \nGlossGuard – Because Every Smile Starts with Soft Lips.  \n\nDisclaimer: GlossGuard is a fictional product created for this exercise.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which ingredient is NOT included in GlossGuard’s Ultra-Hydrating Formula?  ",
+        "prompt": "",
+        "options": [
+          "A) Shea butter  ",
+          "B) Coconut oil  ",
+          "C) Vitamin E  ",
+          "D) Beeswax  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why is GlossGuard’s packaging described as eco-conscious?  ",
+        "prompt": "",
+        "options": [
+          "A) It uses biodegradable plant-based caps.  ",
+          "B) It features a recyclable tube.  ",
+          "C) The formula is solar-powered during production.  ",
+          "D) Packaging materials are edible.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which statement about GlossGuard is FALSE based on the article?  ",
+        "prompt": "",
+        "options": [
+          "A) Contains parabens for long-lasting preservation.  ",
+          "B) Offers a non-greasy, weightless finish.  ",
+          "C) Includes SPF 15 to shield lips from sun damage.  ",
+          "D) Available in a mint-flavored variant.  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.27",
+    "title": "Advertisement (27)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 27",
+    "subtitle": "\nBrand Name: LuminaSkin Naturals 🌿  \n\nTagline: \"Unveil Your Natural Glow – Hydration That Feels Like Sunshine!\" ☀️    \n\nKey Features:  \n✔️ Deep Hydration Boost: Infused with hyaluronic acid and coconut water for 24-hour moisture.  \n✔️ Skin-Loving Ingredients: Vegan, cruelty-free formula with shea butter, aloe vera, and vitamin E.  \n✔️ Lightweight & Fast-Absorbing: No greasy residue – just silky-smooth skin.  \n✔️ For All Skin Types: Gentle enough for sensitive skin, powerful enough for every day.  \n✔️ Subtle Botanical Fragrance: A calming blend of lavender and chamomile.    \n\nWhy Choose LuminaSkin?  \nYour skin deserves more than just moisture – it deserves radiance. Our lotion is crafted to nourish, protect, and reveal your healthiest complexion. Whether prepping for a busy day or winding down at night, a single application leaves skin soft, supple, and glowing with confidence.  \n\nPerfect For:  \n- Dry, rough patches  \n- Post-shower pampering  \n- Daily skincare rituals    \n\nCall to Action:  \n✨ Ready to glow? ✨  \nVisit www.luminaskin.com or find us at your favorite retailer.  \n\n#LuminaSkinGlow • #NatureMeetsNourishment    \nDisclaimer: Dermatologist-tested. Hypoallergenic. Free from parabens, sulfates, and synthetic dyes.    \nLuminaSkin Naturals – Where Nature Nurtures Your Skin. 🌸\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which ingredient is specifically mentioned as part of the Deep Hydration Boost in LuminaSkin Naturals?  ",
+        "prompt": "",
+        "options": [
+          "A) Shea Butter  ",
+          "B) Coconut Water  ",
+          "C) Vitamin E  ",
+          "D) Lavender  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What can be inferred about LuminaSkin Naturals based on the article?  ",
+        "prompt": "",
+        "options": [
+          "A) It is unsuitable for sensitive skin.  ",
+          "B) It is designed for both daytime and nighttime use.  ",
+          "C) It leaves a greasy residue on the skin.  ",
+          "D) It contains synthetic dyes.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT claimed about LuminaSkin Naturals?  ",
+        "prompt": "",
+        "options": [
+          "A) Hypoallergenic  ",
+          "B) Contains sulfates  ",
+          "C) Free from parabens  ",
+          "D) Dermatologist-tested  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.28",
+    "title": "Advertisement (28)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 28",
+    "subtitle": "\nBrand Name: InkMaster ProMarkers  \nTagline: Unleash Your Creativity with Precision & Vibrancy!  \n\nAdvertisement:  \n\nINKMASTER PROMARKERS: WHERE ART MEETS INNOVATION  \n\nTired of markers that fade, smudge, or fail to inspire? Meet InkMaster ProMarkers—the ultimate tool for artists, students, professionals, and visionaries.  \n\nWhy Choose InkMaster?  \n✅ Vivid Color Payoff: Ultra-rich pigments deliver bold, streak-free lines every time.  \n✅ Quick-Dry Technology: No smudging, no waiting—create fearlessly.  \n✅ Durable Tips: Precision fine liners and chisel tips built to last.  \n✅ Eco-Friendly Ink: Non-toxic, odorless, and safe for all ages.  \n✅ Versatile Surfaces: Works flawlessly on paper, glass, whiteboards, fabric, and more!  \n\nPerfect For:  \n- Sketching & Illustration  \n- Whiteboard Presentations  \n- DIY Crafts & Home Décor  \n- Study Notes & Mind Mapping  \n\nLimited-Time Offer:  \n🎁 Buy 3 Sets, Get 1 FREE! (Use code INK20 at checkout)  \n\nJoin the InkMaster Community:  \n🌐 www.inkmaster.com  \n📱 Follow us: @InkMasterCreative (Instagram, TikTok, YouTube)  \n\n#InkMasterMarkers | #CreateWithoutLimits    \nAvailable at: Major retailers, art supply stores, and Amazon.  \nInkMaster ProMarkers—Because Every Line Should Tell a Story. 🎨✨\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which feature of InkMaster ProMarkers ensures that artwork does not smudge after application?  ",
+        "prompt": "",
+        "options": [
+          "A) Eco-Friendly Ink  ",
+          "B) Durable Tips  ",
+          "C) Quick-Dry Technology  ",
+          "D) Vivid Color Payoff  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the advertisement, which feature would most likely appeal to someone creating designs on fabric?  ",
+        "prompt": "",
+        "options": [
+          "A) Non-Toxic Ink  ",
+          "B) Versatile Surfaces Compatibility  ",
+          "C) Precision Fine Liners  ",
+          "D) Limited-Time Offer Discount  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of InkMaster ProMarkers?  ",
+        "prompt": "",
+        "options": [
+          "A) Odorless ink formulation  ",
+          "B) Refillable ink cartridges  ",
+          "C) Streak-free lines  ",
+          "D) Chisel tips for broad strokes  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.29",
+    "title": "Advertisement (29)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 29",
+    "subtitle": "\nBrand Name: PrecisionPro  \nProduct Name: AccuMeasure Multi-Cup Set  \n\nHeadline:  \n\"Measure with Precision, Cook with Confidence!\"  \n\nKey Features:  \n✅ 9-Piece Set – Includes 1/4, 1/3, 1/2, 2/3, 3/4, and 1 Cup Measures + 1, 2, and 4 Cup Nested Containers  \n✅ Durable & Dishwasher Safe – Made from BPA-free, shatterproof silicone and stainless steel.  \n✅ Ergonomic Design – Non-slip handles and easy-pour spouts for mess-free transfers.  \n✅ Laser-Etched Markings – Never fade, ensuring lifelong accuracy.  \n✅ Space-Saving – Nest neatly for compact storage.  \n✅ Bonus – Includes a FREE conversion chart (cups to grams/ml) magnet!  \n\nWhy Choose AccuMeasure?  \nTired of guessing measurements in the kitchen? PrecisionPro’s AccuMeasure Set takes the guesswork out of cooking and baking. Perfect for portioning ingredients, meal prepping, or crafting delicate desserts, these cups are engineered for professional accuracy and everyday convenience. Whether you’re a home chef or a seasoned pro, achieve consistent results every time!  \n\nIncluded in the Box:  \n- 6 Stainless Steel Measuring Cups (1/4 Cup to 1 Cup)  \n- 3 Stackable Silicone Containers (1, 2, 4 Cups)  \n- Conversion Chart Magnet (Cups to Grams/ML)  \n\nBrand Promise:  \nAt PrecisionPro, we believe great meals start with precise tools. Our products are crafted to empower your culinary creativity—no compromises on quality, durability, or style.  \n\nCall to Action:  \nUpgrade your kitchen essentials today!  \n🔹 Limited-Time Offer: Get 20% off your first order + FREE shipping!  \n👉 Shop Now: [www.precisionprokitchen.com/accumeasure](http://www.precisionprokitchen.com/accumeasure)  \n\nTagline:  \n\"Accuracy Meets Simplicity – Because Every Gram Counts.\"  \n\nFollow Us for Recipes & Tips:  \n📸 Instagram: [@PrecisionProKitchen](https://www.instagram.com/PrecisionProKitchen)  \n📌 Pinterest: [PrecisionPro Essentials](https://www.pinterest.com/PrecisionProEssentials)    \nPrecisionPro – Engineered for Excellence, Designed for You.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How many total pieces are included in the AccuMeasure Multi-Cup Set?  ",
+        "prompt": "",
+        "options": [
+          "A) 6  ",
+          "B) 8  ",
+          "C) 9  ",
+          "D) 10  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What feature ensures the measurement markings on the AccuMeasure cups remain accurate over time?  ",
+        "prompt": "",
+        "options": [
+          "A) Non-slip silicone handles  ",
+          "B) Laser-etched markings  ",
+          "C) Stainless steel material  ",
+          "D) Ergonomatic spouts  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature or component of the AccuMeasure Set?  ",
+        "prompt": "",
+        "options": [
+          "A) Made from BPA-free materials  ",
+          "B) Shatterproof construction  ",
+          "C) Oven-safe up to 450°F  ",
+          "D) Includes a conversion chart magnet  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.30",
+    "title": "Advertisement (30)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 30",
+    "subtitle": "\nBrand Name: SwiftChef™  \nProduct: ProWave 360X Smart Microwave    \n\nHEADLINE:  \n\"Cook Smarter, Not Harder – Meet the SwiftChef ProWave 360X!\"    \n\nKEY FEATURES:  \n✅ 1000W TurboPower – Reheat, cook, or defrost in seconds.  \n✅ Sensor Smart Technology – Automatically adjusts time and power for perfect results.  \n✅ 12 Pre-Programmed Menus – Popcorn, pizza, beverages, and more at the touch of a button.  \n✅ Eco-Mode Energy Saver – Reduces standby power consumption by 30%.  \n✅ Sleek Stainless Steel Design – Complements any modern kitchen.  \n✅ Child Safety Lock – Peace of mind for families.    \n\nWHY CHOOSE SWIFTCHEF?  \n\"The ProWave 360X isn’t just a microwave – it’s your kitchen’s new MVP. Designed for busy lives, it combines speed, intelligence, and style to make every meal effortless.\"    \n\nSPECIAL OFFER:  \n🔹 Limited-Time Bundle: Free SwiftChef Silicone Microwave Cover ($19.99 value) with purchase!  \n🔹 Price: Just $199.99 (MSRP $249.99).    \n\nCALL TO ACTION:  \n\"Upgrade Your Kitchen Today!  \nVisit [www.swiftchef.com/prowave360x](http://www.swiftchef.com/prowave360x)  \nOr find us at Amazon, Best Buy, and Walmart!    \n\nWARRANTY:  \n2-Year Full Coverage Warranty – Because we stand by our tech.    \n\nFOLLOW US:  \n📱 @SwiftChefKitchen on Instagram & Facebook  \n📞 Customer Support: 1-800-SWIFTCHEF    \n\nTAGLINE:  \n\"SwiftChef – Where Innovation Meets the Microwave.\"    \nPromotion valid until 12/31/2023. Terms and conditions apply.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the duration of the warranty provided with the SwiftChef ProWave 360X?  ",
+        "prompt": "",
+        "options": [
+          "A) 1 year  ",
+          "B) 2 years  ",
+          "C) 3 years  ",
+          "D) 5 years  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The article mentions the Eco-Mode Energy Saver feature. What can be inferred about this feature’s primary purpose?  ",
+        "prompt": "",
+        "options": [
+          "A) It increases cooking speed by 30%.  ",
+          "B) It prioritizes child safety during operation.  ",
+          "C) It reduces environmental impact by lowering standby energy use.  ",
+          "D) It enhances the microwave’s stainless steel durability.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT a feature of the ProWave 360X as stated in the article?  ",
+        "prompt": "",
+        "options": [
+          "A) 12 pre-programmed menus  ",
+          "B) 1000W TurboPower  ",
+          "C) 15 preset cooking modes  ",
+          "D) Child Safety Lock  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.31",
+    "title": "Advertisement (31)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 31",
+    "subtitle": "\nBrand Name: Morning Bliss Co.  \n\nTagline: \"Your Perfect Sip Starts Here!\"  \n\nHeadline: Introducing the EverWarm Mug – Where Comfort Meets Style  \n\nKey Features:  \n- Ergonomic Design: Soft-grip handle for all-day comfort.  \n- Double-Walled Insulation: Keeps drinks hot for 4+ hours (or icy cold for 6+).  \n- Premium Ceramic: Non-toxic, chip-resistant, and dishwasher-safe.  \n- Personalized Touch: Add your name, quote, or artwork (optional).  \n- Vibrant Colors: Choose from 10+ hues to match your vibe.  \n\nWhy Choose EverWarm?  \n✨ Perfect for coffee, tea, matcha, or your favorite smoothie.  \n✨ Leak-proof lid available for on-the-go sipping.  \n✨ Microwave-safe for quick reheats.  \n\nCall to Action:  \nOrder Now & Get 15% Off Your First Mug!  \nUse Code: WARMUP15 at checkout.  \n\nLimited-Time Offer:  \nFree shipping on orders over $30!  \n\nConnect With Us:  \n🌐 [www.morningblissco.com](http://www.morningblissco.com)  \n📱 @MorningBlissCo on Instagram & TikTok  \n\nClosing Line:  \nMorning Bliss Co. – Crafting Moments of Joy, One Sip at a Time.    \nEverWarm Mug: Because every sip deserves to feel like a hug.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the maximum duration the EverWarm Mug can keep drinks icy cold according to the article?  ",
+        "prompt": "",
+        "options": [
+          "A) 4+ hours  ",
+          "B) 5+ hours  ",
+          "C) 6+ hours  ",
+          "D) 7+ hours  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What can be inferred about the EverWarm Mug’s leak-proof lid based on the article?  ",
+        "prompt": "",
+        "options": [
+          "A) It is included automatically with every purchase.  ",
+          "B) It must be purchased separately.  ",
+          "C) It is only compatible with hot beverages.  ",
+          "D) It is not microwave-safe.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the EverWarm Mug?  ",
+        "prompt": "",
+        "options": [
+          "A) Non-toxic ceramic material  ",
+          "B) Optional personalized artwork  ",
+          "C) Oven-safe construction  ",
+          "D) Chip-resistant design  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.32",
+    "title": "Advertisement (32)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 32",
+    "subtitle": "\nBrand Name: EclipseNote  \nProduct Name: EclipseNote ProSeries Notebook  \n\nTagline:  \n\"Unleash Your Creativity, One Page at a Time.\"  \n\nKey Features:  \n✅ Premium Paper Quality  \n- 120gsm ultra-smooth, ink-proof paper for seamless writing, sketching, or doodling.  \n- No bleed-through, feathering, or ghosting – perfect for pens, markers, or watercolors.  \n\n✅ Durable Vegan Leather Cover  \n- Eco-friendly, scratch-resistant cover in Slate Black, Desert Rose, or Ocean Teal.  \n- Soft-touch finish for a luxurious feel.  \n\n✅ Lay-Flat Binding  \n- 180-degree lay-flat design for effortless writing, anywhere, anytime.  \n\n✅ Eco-Conscious Design  \n- Made with 100% recycled materials and tree-free paper.  \n- Carbon-neutral production process.  \n\n✅ Thoughtful Extras  \n- Built-in ribbon bookmark, elastic closure, and inner pocket for notes or cards.  \n\nWhy Choose EclipseNote ProSeries?  \n- Ideal for professionals, students, artists, and dreamers.  \n- Built to last – your ideas deserve a timeless home.  \n\nCall to Action:  \n✨ Elevate your ideas. ✨  \nOrder your EclipseNote ProSeries Notebook today at [www.eclipsenote.com](http://www.eclipsenote.com) or visit a retailer near you.  \n\nFollow Us:  \n📸 Instagram: @EclipseNote  \n📌 Pinterest: /EclipseNoteCreates  \n🔖 Hashtag: #ProSeriesJourney    \nEclipseNote – Where Brilliance Meets the Page.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What are the available color options for the EclipseNote ProSeries Notebook's vegan leather cover?  ",
+        "prompt": "",
+        "options": [
+          "A) Slate Black, Sage Green, Ocean Teal  ",
+          "B) Desert Rose, Ocean Teal, Crimson Red  ",
+          "C) Slate Black, Desert Rose, Ocean Teal  ",
+          "D) Midnight Blue, Desert Rose, Slate Black  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The article implies that the EclipseNote ProSeries Notebook's eco-conscious design helps prevent which environmental issue?  ",
+        "prompt": "",
+        "options": [
+          "A) Air pollution from factory emissions  ",
+          "B) Deforestation due to paper production  ",
+          "C) Water contamination from dye runoff  ",
+          "D) Overuse of non-renewable energy  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following features is NOT mentioned as part of the EclipseNote ProSeries Notebook?  ",
+        "prompt": "",
+        "options": [
+          "A) Elastic closure  ",
+          "B) Lay-flat binding  ",
+          "C) Perforated pages  ",
+          "D) Inner pocket for notes  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.33",
+    "title": "Advertisement (33)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 33",
+    "subtitle": "\nBRAND NAME: BLAZEGUARD  \nTAGLINE: \"Grip. Guard. Glide. Your Kitchen’s Ultimate Shield.\"    \n\nHEAT RESISTANCE REDEFINED  \nCrafted for chefs, home cooks, and everyone in between, BlazeGuard Oven Mitts combine cutting-edge technology with sleek design.  \n\nFEATURES:  \n✅ 500°F Heat Resistance – Handle scorching pans and trays with confidence.  \n✅ Quilted Silicone Grip – Non-slip texture ensures a secure hold, even with oily or wet hands.  \n✅ Ergonomic FlexFit Design – Moves naturally with your hand, reducing strain.  \n✅ Machine-Washable & Stain-Proof – Tough on heat, easy on cleanup.  \n✅ Waterproof Inner Lining – Protects against steam and spills.  \n\nWHY BLAZEGUARD?  \n✔️ Safety First: Triple-layered insulation shields skin from burns.  \n✔️ Comfort Meets Style: Modern patterns to match any kitchen aesthetic.  \n✔️ Built to Last: Reinforced stitching resists wear and tear.  \n\nCALL TO ACTION:  \n\"Upgrade your kitchen armor today!  \nLimited-Time Offer: Buy 2, Get 1 Free  \n👉 Shop Now at BlazeGuard.com or find us at leading retailers nationwide.  \n\nGUARANTEE: Love your mitts or get a full refund – 1-Year Warranty Included.    \nBLAZEGUARD – Where Innovation Meets Protection.  \n#HandleTheHeat\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the maximum heat resistance of BlazeGuard Oven Mitts?  ",
+        "prompt": "",
+        "options": [
+          "A) 450°F  ",
+          "B) 500°F  ",
+          "C) 550°F  ",
+          "D) 600°F  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The quilted silicone grip is designed primarily to address which issue?  ",
+        "prompt": "",
+        "options": [
+          "A) Improve aesthetic appeal  ",
+          "B) Reduce hand strain during use  ",
+          "C) Ensure a secure hold with oily or wet hands  ",
+          "D) Provide extra insulation layers  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of BlazeGuard Oven Mitts?  ",
+        "prompt": "",
+        "options": [
+          "A) Waterproof inner lining  ",
+          "B) Machine-washable material  ",
+          "C) UV-resistant material  ",
+          "D) Reinforced stitching  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.34",
+    "title": "Advertisement (34)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 34",
+    "subtitle": "\nBrand Name: CulinaryCraft  \nProduct: EverLast Pro Non-Stick Skillet  \n\n🔥 Unleash Your Inner Chef with Effortless Cooking! 🔥  \n\nWhy Choose CulinaryCraft’s EverLast Pro?  \n✅ 5-Layer Diamond-Infused Non-Stick Coating – Say goodbye to stuck-on food and hello to flawless flips.  \n✅ Ultra-Durable Forged Aluminum Core – Even heat distribution for perfect searing, sautéing, and simmering.  \n✅ Stay-Cool Stainless Steel Handle – Oven-safe up to 500°F for seamless stovetop-to-oven recipes.  \n✅ Dishwasher-Safe Design – Spend less time scrubbing, more time savoring.  \n✅ Lifetime Warranty – Built to last, backed by our promise.  \n\n🍳 Versatility Meets Luxury 🍳  \nFrom golden pancakes to crispy salmon, the EverLast Pro adapts to your culinary creativity.  \n\n🎁 Special Launch Offer!  \nOrder today and get a FREE silicone spatula (worth $19.99) with your skillet!  \n\n📍 Where to Buy  \nVisit www.culinarycraft.com or find us at retailers nationwide.  \n\n🔍 Follow Us  \n@CulinaryCraft (Instagram | Facebook | TikTok)  \n#CookWithCraft  \n\nCulinaryCraft – Where Innovation Meets Your Kitchen.    \nTerms apply. Limited-time offer. Oven-safe handle not recommended for broiler use.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How many layers does the EverLast Pro Non-Stick Skillet’s diamond-infused coating have?  ",
+        "prompt": "",
+        "options": [
+          "A) 3 layers  ",
+          "B) 4 layers  ",
+          "C) 5 layers  ",
+          "D) 6 layers  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The product’s Stay-Cool Stainless Steel Handle is not recommended for broiler use. What is the most likely reason for this limitation?  ",
+        "prompt": "",
+        "options": [
+          "A) The handle may melt under high heat.  ",
+          "B) Broiler temperatures often exceed 500°F.  ",
+          "C) The warranty does not cover broiler damage.  ",
+          "D) Cleaning becomes difficult after broiler use.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following features is NOT explicitly mentioned in the product description?  ",
+        "prompt": "",
+        "options": [
+          "A) Compatibility with induction cooktops  ",
+          "B) Dishwasher-safe design  ",
+          "C) Stay-cool stainless steel handle  ",
+          "D) Ultra-durable forged aluminum core  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.35",
+    "title": "Advertisement (35)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 35",
+    "subtitle": "\nBrand Name: EverFlow  \nTagline: \"Precision Meets Elegance – Write Your Story with EverFlow.\"  \n\nEverFlow Elite Series: The Artisan's Choice  \n\nSleek Design, Unmatched Performance  \nCrafted for those who demand perfection, the EverFlow Elite Pen combines cutting-edge engineering with timeless sophistication. Whether you're signing crucial documents, journaling your dreams, or sketching masterpieces, this pen is your ultimate companion.  \n\nKey Features:  \n✔️ Ultra-Smooth Ink Flow: Patented GlideTech™ nib ensures effortless writing, every time.  \n✔️ Ergonomic Comfort: Contoured grip with soft-touch finish for hours of fatigue-free use.  \n✔️ Premium Durability: Aerospace-grade aluminum body built to last a lifetime.  \n✔️ Stylish Versatility: Available in Midnight Black, Sterling Silver, and Rose Gold finishes.  \n✔️ Instant-Dry Ink: No smudges, no stains – just crisp, bold lines.  \n\nWhy EverFlow?  \n- 2-Year Warranty: Confidence in every stroke.  \n- Eco-Conscious: Refillable cartridges reduce plastic waste.  \n- Luxury Packaging: Perfect for gifting or treating yourself.  \n\nLimited-Time Offer:  \n🔹 Purchase an Elite Series Pen + 3 Ink Refills, Get a Personalized Engraving FREE!  \n\nCall to Action:  \n\"Upgrade your writing experience today. Visit [EverFlowPens.com](https://www.everflowpens.com) or find us at premium retailers worldwide.\"  \n\nSocial Proof:  \n\"The EverFlow Elite isn’t just a pen – it’s an extension of my creativity.\"  \n– Maria Chen, Award-Winning Calligrapher  \n\nFollow Us:  \n📸 Instagram: @EverFlowLuxury  \n📌 Pinterest: EverFlow Design Studio  \n\n#WriteWithPurpose #EverFlowElite    \nEverFlow: Where Every Word Flows with Confidence. 🖋️✨  \n\n(Note: Ad copy designed for print/digital media. Adjust visuals to showcase pen close-ups, hands writing, and luxury aesthetic.)\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material is used for the EverFlow Elite Series pen body according to the article?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel  ",
+          "B) Aerospace-grade aluminum  ",
+          "C) Recycled plastic  ",
+          "D) Carbon fiber  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which feature of the EverFlow Elite Series inferentially supports its eco-conscious claim?  ",
+        "prompt": "",
+        "options": [
+          "A) Luxury packaging  ",
+          "B) Refillable ink cartridges  ",
+          "C) Instant-dry ink technology  ",
+          "D) Patented GlideTech™ nib  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a finish option for the EverFlow Elite Series?  ",
+        "prompt": "",
+        "options": [
+          "A) Midnight Black  ",
+          "B) Sterling Silver  ",
+          "C) Rose Gold  ",
+          "D) Royal Blue  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.36",
+    "title": "Advertisement (36)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 36",
+    "subtitle": "\nBrand Name: EverSharp  \n\nTagline: \"Write Your Story, Sharpen Your Potential.\"  \n\nHeadline: The Perfect Tool for Every Idea, Every Hand, Every Moment.  \n\nKey Features:  \n- Smooth Writing Core: Glide effortlessly with break-resistant graphite for crisp, clean lines.  \n- Durable Design: Sustainably sourced cedar wood for lasting comfort and eco-friendly use.  \n- Built-in Eraser: Mistakes? No problem. Our smudge-free eraser keeps your work flawless.  \n- Versatile Use: Ideal for sketching, note-taking, exams, or brainstorming brilliance.  \n\nTarget Audience: Students, artists, professionals, and anyone who loves the timeless feel of a pencil.  \n\nCall to Action:  \n\"Upgrade your creativity. Grab an EverSharp Pencil today – available in classic #2, bold HB, and vibrant color editions!  \nAvailable at: Leading stationery stores, online retailers, and EverSharp.com.  \n\nSustainability Note:  \nProudly crafted with 100% responsibly sourced materials. For every pack sold, we plant a tree.  \n\nSocial Media Hook:  \nShare your #EverSharpMasterpiece for a chance to be featured!  \n\nClosing Line: EverSharp – Unleash your creativity, one sharp idea at a time.  \n\nBrand Promise: Where reliability meets inspiration, stroke after stroke.  \n\nEverSharp – The Pencil That Grows With You. 🌟\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " According to the article, what material is used for EverSharp pencils' \"Smooth Writing Core\"?  ",
+        "prompt": "",
+        "options": [
+          "A) Sustainably sourced cedar wood  ",
+          "B) Break-resistant graphite  ",
+          "C) Smudge-free rubber  ",
+          "D) Recycled plastic  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, why does EverSharp plant a tree for every pack sold?  ",
+        "prompt": "",
+        "options": [
+          "A) To improve the quality of their pencils  ",
+          "B) To reduce production costs  ",
+          "C) To fulfill their eco-friendly sustainability commitment  ",
+          "D) To encourage customers to share on social media  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a key feature of EverSharp pencils?  ",
+        "prompt": "",
+        "options": [
+          "A) Built-in smudge-free eraser  ",
+          "B) Replaceable eraser tips  ",
+          "C) Sustainably sourced cedar wood  ",
+          "D) Versatile use for sketching and note-taking  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.37",
+    "title": "Advertisement (37)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 37",
+    "subtitle": "\nBrand Name: CulinaryCraft  \nProduct Name: EverSteel Pro Series 8-Piece Cookware Set  \n\nTagline:  \n\"Where Culinary Dreams Meet Unmatched Durability.\"  \n\nKey Features:  \n🔥 Triple-Layer Stainless Steel – Even heat distribution for perfect sears, simmers, and sautés.  \n🍳 Ceramic Non-Stick Coating – Healthier cooking, effortless cleanup, and 10x scratch resistance.  \n🌍 Eco-Conscious Design – Crafted with 80% recycled materials, oven-safe up to 500°F (260°C).  \n👨🍳 Chef-Inspired Ergonomics – Stay-cool handles, drip-free rims, and universal lids for versatile cooking.  \n💎 Lifetime Warranty – Built to last, backed by our No-Quibble Guarantee.  \n\nWhy CulinaryCraft?  \nWe fuse precision engineering with artistic craftsmanship to transform everyday meals into masterpieces. Whether you’re a home cook or a seasoned pro, the EverSteel Pro Series adapts to your creativity—without compromising on sustainability.  \n\nSpecial Offer:  \n🎁 Limited Time: Buy today and get a FREE Chef’s Essentials Kit (silicone utensils + recipe e-book)!  \n\nCall to Action:  \n\"Upgrade your kitchen. Elevate every meal.  \nShop Now at CulinaryCraft.com  \nUse code STEEL15 for 15% off your first order!  \n\nSocial Proof:  \n⭐️⭐️⭐️⭐️⭐️  \n\"The only pots I’ll ever need!\" – Chef Maria Gomez  \n\"Finally, cookware that looks as good as it performs.\" – @HomeCookHero  \n\nBrand Promise:  \nCulinaryCraft – Innovating Kitchens, One Meal at a Time.    \nContact: 📞 1-800-COOK-NOW | 📧 support@culinarycraft.com  \nFollow Us: @CulinaryCraft | #EverSteelPro    \nAdvertisement ends with a sleek image of the pot sizzling with fresh ingredients, glowing in modern kitchen lighting.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the maximum oven-safe temperature for the EverSteel Pro Series cookware?  ",
+        "prompt": "",
+        "options": [
+          "A) 400°F (204°C)  ",
+          "B) 450°F (232°C)  ",
+          "C) 500°F (260°C)  ",
+          "D) 550°F (288°C)  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which two factors contribute to the Eco-Conscious Design of the cookware? (Inference required)  ",
+        "prompt": "",
+        "options": [
+          "A) Use of 80% recycled materials and silicone utensils  ",
+          "B) Lifetime warranty and scratch resistance  ",
+          "C) Universal lids and chef-inspired ergonomics  ",
+          "D) Recycled materials and non-toxic ceramic coating  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which feature is NOT explicitly mentioned in the product description?  ",
+        "prompt": "",
+        "options": [
+          "A) Triple-layer stainless steel construction  ",
+          "B) Induction-compatibility  ",
+          "C) Drip-free rims  ",
+          "D) Free Chef’s Essentials Kit  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.38",
+    "title": "Advertisement (38)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 38",
+    "subtitle": "\nBrand Name: SwiftGlide Razors  \nTagline: \"Experience the Perfect Shave, Every Time.\"  \n\nPrecision Engineered for Excellence  \nAt SwiftGlide, we believe shaving should be effortless, smooth, and luxurious. Our premium razors are crafted with cutting-edge technology to redefine your grooming routine.  \n\nWhy SwiftGlide?  \n✓ Laser-Honed Blades: Ultra-sharp, diamond-coated edges for a closer, irritation-free shave.  \n✓ Ergonomic Design: Contoured grip for ultimate control and comfort.  \n✓ SkinGuard Technology: Hydrating gel strip with aloe vera and vitamin E to protect sensitive skin.  \n✓ Flex360 Head: Glides seamlessly over curves, tackling tough spots like neck and jawline.  \n✓ Durable & Eco-Friendly: Recyclable blades, built to last.  \n\nLimited-Time Offer:  \nGet 20% Off Your First Purchase!  \nUse code SWIFT20 at [www.swiftglide.com](http://www.swiftglide.com).  \n\nPerfect For:  \n- Daily shavers seeking precision.  \n- Travelers needing compact reliability.  \n- Anyone tired of nicks, burns, and uneven results.  \n\nJoin the Revolution:  \n\"The smoothest shave I’ve ever had. SwiftGlide is a game-changer!\" – Alex T., Verified Customer  \n\nShop Now:  \n📦 Free shipping on orders over $50  \n📱 Follow us: @SwiftGlideOfficial  \n🔖 #SmoothLikeSwiftGlide  \n\nSwiftGlide Razors – Where Innovation Meets Tradition.    \nTerms apply. Visit website for details.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which two ingredients are included in SwiftGlide’s SkinGuard Technology?  ",
+        "prompt": "",
+        "options": [
+          "A) Shea butter and coconut oil  ",
+          "B) Tea tree oil and mineral oil  ",
+          "C) Aloe vera and vitamin E  ",
+          "D) Lavender extract and jojoba oil  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " According to the article, why does the Flex360 Head effectively tackle tough spots like the neck and jawline?  ",
+        "prompt": "",
+        "options": [
+          "A) It adapts to facial contours for seamless gliding.  ",
+          "B) Its blades are sharper than traditional razors.  ",
+          "C) The ergonomic grip provides better pressure control.  ",
+          "D) The hydrating gel strip reduces friction.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which feature is NOT mentioned as part of SwiftGlide Razors?  ",
+        "prompt": "",
+        "options": [
+          "A) Laser-Honed Blades  ",
+          "B) Magnetic docking system for easy storage  ",
+          "C) Hydrating gel strip with SkinGuard Technology  ",
+          "D) Flex360 Head  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.39",
+    "title": "Advertisement (39)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 39",
+    "subtitle": "\nBrand Name: VelocityNet  \nProduct Name: HyperStream X2000 Wi-Fi 6 Router  \nTagline: \"Unleash Lightning Speed. Connect Without Limits.\"  \n\nKey Features:  \n✅ Wi-Fi 6 Technology: Enjoy speeds up to 5.8 Gbps for seamless 4K streaming, gaming, and video calls.  \n✅ Whole-Home Coverage: Blanket every corner with ultra-reliable Wi-Fi across 3,000 sq. ft.  \n✅ Connect 60+ Devices: Perfect for smart homes, gaming rigs, and remote workstations.  \n✅ Tri-Band Efficiency: Eliminate lag with dedicated bands for gaming, streaming, and browsing.  \n✅ Military-Grade Security: Built-in WPA3 encryption, automatic firmware updates, and AI-powered threat detection.  \n✅ Smart Parental Controls: Schedule screen time, block unsafe content, and monitor usage via the VelocityNet App.  \n\nSpecial Launch Offer:  \n🔒 FREE VelocityNet Security Suite (1-Year Subscription) – Protect all connected devices from malware and hackers!  \n\nWhy Choose VelocityNet?  \n- Zero Buffering Guarantee: Optimized for 8K streaming and low-latency gaming.  \n- 5-Minute Setup: Get online in minutes with the intuitive mobile app.  \n- 24/7 Priority Support: Our experts are always ready to help.  \n\nTech Specs:  \n- Bands: 1 x 2.4 GHz, 2 x 5 GHz (Tri-Band)  \n- Ports: 1 x WAN, 4 x Gigabit LAN, 1 x USB-C 3.0  \n- Antennas: 8 high-performance internal antennas  \n- Compatibility: Works with all major ISPs and modems.  \n\nWarranty & Support:  \n- 3-Year Limited Warranty | 90-Day Money-Back Guarantee  \n\nPricing:  \nStarting at $249.99  \nLimited-Time Discount: Get 15% off with code FASTTRACK15  \n\nVisual Placeholders (Text Descriptions):  \n1. Hero Image: Sleek black router with dynamic blue LED accents, surrounded by devices (laptop, phone, smart TV).  \n2. Speed Graphic: \"5.8 Gbps\" animation with exploding data particles.  \n3. App Demo: Smartphone screen showing real-time network health and parental controls.  \n4. Security Shield: Iconic lock symbol with \"Hack-Proof\" badge.  \n\nCall to Action:  \n🔥 Upgrade to HyperStream X2000 Today!  \nVisit www.velocitynet.com/hyperstream  \nOr find us at BestBuy, Amazon, and VelocityNet Stores.  \n\nConnect With Us:  \n📞 Support: 1-800-VELO-NET  \n📧 Email: help@velocitynet.com  \n🌐 Follow: @VelocityNet #HyperStreamX2000    \n\nVelocityNet: Redefining Connectivity, One Home at a Time. 🚀    \nTerms apply. Offer valid through 12/31/2023. Speed and coverage may vary based on environment.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the maximum speed offered by the HyperStream X2000 Wi-Fi 6 Router according to the product description?  ",
+        "prompt": "",
+        "options": [
+          "A) 3.0 Gbps  ",
+          "B) 5.8 Gbps  ",
+          "C) 4.5 Gbps  ",
+          "D) 6.0 Gbps  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The Tri-Band Efficiency feature of the HyperStream X2000 is designed to eliminate lag by dedicating bands to specific uses. How many dedicated bands does the router have in total?  ",
+        "prompt": "",
+        "options": [
+          "A) 2  ",
+          "B) 3  ",
+          "C) 4  ",
+          "D) 5  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a security feature of the HyperStream X2000?  ",
+        "prompt": "",
+        "options": [
+          "A) WPA3 encryption  ",
+          "B) AI-powered threat detection  ",
+          "C) Automatic firmware updates  ",
+          "D) 3-year limited warranty  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.40",
+    "title": "Advertisement (40)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 40",
+    "subtitle": "\nBrand Name: FlexGuard™  \nProduct Name: UltraGrip All-Purpose Rubber Gloves  \n\nTagline:  \n“Protect with Confidence, Clean with Ease.”  \n\nKey Features:  \n✅ Triple-Layer Latex Technology – Unmatched durability against punctures and harsh chemicals.  \n✅ Textured GripFlex Palms – Superior grip on wet dishes, tools, or slippery surfaces.  \n✅ Extended Arm Cuff – Extra protection up to the forearm; no more messy spills!  \n✅ Breathable Comfort Fit – Ergonomic design with a cotton-lined interior for all-day wear.  \n✅ Hypoallergenic & Odor-Free – Safe for sensitive skin, no rubbery smell.  \n\nWhy Choose UltraGrip?  \n- Versatile: Perfect for cleaning, dishwashing, gardening, automotive work, and more.  \n- Trusted by Pros: Used by janitorial services, chefs, and DIY enthusiasts worldwide.  \n- Eco-Conscious: 100% recyclable packaging + vegan-friendly materials.  \n\nSpecial Offer:  \n🎉 Launch Discount! Get 20% OFF your first pair with code FLEX20 at checkout.  \n\nCall to Action:  \n“Don’t just clean—conquer! Upgrade to FlexGuard UltraGrip today and feel the difference.”  \n👉 Shop Now at [www.flexguardgloves.com](http://www.flexguardgloves.com)  \n📱 Follow Us: @FlexGuardGloves (Instagram/Facebook)  \n\nVisual Ideas (for ad placement):  \n- Split image: One side shows hands in UltraGrip gloves scrubbing a greasy pan, the other side showcases gardening without dirt penetration.  \n- Bold yellow gloves against a clean, modern kitchen/garden backdrop.  \n- Small inset logo with tagline at the bottom.   \n\nFlexGuard™ – Where Safety Meets Strength.  \nAvailable at major retailers: Amazon, HomePlus, Walmart, and select stores.    \n#FlexGuardUltraGrip #CleanSmarterNotHarder\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What does FlexGuard™ UltraGrip’s Triple-Layer Latex Technology specifically provide?  ",
+        "prompt": "",
+        "options": [
+          "A) A cotton-lined interior for comfort  ",
+          "B) Resistance to punctures and harsh chemicals  ",
+          "C) Odor-free material for sensitive skin  ",
+          "D) Textured grip for slippery surfaces  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why are FlexGuard UltraGrip gloves described as \"trusted by pros\" like chefs and janitorial services?  ",
+        "prompt": "",
+        "options": [
+          "A) They come with a 20% discount for first-time buyers.  ",
+          "B) They are made from 100% recyclable packaging.  ",
+          "C) Their versatility across multiple tasks makes them reliable.  ",
+          "D) They have a breathable design for all-day wear.  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as an eco-conscious feature of UltraGrip gloves?  ",
+        "prompt": "",
+        "options": [
+          "A) Vegan-friendly materials  ",
+          "B) Biodegradable glove composition  ",
+          "C) Recyclable packaging  ",
+          "D) Hypoallergenic properties  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.41",
+    "title": "Advertisement (41)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 41",
+    "subtitle": "\nBrand Name: PrecisionPro Tools  \nProduct Name: PrecisionPro Elite Series 12\" Stainless Steel Ruler  \n\nTagline:  \n\"Measure with Unmatched Precision – Every Mark, Every Moment.\"  \n\nKey Features:  \n✅ Durable Stainless Steel: Built to withstand daily wear, corrosion-free, and scratch-resistant.  \n✅ Laser-Etched Markings: Ultra-precise metric (cm/mm) and imperial (inches) graduations for flawless accuracy.  \n✅ Non-Slip Grip: Ergonomic rubberized edges for steady control, even during intricate projects.  \n✅ Multi-Purpose Design: Ideal for drafting, engineering, crafting, classrooms, workshops, and DIY projects.  \n✅ Lifetime Guarantee: Backed by PrecisionPro’s commitment to quality.  \n\nWhy Choose PrecisionPro Elite?  \n\"From architects sketching blueprints to students perfecting geometry, the Elite Series Ruler delivers unwavering reliability. No more smudged markings or bent edges – just crisp, dependable measurements every time.\"  \n\nTechnical Specs:  \n- Length: 12 inches (30 cm)  \n- Thickness: 1.5 mm reinforced steel  \n- Markings: Dual-scale (inches to 1/16\", centimeters to 1 mm)  \n- Weight: 85g (lightweight yet sturdy)  \n\nPerfect For:  \n- Professionals: Engineers, designers, architects  \n- Education: Teachers, students, STEM programs  \n- Hobbyists: Quilters, model builders, artists  \n- Everyday Use: Home improvement, office tasks  \n\nSpecial Offer:  \n🔹 Order Today & Get Free Shipping  \n🔹 Bundle Deal: Pair with our PrecisionPro Angle Protractor for 15% off!  \n\nWarranty:  \n30-Day Money-Back Guarantee | Limited Lifetime Warranty  \n\nCall to Action:  \n\"Upgrade Your Toolkit – Order Your PrecisionPro Elite Ruler Now!\"  \n📞 Shop Online: www.precisionprotools.com/ruler-elite  \n📱 Follow Us: @PrecisionProTools #MeasureWithPrecision  \n\nVisual Aesthetic:  \nImagine a sleek, silver ruler laid across architectural blueprints, with close-ups of laser-etched markings and a hand confidently drawing a straight line. Clean, professional, and inspiring.    \nPrecisionPro Tools – Where Accuracy Meets Innovation.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material is the PrecisionPro Elite Series 12\" ruler primarily made of?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel  ",
+          "B) Aluminum alloy  ",
+          "C) Plastic polymer  ",
+          "D) Titanium  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which feature ensures that the ruler’s markings remain precise and smudge-free over time?  ",
+        "prompt": "",
+        "options": [
+          "A) Non-slip rubberized edges  ",
+          "B) Laser-etched graduations  ",
+          "C) Reinforced 1.5mm thickness  ",
+          "D) Dual-scale design  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " According to the article, which of the following is NOT included in the product’s warranty or guarantee?  ",
+        "prompt": "",
+        "options": [
+          "A) 30-day money-back guarantee  ",
+          "B) Lifetime warranty against manufacturing defects  ",
+          "C) Free shipping for replacements  ",
+          "D) Free replacement for accidental damage  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.42",
+    "title": "Advertisement (42)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 42",
+    "subtitle": "\nBrand Name: FrostElegance  \nTagline: Wrap Yourself in Timeless Warmth and Style    \n\nIntroducing the LuxeWeave Winter Scarf Collection  \nWhere Craftsmanship Meets Comfort    \n\nKey Features:  \n✅ Premium Material: 100% ethically sourced cashmere-merino wool blend for unmatched softness and insulation.  \n✅ Versatile Design: Oversized, lightweight, and available in 12 timeless hues—from classic ivory to deep midnight noir.  \n✅ Artisan Crafted: Handwoven by skilled artisans, ensuring every stitch tells a story.  \n✅ All-Day Comfort: Breathable fabric that adapts to your body temperature, perfect for frosty mornings or chic evening layers.  \n✅ Signature Detailing: Subtle metallic-thread embroidery with the FrostElegance logo for a touch of sophistication.  \n\nWhy Choose FrostElegance?  \n\"A scarf isn’t just an accessory—it’s an embrace.\" Our scarves are designed to elevate your winter wardrobe while honoring sustainable practices. Whether you’re braving the slopes or sipping cocoa at a café, the LuxeWeave Collection is your ultimate cold-weather companion.    \n\nLimited-Time Offer:  \n✨ Free Personalization ✨  \nAdd initials or a meaningful symbol to make your scarf uniquely yours (valid until December 31).  \n\nShop Now & Save:  \n🌐 [www.frostelegance.com/scarves](https://www.frostelegance.com)  \n📦 Free Worldwide Shipping on Orders Over $100    \n\nJoin the #FrostEleganceMovement  \nTag us in your winter adventures for a chance to be featured!    \nFrostElegance – Crafting Warmth, Inspiring Confidence  \nBecause Winter Deserves to Be Worn in Style. ❄️🧣    \nContact: ✉️ hello@frostelegance.com | 📞 1-800-FROST-EL  \nSustainable Luxury Since 2015    \nP.S. Gift someone the warmth they deserve—our scarves come in elegant, reusable keepsake boxes!\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material is the LuxeWeave Winter Scarf primarily made of?  ",
+        "prompt": "",
+        "options": [
+          "A) 100% polyester  ",
+          "B) Pure ethically sourced cashmere  ",
+          "C) A blend of cashmere and merino wool  ",
+          "D) Organic cotton with metallic threading  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why does the article suggest that each scarf \"tells a story\"?  ",
+        "prompt": "",
+        "options": [
+          "A) Because customers can personalize them with symbols  ",
+          "B) Due to the 12 timeless hue options available  ",
+          "C) They are handwoven by skilled artisans  ",
+          "D) The scarves include hidden inspirational messages  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature or offer in the article?  ",
+        "prompt": "",
+        "options": [
+          "A) Free worldwide shipping on orders over $100  ",
+          "B) Discounts for bulk orders  ",
+          "C) Subtle metallic-thread embroidery  ",
+          "D) Reusable keepsake boxes for gifting  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.43",
+    "title": "Advertisement (43)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 43",
+    "subtitle": "\nBrand Name: VibrantVita  \nProduct Name: HydraSilk Moisture Shampoo  \nTagline: \"Unlock the Secret to Silky, Shining Hair – Naturally!\"    \n\nWhy Choose VibrantVita HydraSilk?  \n🌿 Deep Hydration: Infused with coconut water and hyaluronic acid to quench dry strands and lock in moisture for 48 hours.  \n✨ Brilliant Shine: Plant-based keratin smooths the hair cuticle, reflecting light for a luminous finish.  \n💪 Strengthened Roots: Bamboo extract fortifies hair from root to tip, reducing breakage by 80%.  \n🌸 Subtle Fragrance: A refreshing blend of jasmine and green tea leaves hair smelling divine.  \n\nKey Ingredients:  \n- Coconut Water  \n- Hyaluronic Acid  \n- Bamboo Extract  \n- Jojoba Oil  \n- Vitamin E  \n\nFor All Hair Types:  \nSafe for color-treated, curly, straight, or chemically processed hair. Vegan | Cruelty-Free | Sulfate-Free  \n\nCall to Action:  \n\"Ready to transform your hair? #EmbraceTheGlow with VibrantVita HydraSilk! Visit [www.vibrantvita.com](http://www.vibrantvita.com) or find us at leading retailers nationwide.\"  \n\nSocial Proof:  \n\"The only shampoo that revived my frizzy hair! My locks have never felt this soft.\" – Emma R., 5/5 Stars  \n\nLimited-Time Offer:  \nBuy 1 HydraSilk Shampoo, Get a Free Travel-Size Conditioner!    \nVibrantVita – Naturally Radiant. Unapologetically You.  \nFollow us: @VibrantVitaBeauty 🌸\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which of the following is listed as a key ingredient in VibrantVita HydraSilk Moisture Shampoo?  ",
+        "prompt": "",
+        "options": [
+          "A) Coconut Water  ",
+          "B) Aloe Vera  ",
+          "C) Shea Butter  ",
+          "D) Argan Oil  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " According to the article, what benefit does bamboo extract provide?  ",
+        "prompt": "",
+        "options": [
+          "A) Adds a subtle fragrance  ",
+          "B) Locks in moisture for 48 hours  ",
+          "C) Reduces breakage by strengthening roots  ",
+          "D) Smooths the hair cuticle for shine  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT claimed as a feature of HydraSilk Moisture Shampoo?  ",
+        "prompt": "",
+        "options": [
+          "A) Vegan  ",
+          "B) Cruelty-Free  ",
+          "C) Paraben-Free  ",
+          "D) Sulfate-Free  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.44",
+    "title": "Advertisement (44)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 44",
+    "subtitle": "\nBrand Name: StrideWave  \nProduct Line: ZenithSeries UltraLight    \n\nHeadline: \"Step Into Tomorrow – The Future of Footwear is Here\"  \n\nTagline: \"ZenithSeries UltraLight: Where Innovation Meets Motion.\"    \n\nBody Copy:  \nExperience unmatched comfort and style with StrideWave’s ZenithSeries UltraLight. Engineered for the modern adventurer, these shoes blend cutting-edge technology with sleek design:  \n- CloudFlex™ Cushioning: Responsive midsole adapts to your stride for all-day support.  \n- BreathaLite Mesh: Ultra-breathable fabric keeps feet cool, mile after mile.  \n- TractionGrip Outsole: Conquer any terrain with 360° grip technology.  \n- Sleek, Minimalist Design: Available in 8 bold and classic hues to match your vibe.  \n\nWhether you’re hitting the trails, the gym, or the streets, the ZenithSeries UltraLight moves with you.    \n\nCall to Action:  \n\"Ready to redefine your stride? Shop the ZenithSeries UltraLight today at [StrideWave.com](https://www.stridewave.com) or visit a retailer near you. Limited stock – step up before they’re gone!\"    \n\nPricing & Availability:  \n- $149.99 (MSRP)  \n- Launch Offer: Use code STEPUP15 for 15% off your first order (valid until 10/31/2023).    \n\nBrand Ethos:  \nStrideWave: Empowering every step, for every journey.    \n\nSocial Proof:  \n\"The most comfortable shoes I’ve ever owned – like walking on clouds!\" – @AdventureJess (Instagram)    \n\nVisual Direction Note:  \nAd visuals should showcase the shoes in motion (running, hiking, urban settings) with close-ups of key features. Include the StrideWave logo (a dynamic wave icon) prominently.  \n\nHashtags: #StrideWaveZenith #MoveWithPurpose #UltraLightRevolution    \nDisclaimer: Limited-time offer. Exclusions apply. See website for details.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How many color options are available for the ZenithSeries UltraLight shoes?  ",
+        "prompt": "",
+        "options": [
+          "A) 6  ",
+          "B) 8  ",
+          "C) 10  ",
+          "D) 12  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What is the primary purpose of the TractionGrip Outsole technology mentioned in the article?  ",
+        "prompt": "",
+        "options": [
+          "A) Enhances cushioning responsiveness  ",
+          "B) Provides 360° grip for different terrains  ",
+          "C) Improves airflow to keep feet cool  ",
+          "D) Offers a stylish minimalist design  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the ZenithSeries UltraLight shoes?  ",
+        "prompt": "",
+        "options": [
+          "A) Responsive midsole adaptation (CloudFlex™)  ",
+          "B) Ultra-breathable fabric (BreathaLite Mesh)  ",
+          "C) Waterproof membrane technology  ",
+          "D) 360° grip outsole (TractionGrip)  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.45",
+    "title": "Advertisement (45)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 45",
+    "subtitle": "\nBrand Name: AuroraTech  \nProduct: Velocity X1 Pro 5G Smartphone  \n\nTagline:  \n\"Experience Speed. Capture Brilliance. Live Limitlessly.\"  \n\nDesign & Display:  \nSleek. Striking. Unmatched.  \n- 6.7-inch UltraVivid AMOLED Display with 120Hz refresh rate for buttery-smooth scrolling.  \n- DiamondCut Aluminum Frame in Onyx Black, Stellar Silver, or Celestial Blue.  \n- Edge-to-Edge Screen with Corning® Gorilla Glass Victus 2 for ultimate durability.  \n\nCamera:  \nTriple-Lens ProVision System  \n- 108MP Main Sensor: Capture studio-quality photos, even in low light.  \n- 48MP Ultra-Wide Lens: Fit more of the world into every shot.  \n- 32MP Telephoto Lens with 5x Optical Zoom: Get closer without losing detail.  \n- 8K Cinematic Video + AI-Powered Night Mode for stunning visuals, day or night.  \n\nPerformance:  \nPower Beyond Limits  \n- Snapdragon® 8 Gen 3 Processor: Blazing-fast speeds for gaming, streaming, and multitasking.  \n- 12GB RAM + 512GB Storage: Never slow down or run out of space.  \n- AuroraOS 12: A seamless, intuitive interface with AI-enhanced productivity.  \n\nBattery & Connectivity:  \nAll-Day Power. Zero Compromises.  \n- 5,000mAh Battery with 100W HyperCharge (0-100% in 22 minutes).  \n- 5G + Wi-Fi 6E: Stay connected at lightning speeds.  \n\nSecurity & Durability:  \n- In-Display Ultrasonic Fingerprint Sensor: Unlock instantly with a touch.  \n- IP68 Water/Dust Resistance: Built to endure life’s adventures.  \n\nLaunch Offer:  \nPre-order Now and Get AuroraPods Pro (Wireless Earbuds) FREE (Worth $199).  \n\nPrice: $999 | Available: Starting October 15, 2024.  \n\nCall to Action:  \n\"Upgrade to the Future. Visit [www.auroratech.com/velocityx1pro](https://www.auroratech.com) or find us at select retailers.  \n#VelocityX1Pro #AuroraTechUnleashed\"    \nAuroraTech – Redefining Innovation.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": "What is the screen size of the Velocity X1 Pro 5G Smartphone?  ",
+        "prompt": "",
+        "options": [
+          "A) 6.5 inches  ",
+          "B) 6.7 inches  ",
+          "C) 6.9 inches  ",
+          "D) 7.0 inches  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why might a customer pre-order the Velocity X1 Pro during the launch period?  ",
+        "prompt": "",
+        "options": [
+          "A) To receive a 20% discount on the phone  ",
+          "B) To get free AuroraPods Pro wireless earbuds  ",
+          "C) To upgrade to 1TB of storage at no extra cost  ",
+          "D) To access an exclusive extended warranty  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT a feature of the Velocity X1 Pro’s durability or security?  ",
+        "prompt": "",
+        "options": [
+          "A) IP68 water/dust resistance  ",
+          "B) Corning® Gorilla Glass Victus 2  ",
+          "C) In-display ultrasonic fingerprint sensor  ",
+          "D) Wireless charging capability  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.46",
+    "title": "Advertisement (46)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 46",
+    "subtitle": "\nBrand Name: PureGlow Naturals  \nProduct Name: RadiantSage Daily Renewal Bar  \n\nTagline:  \n“Unlock Nature’s Radiance, One Lather at a Time!”  \n\nKey Features:  \n🌿 99% Plant-Based Formula: Crafted with organic coconut oil, shea butter, and antioxidant-rich sage extract.  \n🌱 Cold-Processed: Preserves natural nutrients for skin that feels soft, supple, and deeply nourished.  \n💧 Gentle & Sustainable: Free from sulfates, parabens, and synthetic dyes. Packaged in 100% biodegradable materials.  \n🌸 Calming Aroma: Infused with lavender essential oil and fresh sage for a spa-like sensory experience.  \n✨ Dermatologist-Tested: Safe for all skin types, including sensitive and eczema-prone skin.  \n\nBenefits:  \n✔️ Deeply cleanse without stripping natural moisture.  \n✔️ Soothe irritation and revive dull skin.  \n✔️ Eco-friendly choice that loves your skin and the planet.  \n\nCall to Action:  \n“Ready to glow from nature’s embrace?  \nVisit [PureGlowNaturals.com] or find us at retailers nationwide!  \nFirst-time buyers enjoy 20% off with code NATURE20!  \n\nVisual Imagery (Concept Note):  \n- Main Visual: A bar of soap resting on a bed of fresh sage leaves and lavender sprigs, with droplets of water glistening on its surface.  \n- Background: Soft, earthy tones with sunlight filtering through greenery.  \n- Logo Placement: Subtle “PureGlow Naturals” logo in the top corner.  \n\nSmall Print:  \nIngredients: Coconut oil, shea butter, sage extract, lavender oil, oat extract. Vegan. Cruelty-free. Made in small batches.    \nBathe in Nature’s Goodness. 🌍✨  \n#PureGlowNaturals #RadiantSageRevival    \nThis ad emphasizes natural ingredients, sustainability, and sensory appeal while clearly branding the product and its unique value.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the tagline of RadiantSage Daily Renewal Bar?  ",
+        "prompt": "",
+        "options": [
+          "A) “Unlock Nature’s Radiance, One Lather at a Time!”  ",
+          "B) “Bathe in Nature’s Goodness.”  ",
+          "C) “Ready to glow from nature’s embrace?”  ",
+          "D) “Eco-friendly choice that loves your skin and the planet.”  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why is RadiantSape Daily Renewal Bar suitable for eczema-prone skin?  ",
+        "prompt": "",
+        "options": [
+          "A) It contains organic coconut oil for deep cleansing.  ",
+          "B) It is cold-processed to preserve nutrients.  ",
+          "C) Its lavender aroma provides a spa-like experience.  ",
+          "D) It is dermatologist-tested for safety.  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a free-from claim in the product’s key features?  ",
+        "prompt": "",
+        "options": [
+          "A) Sulfates  ",
+          "B) Parabens  ",
+          "C) Synthetic fragrances  ",
+          "D) Synthetic dyes  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.47",
+    "title": "Advertisement (47)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 47",
+    "subtitle": "\nBrand Name: SoleStride  \nTagline: \"Step into Comfort, Stride with Confidence!\"    \n\nProduct Name: Everyday Comfort Crew Socks  \nKey Features:  \n- Moisture-Wicking Magic: Stay dry all day with advanced breathable fabric.  \n- Cushioned Comfort: Ultra-soft padding for impact support.  \n- Arch Support: Engineered to hug your feet, not slip away.  \n- Durability: Reinforced heels and toes for long-lasting wear.  \n\nMaterial: 85% Organic Cotton | 12% Nylon | 3% Spandex  \nDesign Options: Classic Solids | Bold Stripes | Fun Patterns (Think polka dots, geometrics, and seasonal themes!)    \n\nWhy SoleStride?  \n✅ Seamless Toe Design: No annoying bumps or blisters.  \n✅ Odor-Resistant Tech: Fresh feet, even after a marathon day.  \n✅ Eco-Friendly: Recycled packaging + carbon-neutral shipping.  \n\nPerfect For:  \n- Gym sessions 🌟  \n- Office marathons 🖥️  \n- Weekend adventures 🌲    \n\nBrand Promise:  \n\"SoleStride socks aren’t just for your feet—they’re for your hustle. We blend innovation with the simple joy of a perfect step.\"  \n\nLimited-Time Offer:  \n🔥 Buy 3 Pairs, Get 1 FREE 🔥  \n(Use code: STRIDEBOLD at checkout)    \n\nCall to Action:  \n\"Ready to treat your feet? Shop now at SoleStride.com or find us at retailers nationwide!\"  \n\nFollow Us:  \n📸 Instagram: @SoleStride  \n👍 Facebook: /SoleStrideSocks  \n🛒 TikTok: @SoleStrideFashion    \nSoleStride – Walk Easy. Live Fully.™\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What percentage of organic cotton is used in SoleStride Everyday Comfort Crew Socks?  ",
+        "prompt": "",
+        "options": [
+          "A) 75%  ",
+          "B) 85%  ",
+          "C) 12%  ",
+          "D) 3%  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which of the following groups would most likely be the target audience for SoleStride socks, based on the article?  ",
+        "prompt": "",
+        "options": [
+          "A) People who collect rare footwear  ",
+          "B) People with active lifestyles  ",
+          "C) Individuals who prefer formal leather shoes  ",
+          "D) Artists specializing in sock-themed paintings  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which feature is NOT listed as part of the SoleStride socks’ key attributes?  ",
+        "prompt": "",
+        "options": [
+          "A) Antibacterial coating  ",
+          "B) Reinforced heels and toes  ",
+          "C) Seamless toe design  ",
+          "D) Moisture-wicking fabric  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.48",
+    "title": "Advertisement (48)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 48",
+    "subtitle": "\nBrand Name: FlexiFlip  \nProduct Name: UltraGrip Pro Spatula  \nTagline: \"Flip, Serve, Savor – Effortlessly!\"  \n\nHeadline:  \n\"Never Lose Your Flip Again! Meet the UltraGrip Pro Spatula by FlexiFlip.\"  \n\nMain Copy:  \nTired of flimsy spatulas that bend, slip, or scratch your cookware? Say hello to the UltraGrip Pro – the kitchen essential designed for precision, durability, and style.  \n\n✨ Key Features:  \n- Unbeatable Grip: Patented silicone coating ensures no-slip control, even with greasy foods.  \n- Heat-Resistant: Withstands temps up to 500°F (260°C) – perfect for grilling, frying, or baking.  \n- Non-Stick Safe: Gentle on cookware, tough on stubborn stuck-ons.  \n- Ergonomic Design: Comfort-grip handle reduces wrist strain for marathon cooking sessions.  \n- Dishwasher Safe: Cleanup is a breeze!  \n\nWhy Choose FlexiFlip?  \n✔️ Versatility: Flip pancakes, sauté veggies, or serve lasagna – this spatula does it all.  \n✔️ Premium Materials: Food-grade stainless steel core wrapped in FDA-approved silicone.  \n✔️ Lifetime Warranty: We stand by our tools. If it breaks, we replace it – no questions asked.  \n\nCall to Action:  \n\"Upgrade Your Kitchen Today! Visit [www.flexiflip.com/ultragrip](http://www.flexiflip.com/ultragrip) or find us at retailers nationwide. #FlipWithConfidence\"  \n\nLimited-Time Offer:  \nBuy 2 UltraGrip Pros, Get 20% Off! Use code FLIP20 at checkout.  \n\nSocial Proof:  \n\"This spatula changed my cooking game. It’s like an extension of my hand!\" – Chef Maria T., 5-star review  \n\nBrand Promise:  \nFlexiFlip – Tools Crafted for Passionate Cooks.    \nFlexiFlip, LLC | #FlexiFlipKitchen | IG/TikTok: @FlexiFlipOfficial  \nAlways non-toxic. Always sustainable. Made with 100% recycled packaging.    \nLegal Disclaimer: Lifetime warranty applies to manufacturing defects. Offer valid through 12/31/2023. Terms apply.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the maximum temperature the UltraGrip Pro Spatula can withstand?  ",
+        "prompt": "",
+        "options": [
+          "A) 400°F (204°C)  ",
+          "B) 500°F (260°C)  ",
+          "C) 350°F (177°C)  ",
+          "D) 600°F (316°C)  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Why does the UltraGrip Pro Spatula feature an ergonomic design?  ",
+        "prompt": "",
+        "options": [
+          "A) To enhance its heat resistance  ",
+          "B) To reduce wrist strain during long cooking sessions  ",
+          "C) To make it dishwasher-safe  ",
+          "D) To improve non-stick compatibility  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature or claim about the UltraGrip Pro Spatula?  ",
+        "prompt": "",
+        "options": [
+          "A) Made with biodegradable materials  ",
+          "B) Dishwasher-safe construction  ",
+          "C) 100% recycled packaging  ",
+          "D) FDA-approved silicone coating  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.49",
+    "title": "Advertisement (49)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 49",
+    "subtitle": "\nAdvertisement: StreamLuxe VoiceCommand Pro Universal Remote  \nBrand Name: StreamLuxe Technologies  \nSlogan: \"Take Control. Speak Your Entertainment.\"  \n\nIntroducing the StreamLuxe VoiceCommand Pro  \nThe Ultimate Universal Remote for Modern Homes  \n\nKey Features:  \n✅ Voice Control: Simply say, “StreamLuxe, turn on Netflix” or “Volume up” to command your TV, soundbar, or streaming device. Works with Alexa and Google Assistant!  \n✅ Universal Compatibility: Syncs with 99% of TVs, sound systems, gaming consoles, and streaming devices.  \n✅ One-Touch Shortcuts: Customizable buttons for instant access to Netflix, Disney+, Spotify, and more.  \n✅ Backlit Design: Never fumble in the dark again.  \n✅ Long-Lasting Battery: 1-year battery life (with everyday use).  \n✅ Sleek & Ergonomic: Brushed aluminum finish with a grip designed for comfort.  \n\n\"Tired of juggling remotes?  \nWith StreamLuxe VoiceCommand Pro, your living room just got smarter. Control your entire entertainment system with your voice or the touch of a button. Set up in minutes and say goodbye to clutter!\"  \n\nWhy You’ll Love It:  \n✨ No more searching for the right remote.  \n✨ Perfect for movie nights, gaming marathons, or relaxing with music.  \n✨ Upgrade your home tech without breaking the bank.  \n\nLimited-Time Offer!  \nGet 15% off your first order with code VOICEPRO15.  \nVisit www.streamluxetech.com or find us at major retailers.  \n\n#StreamSmarter | #VoiceCommandPro    \nStreamLuxe Technologies – Innovating Home Entertainment Since 2022.  \nDisclaimer: Compatibility varies by device. Offer valid through 12/31/2023. Terms apply.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " According to the advertisement, what is the battery life of the StreamLuxe VoiceCommand Pro remote under everyday use?  ",
+        "prompt": "",
+        "options": [
+          "A) 6 months  ",
+          "B) 18 months  ",
+          "C) 2 years  ",
+          "D) 1 year  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The slogan \"Take Control. Speak Your Entertainment\" most directly emphasizes which feature of the VoiceCommand Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) Backlit design  ",
+          "B) Universal compatibility  ",
+          "C) Integration with voice assistants like Alexa  ",
+          "D) Customizable shortcut buttons  "
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the StreamLuxe VoiceCommand Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) Backlit design  ",
+          "B) Built-in camera for video calls  ",
+          "C) Compatibility with 99% of devices  ",
+          "D) Voice control via Google Assistant  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.50",
+    "title": "Advertisement (50)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 50",
+    "subtitle": "\nBrand Name: TapeMaster Pro  \nProduct: Heavy-Duty All-Purpose Adhesive Tape  \n\nHEADLINE:  \nTapeMaster Pro – The Ultimate Fix for Every Hold, Big or Small!  \n\nTAGLINE:  \n\"Stick with the Best – TapeMaster Pro Holds Strong, Every Time!\"  \n\nKEY FEATURES:  \n✅ Industrial-Strength Adhesive – Bonds instantly and lasts longer, even under pressure.  \n✅ Weather-Resistant – Perfect for indoor and outdoor use (rain, heat, or cold!).  \n✅ Multi-Surface Mastery – Works on cardboard, plastic, metal, fabric, and more.  \n✅ Easy-Tear Design – No scissors needed; clean, crisp edges every time.  \n✅ Residue-Free Removal – Leaves surfaces spotless when it’s time to let go.  \n\nPERFECT FOR:  \n📦 Securing heavy packages | 🛠 Quick fixes & DIY projects | 🎨 Crafting & creative designs  \n💼 Office repairs | � Home organization | 🚚 Moving & storage  \n\nCALL TO ACTION:  \nAvailable Now at  \n🛒 Hardware stores | 🌐 Online retailers (Amazon, TapeMasterPro.com)  \nUse code HOLDSTRONG20 for 20% off your first order!  \n\nFOLLOW US:  \n📱 Instagram & Facebook: @TapeMasterPro  \n🔔 Subscribe for tape hacks, DIY tips, and exclusive deals!  \n\nGUARANTEE:  \n100% Satisfaction or Your Money Back – Because we’re stuck on quality!  \n\nTapeMaster Pro – Because Every Bond Matters.    \n#TapeMasterPro #StickWithTheBest #FixItLikeAPro    \nAdhesive reinvented. Strength redefined.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Which feature of TapeMaster Pro ensures that surfaces remain clean when the tape is removed?  ",
+        "prompt": "",
+        "options": [
+          "A) Industrial-Strength Adhesive  ",
+          "B) Weather-Resistant  ",
+          "C) Easy-Tear Design  ",
+          "D) Residue-Free Removal  "
+        ],
+        "correctAnswer": 3,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, in which situation would TapeMaster Pro be most effective due to its specific features?  ",
+        "prompt": "",
+        "options": [
+          "A) Securing a heavy package outdoors during a rainstorm  ",
+          "B) Temporarily holding paper notes on a bulletin board  ",
+          "C) Creating a decorative craft with lightweight materials  ",
+          "D) Organizing documents in a climate-controlled office  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " The article mentions TapeMaster Pro’s compatibility with multiple surfaces. Which of the following is NOT explicitly listed as a compatible surface?  ",
+        "prompt": "",
+        "options": [
+          "A) Cardboard  ",
+          "B) Glass  ",
+          "C) Plastic  ",
+          "D) Fabric  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.51",
+    "title": "Advertisement (51)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 51",
+    "subtitle": "\nBrand Name: MorningCrisp  \nProduct Name: SwiftToast Pro  \n\nTagline:  \n\"Toast Perfected, Every Morning Elevated.\"  \n\nKey Features:  \n✔️ Speed & Precision: Dual high-performance heating coils toast bread evenly in 60 seconds.  \n✔️ Versatile Settings: 6 browning levels + bagel, frozen, and reheat modes.  \n✔️ Safety First: Auto shut-off, cool-touch exterior, and lift-and-look lever.  \n✔️ Easy Clean: Removable crumb tray and scratch-resistant stainless steel design.  \n✔️ Sleek & Compact: Modern matte finish fits any kitchen aesthetic.  \n\nCall to Action:  \n\"Upgrade Your Breakfast Routine Today! Limited Time Offer: Free Shipping + 2-Year Warranty!\"  \n\nBrand Promise:  \nMorningCrisp — Where Innovation Meets Your Morning Ritual.  \n\nContact & Social:  \n🌐 www.morningcrisp.com/swifttoast-pro  \n📞 1-800-TOAST-NOW  \n📱 Follow us: @MorningCrispKitchen  \n\n#SwiftToastPro | #MorningPerfected    \nTerms apply. Visit website for details.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How many browning levels does the SwiftToast Pro offer according to the key features?  ",
+        "prompt": "",
+        "options": [
+          "A) 5  ",
+          "B) 7  ",
+          "C) 6  ",
+          "D) 3  "
+        ],
+        "correctAnswer": 2,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which feature of the SwiftToast Pro most directly supports the claim \"Toast Perfected\" in the tagline?  ",
+        "prompt": "",
+        "options": [
+          "A) Dual high-performance heating coils  ",
+          "B) Removable crumb tray  ",
+          "C) Modern matte finish  ",
+          "D) Free shipping offer  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which safety feature is NOT listed for the SwiftToast Pro?  ",
+        "prompt": "",
+        "options": [
+          "A) Auto shut-off  ",
+          "B) Cool-touch exterior  ",
+          "C) Lift-and-look lever  ",
+          "D) Built-in child lock  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.52",
+    "title": "Advertisement (52)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 52",
+    "subtitle": "\nBrand Name: CloudSoft  \nTagline: \"Experience the Ultimate Comfort – Soft, Strong, and Sustainable!\"  \n\nHeader:  \nCloudSoft Toilet Paper  \nGentle on You, Tough on the Planet  \n\nKey Features:  \n✅ Ultra-Plush Texture – Say goodbye to roughness! Our 3-ply layers deliver cloud-like softness.  \n✅ Unbeatable Strength – No more frustrating tears or crumples. Built for durability.  \n✅ Eco-Conscious Design – 100% recycled materials, sustainably sourced and septic-safe.  \n✅ Planet-Friendly – Biodegradable and packaged in recyclable, plastic-free materials.  \n\nCall to Action:  \n\"Upgrade Your Bathroom Experience Today!  \nVisit www.cloudsoft.com | Scan QR Code to Order  \n\nPromotional Offer:  \n✨ Buy 2, Get 1 Free! ✨  \nStock Up Now – Limited Time Only!  \n\nAvailability:  \nAvailable at major retailers (Walmart, Target, Amazon) and online.  \n\nAwards & Recognition:  \n🏆 Winner of the 2023 Eco-Friendly Product of the Year Award  \n\nSlogan:  \n\"CloudSoft – Where Luxury Meets Responsibility.\"  \n\nSocial Media:  \n📱 Follow us: @CloudSoftLiving  \n🌍 Join the #SoftForThePlanet Movement    \nCloudSoft – Because Every Detail Matters.  \nLogo placeholder: [Soft swirl icon with a green leaf accent]    \nAdvertisement ends.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " How many plies does CloudSoft toilet paper have?  ",
+        "prompt": "",
+        "options": [
+          "A) 2  ",
+          "B) 3  ",
+          "C) 4  ",
+          "D) 1  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Which of the following best explains why CloudSoft is considered \"planet-friendly\"?  ",
+        "prompt": "",
+        "options": [
+          "A) It uses 100% recycled materials and plastic-free packaging.  ",
+          "B) It is septic-safe and has a 3-ply texture.  ",
+          "C) It is available at major retailers like Amazon.  ",
+          "D) It offers a \"Buy 2, Get 1 Free\" promotional deal.  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which statement about CloudSoft is NOT true based on the advertisement?  ",
+        "prompt": "",
+        "options": [
+          "A) It is packaged in recyclable materials.  ",
+          "B) It won the Eco-Friendly Product of the Year Award in 2022.  ",
+          "C) It is biodegradable and sustainably sourced.  ",
+          "D) It can be purchased at Target.  "
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.53",
+    "title": "Advertisement (53)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 53",
+    "subtitle": "\nBrand Name: BrightSmile Dental Care  \nProduct Name: ProClean 360° Sonic Toothbrush  \n\nHeadline:  \n\"Unleash Your Brightest Smile with ProClean 360°!\"  \n\nKey Features:  \n✅ 360° Sonic Bristles: Reaches every corner for 4x better plaque removal.  \n✅ 3 Modes (Clean, Sensitive, Whitening): Customize your brushing experience.  \n✅ Gentle on Gums, Tough on Stains: Ultra-soft, charcoal-infused bristles.  \n✅ Smart Pressure Sensor: Alerts you if you brush too hard.  \n✅ Long-Lasting Battery: 30-day lifespan on a single charge!  \n\nWhy Choose ProClean 360°?  \n✨ Dentist-Recommended Technology  \n✨ Whitens Teeth in Just 2 Weeks  \n✨ Ergonomic, Waterproof Design for All Ages  \n\nSpecial Offer:  \n🔹 Limited Time: Get 20% off your first order + a FREE travel case!  \n🔹 Subscribe & Save: 30% replacement brush heads every 3 months.  \n\nTagline:  \n\"Brushing Just Got Smarter. Shine Confidently with ProClean 360°!\"  \n\nCall to Action:  \n🦷 Order Now at BrightSmile.com/ProClean360 🦷  \n\"Stock up today—your smile deserves the upgrade!\"  \n\nVisual Cues (Imagery):  \n- A glowing smile with a \"before vs. after\" whitening effect.  \n- Close-up of the toothbrush’s rotating head and sleek design.  \n- Happy family brushing together.  \n\nTrust Badges:  \n✔️ ADA Accepted (American Dental Association)  \n✔️ 4.9/5 Stars (10,000+ Reviews)  \n✔️ 2-Year Warranty  \n\nSocial Proof:  \n\"I’ve never felt my teeth this clean! It’s like a dental visit at home!\"  \n– Sarah L., Verified Customer  \n\nHashtags:  \n#BrightSmileProClean #BrushSmarter #SmileRevolution    \nBrightSmile Dental Care – Where Science Meets Your Smile. 🌟  \nAvailable at major retailers and BrightSmile.com.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " Detail Identification (Factual Recall)  ",
+        "prompt": "",
+        "options": [
+          "A) 2  ",
+          "B) 3  ",
+          "C) 4  ",
+          "D) 5  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Detail Identification (Inference)  ",
+        "prompt": "",
+        "options": [
+          "A) 1 week  ",
+          "B) 2 weeks  ",
+          "C) 3 weeks  ",
+          "D) 1 month  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Detail Analysis (Negative Factual Identification)  ",
+        "prompt": "",
+        "options": [
+          "A) 30-day battery life on a single charge  ",
+          "B) ADA Accepted certification  ",
+          "C) Free replacement brush heads every 3 months  ",
+          "D) A pressure sensor that alerts users  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.54",
+    "title": "Advertisement (54)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 54",
+    "subtitle": "\nBrand Name: BrightSmile™ Toothpaste  \nTagline: \"Unleash Your Brightest Smile!\"  \n\nWhy Choose BrightSmile?  \n✅ Triple Action Formula: Whitens teeth, fights cavities, and freshens breath for 24 hours.  \n✅ EnamelGuard™ Technology: Strengthens enamel with fluoride while being gentle on sensitive teeth.  \n✅ Natural Mint Flavor: Refreshing taste without harsh chemicals.  \n✅ Eco-Friendly Packaging: Recyclable tube, because your smile shouldn’t cost the Earth.  \n\nDentist-Recommended, Clinically Proven  \n94% of users saw whiter teeth in just 2 weeks!  \n\nCall to Action:  \n\"Ready to shine? Switch to BrightSmile™ today and get a smile that turns heads!  \nLimited Time Offer: Buy 2 tubes, get a travel-size FREE!\"  \n\nWhere to Buy:  \nAvailable at supermarkets, pharmacies, and online at www.brightsmile.com  \n\nSocial Proof:  \n🌟 \"BrightSmile transformed my smile – I’ve never felt more confident!\" – Emily R.  \n🌟 \"Finally, a toothpaste that works AND cares about the planet!\" – David L.  \n\nFollow Us for Tips & Offers:  \n📱 Instagram: @BrightSmileOfficial  \n📘 Facebook: /BrightSmile  \n\nBrightSmile™ – Because Your Smile Deserves the Best.  \n\n^Always consult your dentist. Results may vary.  \n^30-day satisfaction guarantee. Fluoride content: 0.24% (w/v).    \nThis ad balances clinical credibility, consumer benefits, and eco-conscious messaging to appeal to health-focused and environmentally aware audiences.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What three benefits does BrightSmile™ Toothpaste’s Triple Action Formula provide?  ",
+        "prompt": "",
+        "options": [
+          "A) Whitens teeth, fights cavities, freshens breath  ",
+          "B) Strengthens enamel, whitens teeth, prevents gum disease  ",
+          "C) Freshens breath, repairs cracks, reduces sensitivity  ",
+          "D) Fights cavities, natural mint flavor, eco-friendly packaging  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What does the statistic “94% of users saw whiter teeth in just 2 weeks!” imply about BrightSmile™?  ",
+        "prompt": "",
+        "options": [
+          "A) It guarantees whiter teeth for all users.  ",
+          "B) It has clinical evidence supporting its whitening effectiveness.  ",
+          "C) It works faster than competitor brands.  ",
+          "D) It requires consistent use for 30 days.  "
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a benefit of BrightSmile™ Toothpaste?  ",
+        "prompt": "",
+        "options": [
+          "A) Strengthens enamel  ",
+          "B) Freshens breath for 24 hours  ",
+          "C) Prevents gum disease  ",
+          "D) Fights cavities  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.55",
+    "title": "Advertisement (55)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 55",
+    "subtitle": "\nBrand Name: LuxeWeave  \nTagline: \"Wrap Yourself in Luxury – Where Every Thread Tells a Story.\"  \n\nIntroducing the LuxeWeave CloudTouch Towel Collection  \n\nUltimate Comfort, Redefined  \nCrafted for those who crave indulgence, the CloudTouch Towel blends premium 100% Egyptian cotton with a revolutionary weave technology. Experience unmatched softness, absorbency, and durability – because you deserve to dry off in style.  \n\nKey Features:  \n✅ Hyper-Absorbent: Dries you twice as fast with zero scratchiness.  \n✅ Plush 600 GSM Weight: Luxuriously thick, yet breathable.  \n✅ EcoSmart Finish: Stay fresh longer – resistant to odors and fading.  \n✅ Hypoallergenic & Dermatologist-Tested: Gentle on even the most sensitive skin.  \n\nDesign That Speaks Volumes  \nChoose from minimalist neutrals (Alabaster, Mist Gray, Sandstone) or vibrant hues (Sapphire Wave, Blush Rose). Each towel features reinforced edges and a signature LuxeWeave embroidered logo for timeless elegance.  \n\nWhy LuxeWeave?  \n- Ethical Craftsmanship: Sustainably sourced materials and fair-trade certified production.  \n- Size Variety: Perfect for gym, spa, or home (30x58” Standard / 40x70” Oversized).  \n- 10-Year Quality Promise: We stand by every thread.  \n\nLimited-Time Offer:  \n🔥 Buy 2, Get 1 Free – Elevate your linen closet today!  \n\nVisit [luxeweave.com](http://www.luxeweave.com) or find us at premium retailers nationwide.  \n\n\"LuxeWeave isn’t just a towel – it’s a daily retreat.\" – Home & Living Magazine    \n#LuxeWeaveLiving #CloudTouchComfort  \nFollow us @LuxeWeave for exclusive launches and self-care tips!    \nLuxeWeave – Where Everyday Moments Meet Extraordinary Comfort.  \nCustomer Care: care@luxeweave.com | 1-800-LUXE-NOW\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What is the GSM weight of the LuxeWeave CloudTouch Towel?  ",
+        "prompt": "",
+        "options": [
+          "A) 500 GSM  ",
+          "B) 600 GSM  ",
+          "C) 700 GSM  ",
+          "D) 800 GSM  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " According to the article, what is a key benefit of the EcoSmart Finish?  ",
+        "prompt": "",
+        "options": [
+          "A) Resists odors and fading  ",
+          "B) Makes the towel waterproof  ",
+          "C) Enhances color vibrancy over time  ",
+          "D) Reduces production costs  "
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following features is NOT mentioned as part of the CloudTouch Towel Collection?  ",
+        "prompt": "",
+        "options": [
+          "A) Reinforced edges  ",
+          "B) Hypoallergenic material  ",
+          "C) Antibacterial coating  ",
+          "D) Signature embroidered logo  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.56",
+    "title": "Advertisement (56)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 56",
+    "subtitle": "\nBrand Name: PrecisionGrip™  \nProduct: Professional Slant-Tip Tweezers    \n\nTagline:  \n\"Pinpoint Precision, Every Time.\"  \n\nKey Features:  \n✔️ Surgical-Grade Stainless Steel – Durable, rust-resistant, and easy to sanitize.  \n✔️ Slanted Edge Design – Perfect for plucking even the tiniest hairs or splinters with ease.  \n✔️ Ergonomic Non-Slip Grip – Comfortable control for steady, accurate results.  \n✔️ Multi-Purpose Use – Eyebrows, ingrown hairs, crafting, first aid, and more!  \n✔️ Luxury Matte Finish – Sleek, travel-friendly, and fits effortlessly in any beauty kit.  \n\nWhy Choose PrecisionGrip?  \n> \"Finally, a tool that works as hard as you do. PrecisionGrip tweezers combine medical-grade craftsmanship with everyday usability. No more slipping, no more frustration—just flawless results.\"  \n\nSpecial Offer:  \n🔹 Free Mini Case with every order!  \n🔹 Free Shipping on orders over $25.  \n\nCall to Action:  \nUpgrade your beauty toolkit today!  \n👉 Shop now at [PrecisionGrip.com](http://www.precisiongrip.com)  \n\nSocial Proof:  \n⭐️⭐️⭐️⭐️⭐️  \n\"The best tweezers I’ve ever owned—worth every penny!\" – Sarah L.  \n\nHashtags:  \n#PrecisionGrip #TweezeLikeAPro #BeautyEssentials    \nPrecisionGrip™ – Where Science Meets Beauty.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material are PrecisionGrip™ tweezers primarily made from?  ",
+        "prompt": "",
+        "options": [
+          "A) Surgical-grade stainless steel  ",
+          "B) Medical-grade aluminum  ",
+          "C) Titanium alloy  ",
+          "D) Ceramic-coated steel  "
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " According to the article, what does the ergonomic non-slip grip ensure?  ",
+        "prompt": "",
+        "options": [
+          "A) Easy sanitization  ",
+          "B) Rust resistance  ",
+          "C) Comfortable control  ",
+          "D) Steady, accurate results  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which feature is NOT listed as part of PrecisionGrip™ tweezers?  ",
+        "prompt": "",
+        "options": [
+          "A) Free mini case with every order  ",
+          "B) Slanted edge design  ",
+          "C) Built-in magnifying glass  ",
+          "D) Luxury matte finish  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.57",
+    "title": "Advertisement (57)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 57",
+    "subtitle": "\n🚀 TechVault Presents: The Nexus X1 Ultra-Secure USB 3.2 Flash Drive 🚀  \nSmall in Size, Massive in Security    \n🔒 Brand: TechVault  \n🔑 Model: Nexus X1  \n💡 Capacity Options: 64GB | 128GB | 256GB | 512GB | 1TB  \n🎨 Colors Available: Onyx Black | Arctic Silver | Midnight Blue    \n🌟 Why Choose the Nexus X1?  \n✅ Military-Grade Encryption: Protect sensitive files with AES-256 encryption and password protection.  \n✅ Blazing-Fast Transfers: USB 3.2 speeds (up to 400MB/s) – transfer a full HD movie in seconds!  \n✅ Sleek & Durable Design: Aluminum alloy casing, crush-resistant, and pocket-sized portability.  \n✅ Cross-Platform Compatibility: Works seamlessly with Windows, macOS, Linux, and Android.  \n✅ Plug-and-Play Simplicity: No software installation needed – secure your data in seconds.    \n🎯 Perfect For:  \n- Professionals handling confidential data  \n- Students safeguarding projects and research  \n- Travelers needing reliable storage  \n- Anyone who values privacy and speed    \n💥 Special Offer: Starting at $49.99!  \nLimited stock – upgrade your storage game today!    \n🛒 Where to Buy:  \n🌐 Visit [www.techvaultstore.com](https://www.techvaultstore.com)  \n🛒 Available at Amazon, Best Buy, and select retailers.    \n🔋 Warranty: 5-year limited warranty + 24/7 customer support.    \n📸 Visual Concept (Image Suggestion):  \nA high-res image of the Nexus X1 in Arctic Silver, plugged into a laptop, with a digital lock animation hovering over the drive.  \n\n✨ TechVault – Where Innovation Meets Trust. ✨  \n#SecureWithNexus #TechVaultUnlocked    \n📞 Questions? Call us at 1-800-TECH-VLT or chat online!    \nYour data deserves armor. The Nexus X1 delivers. 🛡️💻\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What encryption standard does the Nexus X1 use to protect data?  ",
+        "prompt": "",
+        "options": [
+          "A) AES-128  ",
+          "B) AES-256  ",
+          "C) RSA-2048  ",
+          "D) SHA-3  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " Based on the article, what can be inferred about using the Nexus X1 with Android devices?  ",
+        "prompt": "",
+        "options": [
+          "A) It requires third-party encryption software.  ",
+          "B) It needs prior formatting for Android compatibility.  ",
+          "C) Users must install drivers for full functionality.  ",
+          "D) It works seamlessly without additional setup.  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT mentioned as a feature or detail about the Nexus X1?  ",
+        "prompt": "",
+        "options": [
+          "A) Available in Forest Green  ",
+          "B) Includes a 5-year warranty  ",
+          "C) Transfer speeds up to 400MB/s  ",
+          "D) Sold at Best Buy  "
+        ],
+        "correctAnswer": 0
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.58",
+    "title": "Advertisement (58)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 58",
+    "subtitle": "\nBrand Name: ShieldStyle  \nProduct Name: EverGuard Elite Umbrella  \n\nTagline:  \n\"Stay Dry. Stay Confident. Stay Shielded.\"  \n\nKey Features:  \n- Storm-Ready Durability: Reinforced fiberglass frame withstands 60+ mph winds.  \n- Instant Dry Technology: Waterproof canopy repels rain in seconds—no soggy drips.  \n- Auto-Open/Close: One-touch button for effortless use, even mid-stride.  \n- UV Guard Coating: 99% UV protection for sunny days.  \n- Sleek & Compact: Fits in bags effortlessly (12” folded; 42” open).  \n\nVisuals:  \n- Main Image: A sharp professional striding confidently through a rain-soaked city, dry under the EverGuard Elite.  \n- Insert: Close-up of the auto-open button and glossy matte finish.  \n- Background: Dynamic split-screen—stormy skies on one side, bright sunshine on the other.  \n\nPromotional Offer:  \n✨ Limited Time: Buy 2, Get 1 Travel Pouch FREE! ✨  \n(Pouch includes microfiber wipe and clip-on LED light for night safety.)  \n\nCall to Action:  \n\"Don’t let weather rule your day. Upgrade to EverGuard Elite—where innovation meets elegance.\"  \n👉 Shop Now at ShieldStyle.com | Free Global Shipping  \n\nSocial Proof:  \n“Best umbrella I’ve owned—survived a monsoon in Tokyo!” – Maria L., Travel Blogger  \n“Stylish enough for meetings, tough enough for storms.” – David R., CEO  \n\nBrand Logo:  \n🛡️ ShieldStyle – Engineered for Life’s Elements.  \n\n#StayShielded | Follow Us @ShieldStyleOfficial  \nContact: support@shieldstyle.com | 1-800-SHIELD-4U    \nRain or shine, own the elements with confidence. 🌦️\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " According to the article, what wind speed can the EverGuard Elite Umbrella withstand due to its reinforced fiberglass frame?  ",
+        "prompt": "",
+        "options": [
+          "A) 50 mph  ",
+          "B) 60+ mph  ",
+          "C) 70 mph  ",
+          "D) 40 mph  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " What is included in the free travel pouch offered with the promotional \"Buy 2, Get 1\" deal?  ",
+        "prompt": "",
+        "options": [
+          "A) UV Guard Coating spray  ",
+          "B) A portable charger  ",
+          "C) A spare auto-open button  ",
+          "D) A microfiber wipe and clip-on LED light  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following features is NOT mentioned in the article about the EverGuard Elite Umbrella?  ",
+        "prompt": "",
+        "options": [
+          "A) Instant Dry Technology  ",
+          "B) Auto-Open/Close button  ",
+          "C) Built-in GPS tracker  ",
+          "D) UV Guard Coating  "
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "type": "advertisement"
+  },
+  {
+    "id": "A-Level English No.59",
+    "title": "Advertisement (59)",
+    "description": "A-Level อังกฤษพาร์ท Advertisement 59",
+    "subtitle": "\nBrand Name: SwiftBlend  \nTagline: \"Whisk Wonders into Reality – Effortlessly!\"  \n\nProduct Spotlight: The SwiftBlend Pro Whisk  \n\nFeatures:  \n- Durable Construction: Stainless steel wires reinforced for unbeatable strength.  \n- Ergonomic Grip: Soft silicone handle with non-slip design for comfort and control.  \n- Versatile Design: Perfect for eggs, batters, sauces, and more.  \n- Easy Clean: Dishwasher-safe and rust-resistant.  \n\nWhy SwiftBlend Pro?  \nSay goodbye to sore wrists and flimsy whisks! The SwiftBlend Pro combines precision engineering with culinary elegance, making mixing faster, smoother, and effortless. Whether you’re whipping cream, folding meringue, or blending pancake batter, this whisk delivers professional results in your home kitchen.  \n\nBenefits:  \n✅ Save Time: Ultra-efficient design cuts mixing time by half.  \n✅ Lasting Quality: Built to withstand years of daily use.  \n✅ Chef-Approved: Trusted by professionals for its balance and durability.  \n\nCall to Action:  \nUpgrade your kitchen toolkit today!  \nShop Now: [www.swiftblend.com/pro-whisk](https://www.swiftblend.com)  \nFollow Us: @SwiftBlendKitchen (Instagram, TikTok)  \n\nLimited-Time Offer: Use code WHISK20 for 20% off your first order!    \nSwiftBlend – Where Innovation Meets Tradition.\n\n\n",
+    "duration": 30,
+    "totalQuestions": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "reading",
+        "text": " What material is used for the SwiftBlend Pro Whisk’s ergonomic grip?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel  ",
+          "B) Silicone  ",
+          "C) Plastic  ",
+          "D) Rubber  "
+        ],
+        "correctAnswer": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "type": "reading",
+        "text": " The article implies that the ergonomic grip design primarily addresses which common problem?  ",
+        "prompt": "",
+        "options": [
+          "A) Rust accumulation  ",
+          "B) Difficulty cleaning the whisk  ",
+          "C) Limited mixing speed  ",
+          "D) Wrist strain during prolonged use  "
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "type": "reading",
+        "text": " Which of the following is NOT listed as a feature of the SwiftBlend Pro Whisk?  ",
+        "prompt": "",
+        "options": [
+          "A) Stainless steel construction  ",
+          "B) Non-slip silicone handle  ",
+          "C) Dishwasher-safe design  ",
+          "D) Chef-approved balance  "
+        ],
+        "correctAnswer": 3
+      }
+    ],
+    "type": "advertisement"
+  }
+]

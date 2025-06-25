@@ -197,7 +197,7 @@
             // Function to fetch tutors data
             async function fetchTutors() {
                 try {
-                    const response = await fetch('../data/tutors.json');
+                    const response = await fetch('../data/info/tutors.json');
                     
                     if (!response.ok) {
                         throw new Error('Failed to fetch tutors data');

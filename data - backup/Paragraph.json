@@ -1,0 +1,2777 @@
+[
+  {
+    "id": "A-Level English No.1",
+    "title": "Paragraph Organization (1)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 1",
+    "subtitle": "\n A: Large language models (LLMs) like GPT-4, Claude, and Llama have revolutionized artificial intelligence by demonstrating unprecedented capabilities in generating human-like text across diverse contexts.\n B: Despite their transformative potential, ongoing challenges such as ethical concerns about bias and resource-intensive training highlight the need for balanced innovation and oversight in the field.\n C: This advancement stems from breakthroughs in transformer architectures and scaled training processes, which enable LLMs to process context over long text spans while maintaining coherence.\n D: For instance, these models can draft essays, simulate conversations, and even write code, leveraging vast datasets to recognize patterns and predict linguistic sequences with remarkable accuracy.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-C-B",
+          " A-D-B-C",
+          " A-C-D-B",
+          " A-C-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.2",
+    "title": "Paragraph Organization (2)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 2",
+    "subtitle": "\n\n A: Following this innovation, competitors like Huawei and Xiaomi released their own models, such as the Mate X and Mix Fold, which refined hinge mechanisms and screen durability.\n B: Over time, manufacturers addressed these issues through iterative upgrades, leading to improved consumer trust and solidifying foldables as a niche but growing segment in the tech industry.\n C: However, early adopters faced challenges, including concerns over price and reliability, as some devices suffered screen damage within weeks of use.\n D: Foldable smartphones entered the market, with Samsung's Galaxy Fold pioneering the category in 2019, introducing a flexible display that transformed traditional smartphone design.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-C-B",
+          " D-A-B-C",
+          " D-C-A-B",
+          " D-C-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.3",
+    "title": "Paragraph Organization (3)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 3",
+    "subtitle": "\n\n A: For instance, sectors like education shifted to online platforms, healthcare embraced telemedicine, and businesses implemented cloud-based collaboration tools such as Zoom and Microsoft Teams to sustain operations.\n B: This sudden shift not only highlighted the necessity of digital infrastructure but also created a domino effect, accelerating investments in automation, cybersecurity, and e-commerce platforms to meet evolving demands.\n C: Consequently, remote work transitioned from a temporary contingency to a normalized practice, permanently reshaping organizational strategies and workforce dynamics across the globe.\n D: The COVID-19 pandemic in 2020 acted as a catalyst for rapid digital transformation, compelling industries worldwide to adopt technology-driven solutions almost overnight.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.4",
+    "title": "Paragraph Organization (4)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 4",
+    "subtitle": "\n\n A: As these efforts converge, the progress suggests a transformative future where quantum computing could revolutionize industries from cryptography to drug discovery.\n B: For instance, IBM unveiled its 127-qubit quantum processor in 2021, while Google demonstrated quantum supremacy in 2019 by completing a task in 200 seconds that would take classical supercomputers millennia.\n C: These milestones have not only accelerated global research but also spurred collaborations, such as partnerships between tech firms and academic institutions, to address challenges like error correction and scalability.\n D: In recent years, quantum computing has achieved significant breakthroughs, with industry leaders like IBM and Google driving unprecedented advancements in the field.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-C-A",
+          " D-B-A-C",
+          " D-C-B-A",
+          " D-C-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.5",
+    "title": "Paragraph Organization (5)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 5",
+    "subtitle": "\n\n A: Similarly, in healthcare, wearable devices leverage edge computing to process patient vitals locally, ensuring immediate alerts for critical anomalies while securely transmitting only essential data to central servers.\n B: As a result, this decentralized approach not only enhances response times and reliability across industries but also addresses scalability challenges, solidifying its role as a foundational technology for the future of connected systems.\n C: For instance, in smart manufacturing, edge devices analyze sensor data on-site to instantly adjust machinery, preventing costly downtime that centralized cloud systems might miss due to transmission delays.\n D: Edge computing has emerged as a key architecture for supporting IoT and real-time applications by enabling data processing closer to the source, reducing latency and bandwidth constraints.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-A-B",
+          " D-C-B-A",
+          " D-A-C-B",
+          " D-A-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.6",
+    "title": "Paragraph Organization (6)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 6",
+    "subtitle": "\n\n A: Voice assistants like Alexa, Google Assistant, and Siri have evolved from simple command-based tools to sophisticated systems deeply embedded in everyday routines.\n B: Consequently, these technologies have transitioned from novelties to indispensable aids, reshaping how people interact with both technology and their environments.\n C: For instance, they now seamlessly manage tasks such as adjusting smart thermostats, curating personalized playlists, and coordinating cross-device workflows through natural language interactions.\n D: This integration accelerated as advancements in AI, including contextual understanding and predictive analytics, enabled assistants to anticipate user needs rather than merely respond to requests.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-D-B",
+          " A-C-B-D",
+          " A-D-C-B",
+          " A-D-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.7",
+    "title": "Paragraph Organization (7)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 7",
+    "subtitle": "\n\n A: Consequently, these regulations have not only reshaped corporate data practices globally but also inspired similar legislative efforts in other regions to prioritize consumer privacy.\n B: For instance, the GDPR, enacted in 2018, mandates strict consent protocols and hefty fines for non-compliance, while the CCPA, effective in 2020, grants Californians rights to access and delete their data.\n C: Major data privacy regulations like the GDPR in Europe and the CCPA in California were implemented to address growing concerns over personal data misuse in the digital age.\n D: Although these laws differ in scope—the GDPR applies broadly to organizations handling EU residents’ data, whereas the CCPA focuses on businesses operating in California—both emphasize transparency and user control.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-D-A",
+          " C-B-A-D",
+          " C-D-B-A",
+          " C-D-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.8",
+    "title": "Paragraph Organization (8)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 8",
+    "subtitle": "\n\n A: Cloud gaming services have significantly expanded in recent years, with platforms such as Google Stadia, Microsoft xCloud, and NVIDIA GeForce Now leading the charge.\n B: Despite Google Stadia’s eventual shutdown in 2023, services like Microsoft xCloud and NVIDIA GeForce Now continued to grow, leveraging advancements in streaming technology and 5G connectivity.\n C: As a result, cloud gaming is increasingly seen as a transformative force in the industry, promising greater accessibility and reshaping how games are developed and consumed worldwide.\n D: This shift not only eliminated the need for high-end hardware but also enabled gamers to access titles instantly across devices, from smartphones to smart TVs.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-D-C",
+          " A-B-C-D",
+          " A-D-B-C",
+          " A-D-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.9",
+    "title": "Paragraph Organization (9)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 9",
+    "subtitle": "\n\n A: NFTs (Non-Fungible Tokens) surged in popularity as a revolutionary way to authenticate digital ownership, particularly in the art world, by leveraging blockchain technology to ensure uniqueness and provenance.\n B: Despite this decline, NFTs have left a lasting imprint by prompting broader conversations about ownership in the digital age and inspiring innovations in sectors like gaming and intellectual property.\n C: However, the initial excitement waned as concerns over environmental impact from energy-intensive blockchain networks and market saturation with low-quality projects eroded public trust.\n D: For instance, digital artist Beeple sold an NFT collage for $69 million at Christie’s in 2021, a landmark event that highlighted the potential for digital art to rival traditional markets.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-C-B",
+          " A-D-B-C",
+          " A-C-D-B",
+          " A-C-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.10",
+    "title": "Paragraph Organization (10)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 10",
+    "subtitle": "\n\n A: As we adapt to this demographic reality, experts emphasize the urgency of sustainable development policies and equitable resource distribution to ensure global stability for future generations.\n B: The world’s population officially reached 8 billion people in November 2022, marking a historic milestone in human demographic growth.\n C: This milestone, driven by advancements in healthcare, agriculture, and poverty reduction, reflects increased life expectancy and declining infant mortality rates over recent decades.\n D: However, the rapid growth has also intensified challenges such as resource scarcity, urbanization pressures, and unequal access to education and healthcare across regions.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-C-D-A",
+          " B-C-A-D",
+          " B-D-C-A",
+          " B-D-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.11",
+    "title": "Paragraph Organization (11)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 11",
+    "subtitle": "\n\n A: Specifically, researchers at Yale University used a system called BrainEx to restore circulation and metabolic functions in the brains, observing reduced cell degeneration and restored synaptic activity.\n B: In 2019, a groundbreaking study challenged traditional views on brain death when scientists successfully revived cellular activity in pig brains four hours after the animals had died.\n C: As a result, the study prompted urgent discussions about redefining neurological death criteria and refining protocols for organ transplantation to account for such scientific advancements.\n D: This finding not only blurred the line between life and death but also raised ethical questions, as it suggested that some brain functions might be salvageable longer after death than previously assumed.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-D-C",
+          " B-A-C-D",
+          " B-D-A-C",
+          " B-D-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.12",
+    "title": "Paragraph Organization (12)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 12",
+    "subtitle": "\n\n A: Facial recognition technology has rapidly integrated into various sectors, from security systems to consumer devices, revolutionizing identification processes.\n B: Consequently, governments worldwide have begun implementing bans or guidelines, such as the EU’s proposed AI Act, reflecting a pivotal shift toward balancing innovation with ethical accountability.\n C: For instance, airports and smartphones now commonly employ facial recognition for authentication, while retailers use it to analyze customer behavior and personalize advertising.\n D: However, this expansion has sparked concerns over privacy violations, racial bias in algorithmic accuracy, and the lack of transparent oversight, prompting calls for stricter regulations.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-D-B",
+          " A-C-B-D",
+          " A-D-C-B",
+          " A-D-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.13",
+    "title": "Paragraph Organization (13)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 13",
+    "subtitle": "\n\n A: In 2022, the children's song *Baby Shark* achieved a groundbreaking milestone by becoming the first YouTube video to surpass 10 billion views.\n B: Originally released in 2016 by South Korean company Pinkfong, the catchy tune gained global traction through viral dance challenges, memes, and extensive merchandise.\n C: Ultimately, *Baby Shark* solidified its status as a cultural phenomenon, demonstrating the unpredictable power of digital media to shape modern entertainment.\n D: This milestone not only highlighted YouTube's unparalleled reach as a platform but also underscored how simple, repetitive content could resonate across generations and cultures.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-D-C",
+          " A-B-C-D",
+          " A-D-B-C",
+          " A-D-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.14",
+    "title": "Paragraph Organization (14)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 14",
+    "subtitle": "\n\n A: However, \"Avatar\" reclaimed the top spot in 2021 after a strategic re-release in China, bolstered by renewed audience interest ahead of its sequels.\n B: The Marvel film’s success stemmed from its massive fanbase, relentless marketing, and the emotional payoff of its 22-film narrative arc.\n C: In 2019, \"Avengers: Endgame\" shattered the global box office record, surpassing James Cameron’s \"Avatar,\" which had held the title for a decade.\n D: This historic rivalry highlights how box office dominance now hinges not only on cinematic appeal but also on evolving distribution tactics and franchise longevity.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-A-D",
+          " C-B-D-A",
+          " C-A-B-D",
+          " C-A-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.15",
+    "title": "Paragraph Organization (15)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 15",
+    "subtitle": "\n\n A: In 2020, Apple announced a historic shift from Intel processors to its custom-designed M-series chips for Mac computers, marking a major milestone in its pursuit of hardware-software integration.\n B: Driven by the need for greater performance efficiency and control over innovation timelines, Apple leveraged its expertise in mobile-focused ARM architecture from iPhone and iPad chips to reimagine desktop computing.\n C: This transition not solidified Apple’s ecosystem independence but also set a new industry standard, prompting competitors to accelerate their own silicon development efforts.\n D: For example, the M1 chip debuted with groundbreaking benchmarks, offering up to 3.5x faster CPU performance and 6x faster GPU speeds compared to prior Intel-based models while dramatically extending battery life.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-D-C",
+          " A-B-C-D",
+          " A-D-B-C",
+          " A-D-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.16",
+    "title": "Paragraph Organization (16)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 16",
+    "subtitle": "\n\n A: By analyzing vast datasets of existing artwork and photographs, these tools learn to replicate styles, textures, and compositions, allowing even novices to generate professional-quality visuals in seconds.\n B: For instance, marketers now use AI-generated graphics for rapid prototyping, while artists blend human creativity with algorithmic suggestions to explore uncharted aesthetic territories.\n C: Despite their transformative impact, ongoing debates about copyright, originality, and ethical implications highlight the need for balanced frameworks to guide this technology’s evolving role in society.\n D: Artificial intelligence image generators like DALL-E, Midjourney, and Stable Diffusion have revolutionized visual content creation by enabling users to produce intricate images from simple text prompts.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.17",
+    "title": "Paragraph Organization (17)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 17",
+    "subtitle": "\n\n A: However, this rapid adoption also sparked debates about ethics, as schools banned ChatGPT over plagiarism concerns and industries grappled with workforce implications.\n B: By the end of 2022, the AI revolution had cemented itself as both a technological milestone and a societal challenge, prompting calls for balanced innovation and regulation.\n C: In 2022, the public release of OpenAI’s ChatGPT marked a turning point, accelerating global interest in generative AI tools.\n D: Fueled by its versatility—from drafting emails to solving coding problems—the platform saw over a million users within days, inspiring competitors to launch similar systems.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-D-A-B",
+          " C-D-B-A",
+          " C-A-D-B",
+          " C-A-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.18",
+    "title": "Paragraph Organization (18)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 18",
+    "subtitle": "\n\n A: Consequently, the industry’s rapid evolution continues to reshape how media is produced, distributed, and consumed, solidifying streaming’s role as the future of entertainment.\n B: To secure market share, companies have invested heavily in exclusive content, such as Netflix’s original series and Disney+’s Marvel and Star Wars franchises, while also experimenting with pricing tiers and ad-supported models.\n C: Streaming services have revolutionized the entertainment landscape, with platforms like Netflix and Disney+ emerging as dominant players in a fiercely competitive market.\n D: As a result, consumers now enjoy unprecedented choice, though this fragmentation has also led to \"subscription fatigue\" as viewers juggle multiple platforms to access desired content.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-D-A",
+          " C-B-A-D",
+          " C-D-B-A",
+          " C-D-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.19",
+    "title": "Paragraph Organization (19)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 19",
+    "subtitle": "\n\n A: The James Webb Space Telescope (JWST), launched in December 2021, has revolutionized astronomical observation by capturing incredibly detailed images of the universe.\n B: For instance, its early images of the Carina Nebula exposed intricate gas structures and nascent stars, reshaping theories about star formation.\n C: Equipped with advanced infrared sensors, it penetrates cosmic dust clouds, revealing previously hidden stellar nurseries and the chemical compositions of distant exoplanets.\n D: These breakthroughs not only deepen our understanding of cosmic evolution but also pave the way for future discoveries about galaxy origins and potential extraterrestrial life.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-B-D",
+          " A-C-D-B",
+          " A-B-C-D",
+          " A-B-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.20",
+    "title": "Paragraph Organization (20)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 20",
+    "subtitle": "\n\n A: These erratic shifts have also amplified risks for crypto exchanges, as seen in the 2022 collapse of platforms like FTX and Celsius, which buckled under liquidity crises triggered by sudden market downturns.\n B: Cryptocurrency markets are notorious for their extreme volatility, with Bitcoin often leading the charge through dramatic price fluctuations that ripple across the entire sector.\n C: For instance, Bitcoin surged to an all-time high of nearly $64,000 in April 2021, only to plummet by over 50% within months, sparking panic among investors and destabilizing smaller altcoins.\n D: Consequently, the interplay between speculative trading, regulatory uncertainty, and fragile infrastructure continues to define cryptocurrency’s reputation as a high-reward yet high-risk financial frontier.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-C-A-D",
+          " B-C-D-A",
+          " B-A-C-D",
+          " B-A-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.21",
+    "title": "Paragraph Organization (21)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 21",
+    "subtitle": "\n\n A: As a result, traditional platforms like Instagram and YouTube adopted similar features, such as Reels and Shorts, to compete for user engagement.\n B: TikTok emerged as a dominant social media platform, revolutionizing how users consume and create content through its short-form, algorithm-driven videos.\n C: This shift has permanently altered digital content consumption patterns, cementing TikTok’s influence as a catalyst for the rapid, visually focused media culture of the 2020s.\n D: By prioritizing brevity and personalization, it catered to shrinking attention spans while enabling niche creators to reach global audiences almost overnight.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.22",
+    "title": "Paragraph Organization (22)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 22",
+    "subtitle": "\n\n A: As a result, the rainforest’s critical role in carbon sequestration and biodiversity preservation has been severely compromised, drawing global condemnation and intensifying climate-related risks.\n B: This surge was fueled by policies that weakened environmental protections, such as slashing funding for enforcement agencies and encouraging agribusiness and mining expansion.\n C: The Amazon rainforest experienced accelerated deforestation during Jair Bolsonaro’s presidency, marking a significant environmental setback.\n D: Consequently, satellite data from Brazil’s National Institute for Space Research revealed a 75% increase in deforestation rates between 2019 and 2022 compared to the previous decade.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-D-A",
+          " C-B-A-D",
+          " C-D-B-A",
+          " C-D-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.23",
+    "title": "Paragraph Organization (23)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 23",
+    "subtitle": "\n\n A: For instance, the Renaissance period showcased this through masterpieces like Michelangelo’s Sistine Chapel frescoes, which merged religious themes with scientific precision in anatomy and perspective.\n B: Today, digital art and installations continue this legacy, using technology to challenge perceptions, proving that art remains a dynamic conduit for both preserving heritage and inspiring innovation.\n C: Art has long served as a powerful medium for human expression, reflecting cultural values and individual creativity across eras.\n D: Similarly, the 19th-century Impressionist movement broke from tradition by emphasizing light and everyday scenes, as seen in Monet’s *Water Lilies*, demonstrating art’s evolution in response to societal shifts.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.24",
+    "title": "Paragraph Organization (24)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 24",
+    "subtitle": "\n\n A: This decision, justified by the U.S. as a preemptive measure against alleged imminent attacks on American interests, drew widespread condemnation from Iran and its allies, who labeled it an unlawful act of aggression.\n B: Ultimately, the assassination underscored the volatility of U.S.-Iran relations, triggering global debates over the ethics of targeted killings and the risks of military escalation in the Middle East.\n C: Consequently, Iran retaliated days later by launching missile strikes on U.S. bases in Iraq, which, while causing no fatalities, brought the region to the brink of broader conflict.\n D: In January 2020, the U.S. drone strike that killed Iranian General Qasem Soleimani near Baghdad International Airport escalated already fraught tensions between the two nations.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-C-B",
+          " D-A-B-C",
+          " D-C-A-B",
+          " D-C-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.25",
+    "title": "Paragraph Organization (25)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 25",
+    "subtitle": "\n\n A: For instance, SpaceX’s reusable Falcon rockets and Starship prototypes have drastically reduced launch costs, while Blue Origin’s New Shepard and Virgin Galactic’s Unity missions have pioneered suborbital tourism, attracting high-profile clients and investors.\n B: The billionaire space race, fueled by ventures like SpaceX, Blue Origin, and Virgin Galactic, has accelerated advancements in commercial spaceflight, transforming a once government-dominated field into a competitive private industry.\n C: Ultimately, while these developments promise democratized space access and ambitious projects like lunar bases or Mars colonization, they underscore the need for balanced collaboration between private entities and global agencies to ensure sustainable exploration.\n D: This rivalry has not only spurred technological innovation but also raised concerns, such as regulatory challenges and environmental impacts, as frequent rocket launches contribute to atmospheric pollution and space debris.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-D-C",
+          " B-A-C-D",
+          " B-D-A-C",
+          " B-D-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.26",
+    "title": "Paragraph Organization (26)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 26",
+    "subtitle": "\n\n A: The murder of George Floyd in May 2020 ignited a global wave of Black Lives Matter (BLM) protests, highlighting systemic racism and police brutality.\n B: Ultimately, the protests underscored a sustained, international reckoning with racial injustice, cementing Floyd’s death as a catalyst for ongoing activism and dialogue about equality worldwide.\n C: This momentum sparked not only policy discussions—such as calls to defund police departments and remove Confederate statues—but also prompted corporations and institutions to publicly address racial inequities.\n D: In response, millions across cities like Minneapolis, London, and Sydney organized marches, holding signs reading \"Justice for George\" and flooding social media with #BlackLivesMatter, demanding accountability and reform.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-C-B",
+          " A-D-B-C",
+          " A-C-D-B",
+          " A-C-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.27",
+    "title": "Paragraph Organization (27)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 27",
+    "subtitle": "\n\n A: In January 2020, the UK officially completed its withdrawal from the European Union, marking the culmination of a contentious process initiated by the 2016 referendum.\n B: Following years of complex negotiations, the UK and EU agreed on a trade deal that aimed to minimize economic disruption while ending free movement and withdrawing from the single market.\n C: Ultimately, Brexit’s completion reshaped the UK’s political and economic landscape, though its long-term implications remain a subject of debate and adaptation for all parties involved.\n D: However, the transition period exposed ongoing challenges, such as border delays and regulatory disputes, highlighting the interconnectedness of both economies.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-D-C",
+          " A-B-C-D",
+          " A-D-B-C",
+          " A-D-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.28",
+    "title": "Paragraph Organization (28)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 28",
+    "subtitle": "\n\n A: Initially, rapid global transmission through travel and close contact led to overwhelmed healthcare systems, prompting unprecedented lockdowns and travel restrictions worldwide by early 2020.\n B: As the crisis escalated, governments and scientists collaborated to accelerate vaccine development, resulting in the deployment of the first vaccines by late 2020, though disparities in distribution highlighted global inequities.\n C: By 2022, despite ongoing challenges like virus variants and public fatigue, the pandemic underscored the critical importance of international cooperation, adaptive public health strategies, and scientific innovation in mitigating future crises.\n D: The COVID-19 pandemic emerged in late 2019 when a novel coronavirus was first identified in Wuhan, China, sparking immediate international concern.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.29",
+    "title": "Paragraph Organization (29)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 29",
+    "subtitle": "\n\n A: For instance, 2023 was recorded as the hottest year in history, with countries like Canada and Greece battling catastrophic wildfires, while regions such as South Asia and the southern United States endured deadly heatwaves exceeding 50°C (122°F).\n B: Recent years have seen an alarming acceleration in climate change, marked by unprecedented global temperature spikes and a surge in extreme weather events.\n C: As scientific models predict even greater extremes in the coming decades, the current trajectory underscores the urgent need for coordinated global mitigation efforts to curb emissions and adapt to rapidly escalating climate risks.\n D: These phenomena are not isolated incidents but direct consequences of rising greenhouse gas emissions from fossil fuel consumption and deforestation, which have trapped excess heat in the atmosphere and disrupted weather patterns.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-D-C",
+          " B-A-C-D",
+          " B-D-A-C",
+          " B-D-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.30",
+    "title": "Paragraph Organization (30)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 30",
+    "subtitle": "\n\n A: The collapse of cryptocurrency exchange FTX in November 2022 marked one of the most dramatic failures in the history of digital asset markets, eroding global investor trust.\n B: Triggered by a liquidity crisis following a CoinDesk report revealing FTX’s financial ties to its sister hedge fund, Alameda Research, panicked users withdrew over $6 billion in three days, overwhelming the platform.\n C: As a result, FTX’s founder, Sam Bankman-Fried, admitted to \"poor oversight\" and mishandling customer funds, which regulators later alleged included diverting billions to cover Alameda’s losses.\n D: Ultimately, the exchange filed for bankruptcy, sparking a market-wide crypto downturn and prompting intensified regulatory scrutiny of centralized exchanges worldwide.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-C-D",
+          " A-B-D-C",
+          " A-C-B-D",
+          " A-C-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.31",
+    "title": "Paragraph Organization (31)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 31",
+    "subtitle": "\n\n A: However, this rapid ascent was followed by dramatic volatility in 2022, as geopolitical tensions, regulatory crackdowns, and collapsing stablecoin projects eroded investor confidence.\n B: The cryptocurrency market experienced an unprecedented surge in value between 2020 and 2021, fueled by institutional investments and retail trading enthusiasm.\n C: Ultimately, the boom-and-bust cycle highlighted both the speculative nature of digital assets and the market’s vulnerability to external pressures, leaving stakeholders questioning its long-term stability.\n D: For instance, Bitcoin soared to a historic high of nearly $69,000 in November 2021, while Ethereum and altcoins similarly rallied, creating widespread optimism about decentralized finance.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.32",
+    "title": "Paragraph Organization (32)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 32",
+    "subtitle": "\n\n A: For instance, Japan’s Obon Festival honors ancestral spirits through dances like Bon Odori, linking modern communities to historical customs.\n B: Similarly, Mexico’s Día de los Muertos combines indigenous rituals with Catholic influences, illustrating how cultural practices evolve yet retain core values.\n C: These celebrations not only strengthen communal bonds but also ensure that cultural legacies adapt thoughtfully to contemporary contexts.\n D: Festivals around the world often serve as vibrant expressions of cultural identity, preserving traditions across generations.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.33",
+    "title": "Paragraph Organization (33)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 33",
+    "subtitle": "\n\n A: Though her absence created a palpable void, the event highlighted both the resilience of the institution she embodied and the enduring public affection for her steadfast service.\n B: Following her passing, tributes poured in from world leaders and citizens alike, while the seamless accession of King Charles III underscored the monarchy’s preparedness for transition.\n C: The death of Queen Elizabeth II in September 2022 marked the end of a historic 70-year reign, leaving a profound global legacy as Britain’s longest-serving monarch.\n D: Throughout her rule, she navigated sweeping societal changes, from decolonization and technological revolutions to shifting political landscapes, becoming a symbol of stability and continuity.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-D-B-A",
+          " C-D-A-B",
+          " C-B-D-A",
+          " C-B-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.34",
+    "title": "Paragraph Organization (34)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 34",
+    "subtitle": "\n\n A: The initial 7.8-magnitude tremor, followed hours later by a 7.5-magnitude aftershock, collapsed thousands of buildings, including hospitals and schools, while freezing temperatures hampered rescue efforts.\n B: Compounding the crisis, decades of lax construction regulations in Turkey and ongoing conflict in Syria left infrastructure dangerously vulnerable, amplifying casualties and prolonging recovery.\n C: In February 2023, devastating earthquakes struck southern Turkey and northern Syria, causing widespread destruction and displacing over 1.5 million people.\n D: Ultimately, the disasters claimed over 50,000 lives, exposing systemic vulnerabilities and sparking international debates on disaster preparedness in seismically active regions.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.35",
+    "title": "Paragraph Organization (35)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 35",
+    "subtitle": "\n\n A: For instance, Australia’s 2019-2020 \"Black Summer\" fires destroyed over 46 million acres, while California’s 2020 wildfires burned a record 4.3 million acres, fueled by prolonged drought and extreme heatwaves.\n B: Ultimately, these interconnected disasters underscore how climate change and human activity intensify fire risks, demanding urgent international cooperation to mitigate environmental degradation.\n C: Similarly, the Amazon rainforest experienced alarming fire outbreaks in 2019, exacerbated by deforestation and agricultural expansion, which reduced its capacity to absorb carbon dioxide.\n D: In recent years, unprecedented wildfires have ravaged ecosystems in Australia, California, and the Amazon, highlighting the escalating global climate crisis.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-C-B",
+          " D-A-B-C",
+          " D-C-A-B",
+          " D-C-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.36",
+    "title": "Paragraph Organization (36)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 36",
+    "subtitle": "\n\n A: Despite these hurdles, ongoing advancements in delivery systems and regulatory frameworks aim to balance innovation with safety, ensuring CRISPR’s potential is realized responsibly.\n B: For example, scientists have successfully used CRISPR to correct genetic mutations in diseases like sickle cell anemia and to engineer crops resistant to climate stressors.\n C: Since its discovery, CRISPR gene-editing technology has revolutionized biomedical research by enabling precise, cost-effective modifications to DNA.\n D: However, the rapid deployment of this technology has sparked ethical debates, particularly regarding unintended off-target effects and the moral implications of editing human embryos.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-D-A",
+          " C-B-A-D",
+          " C-D-B-A",
+          " C-D-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.37",
+    "title": "Paragraph Organization (37)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 37",
+    "subtitle": "\n\n A: While Trump’s administration prioritized deregulation, tax cuts, and an “America First” foreign policy, Biden’s tenure has focused on pandemic recovery, infrastructure investment, and climate initiatives, often reversing Trump-era decisions.\n B: These divergent strategies have deepened political polarization, as seen in contentious debates over healthcare (e.g., Trump’s attempts to repeal the Affordable Care Act versus Biden’s expansion of subsidies) and immigration (e.g., border wall construction versus pathways to citizenship proposals).\n C: Consequently, the transition between these administrations underscores not only shifting priorities but also the enduring impact of executive leadership on national unity and global perceptions of American stability.\n D: The presidencies of Donald Trump (2017-2021) and Joe Biden (2021-present) have exemplified starkly contrasting approaches to governance and policy in the United States.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.38",
+    "title": "Paragraph Organization (38)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 38",
+    "subtitle": "\n\n A: As a result, these innovations have democratized entertainment, fostering creativity while ensuring diverse voices and stories reach wider audiences than ever before.\n B: Moreover, social media has amplified audience engagement, allowing creators to interact directly with fans through live streams, polls, and personalized content.\n C: For instance, streaming platforms like Netflix and Spotify have replaced traditional media formats, enabling instant access to movies, music, and shows globally.\n D: The entertainment industry has undergone significant transformations due to advancements in technology, reshaping how content is created and consumed.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-B-A",
+          " D-C-A-B",
+          " D-B-C-A",
+          " D-B-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.39",
+    "title": "Paragraph Organization (39)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 39",
+    "subtitle": "\n\n A: In January 2022, medical history was made when surgeons performed the first successful pig-to-human heart transplant, marking a milestone in xenotransplantation.\n B: This groundbreaking procedure, conducted on 57-year-old David Bennett, utilized a genetically modified pig heart to address critical organ shortages and reduce rejection risks.\n C: Despite the breakthrough, Bennett passed away two months post-surgery, prompting researchers to investigate whether complications arose from organ rejection, infections, or unforeseen biological incompatibilities.\n D: Nevertheless, the trial provided invaluable data, accelerating advancements in genetic engineering and immunosuppressive therapies, and reigniting hope for addressing the global organ donor crisis.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-C-D",
+          " A-B-D-C",
+          " A-C-B-D",
+          " A-C-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.40",
+    "title": "Paragraph Organization (40)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 40",
+    "subtitle": "\n\n A: The scandal erupted after federal prosecutors indicted Santos on 23 charges, including identity theft, wire fraud, and falsifying financial records, which revealed he had fabricated much of his resume and misused donor funds.\n B: His removal marked a rare moment of political accountability, underscoring the legal and reputational consequences of ethical breaches in public office while deepening public distrust in governmental institutions.\n C: In December 2023, George Santos became the sixth House member in U.S. history to be expelled from Congress following a sweeping ethics investigation into his fraudulent campaign finances and personal misconduct.\n D: Despite initially resisting calls to resign, bipartisan support for his expulsion grew following a damning House Ethics Committee report that concluded he had \"blatantly exploited his public position for personal profit.\"\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.41",
+    "title": "Paragraph Organization (41)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 41",
+    "subtitle": "\n\n A: As industries scramble to secure chip supplies and governments invest in domestic production, the crisis underscores the fragility of globalized manufacturing and the urgent need for diversified, resilient supply networks.\n B: This shortage stems from pandemic-driven surges in demand for electronics, compounded by manufacturing delays caused by COVID-19 restrictions and shortages of key raw materials like semiconductors.\n C: Meanwhile, automotive giants such as Ford and Toyota have idled factories, highlighting how carmakers—increasingly reliant on chips for features like navigation and emissions control—are disproportionately affected.\n D: The global chip shortage has become a critical issue, disrupting production across the technology and automotive industries and straining supply chains worldwide.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-C-A",
+          " D-B-A-C",
+          " D-C-B-A",
+          " D-C-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.42",
+    "title": "Paragraph Organization (42)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 42",
+    "subtitle": "\n\n A: Consequently, businesses and governments are now prioritizing supply chain resilience through diversified suppliers, inventory buffers, and advanced logistics technologies to mitigate future shocks.\n B: The COVID-19 pandemic triggered unprecedented disruptions in global supply chains, exposing vulnerabilities in interconnected production and distribution systems.\n C: For instance, factory closures in Asia, prolonged port delays, and semiconductor shortages cascaded into delayed deliveries of electronics, automobiles, and consumer goods worldwide.\n D: As a result, industries reliant on just-in-time manufacturing faced severe bottlenecks, exacerbating inflation and shifting corporate strategies toward localized sourcing.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-C-D-A",
+          " B-C-A-D",
+          " B-D-C-A",
+          " B-D-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.43",
+    "title": "Paragraph Organization (43)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 43",
+    "subtitle": "\n\n A: Though systemic change remains incomplete, the movement underscores a generational shift in advocacy, proving that youth-led activism can redefine global priorities and hold leaders accountable.\n B: Inspired by her Fridays for Future campaign, millions of students across over 150 countries began skipping school weekly to stage demonstrations, uniting under slogans like \"There is no Planet B\" and pressuring governments to honor climate agreements.\n C: In recent years, global youth climate protests, galvanized by Swedish activist Greta Thunberg’s solitary \"School Strike for Climate\" in 2018, have surged into a worldwide movement demanding urgent environmental action.\n D: As a result, these protests have amplified public awareness, shifting political discourse—evidenced by the European Union’s Green Deal and increased climate legislation debates in parliaments from Canada to India.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-D-A",
+          " C-B-A-D",
+          " C-D-B-A",
+          " C-D-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.44",
+    "title": "Paragraph Organization (44)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 44",
+    "subtitle": "\n\n A: As a result, media coverage amplified her message, and global youth-led demonstrations pressured governments to address environmental policies more aggressively.\n B: By late 2019, Thunberg’s initial act of defiance had evolved into a historic movement, uniting millions and redefining climate activism for a new generation.\n C: In August 2018, 15-year-old Greta Thunberg began skipping school to protest outside Sweden’s parliament, demanding urgent action on climate change.\n D: Within months, her solitary \"Fridays for Future\" strikes inspired students worldwide, sparking coordinated walkouts in over 100 countries by March 2019.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-D-A-B",
+          " C-D-B-A",
+          " C-A-D-B",
+          " C-A-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.45",
+    "title": "Paragraph Organization (45)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 45",
+    "subtitle": "\n\n A: As a result, the Accords not only reshaped geopolitical alliances but also demonstrated how pragmatic interests could bridge decades of division, offering a potential blueprint for future stability in the region.\n B: The Abraham Accords, brokered by the United States in 2020, marked a historic shift in Middle Eastern diplomacy by normalizing relations between Israel and several Arab nations.\n C: Unlike previous peace efforts focused on territorial disputes, these agreements prioritized mutual economic benefits and shared concerns over regional threats, such as Iran’s influence, fostering unprecedented collaboration in trade, technology, and defense.\n D: Building on this momentum, the United Arab Emirates and Bahrain became the first Gulf states to establish formal ties with Israel, followed later by Sudan and Morocco, which exchanged diplomatic recognition for economic and security assurances.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-C-A",
+          " B-D-A-C",
+          " B-C-D-A",
+          " B-C-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.46",
+    "title": "Paragraph Organization (46)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 46",
+    "subtitle": "\n\n A: Initially peaceful demonstrations, such as the June march drawing over a million participants, escalated into clashes with police following reports of excessive force and arrests.\n B: By mid-2020, China’s imposition of a national security law effectively suppressed dissent, marking a significant decline in public demonstrations but intensifying international scrutiny over Hong Kong’s diminishing autonomy.\n C: In 2019, Hong Kong witnessed mass protests triggered by a controversial extradition bill, which many residents feared would erode the city’s judicial independence under the \"one country, two systems\" framework.\n D: Consequently, the movement expanded to demand broader democratic reforms, including universal suffrage, even as Beijing denounced the protests as foreign-instigated unrest.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.47",
+    "title": "Paragraph Organization (47)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 47",
+    "subtitle": "\n\n A: Ultimately, this image not only confirmed key predictions of Einstein’s theory of general relativity but also opened new avenues for studying the extreme gravitational environments of black holes.\n B: This milestone was achieved through the collaborative efforts of the Event Horizon Telescope (EHT) project, which linked radio telescopes worldwide to form a virtual Earth-sized observatory capable of capturing unprecedented detail.\n C: After two years of meticulously processing petabytes of data and overcoming challenges like synchronizing observations across time zones, the team revealed a luminous ring of hot gas swirling around the black hole’s dark shadow.\n D: In 2019, a groundbreaking achievement in astrophysics occurred when scientists unveiled the first-ever image of a black hole, focusing on the supermassive black hole at the center of galaxy Messier 87 (M87).\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-C-A",
+          " D-B-A-C",
+          " D-C-B-A",
+          " D-C-A-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.48",
+    "title": "Paragraph Organization (48)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 48",
+    "subtitle": "\n\n A: Moreover, scientists noted accelerated ice melt in adjacent glaciers during this period, raising concerns about rising global sea levels and destabilizing ecosystems reliant on stable polar conditions.\n B: In February 2020, Antarctica experienced an unprecedented climate milestone when temperatures at the Esperanza Base soared to 18.3°C (65°F), the highest ever recorded on the continent.\n C: Consequently, this event underscored the accelerating impact of climate change in Earth’s most vulnerable regions, urging immediate international action to mitigate further environmental disruption.\n D: This alarming milestone, surpassing the previous 2015 record of 17.5°C (63.5°F), was linked to a combination of rapid regional warming and persistent high-pressure systems trapping heat over the Antarctic Peninsula.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.49",
+    "title": "Paragraph Organization (49)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 49",
+    "subtitle": "\n\n A: Prior to this mission, American astronauts had relied exclusively on Russian Soyuz spacecraft since the retirement of the Space Shuttle program in 2011, costing NASA billions in seat purchases.\n B: In 2020, a historic milestone in space exploration was achieved when SpaceX and NASA successfully launched astronauts from U.S. soil for the first time in nearly a decade.\n C: Ultimately, this achievement not only restored America’s independent human spaceflight capacity but also signaled a new era of innovation and reduced dependence on foreign spacecraft.\n D: The collaboration marked a turning point as SpaceX’s Crew Dragon capsule, developed through NASA’s Commercial Crew Program, demonstrated the viability of public-private partnerships in advancing spaceflight capabilities.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-D-C",
+          " B-A-C-D",
+          " B-D-A-C",
+          " B-D-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.50",
+    "title": "Paragraph Organization (50)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 50",
+    "subtitle": "\n\n A: Although officials speculated the monoliths were art installations or publicity stunts, their synchronized emergence fueled theories ranging from extraterrestrial communication to coordinated guerrilla art campaigns.\n B: Within days, similar structures materialized globally—from California to Romania—each appearing abruptly in isolated locations and vanishing just as mysteriously, often leaving no trace.\n C: In late 2020, a towering metal monolith was discovered in Utah’s remote desert, sparking widespread intrigue due to its unknown origin and sleek, otherworldly design.\n D: Ultimately, the phenomenon underscored humanity’s fascination with mystery, blending viral curiosity, digital speculation, and the timeless allure of the unexplained in a rapidly interconnected world.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-A-D",
+          " C-B-D-A",
+          " C-A-B-D",
+          " C-A-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.51",
+    "title": "Paragraph Organization (51)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 51",
+    "subtitle": "\n\n A: Targeting Dimorphos, a small moonlet orbiting the asteroid Didymos, the DART spacecraft traveled over 6.8 million miles before striking its surface at 14,000 mph to alter the asteroid’s trajectory.\n B: This groundbreaking effort not only demonstrated humanity’s capacity to protect Earth from potential asteroid threats but also provided critical data to refine future planetary defense technologies.\n C: In 2022, NASA achieved a historic milestone with the Double Asteroid Redirection Test (DART), humanity’s first mission to intentionally collide a spacecraft with an asteroid to test planetary defense strategies.\n D: Following the impact, astronomers worldwide monitored Dimorphos’s orbit using telescopes, confirming the collision shortened its orbital period by 32 minutes—far exceeding initial predictions and proving kinetic impact as a viable deflection method.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.52",
+    "title": "Paragraph Organization (52)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 52",
+    "subtitle": "\n\n A: Using samples collected during the Apollo missions, researchers grew Arabidopsis thaliana, a model plant species, in regolith that had never supported biological life before.\n B: In 2022, scientists achieved a historic milestone by successfully cultivating plants in lunar soil for the first time, marking a leap forward in space agriculture research.\n C: However, the plants exhibited stunted growth and stress signs compared to Earth soil controls, revealing challenges such as nutrient deficiencies and sharp lunar particles.\n D: Despite these hurdles, the experiment demonstrated that lunar soil can sustain plant life, offering critical insights for future sustainable farming practices on the Moon.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-C-D",
+          " B-A-D-C",
+          " B-C-A-D",
+          " B-C-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.53",
+    "title": "Paragraph Organization (53)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 53",
+    "subtitle": "\n\n A: Between 2021 and 2023, global economies experienced a historic inflation surge, primarily driven by pandemic-era supply chain disruptions, unprecedented fiscal stimulus measures, and a sharp rebound in consumer demand.\n B: Consequently, central banks worldwide implemented aggressive interest rate hikes, with the U.S. Federal Reserve raising rates by 5 percentage points over 18 months to curb spending and stabilize markets.\n C: Although inflation rates began moderating in late 2023, the prolonged period of high costs has left lingering challenges, including reduced purchasing power and slowed economic growth across both developed and emerging nations.\n D: For instance, energy prices soared by 40% in 2022 due to geopolitical tensions from the Russia-Ukraine conflict, while labor shortages and rising wages in sectors like manufacturing further compounded price pressures.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-B-C",
+          " A-D-C-B",
+          " A-B-D-C",
+          " A-B-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.54",
+    "title": "Paragraph Organization (54)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 54",
+    "subtitle": "\n\n A: Although geopolitical tensions occasionally hinder consensus, the sustained focus on shared goals underscores the indispensable role of multilateral dialogue in shaping a resilient global future.\n B: These agreements often catalyze grassroots movements, as seen in the surge of renewable energy initiatives worldwide following climate accords.\n C: International summits, such as the G20 or COP26, serve as critical platforms for addressing global challenges through collaborative policymaking.\n D: For instance, the 2015 Paris Agreement emerged from such efforts, uniting nations to combat climate change with binding emission targets.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-D-B-A",
+          " C-D-A-B",
+          " C-B-D-A",
+          " C-B-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.55",
+    "title": "Paragraph Organization (55)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 55",
+    "subtitle": "\n\n A: As a result, the region now faces heightened risks of proxy conflicts, covert nuclear advancements, and a fractured nonproliferation framework, underscoring the protracted fallout from the deal’s disintegration.\n B: The collapse of the Iran nuclear deal (JCPOA) in 2018, following the U.S. withdrawal under President Trump, triggered a resurgence of geopolitical tensions and nuclear brinkmanship.\n C: This decision prompted Iran to gradually abandon its commitments, ramping up uranium enrichment to 60% purity—far exceeding the deal’s 3.67% limit—and expanding its stockpiles, as verified by IAEA reports.\n D: Consequently, diplomatic efforts to revive the agreement stalled repeatedly, with European mediators struggling to bridge gaps between U.S. demands for stricter terms and Iran’s insistence on sanctions relief first, exemplified by the fruitless 2021–2023 Vienna talks.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-C-D-A",
+          " B-C-A-D",
+          " B-D-C-A",
+          " B-D-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.56",
+    "title": "Paragraph Organization (56)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 56",
+    "subtitle": "\n\n A: In response, Israel initiated a large-scale military offensive in Gaza, involving airstrikes, a ground incursion, and a near-total blockade that displaced over 1 million Palestinians and caused widespread infrastructure destruction.\n B: As the conflict intensified, international calls for de-escalation grew, though stalled cease-fire negotiations and Hamas’s tunnel networks complicated efforts to mitigate civilian casualties or secure hostage releases.\n C: This escalation not only deepened humanitarian suffering but also risked regional destabilization, drawing in proxy groups and heightening tensions across the Middle East.\n D: The Israel-Hamas conflict reached a critical turning point in October 2023 when Hamas launched a surprise cross-border attack, killing over 1,400 Israelis and seizing hundreds of hostages.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.57",
+    "title": "Paragraph Organization (57)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 57",
+    "subtitle": "\n\n A: As a result, protesters breached barricades, clashed with law enforcement, and vandalized congressional offices, creating chaos that forced legislators into hiding and halted the democratic process.\n B: This violent episode ultimately resulted in multiple deaths, widespread injuries, and lasting political ramifications, cementing its place as a stark warning about the fragility of democratic institutions.\n C: Meanwhile, social media posts and live streams revealed coordinated efforts among rioters to target specific lawmakers and symbols of government authority, underscoring the planned nature of the attack.\n D: On January 6, 2021, a violent mob stormed the U.S. Capitol in an unprecedented attempt to disrupt the certification of the 2020 presidential election, fueled by false claims of electoral fraud.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-C-B",
+          " D-A-B-C",
+          " D-C-A-B",
+          " D-C-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.58",
+    "title": "Paragraph Organization (58)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 58",
+    "subtitle": "\n\n A: This innovation, coupled with improved codon optimization techniques, allowed researchers to swiftly design COVID-19 vaccines with over 90% efficacy during the pandemic.\n B: A critical advancement was the development of lipid nanoparticle (LNP) delivery systems, which protect fragile mRNA molecules and enhance their cellular uptake.\n C: Recent breakthroughs in mRNA vaccine technology have revolutionized the field of immunology, enabling rapid, adaptable responses to emerging pathogens.\n D: As a result, mRNA platforms are now being tailored to combat diseases like influenza, cancer, and HIV, marking a paradigm shift in preventative and therapeutic medicine.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-A-D",
+          " C-B-D-A",
+          " C-A-B-D",
+          " C-A-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.59",
+    "title": "Paragraph Organization (59)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 59",
+    "subtitle": "\n\n A: Following the disputed 2020 presidential election in Belarus, widespread public outcry erupted as citizens accused the government of electoral fraud and demanded the resignation of long-standing leader Alexander Lukashenko.\n B: In response, authorities deployed riot police, rubber bullets, and mass detentions, while state media dismissed demonstrations as foreign-backed destabilization efforts, further polarizing public opinion.\n C: Protesters, led largely by women and coordinated through social media, organized daily marches and strikes, with crowds in Minsk repeatedly exceeding 100,000 people despite harsh weather and escalating police presence.\n D: Although the protests persisted for months and drew international condemnation, Lukashenko’s regime retained power through repression, leaving the opposition fragmented and underscoring the challenges of grassroots movements against entrenched autocratic systems.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-B-D",
+          " A-C-D-B",
+          " A-B-C-D",
+          " A-B-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.60",
+    "title": "Paragraph Organization (60)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 60",
+    "subtitle": "\n\n A: While skeptics question the feasibility and public adoption of the metaverse, Meta’s aggressive investments suggest it aims to pioneer a new era of internet interaction, despite uncertainties surrounding privacy, regulation, and technological barriers.\n B: Meta (Facebook) has recently made a strategic pivot toward the metaverse, a virtual reality space where users can interact with digital environments and each other, signaling a major shift in the company’s long-term vision.\n C: For instance, in 2021, the company rebranded itself as Meta and invested over $10 billion in developing metaverse-related technologies, including VR headsets like Quest Pro and collaborative platforms such as Horizon Worlds.\n D: This transition reflects Meta’s belief that immersive digital experiences will dominate future communication, driven by advancements in AI, connectivity, and a post-pandemic surge in remote work and virtual socialization.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-C-D-A",
+          " B-C-A-D",
+          " B-D-C-A",
+          " B-D-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.61",
+    "title": "Paragraph Organization (61)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 61",
+    "subtitle": "\n\n A: In response to these tragedies, legislative efforts have gained momentum in some states, though federal action remains stalled due to partisan divides over Second Amendment interpretations.\n B: Recent years have seen a surge in mass shootings across the US, reigniting urgent national debates over gun control policies and public safety.\n C: Despite ongoing disagreements, the recurring cycle of violence and advocacy underscores a deepening societal tension between constitutional rights and the demand for preventative measures.\n D: High-profile tragedies, such as the 2022 Buffalo supermarket attack and the Robb Elementary School shooting in Uvalde, have intensified calls for stricter background checks, assault weapon bans, and red-flag laws.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.62",
+    "title": "Paragraph Organization (62)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 62",
+    "subtitle": "\n\n A: Ultimately, studying such phenomena deepens our understanding of Earth’s systems, fostering both scientific innovation and appreciation for nature’s grandeur.\n B: These events not only highlight the interconnectedness of geological and atmospheric processes but also underscore how energy transfer shapes our planet.\n C: For instance, auroras occur when charged solar particles collide with atmospheric gases, while volcanic lightning arises from ash-induced electrical charges during eruptions.\n D: Natural phenomena, such as auroras and volcanic lightning, captivate humanity through their breathtaking displays of Earth’s dynamic forces.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-B-A",
+          " D-C-A-B",
+          " D-B-C-A",
+          " D-B-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.63",
+    "title": "Paragraph Organization (63)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 63",
+    "subtitle": "\n\n A: Within hours, flames toppled the cathedral’s spire, destroyed its oak-framed roof, and threatened priceless artifacts, while firefighters and volunteers raced to salvage relics from the blaze.\n B: Following the blaze, experts attributed the rapid spread of the fire to the building’s ancient wooden infrastructure and the complex challenges of restoring centuries-old architecture.\n C: In April 2019, a devastating fire engulfed Paris’s iconic Notre-Dame Cathedral, causing irreversible damage to one of the world’s most cherished historical landmarks.\n D: Despite the tragedy, the global outpouring of support and pledges exceeding €1 billion for reconstruction underscored Notre-Dame’s enduring cultural significance and humanity’s shared commitment to preserving heritage.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.64",
+    "title": "Paragraph Organization (64)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 64",
+    "subtitle": "\n\n A: This decision, announced by the International Olympic Committee and Japanese officials in March 2020, prioritized global health safety as infections surged worldwide.\n B: Consequently, organizers faced unprecedented logistical challenges, such as renegotiating venues, accommodating athletes’ schedules, and managing financial losses exceeding $2 billion.\n C: Despite these hurdles, the Games eventually took place in July 2021 under strict protocols, symbolizing resilience amid a transformed global landscape.\n D: The 2020 Olympic Games in Tokyo were postponed to 2021 due to the COVID-19 pandemic, marking the first-ever delay in the event’s modern history.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.65",
+    "title": "Paragraph Organization (65)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 65",
+    "subtitle": "\n\n A: For instance, major corporations like Purdue Pharma and Johnson & Johnson agreed to pay over $26 billion collectively, with funds directed toward addiction treatment programs and state-led recovery initiatives.\n B: These settlements not only acknowledge the companies’ responsibility for downplaying addiction risks but also aim to mitigate the epidemic’s long-term societal harm by prioritizing healthcare over punitive measures.\n C: In recent years, numerous pharmaceutical companies have reached multi-billion-dollar settlements to resolve lawsuits alleging their role in fueling the opioid crisis through deceptive marketing practices.\n D: While the agreements mark a pivotal step toward accountability, public health experts caution that sustained prevention efforts and stricter regulation remain critical to curbing future crises.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.66",
+    "title": "Paragraph Organization (66)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 66",
+    "subtitle": "\n\n A: In June 2022, the U.S. Supreme Court overturned *Roe v. Wade*, a landmark 1973 ruling that had federally protected abortion rights, dramatically reshaping the legal landscape of reproductive healthcare.\n B: Consequently, over a dozen states swiftly enacted near-total abortion prohibitions, while others moved to codify protections, deepening regional divides in access to care.\n C: The ruling ignited nationwide debates over bodily autonomy, judicial precedent, and the potential ripple effects on other civil liberties, leaving the issue to unfold unevenly across state legislatures and courts.\n D: This decision, stemming from the case *Dobbs v. Jackson Women’s Health Organization*, revoked constitutional protections for abortion, enabling individual states to impose restrictions or outright bans.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-B-C",
+          " A-D-C-B",
+          " A-B-D-C",
+          " A-B-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.67",
+    "title": "Paragraph Organization (67)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 67",
+    "subtitle": "\n\n A: Though their domains differed, these losses collectively underscored how individual lives can shape cultural, legal, and political landscapes, leaving legacies that persist beyond their lifetimes.\n B: The passing of influential figures such as Kobe Bryant, Ruth Bader Ginsburg, and Queen Elizabeth II has left profound voids in their respective fields, triggering global reflections on their enduring legacies.\n C: Similarly, Queen Elizabeth II’s death in 2022 after a historic 70-year reign symbolized the end of an era, evoking both national mourning and renewed discussions about monarchy’s evolving role in modern society.\n D: Bryant’s sudden death in 2020, for instance, not only devastated the sports world but also reignited conversations about his impact on basketball and mentorship, while Ginsburg’s demise later that year intensified debates over judicial equality and women’s rights.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-C-A",
+          " B-D-A-C",
+          " B-C-D-A",
+          " B-C-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.68",
+    "title": "Paragraph Organization (68)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 68",
+    "subtitle": "\n\n A: Recent elections in Country X have sparked significant debate over the stability of its democratic institutions, following allegations of voter suppression and biased media coverage.\n B: Consequently, public trust in the electoral process has eroded, fueling widespread protests and calls for international intervention.\n C: While the governing party dismisses these claims as politically motivated, the escalating unrest underscores the urgent need for transparent electoral reforms to prevent further polarization.\n D: For instance, reports from independent watchdogs revealed that rural polling stations were systematically understaffed, disproportionately affecting opposition strongholds.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-B-C",
+          " A-D-C-B",
+          " A-B-D-C",
+          " A-B-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.69",
+    "title": "Paragraph Organization (69)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 69",
+    "subtitle": "\n\n A: Triggering unprecedented public outrage, demonstrations rapidly expanded from Amini’s hometown to major cities, with women burning headscarves and cutting their hair in symbolic defiance of oppressive policies.\n B: The death of 22-year-old Mahsa Amini in September 2022, following her arrest by Iran’s morality police for allegedly violating hijab laws, ignited nationwide protests demanding gender equality and government accountability.\n C: As protests intensified, security forces responded with violent crackdowns, internet blackouts, and mass arrests, drawing global condemnation while further galvanizing Iran’s youth-led movement against systemic repression.\n D: Despite escalating state violence, the sustained \"Woman, Life, Freedom\" slogan underscored protesters’ resolve to challenge authoritarian norms, marking a historic shift in Iran’s sociopolitical landscape.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-C-D",
+          " B-A-D-C",
+          " B-C-A-D",
+          " B-C-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.70",
+    "title": "Paragraph Organization (70)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 70",
+    "subtitle": "\n\n A: This momentum prompted legacy automakers to accelerate their own EV programs, with brands like Ford and Volkswagen now investing billions in electrification to remain competitive.\n B: Ultimately, Tesla’s disruptive innovations have not only expanded the EV market but also catalyzed a broader industry shift toward sustainable transportation.\n C: By introducing high-performance models like the Model S and a scalable Supercharger network, the company demonstrated that EVs could rival traditional cars in range, design, and convenience.\n D: Tesla has spearheaded the rapid global adoption of electric vehicles (EVs) by revolutionizing automotive technology and consumer perceptions.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-A-B",
+          " D-C-B-A",
+          " D-A-C-B",
+          " D-A-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.71",
+    "title": "Paragraph Organization (71)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 71",
+    "subtitle": "\n\n A: As a result, generative AI is reshaping workflows across sectors, though ethical debates about originality, misinformation, and job displacement underscore the need for balanced regulation alongside innovation.\n B: This surge in adoption stems not only from technological advancements in machine learning but also from increased accessibility, as these tools are now integrated into user-friendly platforms requiring minimal technical expertise.\n C: The rapid rise of generative AI tools like ChatGPT and DALL-E has marked a transformative shift in how technology intersects with creativity and daily tasks, pushing artificial intelligence into mainstream consciousness.\n D: For instance, ChatGPT’s ability to generate human-like text has revolutionized customer service and content creation, while DALL-E’s image synthesis has disrupted industries from advertising to entertainment by producing visuals from simple prompts.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-D-B-A",
+          " C-D-A-B",
+          " C-B-D-A",
+          " C-B-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.72",
+    "title": "Paragraph Organization (72)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 72",
+    "subtitle": "\n\n A: Despite these aggressive tactics, Ukrainian resistance, bolstered by unprecedented international military aid and sanctions against Russia, significantly slowed Moscow’s advance within weeks.\n B: Initially, Russian forces targeted key infrastructure and cities such as Kyiv and Kharkiv, employing missile strikes and armored divisions to destabilize Ukraine’s defenses.\n C: As the conflict persists, its repercussions—including a humanitarian crisis, global economic disruption, and heightened NATO cohesion—continue to reshape geopolitical dynamics worldwide.\n D: In February 2022, Russia launched a full-scale invasion of Ukraine, marking a dramatic escalation of the protracted conflict that began with its annexation of Crimea in 2014.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-A-C",
+          " D-B-C-A",
+          " D-A-B-C",
+          " D-A-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.73",
+    "title": "Paragraph Organization (73)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 73",
+    "subtitle": "\n\n A: For instance, infants typically develop their first social smiles around 6-8 weeks, fostering caregiver bonds critical for emotional growth.\n B: Additionally, toddlers begin sharing toys by age 3, demonstrating early understanding of reciprocity and social norms.\n C: Social milestones are key markers of human development, shaping how individuals interact and integrate into society.\n D: Finally, adolescents establish identity through peer group dynamics, with these cumulative achievements collectively enhancing societal cohesion and personal adaptability.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.74",
+    "title": "Paragraph Organization (74)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 74",
+    "subtitle": "\n\n A: For instance, team sports like soccer or basketball not only improve cardiovascular fitness but also teach collaboration and strategic thinking through shared goals.\n B: Ultimately, whether through group dynamics or solitary discipline, sports provide a balanced framework for holistic development, uniting physical and emotional well-being.\n C: Sports play a vital role in promoting physical health and fostering social connections, making them a cornerstone of many cultures worldwide.\n D: Additionally, individual sports such as swimming or running offer personalized challenges that build mental resilience while allowing athletes to track progress independently.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.75",
+    "title": "Paragraph Organization (75)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 75",
+    "subtitle": "\n\n A: This consolidation has not only concentrated market power but also pressured traditional companies to adapt, leading to declining cable subscriptions and theater attendance as audiences prioritize on-demand streaming.\n B: Streaming services have revolutionized entertainment consumption, rapidly overtaking traditional mediums like cable TV and cinema as the dominant platform for media.\n C: Fueled by aggressive investments in original content and global accessibility, giants such as Netflix and Disney+ have spurred a wave of media consolidation, exemplified by mergers like Warner Bros. and Discovery.\n D: Ultimately, the shift underscores a digital-first entertainment era, where streaming platforms’ scalability and personalized offerings redefine how content is produced, distributed, and consumed worldwide.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-C-A-D",
+          " B-C-D-A",
+          " B-A-C-D",
+          " B-A-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.76",
+    "title": "Paragraph Organization (76)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 76",
+    "subtitle": "\n\n A: The conflict, primarily stemming from a power struggle over military dominance and control of resources, reignited long-standing grievances over governance and economic inequality.\n B: In April 2023, Sudan plunged into renewed civil war following escalating tensions between the Sudanese Armed Forces (SAF) and the paramilitary Rapid Support Forces (RSF).\n C: Despite international mediation efforts, the war persists, deepening humanitarian suffering and underscoring the fragility of transitional governments in post-dictatorship Sudan.\n D: As clashes intensified in Khartoum and Darfur, critical infrastructure was destroyed, displacing over 2 million civilians and crippling access to food, water, and healthcare.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-D-C",
+          " B-A-C-D",
+          " B-D-A-C",
+          " B-D-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.77",
+    "title": "Paragraph Organization (77)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 77",
+    "subtitle": "\n\n A: Although salvage crews eventually freed the ship through dredging and tidal maneuvers, investigations later revealed that high winds, poor visibility, and potential human error contributed to the incident.\n B: The blockage underscored the fragility of global supply chains, prompting calls for improved navigation protocols and contingency planning to mitigate future crises.\n C: For six days, the 400-meter-long vessel remained lodged diagonally across the canal, delaying over 400 ships and costing an estimated $9.6 billion daily in disrupted trade.\n D: In March 2021, the Suez Canal faced an unprecedented disruption when the container ship *Ever Given* ran aground, halting global maritime traffic through one of the world’s busiest trade routes.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-A-B",
+          " D-C-B-A",
+          " D-A-C-B",
+          " D-A-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.78",
+    "title": "Paragraph Organization (78)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 78",
+    "subtitle": "\n\n A: This swift takeover was fueled by the Taliban’s strategic rural consolidation, demoralized Afghan security forces lacking air support, and political infighting within the U.S.-backed administration.\n B: Within weeks of the foreign troop exit, Taliban fighters rapidly seized provincial capitals, culminating in the fall of Kabul as government forces collapsed amid chaotic evacuations.\n C: Consequently, Afghanistan’s governance shifted abruptly to Taliban rule, reigniting global concerns over human rights, regional stability, and the resurgence of transnational terrorist groups.\n D: The Taliban’s return to power in Afghanistan in August 2021 marked a dramatic reversal following the withdrawal of U.S. and NATO forces after two decades of military engagement.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-A-C",
+          " D-B-C-A",
+          " D-A-B-C",
+          " D-A-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.79",
+    "title": "Paragraph Organization (79)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 79",
+    "subtitle": "\n\n A: Spurred by prolonged remote work, many workers reevaluated career priorities, seeking roles with flexibility, mental health support, or alignment with personal values, while industries like hospitality and healthcare faced severe staffing shortages.\n B: The COVID-19 pandemic catalyzed a transformative labor market phenomenon known as the Great Resignation, marked by unprecedented voluntary employee departures globally.\n C: Consequently, employers increasingly adopted hybrid models, enhanced benefits, and wage incentives to retain talent, though disparities persisted as smaller businesses struggled to compete with corporate reforms.\n D: This shift has redefined employer-employee dynamics, emphasizing long-term workplace equity and adaptability as critical pillars in the post-pandemic economic landscape.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-C-D",
+          " B-A-D-C",
+          " B-C-A-D",
+          " B-C-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.80",
+    "title": "Paragraph Organization (80)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 80",
+    "subtitle": "\n\n A: Furthermore, by analyzing light from exoplanet atmospheres over 1,000 light-years away, JWST detected water vapor and potential biosignatures, dramatically expanding the search for habitable worlds.\n B: The James Webb Space Telescope (JWST), launched in December 2021, revolutionized astronomy by capturing unprecedented high-resolution images of the universe starting in mid-2022.\n C: This technological marvel not only deepened our understanding of cosmic origins but also set a new standard for collaborative international space exploration, paving the way for future discoveries.\n D: For instance, its infrared capabilities revealed previously obscured stellar nurseries in the Carina Nebula and intricate interactions within Stephan’s Quintet, offering new insights into star formation and galactic evolution.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.81",
+    "title": "Paragraph Organization (81)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 81",
+    "subtitle": "\n\n A: In February 2021, NASA’s Mars Perseverance rover achieved a historic landing on Mars, pioneering a mission to explore the planet’s geology and climate.\n B: Together, these groundbreaking achievements not only expanded our understanding of Mars but also laid the foundation for future robotic and human missions to the Red Planet.\n C: Equipped with advanced instruments, the rover began analyzing rock samples for signs of ancient microbial life, while simultaneously documenting environmental conditions.\n D: Among its payload was Ingenuity, a small helicopter that successfully completed the first powered flight on another planet, demonstrating the feasibility of aerial exploration in Mars’ thin atmosphere.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-D-B",
+          " A-C-B-D",
+          " A-D-C-B",
+          " A-D-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.82",
+    "title": "Paragraph Organization (82)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 82",
+    "subtitle": "\n\n A: The Tokyo 2020 Olympic Games were postponed to 2021 due to the COVID-19 pandemic, marking the first postponement in the event’s 124-year modern history.\n B: Although held a year later without spectators, the event ultimately showcased adaptability, uniting athletes worldwide and setting a benchmark for managing large-scale disruptions.\n C: This unprecedented decision arose from widespread coronavirus outbreaks, which created a global health crisis and cast uncertainty over international travel, athlete safety, and training schedules.\n D: Consequently, organizers collaborated with the International Olympic Committee, governments, and health experts to reschedule logistics, though the Games retained the “Tokyo 2020” branding to honor the host city’s preparations.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-D-B",
+          " A-C-B-D",
+          " A-D-C-B",
+          " A-D-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.83",
+    "title": "Paragraph Organization (83)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 83",
+    "subtitle": "\n\n A: In a groundbreaking move for the food industry, Singapore became the first country to approve lab-grown meat for human consumption in 2020.\n B: Consequently, this decision not only positioned Singapore as a leader in food innovation but also accelerated regulatory discussions worldwide about the future of cellular agriculture.\n C: By demonstrating that meat could be produced without traditional animal farming, the approval sparked global interest in reducing environmental impacts like greenhouse gas emissions and land use.\n D: This milestone was achieved after extensive safety reviews by the Singapore Food Agency, which greenlit Eat Just’s cultured chicken product as a sustainable protein alternative.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-C-B",
+          " A-D-B-C",
+          " A-C-D-B",
+          " A-C-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.84",
+    "title": "Paragraph Organization (84)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 84",
+    "subtitle": "\n\n A: As companies worldwide swiftly adopted remote policies, investments in digital collaboration tools like Zoom and Microsoft Teams surged, enabling seamless communication across distances.\n B: Over time, this shift not only maintained productivity levels but also revealed unexpected benefits, such as reduced overhead costs and greater employee flexibility.\n C: Consequently, many organizations are now embracing hybrid models, recognizing that the remote work revolution, born from necessity, has fundamentally reshaped the future of employment.\n D: The COVID-19 pandemic acted as a catalyst, rapidly transforming remote work from a niche option into a global norm.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.85",
+    "title": "Paragraph Organization (85)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 85",
+    "subtitle": "\n\n A: By utilizing a patient’s own cells and biological materials, the team engineered a heart complete with blood vessels, chambers, and cells capable of contracting.\n B: Consequently, scientists worldwide praised the achievement as a foundational advancement, predicting it could eventually revolutionize personalized medicine through scalable, rejection-free organ fabrication.\n C: In 2019, Israeli researchers achieved a medical breakthrough by creating the world’s first 3D-printed heart using human tissue.\n D: Although the printed heart was only the size of a rabbit’s and unable to pump blood effectively, this innovation marked a critical step toward addressing organ transplant shortages.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.86",
+    "title": "Paragraph Organization (86)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 86",
+    "subtitle": "\n\n A: Ultimately, this rivalry has fragmented global supply chains, spurred innovation races, and reshaped economic alliances worldwide, with no clear resolution in sight.\n B: In recent years, US-China trade tensions have intensified, driven largely by competition for technological dominance and concerns over national security.\n C: Conversely, China has accelerated its \"Made in China 2025\" initiative, investing heavily in AI and 5G to reduce dependency on foreign technology while retaliating with tariffs on US agricultural exports.\n D: For instance, the US has imposed export controls on advanced semiconductors and restricted Chinese tech firms like Huawei, citing risks of espionage and intellectual property theft.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-C-A",
+          " B-D-A-C",
+          " B-C-D-A",
+          " B-C-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.87",
+    "title": "Paragraph Organization (87)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 87",
+    "subtitle": "\n\n A: For instance, countries like South Korea and China have deployed nationwide 5G networks, enhancing smart city initiatives and industrial automation through real-time data processing.\n B: Moreover, this rapid adoption has spurred advancements in telemedicine and autonomous vehicles, as low-latency networks ensure reliable remote surgeries and safer self-driving systems.\n C: The global rollout of 5G technology is revolutionizing communication infrastructures, enabling unprecedented data speeds and connectivity across industries.\n D: As a result, the widespread integration of 5G is not only bridging digital divides but also accelerating economic growth and technological innovation worldwide.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.88",
+    "title": "Paragraph Organization (88)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 88",
+    "subtitle": "\n\n A: In response to the unrest, political leaders negotiated a historic agreement in November 2019 to initiate a constitutional reform process, including a national referendum to decide whether to draft a new charter.\n B: Demonstrators flooded streets nationwide for months, demanding structural reforms, particularly targeting the authoritarian-era 1980 constitution, which many argued entrenched privatized healthcare, education, and pension systems.\n C: Although the initial constitutional proposal was rejected in a 2022 plebiscite, the process itself symbolized a democratic breakthrough, with ongoing debates and revisions continuing to reshape Chile’s governance framework.\n D: In late 2019, Chile erupted in widespread protests sparked by systemic inequality, rising living costs, and inadequate public services, marking a pivotal moment in the nation’s political landscape.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-B-A-C",
+          " D-B-C-A",
+          " D-A-B-C",
+          " D-A-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.89",
+    "title": "Paragraph Organization (89)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 89",
+    "subtitle": "\n\n A: This collective progress not only reflects growing consumer demand for eco-friendly alternatives but also underscores the irreversible momentum toward an electric-driven future.\n B: Electric vehicles have rapidly transitioned from niche products to mainstream contenders in the automotive industry.\n C: Meanwhile, traditional automakers like Ford and Volkswagen accelerated their EV investments, signaling industry-wide acceptance of sustainable transportation as a permanent market shift.\n D: Tesla’s pioneering innovations in battery technology and software integration propelled it to a historic trillion-dollar valuation in 2021, cementing its dominance amid surging consumer adoption.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-C-A",
+          " B-D-A-C",
+          " B-C-D-A",
+          " B-C-A-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.90",
+    "title": "Paragraph Organization (90)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 90",
+    "subtitle": "\n\n A: Telemedicine adoption surged during the pandemic as healthcare systems worldwide sought safe, accessible alternatives to in-person care.\n B: Moreover, the convenience of remote diagnostics and reduced wait times led many patients and providers to favor telemedicine even after lockdowns eased.\n C: As a result, post-pandemic telehealth usage stabilized at levels 38% higher than pre-2020 averages, signaling a permanent transformation in healthcare delivery.\n D: This shift was driven by necessity, with virtual consultations rising by over 300% in 2020 and platforms like Zoom Health and Teladoc becoming household names.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-B-C",
+          " A-D-C-B",
+          " A-B-D-C",
+          " A-B-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.91",
+    "title": "Paragraph Organization (91)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 91",
+    "subtitle": "\n\n A: In 2021, a groundbreaking medical milestone was achieved when surgeons performed the world’s first successful face and double hand transplant on a patient severely injured in a traumatic accident.\n B: Following the surgery, the patient underwent rigorous immunosuppressive therapy and rehabilitation to prevent organ rejection and regain motor function, demonstrating unprecedented collaboration between transplant specialists and rehabilitation experts.\n C: Spearheaded by a multidisciplinary team at NYU Langone Health, the 23-hour procedure involved attaching a donor’s facial skin, nose, lips, and hands while meticulously reconnecting blood vessels, nerves, and muscles.\n D: This achievement not only highlighted the potential of composite tissue allotransplantation to restore quality of life for severely injured patients but also paved the way for future innovations in reconstructive surgery and organ transplantation.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-B-D",
+          " A-C-D-B",
+          " A-B-C-D",
+          " A-B-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.92",
+    "title": "Paragraph Organization (92)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 92",
+    "subtitle": "\n\n A: In 2018, a groundbreaking painting titled *Portrait of Edmond de Belamy*, created entirely by an AI algorithm, sold for $432,500 at Christie’s auction house, marking a historic moment in both art and technology.\n B: This event sparked intense debate, as critics questioned whether AI could truly \"create\" art, while supporters argued it redefined creativity by blending human input with machine learning.\n C: Ultimately, the sale not only shattered expectations of AI’s role in artistic fields but also signaled a shift in how institutions like Christie’s evaluate and legitimize emerging forms of digital artistry.\n D: Developed by the Paris-based collective Obvious, the artwork was generated using a Generative Adversarial Network (GAN), which analyzed 15,000 historical portraits to produce a unique, algorithmically crafted image.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-B-C",
+          " A-D-C-B",
+          " A-B-D-C",
+          " A-B-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.93",
+    "title": "Paragraph Organization (93)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 93",
+    "subtitle": "\n\n A: Businesses that prioritize sustainability often gain a competitive edge by aligning with evolving consumer values and regulatory demands.\n B: Ultimately, integrating sustainable practices into core operations ensures resilience and positions companies as leaders in a rapidly changing market.\n C: For instance, a clothing retailer switching to eco-friendly materials might reduce environmental impact while attracting ethically conscious customers.\n D: Consequently, these efforts not only enhance brand loyalty but also lower long-term risks associated with resource scarcity or shifting policies.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-D-B",
+          " A-C-B-D",
+          " A-D-C-B",
+          " A-D-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.94",
+    "title": "Paragraph Organization (94)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 94",
+    "subtitle": "\n\n A: The rise of no-code and low-code development platforms has democratized software creation by enabling individuals without formal coding expertise to build functional applications.\n B: By offering intuitive drag-and-drop interfaces and pre-built templates, tools like Zapier and Bubble allow entrepreneurs, educators, and small businesses to automate workflows or design custom apps in days rather than months.\n C: Furthermore, these platforms have bridged the gap between technical and non-technical teams, fostering collaboration as domain experts directly translate ideas into solutions without relying solely on IT departments.\n D: Ultimately, this shift has not only accelerated digital innovation across industries but also redefined who can participate in shaping the future of technology.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-C-D",
+          " A-B-D-C",
+          " A-C-B-D",
+          " A-C-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.95",
+    "title": "Paragraph Organization (95)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 95",
+    "subtitle": "\n\n A: For instance, industries such as telemedicine and autonomous vehicles are leveraging 5G to enable real-time remote surgeries and enhance vehicle-to-everything communication systems.\n B: The global rollout of 5G mobile networks is revolutionizing connectivity by delivering unprecedented data speeds and ultra-low latency.\n C: Furthermore, the integration of 5G with IoT devices is fostering smart city initiatives, where sensors optimize energy use and traffic management in urban areas.\n D: As 5G infrastructure continues to expand, its transformative potential across sectors underscores the critical role of advanced wireless technology in shaping a interconnected, innovation-driven future.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-A-C-D",
+          " B-A-D-C",
+          " B-C-A-D",
+          " B-C-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.96",
+    "title": "Paragraph Organization (96)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 96",
+    "subtitle": "\n\n A: As a result, homeowners can automate routines—like adjusting lights, temperature, and security systems—through a single interface, eliminating the need for fragmented apps.\n B: For example, Amazon’s Alexa now seamlessly controls Apple HomeKit-enabled lights, while Google Nest thermostats sync with both Alexa and Apple Siri, creating a unified user experience across platforms.\n C: Smart home technology has increasingly become integrated with major ecosystems developed by Amazon, Google, and Apple, revolutionizing how users interact with their devices.\n D: This interoperability not only enhances convenience but also signals a future where smart home ecosystems prioritize collaboration over brand exclusivity.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-B-A-D",
+          " C-B-D-A",
+          " C-A-B-D",
+          " C-A-D-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.97",
+    "title": "Paragraph Organization (97)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 97",
+    "subtitle": "\n\n A: Furthermore, these technologies streamline drug development by simulating molecular interactions and predicting compound efficacy, reducing trial-and-error phases and cutting research timelines by years.\n B: By integrating vast datasets and enabling real-time decision-making, AI not only enhances diagnostic accuracy and therapeutic innovation but also paves the way for personalized, cost-effective healthcare solutions globally.\n C: For instance, AI-powered imaging systems now detect anomalies in X-rays and MRIs with precision rivaling human experts, while algorithms analyze genetic data to identify disease risk factors earlier than traditional methods.\n D: Machine learning and AI applications in healthcare have expanded significantly, revolutionizing diagnostics and accelerating drug discovery through advanced data analysis and predictive modeling.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-A-B",
+          " D-C-B-A",
+          " D-A-C-B",
+          " D-A-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.98",
+    "title": "Paragraph Organization (98)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 98",
+    "subtitle": "\n\n A: This surge is primarily driven by economic instability, as unemployment rates have spiked, leaving many desperate to meet basic needs.\n B: For instance, in the downtown district, reported break-ins doubled within six months, coinciding with the closure of two major factories.\n C: Consequently, community leaders are advocating for job-creation programs and enhanced patrols, emphasizing that addressing root socioeconomic issues is critical to curbing crime long-term.\n D: Recent data indicates a concerning rise in burglaries in urban neighborhoods, prompting authorities to investigate underlying causes.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.99",
+    "title": "Paragraph Organization (99)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 99",
+    "subtitle": "\n\n A: This incident sparked global debates about the risks of deep-sea tourism and the need for stricter regulations on underwater exploration technologies.\n B: Investigators later determined that repeated stress from previous dives and insufficient safety certifications had likely compromised the vessel’s structural integrity over time.\n C: The catastrophic failure occurred at a depth of approximately 3,800 meters, where the immense water pressure—over 375 times atmospheric pressure—overwhelmed the submersible’s experimental carbon-fiber hull.\n D: In June 2023, the Titan submersible tragically imploded during its expedition to explore the Titanic wreckage, resulting in the deaths of all five crew members aboard.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-B-A",
+          " D-C-A-B",
+          " D-B-C-A",
+          " D-B-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.100",
+    "title": "Paragraph Organization (100)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 100",
+    "subtitle": "\n\n A: Major cybersecurity incidents in recent years, such as the SolarWinds supply-chain breach and the Colonial Pipeline ransomware attack, have underscored systemic vulnerabilities in critical infrastructure and corporate networks.\n B: Both events revealed not only the sophistication of threat actors but also how interconnected systems can amplify risks, as weak points in one organization often cascaded into broader economic and societal impacts.\n C: The SolarWinds attack, discovered in late 2020, compromised sensitive government and private-sector data by infiltrating widely used software updates, while the 2021 Colonial Pipeline incident disrupted fuel supplies across the U.S. East Coast, exposing gaps in operational technology security.\n D: Consequently, these incidents have spurred urgent calls for enhanced public-private collaboration, stricter regulatory frameworks, and proactive investments in cyber-defense technologies to mitigate future threats.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-C-B-D",
+          " A-C-D-B",
+          " A-B-C-D",
+          " A-B-D-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.101",
+    "title": "Paragraph Organization (101)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 101",
+    "subtitle": "\n\n A: Researchers theorize that after the star exhausted its nuclear fuel and shed its outer layers, extreme gravitational pressure compressed its remaining carbon-oxygen core into a diamond lattice over billions of years.\n B: In 2023, astronomers made a groundbreaking discovery: a planet-sized diamond orbiting a distant star, believed to be the crystallized core of a deceased white dwarf.\n C: The discovery not only advances our understanding of stellar evolution but also raises intriguing questions about the potential for similar exotic objects hidden in the cosmos.\n D: This celestial gem, dubbed \"Lucy\" in reference to the Beatles' song *Lucy in the Sky with Diamonds*, was identified using advanced spectroscopy that detected its unique carbon-rich composition.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.102",
+    "title": "Paragraph Organization (102)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 102",
+    "subtitle": "\n\n A: These tiny, self-healing organisms were designed using AI algorithms to optimize their shape for tasks like pushing microscopic objects or navigating aquatic environments.\n B: Unlike traditional robots, xenobots can work collectively, repair damage autonomously, and eventually biodegrade, addressing concerns about plastic waste.\n C: This fusion of biology and technology not only redefines robotics but also opens possibilities for medical and environmental applications, such as targeted drug delivery or ocean cleanup.\n D: In 2020, researchers achieved a groundbreaking milestone by creating the first living robots, dubbed \"xenobots,\" from frog stem cells.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-A-B-C",
+          " D-A-C-B",
+          " D-B-A-C",
+          " D-B-C-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.103",
+    "title": "Paragraph Organization (103)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 103",
+    "subtitle": "\n\n A: In 2023, the gaming community was stunned when the entire source code for *Grand Theft Auto V* was leaked online, sparking widespread concern about privacy and security.\n B: Though the company worked to mitigate damage, the incident underscored vulnerabilities in digital content protection and left lasting repercussions for intellectual property management in the gaming industry.\n C: Consequently, Rockstar Games issued urgent takedown notices and warned players about potential malware in unofficial mods, while cybersecurity experts traced the leak to a compromised third-party contractor.\n D: The breach exposed sensitive data, including proprietary development tools, unused assets, and internal communications, which risked exploitation by hackers and unauthorized modders.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-C-B",
+          " A-D-B-C",
+          " A-C-D-B",
+          " A-C-B-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.104",
+    "title": "Paragraph Organization (104)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 104",
+    "subtitle": "\n\n A: Ultimately, this accomplishment not only closes a critical chapter in genomics but also accelerates precision medicine, enabling targeted therapies and deepening our understanding of human health and heredity.\n B: Consequently, researchers can now analyze previously obscured sections linked to evolution, diseases like cancer, and mechanisms of genetic diversity, offering unprecedented insights into human biology.\n C: Unlike earlier efforts, which left nearly 8% of genetic material unsequenced due to technological limitations, this updated map utilized advanced long-read sequencing and computational tools to decode repetitive regions and complex chromosomal structures.\n D: In 2023, scientists achieved a groundbreaking milestone by producing the first complete human genome sequence, resolving uncertainties that persisted since the Human Genome Project’s initial draft in 2003.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-B-A",
+          " D-C-A-B",
+          " D-B-C-A",
+          " D-B-A-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.105",
+    "title": "Paragraph Organization (105)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 105",
+    "subtitle": "\n\n A: This record-breaking sale, alongside high-profile NFT releases by celebrities and brands, underscored the growing acceptance of blockchain-based art as a legitimate and lucrative market.\n B: As a result, platforms like OpenSea and Foundation experienced exponential growth, fueled by collectors eager to own unique digital assets and creators seeking new revenue streams.\n C: NFTs (Non-Fungible Tokens) surged to prominence in 2021, with digital artist Beeple making headlines for selling his NFT artwork \"Everydays: The First 5000 Days\" for a staggering $69 million.\n D: Ultimately, the 2021 NFT boom not only redefined perceptions of value in the digital age but also sparked debates about sustainability, ownership, and the future of creative industries.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-B-D",
+          " C-A-D-B",
+          " C-B-A-D",
+          " C-B-D-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.106",
+    "title": "Paragraph Organization (106)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 106",
+    "subtitle": "\n\n A: Within months, industries from education to healthcare began integrating AI tools, leveraging ChatGPT’s ability to draft content, analyze data, and simulate human conversation.\n B: By mid-2023, ChatGPT’s influence had reshaped innovation priorities, cementing generative AI as both a transformative force and a societal challenge for the digital age.\n C: ChatGPT, launched by OpenAI in late 2022, revolutionized technology by making generative AI accessible to the public, marking the start of a global AI boom.\n D: This rapid adoption spurred investment surges, with tech giants and startups alike announcing AI projects, while debates about ethics, job displacement, and misinformation intensified.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " C-A-D-B",
+          " C-A-B-D",
+          " C-D-A-B",
+          " C-D-B-A"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.107",
+    "title": "Paragraph Organization (107)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 107",
+    "subtitle": "\n\n A: These efficiencies not only reduce operational costs by up to 50% in some cases but also minimize human error, ensuring higher accuracy in critical workflows.\n B: As a result, organizations adopting RPA are increasingly gaining a competitive edge, demonstrating how technology-driven automation is reshaping the future of work.\n C: For example, in healthcare, RPA streamlines patient data entry and insurance claims processing, while in manufacturing, it optimizes supply chain management and inventory tracking.\n D: Robotic process automation (RPA) has revolutionized business operations across industries by automating repetitive, rule-based tasks, freeing employees to focus on strategic initiatives.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " D-C-A-B",
+          " D-C-B-A",
+          " D-A-C-B",
+          " D-A-B-C"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.108",
+    "title": "Paragraph Organization (108)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 108",
+    "subtitle": "\n\n A: Similarly, this technological shift created ripple effects globally, enabling colonial powers to exploit resources and labor, which intensified geopolitical competition by the 19th century.\n B: The Industrial Revolution, beginning in the late 18th century, fundamentally transformed societies by mechanizing production and reshaping economic systems.\n C: Ultimately, the Revolution’s legacy underscores how technological innovation can drive profound societal change, both advancing progress and deepening inequalities.\n D: For instance, Britain’s adoption of steam power and factory systems not only boosted textile manufacturing but also triggered mass urbanization as workers migrated to cities.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.109",
+    "title": "Paragraph Organization (109)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 109",
+    "subtitle": "\n\n A: Moreover, these breakthroughs often build on prior knowledge, such as how CRISPR’s development relied on decades of foundational studies in bacterial immune systems.\n B: Scientific advancements continuously reshape our understanding of the natural world, driven by curiosity and rigorous experimentation.\n C: Therefore, the iterative nature of scientific inquiry not only solves existing challenges but also unveils new frontiers for exploration and collaboration.\n D: For instance, the discovery of CRISPR-Cas9 revolutionized genetics by enabling precise gene editing, which has since accelerated medical research and agricultural innovation.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " B-D-A-C",
+          " B-D-C-A",
+          " B-A-D-C",
+          " B-A-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.110",
+    "title": "Paragraph Organization (110)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 110",
+    "subtitle": "\n\n A: Photosynthesis is a vital biological process that converts light energy into chemical energy, sustaining life on Earth.\n B: These energy carriers then fuel the Calvin cycle, where carbon dioxide is fixed and transformed into glucose, a usable form of energy for plants.\n C: Consequently, this intricate process not only supports plant growth but also maintains atmospheric balance, providing oxygen and forming the basis of ecosystems’ energy flow.\n D: During the light-dependent reactions, chlorophyll in plant chloroplasts absorbs sunlight, splitting water molecules to release oxygen and produce ATP and NADPH.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-D-B-C",
+          " A-D-C-B",
+          " A-B-D-C",
+          " A-B-C-D"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  },
+  {
+    "id": "A-Level English No.111",
+    "title": "Paragraph Organization (111)",
+    "description": "A-Level อังกฤษพาร์ท Paragraph organization 111",
+    "subtitle": "\n\n A: Technology has revolutionized the way humans communicate, reshaping both personal interactions and global connectivity.\n B: For instance, the rise of video conferencing platforms and social media has enabled real-time conversations across continents, breaking down geographical barriers.\n C: As these innovations continue to evolve, they collectively underscore technology’s role in creating a more interconnected and accessible world.\n D: Furthermore, advancements in artificial intelligence, such as language translation algorithms, have fostered cross-cultural collaboration by minimizing language obstacles.\n",
+    "duration": 30,
+    "totalQuestions": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "writing",
+        "text": "",
+        "prompt": "",
+        "options": [
+          " A-B-D-C",
+          " A-B-C-D",
+          " A-D-B-C",
+          " A-D-C-B"
+        ],
+        "correctAnswer": 0,
+        "image": ""
+      }
+    ],
+    "type": "paragraph"
+  }
+]

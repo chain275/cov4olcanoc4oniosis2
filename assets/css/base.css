@@ -63,7 +63,8 @@ question_text {
 }
 
 tc {
-    color: rgba(0, 0, 0, 0.808);
-    font-size: 1.25rem;
-    font-weight: 400;
+    color: var(--text-secondary);
+    font-size: large;
+    font-weight: 500;
+    line-height: 1.65rem;
 } 
