@@ -1315,8 +1315,7 @@ function formatWithLineBreaks(text) {
                         formattedText += `<p>${line}</p>`;
                     }
                 }
-            });
-        }
+            });}
         
         // Close the conversation container
         formattedText += '</div>';
@@ -1325,12 +1324,11 @@ function formatWithLineBreaks(text) {
         if (currentPage === 'Text_completion.html') {
             formattedText = formattedText.split('<br>').map(line => 
                 line.trim() ? `<Tc>${line}</Tc>` : ''
-            ).join('');
-        } else { 
-            formattedText = formattedText.split('<br>').map(line => 
-                line.trim() ? `<p>${line}</p>` : ''
-            ).join('');
-        }
+            ).join('');}
+        else { 
+        formattedText = formattedText.split('<br>').map(line => 
+            line.trim() ? `<p>${line}</p>` : ''
+        ).join('');}
     }
     
     return formattedText;
@@ -1581,27 +1579,36 @@ function calculateResults() {
         feedbackList.appendChild(feedbackItem);
     });
     
-    // Immediately hide exam content to prevent any layout issues
-    examContentSection.classList.add('hidden');
-    examContentSection.style.display = 'none';
-    examContentSection.style.height = '0';
-    examContentSection.style.overflow = 'hidden';
+    // Fade out exam content section
     examContentSection.style.opacity = '0';
+    examContentSection.style.transform = 'translateY(-20px)';
+    examContentSection.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     
-    // Prepare and show results section at the top of the page
-    resultsSection.style.opacity = '0';
-    resultsSection.classList.remove('hidden');
-    resultsSection.style.display = 'block';
-    
-    // Force reflow to ensure transition works
-    void resultsSection.offsetWidth;
-    
-    // Show results with animation
-    resultsSection.style.transition = 'opacity 0.4s ease';
-    resultsSection.style.opacity = '1';
-    
-    // Scroll to top of the page to show results
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // After a brief delay, hide exam content and show results
+    setTimeout(() => {
+        // Completely hide exam content
+        examContentSection.classList.add('hidden');
+        examContentSection.style.opacity = '';
+        examContentSection.style.transform = '';
+        examContentSection.style.display = 'none';
+        
+        // Prepare and show results section at the top of the page
+        resultsSection.style.opacity = '0';
+        resultsSection.style.transform = 'translateY(20px)';
+        resultsSection.classList.remove('hidden');
+        resultsSection.style.display = 'block';
+        
+        // Force reflow to ensure transition works
+        void resultsSection.offsetWidth;
+        
+        // Show results with animation
+        resultsSection.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        resultsSection.style.opacity = '1';
+        resultsSection.style.transform = 'translateY(0)';
+        
+        // Scroll to top of the page to show results
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 300);
     
     // Save the results to the progress tracker
     if (typeof window.saveExamResult === 'function') {
